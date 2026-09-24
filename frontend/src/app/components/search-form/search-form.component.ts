@@ -24,6 +24,7 @@ export class SearchFormComponent implements OnInit {
   readonly sourceChainId = 'bitcoin';
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/bitcoin.png';
   readonly defaultChainIconAlt = 'Bitcoin explorer';
+  readonly defaultChainAccent = '#f7931a';
   readonly defaultSearchPlaceholder = 'Search a Bitcoin block, transaction, or address';
   env: Env;
   network = '';
@@ -37,6 +38,9 @@ export class SearchFormComponent implements OnInit {
   selectedExplorer$: Observable<TxTaxiExplorer | undefined>;
   searchForm: UntypedFormGroup;
   dropdownHidden = false;
+  private manualChainId = this.sourceChainId;
+  private manualOverrideSearchText: string | undefined;
+  private detectedChainId: string | undefined;
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event) {
@@ -126,6 +130,18 @@ export class SearchFormComponent implements OnInit {
       }),
       distinctUntilChanged(),
     );
+
+    searchText$.pipe(
+      tap((searchText) => this.clearManualOverrideOnInputChange(searchText)),
+      debounceTime(180),
+      switchMap((searchText) => this.explorerRegistry.detectSearchChain$(searchText).pipe(
+        map((chainId) => ({ searchText, chainId })),
+      )),
+    ).subscribe(({ searchText, chainId }) => {
+      if (this.manualOverrideSearchText === undefined && this.currentSearchText() === searchText) {
+        this.setDetectedChain(chainId);
+      }
+    });
 
     const sourceSearchText$ = combineLatest([searchText$, this.selectedChainId$]).pipe(
       map(([searchText, chainId]) => chainId === this.sourceChainId ? searchText : ''),
@@ -267,7 +283,9 @@ export class SearchFormComponent implements OnInit {
   }
 
   selectExplorer(explorer: TxTaxiExplorer): void {
-    this.selectedChainId$.next(explorer.chainId);
+    this.manualChainId = explorer.chainId;
+    this.manualOverrideSearchText = this.currentSearchText();
+    this.setDetectedChain(undefined);
     this.dropdownHidden = true;
     setTimeout(() => this.dropdownHidden = true);
   }
@@ -312,54 +330,84 @@ export class SearchFormComponent implements OnInit {
 
   search(result?: string): void {
     const searchText = result || this.searchForm.value.searchText.trim();
-    if (searchText) {
+    if (!searchText) {
+      return;
+    }
+
+    if (!this.isSourceChainSelected()) {
+      this.searchSelectedChain(searchText);
+      return;
+    }
+
+    if (this.manualOverrideSearchText === searchText) {
+      this.searchSourceChain(searchText);
+      return;
+    }
+
+    this.isSearching = true;
+    this.explorerRegistry.detectSearchChain$(searchText).subscribe((chainId) => {
+      if (this.manualOverrideSearchText === searchText) {
+        if (!this.isSourceChainSelected()) {
+          this.searchSelectedChain(searchText);
+          return;
+        }
+
+        this.searchSourceChain(searchText);
+        return;
+      }
+
+      this.setDetectedChain(chainId);
       if (!this.isSourceChainSelected()) {
         this.searchSelectedChain(searchText);
         return;
       }
 
-      this.isSearching = true;
+      this.searchSourceChain(searchText);
+    });
+  }
 
-      if (!this.regexTransaction.test(searchText) && this.regexAddress.test(searchText)) {
-        this.navigate('/address/', searchText);
-      } else if (this.regexBlockhash.test(searchText)) {
-        this.navigate('/block/', searchText);
-      } else if (this.regexBlockheight.test(searchText)) {
-        parseInt(searchText) <= this.stateService.latestBlockHeight ? this.navigate('/block/', searchText) : this.isSearching = false;
-      } else if (this.regexTransaction.test(searchText)) {
-        const matches = this.regexTransaction.exec(searchText);
-        if (this.network === 'liquid' || this.network === 'liquidtestnet') {
-          if (this.assets[matches[0]]) {
-            this.navigate('/assets/asset/', matches[0]);
-          }
-          this.electrsApiService.getAsset$(matches[0])
-            .subscribe(
-              () => { this.navigate('/assets/asset/', matches[0]); },
-              () => {
-                this.electrsApiService.getBlock$(matches[0])
-                  .subscribe(
-                    (block) => { this.navigate('/block/', matches[0], { state: { data: { block } } }); },
-                    () => { this.navigate('/tx/', matches[0]); });
-              }
-            );
-        } else {
-          this.navigate('/tx/', matches[0]);
+  private searchSourceChain(searchText: string): void {
+    this.isSearching = true;
+
+    if (!this.regexTransaction.test(searchText) && this.regexAddress.test(searchText)) {
+      this.navigate('/address/', searchText);
+    } else if (this.regexBlockhash.test(searchText)) {
+      this.navigate('/block/', searchText);
+    } else if (this.regexBlockheight.test(searchText)) {
+      parseInt(searchText) <= this.stateService.latestBlockHeight ? this.navigate('/block/', searchText) : this.isSearching = false;
+    } else if (this.regexTransaction.test(searchText)) {
+      const matches = this.regexTransaction.exec(searchText);
+      if (this.network === 'liquid' || this.network === 'liquidtestnet') {
+        if (this.assets[matches[0]]) {
+          this.navigate('/assets/asset/', matches[0]);
         }
-      } else if (this.regexDate.test(searchText) || this.regexUnixTimestamp.test(searchText)) {
-        let timestamp: number;
-        this.regexDate.test(searchText) ? timestamp = Math.floor(new Date(searchText).getTime() / 1000) : timestamp = searchText;
-        // Check if timestamp is too far in the future or before the genesis block
-        if (timestamp > Math.floor(Date.now() / 1000)) {
-          this.isSearching = false;
-          return;
-        }
-        this.apiService.getBlockDataFromTimestamp$(timestamp).subscribe(
-          (data) => { this.navigate('/block/', data.hash); },
-          (error) => { console.log(error); this.isSearching = false; }
-        );
+        this.electrsApiService.getAsset$(matches[0])
+          .subscribe(
+            () => { this.navigate('/assets/asset/', matches[0]); },
+            () => {
+              this.electrsApiService.getBlock$(matches[0])
+                .subscribe(
+                  (block) => { this.navigate('/block/', matches[0], { state: { data: { block } } }); },
+                  () => { this.navigate('/tx/', matches[0]); });
+            }
+          );
       } else {
-        this.isSearching = false;
+        this.navigate('/tx/', matches[0]);
       }
+    } else if (this.regexDate.test(searchText) || this.regexUnixTimestamp.test(searchText)) {
+      let timestamp: number;
+      this.regexDate.test(searchText) ? timestamp = Math.floor(new Date(searchText).getTime() / 1000) : timestamp = searchText;
+      // Check if timestamp is too far in the future or before the genesis block
+      if (timestamp > Math.floor(Date.now() / 1000)) {
+        this.isSearching = false;
+        return;
+      }
+      this.apiService.getBlockDataFromTimestamp$(timestamp).subscribe(
+        (data) => { this.navigate('/block/', data.hash); },
+        (error) => { console.log(error); this.isSearching = false; }
+      );
+    } else {
+      this.isSearching = false;
     }
   }
 
@@ -367,6 +415,30 @@ export class SearchFormComponent implements OnInit {
     this.isSearching = true;
     this.searchTriggered.emit();
     window.location.assign(this.explorerRegistry.chainSearchUrl(this.selectedChainId$.value, searchText));
+  }
+
+  private clearManualOverrideOnInputChange(searchText: string): void {
+    if (this.manualOverrideSearchText !== undefined && this.manualOverrideSearchText !== searchText) {
+      this.manualOverrideSearchText = undefined;
+    }
+    if (this.detectedChainId !== undefined) {
+      this.setDetectedChain(undefined);
+    }
+    if (!searchText) {
+      this.setDetectedChain(undefined);
+    }
+  }
+
+  private currentSearchText(): string {
+    return this.searchForm?.value?.searchText?.trim() || '';
+  }
+
+  private setDetectedChain(chainId: string | undefined): void {
+    this.detectedChainId = chainId;
+    const activeChainId = this.detectedChainId || this.manualChainId;
+    if (this.selectedChainId$.value !== activeChainId) {
+      this.selectedChainId$.next(activeChainId);
+    }
   }
 
 
