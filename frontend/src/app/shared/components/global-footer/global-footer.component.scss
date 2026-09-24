@@ -63,6 +63,15 @@ footer .links .category {
   font-weight: 700;
 }
 
+footer .links .uswap-link {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer .links .uswap-link:hover {
+  text-decoration: underline;
+}
+
 footer .row.main .links .category:not(:first-child) {
   margin-top: 1rem;
 }

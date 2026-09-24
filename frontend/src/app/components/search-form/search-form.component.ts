@@ -37,7 +37,7 @@ export class SearchFormComponent implements OnInit {
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/bitcoin.png';
   readonly defaultChainIconAlt = 'Bitcoin explorer';
   readonly defaultChainAccent = '#f7931a';
-  readonly defaultSearchPlaceholder = 'Search a Bitcoin block, transaction, or address';
+  readonly defaultSearchPlaceholder = 'Wave a taxi, paste anything here.';
   env: Env;
   network = '';
   assets: object = {};
