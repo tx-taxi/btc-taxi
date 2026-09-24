@@ -396,7 +396,7 @@ export class SearchFormComponent implements OnInit {
       }
     } else if (this.regexDate.test(searchText) || this.regexUnixTimestamp.test(searchText)) {
       let timestamp: number;
-      this.regexDate.test(searchText) ? timestamp = Math.floor(new Date(searchText).getTime() / 1000) : timestamp = searchText;
+      this.regexDate.test(searchText) ? timestamp = Math.floor(new Date(searchText).getTime() / 1000) : timestamp = Number(searchText);
       // Check if timestamp is too far in the future or before the genesis block
       if (timestamp > Math.floor(Date.now() / 1000)) {
         this.isSearching = false;
