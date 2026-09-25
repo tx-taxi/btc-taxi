@@ -10,7 +10,7 @@ const sharp = require('sharp');
 const origin = 'https://btc.tx.taxi';
 const apiOrigin = (process.env.BTC_OG_API_ORIGIN || 'https://mempool.space').replace(/\/$/, '');
 const indexPath = process.env.BTC_OG_INDEX || '/usr/share/nginx/html/en-US/index.html';
-const logoPath = path.join(path.dirname(indexPath), '..', 'resources/branding/btc-dark-full.svg');
+const logoPath = path.join(path.dirname(indexPath), '..', 'resources/branding/btc-dark-navbar.svg');
 const html = fs.readFileSync(indexPath, 'utf8');
 const logo = fs.existsSync(logoPath) ? `data:image/svg+xml;base64,${fs.readFileSync(logoPath).toString('base64')}` : null;
 const cache = new Map();
@@ -143,7 +143,7 @@ function fallback(kind, id) {
 
 function metadata(kind, id, data) {
   const url = `${origin}/${kind}/${id}`;
-  const image = `${origin}/og/${kind}/${id}.png`;
+  const image = `${origin}/og/${kind}/${id}.png?v=20260925-brand`;
   const title = `Bitcoin ${data.heading}${kind === 'block' ? '' : ` ${short(id, 24)}`} | btc.tx.taxi`;
   const tags = [
     ['name', 'description', data.description],
@@ -182,23 +182,22 @@ function metadata(kind, id, data) {
 
 function cardSvg(data) {
   const rows = data.rows.filter(([, value]) => value !== null && value !== undefined).slice(0, 6);
-  const logoMarkup = logo ? `<image href="${logo}" x="60" y="22" width="226" height="76" preserveAspectRatio="xMinYMid meet"/>` : '';
+  const logoMarkup = logo ? `<image href="${logo}" x="64" y="24" width="290" height="80" preserveAspectRatio="xMinYMid meet"/>` : '';
   const cells = rows.map(([label, value], index) => {
     const x = 64 + (index % 2) * 544;
     const y = 316 + Math.floor(index / 2) * 75;
-    return `<rect x="${x}" y="${y - 29}" width="518" height="65" fill="${Math.floor(index / 2) % 2 ? '#20232f' : '#181b25'}"/>` +
+    return `<rect x="${x}" y="${y - 29}" width="518" height="65" fill="${Math.floor(index / 2) % 2 ? '#252525' : '#1c1c1c'}"/>` +
       `<text x="${x + 15}" y="${y - 4}" fill="#a8aebc" font-size="17">${escape(label)}</text>` +
       `<text x="${x + 15}" y="${y + 23}" fill="#f8f9fc" font-size="21" font-weight="600">${escape(short(value, 34))}</text>`;
   }).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-    <rect width="1200" height="630" fill="#11141d"/><rect width="1200" height="8" fill="#f7931a"/>
-    ${logoMarkup}<text x="${logo ? 315 : 64}" y="69" fill="#f9a94e" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700">BITCOIN / EXPLORER</text>
-    <text x="1136" y="69" text-anchor="end" fill="#f8f9fc" font-family="DejaVu Sans, sans-serif" font-size="26" font-weight="700">btc.tx.taxi</text>
-    <path d="M64 108H1136" stroke="#393e4c"/>
+    <rect width="1200" height="630" fill="#111111"/><rect width="1200" height="8" fill="#f7931a"/>
+    ${logoMarkup}<text x="${logo ? 420 : 64}" y="69" fill="#f9a94e" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700">BITCOIN / EXPLORER</text>
+    <path d="M64 108H1136" stroke="#383838"/>
     <text x="64" y="188" fill="#f8f9fc" font-family="DejaVu Sans, sans-serif" font-size="51" font-weight="700">${escape(short(data.heading, 30))}</text>
     <text x="64" y="241" fill="#ffbe72" font-family="DejaVu Sans Mono, monospace" font-size="24">${escape(short(data.subtitle, 67))}</text>
     ${data.unavailable ? '<text x="64" y="346" fill="#c3c8d3" font-family="DejaVu Sans, sans-serif" font-size="28">Live details temporarily unavailable</text>' : `<g font-family="DejaVu Sans, sans-serif">${cells}</g>`}
-    <path d="M64 574H1136" stroke="#393e4c"/>
+    <path d="M64 574H1136" stroke="#383838"/>
     <text x="64" y="605" fill="#9ca4b2" font-family="DejaVu Sans, sans-serif" font-size="17">Bitcoin mainnet</text>
     <text x="1136" y="605" text-anchor="end" fill="#9ca4b2" font-family="DejaVu Sans, sans-serif" font-size="17">btc.tx.taxi</text>
   </svg>`;
