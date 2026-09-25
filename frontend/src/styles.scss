@@ -2,9 +2,9 @@
 
 /* Bitcoin explorer theme. Keep the Mempool layout vocabulary, but carry the
  * Bitcoin orange through every inherited interactive and data surface. */
-$bg: #100f0d;
-$active-bg: #050504;
-$hover-bg: #1a1712;
+$bg: #111214;
+$active-bg: #08090b;
+$hover-bg: #1c1e22;
 $fg: #fff;
 $nav-bg: $bg;
 $title-fg: #f7931a;
@@ -22,8 +22,8 @@ $gray-700: $fg;
 $nav-tabs-link-active-bg: $active-bg;
 
 $primary: #f7931a;
-$secondary: #2d2419;
-$tertiary: #7a4614;
+$secondary: #292c31;
+$tertiary: #92500d;
 $success: #0aab2f;
 $info: #ffc27d;
 
@@ -110,26 +110,26 @@ $dropdown-link-active-bg: $active-bg;
   --link-color: #{$link-color};
   --link-hover-color: #{$link-hover-color};
   --icon: #f1f1f1;
-  --skeleton-bg: #46341f;
-  --skeleton-bg-light: #725431;
+  --skeleton-bg: #303339;
+  --skeleton-bg-light: #50545c;
 
-  --box-bg: #19150f;
-  --stat-box-bg: #100d09;
+  --box-bg: #191b1f;
+  --stat-box-bg: #111214;
   --border-subtle: rgba(255, 255, 255, 0.11);
-  --block-top: #392b1b;
-  --block-side: #241b11;
-  --block-goggles-overlay: #1c160e7f;
-  --mempool-block-top: #593115;
-  --mempool-block-side: #38200f;
-  --mempool-block-loading: #6c4728;
+  --block-top: #34373d;
+  --block-side: #22252a;
+  --block-goggles-overlay: #1c1e227f;
+  --mempool-block-top: #48403a;
+  --mempool-block-side: #302b26;
+  --mempool-block-loading: #554a40;
   --alert-bg: #583315;
-  --navbar-bg: #21170e;
+  --navbar-bg: #191b1f;
   --transparent-fg: #ffffffbb;
   --footer-fg: rgba(255, 255, 255, 0.4);
-  --fade-out-box-bg-start: rgba(25, 21, 15, 0);
-  --fade-out-box-bg-end: rgba(25, 21, 15, 1);
+  --fade-out-box-bg-start: rgba(25, 27, 31, 0);
+  --fade-out-box-bg-end: rgba(25, 27, 31, 1);
   --opacity: 0.57;
-  --world-map-bg: #332817;
+  --world-map-bg: #292c31;
   --world-map-border: #000;
 
   --testnet: #1d486f;
@@ -138,7 +138,7 @@ $dropdown-link-active-bg: $active-bg;
   --liquid: #116761;
   --liquidtestnet: #494a4a;
 
-  --mainnet-alt: #9339f4;
+  --mainnet-alt: #bd6412;
   --testnet-alt: #183550;
   --signet-alt: #471850;
   --regtest-alt: #4a4a4a;
@@ -161,7 +161,7 @@ $dropdown-link-active-bg: $active-bg;
   --fee-tier-fast: #f7931a;
   --fee-tier-fastest: #ffd28a;
 
-  --search-button: #7a4614;
+  --search-button: #92500d;
   --search-button-border: #6b3d12;
   --search-button-focus: #945619;
   --search-button-shadow: #c97a2b80;
@@ -1670,3 +1670,9 @@ form label:not(.form-check-label):not(.btn) {
 .ngb-dp-header, .ngb-dp-week {
   background-color: var(--bg) !important;
 }
+
+.fiat-color { color: var(--fiat-color, var(--info)); }
+
+:root { --data-hover-start: var(--primary); --data-hover-end: var(--info); }
+
+:root { --fee-label-color: #08090b; }
