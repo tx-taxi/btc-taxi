@@ -42,6 +42,8 @@ btc.tx.taxi is based on [The Mempool Open Source Project](https://github.com/mem
 
 The code is distributed under the terms in [LICENSE](LICENSE) and [COPYING.md](COPYING.md), including the GNU Affero General Public License v3 text and applicable trademark notices.
 
+The software license does not grant trademark rights to the tx.taxi name or logos. Independent deployments should use their own branding and must not imply they are operated or endorsed by tx.taxi.
+
 ## Links
 
 - [Live explorer](https://btc.tx.taxi)
