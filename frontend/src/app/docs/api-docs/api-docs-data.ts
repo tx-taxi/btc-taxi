@@ -27,7 +27,7 @@ export const wsApiDocsData = [
     fragment: 'live-data',
     title: 'Live Data',
     description: {
-      default: 'Subscribe to live data. Available: <code>blocks</code>, <code>mempool-block</code>, <code>live-2h-chart</code>, and <code>stats</code>.'
+      default: 'Subscribe to live Bitcoin data. Available subscriptions are <code>blocks</code>, <code>mempool-blocks</code>, <code>live-2h-chart</code>, and <code>stats</code>. Send a <code>want</code> payload after the WebSocket handshake.'
     },
     payload: '{ "action": "want", "data": ["mempool-blocks", "stats"] }',
     showConditions: bitcoinNetworks.concat(liquidNetworks),
@@ -702,7 +702,7 @@ export const wsApiDocsData = [
     fragment: 'track-addresses',
     title: 'Track Addresses',
     description: {
-      default: 'Subscribe to multiple addresses to receive live updates on new transactions having these addresses in input or output. Limits on the maximum number of tracked addresses apply. For higher tracking limits, consider upgrading to an <a href=\'https://mempool.space/enterprise\'>enterprise sponsorship</a>.'
+      default: 'Subscribe to multiple addresses to receive live updates on new transactions having these addresses in input or output. Keep subscriptions limited to addresses your application is actively displaying.'
     },
     payload: `{
   "track-addresses": [
@@ -1296,7 +1296,7 @@ export const wsApiDocsData = [
     fragment: 'track-txs',
     title: 'Track Transactions',
     description: {
-      default: 'Subscribe to multiple transactions to receive live updates on their status and position in the mempool. Limits on the maximum number of tracked addresses apply. For higher tracking limits, consider upgrading to an <a href=\'https://mempool.space/enterprise\'>enterprise sponsorship</a>.'
+      default: 'Subscribe to multiple transactions to receive live updates on their status and position in the mempool. A connection can track at most 100 transaction IDs.'
     },
     payload: `{
       "track-txs": [
@@ -1489,7 +1489,7 @@ export const wsApiDocsData = [
     fragment: 'track-mempool',
     title: 'Track Mempool',
     description: {
-      default: 'Subscribe to new mempool events, such as new transactions entering the mempool. Available fields: <code>added</code>, <code>removed</code>, <code>mined</code>, <code>replaced</code>. <br> Because this is potentially a lot of data, consider using the <code>track-mempool-txids</code> endpoint described below instead, or upgrade to an <a href=\'https://mempool.space/enterprise\'>enterprise sponsorship</a>.'
+      default: 'Subscribe to new mempool events, such as transactions entering or leaving this node\'s mempool. Available fields: <code>added</code>, <code>removed</code>, <code>mined</code>, <code>replaced</code>. This stream can be large; use <code>track-mempool-txids</code> when transaction IDs are sufficient.'
     },
     payload: '{ "track-mempool": true }',
     showConditions: bitcoinNetworks.concat(liquidNetworks),
@@ -5311,7 +5311,7 @@ export const restApiDocsData = [
     fragment: 'get-blocks-bulk',
     title: 'GET Blocks (Bulk)',
     description: {
-      default: '<p>Returns details on the range of blocks between <code>:minHeight</code> and <code>:maxHeight</code>, inclusive, up to 10 blocks. If <code>:maxHeight</code> is not specified, it defaults to the current tip.</p><p>To return data for more than 10 blocks, consider becoming an <a href=\'https://mempool.space/enterprise\'>enterprise sponsor</a>.</p>'
+      default: '<p>Returns details on the range of blocks between <code>:minHeight</code> and <code>:maxHeight</code>, inclusive, up to 10 blocks. If <code>:maxHeight</code> is not specified, it defaults to the current tip.</p><p>For a longer history, page requests in small ranges and respect response caching.</p>'
     },
     urlString: '/v1/blocks-bulk/:minHeight[/:maxHeight]',
     showConditions: bitcoinNetworks,
@@ -12967,6 +12967,15 @@ export const faqData = [
     title: 'Why do I get an error for certain address lookups on my Mempool instance?',
   }
 ];
+
+// btc.tx.taxi exposes Bitcoin explorer data only. The upstream documentation
+// also contains Lightning and paid acceleration-service references that are not
+// part of this explorer's public interface.
+const taxiExcludedRestCategories = new Set(['lightning', 'accelerator-public', 'accelerator-private']);
+const taxiExcludedFaqCategories = new Set(['self-hosting']);
+
+export const taxiRestApiDocsData = restApiDocsData.filter((item) => !taxiExcludedRestCategories.has(item.category));
+export const taxiFaqData = faqData.filter((item) => !taxiExcludedFaqCategories.has(item.category));
 
 export const electrumApiDocsData = [
   {

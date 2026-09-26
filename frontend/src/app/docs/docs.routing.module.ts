@@ -15,10 +15,8 @@ if (browserWindowEnv.BASE_MODULE && browserWindowEnv.BASE_MODULE === 'liquid') {
       redirectTo: 'api/rest',
       pathMatch: 'full'
     },
-    {
-      path: 'api/:type',
-      component: DocsComponent
-    },
+    { path: 'api/rest', component: DocsComponent },
+    { path: 'api/websocket', component: DocsComponent },
     {
       path: 'api',
       redirectTo: 'api/rest',
@@ -37,10 +35,8 @@ if (browserWindowEnv.BASE_MODULE && browserWindowEnv.BASE_MODULE === 'liquid') {
       pathMatch: 'full',
       redirectTo: 'faq'
     },
-    {
-      path: 'api/:type',
-      component: DocsComponent
-    },
+    { path: 'api/rest', component: DocsComponent },
+    { path: 'api/websocket', component: DocsComponent },
     {
       path: 'faq',
       data: { networks: ['bitcoin'] },
