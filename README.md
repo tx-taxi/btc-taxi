@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="frontend/src/resources/branding/btc-favicon.svg" width="88" height="88" alt="btc.tx.taxi logo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="frontend/src/resources/branding/btc-dark-full.svg">
+    <img src="frontend/src/resources/branding/btc-light-full.svg" width="360" alt="btc.tx.taxi banner logo">
+  </picture>
 </p>
 
 <h1 align="center">Bitcoin Explorer · btc.tx.taxi</h1>
