@@ -99,7 +99,7 @@ export class PoolComponent implements OnInit {
           poolStats.pool.regexes = regexes.slice(0, -3);
 
           return Object.assign({
-            logo: `https://mempool.space/resources/mining-pools/` + poolStats.pool.slug + '.svg'
+            logo: `/resources/mining-pools/` + poolStats.pool.slug + '.svg'
           }, poolStats);
         }),
         catchError(() => {
