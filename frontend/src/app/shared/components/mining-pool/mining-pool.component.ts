@@ -44,7 +44,7 @@ export class MiningPoolComponent implements OnInit, OnDestroy {
   }
 
   get logoSrc(): string {
-    return `/resources/mining-pools/${this.slug}${this.useLightLogo ? '.light' : ''}.svg`;
+    return `https://mempool.space/resources/mining-pools/${this.slug}${this.useLightLogo ? '.light' : ''}.svg`;
   }
 
   get logoAlt(): string {
@@ -61,7 +61,7 @@ export class MiningPoolComponent implements OnInit, OnDestroy {
     // If light logo is missing, fall back to the standard logo and don't try to load the light logo again
     if (this.useLightLogo && target.src.endsWith(`${this.slug}.light.svg`)) {
       MiningPoolComponent.missingLightLogoSlugs.add(this.slug);
-      target.src = `/resources/mining-pools/${this.slug}.svg`;
+      target.src = `https://mempool.space/resources/mining-pools/${this.slug}.svg`;
       return;
     }
 
