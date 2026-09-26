@@ -1,31 +1,32 @@
 <div class="container-xl about-page">
-  <div class="intro">
-    <h1 class="visually-hidden">About btc.tx.taxi</h1>
-    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" class="mempool-logo">
-    <div class="version">
-      <span>btc.tx.taxi - Bitcoin block and mempool explorer</span>
-      <span class="version-sub">A tx.taxi explorer built from mempool/mempool</span>
-    </div>
-  </div>
-
-  <div class="about-text">
-    <h5>About btc.tx.taxi</h5>
+  <app-tx-taxi-docs-intro chainName="Bitcoin" chainHost="btc.tx.taxi" context="explorer"></app-tx-taxi-docs-intro>
+  <div class="about-layout">
+    <aside class="about-identity">
+      <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi" class="about-logo">
+      <h1>About btc.tx.taxi</h1>
+      <p>The Bitcoin explorer in the tx.taxi family.</p>
+      <nav class="about-links" aria-label="Project links">
+        <a routerLink="/docs">Bitcoin documentation</a>
+        <a href="https://github.com/tx-taxi/btc-taxi" target="_blank" rel="noopener noreferrer">Explorer source</a>
+        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact the maintainer</a>
+      </nav>
+    </aside>
+    <main class="about-text">
+      <h2>About btc.tx.taxi</h2>
     <p>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</p>
 
-    <h5>Bitcoin-native data</h5>
-    <p>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, mining, and Lightning concepts shown by the interface retain their Bitcoin meaning.</p>
+    <h2>Bitcoin-native data</h2>
+    <p>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</p>
 
-    <h5>Infrastructure</h5>
+    <h2>Infrastructure</h2>
     <p>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</p>
 
-    <h5>License</h5>
+    <h2>License</h2>
     <p>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</p>
-  </div>
-
-  <div class="contributors" id="links">
-    <h5>Project links</h5>
-    <p><a [routerLink]="['/docs']">btc.tx.taxi documentation</a></p>
-    <p><a href="/3rdpartylicenses.txt">Third-party licenses and attribution</a></p>
-    <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact the tx.taxi maintainer</a></p>
+      <div class="about-attribution">
+        <h2>Built on open source</h2>
+        <p>This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See the explorer source for its license and <a href="/3rdpartylicenses.txt">third-party attribution</a>.</p>
+      </div>
+    </main>
   </div>
 </div>
