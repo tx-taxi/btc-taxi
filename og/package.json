@@ -4,6 +4,6 @@
   "version": "1.0.0",
   "dependencies": {
     "parse5": "^6.0.1",
-    "sharp": "^0.34.4"
+    "sharp": "^0.35.4"
   }
 }
