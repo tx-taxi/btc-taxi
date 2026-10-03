@@ -506,10 +506,10 @@ export class SearchFormComponent implements OnInit {
       this.navigate('/block/', result.toString());
     } else if (result.alias) {
       const destination = this.explorerRegistry.destinationSearchUrl('bitcoin', 'lightning', result.public_key);
-      if (destination) window.location.assign(destination); else this.navigate('/lightning/node/', result.public_key);
+      if (destination) this.assignDestination(destination, { chainId: 'bitcoin', destinationId: 'lightning' }); else this.navigate('/lightning/node/', result.public_key);
     } else if (result.short_id) {
       const destination = this.explorerRegistry.destinationSearchUrl('bitcoin', 'lightning', String(result.id));
-      if (destination) window.location.assign(destination); else this.navigate('/lightning/channel/', result.id);
+      if (destination) this.assignDestination(destination, { chainId: 'bitcoin', destinationId: 'lightning' }); else this.navigate('/lightning/channel/', result.id);
     } else if (result.network) {
       if (result.isNetworkAvailable) {
         this.navigate('/address/', result.address, undefined, result.network);
@@ -574,7 +574,7 @@ export class SearchFormComponent implements OnInit {
   private searchSourceChain(searchText: string): void {
     if (/^(?:02|03)[a-fA-F0-9]{64}$/.test(searchText) || /^\d+x\d+x\d+$/.test(searchText) || /^\d{12,20}$/.test(searchText)) {
       const destination = this.explorerRegistry.destinationSearchUrl('bitcoin', 'lightning', searchText);
-      if (destination) { window.location.assign(destination); return; }
+      if (destination) { this.assignDestination(destination, { chainId: 'bitcoin', destinationId: 'lightning' }); return; }
     }
     this.isSearching = true;
 
@@ -620,12 +620,15 @@ export class SearchFormComponent implements OnInit {
     }
   }
 
-  private assignDestination(value: string): void {
+  private assignDestination(value: string, destinationHint?: Pick<SearchTarget, 'chainId' | 'destinationId'>): void {
     let lightning = false;
     try {
       const url = new URL(value);
-      lightning = this.explorers.some(explorer => explorer.chainId === 'bitcoin' && explorer.destinations?.some(destination =>
-        destination.destinationId === 'lightning' && new URL(destination.origin).origin === url.origin));
+      const registered = this.explorers.find(explorer => explorer.chainId === 'bitcoin')?.destinations?.find(destination => destination.destinationId === 'lightning');
+      const routerOrigin = new URL(this.explorerRegistry.hubUrl).origin;
+      const scopedForward = destinationHint?.chainId === 'bitcoin' && destinationHint.destinationId === 'lightning'
+        && url.origin === routerOrigin && url.pathname.startsWith('/bitcoin/') && url.searchParams.get('destination') === 'lightning';
+      lightning = Boolean(registered && !url.username && !url.password && (new URL(registered.origin).origin === url.origin || scopedForward));
     } catch { /* Only registry-owned destinations can animate into Lightning. */ }
     const transition = (window as Window & { txTaxiLightningNavigate?: (url: string) => Promise<void> }).txTaxiLightningNavigate;
     if (lightning && transition) { void transition(value); return; }
@@ -638,7 +641,7 @@ export class SearchFormComponent implements OnInit {
       this.searchTriggered.emit();
       this.assignDestination(target.kind === 'candidate' && target.confirmed && target.directUrl
         ? this.explorerRegistry.navigationUrl(target.directUrl)
-        : this.explorerRegistry.chainSearchUrl(target.chainId!, searchText, target.destinationId));
+        : this.explorerRegistry.chainSearchUrl(target.chainId!, searchText, target.destinationId), target);
       return;
     }
     if (target.kind === 'explorer' && (!target.destinationId || target.destinationDefault) && target.chainId === this.sourceChainId && (!target.origin || this.isSourceOrigin(target.origin))) {
@@ -649,12 +652,12 @@ export class SearchFormComponent implements OnInit {
     this.isSearching = true;
     this.searchTriggered.emit();
     if (target.kind === 'candidate' && target.confirmed && target.directUrl) {
-      this.assignDestination(this.explorerRegistry.navigationUrl(target.directUrl));
+      this.assignDestination(this.explorerRegistry.navigationUrl(target.directUrl), target);
       return;
     }
 
     if (target.chainId) {
-      window.location.assign(this.explorerRegistry.chainSearchUrl(target.chainId, searchText, target.destinationId));
+      this.assignDestination(this.explorerRegistry.chainSearchUrl(target.chainId, searchText, target.destinationId), target);
       return;
     }
 
