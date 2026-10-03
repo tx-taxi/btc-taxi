@@ -7,7 +7,8 @@ RUN apt-get update \
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
 COPY frontend ./
-RUN SKIP_SYNC=1 npm run build
+RUN node build-indexable-pages.cjs /app/crawl-content && SKIP_SYNC=1 npm run build \
+    && mkdir -p dist/mempool/browser/resources && cp -r /app/crawl-content dist/mempool/browser/resources/seo
 
 FROM node:24-bookworm-slim
 
@@ -19,7 +20,7 @@ RUN apt-get update \
 WORKDIR /app
 COPY og/package.json og/package-lock.json ./og/
 RUN cd og && npm ci --omit=dev
-COPY og/server.cjs ./og/server.cjs
+COPY og/server.cjs og/static-pages.cjs ./og/
 
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=frontend-builder /app/frontend/dist/mempool/browser /usr/share/nginx/html

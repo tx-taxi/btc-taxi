@@ -22,7 +22,7 @@ export class OpenGraphService {
     private router: Router,
     private activatedRoute: ActivatedRoute,
   ) {
-    this.defaultImageUrl = 'https://tx.taxi/assets/og/explorers/bitcoin.png?v=20260925-brand';
+    this.defaultImageUrl = 'https://tx.taxi/assets/screenshots/btc-transaction-eb316e19774e.jpg';
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
       map(() => this.activatedRoute),
@@ -52,13 +52,14 @@ export class OpenGraphService {
   }
 
   clearOgImage() {
-    const entity = this.router.url.split('?')[0].match(/^\/(tx|block|address)\/([^/]+)$/);
-    const image = entity ? `https://btc.tx.taxi/og/${entity[1]}/${entity[2]}.png?v=20260925-brand` : this.defaultImageUrl;
+    const image = this.defaultImageUrl;
     this.metaService.updateTag({ property: 'og:image', content: image });
     this.metaService.updateTag({ name: 'twitter:image', content: image });
-    this.metaService.updateTag({ property: 'og:image:type', content: 'image/png' });
-    this.metaService.updateTag({ property: 'og:image:width', content: '1200' });
-    this.metaService.updateTag({ property: 'og:image:height', content: '630' });
+    this.metaService.updateTag({ property: 'og:image:alt', content: 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.' });
+    this.metaService.updateTag({ name: 'twitter:image:alt', content: 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.' });
+    this.metaService.updateTag({ property: 'og:image:type', content: 'image/jpeg' });
+    this.metaService.updateTag({ property: 'og:image:width', content: '1440' });
+    this.metaService.updateTag({ property: 'og:image:height', content: '1960' });
   }
 
   setManualOgImage(_imageFilename) {

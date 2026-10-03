@@ -1,3 +1,4 @@
+import { nativeSeoPages } from './native-seo-data';
 import { Injectable } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
@@ -23,8 +24,6 @@ export class SeoService {
     private activatedRoute: ActivatedRoute,
   ) {
     // save original meta tags
-    this.baseDescription = metaService.getTag('name=\'description\'')?.content || this.baseDescription;
-    this.baseTitle = titleService.getTitle()?.split(' - ')?.[0] || this.baseTitle;
     try {
       const canonicalUrl = new URL(this.canonicalLink?.href || '');
       this.baseDomain = canonicalUrl?.host;
@@ -49,7 +48,7 @@ export class SeoService {
   }
 
   setTitle(newTitle: string): void {
-    const fullTitle = newTitle + ' - ' + this.getTitle();
+    const fullTitle = this.currentPage()?.title || newTitle + ' - ' + this.getTitle();
     this.titleService.setTitle(fullTitle);
     this.metaService.updateTag({ property: 'og:title', content: fullTitle});
     this.metaService.updateTag({ name: 'twitter:title', content: fullTitle});
@@ -57,9 +56,10 @@ export class SeoService {
   }
 
   resetTitle(): void {
-    this.titleService.setTitle(this.getTitle());
-    this.metaService.updateTag({ property: 'og:title', content: this.getTitle()});
-    this.metaService.updateTag({ name: 'twitter:title', content: this.getTitle()});
+    const title = this.currentPage()?.title || this.getTitle();
+    this.titleService.setTitle(title);
+    this.metaService.updateTag({ property: 'og:title', content: title});
+    this.metaService.updateTag({ name: 'twitter:title', content: title});
     this.metaService.updateTag({ property: 'og:meta:ready', content: 'ready'});
   }
 
@@ -73,21 +73,47 @@ export class SeoService {
   }
 
   setDescription(newDescription: string): void {
+    newDescription = this.currentPage()?.description || newDescription;
     this.metaService.updateTag({ name: 'description', content: newDescription});
     this.metaService.updateTag({ name: 'twitter:description', content: newDescription});
     this.metaService.updateTag({ property: 'og:description', content: newDescription});
   }
 
   resetDescription(): void {
-    this.metaService.updateTag({ name: 'description', content: this.getDescription()});
-    this.metaService.updateTag({ name: 'twitter:description', content: this.getDescription()});
-    this.metaService.updateTag({ property: 'og:description', content: this.getDescription()});
+    this.setDescription(this.getDescription());
   }
 
   updateCanonical(path) {
     const canonicalUrl = 'https://' + this.baseDomain + path;
     this.canonicalLink.setAttribute('href', canonicalUrl);
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
+    document.querySelectorAll('script[type="application/ld+json"], link[rel="alternate"][type="text/markdown"]').forEach(node => node.remove());
+    const page = this.currentPage(path);
+    if (page) {
+      this.titleService.setTitle(page.title);
+      this.metaService.updateTag({ property: 'og:title', content: page.title });
+      this.metaService.updateTag({ name: 'twitter:title', content: page.title });
+      this.setDescription(page.description);
+      const schema = document.createElement('script');
+      schema.type = 'application/ld+json';
+      schema.textContent = JSON.stringify(page.schema);
+      document.head.appendChild(schema);
+      const alternate = document.createElement('link');
+      alternate.rel = 'alternate';
+      alternate.type = 'text/markdown';
+      alternate.href = 'https://' + this.baseDomain + (path === '/' ? '/index.md' : path + '.md');
+      document.head.appendChild(alternate);
+    }
+  }
+
+  private currentPage(path = this.router.url.split('?')[0].split('#')[0]) {
+    const page = nativeSeoPages[path];
+    if (page) return page;
+    const match = path.match(/^\/blocks\/([1-9]\d*)$/);
+    if (!match) return undefined;
+    const first = nativeSeoPages['/blocks/1'];
+    const name = `Bitcoin Blocks — Page ${match[1]}`;
+    return { ...first, title: `${name} | btc.tx.taxi`, schema: { ...first.schema, name, url: 'https://' + this.baseDomain + path } };
   }
 
   getTitle(): string {
