@@ -41,7 +41,7 @@ const registry = [
   ['/mempool-block/0', 'Projected Bitcoin Mempool Block', 'Inspect the first projected Bitcoin mempool block and its fee range. This is an estimate, not a confirmed block.', 'components/mempool-block/mempool-block.component.html'],
   ['/status', 'Bitcoin Network Status', 'Inspect the public Bitcoin network status view supplied by the configured explorer backend.', 'components/status-view/status-view.component.html'],
 ];
-const aliases = { '/docs': '/docs/faq', '/docs/api': '/docs/api/rest', '/api': '/docs/api/rest', '/graphs': '/graphs/mempool', '/blocks': '/blocks/1', '/mining/blocks': '/blocks/1', '/pushtx': '/tx/push', '/tx': '/' };
+const aliases = { '/docs': '/docs/faq', '/docs/api': '/docs/api/rest', '/api': '/docs/api/rest', '/graphs': '/graphs/mempool', '/blocks': '/blocks/1', '/mining/blocks': '/blocks/1', '/pushtx': '/tx/push', '/tx': '/', '/index.html': '/', '/api/faq': '/docs/faq', '/api/api': '/docs/api/rest', '/api/api/rest': '/docs/api/rest', '/api/api/websocket': '/docs/api/websocket' };
 const excluded = [
   { route: '/lightning/*', reason: 'LIGHTNING=false; no native Lightning service is enabled.' },
   { route: '/testnet/*,/testnet4/*,/signet/*,/regtest/*,/liquid/*', reason: 'Corresponding production network flags are disabled.' },
