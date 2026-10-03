@@ -11,7 +11,7 @@ RUN GIT_COMMIT_HASH="${SOURCE_COMMIT:-release}" npm run build:lightning
 
 FROM node:24-bookworm-slim
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends fonts-dejavu-core \
+    && apt-get install -y --no-install-recommends curl fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app/lightning
 COPY lightning/package.json lightning/package-lock.json ./
