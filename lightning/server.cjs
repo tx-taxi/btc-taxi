@@ -78,7 +78,7 @@ function createApp(options = {}) {
   }
   let cards;
   const getCard = options.getCard || (async pathname => {
-    if (!cards) cards = createCards(proxy, { logoPath: options.logoPath || path.join(staticDir, 'resources/branding/btc-dark-navbar.svg') });
+    if (!cards) cards = createCards(proxy, { logoPath: options.logoPath || path.join(staticDir, 'resources/branding/lightning-dark-navbar.svg') });
     return cards(pathname);
   });
   const startedAt = Date.now();
