@@ -1,4 +1,4 @@
-FROM node:24-bookworm-slim AS frontend-builder
+FROM node:26-bookworm-slim AS frontend-builder
 
 WORKDIR /app/frontend
 RUN apt-get update \
@@ -10,7 +10,7 @@ COPY frontend ./
 RUN node build-indexable-pages.cjs /app/crawl-content && SKIP_SYNC=1 npm run build \
     && mkdir -p dist/mempool/browser/resources && cp -r /app/crawl-content dist/mempool/browser/resources/seo
 
-FROM node:24-bookworm-slim
+FROM node:26-bookworm-slim
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends nginx fonts-dejavu-core curl \
