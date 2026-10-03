@@ -5,7 +5,9 @@ WORKDIR /app/frontend
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci --ignore-scripts
 COPY frontend ./
-RUN npm run build:lightning
+COPY lightning/page-metadata.json lightning/social-image.json /app/lightning/
+ARG SOURCE_COMMIT
+RUN GIT_COMMIT_HASH="${SOURCE_COMMIT:-release}" npm run build:lightning
 
 FROM node:24-bookworm-slim
 RUN apt-get update \

@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Router, NavigationStart } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { ThemeService } from '@app/services/theme.service';
+import { SeoService } from '@app/services/seo.service';
+import { OpenGraphService } from '@app/services/opengraph.service';
 import { Subscription, timer, of } from 'rxjs';
 import { switchMap, catchError, timeout } from 'rxjs/operators';
 import { LightningStatusService } from './lightning-status.service';
@@ -12,7 +14,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   readonly nav = [ {path:'/',icon:'nav-bolt',label:'Lightning dashboard',exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:'Node rankings',exact:false}, {path:'/graphs',icon:'nav-chart-area',label:'Lightning graphs',exact:false}, {path:'/docs',icon:'nav-book',label:'Documentation',exact:false}, {path:'/about',icon:'nav-info-circle',label:'About Lightning',exact:false} ];
   private subscriptions = new Subscription();
   private linksObserver?: MutationObserver;
-  constructor(public router:Router,private http:HttpClient,private state:StateService,private theme:ThemeService,private status:LightningStatusService) {}
+  constructor(public router:Router,private http:HttpClient,private state:StateService,private theme:ThemeService,private status:LightningStatusService,private seo:SeoService,private opengraph:OpenGraphService) {}
   ngOnInit(): void {
     this.subscriptions.add(this.status.start());
     this.subscriptions.add(this.router.events.subscribe(event => {if(event instanceof NavigationStart)this.status.clearRequests();}));
