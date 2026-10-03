@@ -21,7 +21,7 @@
       4582
     ],
     "startCommands": [
-      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=c144371a7484ce28ab55319b4ddeace32d534bfc npm run build:lightning --prefix frontend",
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=9893523ca7a0a9951b013daa821f82b8f22ecab5 npm run build:lightning --prefix frontend",
       "node lightning/server.cjs",
       "cd /home/lukee/dev/tx-lightning-router && PORT=4582 HOST=127.0.0.1 TX_TAXI_LIGHTNING_REVIEW=1 pnpm dev"
     ],
@@ -29,12 +29,12 @@
       "Ctrl+C in each foreground terminal; SIGTERM only to task-owned process IDs recorded in review/lightning/running-processes.json"
     ],
     "incrementalCommands": [
-      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=c144371a7484ce28ab55319b4ddeace32d534bfc npm run serve:lightning --prefix frontend"
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=9893523ca7a0a9951b013daa821f82b8f22ecab5 npm run serve:lightning --prefix frontend"
     ],
-    "frontendBuild": "cffe1c0f2f059c3d",
+    "frontendBuild": "350e82288f804021",
     "processEvidence": "review/lightning/running-processes.json",
-    "sourceCommit": "c144371a7484ce28ab55319b4ddeace32d534bfc",
-    "versionEvidence": "lightning/review/theme-change/final-local-check.json"
+    "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+    "versionEvidence": "lightning/review/purple-wordmark/final-local-check.json"
   },
   "productionOrigin": "https://lightning.btc.tx.taxi",
   "productionRequested": true,
@@ -132,6 +132,12 @@
       "status": "passed",
       "sourceCommit": "c144371a7484ce28ab55319b4ddeace32d534bfc",
       "evidence": "lightning/review/theme-change/theme-review-summary.json; review/lightning/production-purple-palette-summary.json; review/lightning/production-purple-asset-review.json"
+    },
+    {
+      "item": "Purple-only Lightning taxi wordmark, exact approved geometry, versioned SVG/touch/manifest/XML and real social screenshot",
+      "status": "passed",
+      "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+      "evidence": "lightning/review/purple-wordmark/reviewer-production.json; lightning/review/purple-wordmark/reviewer-local.json"
     }
   ],
   "kitCommit": "2ffd3bb2c80da32092acb6085accc2e6ae607272",
@@ -310,43 +316,29 @@
       "detail": "Inherited Angular/ECharts browser advisories remain recorded separately from build/watch dependencies. The independent Node gateway lock has no reported advisories; no broad dependency upgrade or full exploitability assessment was performed in this port."
     }
   ],
-  "verifiedAt": "2026-10-03T21:36:11.172869+00:00",
+  "verifiedAt": "2026-10-03T21:48:13.075550+00:00",
   "production": {
     "url": "https://lightning.btc.tx.taxi",
-    "sourceCommit": "c144371a7484ce28ab55319b4ddeace32d534bfc",
+    "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
     "applicationUuid": "arhvwdlmauvkt0irck4wvwsa",
-    "deploymentUuid": "y127mgi6w5v0amwrruslnpgs",
-    "deployedAt": "2026-10-03T21:23:28.162181886Z",
-    "verifiedAt": "2026-10-03T21:36:11.172869+00:00",
+    "deploymentUuid": "vrzsxhmyq83oqt5xijt3gev9",
+    "deployedAt": "2026-10-03T21:44:54.849236955Z",
+    "verifiedAt": "2026-10-03T21:48:13.075550+00:00",
     "status": "verified",
-    "runtimeImage": "sha256:c8f492daf944db418cfd84b2a1d47bcfaf5cc7199440170eda2aeaf2d2f9b59e",
-    "runtimeEvidence": "lightning/review/theme-change/production-purple-runtime-verification.json",
-    "metadataAndVersionEvidence": "review/lightning/production-purple-palette-summary.json",
+    "runtimeImage": "sha256:565273ed583af7dfd4c5ff43e2fd118b4aed5f88cb3f0f1f7cc8bbb43be09ceb",
+    "runtimeEvidence": "lightning/review/purple-wordmark/production-purple-runtime-verification.json",
+    "metadataAndVersionEvidence": "lightning/review/purple-wordmark/reviewer-production.json",
     "visualEvidence": {
-      "sourceCommit": "c144371a7484ce28ab55319b4ddeace32d534bfc",
-      "evidence": "review/lightning/production-purple-palette-summary.json",
-      "screenshots": [
-        "review/lightning/production-purple-home-default-1440.png",
-        "review/lightning/production-purple-navbar-default-1440.png",
-        "review/lightning/production-purple-channel-default-1440.png",
-        "review/lightning/production-purple-home-default-390.png",
-        "review/lightning/production-purple-navbar-default-390.png",
-        "review/lightning/production-purple-channel-default-390.png",
-        "review/lightning/production-purple-home-original-1440.png",
-        "review/lightning/production-purple-navbar-original-1440.png",
-        "review/lightning/production-purple-channel-original-1440.png",
-        "review/lightning/production-purple-home-original-390.png",
-        "review/lightning/production-purple-navbar-original-390.png",
-        "review/lightning/production-purple-channel-original-390.png"
-      ],
-      "unchangedGeometryEvidence": "lightning/review/theme-change/theme-review-summary.json"
+      "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+      "evidence": "lightning/review/purple-wordmark/reviewer-production.json",
+      "localEvidence": "lightning/review/purple-wordmark/reviewer-local.json"
     },
     "statusMonitor": {
       "monitorId": 66,
       "componentId": 57,
       "pageId": 2,
       "active": true,
-      "evidence": "lightning/review/theme-change/production-purple-runtime-verification.json",
+      "evidence": "lightning/review/purple-wordmark/production-purple-runtime-verification.json",
       "browserEvidence": "review/lightning/production-status-review.json"
     },
     "integrationRollout": {
@@ -359,7 +351,14 @@
       "routingEvidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production/routing.json",
       "xmrPackagingFix": "ced1eb8ffb4d4bb1a889b20b1eb456693daabf54"
     },
-    "startedAt": "2026-10-03T21:23:28.162181886Z"
+    "startedAt": "2026-10-03T21:44:54.849236955Z",
+    "wordmarkCorrection": {
+      "status": "verified",
+      "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+      "assetVersion": "cd42f6e25796",
+      "scope": "Only Lightning redeployed; existing Bitcoin and eight-native/router menu rollout retained",
+      "assetsVerified": 13
+    }
   },
   "releaseHistory": [
     {
@@ -419,6 +418,53 @@
         "verifiedContainerImage": "sha256:444ff4ac2a61dd91220944210dd60e421bbad4ef19fd8386e81734afc2dcfc1f",
         "containerEvidence": "lightning/review/container-1046-release-verification.json"
       }
+    },
+    {
+      "sourceCommit": "c144371a7484ce28ab55319b4ddeace32d534bfc",
+      "verifiedAt": "2026-10-03T21:36:11.172869+00:00",
+      "production": {
+        "url": "https://lightning.btc.tx.taxi",
+        "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+        "applicationUuid": "arhvwdlmauvkt0irck4wvwsa",
+        "deploymentUuid": "vrzsxhmyq83oqt5xijt3gev9",
+        "deployedAt": "2026-10-03T21:44:54.849236955Z",
+        "verifiedAt": "2026-10-03T21:48:13.075550+00:00",
+        "status": "verified",
+        "runtimeImage": "sha256:565273ed583af7dfd4c5ff43e2fd118b4aed5f88cb3f0f1f7cc8bbb43be09ceb",
+        "runtimeEvidence": "lightning/review/purple-wordmark/production-purple-runtime-verification.json",
+        "metadataAndVersionEvidence": "lightning/review/purple-wordmark/reviewer-production.json",
+        "visualEvidence": {
+          "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+          "evidence": "lightning/review/purple-wordmark/reviewer-production.json",
+          "localEvidence": "lightning/review/purple-wordmark/reviewer-local.json"
+        },
+        "statusMonitor": {
+          "monitorId": 66,
+          "componentId": 57,
+          "pageId": 2,
+          "active": true,
+          "evidence": "lightning/review/purple-wordmark/production-purple-runtime-verification.json",
+          "browserEvidence": "review/lightning/production-status-review.json"
+        },
+        "integrationRollout": {
+          "scope": "Eight native explorer menu ports and router follow-up",
+          "status": "verified",
+          "evidence": "lightning/review/theme-change/production-release.json",
+          "verifiedAt": "2026-10-03T21:36:11.172869+00:00",
+          "menuEvidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production-palette/menus.json",
+          "menuCases": 18,
+          "routingEvidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production/routing.json",
+          "xmrPackagingFix": "ced1eb8ffb4d4bb1a889b20b1eb456693daabf54"
+        },
+        "startedAt": "2026-10-03T21:44:54.849236955Z",
+        "wordmarkCorrection": {
+          "status": "verified",
+          "sourceCommit": "9893523ca7a0a9951b013daa821f82b8f22ecab5",
+          "assetVersion": "cd42f6e25796",
+          "scope": "Only Lightning redeployed; existing Bitcoin and eight-native/router menu rollout retained",
+          "assetsVerified": 13
+        }
+      }
     }
   ],
   "theme": {
@@ -429,8 +475,8 @@
       "surfaces": "Inherited charcoal"
     },
     "original": "Preserved upstream Mempool palette and native chart colors",
-    "branding": "Approved taxi geometry with scoped purple/orange accents; dedicated touch assets",
-    "socialImage": "lightning-home-214aa5827305.jpg",
-    "provenanceEvidence": "lightning/review/theme-change/branding-provenance.json"
+    "branding": "Approved taxi geometry and neutral body/lettering, with one purple accent throughout",
+    "socialImage": "lightning-home-9339b0049f6b.jpg",
+    "provenanceEvidence": "lightning/review/purple-wordmark/branding.json"
   }
 }
