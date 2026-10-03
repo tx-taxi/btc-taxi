@@ -6,7 +6,7 @@ const root = __dirname;
 const original = fs.readFileSync(path.join(root, 'src/resources/mempool-original.css'),'utf8') + '\n:root { --link-color: var(--info); --link-hover-color: #00a6bf; --nav-bg: var(--bg); --navbar-bg: var(--bg); --tooltip-bg: #1b2031; }\n';
 fs.writeFileSync(path.join(root,'src/resources/lightning-original.css'),original);
 const hash = crypto.createHash('sha256').update(original).digest('hex').slice(0, 12);
-const faviconHash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'src/resources/branding/btc-favicon.svg'))).digest('hex').slice(0,12);
+const faviconHash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'src/resources/branding/lightning-favicon.svg'))).digest('hex').slice(0,12);
 const navigationHash = crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'src/resources/lightning-navigation.js'))).digest('hex').slice(0,16);
 let socialImage = { url:'https://lightning.btc.tx.taxi/og/lightning.png', type:'image/png', width:1200, height:630, alt:'Lightning Network explorer on tx.taxi.' };
 for (const filename of [path.join(root,'../lightning/social-image.json'),path.join(root,'src/resources/lightning-social-image.json')]) {
@@ -33,4 +33,4 @@ config.LIGHTNING_PAGE_METADATA = pageMetadata;
 const script = 'window.__env=Object.assign(window.__env||{},' + JSON.stringify(config) + ');';
 fs.writeFileSync(path.join(root,'src/resources/lightning-config.js'), script);
 const template = fs.readFileSync(path.join(root,'src/index.lightning.template.html'),'utf8');
-fs.writeFileSync(path.join(root,'src/index.lightning.html'), template.replace('<!--LIGHTNING_CONFIG-->', '<script>' + script + '</script>').replaceAll('<!--BTC_FAVICON_VERSION-->',faviconHash).replaceAll('<!--LIGHTNING_NAVIGATION_VERSION-->',navigationHash).replace('<!--LIGHTNING_SOCIAL_IMAGE_META-->',socialImageMeta));
+fs.writeFileSync(path.join(root,'src/index.lightning.html'), template.replace('<!--LIGHTNING_CONFIG-->', '<script>' + script + '</script>').replaceAll('<!--LIGHTNING_FAVICON_VERSION-->',faviconHash).replaceAll('<!--LIGHTNING_NAVIGATION_VERSION-->',navigationHash).replace('<!--LIGHTNING_SOCIAL_IMAGE_META-->',socialImageMeta));

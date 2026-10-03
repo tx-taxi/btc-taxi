@@ -42,7 +42,7 @@ export class SearchFormComponent implements OnInit {
   get hubUrl():string {return this.explorerRegistry.hubUrl;}
   readonly defaultChainIconUrl = '/resources/lightning-bolt.svg';
   readonly defaultChainIconAlt = 'Lightning explorer';
-  readonly defaultChainAccent = '#f7931a';
+  readonly defaultChainAccent = '#7b1af7';
   private readonly sourceSearchTarget: SearchTarget = {
     kind: 'explorer',
     chainId: this.sourceChainId,
@@ -67,6 +67,13 @@ export class SearchFormComponent implements OnInit {
   thirdPartyExplorers$: typeof this.explorerRegistry.thirdPartyExplorers$;
   selectedChainId$ = new BehaviorSubject<string | undefined>(this.sourceChainId);
   activeTarget$ = new BehaviorSubject<SearchTarget>(this.sourceSearchTarget);
+  searchButtonForeground(accent: string = this.defaultChainAccent): string {
+    const color = /^#[0-9a-f]{6}$/i.test(accent) ? accent : this.defaultChainAccent;
+    const channels = [1, 3, 5].map(offset => parseInt(color.slice(offset, offset + 2), 16) / 255)
+      .map(channel => channel <= 0.04045 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4));
+    const luminance = channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+    return luminance > 0.179 ? '#11131f' : '#fff';
+  }
   searchOptions$ = new BehaviorSubject<TxTaxiSearchOptions | undefined>(undefined);
   searchForm: UntypedFormGroup;
   dropdownHidden = false;

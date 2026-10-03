@@ -19,7 +19,7 @@
 }
 
 .search-form-row {
-  --search-chain-accent: #627eea;
+  --search-chain-accent: var(--primary);
 }
 
 .search-chain-selector {
@@ -280,16 +280,16 @@ form {
 
 .search-submit {
   width: 62px;
-  --bs-btn-color: #11131f;
+  --bs-btn-color: var(--search-chain-foreground, var(--fg));
   --bs-btn-bg: var(--search-chain-accent);
   --bs-btn-border-color: var(--search-chain-accent);
-  --bs-btn-hover-color: #11131f;
+  --bs-btn-hover-color: var(--search-chain-foreground, var(--fg));
   --bs-btn-hover-bg: color-mix(in srgb, var(--search-chain-accent) 84%, black);
   --bs-btn-hover-border-color: color-mix(in srgb, var(--search-chain-accent) 74%, black);
-  --bs-btn-active-color: #11131f;
+  --bs-btn-active-color: var(--search-chain-foreground, var(--fg));
   --bs-btn-active-bg: color-mix(in srgb, var(--search-chain-accent) 74%, black);
   --bs-btn-active-border-color: color-mix(in srgb, var(--search-chain-accent) 64%, black);
-  --bs-btn-disabled-color: #11131f;
+  --bs-btn-disabled-color: var(--search-chain-foreground, var(--fg));
   --bs-btn-disabled-bg: color-mix(in srgb, var(--search-chain-accent) 48%, var(--secondary));
   --bs-btn-disabled-border-color: var(--bs-btn-disabled-bg);
   color: var(--bs-btn-color);

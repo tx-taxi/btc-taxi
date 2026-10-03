@@ -1,3 +1,42 @@
+:root {
+  --primary: #7b1af7;
+  --title-fg: #c39eff;
+  --tertiary: #57228e;
+  --info: #c39eff;
+  --link-color: #c39eff;
+  --link-hover-color: #dac3ff;
+  --mainnet-alt: #5513ad;
+  --search-button: #57228e;
+  --search-button-border: #6d32b3;
+  --search-button-focus: #6b2cb1;
+  --search-button-shadow: #7b1af780;
+  --lightning-onchain-color: #f7931a;
+  --lightning-onchain-hover: #ffb45a;
+}
+
+// Bootstrap's compiled Bitcoin colors also need the active Lightning theme.
+app-lightning-shell {
+  .btn-outline-info {
+    --bs-btn-color: var(--info);
+    --bs-btn-border-color: var(--info);
+    --bs-btn-hover-color: var(--bg);
+    --bs-btn-hover-bg: var(--info);
+    --bs-btn-hover-border-color: var(--info);
+    --bs-btn-active-color: var(--bg);
+    --bs-btn-active-bg: var(--info);
+    --bs-btn-active-border-color: var(--info);
+    --bs-btn-disabled-color: var(--info);
+    --bs-btn-disabled-border-color: var(--info);
+  }
+
+  .text-info { color: var(--info) !important; }
+  .btn-link { --bs-btn-color: var(--link-color); --bs-btn-hover-color: var(--link-hover-color); }
+  .pagination { --bs-pagination-color: var(--link-color); --bs-pagination-hover-color: var(--link-hover-color); --bs-pagination-active-bg: var(--primary); --bs-pagination-active-border-color: var(--primary); }
+
+  a[href^="https://btc.tx.taxi/"] { color: var(--lightning-onchain-color); }
+  a[href^="https://btc.tx.taxi/"]:hover { color: var(--lightning-onchain-hover); }
+}
+
 app-lightning-shell app-nodes-channels-map[style="widget"] { display:block; }
 app-lightning-shell .graph-page { max-width:1140px; margin:20px auto 40px; padding:0 15px; }
 app-lightning-shell app-lightning-wrapper > app-nodes-map,

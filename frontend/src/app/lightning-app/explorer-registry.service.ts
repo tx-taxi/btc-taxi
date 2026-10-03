@@ -16,6 +16,7 @@ interface RouterExplorerDestination {
   name: string;
   origin: string;
   default?: boolean;
+  accentColor?: string;
   icon?: RouterBrandAsset;
   searchPlaceholder?: string;
   reviewOrigin?: string;
@@ -211,6 +212,7 @@ export class TxTaxiExplorerRegistryService {
           });
           return {
             ...candidate,
+            ...(destination?.accentColor ? { accentColor: destination.accentColor } : {}),
             ...(destination ? { destinationId: destination.id, destinationName: destination.name, destinationDefault: Boolean(destination.default), host: new URL(destination.origin).host } : {}),
             ...(candidate.directUrl ? { directUrl: this.navigationUrl(candidate.directUrl) } : {}),
             iconUrl: this.absoluteRouterUrl(destination?.icon?.url || candidate.iconUrl),
@@ -274,6 +276,7 @@ export class TxTaxiExplorerRegistryService {
           origin: this.navigationUrl(destination.origin),
           host: new URL(destination.origin).host,
           default: destination.default,
+          accentColor: destination.accentColor || explorer.accentColor,
           searchPlaceholder: destination.searchPlaceholder || `Search ${chain.name} · ${destination.name}`,
           iconUrl: destination.icon ? this.absoluteRouterUrl(destination.icon.url) : explorer.iconUrl,
           iconAlt: destination.icon?.alt || explorer.iconAlt,
