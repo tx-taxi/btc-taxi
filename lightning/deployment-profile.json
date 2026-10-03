@@ -1,0 +1,12 @@
+{
+  "status": "local-review-only; not deployed",
+  "hostname": "lightning.btc.tx.taxi",
+  "dockerfile": "Dockerfile.lightning",
+  "port": 8080,
+  "healthcheck": "/healthz",
+  "dependencyCheck": "/api/provider-health",
+  "durableVolume": { "name": "lightning-taxi-cache", "destination": "/app/data" },
+  "environment": { "LIGHTNING_HOST": "0.0.0.0", "LIGHTNING_PORT": "8080", "LIGHTNING_DATA_DIR": "/app/data" },
+  "dns": "Prepare separately after local review. Follow the existing nested-host preference: DNS-only with valid origin HTTPS; no paid Cloudflare certificate add-on is assumed.",
+  "productionChanges": "No DNS, Coolify, provider purchases, node deployment, or auto-deploy branch changes were made."
+}

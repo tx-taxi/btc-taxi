@@ -39,6 +39,12 @@ For a local frontend development server, run `npm run start` in `frontend`. Its 
 
 For backend configuration and startup, begin with [`backend/README.md`](backend/README.md) and [`backend/mempool-config.sample.json`](backend/mempool-config.sample.json). Docker and production reference material is available in [`docker/README.md`](docker/README.md) and [`production/README.md`](production/README.md).
 
+## Lightning application
+
+The independent Lightning application reuses Mempool's Lightning dashboard, maps, node/channel pages, rankings and historical charts. It has a separate Angular target, public-data runtime and Docker image for `lightning.btc.tx.taxi`. Bitcoin's default application and deployment remain separate.
+
+Build with `npm run build:lightning --prefix frontend`, then run `node lightning/server.cjs`. Local review uses port 4581; incremental development uses `npm run serve:lightning --prefix frontend` on port 4580. See [`lightning/README.md`](lightning/README.md) for data, caching and deployment configuration, and [`review/lightning/README.md`](review/lightning/README.md) for the local integration review. This candidate has not been deployed.
+
 ## Attribution and license
 
 btc.tx.taxi is based on [The Mempool Open Source Project](https://github.com/mempool/mempool). The inherited root README is retained in [`UPSTREAM_README.md`](UPSTREAM_README.md) for provenance.

@@ -1,0 +1,7 @@
+app-lightning-shell app-nodes-channels-map[style="widget"] { display:block; }
+app-lightning-shell .graph-page { max-width:1140px; margin:20px auto 40px; padding:0 15px; }
+app-lightning-shell app-lightning-wrapper > app-nodes-map,
+app-lightning-shell app-lightning-wrapper > app-lightning-statistics-chart,
+app-lightning-shell app-lightning-wrapper > app-nodes-networks-chart,
+app-lightning-shell app-lightning-wrapper > app-nodes-per-isp-chart,
+app-lightning-shell app-lightning-wrapper > app-nodes-per-country-chart { display:block; max-width:1140px; margin:24px auto 40px; padding:0 15px; }

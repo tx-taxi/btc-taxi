@@ -1,0 +1,22 @@
+<header class="sticky-header">
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a class="navbar-brand" routerLink="/" (click)="brandClick($event)" aria-label="Lightning dashboard" title="Lightning dashboard">
+      <img src="/resources/branding/btc-dark-navbar.svg" alt="tx.taxi" class="btc-brand-navbar">
+    </a>
+    <div class="navbar-collapse">
+      <ul class="navbar-nav">
+        <li *ngFor="let item of nav" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:item.exact}">
+          <a class="nav-link" [routerLink]="item.path" [attr.aria-label]="item.label" [attr.title]="item.label"><div class="svg-wrapper"><app-svg-images [name]="item.icon" width="21.59" height="100%"></app-svg-images></div></a>
+        </li>
+      </ul>
+      <div class="search-form-container"><app-search-form></app-search-form></div>
+    </div>
+  </nav>
+</header>
+<main class="lightning-content">
+  <div *ngIf="health$ | async as health" class="lightning-data-status">
+    <span *ngIf="health.state !== 'online'" class="badge bg-warning" role="status">{{health.state === 'connecting' ? 'Connecting…' : health.state === 'offline' ? 'Reconnecting…' : 'Cached data'}}<ng-container *ngIf="health.state === 'stale' && health.sourceUpdatedAt"> · {{health.sourceUpdatedAt | date:'MMM d, y':'UTC'}}</ng-container></span>
+  </div>
+  <router-outlet></router-outlet>
+</main>
+<app-global-footer></app-global-footer>

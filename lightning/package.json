@@ -1,0 +1,10 @@
+{
+  "name": "tx-taxi-lightning-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Separate cached Lightning explorer runtime; no Bitcoin or Lightning node required",
+  "license": "AGPL-3.0-only",
+  "engines": { "node": ">=24" },
+  "scripts": { "start": "node server.cjs", "test": "node --test proxy.test.cjs" },
+  "dependencies": { "sharp": "0.35.5" }
+}

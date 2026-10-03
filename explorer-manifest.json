@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "kitVersion": "0.1.1",
+  "chain": "bitcoin",
+  "destination": "lightning",
+  "repository": "tx-taxi/btc-taxi",
+  "ancestor": {
+    "repository": "tx-taxi/btc-taxi",
+    "commit": "193709e056425a00f9520880f9ffb8f2a0917739"
+  },
+  "visualReference": {
+    "repository": "mempool/mempool",
+    "area": "Lightning pages retained in the BTC fork"
+  },
+  "status": "locally-verified",
+  "local": {
+    "url": "http://127.0.0.1:4581",
+    "ports": [
+      4580,
+      4581,
+      4582
+    ],
+    "startCommands": [
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 npm run build:lightning --prefix frontend",
+      "node lightning/server.cjs",
+      "cd /home/lukee/dev/tx-lightning-router && PORT=4582 HOST=127.0.0.1 TX_TAXI_LIGHTNING_REVIEW=1 pnpm dev"
+    ],
+    "stopCommands": [
+      "Ctrl+C in each foreground terminal; SIGTERM only to task-owned process IDs recorded in review/lightning/running-processes.json"
+    ],
+    "incrementalCommands": [
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 npm run serve:lightning --prefix frontend"
+    ],
+    "frontendBuild": "bfa4b6d1558e5136",
+    "verifiedContainerImage": "sha256:a836f2f0e5fb35116c7f29fb4c3769be263d82ac759032ab33791a112afbc807",
+    "processEvidence": "review/lightning/running-processes.json"
+  },
+  "productionOrigin": "https://lightning.btc.tx.taxi",
+  "productionRequested": false,
+  "scope": "Independent Lightning application, build and runtime; Bitcoin remains the parent registry identity and a separate on-chain experience.",
+  "capabilities": [
+    "public-network-dashboard",
+    "network-map",
+    "node-details",
+    "channel-details",
+    "node-channels-pagination",
+    "node-fee-policy",
+    "network-history",
+    "node-history",
+    "rankings",
+    "countries",
+    "providers",
+    "penalty-channel-history",
+    "native-search",
+    "cross-chain-search",
+    "docs",
+    "about",
+    "themes"
+  ],
+  "providers": [
+    {
+      "origin": "https://mempool.emzy.de",
+      "role": "primary",
+      "model": "Bounded, coalesced public Lightning graph and channel-related on-chain API cache"
+    },
+    {
+      "origin": "https://mempool.space",
+      "role": "fallback",
+      "model": "Same native public API; preserve actual snapshot time and expose stale data honestly"
+    }
+  ],
+  "unresolved": [],
+  "acceptance": [
+    {
+      "item": "Desktop/mobile actual-component provenance and matching-data visual parity",
+      "evidence": "review/lightning/component-provenance.json; review/lightning/fixture-parity.json",
+      "status": "passed"
+    },
+    {
+      "item": "24 broad local route checks without JS/HTTP failures or document overflow",
+      "evidence": "review/lightning/browser-evidence.json",
+      "status": "passed"
+    },
+    {
+      "item": "Live update, last-good retention, isolated failure/recovery, hidden-tab lifecycle",
+      "evidence": "review/lightning/frontend-live.json",
+      "status": "passed"
+    },
+    {
+      "item": "Eight native menus at desktop/mobile widths and relevant router suite",
+      "evidence": "/home/lukee/dev/tx-lightning-router/review/lightning/native-menu-browser.json; tests-final.log",
+      "status": "passed"
+    },
+    {
+      "item": "On-chain destinations, reverse navigation and absence of normal Bitcoin block strip",
+      "evidence": "review/lightning/navigation-evidence.json",
+      "status": "passed"
+    },
+    {
+      "item": "Exact native search, final metadata/status mapping and fresh Docker image",
+      "status": "passed",
+      "evidence": "review/lightning/frontend-final-check.json; review/lightning/frontend-registry-resilience.json; review/lightning/frontend-tooltip-safety.json; lightning/review/container-verification.json"
+    },
+    {
+      "item": "Default and Original palettes persist correctly at desktop/mobile widths",
+      "evidence": "review/lightning/final-themes.json; final-{default,original}-{1440,390}.png",
+      "status": "passed"
+    }
+  ],
+  "kitCommit": "2ffd3bb2c80da32092acb6085accc2e6ae607272",
+  "registration": {
+    "routerWorktree": "/home/lukee/dev/tx-lightning-router",
+    "source": "src/lightning-registration.ts",
+    "parentChainId": "bitcoin",
+    "defaultDestinationId": "bitcoin",
+    "destinationId": "lightning",
+    "kind": "lightning",
+    "resolvePath": "/api/lightning/resolve",
+    "entityPaths": {
+      "node": "/node/{id}",
+      "channel": "/channel/{id}"
+    },
+    "reviewFlag": "TX_TAXI_LIGHTNING_REVIEW=1",
+    "productionEnabled": false,
+    "blockStrip": false,
+    "milestones": false
+  },
+  "capabilityMap": [
+    {
+      "routes": [
+        "/",
+        "/nodes/rankings",
+        "/nodes/rankings/liquidity",
+        "/nodes/rankings/connectivity",
+        "/nodes/oldest"
+      ],
+      "meaning": "Public graph statistics and node rankings",
+      "sources": [
+        "/api/v1/lightning/statistics/latest",
+        "/api/v1/lightning/nodes/rankings"
+      ],
+      "units": [
+        "satoshis",
+        "BTC",
+        "nodes",
+        "channels",
+        "ppm",
+        "mSats"
+      ],
+      "refreshSeconds": 300,
+      "loading": "Reused native statistic/card skeletons",
+      "failure": "Scoped native reconnecting badge with last-good values",
+      "stale": "Original source observation timestamp; public daily snapshot date remains explicit"
+    },
+    {
+      "routes": [
+        "/node/:public_key",
+        "/channel/:id"
+      ],
+      "meaning": "Announced node/channel metadata and forwarding policies",
+      "sources": [
+        "/api/v1/lightning/nodes/:key",
+        "/api/v1/lightning/channels/:id",
+        "/api/v1/lightning/channels?public_key=:key&index=:page&status=:status"
+      ],
+      "units": [
+        "satoshis",
+        "BTC",
+        "mSats",
+        "ppm",
+        "blocks"
+      ],
+      "refreshSeconds": 300,
+      "loading": "Actual inherited detail skeletons/maps",
+      "failure": "Unavailable with Retry; verified404 distinct from outage",
+      "stale": "Retain last-good values; current-entity subscriptions end on route change"
+    },
+    {
+      "routes": [
+        "/graphs/capacity",
+        "/graphs/nodes-networks",
+        "/graphs/nodes-map",
+        "/graphs/nodes-channels-map",
+        "/graphs/nodes-per-country",
+        "/graphs/nodes-per-isp",
+        "/nodes/country/:country",
+        "/nodes/isp/:asn"
+      ],
+      "meaning": "Public network history, geography and hosting distribution",
+      "sources": [
+        "/api/v1/lightning/statistics/:interval",
+        "/api/v1/lightning/channels-geo",
+        "/api/v1/lightning/nodes/world",
+        "/api/v1/lightning/nodes/countries",
+        "/api/v1/lightning/nodes/isp-ranking"
+      ],
+      "units": [
+        "satoshis",
+        "BTC",
+        "nodes",
+        "channels"
+      ],
+      "refreshSeconds": {
+        "history": "one request per chosen interval",
+        "currentLists": 300,
+        "gatewayMaps": 300
+      },
+      "loading": "Native chart/map spinner/skeleton",
+      "failure": "Per-card reconnecting, no global false-offline state"
+    },
+    {
+      "routes": [
+        "/penalties",
+        "/channel/:closed_id"
+      ],
+      "meaning": "Publicly classified closed/penalty channels and verified funding/closing facts",
+      "sources": [
+        "/api/v1/lightning/penalties",
+        "/api/tx/:txid"
+      ],
+      "units": [
+        "satoshis",
+        "BTC",
+        "timestamps"
+      ],
+      "refreshSeconds": 300,
+      "loading": "Reused native table and channel page",
+      "failure": "Historical absence, unavailable provider and missing geography distinct; on-chain summary failure isolated"
+    },
+    {
+      "routes": [
+        "/docs",
+        "/docs/api/rest",
+        "/about",
+        "/privacy-policy",
+        "/terms-of-service",
+        "/trademark-policy"
+      ],
+      "meaning": "Lightning-specific documentation and taxi information",
+      "sources": [
+        "Actual inherited Mempool Lightning REST documentation and taxi hero/footer components"
+      ],
+      "units": [],
+      "refreshSeconds": null,
+      "loading": "Local static route content",
+      "failure": "No provider dependency for content"
+    },
+    {
+      "routes": [
+        "/api/lightning/resolve",
+        "/api/provider-health",
+        "/healthz",
+        "/og/lightning.png",
+        "/og/node/:key.png",
+        "/og/channel/:id.png"
+      ],
+      "meaning": "Exact native resolver, independent dependency health, liveness and real crawler cards",
+      "sources": [
+        "Chain-owned cached public API facts"
+      ],
+      "units": [
+        "verified entity IDs",
+        "original observation dates"
+      ],
+      "refreshSeconds": {
+        "health": 300,
+        "resolve": 15,
+        "cards": 300
+      },
+      "loading": "Bounded deadlines/coalescing",
+      "failure": "No arbitrary host/redirect, no outage-as404, liveness separate from dependency health"
+    }
+  ],
+  "knownLimitations": [
+    {
+      "capability": "Public Lightning graph",
+      "detail": "Public graph capacity and policies are available; private payments/balances and unannounced channels are not public explorer data."
+    },
+    {
+      "area": "Inherited frontend dependencies",
+      "evidence": "lightning/review/dependency-scope.json",
+      "detail": "Inherited Angular/ECharts browser advisories remain recorded separately from build/watch dependencies. The independent Node gateway lock has no reported advisories; no broad dependency upgrade or full exploitability assessment was performed in this port."
+    }
+  ],
+  "verifiedAt": "2026-10-03T19:43:25.935317+00:00"
+}

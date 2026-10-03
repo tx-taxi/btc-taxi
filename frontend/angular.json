@@ -356,6 +356,379 @@
           }
         }
       }
+    },
+    "lightning": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/lightning/browser",
+            "index": {
+              "input": "src/index.lightning.html",
+              "output": "index.html"
+            },
+            "main": "src/main.lightning.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.lightning.json",
+            "assets": [
+              "src/resources",
+              {
+                "glob": "*.css",
+                "input": ".theme-build",
+                "output": "/"
+              }
+            ],
+            "styles": [
+              "src/styles.scss",
+              "src/lightning.scss",
+              "node_modules/@fortawesome/fontawesome-svg-core/styles.css"
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true,
+            "allowedCommonJsDependencies": [
+              "qrcode"
+            ],
+            "fileReplacements": [
+              {
+                "replace": "src/app/components/search-form/search-form.component.ts",
+                "with": "src/app/components/search-form/search-form.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/services/tx-taxi-explorer-registry.service.ts",
+                "with": "src/app/lightning-app/explorer-registry.service.ts"
+              },
+              {
+                "replace": "src/app/shared/pipes/relative-url/relative-url.pipe.ts",
+                "with": "src/app/lightning-app/relative-url.pipe.ts"
+              },
+              {
+                "replace": "src/app/lightning/lightning.routing.module.ts",
+                "with": "src/app/lightning-app/lightning.routing.module.ts"
+              },
+              {
+                "replace": "src/app/shared/components/global-footer/global-footer.component.ts",
+                "with": "src/app/shared/components/global-footer/global-footer.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/docs/docs/docs.component.ts",
+                "with": "src/app/docs/docs/docs.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/docs/api-docs/api-docs.component.ts",
+                "with": "src/app/docs/api-docs/api-docs.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/components/about/about.component.ts",
+                "with": "src/app/components/about/about.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/services/seo.service.ts",
+                "with": "src/app/lightning-app/seo.service.ts"
+              },
+              {
+                "replace": "src/app/services/opengraph.service.ts",
+                "with": "src/app/lightning-app/opengraph.service.ts"
+              },
+              {
+                "replace": "src/app/docs/api-docs/api-docs-nav.component.ts",
+                "with": "src/app/docs/api-docs/api-docs-nav.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-channels-map/nodes-channels-map.component.ts",
+                "with": "src/app/lightning/nodes-channels-map/nodes-channels-map.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-map/nodes-map.component.ts",
+                "with": "src/app/lightning/nodes-map/nodes-map.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/node-statistics-chart/node-statistics-chart.component.ts",
+                "with": "src/app/lightning/node-statistics-chart/node-statistics-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/node-fee-chart/node-fee-chart.component.ts",
+                "with": "src/app/lightning/node-fee-chart/node-fee-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-channels/node-channels.component.ts",
+                "with": "src/app/lightning/nodes-channels/node-channels.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-networks-chart/nodes-networks-chart.component.ts",
+                "with": "src/app/lightning/nodes-networks-chart/nodes-networks-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/statistics-chart/lightning-statistics-chart.component.ts",
+                "with": "src/app/lightning/statistics-chart/lightning-statistics-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.ts",
+                "with": "src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.ts",
+                "with": "src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/node/node.component.ts",
+                "with": "src/app/lightning/node/node.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/channel/channel.component.ts",
+                "with": "src/app/lightning/channel/channel.component.lightning.ts"
+              },
+              {
+                "replace": "src/app/lightning/lightning.module.ts",
+                "with": "src/app/lightning-app/lightning.module.ts"
+              },
+              {
+                "replace": "src/app/services/api.service.ts",
+                "with": "src/app/lightning-app/api.service.ts"
+              },
+              {
+                "replace": "src/app/services/eta.service.ts",
+                "with": "src/app/lightning-app/eta.service.ts"
+              }
+            ]
+          },
+          "configurations": {
+            "production": {
+              "assets": [
+                "src/resources",
+                {
+                  "glob": "*.css",
+                  "input": ".theme-build",
+                  "output": "/"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/app/docs/api-docs/api-docs-nav.component.ts",
+                  "with": "src/app/docs/api-docs/api-docs-nav.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/search-form/search-form.component.ts",
+                  "with": "src/app/components/search-form/search-form.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/services/tx-taxi-explorer-registry.service.ts",
+                  "with": "src/app/lightning-app/explorer-registry.service.ts"
+                },
+                {
+                  "replace": "src/app/shared/pipes/relative-url/relative-url.pipe.ts",
+                  "with": "src/app/lightning-app/relative-url.pipe.ts"
+                },
+                {
+                  "replace": "src/app/lightning/lightning.routing.module.ts",
+                  "with": "src/app/lightning-app/lightning.routing.module.ts"
+                },
+                {
+                  "replace": "src/app/shared/components/global-footer/global-footer.component.ts",
+                  "with": "src/app/shared/components/global-footer/global-footer.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/docs/docs/docs.component.ts",
+                  "with": "src/app/docs/docs/docs.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/docs/api-docs/api-docs.component.ts",
+                  "with": "src/app/docs/api-docs/api-docs.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/about/about.component.ts",
+                  "with": "src/app/components/about/about.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/services/seo.service.ts",
+                  "with": "src/app/lightning-app/seo.service.ts"
+                },
+                {
+                  "replace": "src/app/services/opengraph.service.ts",
+                  "with": "src/app/lightning-app/opengraph.service.ts"
+                },
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-channels-map/nodes-channels-map.component.ts",
+                  "with": "src/app/lightning/nodes-channels-map/nodes-channels-map.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-map/nodes-map.component.ts",
+                  "with": "src/app/lightning/nodes-map/nodes-map.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/node-statistics-chart/node-statistics-chart.component.ts",
+                  "with": "src/app/lightning/node-statistics-chart/node-statistics-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/node-fee-chart/node-fee-chart.component.ts",
+                  "with": "src/app/lightning/node-fee-chart/node-fee-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-channels/node-channels.component.ts",
+                  "with": "src/app/lightning/nodes-channels/node-channels.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-networks-chart/nodes-networks-chart.component.ts",
+                  "with": "src/app/lightning/nodes-networks-chart/nodes-networks-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/statistics-chart/lightning-statistics-chart.component.ts",
+                  "with": "src/app/lightning/statistics-chart/lightning-statistics-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.ts",
+                  "with": "src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.ts",
+                  "with": "src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/node/node.component.ts",
+                  "with": "src/app/lightning/node/node.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/channel/channel.component.ts",
+                  "with": "src/app/lightning/channel/channel.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/lightning.module.ts",
+                  "with": "src/app/lightning-app/lightning.module.ts"
+                },
+                {
+                  "replace": "src/app/services/api.service.ts",
+                  "with": "src/app/lightning-app/api.service.ts"
+                },
+                {
+                  "replace": "src/app/services/eta.service.ts",
+                  "with": "src/app/lightning-app/eta.service.ts"
+                },
+                {
+                  "replace": "src/app/components/theme-selector/theme-selector.component.ts",
+                  "with": "src/app/components/theme-selector/theme-selector.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/language-selector/language-selector.component.ts",
+                  "with": "src/app/components/language-selector/language-selector.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/channel/channel-box/channel-box.component.ts",
+                  "with": "src/app/lightning/channel/channel-box/channel-box.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/channels-statistics/channels-statistics.component.ts",
+                  "with": "src/app/lightning/channels-statistics/channels-statistics.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/channels-list/channels-list.component.ts",
+                  "with": "src/app/lightning/channels-list/channels-list.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/terms-of-service/terms-of-service.component.ts",
+                  "with": "src/app/components/terms-of-service/terms-of-service.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/privacy-policy/privacy-policy.component.ts",
+                  "with": "src/app/components/privacy-policy/privacy-policy.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/trademark-policy/trademark-policy.component.ts",
+                  "with": "src/app/components/trademark-policy/trademark-policy.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/services/theme.service.ts",
+                  "with": "src/app/lightning-app/theme.service.ts"
+                },
+                {
+                  "replace": "src/app/lightning/justice-list/justice-list.component.ts",
+                  "with": "src/app/lightning/justice-list/justice-list.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/lightning-api.service.ts",
+                  "with": "src/app/lightning/lightning-api.service.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/lightning-dashboard/lightning-dashboard.component.ts",
+                  "with": "src/app/lightning/lightning-dashboard/lightning-dashboard.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-rankings-dashboard/nodes-rankings-dashboard.component.ts",
+                  "with": "src/app/lightning/nodes-rankings-dashboard/nodes-rankings-dashboard.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-per-country/nodes-per-country.component.ts",
+                  "with": "src/app/lightning/nodes-per-country/nodes-per-country.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/lightning/nodes-per-isp/nodes-per-isp.component.ts",
+                  "with": "src/app/lightning/nodes-per-isp/nodes-per-isp.component.lightning.ts"
+                },
+                {
+                  "replace": "src/app/components/search-form/search-results/search-results.component.ts",
+                  "with": "src/app/components/search-form/search-results/search-results.component.lightning.ts"
+                }
+              ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                },
+                "fonts": true
+              },
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
+              "localize": false
+            }
+          },
+          "defaultConfiguration": ""
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "lightning:build",
+            "proxyConfig": "proxy.conf.lightning.cjs",
+            "host": "127.0.0.1",
+            "port": 4580
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "lightning:build:production"
+            }
+          }
+        }
+      }
     }
   }
 }

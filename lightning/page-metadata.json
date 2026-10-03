@@ -1,0 +1,82 @@
+{
+  "/": {
+    "title": "lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Get stats on the Lightning network (aggregate capacity, connectivity, etc), Lightning nodes (channels, liquidity, etc) and Lightning channels (status, fees, etc)."
+  },
+  "/nodes/rankings": {
+    "title": "Top lightning nodes \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See the top Lightning network nodes ranked by liquidity, connectivity, and age."
+  },
+  "/nodes/rankings/liquidity": {
+    "title": "Lightning nodes by capacity \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Explore public Lightning nodes ranked by their announced channel capacity."
+  },
+  "/nodes/rankings/connectivity": {
+    "title": "Lightning nodes by connectivity \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Explore public Lightning nodes ranked by their number of open channels."
+  },
+  "/nodes/oldest": {
+    "title": "Oldest Lightning nodes \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Explore the oldest announced Lightning nodes and their public channel capacity."
+  },
+  "/penalties": {
+    "title": "Justice transactions \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Explore publicly classified Lightning penalty channels and their related Bitcoin transactions."
+  },
+  "/about": {
+    "title": "About lightning.btc.tx.taxi \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Explore Lightning nodes, channels, routing policies, and network history with lightning.btc.tx.taxi."
+  },
+  "/docs": {
+    "title": "FAQ \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics."
+  },
+  "/docs/api/rest": {
+    "title": "REST API \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics."
+  },
+  "/privacy-policy": {
+    "title": "Privacy Policy \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Privacy notes for lightning.btc.tx.taxi, including public Lightning data, browser preferences, server logs, and independent verification."
+  },
+  "/terms-of-service": {
+    "title": "Terms of Service \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Terms for using lightning.btc.tx.taxi as an informational Lightning node and channel explorer."
+  },
+  "/trademark-policy": {
+    "title": "Trademark & Attribution \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Trademark and attribution notes for lightning.btc.tx.taxi, including upstream mempool/mempool attribution and project independence."
+  },
+  "/group/the-mempool-open-source-project": {
+    "title": "Mempool.space Lightning Nodes \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See all Lightning nodes run by mempool.space -- these are the nodes that provide the data on the mempool.space Lightning dashboard."
+  },
+  "/graphs/capacity": {
+    "title": "Lightning Network Capacity \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See the capacity of the Lightning network visualized over time in terms of the number of open channels and total bitcoin capacity."
+  },
+  "/graphs/nodes-networks": {
+    "title": "Lightning Nodes Per Network \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See the number of Lightning network nodes visualized over time by network: clearnet only (IPv4, IPv6), darknet (Tor, I2p, cjdns), and both."
+  },
+  "/graphs/nodes-map": {
+    "title": "Lightning Nodes World Map \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See the locations of non-Tor Lightning network nodes visualized on a world map. Hover/tap on points on the map for node names and details."
+  },
+  "/graphs/nodes-channels-map": {
+    "title": "Lightning Nodes Channels World Map \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See the channels of non-Tor Lightning network nodes visualized on a world map. Hover/tap on points on the map for node names and details."
+  },
+  "/graphs/nodes-per-country": {
+    "title": "Lightning Nodes Per Country \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "See a geographical breakdown of the Lightning network: how many Lightning nodes are hosted in countries around the world, aggregate BTC capacity for each country, and more."
+  },
+  "/graphs/nodes-per-isp": {
+    "title": "Lightning Nodes Per ISP \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Browse the top 100 ISPs hosting Lightning nodes along with stats like total number of nodes per ISP, aggregate BTC capacity per ISP, and more"
+  },
+  "/docs/faq": {
+    "title": "FAQ \u00b7 lightning.btc.tx.taxi - Lightning Explorer",
+    "description": "Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics."
+  }
+}

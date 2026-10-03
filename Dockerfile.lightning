@@ -1,0 +1,25 @@
+# Independent Lightning build/runtime. The Bitcoin image and deployment remain
+# unchanged. Configure this Dockerfile explicitly for lightning.btc.tx.taxi.
+FROM node:24-bookworm-slim AS lightning-frontend
+WORKDIR /app/frontend
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci --ignore-scripts
+COPY frontend ./
+RUN npm run build:lightning
+
+FROM node:24-bookworm-slim
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends fonts-dejavu-core \
+    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app/lightning
+COPY lightning/package.json lightning/package-lock.json ./
+RUN npm ci --omit=dev --ignore-scripts
+COPY lightning/*.cjs lightning/page-metadata.json lightning/social-image.json ./
+COPY --from=lightning-frontend /app/frontend/dist/lightning/browser /app/frontend/dist/lightning/browser
+ENV NODE_ENV=production LIGHTNING_HOST=0.0.0.0 LIGHTNING_PORT=8080 LIGHTNING_DATA_DIR=/app/data
+RUN mkdir /app/data && chown node:node /app/data
+USER node
+VOLUME /app/data
+EXPOSE 8080
+HEALTHCHECK --interval=15s --timeout=3s --start-period=10s --retries=3 CMD node -e "fetch('http://127.0.0.1:8080/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+CMD ["node", "server.cjs"]
