@@ -6,12 +6,14 @@ const http = require('node:http');
 const path = require('node:path');
 const parse5 = require('parse5');
 const sharp = require('sharp');
+const { createStaticPages } = require('./static-pages.cjs');
 
 const origin = 'https://btc.tx.taxi';
 const apiOrigin = (process.env.BTC_OG_API_ORIGIN || 'https://mempool.space').replace(/\/$/, '');
 const indexPath = process.env.BTC_OG_INDEX || '/usr/share/nginx/html/en-US/index.html';
 const logoPath = path.join(path.dirname(indexPath), '..', 'resources/branding/btc-dark-navbar.svg');
 const html = fs.readFileSync(indexPath, 'utf8');
+const staticPages = createStaticPages(indexPath, html);
 const logo = fs.existsSync(logoPath) ? `data:image/svg+xml;base64,${fs.readFileSync(logoPath).toString('base64')}` : null;
 const cache = new Map();
 const pending = new Map();
@@ -143,20 +145,20 @@ function fallback(kind, id) {
 
 function metadata(kind, id, data) {
   const url = `${origin}/${kind}/${id}`;
-  const image = `${origin}/og/${kind}/${id}.png?v=20260925-brand`;
+  const image = staticPages.manifest.image.url;
   const title = `Bitcoin ${data.heading}${kind === 'block' ? '' : ` ${short(id, 24)}`} | btc.tx.taxi`;
   const tags = [
     ['name', 'description', data.description],
     ['property', 'og:type', 'website'], ['property', 'og:site_name', 'btc.tx.taxi'],
     ['property', 'og:title', title], ['property', 'og:description', data.description],
     ['property', 'og:url', url], ['property', 'og:image', image],
-    ['property', 'og:image:type', 'image/png'], ['property', 'og:image:width', '1200'],
-    ['property', 'og:image:height', '630'], ['property', 'og:image:alt', `btc.tx.taxi ${data.heading}`],
+    ['property', 'og:image:type', 'image/jpeg'], ['property', 'og:image:width', String(staticPages.manifest.image.width)],
+    ['property', 'og:image:height', String(staticPages.manifest.image.height)], ['property', 'og:image:alt', staticPages.manifest.image.alt],
     ['name', 'twitter:card', 'summary_large_image'], ['name', 'twitter:title', title],
     ['name', 'twitter:description', data.description], ['name', 'twitter:image', image],
-    ['name', 'twitter:image:alt', `btc.tx.taxi ${data.heading}`], ['name', 'twitter:domain', 'btc.tx.taxi'],
+    ['name', 'twitter:image:alt', staticPages.manifest.image.alt], ['name', 'twitter:domain', 'btc.tx.taxi'],
   ];
-  const replacement = `<title>${escape(title)}</title><link rel="canonical" href="${escape(url)}">` +
+  const replacement = `<title>${escape(title)}</title><link id="canonical" rel="canonical" href="${escape(url)}">` +
     `<meta name="robots" content="${data.unavailable ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}">` +
     tags.map(([attribute, name, content]) => `<meta ${attribute}="${name}" content="${escape(content)}">`).join('');
   const document = parse5.parse(html, { sourceCodeLocationInfo: true });
@@ -252,11 +254,11 @@ async function serve(req, res) {
     return res.end();
   }
   const pathname = new URL(req.url, 'http://localhost').pathname;
+  if (staticPages.serve(req, res, pathname)) return;
   const image = pathname.startsWith('/og/');
   const match = route(image ? pathname.slice(3).replace(/\.png$/, '') : pathname);
   if (!match || (image && !pathname.endsWith('.png'))) {
-    res.writeHead(404);
-    return res.end();
+    return staticPages.notFound(req, res);
   }
   const data = await load(match.kind, match.id);
   if (image) {

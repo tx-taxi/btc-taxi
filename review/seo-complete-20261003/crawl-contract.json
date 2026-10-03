@@ -1,0 +1,250 @@
+{
+  "verified": true,
+  "pages": 27,
+  "providerCalls": 0,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Bitcoin Explorer | btc.tx.taxi",
+      "htmlBytes": 859399,
+      "markdownBytes": 242,
+      "source": "frontend/src/app/services/seo.service.ts",
+      "sectionCount": 0
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "title": "About btc.tx.taxi | btc.tx.taxi",
+      "htmlBytes": 862222,
+      "markdownBytes": 1826,
+      "source": "components/about/about.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/privacy-policy",
+      "status": 200,
+      "title": "Privacy Policy | btc.tx.taxi",
+      "htmlBytes": 861538,
+      "markdownBytes": 1665,
+      "source": "components/privacy-policy/privacy-policy.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/terms-of-service",
+      "status": 200,
+      "title": "Terms of Service | btc.tx.taxi",
+      "htmlBytes": 861526,
+      "markdownBytes": 1656,
+      "source": "components/terms-of-service/terms-of-service.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/trademark-policy",
+      "status": 200,
+      "title": "Trademark and Attribution | btc.tx.taxi",
+      "htmlBytes": 861078,
+      "markdownBytes": 1234,
+      "source": "components/trademark-policy/trademark-policy.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/docs/faq",
+      "status": 200,
+      "title": "Bitcoin Explorer FAQ | btc.tx.taxi",
+      "htmlBytes": 879738,
+      "markdownBytes": 16086,
+      "source": "docs/faq",
+      "sectionCount": 25
+    },
+    {
+      "route": "/docs/api/rest",
+      "status": 200,
+      "title": "Bitcoin REST API | btc.tx.taxi",
+      "htmlBytes": 911923,
+      "markdownBytes": 43410,
+      "source": "docs/rest",
+      "sectionCount": 58
+    },
+    {
+      "route": "/docs/api/websocket",
+      "status": 200,
+      "title": "Bitcoin WebSocket API | btc.tx.taxi",
+      "htmlBytes": 883875,
+      "markdownBytes": 22610,
+      "source": "docs/websocket",
+      "sectionCount": 10
+    },
+    {
+      "route": "/blocks/1",
+      "status": 200,
+      "title": "Bitcoin Blocks | btc.tx.taxi",
+      "htmlBytes": 859795,
+      "markdownBytes": 381,
+      "source": "components/blocks-list/blocks-list.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/txs",
+      "status": 200,
+      "title": "Recent Bitcoin Transactions | btc.tx.taxi",
+      "htmlBytes": 859630,
+      "markdownBytes": 304,
+      "source": "components/recent-transactions-list/recent-transactions-list.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/rbf",
+      "status": 200,
+      "title": "Bitcoin Transaction Replacements | btc.tx.taxi",
+      "htmlBytes": 859728,
+      "markdownBytes": 331,
+      "source": "components/rbf-list/rbf-list.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/mining",
+      "status": 200,
+      "title": "Bitcoin Mining Dashboard | btc.tx.taxi",
+      "htmlBytes": 859531,
+      "markdownBytes": 246,
+      "source": "components/mining-dashboard/mining-dashboard.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/tools/calculator",
+      "status": 200,
+      "title": "Bitcoin Calculator | btc.tx.taxi",
+      "htmlBytes": 859658,
+      "markdownBytes": 292,
+      "source": "components/calculator/calculator.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/tx/push",
+      "status": 200,
+      "title": "Broadcast a Bitcoin Transaction | btc.tx.taxi",
+      "htmlBytes": 859792,
+      "markdownBytes": 389,
+      "source": "components/push-transaction/push-transaction.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/tx/test",
+      "status": 200,
+      "title": "Test a Bitcoin Transaction | btc.tx.taxi",
+      "htmlBytes": 859680,
+      "markdownBytes": 336,
+      "source": "components/test-transactions/test-transactions.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mempool",
+      "status": 200,
+      "title": "Bitcoin Mempool Graph | btc.tx.taxi",
+      "htmlBytes": 859583,
+      "markdownBytes": 260,
+      "source": "components/statistics/statistics.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/hashrate-difficulty",
+      "status": 200,
+      "title": "Bitcoin Hashrate and Difficulty | btc.tx.taxi",
+      "htmlBytes": 859703,
+      "markdownBytes": 285,
+      "source": "components/hashrate-chart/hashrate-chart.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/pools-dominance",
+      "status": 200,
+      "title": "Bitcoin Mining Pool Dominance | btc.tx.taxi",
+      "htmlBytes": 859666,
+      "markdownBytes": 275,
+      "source": "components/hashrates-chart-pools/hashrate-chart-pools.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/pools",
+      "status": 200,
+      "title": "Bitcoin Mining Pool Rankings | btc.tx.taxi",
+      "htmlBytes": 859770,
+      "markdownBytes": 355,
+      "source": "components/pool-ranking/pool-ranking.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/block-fees",
+      "status": 200,
+      "title": "Bitcoin Block Fees | btc.tx.taxi",
+      "htmlBytes": 859540,
+      "markdownBytes": 234,
+      "source": "components/block-fees-graph/block-fees-graph.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/block-fees-subsidy",
+      "status": 200,
+      "title": "Bitcoin Fees and Block Subsidy | btc.tx.taxi",
+      "htmlBytes": 859662,
+      "markdownBytes": 270,
+      "source": "components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/block-rewards",
+      "status": 200,
+      "title": "Bitcoin Block Rewards | btc.tx.taxi",
+      "htmlBytes": 859633,
+      "markdownBytes": 267,
+      "source": "components/block-rewards-graph/block-rewards-graph.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/block-fee-rates",
+      "status": 200,
+      "title": "Bitcoin Block Fee Rates | btc.tx.taxi",
+      "htmlBytes": 859585,
+      "markdownBytes": 245,
+      "source": "components/block-fee-rates-graph/block-fee-rates-graph.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/mining/block-sizes-weights",
+      "status": 200,
+      "title": "Bitcoin Block Sizes and Weights | btc.tx.taxi",
+      "htmlBytes": 859683,
+      "markdownBytes": 277,
+      "source": "components/block-sizes-weights-graph/block-sizes-weights-graph.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/graphs/price",
+      "status": 200,
+      "title": "Bitcoin Price History | btc.tx.taxi",
+      "htmlBytes": 859463,
+      "markdownBytes": 214,
+      "source": "components/price-chart/price-chart.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/mempool-block/0",
+      "status": 200,
+      "title": "Projected Bitcoin Mempool Block | btc.tx.taxi",
+      "htmlBytes": 859813,
+      "markdownBytes": 347,
+      "source": "components/mempool-block/mempool-block.component.html",
+      "sectionCount": 0
+    },
+    {
+      "route": "/status",
+      "status": 200,
+      "title": "Bitcoin Network Status | btc.tx.taxi",
+      "htmlBytes": 859609,
+      "markdownBytes": 278,
+      "source": "components/status-view/status-view.component.html",
+      "sectionCount": 0
+    }
+  ]
+}

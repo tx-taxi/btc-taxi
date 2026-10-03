@@ -342,3 +342,6 @@ input:focus {
 .search-chain-automatic .search-chain-name {
   white-space: normal;
 }
+
+.search-routing-hint { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.4; }
+.search-routing-hint code { display: block; color: inherit; font-size: inherit; font-weight: 600; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
