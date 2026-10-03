@@ -10,7 +10,7 @@ const { promisify } = require('node:util');
 const { LightningProxy, GatewayError, channelId, channelNumeric, PUBKEY } = require('./proxy.cjs');
 const { routeMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
 const gzip = promisify(zlib.gzip);
-const TYPES = { '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm' };
+const TYPES = { '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm' };
 const PAGE_ROUTES = /^\/(?:node\/(?:02|03)[a-f0-9]{64}|channel\/[\dx]+|nodes\/(?:rankings(?:\/(?:liquidity|connectivity))?|oldest|country\/[A-Z]{2}|isp\/[\d,]+)|group\/the-mempool-open-source-project|penalties|graphs\/(?:lightning\/)?(?:capacity|nodes-networks|nodes-per-country|nodes-per-isp|nodes-channels-map|nodes-map)|about|docs(?:\/(?:faq|api\/rest))?|privacy-policy|terms-of-service|trademark-policy|search)?\/?$/i;
 
 async function resolve(value, proxy) {
