@@ -5,6 +5,16 @@ This is a separate frontend build and a separate cached public-data service at
 server, Lightning node, SQL database, or a block-strip adapter. The existing
 Bitcoin build/deployment remains unchanged.
 
+## Theme and branding
+
+The default theme uses Lightning purple (`#7B1AF7`) with Bitcoin orange
+(`#F7931A`) for on-chain links and secondary chart highlights. Mempool Original
+retains its upstream palette and native chart colors. The Lightning taxi
+assets preserve the approved taxi paths; `frontend/lightning.branding.cjs`
+regenerates their scoped SVG and touch-icon variants. The advertised social
+image is an actual dashboard screenshot, shared through the frontend/runtime
+`lightning-social-image.json` and `lightning/social-image.json` manifests.
+
 ## Local commands
 
 From this checkout:
