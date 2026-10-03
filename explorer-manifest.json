@@ -12,7 +12,7 @@
     "repository": "mempool/mempool",
     "area": "Lightning pages retained in the BTC fork"
   },
-  "status": "locally-verified",
+  "status": "production-verified",
   "local": {
     "url": "http://127.0.0.1:4581",
     "ports": [
@@ -21,7 +21,7 @@
       4582
     ],
     "startCommands": [
-      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 npm run build:lightning --prefix frontend",
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=1046d2246e80689e48108a68d2f231ea0fa5df0d npm run build:lightning --prefix frontend",
       "node lightning/server.cjs",
       "cd /home/lukee/dev/tx-lightning-router && PORT=4582 HOST=127.0.0.1 TX_TAXI_LIGHTNING_REVIEW=1 pnpm dev"
     ],
@@ -29,14 +29,17 @@
       "Ctrl+C in each foreground terminal; SIGTERM only to task-owned process IDs recorded in review/lightning/running-processes.json"
     ],
     "incrementalCommands": [
-      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 npm run serve:lightning --prefix frontend"
+      "TX_TAXI_ROUTER_URL=http://127.0.0.1:4582 LIGHTNING_REVIEW_ORIGIN=http://127.0.0.1:4581 GIT_COMMIT_HASH=1046d2246e80689e48108a68d2f231ea0fa5df0d npm run serve:lightning --prefix frontend"
     ],
-    "frontendBuild": "bfa4b6d1558e5136",
-    "verifiedContainerImage": "sha256:a836f2f0e5fb35116c7f29fb4c3769be263d82ac759032ab33791a112afbc807",
-    "processEvidence": "review/lightning/running-processes.json"
+    "frontendBuild": "26ffdaeaf3fedc18",
+    "verifiedContainerImage": "sha256:444ff4ac2a61dd91220944210dd60e421bbad4ef19fd8386e81734afc2dcfc1f",
+    "processEvidence": "review/lightning/running-processes.json",
+    "sourceCommit": "1046d2246e80689e48108a68d2f231ea0fa5df0d",
+    "containerEvidence": "lightning/review/container-1046-release-verification.json",
+    "versionEvidence": "review/lightning/local-1046-version-review.json"
   },
   "productionOrigin": "https://lightning.btc.tx.taxi",
-  "productionRequested": false,
+  "productionRequested": true,
   "scope": "Independent Lightning application, build and runtime; Bitcoin remains the parent registry identity and a separate on-chain experience.",
   "capabilities": [
     "public-network-dashboard",
@@ -87,7 +90,7 @@
       "status": "passed"
     },
     {
-      "item": "Eight native menus at desktop/mobile widths and relevant router suite",
+      "item": "Eight native local menus at desktop/mobile widths and relevant router suite",
       "evidence": "/home/lukee/dev/tx-lightning-router/review/lightning/native-menu-browser.json; tests-final.log",
       "status": "passed"
     },
@@ -99,12 +102,32 @@
     {
       "item": "Exact native search, final metadata/status mapping and fresh Docker image",
       "status": "passed",
-      "evidence": "review/lightning/frontend-final-check.json; review/lightning/frontend-registry-resilience.json; review/lightning/frontend-tooltip-safety.json; lightning/review/container-verification.json"
+      "evidence": "review/lightning/frontend-final-check.json; review/lightning/frontend-registry-resilience.json; review/lightning/frontend-tooltip-safety.json; lightning/review/container-1046-release-verification.json"
     },
     {
       "item": "Default and Original palettes persist correctly at desktop/mobile widths",
       "evidence": "review/lightning/final-themes.json; final-{default,original}-{1440,390}.png",
       "status": "passed"
+    },
+    {
+      "item": "Verified public Lightning 1046 metadata, content-hashed navigation asset and taxi favicons at desktop/mobile widths",
+      "evidence": "review/lightning/production-1046-version-review.json; review/lightning/production-release-metadata.json; review/lightning/production-brand-review.json",
+      "status": "passed"
+    },
+    {
+      "item": "Actual 1046 production runtime health, bounded resources and durable cache, with final local Docker image verification",
+      "evidence": "lightning/review/production-runtime-1046-verification.json; lightning/review/container-1046-release-verification.json",
+      "status": "passed"
+    },
+    {
+      "item": "Independent active Lightning OpenStatus monitor and preserved native-chain status-page layout",
+      "evidence": "lightning/review/openstatus-operational-1046-verification.json; review/lightning/production-status-review.json",
+      "status": "passed"
+    },
+    {
+      "item": "All eight native and hub production destination menus, provider-confirmed routing and actual Bitcoin/Ton/Monero immediate-submit animations",
+      "status": "passed",
+      "evidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production/menus.json; production/routing.json; production/immediate-submit-{btc,ton,xmr}.json"
     }
   ],
   "kitCommit": "2ffd3bb2c80da32092acb6085accc2e6ae607272",
@@ -121,7 +144,7 @@
       "channel": "/channel/{id}"
     },
     "reviewFlag": "TX_TAXI_LIGHTNING_REVIEW=1",
-    "productionEnabled": false,
+    "productionEnabled": true,
     "blockStrip": false,
     "milestones": false
   },
@@ -282,5 +305,46 @@
       "detail": "Inherited Angular/ECharts browser advisories remain recorded separately from build/watch dependencies. The independent Node gateway lock has no reported advisories; no broad dependency upgrade or full exploitability assessment was performed in this port."
     }
   ],
-  "verifiedAt": "2026-10-03T19:43:25.935317+00:00"
+  "verifiedAt": "2026-10-03T21:02:28.510Z",
+  "production": {
+    "url": "https://lightning.btc.tx.taxi",
+    "sourceCommit": "1046d2246e80689e48108a68d2f231ea0fa5df0d",
+    "applicationUuid": "arhvwdlmauvkt0irck4wvwsa",
+    "deploymentUuid": "7lrlnpadyffeb0uimosjjdu0",
+    "deployedAt": "2026-10-03T20:38:40Z",
+    "verifiedAt": "2026-10-03T20:40:59Z",
+    "status": "verified",
+    "runtimeImage": "sha256:adf33a00f3e34669af9224fe10fcbed8ad378c5eee6a9f41d7083d198caa9242",
+    "runtimeEvidence": "lightning/review/production-runtime-1046-verification.json",
+    "metadataAndVersionEvidence": "review/lightning/production-1046-version-review.json",
+    "visualEvidence": {
+      "sourceCommit": "39c79158f0d4bc7d8967ccc40a12dda6b1035de6",
+      "unchangedLayoutVerifiedIn": "1046d2246e80689e48108a68d2f231ea0fa5df0d",
+      "evidence": "review/lightning/production-brand-review.json",
+      "screenshots": [
+        "review/lightning/production-navbar-default-1440.png",
+        "review/lightning/production-navbar-default-390.png",
+        "review/lightning/production-navbar-original-1440.png",
+        "review/lightning/production-navbar-original-390.png"
+      ]
+    },
+    "statusMonitor": {
+      "monitorId": 66,
+      "componentId": 57,
+      "pageId": 2,
+      "active": true,
+      "evidence": "lightning/review/openstatus-operational-1046-verification.json",
+      "browserEvidence": "review/lightning/production-status-review.json"
+    },
+    "integrationRollout": {
+      "scope": "Eight native explorer menu ports and router follow-up",
+      "status": "verified",
+      "evidence": "lightning/review/production-release.json",
+      "verifiedAt": "2026-10-03T21:02:28.510Z",
+      "menuEvidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production/menus.json",
+      "menuCases": 18,
+      "routingEvidence": "/home/lukee/dev/tx-lightning-router/review/lightning/production/routing.json",
+      "xmrPackagingFix": "ced1eb8ffb4d4bb1a889b20b1eb456693daabf54"
+    }
+  }
 }
