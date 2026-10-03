@@ -2,7 +2,7 @@
 <browserconfig>
   <msapplication>
     <tile>
-      <square150x150logo src="/resources/lightning-purple-favicons/mstile-150x150.png"/>
+      <square150x150logo src="/resources/lightning-purple-favicons/mstile-150x150.png?v=cd42f6e25796"/>
       <TileColor>#7B1AF7</TileColor>
     </tile>
   </msapplication>
