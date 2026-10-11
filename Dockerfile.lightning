@@ -1,6 +1,6 @@
 # Independent Lightning build/runtime. The Bitcoin image and deployment remain
 # unchanged. Configure this Dockerfile explicitly for lightning.btc.tx.taxi.
-FROM node:24-bookworm-slim AS lightning-frontend
+FROM node:25-bookworm-slim AS lightning-frontend
 WORKDIR /app/frontend
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci --ignore-scripts
@@ -9,7 +9,7 @@ COPY lightning/page-metadata.json lightning/social-image.json /app/lightning/
 ARG SOURCE_COMMIT
 RUN GIT_COMMIT_HASH="${SOURCE_COMMIT:-release}" npm run build:lightning
 
-FROM node:24-bookworm-slim
+FROM node:25-bookworm-slim
 RUN apt-get update \
     && apt-get install -y --no-install-recommends curl fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
