@@ -18,6 +18,7 @@ import { SeoService } from '@app/services/seo.service';
 import { OpenGraphService } from '@app/services/opengraph.service';
 import { ZoneService } from '@app/services/zone-shim.service';
 import { SharedModule } from '@app/shared/shared.module';
+import { UswapPromotionComponent } from '@app/shared/components/uswap-promotion/uswap-promotion.component';
 import { StorageService } from '@app/services/storage.service';
 import { HttpCacheInterceptor } from '@app/services/http-cache.interceptor';
 import { LanguageService } from '@app/services/language.service';
@@ -70,5 +71,5 @@ const providers = [
   { provide: ZONE_SERVICE, useClass: ZoneService },
 ];
 
-@NgModule({ declarations: [LightningRootComponent, LightningShellComponent], bootstrap: [LightningRootComponent], imports: [BrowserModule, BrowserAnimationsModule, SharedModule, RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })], providers: [provideHttpClient(withInterceptorsFromDi()), DatePipe, ...providers, { provide: HTTP_INTERCEPTORS, useClass: LightningStatusInterceptor, multi: true }] })
+@NgModule({ declarations: [LightningRootComponent, LightningShellComponent], bootstrap: [LightningRootComponent], imports: [BrowserModule, BrowserAnimationsModule, SharedModule, UswapPromotionComponent, RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })], providers: [provideHttpClient(withInterceptorsFromDi()), DatePipe, ...providers, { provide: HTTP_INTERCEPTORS, useClass: LightningStatusInterceptor, multi: true }] })
 export class LightningAppModule {}
