@@ -11489,6 +11489,82 @@
           <context context-type="linenumber">173</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.fees" datatype="html">
+        <source>Fees</source>
+        <target>İşlem Ücretleri</target>
+      </trans-unit>
+      <trans-unit id="32fba724df729afb840693b40e3f8869356f4e33" datatype="html">
+        <source>Size</source>
+        <target>Boyut</target>
+      </trans-unit>
+      <trans-unit id="taxi.nav.docs" datatype="html">
+        <source>Documentation</source>
+        <target>Dökümentasyon</target>
+      </trans-unit>
+      <trans-unit id="recent-transactions-title" datatype="html">
+        <source>Recent Transactions</source>
+        <target>Yakındaki işlemler </target>
+      </trans-unit>
+      <trans-unit id="taxi.block.details.totalFees" datatype="html">
+        <source>Total fees</source>
+        <target>Toplam ücret</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.explore" datatype="html">
+        <source>Explore</source>
+        <target>Keşfet</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.recent-blocks" datatype="html">
+        <source>Recent Blocks</source>
+        <target>Yakın Zamanlı Bloklar</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.mining" datatype="html">
+        <source>Mining Dashboard</source>
+        <target>Madencilik Paneli</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.broadcast" datatype="html">
+        <source>Broadcast Transaction</source>
+        <target>İşlemi Ağa Sal</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.test" datatype="html">
+        <source>Test Transaction</source>
+        <target>Test işlemi </target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.preview" datatype="html">
+        <source>Preview Transaction</source>
+        <target>İşlemi Önizle</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.calculator" datatype="html">
+        <source>Calculator</source>
+        <target>Hesap Makinası</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.api" datatype="html">
+        <source>API Documentation</source>
+        <target>API Dokümentasyonu</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.about" datatype="html">
+        <source>About</source>
+        <target>Hakkında</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.status" datatype="html">
+        <source>Status</source>
+        <target>Durum</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.legal" datatype="html">
+        <source>Legal</source>
+        <target>Hukuksal</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.terms" datatype="html">
+        <source>Terms of Service</source>
+        <target>Hizmet Koşulları</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.privacy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Gizlilik politikası</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.third-party" datatype="html">
+        <source>Third-party Licenses</source>
+        <target>3. Parti Lisanlar</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
