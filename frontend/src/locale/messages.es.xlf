@@ -11704,6 +11704,17 @@
         <source>Your balance is too low.</source>
         <target>Tu saldo es demasiado bajo.</target>
       </trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>No se encontró el nodo.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>No se encontró el canal.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Los datos de Lightning no están disponibles.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>Reintentar</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Datos en caché</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Reconectando…</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>Bits sin procesar</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>Obligatorio</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Dirección del nodo</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>No se encontró ningún nodo o canal Lightning.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>La búsqueda no está disponible. Inténtalo de nuevo.</target></trans-unit>
     </body>
   </file>
 </xliff>

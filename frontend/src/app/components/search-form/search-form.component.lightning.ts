@@ -548,11 +548,11 @@ export class SearchFormComponent implements OnInit {
       } else if (nodes.length + channels.length > 1) {
         this.isSearching = false; this.dropdownHidden = false; this.chainMenu?.open();
       } else if (allowAutomaticFallback) this.searchAutomatic(searchText);
-      else this.showSearchError('No Lightning node or channel found.');
+      else this.showSearchError($localize`:@@taxi.lightning.search.notFound:No Lightning node or channel found.`);
     }, error: error => {
       if (revision !== this.selectionChanges$.value || this.currentSearchText() !== searchText) return;
       if (allowAutomaticFallback && [400,404].includes(error.status)) this.searchAutomatic(searchText);
-      else this.showSearchError(error.status === 404 ? 'No Lightning node or channel found.' : 'Search unavailable. Try again.');
+      else this.showSearchError(error.status === 404 ? $localize`:@@taxi.lightning.search.notFound:No Lightning node or channel found.` : $localize`:@@taxi.lightning.search.unavailable:Search unavailable. Try again.`);
     }});
   }
 

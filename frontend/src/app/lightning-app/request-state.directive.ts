@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnChanges, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, Inject, Input, LOCALE_ID, OnChanges, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LightningStatusService } from './lightning-status.service';
 
@@ -8,7 +8,7 @@ export class LightningRequestStateDirective implements OnInit,OnChanges,OnDestro
   private subscription?:Subscription;
   private badge?:HTMLElement;
   private originalPosition?:string;
-  constructor(private host:ElementRef<HTMLElement>,private renderer:Renderer2,private status:LightningStatusService) {}
+  constructor(private host:ElementRef<HTMLElement>,private renderer:Renderer2,private status:LightningStatusService,@Inject(LOCALE_ID) private locale:string) {}
   ngOnInit():void {
     const element=this.host.nativeElement;
     this.originalPosition=element.style.position;
@@ -28,7 +28,8 @@ export class LightningRequestStateDirective implements OnInit,OnChanges,OnDestro
     const stale=states.find(state=>state.state==='stale');
     const state=unavailable||stale;
     this.renderer.setStyle(this.badge,'display',state?'inline-block':'none');
-    this.badge.textContent=unavailable?'Reconnecting…':stale?.sourceUpdatedAt?'Cached data · '+new Date(stale.sourceUpdatedAt).toLocaleDateString('en',{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}):'Cached data';
+    const cached = $localize`:@@taxi.lightning.status.cached:Cached data`;
+    this.badge.textContent=unavailable?$localize`:@@taxi.lightning.status.reconnecting:Reconnecting…`:stale?.sourceUpdatedAt?cached+' · '+new Date(stale.sourceUpdatedAt).toLocaleDateString(this.locale,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'}):cached;
   }
   ngOnDestroy():void {this.subscription?.unsubscribe();if(this.badge)this.renderer.removeChild(this.host.nativeElement,this.badge);this.host.nativeElement.style.position=this.originalPosition||'';}
 }

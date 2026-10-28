@@ -19,7 +19,7 @@
   <div class="clearfix"></div>
 
   <div *ngIf="error" class="d-flex flex-column justify-content-around align-items-center mt-5 w-100" style="min-height: 100px">
-    <span class="text-center">{{ error.status === 404 ? 'No node found.' : 'Lightning data unavailable.' }}</span><button *ngIf="error.status !== 404" class="btn btn-outline-info btn-sm mt-3" type="button" (click)="retry()">Retry</button>
+    <span class="text-center"><ng-container *ngIf="error.status === 404; else dataUnavailable" i18n="@@taxi.lightning.error.nodeNotFound">No node found.</ng-container><ng-template #dataUnavailable><ng-container i18n="@@taxi.lightning.error.unavailable">Lightning data unavailable.</ng-container></ng-template></span><button *ngIf="error.status !== 404" class="btn btn-outline-info btn-sm mt-3" type="button" (click)="retry()" i18n="@@taxi.lightning.error.retry">Retry</button>
   </div>
 
   <div class="box" *ngIf="!error">
@@ -128,7 +128,7 @@
     <div class="row">
       <div class="col-md">
         <div class="mb-3">
-          <h5>Raw bits</h5>
+          <h5 i18n="@@taxi.lightning.features.rawBits">Raw bits</h5>
           <span class="text-wrap w-100"><small>{{ node.featuresBits }}</small></span>
         </div>
         <h5 i18n="lightning.decoded|Decoded">Decoded</h5>
@@ -136,7 +136,7 @@
           <thead>
             <th style="width: 13%">Bit</th>
             <th i18n="lightning.as-name">Name</th>
-            <th style="width: 25%; text-align: right">Required</th>
+            <th style="width: 25%; text-align: right" i18n="@@taxi.lightning.features.required">Required</th>
           </thead>
           <tbody>
             <tr *ngFor="let feature of node.features">
@@ -165,7 +165,7 @@
     <ng-template #noDropdown>
       <span class="input-group-text" id="basic-addon3">{{ node.socketsObject[selectedSocketIndex].label }}</span>
     </ng-template>
-    <input type="text" class="form-control" aria-label="Text input with dropdown button"
+    <input type="text" class="form-control" aria-label="Node address" i18n-aria-label="@@taxi.lightning.node.address"
       [value]="node.socketsObject[selectedSocketIndex].socket">
     <button class="btn btn-secondary ms-1" type="button" id="inputGroupFileAddon04" (mouseover)="qrCodeVisible = true"
       (mouseout)="qrCodeVisible = false">
