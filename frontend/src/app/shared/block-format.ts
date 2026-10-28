@@ -6,8 +6,19 @@ function blockNumberLocale(): string {
   return $localize`:@@taxi.block.numberLocale:en-US`;
 }
 
+const decimalSeparators = new Map<string, string>();
 function localizeExactDecimal(value: string): string {
-  return blockNumberLocale().startsWith('es') ? value.replace('.', ',') : value;
+  const locale = blockNumberLocale();
+  let separator = decimalSeparators.get(locale);
+  if (!separator) {
+    try {
+      separator = new Intl.NumberFormat(locale).formatToParts(1.1).find(part => part.type === 'decimal')?.value || '.';
+    } catch {
+      separator = '.';
+    }
+    decimalSeparators.set(locale, separator);
+  }
+  return value.replace('.', separator);
 }
 
 // Presentation only: never round provider data or detail-page amounts.
