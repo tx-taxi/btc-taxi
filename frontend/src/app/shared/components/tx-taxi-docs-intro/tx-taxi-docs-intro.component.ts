@@ -15,8 +15,12 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   ngOnInit(): void {
     void refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').then(() => this.cdr.markForCheck());
   }
-  get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.es ? 'es' : 'en'); }
-  get es(): boolean { return this.locale.startsWith('es'); }
+  get language(): string { return this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : 'en'; }
+  get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.language); }
+  get nativeUrl(): string { return this.language === 'en' ? '/' : `/${this.language}/`; }
+  get es(): boolean { return this.language === 'es'; }
+  get fr(): boolean { return this.language === 'fr'; }
+  get de(): boolean { return this.language === 'de'; }
   @Input() context = 'documentation';
   @Input() chainName = '';
   @Input() chainHost = '';

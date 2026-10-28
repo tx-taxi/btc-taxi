@@ -1,3 +1,5 @@
+import { frenchLightningFaqTitles, frenchLightningFaqCategories, frenchLightningRestDocs } from './lightning-docs-fr';
+import { germanLightningFaqTitles, germanLightningFaqCategories, germanLightningRestDocs } from './lightning-docs-de';
 import { restApiDocsData } from '@app/docs/api-docs/api-docs-data';
 export const lightningRestDocs = restApiDocsData.filter(item => item.category === 'lightning');
 export const lightningFaq = [
@@ -26,10 +28,13 @@ const spanishFaqTitles: Record<string, string> = {
 };
 const spanishFaqCategories: Record<string, string> = { Search: 'Búsqueda', Channels: 'Canales', Fees: 'Comisiones', Payments: 'Pagos', Maps: 'Mapas', Statistics: 'Estadísticas' };
 export function localizedLightningFaq(locale: string) {
-  if (!locale.startsWith('es')) return lightningFaq;
+  const es = locale.startsWith('es'), fr = locale.startsWith('fr'), de = locale.startsWith('de');
+  if (!es && !fr && !de) return lightningFaq;
+  const titles = es ? spanishFaqTitles : fr ? frenchLightningFaqTitles : germanLightningFaqTitles;
+  const categories = es ? spanishFaqCategories : fr ? frenchLightningFaqCategories : germanLightningFaqCategories;
   return lightningFaq.map(item => ({ ...item,
-    title: item.type === 'category' ? 'Red Lightning' : spanishFaqTitles[item.fragment] || item.title,
-    category: spanishFaqCategories[item.category] || item.category,
+    title: item.type === 'category' ? (es ? 'Red Lightning' : fr ? 'Réseau Lightning' : 'Lightning-Netzwerk') : titles[item.fragment] || item.title,
+    category: categories[item.category] || item.category,
   }));
 }
 const spanishRestDocs: Record<string, [string, string]> = {
@@ -52,9 +57,10 @@ const spanishRestDocs: Record<string, [string, string]> = {
   'get-channel-geodata-node': ['Datos geográficos de canales de un nodo', '<p>Devuelve los canales y sus datos geográficos para el nodo con la clave pública <code>:pubKey</code> indicada.</p>'],
 };
 export function localizedLightningRestDocs(locale: string) {
-  if (!locale.startsWith('es')) return lightningRestDocs;
+  const localized = locale.startsWith('es') ? spanishRestDocs : locale.startsWith('fr') ? frenchLightningRestDocs : locale.startsWith('de') ? germanLightningRestDocs : null;
+  if (!localized) return lightningRestDocs;
   return lightningRestDocs.map(item => {
-    const translated = spanishRestDocs[item.fragment];
+    const translated = localized[item.fragment];
     if (!translated) return item;
     return { ...item, title: `GET ${translated[0]}`, description: { ...item.description, default: translated[1] } };
   });

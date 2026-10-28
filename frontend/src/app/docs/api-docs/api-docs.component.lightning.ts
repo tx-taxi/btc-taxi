@@ -15,6 +15,8 @@ import { FaqTemplateDirective } from '@app/docs/faq-template/faq-template.compon
 })
 export class ApiDocsComponent implements OnInit, AfterViewInit {
   get es(): boolean { return this.locale.startsWith('es'); }
+  get fr(): boolean { return this.locale.startsWith('fr'); }
+  get de(): boolean { return this.locale.startsWith('de'); }
   private destroy$: Subject<any> = new Subject<any>();
   hostname = document.location.hostname;
   network$: Observable<string>;

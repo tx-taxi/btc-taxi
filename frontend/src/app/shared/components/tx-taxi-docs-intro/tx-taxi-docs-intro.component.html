@@ -1,12 +1,12 @@
-<section class="taxi-docs-intro" [attr.aria-label]="es ? 'Acerca de tx.taxi' : 'About tx.taxi'">
+<section class="taxi-docs-intro" [attr.aria-label]="es ? 'Acerca de tx.taxi' : fr ? 'À propos de tx.taxi' : de ? 'Über tx.taxi' : 'About tx.taxi'">
   <div class="taxi-docs-art" aria-hidden="true"></div>
   <div class="taxi-docs-copy">
-    <p class="taxi-docs-eyebrow">tx.taxi <span aria-hidden="true">/</span> {{ chainName }} {{ es ? (context === 'explorer' ? 'explorador' : 'documentación') : context }}</p>
-    <h2>{{ es ? 'Una búsqueda para todas las cadenas.' : 'One search across chains.' }}</h2>
-    <p>{{ es ? 'Pega una transacción, bloque o dirección en tx.taxi. Abre una coincidencia confirmada, elige entre las redes posibles o ve directamente al explorador de tu cadena.' : 'Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.' }}</p>
+    <p class="taxi-docs-eyebrow">tx.taxi <span aria-hidden="true">/</span> {{ chainName }} {{ es ? (context === 'explorer' ? 'explorador' : 'documentación') : fr ? (context === 'explorer' ? 'explorateur' : 'documentation') : de ? (context === 'explorer' ? 'Explorer' : 'Dokumentation') : context }}</p>
+    <h2>{{ es ? 'Una búsqueda para todas las cadenas.' : fr ? 'Une recherche pour toutes les chaînes.' : de ? 'Eine Suche für alle Blockchains.' : 'One search across chains.' }}</h2>
+    <p>{{ es ? 'Pega una transacción, bloque o dirección en tx.taxi. Abre una coincidencia confirmada, elige entre las redes posibles o ve directamente al explorador de tu cadena.' : fr ? 'Collez une transaction, un bloc ou une adresse dans tx.taxi. Ouvrez une correspondance confirmée, choisissez parmi les réseaux possibles ou accédez directement à votre explorateur.' : de ? 'Füge eine Transaktion, einen Block oder eine Adresse in tx.taxi ein. Öffne einen bestätigten Treffer, wähle zwischen möglichen Netzwerken oder gehe direkt zum Explorer deiner Blockchain.' : 'Paste a transaction, block or address into tx.taxi. Open a confirmed match, choose between possible networks, or head straight to your chain’s explorer.' }}</p>
     <div class="taxi-docs-actions">
-      <a class="taxi-docs-button" [href]="hubUrl">{{ es ? 'Abrir tx.taxi' : 'Open tx.taxi' }} <span aria-hidden="true">↗︎</span></a>
-      <a class="taxi-docs-native" [href]="es ? '/es/' : '/'" [attr.aria-label]="(es ? 'Abrir ' : 'Open ') + chainHost">{{ es ? 'Explorar' : 'Explore' }} {{ chainName }} <span aria-hidden="true">→</span></a>
+      <a class="taxi-docs-button" [href]="hubUrl">{{ es ? 'Abrir tx.taxi' : fr ? 'Ouvrir tx.taxi' : de ? 'tx.taxi öffnen' : 'Open tx.taxi' }} <span aria-hidden="true">↗︎</span></a>
+      <a class="taxi-docs-native" [href]="nativeUrl" [attr.aria-label]="(es ? 'Abrir ' : fr ? 'Ouvrir ' : de ? 'Öffnen: ' : 'Open ') + chainHost">{{ es ? 'Explorar' : fr ? 'Explorer' : de ? 'Erkunden' : 'Explore' }} {{ chainName }} <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
