@@ -85,6 +85,7 @@ export class SeoService {
   }
 
   updateCanonical(path) {
+    path = path || '/';
     const spanish = this.locale.startsWith('es');
     const localizedPath = spanish ? (path === '/' ? '/es/' : '/es' + path) : path;
     const canonicalUrl = 'https://' + this.baseDomain + localizedPath;
