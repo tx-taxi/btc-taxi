@@ -43,7 +43,7 @@ export class SeoService {
       this.clearSoft404();
       const path = this.router.url.split('?')[0].split('#')[0];
       this.updateCanonical(path);
-      const metadata = document.documentElement.lang.toLowerCase().startsWith('es') ? null : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
+      const metadata = document.documentElement.lang.toLowerCase().startsWith('es') ? window['__env']?.LIGHTNING_PAGE_METADATA_ES?.[path] : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
       if (metadata?.title && metadata?.description) {
         this.titleService.setTitle(metadata.title);
         this.metaService.updateTag({ property: 'og:title', content: metadata.title });

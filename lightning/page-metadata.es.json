@@ -1,0 +1,82 @@
+{
+  "/": {
+    "title": "Explorador de Lightning · lightning.btc.tx.taxi",
+    "description": "Explora nodos y canales públicos, capacidad y actividad de la red Lightning de Bitcoin."
+  },
+  "/nodes/rankings": {
+    "title": "Principales nodos Lightning · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning con mayor liquidez, conectividad y antigüedad."
+  },
+  "/nodes/rankings/liquidity": {
+    "title": "Clasificación por liquidez · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning con mayor capacidad de canales y sus estadísticas."
+  },
+  "/nodes/rankings/connectivity": {
+    "title": "Clasificación por conectividad · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning con más canales abiertos y sus estadísticas."
+  },
+  "/nodes/oldest": {
+    "title": "Nodos Lightning más antiguos · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning más antiguos, sus canales y su capacidad."
+  },
+  "/penalties": {
+    "title": "Transacciones de penalización · lightning.btc.tx.taxi",
+    "description": "Explora canales Lightning clasificados como penalizados y las transacciones de Bitcoin relacionadas."
+  },
+  "/about": {
+    "title": "Acerca de Lightning · lightning.btc.tx.taxi",
+    "description": "Explora nodos y canales Lightning, políticas de enrutamiento e historial de la red."
+  },
+  "/docs": {
+    "title": "Preguntas frecuentes · lightning.btc.tx.taxi",
+    "description": "Encuentra respuestas sobre nodos y canales públicos, comisiones de enrutamiento y estadísticas Lightning."
+  },
+  "/docs/faq": {
+    "title": "Preguntas frecuentes · lightning.btc.tx.taxi",
+    "description": "Encuentra respuestas sobre nodos y canales públicos, comisiones de enrutamiento y estadísticas Lightning."
+  },
+  "/docs/api/rest": {
+    "title": "API REST · lightning.btc.tx.taxi",
+    "description": "Documentación de la API REST de Lightning: consulta nodos, canales, clasificaciones y estadísticas públicas."
+  },
+  "/privacy-policy": {
+    "title": "Política de privacidad · lightning.btc.tx.taxi",
+    "description": "Información sobre privacidad, datos públicos Lightning, preferencias del navegador y registros del servidor."
+  },
+  "/terms-of-service": {
+    "title": "Términos de servicio · lightning.btc.tx.taxi",
+    "description": "Términos para utilizar el explorador informativo de nodos y canales Lightning."
+  },
+  "/trademark-policy": {
+    "title": "Marcas y atribuciones · lightning.btc.tx.taxi",
+    "description": "Información sobre marcas, atribuciones e independencia del proyecto."
+  },
+  "/group/the-mempool-open-source-project": {
+    "title": "Nodos Lightning de Mempool.space · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning operados por mempool.space."
+  },
+  "/graphs/capacity": {
+    "title": "Capacidad de la red Lightning · lightning.btc.tx.taxi",
+    "description": "Consulta la evolución de los canales abiertos y la capacidad total en bitcoin de la red Lightning."
+  },
+  "/graphs/nodes-networks": {
+    "title": "Nodos Lightning por red · lightning.btc.tx.taxi",
+    "description": "Consulta la evolución de los nodos Lightning por red, incluidas IPv4, IPv6, Tor, I2P y cjdns."
+  },
+  "/graphs/nodes-map": {
+    "title": "Mapa mundial de nodos Lightning · lightning.btc.tx.taxi",
+    "description": "Explora la ubicación de los nodos Lightning sin Tor en un mapa mundial."
+  },
+  "/graphs/nodes-channels-map": {
+    "title": "Mapa mundial de canales Lightning · lightning.btc.tx.taxi",
+    "description": "Explora las conexiones entre nodos Lightning sin Tor en un mapa mundial."
+  },
+  "/graphs/nodes-per-country": {
+    "title": "Nodos Lightning por país · lightning.btc.tx.taxi",
+    "description": "Consulta los nodos Lightning y la capacidad agregada por país."
+  },
+  "/graphs/nodes-per-isp": {
+    "title": "Nodos Lightning por proveedor · lightning.btc.tx.taxi",
+    "description": "Consulta los principales proveedores que alojan nodos Lightning, su número de nodos y capacidad agregada."
+  }
+}

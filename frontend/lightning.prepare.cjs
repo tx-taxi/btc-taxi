@@ -30,6 +30,8 @@ if (!process.env.GIT_COMMIT_HASH) {
 const config = { LIGHTNING: true, LIGHTNING_EXPLORER: true, MINING_DASHBOARD: false, MAINNET_ENABLED: true, TESTNET_ENABLED: false, TESTNET4_ENABLED: false, SIGNET_ENABLED: false, LIQUID_ENABLED: false, LIQUID_TESTNET_ENABLED: false, ACCELERATOR: false, ACCELERATOR_BUTTON: false, PUBLIC_ACCELERATIONS: false, SERVICES_API: '', BASE_MODULE: 'mempool', ROOT_NETWORK: '', TX_TAXI_ROUTER_URL: process.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi', LIGHTNING_REVIEW_ORIGIN: process.env.LIGHTNING_REVIEW_ORIGIN || '', ORIGINAL_THEME_FILE: '/resources/lightning-original.css?v=' + hash, GIT_COMMIT_HASH: commitHash, PACKAGE_JSON_VERSION: '3.4-dev' };
 config.LIGHTNING_SOCIAL_IMAGE = socialImage;
 config.LIGHTNING_PAGE_METADATA = pageMetadata;
+const spanishMetadataFile = path.join(root, '../lightning/page-metadata.es.json');
+if (fs.existsSync(spanishMetadataFile)) config.LIGHTNING_PAGE_METADATA_ES = JSON.parse(fs.readFileSync(spanishMetadataFile, 'utf8'));
 const script = 'window.__env=Object.assign(window.__env||{},' + JSON.stringify(config) + ');';
 fs.writeFileSync(path.join(root,'src/resources/lightning-config.js'), script);
 const template = fs.readFileSync(path.join(root,'src/index.lightning.template.html'),'utf8');

@@ -5,7 +5,7 @@ WORKDIR /app/frontend
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci --ignore-scripts
 COPY frontend ./
-COPY lightning/page-metadata.json lightning/social-image.json /app/lightning/
+COPY lightning/page-metadata.json lightning/page-metadata.es.json lightning/social-image.json /app/lightning/
 ARG SOURCE_COMMIT
 RUN GIT_COMMIT_HASH="${SOURCE_COMMIT:-release}" npm run build:lightning && cp -a dist/lightning/browser/en-US/. dist/lightning/browser/
 
@@ -16,7 +16,7 @@ RUN apt-get update \
 WORKDIR /app/lightning
 COPY lightning/package.json lightning/package-lock.json ./
 RUN npm ci --omit=dev --ignore-scripts
-COPY lightning/*.cjs lightning/page-metadata.json lightning/social-image.json ./
+COPY lightning/*.cjs lightning/page-metadata.json lightning/page-metadata.es.json lightning/social-image.json ./
 COPY --from=lightning-frontend /app/frontend/dist/lightning/browser /app/frontend/dist/lightning/browser
 ENV NODE_ENV=production LIGHTNING_HOST=0.0.0.0 LIGHTNING_PORT=8080 LIGHTNING_DATA_DIR=/app/data
 RUN mkdir /app/data && chown node:node /app/data

@@ -6,6 +6,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const ORIGIN = 'https://lightning.btc.tx.taxi';
 const PAGE_METADATA = require('./page-metadata.json');
+const SPANISH_METADATA = require('./page-metadata.es.json');
 const DEFAULT_DESCRIPTION = PAGE_METADATA['/'].description;
 const BASE_TITLE = PAGE_METADATA['/'].title;
 function socialImage() {
@@ -48,13 +49,46 @@ function routeMetadata(pathname, proxy) {
   if (known) return {...base, ...known, heading: pathname === '/' ? base.heading : known.title.split(' · ')[0]};
   return base;
 }
+function spanishRouteMetadata(pathname, data) {
+  const output = { ...data, path: '/es' + pathname, noindex: true, language: 'es' };
+  output.subtitle = data.subtitle === 'Your taxi to every transaction.' ? 'Tu taxi hacia cada transacción.' : data.subtitle;
+  const labels = {Explore:'Explorar', Network:'Red', Maps:'Mapas', Statistics:'Estadísticas', Capacity:'Capacidad', Channels:'Canales', 'Public key':'Clave pública', Status:'Estado', 'Left node':'Nodo izquierdo', 'Right node':'Nodo derecho'};
+  const values = {'Public nodes and channels':'Nodos y canales públicos', 'Nodes and channel connections':'Nodos y conexiones', 'Capacity and routing fees':'Capacidad y comisiones', Inactive:'Inactivo', Active:'Activo', Closed:'Cerrado'};
+  output.rows = data.rows.map(([label, value]) => [Object.hasOwn(labels, label) ? labels[label] : label, Object.hasOwn(values, value) ? values[value] : value]);
+  const known = SPANISH_METADATA[pathname];
+  if (known) return {...output, ...known, heading: pathname === '/' ? 'Red Lightning' : known.title.split(' · ')[0]};
+  const node = pathname.match(/^\/node\/((?:02|03)[a-f0-9]{64})$/i);
+  const channel = pathname.match(/^\/channel\/([\dx]+)$/i);
+  const country = pathname.match(/^\/nodes\/country\/([a-z]{2})$/i);
+  const isp = pathname.match(/^\/nodes\/isp\/([\d,]+)$/);
+  if (node) {
+    const name = data.heading === 'Lightning node' ? short(node[1], 32) : data.heading;
+    return {...output, title: `Nodo: ${name} · lightning.btc.tx.taxi`, heading: name, description: `Consulta los canales, la capacidad, la ubicación y las comisiones del nodo Lightning ${name}.`};
+  }
+  if (channel) {
+    const id = data.subtitle;
+    return {...output, title: `Canal: ${id} · lightning.btc.tx.taxi`, heading: 'Canal Lightning', description: `Consulta la capacidad, los nodos y las transacciones de Bitcoin relacionadas con el canal Lightning ${id}.`};
+  }
+  if (country) {
+    let name = country[1].toUpperCase();
+    try { name = new Intl.DisplayNames(['es'], {type:'region'}).of(name) || name; } catch {}
+    const heading = `Nodos Lightning en ${name}`;
+    return {...output, title: `${heading} · lightning.btc.tx.taxi`, heading, description: `Consulta los nodos Lightning anunciados en ${name} y sus canales y capacidad.`};
+  }
+  if (isp) {
+    const heading = `Nodos Lightning del proveedor AS${isp[1]}`;
+    return {...output, title: `${heading} · lightning.btc.tx.taxi`, heading, description: `Consulta los nodos Lightning y la capacidad agregada del proveedor AS${isp[1]}.`};
+  }
+  return {...output, ...SPANISH_METADATA['/'], heading:'Red Lightning'};
+}
 function injectMetadata(html, data) {
   const canonical = ORIGIN + data.path;
   const title = escape(data.title);
   const description = escape(data.description);
   const card = socialImage();
   const image = card.url;
-  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.noindex || data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="${data.language === 'es' ? 'es_ES' : 'en_US'}"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(card.alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(card.alt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
+  const imageAlt = data.language === 'es' ? 'Explorador de la red Lightning en tx.taxi.' : card.alt;
+  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.noindex || data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="${data.language === 'es' ? 'es_ES' : 'en_US'}"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(imageAlt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(imageAlt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
   return html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, '')
     .replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>/gi, '')
     .replace(/<meta\b[^>]*(?:name|property)=["'](?:description|robots|og:[^"']+|twitter:[^"']+)["'][^>]*>/gi, '')
@@ -62,7 +96,7 @@ function injectMetadata(html, data) {
     .replace(/(<app-root\b[^>]*>)[\s\S]*?(<\/app-root>)/i, (_, open, close) => {
       const rows = data.unavailable ? [] : data.rows.filter(([, value]) => value !== null && value !== undefined);
       const table = rows.length ? `<table class="table table-striped"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${escape(label)}</th><td style="overflow-wrap:anywhere">${escape(value)}</td></tr>`).join('')}</tbody></table>` : '';
-      const description = data.unavailable ? (data.status === 404 ? 'Lightning entity not found.' : 'Lightning data temporarily unavailable. Please retry.') : data.description;
+      const description = data.unavailable ? (data.language === 'es' ? (data.status === 404 ? 'No se encontró el elemento de Lightning.' : 'Los datos de Lightning no están disponibles temporalmente. Inténtalo de nuevo.') : (data.status === 404 ? 'Lightning entity not found.' : 'Lightning data temporarily unavailable. Please retry.')) : data.description;
       return `${open}<main class="container-xl"><h1>${escape(data.heading)}</h1><p style="overflow-wrap:anywhere">${escape(data.subtitle)}</p><p>${escape(description)}</p>${table}</main>${close}`;
     });
 }
@@ -102,4 +136,4 @@ function createCards(proxy, options = {}) {
     return work;
   };
 }
-module.exports = { routeMetadata, injectMetadata, cardSvg, createCards, ORIGIN, escape };
+module.exports = { routeMetadata, spanishRouteMetadata, injectMetadata, cardSvg, createCards, ORIGIN, escape };

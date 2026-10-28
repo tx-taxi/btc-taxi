@@ -8,7 +8,7 @@ const path = require('node:path');
 const zlib = require('node:zlib');
 const { promisify } = require('node:util');
 const { LightningProxy, GatewayError, channelId, channelNumeric, PUBKEY, validPublicKey } = require('./proxy.cjs');
-const { routeMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
+const { routeMetadata, spanishRouteMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
 const gzip = promisify(zlib.gzip);
 const TYPES = { '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm' };
 const PAGE_ROUTES = /^\/(?:node\/(?:02|03)[a-f0-9]{64}|channel\/[\dx]+|nodes\/(?:rankings(?:\/(?:liquidity|connectivity))?|oldest|country\/[A-Z]{2}|isp\/[\d,]+)|group\/the-mempool-open-source-project|penalties|graphs\/(?:lightning\/)?(?:capacity|nodes-networks|nodes-per-country|nodes-per-isp|nodes-channels-map|nodes-map)|about|docs(?:\/(?:faq|api\/rest))?|privacy-policy|terms-of-service|trademark-policy|search)?\/?$/i;
@@ -173,18 +173,7 @@ function createApp(options = {}) {
           catch { if (spanish) throw new Error('Spanish build unavailable'); html = await fsp.readFile(path.join(staticDir, 'index.lightning.html'), 'utf8'); }
         } catch { throw new GatewayError(503, 'The local Lightning build is not ready'); }
         const metadata = routeMetadata(canonicalPath, proxy);
-        if (spanish) {
-          metadata.path = '/es' + canonicalPath;
-          metadata.noindex = true;
-          metadata.language = 'es';
-          if (canonicalPath === '/') {
-            metadata.title = 'Explorador de Lightning · lightning.btc.tx.taxi';
-            metadata.heading = 'Red Lightning';
-            metadata.subtitle = 'Tu taxi hacia cada transacción.';
-            metadata.description = 'Explora nodos y canales públicos, capacidad y actividad de la red Lightning de Bitcoin.';
-            metadata.rows = [['Explorar', 'Nodos y canales públicos'], ['Red', 'Bitcoin Lightning'], ['Mapas', 'Nodos y conexiones'], ['Estadísticas', 'Capacidad y comisiones']];
-          }
-        }
+        if (spanish) Object.assign(metadata, spanishRouteMetadata(canonicalPath, metadata));
         if (pageStatus !== 200) metadata.unavailable = true;
         metadata.status = pageStatus;
         await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', ...(pageStatus === 503 ? {'retry-after': '60'} : {}) }); return;
