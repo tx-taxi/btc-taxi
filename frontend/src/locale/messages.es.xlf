@@ -11822,6 +11822,13 @@
       <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>por</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Unirse al canal de Telegram de tx.taxi</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>Explorador Lightning de tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Panel de Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>Clasificación de nodos</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Gráficos de Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>Documentación</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Acerca de Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>Ver en btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Conectando…</target></trans-unit>
     </body>
   </file>
 </xliff>

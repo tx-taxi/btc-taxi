@@ -11619,6 +11619,13 @@
       <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Knotenadresse</target></trans-unit>
       <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Kein Lightning-Knoten oder -Kanal gefunden.</target></trans-unit>
       <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>Die Suche ist nicht verfügbar. Bitte erneut versuchen.</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Lightning-Übersicht</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>Knoten-Rangliste</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Lightning-Diagramme</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>Dokumentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Über Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>Auf btc.tx.taxi ansehen</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Verbindung wird hergestellt…</target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -14,7 +14,7 @@ import { LightningStatusService } from './lightning-status.service';
 export class LightningShellComponent implements OnInit, OnDestroy {
   readonly health$ = this.status.health$;
   get es(): boolean { return this.locale.startsWith('es'); }
-  readonly nav = [ {path:'/',icon:'nav-bolt',label:this.es ? 'Panel de Lightning' : 'Lightning dashboard',exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:this.es ? 'Clasificación de nodos' : 'Node rankings',exact:false}, {path:'/graphs',icon:'nav-chart-area',label:this.es ? 'Gráficos de Lightning' : 'Lightning graphs',exact:false}, {path:'/docs',icon:'nav-book',label:this.es ? 'Documentación' : 'Documentation',exact:false}, {path:'/about',icon:'nav-info-circle',label:this.es ? 'Acerca de Lightning' : 'About Lightning',exact:false} ];
+  readonly nav = [ {path:'/',icon:'nav-bolt',label:$localize`:@@taxi.lightning.nav.dashboard:Lightning dashboard`,exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:$localize`:@@taxi.lightning.nav.rankings:Node rankings`,exact:false}, {path:'/graphs',icon:'nav-chart-area',label:$localize`:@@taxi.lightning.nav.graphs:Lightning graphs`,exact:false}, {path:'/docs',icon:'nav-book',label:$localize`:@@taxi.lightning.nav.docs:Documentation`,exact:false}, {path:'/about',icon:'nav-info-circle',label:$localize`:@@taxi.lightning.nav.about:About Lightning`,exact:false} ];
   private subscriptions = new Subscription();
   private linksObserver?: MutationObserver;
   private applyingSharedCurrency = false;
@@ -56,7 +56,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
     const convert = () => document.querySelectorAll<HTMLAnchorElement>('app-lightning-shell a[href]').forEach(anchor => {
       const raw = anchor.getAttribute('href'); if(!raw || !/^\/(?:tx|block|address)\//.test(raw)) return;
       anchor.href = 'https://btc.tx.taxi' + raw;
-      anchor.title = anchor.title || 'View on btc.tx.taxi';
+      anchor.title = anchor.title || $localize`:@@taxi.lightning.nav.bitcoinLink:View on btc.tx.taxi`;
     });
     this.linksObserver = new MutationObserver(convert); this.linksObserver.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['href']}); convert();
     document.addEventListener('click',this.onBitcoinLink,true);
