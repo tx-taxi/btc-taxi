@@ -54,11 +54,17 @@ function injectMetadata(html, data) {
   const description = escape(data.description);
   const card = socialImage();
   const image = card.url;
-  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.unavailable ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="en_US"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(card.alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(card.alt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
+  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="en_US"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(card.alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(card.alt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
   return html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, '')
     .replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>/gi, '')
     .replace(/<meta\b[^>]*(?:name|property)=["'](?:description|robots|og:[^"']+|twitter:[^"']+)["'][^>]*>/gi, '')
-    .replace(/<\/head>/i, `${tags}</head>`);
+    .replace(/<\/head>/i, `${tags}</head>`)
+    .replace(/(<app-root\b[^>]*>)[\s\S]*?(<\/app-root>)/i, (_, open, close) => {
+      const rows = data.unavailable ? [] : data.rows.filter(([, value]) => value !== null && value !== undefined);
+      const table = rows.length ? `<table class="table table-striped"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${escape(label)}</th><td style="overflow-wrap:anywhere">${escape(value)}</td></tr>`).join('')}</tbody></table>` : '';
+      const description = data.unavailable ? (data.status === 404 ? 'Lightning entity not found.' : 'Lightning data temporarily unavailable. Please retry.') : data.description;
+      return `${open}<main class="container-xl"><h1>${escape(data.heading)}</h1><p style="overflow-wrap:anywhere">${escape(data.subtitle)}</p><p>${escape(description)}</p>${table}</main>${close}`;
+    });
 }
 function cardSvg(data, logoPath) {
   let logo = null;

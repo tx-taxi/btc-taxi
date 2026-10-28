@@ -41,7 +41,7 @@ async function api(pathname) {
     signal: AbortSignal.timeout(3500),
     headers: { accept: 'application/json' },
   });
-  if (!response.ok || !response.body) throw new Error(`Bitcoin API returned ${response.status}`);
+  if (!response.ok || !response.body) throw Object.assign(new Error(`Bitcoin API returned ${response.status}`), {status: response.status === 404 ? 404 : 503});
   const reader = response.body.getReader();
   const chunks = [];
   let size = 0;
@@ -134,12 +134,12 @@ async function entity(kind, id) {
   };
 }
 
-function fallback(kind, id) {
+function fallback(kind, id, status = 503) {
   const label = { tx: 'Transaction', block: 'Block', address: 'Address' }[kind];
   return {
     heading: `${label} lookup`, subtitle: id,
-    description: `Bitcoin ${label.toLowerCase()} lookup for ${id}. Live details are temporarily unavailable.`,
-    rows: [], ttl: 0, unavailable: true,
+    description: status === 404 ? `Bitcoin ${label.toLowerCase()} ${id} was not found.` : `Bitcoin ${label.toLowerCase()} lookup for ${id}. Live details are temporarily unavailable.`,
+    rows: [], ttl: 0, unavailable: true, status,
   };
 }
 
@@ -159,7 +159,7 @@ function metadata(kind, id, data) {
     ['name', 'twitter:image:alt', staticPages.manifest.image.alt], ['name', 'twitter:domain', 'btc.tx.taxi'],
   ];
   const replacement = `<title>${escape(title)}</title><link id="canonical" rel="canonical" href="${escape(url)}">` +
-    `<meta name="robots" content="${data.unavailable ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'}">` +
+    `<meta name="robots" content="${data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">` +
     tags.map(([attribute, name, content]) => `<meta ${attribute}="${name}" content="${escape(content)}">`).join('');
   const document = parse5.parse(html, { sourceCodeLocationInfo: true });
   const head = document.childNodes.find(node => node.tagName === 'html')?.childNodes.find(node => node.tagName === 'head');
@@ -179,7 +179,11 @@ function metadata(kind, id, data) {
     output += html.slice(cursor, location.startOffset);
     cursor = location.endOffset;
   }
-  return output + html.slice(cursor, insertAt) + `\n  ${replacement}\n` + html.slice(insertAt);
+  const result = output + html.slice(cursor, insertAt) + `\n  ${replacement}\n` + html.slice(insertAt);
+  const rows = data.rows.filter(([, value]) => value !== null && value !== undefined);
+  const table = rows.length ? `<table class="table table-striped"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${escape(label)}</th><td style="overflow-wrap:anywhere">${escape(value)}</td></tr>`).join('')}</tbody></table>` : '';
+  return result.replace(/(<app-root\b[^>]*>)[\s\S]*?(<\/app-root>)/i, (_, open, close) => `${open}<main class="container-xl"><h1>${escape(data.heading)}</h1><p style="overflow-wrap:anywhere">${escape(data.subtitle)}</p><p>${escape(data.description)}</p>${table}</main>${close}`);
+
 }
 
 function cardSvg(data) {
@@ -212,7 +216,7 @@ async function load(kind, id) {
   if (pending.has(key)) return pending.get(key);
   if (active >= 8) return fallback(kind, id);
   active++;
-  const work = entity(kind, id).catch(() => fallback(kind, id)).then(data => {
+  const work = entity(kind, id).catch(error => fallback(kind, id, error.status === 404 ? 404 : 503)).then(data => {
     cache.delete(key);
     cache.set(key, { data, expires: Date.now() + (data.ttl || 0) });
     while (cache.size > 256) cache.delete(cache.keys().next().value);
@@ -268,7 +272,7 @@ async function serve(req, res) {
     return res.end(req.method === 'HEAD' ? undefined : body);
   }
   const body = metadata(match.kind, match.id, data);
-  res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': data.unavailable ? 'no-store' : `public, max-age=${Math.floor(data.ttl / 1000)}`,
+  res.writeHead(data.status || 200, { ...(data.status === 503 ? {'retry-after': '60'} : {}), 'content-type': 'text/html; charset=utf-8', 'cache-control': data.unavailable ? 'no-store' : `public, max-age=${Math.floor(data.ttl / 1000)}`,
     'x-content-type-options': 'nosniff' });
   res.end(req.method === 'HEAD' ? undefined : body);
 }

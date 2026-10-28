@@ -159,9 +159,9 @@ function createApp(options = {}) {
           try {
             const lookup = proxy.request(metadataPath).catch(error => ({status: error.status === 404 ? 404 : 503}));
             let deadline;
-            const response = await Promise.race([lookup, new Promise(resolve => {deadline = setTimeout(() => resolve(null), 750);})]);
+            const response = await Promise.race([lookup, new Promise(resolve => {deadline = setTimeout(() => resolve(null), 3500);})]);
             clearTimeout(deadline);
-            if (response && response.status !== 200) pageStatus = response.status === 404 ? 404 : 503;
+            if (!response || response.status !== 200) pageStatus = response?.status === 404 ? 404 : 503;
           } catch (error) { pageStatus = error.status === 404 ? 404 : 503; }
         }
         let html;
@@ -171,7 +171,8 @@ function createApp(options = {}) {
         } catch { throw new GatewayError(503, 'The local Lightning build is not ready'); }
         const metadata = routeMetadata(canonicalPath, proxy);
         if (pageStatus !== 200) metadata.unavailable = true;
-        await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' }); return;
+        metadata.status = pageStatus;
+        await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', ...(pageStatus === 503 ? {'retry-after': '60'} : {}) }); return;
       }
       if (!TYPES[path.extname(pathname)] || pathname.startsWith('/.') || /(?:^|\/)\.[^/]+/.test(pathname)) throw new GatewayError(404, 'Not found');
       const file = path.resolve(staticDir, '.' + pathname);

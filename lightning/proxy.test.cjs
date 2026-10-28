@@ -214,3 +214,32 @@ test('runtime process health survives dependency failure and static metadata pre
   await app.close();
   await fs.rm(dir, { recursive: true, force: true });
 });
+
+test('cold entity documents wait for verified facts and never return success after their metadata deadline', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'lightning-entity-document-'));
+  await fs.writeFile(path.join(dir, 'index.html'), '<html><head></head><body><app-root></app-root><script src="main.js"></script></body></html>');
+  const app = createApp({staticDir: dir, dataDir: false, proxyOptions: {fetch: async () => {
+    await new Promise(resolve => setTimeout(resolve, 1100));
+    return json({public_key: PUBKEY, alias: 'Verified node', capacity: 500000000, active_channel_count: 12});
+  }}});
+  await new Promise(resolve => app.server.listen(0, '127.0.0.1', resolve));
+  const origin = `http://127.0.0.1:${app.server.address().port}`;
+  try {
+    let response = await fetch(origin + '/node/' + PUBKEY);
+    let html = await response.text();
+    assert.equal(response.status, 200);
+    assert.match(html, /Verified node/);
+    assert.match(html, /5.00000000 BTC/);
+    assert.match(html, /<table/);
+    app.proxy.request = () => new Promise(() => {});
+    response = await fetch(origin + '/node/' + PUBKEY);
+    html = await response.text();
+    assert.equal(response.status, 503);
+    assert.equal(response.headers.get('retry-after'), '60');
+    assert.doesNotMatch(html, /noindex/);
+    assert.match(html, /main.js/);
+  } finally {
+    await app.close();
+    await fs.rm(dir, {recursive: true, force: true});
+  }
+});

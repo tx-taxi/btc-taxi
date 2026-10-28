@@ -65,7 +65,7 @@ function createStaticPages(indexPath, baseHtml) {
     }
     const first = lookup.get('/blocks/1');
     const name = `Bitcoin Blocks — Page ${match[1]}`;
-    return { ...first, route, title: `${name} | btc.tx.taxi`, markdown: first.markdown.replace('# Bitcoin Blocks\n', `# ${name}\n`).replace(`${origin}/blocks/1`, origin + route), schema: { ...first.schema, name, url: origin + route } };
+    return { ...first, route, noindex: true, title: `${name} | btc.tx.taxi`, markdown: first.markdown.replace('# Bitcoin Blocks\n', `# ${name}\n`).replace(`${origin}/blocks/1`, origin + route), schema: { ...first.schema, name, url: origin + route } };
   }
   function serve(req, res, pathname) {
     if (/^\/en-US(?:\/|$)/.test(pathname)) { write(res, req.method, 308, 'text/plain', '', { Location: pathname.replace(/^\/en-US/, '') || '/' });return true; }
