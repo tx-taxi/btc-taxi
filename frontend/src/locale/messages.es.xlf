@@ -11829,6 +11829,23 @@
       <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Acerca de Lightning</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>Ver en btc.tx.taxi</target></trans-unit>
       <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Conectando…</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>SELECCIONADO</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>Enrutamiento automático</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>Ver inicio</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>EXPLORADORES NATIVOS</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>EXPLORADORES EXTERNOS</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>Registro de exploradores no disponible</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>Cargando exploradores</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>Abrir</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>Abierto</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>Cambiar</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>Encontrado</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>Posible</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Pide un taxi, pega lo que quieras aquí.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>Buscar</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Buscar</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>Elegir cadena de búsqueda</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>Explorador seleccionado</target></trans-unit>
     </body>
   </file>
 </xliff>

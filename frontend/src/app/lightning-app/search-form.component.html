@@ -12,10 +12,10 @@
               <img [src]="defaultChainIconUrl" [alt]="defaultChainIconAlt">
             </ng-template>
           </button>
-          <div ngbDropdownMenu class="search-chain-menu" [attr.aria-label]="es ? 'Elegir cadena de búsqueda' : 'Choose search chain'">
+          <div ngbDropdownMenu class="search-chain-menu" aria-label="Choose search chain" i18n-aria-label="@@taxi.lightning.search.chooseAria">
             <app-search-results #searchResults class="lightning-search-suggestions" [hidden]="dropdownHidden || !isSourceChainSelected()" [results]="typeAhead$ | async" (selectedResult)="selectedResult($event)"></app-search-results>
-            <div class="search-chain-selected-group" role="group" [attr.aria-label]="es ? 'Explorador seleccionado' : 'Selected explorer'">
-              <span class="search-chain-group-label">{{ es ? 'SELECCIONADO' : 'SELECTED' }}</span>
+            <div class="search-chain-selected-group" role="group" aria-label="Selected explorer" i18n-aria-label="@@taxi.lightning.search.selectedAria">
+              <span class="search-chain-group-label"><ng-container i18n="@@taxi.lightning.search.selected">SELECTED</ng-container></span>
               <ng-container *ngIf="selectedExplorer() as explorer; else selectedAutomatic">
                 <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer}"></ng-container>
                 <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
@@ -47,7 +47,7 @@
                 [attr.aria-pressed]="isAutomaticRoutingSelected()" (click)="selectAutomaticRouting()">
                 <img src="https://tx.taxi/assets/brand/router-favicon.svg" alt="">
                 <span class="search-chain-copy">
-                  <span class="search-chain-name">{{ es ? 'Enrutamiento automático' : 'Automatic Routing' }}</span>
+                  <span class="search-chain-name"><ng-container i18n="@@taxi.lightning.search.automatic">Automatic Routing</ng-container></span>
                   <span class="search-chain-host">tx.taxi</span>
                 </span>
               </button>
@@ -56,11 +56,11 @@
                   [attr.aria-label]="es ? 'Abrir tx.taxi en una pestaña nueva' : 'Open tx.taxi in a new tab'" [attr.title]="es ? 'Abrir tx.taxi en una pestaña nueva' : 'Open tx.taxi in a new tab'">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
-                <a class="search-chain-switch" [href]="hubUrl">{{ es ? 'Ver inicio' : 'View Hub' }}</a>
+                <a class="search-chain-switch" [href]="hubUrl"><ng-container i18n="@@taxi.lightning.search.viewHub">View Hub</ng-container></a>
               </span>
             </div>
             </ng-template>
-            <span class="search-chain-group-label">{{ es ? 'EXPLORADORES NATIVOS' : 'NATIVE EXPLORERS' }}</span>
+            <span class="search-chain-group-label"><ng-container i18n="@@taxi.lightning.search.native">NATIVE EXPLORERS</ng-container></span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
@@ -86,9 +86,9 @@
                   </ng-container>
                 </div>
               </ng-container>
-              <span *ngIf="!explorers.length" class="search-chain-message">{{ es ? 'Registro de exploradores no disponible' : 'Explorer registry unavailable' }}</span>
+              <span *ngIf="!explorers.length" class="search-chain-message"><ng-container i18n="@@taxi.lightning.search.registryUnavailable">Explorer registry unavailable</ng-container></span>
             </ng-container>
-            <span class="search-chain-group-label">{{ es ? 'EXPLORADORES EXTERNOS' : '3RD-PARTY EXPLORERS' }}</span>
+            <span class="search-chain-group-label"><ng-container i18n="@@taxi.lightning.search.external">3RD-PARTY EXPLORERS</ng-container></span>
             <ng-container *ngIf="searchOptions$ | async as searchOptions">
               <ng-container *ngIf="searchOptions.candidates.length">
 
@@ -108,7 +108,7 @@
               </a>
               <span class="search-chain-actions">
                 <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'" [attr.title]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
-                <a class="search-chain-switch" [href]="explorer.origin">{{ es ? 'Abrir' : 'Open' }}</a>
+                <a class="search-chain-switch" [href]="explorer.origin"><ng-container i18n="@@taxi.lightning.search.open">Open</ng-container></a>
               </span>
             </div>
             <ng-template #candidateRow let-candidate>
@@ -127,7 +127,7 @@
                     <span class="search-chain-host">{{ candidate.host }}</span>
                   </span>
                   <span class="search-chain-match" [class.is-confirmed]="candidate.confirmed">
-                    {{ candidate.confirmed ? (es ? 'Encontrado' : 'Found') : (es ? 'Posible' : 'Possible') }}
+                    <ng-container *ngIf="candidate.confirmed; else possibleMatch" i18n="@@taxi.lightning.search.found">Found</ng-container><ng-template #possibleMatch><ng-container i18n="@@taxi.lightning.search.possible">Possible</ng-container></ng-template>
                   </span>
                 </button>
             </ng-template>
@@ -155,7 +155,7 @@
                   <ng-container *ngTemplateOutlet="rowActions"></ng-container>
                 </span>
                 <ng-template #rowActions>
-                <span *ngIf="isOpenedExplorer(explorer); else explorerActions" class="search-chain-opened">{{ es ? 'Abierto' : 'Opened' }}</span>
+                <span *ngIf="isOpenedExplorer(explorer); else explorerActions" class="search-chain-opened"><ng-container i18n="@@taxi.lightning.search.opened">Opened</ng-container></span>
                 <ng-template #explorerActions>
                   <span class="search-chain-actions">
                     <a class="search-chain-new-tab" [href]="localizedExplorerUrl(explorer.origin)" target="_blank" rel="noopener noreferrer"
@@ -163,25 +163,25 @@
                       <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                     </a>
                     <a class="search-chain-switch" [href]="localizedExplorerUrl(explorer.origin)"
-                      [attr.aria-label]="(es ? 'Cambiar a ' : 'Switch to ') + explorer.name">{{ es ? 'Cambiar' : 'Switch' }}</a>
+                      [attr.aria-label]="(es ? 'Cambiar a ' : 'Switch to ') + explorer.name"><ng-container i18n="@@taxi.lightning.search.switch">Switch</ng-container></a>
                   </span>
                 </ng-template>
                 </ng-template>
               </div>
             </ng-template>
             <ng-template #explorerRegistryLoading>
-              <span class="search-chain-message">{{ es ? 'Cargando exploradores' : 'Loading explorers' }}</span>
+              <span class="search-chain-message"><ng-container i18n="@@taxi.lightning.search.loadingExplorers">Loading explorers</ng-container></span>
             </ng-template>
           </div>
         </div>
-        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" [attr.placeholder]="es ? 'Pide un taxi, pega lo que quieras aquí.' : 'Wave a taxi, paste anything here.'" [attr.aria-label]="(es ? 'Buscar: ' : 'Search: ') + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
+        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" placeholder="Wave a taxi, paste anything here." i18n-placeholder="@@taxi.lightning.search.placeholder" [attr.aria-label]="(es ? 'Buscar: ' : 'Search: ') + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
       </div>
 
       <div *ngIf="searchError" id="lightning-search-error" class="search-error" role="alert">{{ searchError }}</div>
     </div>
     <div>
-      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" [attr.aria-label]="es ? 'Buscar' : 'Search'">
-        <fa-icon *ngIf="!(isTypeaheading$ | async) else searchLoading" [icon]="['fas', 'search']" [fixedWidth]="true" [attr.title]="es ? 'Buscar' : 'Search'"></fa-icon>
+      <button [disabled]="isSearching" type="submit" class="btn btn-purple search-submit" aria-label="Search" i18n-aria-label="@@taxi.lightning.search.searchAria">
+        <fa-icon *ngIf="!(isTypeaheading$ | async) else searchLoading" [icon]="['fas', 'search']" [fixedWidth]="true" title="Search" i18n-title="@@taxi.lightning.search.searchTitle"></fa-icon>
       </button>
     </div>
   </div>
