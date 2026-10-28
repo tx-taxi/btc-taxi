@@ -11643,6 +11643,16 @@
       <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Rechercher</target></trans-unit>
       <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>Choisir la blockchain à rechercher</target></trans-unit>
       <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>Explorateur sélectionné</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>fr</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Taux de frais médian</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Fourchette des frais</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Tableau de bord de l’explorateur Bitcoin</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Afficher la taille des blocs</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>Afficher le total des frais par bloc</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Afficher les blocs les plus récents à droite</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Afficher les blocs les plus récents à gauche</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target>Logo du pool de minage <x id="NAME"/></target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Logo du pool de minage</target></trans-unit>
     </body>
   </file>
 </xliff>
