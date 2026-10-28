@@ -11584,6 +11584,10 @@
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Tasa mediana de comisión</target></trans-unit>
       <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Rango de comisiones</target></trans-unit>
       <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>es</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target>No se han cargado las salidas anteriores que faltan. Algunos campos, como la tasa de comisión, no se pueden calcular.</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target>Error al cargar las salidas anteriores que faltan</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target>Motivo:</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target>Error al cargar los datos de CPFP</target></trans-unit>
     </body>
   </file>
 </xliff>
