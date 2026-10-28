@@ -11583,6 +11583,7 @@
       <trans-unit id="taxi.block.details.totalFees" datatype="html"><source>Total fees</source><target>Comisiones totales</target></trans-unit>
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Tasa mediana de comisión</target></trans-unit>
       <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Rango de comisiones</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>es</target></trans-unit>
     </body>
   </file>
 </xliff>
