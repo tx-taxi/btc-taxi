@@ -44,4 +44,4 @@
   .navbar:has(.navbar-brand.dual-logos) .chain-sponsorship { display: none; }
 }
 
-@media (min-width:360px) and (max-width:563px) { .navbar-brand { margin:0; } }
+@media (min-width:360px) and (max-width:563px) { .navbar:has(.chain-sponsorship) .navbar-brand { margin:0; } }
