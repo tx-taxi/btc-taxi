@@ -5,7 +5,12 @@
 // No URL supplied by a visitor is ever used as an upstream origin.
 const ORIGIN = 'https://mempool.emzy.de';
 const ORIGINS = Object.freeze([ORIGIN, 'https://mempool.space']);
+const {ECDH} = require('node:crypto');
 const PUBKEY = /^(?:02|03)[a-f0-9]{64}$/i;
+function validPublicKey(value) {
+  if (!PUBKEY.test(value)) return false;
+  try { ECDH.convertKey(Buffer.from(value, 'hex'), 'secp256k1', undefined, undefined, 'compressed'); return true; } catch { return false; }
+}
 const TXID = /^[a-f0-9]{64}$/i;
 const U64_MAX = (1n << 64n) - 1n;
 const INTERVALS = new Set(['24h', '3d', '1w', '1m', '3m', '6m', '1y', '2y', '3y', '4y', 'all']);
@@ -87,7 +92,7 @@ function routeFor(raw) {
       valid = true;
     } else if (rest === 'channels') {
       suffix = query(url.searchParams, {
-        public_key: v => PUBKEY.test(v), index: v => /^-?\d{1,7}$/.test(v) && Number(v) >= -1 && Number(v) <= 1_000_000,
+        public_key: v => validPublicKey(v), index: v => /^-?\d{1,7}$/.test(v) && Number(v) >= -1 && Number(v) <= 1_000_000,
         status: v => ['open', 'active', 'closed'].includes(v),
       }, ['public_key', 'status']);
       valid = true;
@@ -98,7 +103,7 @@ function routeFor(raw) {
     } else if (/^channels\//.test(rest) && channelId(rest.slice(9))) {
       p = '/api/v1/lightning/channels/' + channelNumeric(rest.slice(9));
       valid = true;
-    } else if (rest === 'channels-geo' || /^channels-geo\//.test(rest) && PUBKEY.test(rest.slice(13))) {
+    } else if (rest === 'channels-geo' || /^channels-geo\//.test(rest) && validPublicKey(rest.slice(13))) {
       suffix = query(url.searchParams, { style: v => ['graph', 'nodepage', 'widget', 'channelpage'].includes(v) });
       ttl = 300_000;
       valid = true;
@@ -116,7 +121,7 @@ function routeFor(raw) {
       valid = true;
     } else {
       const m = rest.match(/^nodes\/([^/]+)(?:\/(statistics|fees\/histogram))?$/);
-      if (m && PUBKEY.test(m[1])) {
+      if (m && validPublicKey(m[1])) {
         ttl = m[2] ? 300_000 : 60_000;
         valid = true;
       }
@@ -423,4 +428,4 @@ class LightningProxy {
   }
 }
 
-module.exports = { LightningProxy, GatewayError, routeFor, channelId, channelNumeric, PUBKEY, TXID, ORIGIN, ORIGINS };
+module.exports = { LightningProxy, GatewayError, routeFor, channelId, channelNumeric, PUBKEY, validPublicKey, TXID, ORIGIN, ORIGINS };

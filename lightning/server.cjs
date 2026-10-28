@@ -7,7 +7,7 @@ const fsp = require('node:fs/promises');
 const path = require('node:path');
 const zlib = require('node:zlib');
 const { promisify } = require('node:util');
-const { LightningProxy, GatewayError, channelId, channelNumeric, PUBKEY } = require('./proxy.cjs');
+const { LightningProxy, GatewayError, channelId, channelNumeric, PUBKEY, validPublicKey } = require('./proxy.cjs');
 const { routeMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
 const gzip = promisify(zlib.gzip);
 const TYPES = { '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm' };
@@ -23,7 +23,7 @@ async function resolve(value, proxy) {
     if (!match) throw new GatewayError(400, 'Unsupported Lightning URL');
     value = decodeURIComponent(match[1]);
   }
-  if (PUBKEY.test(value)) {
+  if (validPublicKey(value)) {
     const response = await proxy.request('/api/v1/lightning/nodes/' + value.toLowerCase());
     if (response.status !== 200) throw new GatewayError(response.status, response.status === 404 ? 'Node not found' : 'Node data unavailable');
     const node = JSON.parse(response.body);
@@ -43,7 +43,7 @@ async function resolve(value, proxy) {
   if (response.status !== 200) throw new GatewayError(response.status, 'Lightning search unavailable');
   const data = JSON.parse(response.body);
   if (!Array.isArray(data.nodes) || !Array.isArray(data.channels)) throw new GatewayError(502, 'Invalid Lightning search result');
-  const nodes = data.nodes.filter(node => typeof node.alias === 'string' && node.alias.toLocaleLowerCase('en-US') === value.toLocaleLowerCase('en-US') && PUBKEY.test(node.public_key));
+  const nodes = data.nodes.filter(node => typeof node.alias === 'string' && node.alias.toLocaleLowerCase('en-US') === value.toLocaleLowerCase('en-US') && validPublicKey(node.public_key));
   if (nodes.length === 1) return { type: 'node', id: nodes[0].public_key.toLowerCase(), state: response.state, observedAt: response.headers['x-observed-at'] };
   if (nodes.length > 1) throw new GatewayError(409, 'Several nodes use this name');
   throw new GatewayError(404, 'No exact Lightning match');
@@ -157,12 +157,12 @@ function createApp(options = {}) {
           : /^\/nodes\/(country|isp)\//.test(canonicalPath) ? '/api/v1/lightning' + canonicalPath : null;
         if (metadataPath) {
           try {
-            const lookup = proxy.request(metadataPath).catch(error => ({status: error.status === 404 ? 404 : 503}));
+            const lookup = proxy.request(metadataPath).catch(error => ({status: [400, 404].includes(error.status) ? 404 : 503}));
             let deadline;
             const response = await Promise.race([lookup, new Promise(resolve => {deadline = setTimeout(() => resolve(null), 3500);})]);
             clearTimeout(deadline);
-            if (!response || response.status !== 200) pageStatus = response?.status === 404 ? 404 : 503;
-          } catch (error) { pageStatus = error.status === 404 ? 404 : 503; }
+            if (!response || response.status !== 200) pageStatus = [400, 404].includes(response?.status) ? 404 : 503;
+          } catch (error) { pageStatus = [400, 404].includes(error.status) ? 404 : 503; }
         }
         let html;
         try {

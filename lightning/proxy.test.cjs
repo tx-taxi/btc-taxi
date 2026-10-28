@@ -186,8 +186,8 @@ test('resolver verifies entity identities and refuses ambiguous aliases or untru
   let mode = 'correct';
   const proxy = new LightningProxy({ fetch: async url => {
     if (url.includes('/channels/')) return json({ short_id: mode === 'mismatch' ? '811986x2037x0' : '811984x2037x0' });
-    if (url.includes('/search?')) return json({ nodes: [{ public_key: PUBKEY, alias: 'ACINQ' }, { public_key: '02' + '1'.repeat(64), alias: 'Acinq' }], channels: [] });
-    return json({ public_key: mode === 'mismatch' ? '02' + '1'.repeat(64) : PUBKEY });
+    if (url.includes('/search?')) return json({ nodes: [{ public_key: PUBKEY, alias: 'ACINQ' }, { public_key: '0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798', alias: 'Acinq' }], channels: [] });
+    return json({ public_key: mode === 'mismatch' ? '0279be667ef9dcbbac55a06295ce870b07029bfcdb2dce28d959f2815b16f81798' : PUBKEY });
   } });
   assert.equal((await resolve('811984x2037x0', proxy)).id, '892785849701564416');
   assert.equal((await resolve(PUBKEY, proxy)).id, PUBKEY);
@@ -242,4 +242,10 @@ test('cold entity documents wait for verified facts and never return success aft
     await app.close();
     await fs.rm(dir, {recursive: true, force: true});
   }
+});
+
+test('non-curve public keys are rejected locally instead of becoming upstream 500/retry loops', async () => {
+ let calls=0;const proxy=new LightningProxy({fetch:async()=>{calls++;return json({})}});
+ await assert.rejects(proxy.request('/api/v1/lightning/nodes/02'+'0'.repeat(64)),e=>e.status===404);
+ assert.equal(calls,0);proxy.close();
 });
