@@ -1,5 +1,5 @@
 import { nativeSeoPages } from './native-seo-data';
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, LOCALE_ID } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs';
@@ -22,6 +22,7 @@ export class SeoService {
     private stateService: StateService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
+    @Inject(LOCALE_ID) private locale: string,
   ) {
     // save original meta tags
     try {
@@ -84,7 +85,18 @@ export class SeoService {
   }
 
   updateCanonical(path) {
-    const canonicalUrl = 'https://' + this.baseDomain + path;
+    const spanish = this.locale.startsWith('es');
+    const localizedPath = spanish ? (path === '/' ? '/es/' : '/es' + path) : path;
+    const canonicalUrl = 'https://' + this.baseDomain + localizedPath;
+    if (spanish) this.metaService.updateTag({ name: 'robots', content: path === '/' ? 'index, follow, max-image-preview:large' : 'noindex, follow' });
+    document.querySelectorAll('link[rel=alternate][hreflang]').forEach(node => node.remove());
+    if (path === '/' && this.metaService.getTag('name=tx-taxi-es-available')?.content === 'true') {
+      [['en', '/'], ['es', '/es/'], ['x-default', '/']].forEach(([language, url]) => {
+        const link = document.createElement('link');
+        link.rel = 'alternate'; link.hreflang = language; link.href = 'https://' + this.baseDomain + url;
+        document.head.appendChild(link);
+      });
+    }
     this.canonicalLink.setAttribute('href', canonicalUrl);
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
     document.querySelectorAll('script[type="application/ld+json"], link[rel="alternate"][type="text/markdown"]').forEach(node => node.remove());
@@ -107,6 +119,7 @@ export class SeoService {
   }
 
   private currentPage(path = this.router.url.split('?')[0].split('#')[0]) {
+    if (this.locale.startsWith('es')) return undefined;
     const page = nativeSeoPages[path];
     if (page) return page;
     const match = path.match(/^\/blocks\/([1-9]\d*)$/);
@@ -117,6 +130,7 @@ export class SeoService {
   }
 
   getTitle(): string {
+    if (this.locale.startsWith('es')) return 'Explorador de Bitcoin | btc.tx.taxi';
     if (this.network === 'testnet')
       {return this.baseTitle + ' - Bitcoin Testnet3';}
     if (this.network === 'testnet4')
@@ -131,7 +145,7 @@ export class SeoService {
   }
 
   getDescription(): string {
-    return this.baseDescription;
+    return this.locale.startsWith('es') ? 'Explora bloques, transacciones, comisiones y la actividad del mempool de Bitcoin con btc.tx.taxi.' : this.baseDescription;
   }
 
   ucfirst(str: string) {

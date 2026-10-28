@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { localizedTaxiApi } from '@app/docs/api-docs/taxi-api-es';
+import { localizedTaxiFaq } from '@app/docs/api-docs/taxi-faq-es';
+import { Inject, LOCALE_ID, Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Env, StateService } from '@app/services/state.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -24,6 +26,7 @@ export class ApiDocsNavComponent implements OnInit {
   runningElectrs: boolean;
 
   constructor(
+    @Inject(LOCALE_ID) private locale: string,
     private stateService: StateService
   ) { }
 
@@ -36,11 +39,11 @@ export class ApiDocsNavComponent implements OnInit {
     });
     this.auditEnabled = this.env.AUDIT;
     if (this.whichTab === 'rest') {
-      this.tabData = taxiRestApiDocsData;
+      this.tabData = localizedTaxiApi(taxiRestApiDocsData, this.locale);
     } else if (this.whichTab === 'websocket') {
-      this.tabData = wsApiDocsData;
+      this.tabData = localizedTaxiApi(wsApiDocsData, this.locale);
     } else if (this.whichTab === 'faq') {
-      this.tabData = taxiFaqData;
+      this.tabData = localizedTaxiFaq(taxiFaqData, this.locale);
     }
   }
 

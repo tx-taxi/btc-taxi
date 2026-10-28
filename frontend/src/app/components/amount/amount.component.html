@@ -5,22 +5,16 @@
     {{ compactBlockAmount(satoshis, true) }} <span class="symbol" [style]="unitStyle"><ng-container *ngTemplateOutlet="prefix"></ng-container>sats</span>
   }
 } @else {
-<ng-container *ngIf="!noFiat && ignoreViewMode === false && (viewAmountMode$ | async) === 'fiat' && (conversions$ | async) as conversions; else viewFiatVin">
-  <span class="fiat" *ngIf="blockConversion; else noblockconversion">
-    {{ addPlus && satoshis >= 0 ? '+' : '' }}{{
-      (
-        (blockConversion.price[currency] > -1 ? blockConversion.price[currency] : null) ??
-        (blockConversion.price['USD']    > -1 ? blockConversion.price['USD'] * blockConversion.exchangeRates['USD' + currency] : null) ?? 0
-      ) * satoshis / 100000000 | fiatCurrency : digitsInfo : currency
-    }}
-  </span>
+<ng-container *ngIf="!noFiat && ignoreViewMode === false && (viewAmountMode$ | async) === 'fiat'; else viewFiatVin">
+  <ng-container *ngIf="blockConversion?.price; else noblockconversion">
+    <span class="fiat" *ngIf="blockConversion.price[currency] > 0; else priceUnavailable">{{ addPlus && satoshis >= 0 ? '+' : '' }}{{ blockConversion.price[currency] * satoshis / 100000000 | fiatCurrency : digitsInfo : currency }}</span>
+  </ng-container>
   <ng-template #noblockconversion>
-    <span class="fiat" *ngIf="!forceBlockConversion; else zeroValue">{{ addPlus && satoshis >= 0 ? '+' : '' }}{{ (conversions[currency] > -1 ? conversions[currency] : 0) * satoshis / 100000000 | fiatCurrency : digitsInfo : currency }}
-    </span>
+    <ng-container *ngIf="!forceBlockConversion && (conversions$ | async) as conversions; else priceUnavailable">
+      <span class="fiat" *ngIf="conversions[currency] > 0; else priceUnavailable">{{ addPlus && satoshis >= 0 ? '+' : '' }}{{ conversions[currency] * satoshis / 100000000 | fiatCurrency : digitsInfo : currency }}</span>
+    </ng-container>
   </ng-template>
-  <ng-template #zeroValue>
-    <span class="fiat">{{ 0 | fiatCurrency : digitsInfo : currency }}</span>
-  </ng-template>
+  <ng-template #priceUnavailable><span class="fiat" title="Fiat price unavailable">—</span></ng-template>
 </ng-container>
 
   <ng-template #viewFiatVin>

@@ -1403,7 +1403,7 @@
       </trans-unit>
       <trans-unit id="cb1b52c13b95fa29ea4044f2bbe0ac623b890c80" datatype="html">
         <source>Fee</source>
-        <target>Tasa</target>
+        <target>Comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">23</context>
@@ -1450,7 +1450,7 @@
       </trans-unit>
       <trans-unit id="3e322ffba6477484e0dd2e65650fdd70322ea6d0" datatype="html">
         <source>Fee rate</source>
-        <target>Tasa de intercambio</target>
+        <target>Tasa de comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">36</context>
@@ -4433,7 +4433,7 @@
       </trans-unit>
       <trans-unit id="c20172223f84462032664d717d739297e5a9e2fe" datatype="html">
         <source>Fees</source>
-        <target>Tasas</target>
+        <target>Comisiones</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.html</context>
           <context context-type="linenumber">23</context>
@@ -4593,7 +4593,7 @@
       </trans-unit>
       <trans-unit id="86d26b45470e43b409e589517922276109138e87" datatype="html">
         <source>Transaction Fees</source>
-        <target>Tasa de Transacción</target>
+        <target>Comisiones de transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">8</context>
@@ -8813,7 +8813,7 @@
       </trans-unit>
       <trans-unit id="0a668c1c2a17e557a18fc06619998e002f50df1e" datatype="html">
         <source>Code Example</source>
-        <target>Codigo de ejemplo</target>
+        <target>Código de ejemplo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/code-template/code-template.component.html</context>
           <context context-type="linenumber">6</context>
@@ -8861,7 +8861,7 @@
       </trans-unit>
       <trans-unit id="meta.title.docs.faq" datatype="html">
         <source>FAQ</source>
-        <target>Preguntas frequentes</target>
+        <target>Preguntas frecuentes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">47</context>
@@ -10965,7 +10965,7 @@
       </trans-unit>
       <trans-unit id="2da938f28079d0d1ba372c5290b1bb1c18cf077c" datatype="html">
         <source>fee</source>
-        <target>tasa</target>
+        <target>comisión</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">3</context>
@@ -11476,7 +11476,7 @@
       </trans-unit>
       <trans-unit id="2799825781368047816" datatype="html">
         <source>Transaction fee</source>
-        <target>Tasa de transacción</target>
+        <target>Comisión de transacción</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/pipes/scriptpubkey-type-pipe/scriptpubkey-type.pipe.ts</context>
           <context context-type="linenumber">12</context>
@@ -11490,6 +11490,99 @@
           <context context-type="linenumber">173</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target>Bloques, comisiones y actividad del mempool de Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.explore" datatype="html"><source>Explore</source><target>Explorar</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target>Panel principal</target></trans-unit>
+      <trans-unit id="taxi.footer.recent-blocks" datatype="html"><source>Recent Blocks</source><target>Bloques recientes</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>Transacciones pendientes</target></trans-unit>
+      <trans-unit id="taxi.footer.mining" datatype="html"><source>Mining Dashboard</source><target>Panel de minería</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target>Gráficos de Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target>Herramientas y documentación</target></trans-unit>
+      <trans-unit id="taxi.footer.broadcast" datatype="html"><source>Broadcast Transaction</source><target>Transmitir transacción</target></trans-unit>
+      <trans-unit id="taxi.footer.test" datatype="html"><source>Test Transaction</source><target>Probar transacción</target></trans-unit>
+      <trans-unit id="taxi.footer.preview" datatype="html"><source>Preview Transaction</source><target>Vista previa de transacción</target></trans-unit>
+      <trans-unit id="taxi.footer.calculator" datatype="html"><source>Calculator</source><target>Calculadora</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html"><source>Bitcoin FAQ</source><target>Preguntas frecuentes sobre Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.api" datatype="html"><source>API Documentation</source><target>Documentación de la API</target></trans-unit>
+      <trans-unit id="taxi.footer.about" datatype="html"><source>About</source><target>Acerca de</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target>Código fuente</target></trans-unit>
+      <trans-unit id="taxi.footer.status" datatype="html"><source>Status</source><target>Estado</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>Contacto</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>Publicado bajo AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.footer.legal" datatype="html"><source>Legal</source><target>Legal</target></trans-unit>
+      <trans-unit id="taxi.footer.terms" datatype="html"><source>Terms of Service</source><target>Términos del servicio</target></trans-unit>
+      <trans-unit id="taxi.footer.privacy" datatype="html"><source>Privacy Policy</source><target>Política de privacidad</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>Marca y atribución</target></trans-unit>
+      <trans-unit id="taxi.footer.third-party" datatype="html"><source>Third-party Licenses</source><target>Licencias de terceros</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Pide un taxi y pega aquí lo que quieras.</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>Panel de btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target>Panel principal</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target>Panel de minería</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>Bloques recientes</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target>Gráficos de Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.nav.docs" datatype="html"><source>Documentation</source><target>Documentación</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>Acerca de btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>Patrocina Bitcoin por 150 $ a la semana</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>Patrocina esta cadena por 150 $/semana</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>Hecho con</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>por</target></trans-unit>
+      <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target>usos</target></trans-unit>
+      <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG"/><x id="INTERPOLATION"/> sat/vB<x id="CLOSE_TAG_STRONG"/>.</source><target>Esta transacción pertenece a un grupo de 1 transacción, con una tasa de comisión efectiva combinada de <x id="START_TAG_STRONG"/><x id="INTERPOLATION"/> sat/vB<x id="CLOSE_TAG_STRONG"/>.</target></trans-unit>
+      <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target>Usando código de socio</target></trans-unit>
+      <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target>apariciones</target></trans-unit>
+      <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target>aparición</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target>padres</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target>hijo</target></trans-unit>
+      <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target>Déficit de reservas</target></trans-unit>
+      <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target>Tamaño virtual</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target>esta transacción</target></trans-unit>
+      <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH"/><x id="START_BOLD_TEXT"/>btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT"/> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH"/><x id="START_PARAGRAPH"/>For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH"/></source><target><x id="START_PARAGRAPH"/><x id="START_BOLD_TEXT"/>btc.tx.taxi solo muestra datos públicos de la red Bitcoin.<x id="CLOSE_BOLD_TEXT"/> No puede recuperar fondos, resolver problemas de carteras, revertir transacciones ni cambiar la prioridad de confirmación.<x id="CLOSE_PARAGRAPH"/><x id="START_PARAGRAPH"/>Para estas solicitudes, contacta con la cartera, casa de cambio o servicio de pago que creó la transacción.<x id="CLOSE_PARAGRAPH"/></target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target>padre</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target>Tamaño</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION"/> other chunks.</source><target>En un clúster de mempool que contiene otros <x id="INTERPOLATION"/> grupos.</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target>Pausar/Reanudar</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target>hijos</target></trans-unit>
+      <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION"/> new transactions</source><target><x id="INTERPOLATION"/> transacciones nuevas</target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION"/> transactions, with combined effective fee rate <x id="START_TAG_STRONG"/><x id="INTERPOLATION_1"/> sat/vB<x id="CLOSE_TAG_STRONG"/>.</source><target>Esta transacción pertenece a un grupo de <x id="INTERPOLATION"/> transacciones, con una tasa de comisión efectiva combinada de <x id="START_TAG_STRONG"/><x id="INTERPOLATION_1"/> sat/vB<x id="CLOSE_TAG_STRONG"/>.</target></trans-unit>
+      <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target> Los valores se limitaron al suministro máximo de 21 millones de BTC </target></trans-unit>
+      <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target>Volumen en 24 h</target></trans-unit>
+      <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Tu saldo es insuficiente.</target></trans-unit>
+      <trans-unit id="5111568433154163082" datatype="html"><source>mempool chunk" - "cluster.mempool-chunk</source><target>grupo del mempool</target></trans-unit>
+      <trans-unit id="5149188584039150457" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>Suministro de LBTC frente a reservas de BTC</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Más</target></trans-unit>
+      <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>En un clúster de mempool que contiene otro grupo.</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>Pausar/Reanudar</target></trans-unit>
+      <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 transacción nueva</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>Clúster</target></trans-unit>
+      <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>selecciona categorías para destacar las transacciones pendientes correspondientes</target></trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html"><source>* On average around block <x id="block"/></source><target>* En promedio cerca del bloque <x id="block"/></target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target>Comisiones en BTC</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency"/></source><target>Comisiones en <x id="currency"/></target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.fees" datatype="html"><source>Fees</source><target>Comisiones</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target>Comisiones (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target>Comisiones (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>Subsidio</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>Subsidio (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>Subsidio (USD)</target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH"/> network, updated in real-time.</source><target>Consulta las transacciones más recientes de la red Bitcoin<x id="PH"/>, actualizadas en tiempo real.</target></trans-unit>
+      <trans-unit id="recent-transactions-title" datatype="html"><source>Recent Transactions</source><target>Transacciones recientes</target></trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html"><source>About btc.tx.taxi</source><target>Acerca de btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html"><source>The Bitcoin explorer in the tx.taxi family.</source><target>El explorador de Bitcoin de la familia tx.taxi.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target>Enlaces del proyecto</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target>Documentación de Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>Contactar al responsable</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html"><source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool&apos;s proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source><target>btc.tx.taxi es el explorador de Bitcoin de la familia multicadena tx.taxi. Conserva la conocida interfaz de Mempool para explorar bloques, transacciones, direcciones, actividad de minería, estimaciones de comisiones y el mempool de Bitcoin en vivo, con una identidad de tx.taxi específica para Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target>Datos propios de Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target>Los valores se denominan en BTC, satoshis o la moneda fiduciaria seleccionada. Las tasas de comisión se expresan en sat/vB y los tamaños de las transacciones en vB o unidades de peso; todos los conceptos de bloques, direcciones y minería conservan su significado en Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html"><source>Infrastructure</source><target>Infraestructura</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html"><source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node&apos;s view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source><target>El explorador obtiene datos públicos de la red Bitcoin mediante su servidor configurado. Los resultados son informativos y pueden diferir de la vista del mempool de otro nodo. Verifica siempre los datos de pago en tu cartera y utiliza tu propio nodo cuando necesites una verificación independiente.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>Licencia</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html"><source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source><target>btc.tx.taxi incorpora componentes de código abierto bajo licencia. Consulta los avisos de licencias de terceros para obtener información sobre las atribuciones.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target>Basado en código abierto</target></trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html"><source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and contact the maintainer for source and license information.</source><target>Este explorador se basa en <x id="START_LINK"/>Mempool Open Source Project<x id="CLOSE_LINK"/>. Consulta las <x id="START_LINK_1"/>atribuciones de terceros<x id="CLOSE_LINK"/> y contacta al responsable para obtener información sobre el código fuente y las licencias.</target></trans-unit>
+      <trans-unit id="taxi.block.details.totalFees" datatype="html"><source>Total fees</source><target>Comisiones totales</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Tasa mediana de comisión</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Rango de comisiones</target></trans-unit>
     </body>
   </file>
 </xliff>

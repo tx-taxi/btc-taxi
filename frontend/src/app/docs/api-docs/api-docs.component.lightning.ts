@@ -1,9 +1,9 @@
-import { Component, OnInit, Input, QueryList, AfterViewInit, ViewChildren } from '@angular/core';
+import { Component, OnInit, Inject, LOCALE_ID, Input, QueryList, AfterViewInit, ViewChildren } from '@angular/core';
 import { Env, StateService } from '@app/services/state.service';
 import { Observable, merge, of, Subject, Subscription } from 'rxjs';
 import { tap, takeUntil } from 'rxjs/operators';
 import { ActivatedRoute } from '@angular/router';
-import { lightningFaq as taxiFaqData, lightningRestDocs as taxiRestApiDocsData } from '@app/lightning-app/docs-data';
+import { localizedLightningFaq, localizedLightningRestDocs } from '@app/lightning-app/docs-data';
 const wsApiDocsData = [];
 import { FaqTemplateDirective } from '@app/docs/faq-template/faq-template.component';
 
@@ -14,6 +14,7 @@ import { FaqTemplateDirective } from '@app/docs/faq-template/faq-template.compon
   standalone: false,
 })
 export class ApiDocsComponent implements OnInit, AfterViewInit {
+  get es(): boolean { return this.locale.startsWith('es'); }
   private destroy$: Subject<any> = new Subject<any>();
   hostname = document.location.hostname;
   network$: Observable<string>;
@@ -38,6 +39,7 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
   dict = {};
 
   constructor(
+    @Inject(LOCALE_ID) readonly locale: string,
     private stateService: StateService,
     private route: ActivatedRoute,
   ) { }
@@ -90,8 +92,8 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
     this.hostname = `${document.location.protocol}//${this.hostname}`;
 
     this.wsDocs = wsApiDocsData;
-    this.faq = taxiFaqData;
-    this.restDocs = taxiRestApiDocsData;
+    this.faq = localizedLightningFaq(this.locale);
+    this.restDocs = localizedLightningRestDocs(this.locale);
 
     this.network$.pipe(takeUntil(this.destroy$)).subscribe((network) => {
       this.active = (network === 'liquid' || network === 'liquidtestnet') ? 2 : 0;

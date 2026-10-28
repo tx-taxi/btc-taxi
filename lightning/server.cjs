@@ -104,7 +104,10 @@ function createApp(options = {}) {
       const rawPath = req.url.split('?')[0];
       if (/%(?:2e|2f|5c|00)/i.test(rawPath) || /(?:^|\/)\.{1,2}(?:\/|$)/.test(rawPath)) throw new GatewayError(400, 'Invalid request path');
       const url = new URL(req.url, 'http://local.invalid');
-      const pathname = decodeURIComponent(url.pathname);
+      const requestedPath = decodeURIComponent(url.pathname);
+      if (requestedPath === '/es') { await send(req, res, 308, '', { location: '/es/' + url.search, 'cache-control': 'no-store' }); return; }
+      const spanish = requestedPath.startsWith('/es/');
+      const pathname = spanish ? requestedPath.slice(3) || '/' : requestedPath;
       if (pathname === '/healthz') { await json(req, res, 200, { ok: true, service: 'lightning-taxi', uptimeSeconds: Math.floor((Date.now() - startedAt) / 1000) }); return; }
       if (pathname === '/api/provider-health') {
         const health = await proxy.health();
@@ -130,11 +133,11 @@ function createApp(options = {}) {
       }
       if (pathname === '/lightning' || pathname.startsWith('/lightning/')) {
         const target = pathname.slice(10) || '/';
-        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: target + url.search, 'cache-control': 'no-store' }); return; }
+        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: (spanish ? '/es' : '') + target + url.search, 'cache-control': 'no-store' }); return; }
       }
       if (pathname.startsWith('/graphs/lightning/')) {
         const target = pathname.replace('/graphs/lightning/', '/graphs/');
-        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: target + url.search, 'cache-control': 'no-store' }); return; }
+        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: (spanish ? '/es' : '') + target + url.search, 'cache-control': 'no-store' }); return; }
       }
       const aliases = {'/graphs':'/graphs/capacity', '/docs':'/docs/faq', '/docs/':'/docs/faq', '/docs/api':'/docs/api/rest', '/docs/api/':'/docs/api/rest', '/docs/api/websocket':'/docs/api/rest'};
       let canonicalPath = pathname.replace(/\/$/, '') || '/';
@@ -148,7 +151,7 @@ function createApp(options = {}) {
       }
       if (/^\/nodes\/country\/[a-z]{2}$/i.test(canonicalPath)) canonicalPath = canonicalPath.slice(0,-2) + canonicalPath.slice(-2).toUpperCase();
       if (aliases[pathname] || (PAGE_ROUTES.test(pathname) && canonicalPath !== pathname)) {
-        await send(req, res, 308, '', {location: (aliases[pathname] || canonicalPath) + url.search, 'cache-control':'no-store'}); return;
+        await send(req, res, 308, '', {location: (spanish ? '/es' : '') + (aliases[pathname] || canonicalPath) + url.search, 'cache-control':'no-store'}); return;
       }
       if (PAGE_ROUTES.test(pathname)) {
         let pageStatus = 200;
@@ -166,16 +169,28 @@ function createApp(options = {}) {
         }
         let html;
         try {
-          try { html = await fsp.readFile(path.join(staticDir, 'index.html'), 'utf8'); }
-          catch { html = await fsp.readFile(path.join(staticDir, 'index.lightning.html'), 'utf8'); }
+          try { html = await fsp.readFile(path.join(staticDir, spanish ? 'es/index.html' : 'index.html'), 'utf8'); }
+          catch { if (spanish) throw new Error('Spanish build unavailable'); html = await fsp.readFile(path.join(staticDir, 'index.lightning.html'), 'utf8'); }
         } catch { throw new GatewayError(503, 'The local Lightning build is not ready'); }
         const metadata = routeMetadata(canonicalPath, proxy);
+        if (spanish) {
+          metadata.path = '/es' + canonicalPath;
+          metadata.noindex = true;
+          metadata.language = 'es';
+          if (canonicalPath === '/') {
+            metadata.title = 'Explorador de Lightning · lightning.btc.tx.taxi';
+            metadata.heading = 'Red Lightning';
+            metadata.subtitle = 'Tu taxi hacia cada transacción.';
+            metadata.description = 'Explora nodos y canales públicos, capacidad y actividad de la red Lightning de Bitcoin.';
+            metadata.rows = [['Explorar', 'Nodos y canales públicos'], ['Red', 'Bitcoin Lightning'], ['Mapas', 'Nodos y conexiones'], ['Estadísticas', 'Capacidad y comisiones']];
+          }
+        }
         if (pageStatus !== 200) metadata.unavailable = true;
         metadata.status = pageStatus;
         await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', ...(pageStatus === 503 ? {'retry-after': '60'} : {}) }); return;
       }
       if (!TYPES[path.extname(pathname)] || pathname.startsWith('/.') || /(?:^|\/)\.[^/]+/.test(pathname)) throw new GatewayError(404, 'Not found');
-      const file = path.resolve(staticDir, '.' + pathname);
+      const file = path.resolve(staticDir, '.' + (spanish ? requestedPath : pathname));
       if (!file.startsWith(staticDir + path.sep)) throw new GatewayError(400, 'Invalid asset path');
       let stat;
       try { stat = await fsp.stat(file); } catch { throw new GatewayError(404, 'Not found'); }

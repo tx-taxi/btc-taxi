@@ -3,28 +3,28 @@
   <div class="about-layout">
     <aside class="about-identity">
       <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi" class="about-logo">
-      <h1>About btc.tx.taxi</h1>
-      <p>The Bitcoin explorer in the tx.taxi family.</p>
-      <nav class="about-links" aria-label="Project links">
-        <a routerLink="/docs">Bitcoin documentation</a>
-        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact the maintainer</a>
+      <h1 i18n="@@taxi.btc.about.title">About btc.tx.taxi</h1>
+      <p i18n="@@taxi.btc.about.tagline">The Bitcoin explorer in the tx.taxi family.</p>
+      <nav class="about-links" aria-label="Project links" i18n-aria-label="@@taxi.btc.about.links">
+        <a [routerLink]="['/docs' | relativeUrl]" i18n="@@taxi.btc.about.docs">Bitcoin documentation</a>
+        <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer" i18n="@@taxi.btc.about.contact">Contact the maintainer</a>
       </nav>
     </aside>
     <main class="about-text">
-      <h2>About btc.tx.taxi</h2>
-    <p>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</p>
+      <h2 i18n="@@taxi.btc.about.title">About btc.tx.taxi</h2>
+    <p i18n="@@taxi.btc.about.intro">btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</p>
 
-    <h2>Bitcoin-native data</h2>
-    <p>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</p>
+    <h2 i18n="@@taxi.btc.about.dataTitle">Bitcoin-native data</h2>
+    <p i18n="@@taxi.btc.about.data">Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</p>
 
-    <h2>Infrastructure</h2>
-    <p>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</p>
+    <h2 i18n="@@taxi.btc.about.infrastructureTitle">Infrastructure</h2>
+    <p i18n="@@taxi.btc.about.infrastructure">The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</p>
 
-    <h2>License</h2>
-    <p>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</p>
+    <h2 i18n="@@taxi.btc.about.licenseTitle">License</h2>
+    <p i18n="@@taxi.btc.about.license">btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</p>
       <div class="about-attribution">
-        <h2>Built on open source</h2>
-        <p>This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See <a href="/3rdpartylicenses.txt">third-party attribution</a> and contact the maintainer for source and license information.</p>
+        <h2 i18n="@@taxi.btc.about.openTitle">Built on open source</h2>
+        <p i18n="@@taxi.btc.about.open">This explorer builds on the <a href="https://github.com/mempool/mempool" target="_blank" rel="noopener noreferrer">Mempool Open Source Project</a>. See <a href="/3rdpartylicenses.txt">third-party attribution</a> and contact the maintainer for source and license information.</p>
       </div>
     </main>
   </div>

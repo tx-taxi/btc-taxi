@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, QueryList, AfterViewInit, ViewChildren } from '@angular/core';
+import { localizedTaxiApi } from '@app/docs/api-docs/taxi-api-es';
+import { localizedTaxiFaq } from '@app/docs/api-docs/taxi-faq-es';
+import { Inject, LOCALE_ID, Component, OnInit, Input, QueryList, AfterViewInit, ViewChildren } from '@angular/core';
 import { Env, StateService } from '@app/services/state.service';
 import { Observable, merge, of, Subject, Subscription } from 'rxjs';
 import { tap, takeUntil } from 'rxjs/operators';
@@ -37,6 +39,7 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
   dict = {};
 
   constructor(
+    @Inject(LOCALE_ID) readonly locale: string,
     private stateService: StateService,
     private route: ActivatedRoute,
   ) { }
@@ -88,9 +91,9 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
 
     this.hostname = `${document.location.protocol}//${this.hostname}`;
 
-    this.wsDocs = wsApiDocsData;
-    this.faq = taxiFaqData;
-    this.restDocs = taxiRestApiDocsData;
+    this.wsDocs = localizedTaxiApi(wsApiDocsData, this.locale);
+    this.faq = localizedTaxiFaq(taxiFaqData, this.locale);
+    this.restDocs = localizedTaxiApi(taxiRestApiDocsData, this.locale);
 
     this.network$.pipe(takeUntil(this.destroy$)).subscribe((network) => {
       this.active = (network === 'liquid' || network === 'liquidtestnet') ? 2 : 0;

@@ -1,3 +1,52 @@
+<ng-container *ngIf="es; else englishLegal">
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Términos de servicio</h2>
+    <h6>Actualizado: 3 de octubre de 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Explorador informativo</h4>
+      <p>lightning.btc.tx.taxi muestra nodos y canales Lightning públicos, políticas de enrutamiento, capacidad de la red y estadísticas históricas. Es un servicio informativo; no es una cartera, un exchange, un custodio, un procesador de pagos ni un servicio de priorización de transacciones.</p>
+
+      <br>
+
+      <h4>Sin control sobre pagos ni canales</h4>
+      <p>El operador no puede enviar, revertir, recuperar ni redirigir un pago Lightning ni controlar un canal. Si tienes problemas con una cartera o un pago, contacta con el servicio que creó o recibió el pago.</p>
+
+      <br>
+
+      <h4>Datos y disponibilidad</h4>
+      <p>Los datos del explorador pueden estar retrasados, incompletos o no disponibles, o diferir de los que observa otro nodo. Las comisiones de enrutamiento anunciadas no garantizan que haya una ruta disponible ni que un pago se complete. El servicio se proporciona tal cual, sin garantía de disponibilidad ininterrumpida ni de idoneidad para un fin particular.</p>
+
+      <br>
+
+      <h4>Uso aceptable</h4>
+      <p>No abuses del sitio web ni de la API, interfieras con el funcionamiento del servicio, eludas límites de uso razonables ni utilices el servicio de forma ilícita. El acceso puede limitarse cuando sea necesario para proteger la disponibilidad.</p>
+
+      <br>
+
+      <h4>Servicios externos</h4>
+      <p>Este sitio puede enlazar a canales de contacto de tx.taxi, referencias de Bitcoin, información sobre licencias y dependencias de infraestructura. Los sitios externos tienen sus propios términos y políticas.</p>
+
+      <br>
+
+      <h4>Código abierto</h4>
+      <p>lightning.btc.tx.taxi deriva del proyecto de código abierto Mempool y se distribuye sujeto a las obligaciones de AGPLv3. Contacta con <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> para obtener la información aplicable sobre el código fuente y la licencia.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-container>
+<ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
     <br>
@@ -43,3 +92,5 @@
   </div>
   <br><br>
 </div>
+
+</ng-template>

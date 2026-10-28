@@ -12,3 +12,50 @@ export const lightningFaq = [
  { type:'faq', title:'How current are network statistics?', fragment:'lightning-freshness', category:'Statistics',showConditions:[''] },
  { type:'faq', title:'Why do opening and closing transactions link to Bitcoin?', fragment:'lightning-bitcoin', category:'Bitcoin',showConditions:[''] },
 ];
+
+const spanishFaqTitles: Record<string, string> = {
+  'lightning-explore': '¿Qué puedo explorar?',
+  'lightning-search': '¿Cómo encuentro un nodo o canal?',
+  'lightning-capacity': '¿Qué significa la capacidad de un canal?',
+  'lightning-fees': '¿Qué muestran las comisiones de enrutamiento?',
+  'lightning-payments': '¿Puedo ver un pago Lightning?',
+  'lightning-locations': '¿De dónde proceden las ubicaciones de los nodos?',
+  'lightning-status': '¿Qué significan el estado de un canal y las penalizaciones?',
+  'lightning-freshness': '¿Qué tan actuales son las estadísticas de la red?',
+  'lightning-bitcoin': '¿Por qué las transacciones de apertura y cierre enlazan a Bitcoin?',
+};
+const spanishFaqCategories: Record<string, string> = { Search: 'Búsqueda', Channels: 'Canales', Fees: 'Comisiones', Payments: 'Pagos', Maps: 'Mapas', Statistics: 'Estadísticas' };
+export function localizedLightningFaq(locale: string) {
+  if (!locale.startsWith('es')) return lightningFaq;
+  return lightningFaq.map(item => ({ ...item,
+    title: item.type === 'category' ? 'Red Lightning' : spanishFaqTitles[item.fragment] || item.title,
+    category: spanishFaqCategories[item.category] || item.category,
+  }));
+}
+const spanishRestDocs: Record<string, [string, string]> = {
+  'get-lightning-network-stats': ['Estadísticas de la red', '<p>Devuelve estadísticas de toda la red, como el número total de canales y nodos, la capacidad total y las comisiones medias y medianas.</p><p>Para <code>:interval</code>, usa uno de estos valores: <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>.</p>'],
+  'get-lightning-nodes-channels': ['Nodos y canales', '<p>Devuelve nodos y canales Lightning que coinciden con la búsqueda de texto <code>:query</code>, sin distinguir mayúsculas, en alias y claves públicas de nodos e ID de canal completos y cortos.</p>'],
+  'get-lightning-nodes-country': ['Nodos por país', '<p>Devuelve los nodos Lightning de la red pública en el <code>:country</code> solicitado, indicado mediante un código de país ISO alfa-2.</p>'],
+  'get-country-node-stats': ['Estadísticas de nodos por país', '<p>Devuelve la capacidad agregada y el número de nodos de la red pública por país. Las capacidades se expresan en satoshis.</p>'],
+  'get-isp-nodes': ['Nodos por proveedor', '<p>Devuelve los nodos alojados por el proveedor <code>:isp</code>, indicado mediante su ASN.</p>'],
+  'get-isp-node-stats': ['Estadísticas de nodos por proveedor', '<p>Devuelve la capacidad agregada y los números de nodos y canales por proveedor. Las capacidades se expresan en satoshis.</p>'],
+  'get-top-100-nodes': ['100 principales nodos', '<p>Devuelve dos listas de los 100 principales nodos: una ordenada por liquidez (capacidad agregada de canales) y otra por conectividad (número de canales abiertos).</p>'],
+  'get-top-100-nodes-liquidity': ['100 nodos con mayor liquidez', '<p>Devuelve los 100 nodos con mayor liquidez, medida como la capacidad agregada de sus canales.</p>'],
+  'get-top-100-nodes-connectivity': ['100 nodos con mayor conectividad', '<p>Devuelve los 100 nodos con mayor conectividad, medida por su número de canales abiertos.</p>'],
+  'get-top-100-oldest-nodes': ['100 nodos más antiguos', '<p>Devuelve los 100 nodos más antiguos.</p>'],
+  'get-node-stats': ['Estadísticas de un nodo', '<p>Devuelve los detalles del nodo con la clave pública <code>:pubKey</code> indicada.</p>'],
+  'get-historical-node-stats': ['Historial de estadísticas de un nodo', '<p>Devuelve estadísticas históricas del nodo con la clave pública <code>:pubKey</code> indicada.</p>'],
+  'get-channel': ['Canal', '<p>Devuelve información sobre el canal Lightning con el identificador <code>:channelId</code> indicado.</p>'],
+  'get-channels-from-txid': ['Canales por ID de transacción', '<p>Devuelve los canales correspondientes al <code>:txid</code> indicado; se pueden especificar varios ID de transacción.</p>'],
+  'get-channels-from-pubkey': ['Canales por clave pública del nodo', '<p>Devuelve los canales del nodo identificado por <code>:pubKey</code>. Se devuelven diez canales por página; usa <code>:index</code> para paginar. <code>:channelStatus</code> puede ser <code>open</code>, <code>active</code> o <code>closed</code>.</p>'],
+  'get-channel-geodata': ['Datos geográficos de canales', '<p>Devuelve una lista de canales con los datos geográficos de sus nodos.</p>'],
+  'get-channel-geodata-node': ['Datos geográficos de canales de un nodo', '<p>Devuelve los canales y sus datos geográficos para el nodo con la clave pública <code>:pubKey</code> indicada.</p>'],
+};
+export function localizedLightningRestDocs(locale: string) {
+  if (!locale.startsWith('es')) return lightningRestDocs;
+  return lightningRestDocs.map(item => {
+    const translated = spanishRestDocs[item.fragment];
+    if (!translated) return item;
+    return { ...item, title: `GET ${translated[0]}`, description: { ...item.description, default: translated[1] } };
+  });
+}

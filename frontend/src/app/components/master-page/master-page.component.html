@@ -18,7 +18,7 @@
   </ng-container>
 
   <!-- Large screen -->
-  <a class="navbar-brand d-none d-md-flex" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="btc.tx.taxi dashboard" title="btc.tx.taxi dashboard">
+  <a class="navbar-brand d-none d-md-flex" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="btc.tx.taxi dashboard" i18n-aria-label="@@taxi.nav.brand" title="btc.tx.taxi dashboard" i18n-title="@@taxi.nav.brand">
     <ng-container *ngIf="{ val: connectionState$ | async } as connectionState">
       @if (enterpriseInfo) {
         <div class="subdomain_container">
@@ -39,7 +39,7 @@
     </ng-container>
   </a>
   <!-- Mobile -->
-  <a class="navbar-brand d-flex d-md-none justify-content-center" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo, 'me-0': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="btc.tx.taxi dashboard" title="btc.tx.taxi dashboard">
+  <a class="navbar-brand d-flex d-md-none justify-content-center" [ngClass]="{'dual-logos': enterpriseInfo?.dualLogo, 'me-0': enterpriseInfo?.dualLogo}" [routerLink]="['/' | relativeUrl]" (click)="brandClick($event)" aria-label="btc.tx.taxi dashboard" i18n-aria-label="@@taxi.nav.brand" title="btc.tx.taxi dashboard" i18n-title="@@taxi.nav.brand">
     <ng-container *ngIf="{ val: connectionState$ | async } as connectionState">
       @if (enterpriseInfo) {
         <div class="subdomain_container">
@@ -79,12 +79,12 @@
     <ul class="navbar-nav {{ network.val }}">
 
       <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" id="btn-home">
-        <a class="nav-link" [routerLink]="['/' | relativeUrl]" (click)="collapse()" aria-label="Dashboard" title="Dashboard">
+        <a class="nav-link" [routerLink]="['/' | relativeUrl]" (click)="collapse()" aria-label="Dashboard" i18n-aria-label="@@taxi.nav.dashboard" title="Dashboard" i18n-title="@@taxi.nav.dashboard">
           <div class="svg-wrapper"><app-svg-images name="nav-tachometer" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item mining" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" id="btn-pools" *ngIf="stateService.env.MINING_DASHBOARD">
-        <a class="nav-link" [routerLink]="['/mining' | relativeUrl]" (click)="collapse()" aria-label="Mining dashboard" title="Mining dashboard">
+        <a class="nav-link" [routerLink]="['/mining' | relativeUrl]" (click)="collapse()" aria-label="Mining dashboard" i18n-aria-label="@@taxi.nav.mining" title="Mining dashboard" i18n-title="@@taxi.nav.mining">
           <div class="svg-wrapper"><app-svg-images name="nav-pickaxe" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
@@ -94,12 +94,12 @@
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" id="btn-blocks" *ngIf="!stateService.env.MINING_DASHBOARD">
-        <a class="nav-link" [routerLink]="['/blocks' | relativeUrl]" (click)="collapse()" aria-label="Recent blocks" title="Recent blocks">
+        <a class="nav-link" [routerLink]="['/blocks' | relativeUrl]" (click)="collapse()" aria-label="Recent blocks" i18n-aria-label="@@taxi.nav.blocks" title="Recent blocks" i18n-title="@@taxi.nav.blocks">
           <div class="svg-wrapper"><app-svg-images name="nav-cubes" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" id="btn-graphs">
-        <a class="nav-link" [routerLink]="['/graphs' | relativeUrl]" (click)="collapse()" aria-label="Bitcoin graphs" title="Bitcoin graphs">
+        <a class="nav-link" [routerLink]="['/graphs' | relativeUrl]" (click)="collapse()" aria-label="Bitcoin graphs" i18n-aria-label="@@taxi.nav.graphs" title="Bitcoin graphs" i18n-title="@@taxi.nav.graphs">
           <div class="svg-wrapper"><app-svg-images name="nav-chart-area" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
@@ -109,7 +109,7 @@
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" id="btn-docs">
-        <a class="nav-link" [routerLink]="['/docs']" (click)="collapse()" aria-label="Documentation" title="Documentation">
+        <a class="nav-link" [routerLink]="['/docs']" (click)="collapse()" aria-label="Documentation" i18n-aria-label="@@taxi.nav.docs" title="Documentation" i18n-title="@@taxi.nav.docs">
           <div class="svg-wrapper"><app-svg-images name="nav-book" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
@@ -119,12 +119,12 @@
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active" id="btn-about">
-        <a class="nav-link" [routerLink]="['/about']" (click)="collapse()" aria-label="About btc.tx.taxi" title="About btc.tx.taxi">
+        <a class="nav-link" [routerLink]="['/about']" (click)="collapse()" aria-label="About btc.tx.taxi" i18n-aria-label="@@taxi.nav.about" title="About btc.tx.taxi" i18n-title="@@taxi.nav.about">
           <div class="svg-wrapper"><app-svg-images name="nav-info-circle" width="21.59" height="100%"></app-svg-images></div>
         </a>
       </li>
     </ul>
-    <a *ngIf="false" class="chain-sponsorship" href="mailto:contact@u.software?subject=tx.taxi%20sponsorship%3A%20Bitcoin%20%28%24150%2Fweek%29&amp;body=Hi%2C%0A%0AI%20would%20like%20to%20sponsor%20Bitcoin%20on%20btc.tx.taxi%20for%20%24150%2Fweek.%0A%0A" aria-label="Sponsor Bitcoin for $150 per week">Sponsor this chain for $150/wk</a>
+    <a *ngIf="false" class="chain-sponsorship" href="mailto:contact@u.software?subject=tx.taxi%20sponsorship%3A%20Bitcoin%20%28%24150%2Fweek%29&amp;body=Hi%2C%0A%0AI%20would%20like%20to%20sponsor%20Bitcoin%20on%20btc.tx.taxi%20for%20%24150%2Fweek.%0A%0A" aria-label="Sponsor Bitcoin for $150 per week" i18n-aria-label="@@taxi.sponsor.aria" i18n="@@taxi.sponsor.text">Sponsor this chain for $150/wk</a>
     <app-search-form [hamburgerOpen]="enterpriseInfo === null && user != null" class="search-form-container" location="top" (searchTriggered)="collapse()"></app-search-form>
   </div>
 </nav>

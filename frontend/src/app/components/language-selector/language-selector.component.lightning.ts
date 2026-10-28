@@ -13,7 +13,7 @@ import { LanguageService } from '@app/services/language.service';
 })
 export class LanguageSelectorComponent implements OnInit {
   languageForm: UntypedFormGroup;
-  languages = languages.filter(language => language.code === 'en');
+  languages = languages.filter(language => ['en', 'es'].includes(language.code));
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -30,8 +30,12 @@ export class LanguageSelectorComponent implements OnInit {
 
   changeLanguage() {
     const newLang = this.languageForm.get('language').value;
+    if (!['en', 'es'].includes(newLang)) return;
     this.languageService.setLanguage(newLang);
-    const rawUrlPath = this.languageService.stripLanguageFromUrl(null);
-    this.document.location.href = (newLang !== 'en' ? `/${newLang}` : '') + rawUrlPath;
+    const location = this.document.location;
+    const domain = location.protocol === 'https:' && (location.hostname === 'tx.taxi' || location.hostname.endsWith('.tx.taxi'));
+    this.document.cookie = `txtaxi_language=${newLang}; Max-Age=31536000; Path=/; SameSite=Lax${domain ? '; Domain=.tx.taxi; Secure' : location.protocol === 'https:' ? '; Secure' : ''}`;
+    const rawUrlPath = location.pathname.replace(/^\/es(?=\/|$)/, '') || '/';
+    location.href = (newLang === 'es' ? '/es' : '') + rawUrlPath + location.search + location.hash;
   }
 }

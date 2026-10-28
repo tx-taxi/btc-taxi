@@ -1,8 +1,8 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Inject, LOCALE_ID, Input, Output, EventEmitter } from '@angular/core';
 import { Env, StateService } from '@app/services/state.service';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { lightningFaq as taxiFaqData, lightningRestDocs as taxiRestApiDocsData } from '@app/lightning-app/docs-data';
+import { localizedLightningFaq, localizedLightningRestDocs } from '@app/lightning-app/docs-data';
 const wsApiDocsData = [];
 
 @Component({
@@ -25,6 +25,7 @@ export class ApiDocsNavComponent implements OnInit {
   runningElectrs: boolean;
 
   constructor(
+    @Inject(LOCALE_ID) readonly locale: string,
     private stateService: StateService
   ) { }
 
@@ -37,11 +38,11 @@ export class ApiDocsNavComponent implements OnInit {
     });
     this.auditEnabled = this.env.AUDIT;
     if (this.whichTab === 'rest') {
-      this.tabData = taxiRestApiDocsData;
+      this.tabData = localizedLightningRestDocs(this.locale);
     } else if (this.whichTab === 'websocket') {
       this.tabData = wsApiDocsData;
     } else if (this.whichTab === 'faq') {
-      this.tabData = taxiFaqData;
+      this.tabData = localizedLightningFaq(this.locale);
     }
   }
 

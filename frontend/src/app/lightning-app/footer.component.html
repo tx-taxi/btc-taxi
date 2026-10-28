@@ -10,7 +10,7 @@
           }
         </div>
         @if (!enterpriseInfo?.footer_img) {
-          <p class="explore-tagline-mobile">Lightning nodes, channels, and network activity</p>
+          <p class="explore-tagline-mobile">{{ locale.startsWith('es') ? 'Nodos, canales y actividad de la red Lightning' : 'Lightning nodes, channels, and network activity' }}</p>
         }
         <div class="site-options language-selector d-flex justify-content-center align-items-center" [class]="{'services': isServicesPage}">
           <div class="selector">
@@ -38,50 +38,50 @@
           }
         </div>
         @if (!enterpriseInfo?.footer_img) {
-          <p class="explore-tagline-desktop">Lightning nodes, channels, and network activity</p>
+          <p class="explore-tagline-desktop">{{ locale.startsWith('es') ? 'Nodos, canales y actividad de la red Lightning' : 'Lightning nodes, channels, and network activity' }}</p>
         }
       </div>
     </div>
 
     <div class="row col-md-12 link-tree" [class]="{'services': isServicesPage}">
       <div class="links">
-        <p class="category">Explore</p>
-        <p><a routerLink="/">Lightning Dashboard</a></p>
-        <p><a routerLink="/nodes/rankings">Node Rankings</a></p>
-        <p><a routerLink="/graphs/nodes-map">Node Map</a></p>
-        <p><a routerLink="/graphs/nodes-channels-map">Channels Map</a></p>
-        <p><a routerLink="/penalties">Penalties</a></p>
+        <p class="category">{{ locale.startsWith('es') ? 'Explorar' : 'Explore' }}</p>
+        <p><a routerLink="/">{{ locale.startsWith('es') ? 'Panel de Lightning' : 'Lightning Dashboard' }}</a></p>
+        <p><a routerLink="/nodes/rankings">{{ locale.startsWith('es') ? 'Clasificación de nodos' : 'Node Rankings' }}</a></p>
+        <p><a routerLink="/graphs/nodes-map">{{ locale.startsWith('es') ? 'Mapa de nodos' : 'Node Map' }}</a></p>
+        <p><a routerLink="/graphs/nodes-channels-map">{{ locale.startsWith('es') ? 'Mapa de canales' : 'Channels Map' }}</a></p>
+        <p><a routerLink="/penalties">{{ locale.startsWith('es') ? 'Penalizaciones' : 'Penalties' }}</a></p>
       </div>
       <div class="links">
-        <p class="category">Network &amp; Docs</p>
-        <p><a routerLink="/graphs/capacity">Network History</a></p>
-        <p><a routerLink="/graphs/nodes-per-country">Countries</a></p>
-        <p><a routerLink="/graphs/nodes-per-isp">ISPs</a></p>
-        <p><a routerLink="/docs/faq">Lightning FAQ</a></p>
-        <p><a routerLink="/docs/api/rest">API Documentation</a></p>
+        <p class="category">{{ locale.startsWith('es') ? 'Red y documentación' : 'Network & Docs' }}</p>
+        <p><a routerLink="/graphs/capacity">{{ locale.startsWith('es') ? 'Historial de la red' : 'Network History' }}</a></p>
+        <p><a routerLink="/graphs/nodes-per-country">{{ locale.startsWith('es') ? 'Países' : 'Countries' }}</a></p>
+        <p><a routerLink="/graphs/nodes-per-isp">{{ locale.startsWith('es') ? 'Proveedores de Internet' : 'ISPs' }}</a></p>
+        <p><a routerLink="/docs/faq">{{ locale.startsWith('es') ? 'Preguntas frecuentes' : 'Lightning FAQ' }}</a></p>
+        <p><a routerLink="/docs/api/rest">{{ locale.startsWith('es') ? 'Documentación de la API' : 'API Documentation' }}</a></p>
       </div>
       <div class="links">
         <p class="category">lightning.btc.tx.taxi</p>
-        <p><a [routerLink]="['/about']">About</a></p>
-        <p><a href="https://github.com/tx-taxi/btc-taxi" target="_blank" rel="noopener noreferrer">Source code</a></p>
-        <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer">Status</a></p>
-        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" aria-label="Join the tx.taxi Telegram channel">Telegram</a></p>
-        <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">Contact Us</a></p>
-        <p>Released under AGPLv3</p>
+        <p><a [routerLink]="['/about']">{{ locale.startsWith('es') ? 'Acerca de' : 'About' }}</a></p>
+        <p><a href="https://github.com/tx-taxi/btc-taxi" target="_blank" rel="noopener noreferrer">{{ locale.startsWith('es') ? 'Código fuente' : 'Source code' }}</a></p>
+        <p><a href="https://status.tx.taxi/" target="_blank" rel="noopener noreferrer">{{ locale.startsWith('es') ? 'Estado' : 'Status' }}</a></p>
+        <p><a href="https://t.me/txtaxi" target="_blank" rel="noopener noreferrer" [attr.aria-label]="locale.startsWith('es') ? 'Unirse al canal de Telegram de tx.taxi' : 'Join the tx.taxi Telegram channel'">Telegram</a></p>
+        <p><a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">{{ locale.startsWith('es') ? 'Contacto' : 'Contact Us' }}</a></p>
+        <p>{{ locale.startsWith('es') ? 'Publicado bajo AGPLv3' : 'Released under AGPLv3' }}</p>
       </div>
       <div class="links">
-        <p class="category">Legal</p>
-        <p><a [routerLink]="['/terms-of-service']">Terms of Service</a></p>
-        <p><a [routerLink]="['/privacy-policy']">Privacy Policy</a></p>
-        <p><a [routerLink]="['/trademark-policy']">Trademark &amp; Attribution</a></p>
-        <p><a href="/3rdpartylicenses.txt">Third-party Licenses</a></p>
+        <p class="category">{{ locale.startsWith('es') ? 'Legal' : 'Legal' }}</p>
+        <p><a [routerLink]="['/terms-of-service']">{{ locale.startsWith('es') ? 'Términos de servicio' : 'Terms of Service' }}</a></p>
+        <p><a [routerLink]="['/privacy-policy']">{{ locale.startsWith('es') ? 'Política de privacidad' : 'Privacy Policy' }}</a></p>
+        <p><a [routerLink]="['/trademark-policy']">{{ locale.startsWith('es') ? 'Marcas y atribuciones' : 'Trademark & Attribution' }}</a></p>
+        <p><a href="/3rdpartylicenses.txt">{{ locale.startsWith('es') ? 'Licencias de terceros' : 'Third-party Licenses' }}</a></p>
       </div>
     </div>
 
     <div class="row footer-credit" [style]="{'background-color': isServicesPage ? 'var(--bg)' : ''}">
       <div class="col-sm-12">
         <p>
-          Made with <span class="footer-credit-emoji" aria-hidden="true">🚕</span> by
+          {{ locale.startsWith('es') ? 'Hecho con' : 'Made with' }} <span class="footer-credit-emoji" aria-hidden="true">🚕</span> {{ locale.startsWith('es') ? 'por' : 'by' }}
           <a class="footer-credit-link" href="https://u.software" target="_blank" rel="noopener noreferrer">u.software</a>
         </p>
       </div>

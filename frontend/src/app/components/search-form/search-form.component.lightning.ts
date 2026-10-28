@@ -1,3 +1,6 @@
+import { LanguageService } from '@app/services/language.service';
+import { readSharedPreference } from '@app/services/shared-preferences';
+import { localizedNativeUrl, refreshLocalizedCapabilities } from '@app/services/localized-native-url';
 import { HttpClient } from '@angular/common/http';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef, EventEmitter, Output, ViewChild, HostListener, ElementRef, Input } from '@angular/core';
@@ -37,6 +40,7 @@ interface SearchTarget {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchFormComponent implements OnInit {
+  get es(): boolean { return document.documentElement.lang.toLowerCase().startsWith('es'); }
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'bitcoin';
   get hubUrl():string {return this.explorerRegistry.hubUrl;}
@@ -151,11 +155,24 @@ export class SearchFormComponent implements OnInit {
     private relativeUrlPipe: RelativeUrlPipe,
     private elementRef: ElementRef,
     private explorerRegistry: TxTaxiExplorerRegistryService,
+    private languageService: LanguageService,
   ) {
     this.explorers$ = this.explorerRegistry.explorers$;
   }
 
+  private refreshLocales = (): void => {
+    void refreshLocalizedCapabilities(this.explorerRegistry.hubUrl).then(() => this.cdr.markForCheck());
+  };
+
+  ngOnDestroy(): void {
+    if (typeof window !== 'undefined') window.removeEventListener('focus', this.refreshLocales);
+  }
+
   ngOnInit(): void {
+    if (typeof window !== 'undefined') {
+      this.refreshLocales();
+      window.addEventListener('focus', this.refreshLocales);
+    }
     this.env = this.stateService.env;
     this.thirdPartyExplorers$ = this.explorerRegistry.thirdPartyExplorers$;
     this.stateService.networkChanged$.subscribe((network) => {
@@ -539,6 +556,14 @@ export class SearchFormComponent implements OnInit {
     }});
   }
 
+  localizedExplorerUrl(value: string): string {
+    if (typeof document === 'undefined') return value;
+    const preference = readSharedPreference(document, 'txtaxi_language');
+    const explicit = document.location.pathname.match(/^\/(ar|cs|da|de|en(?:-US)?|es|fa|fi|fr|he|hi|hr|hu|it|ja|ka|ko|lt|mk|nb|ne|nl|pl|pt|ro|ru|sl|sv|th|tr|uk|vi|zh)(?:\/|$)/i)?.[1].toLowerCase();
+    const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : preference || this.languageService.getLanguage();
+    return localizedNativeUrl(value, language);
+  }
+
   private searchTarget(target: SearchTarget, searchText: string): void {
     if (target.kind === 'explorer' && (!target.destinationId || target.destinationId === 'lightning') && target.chainId === this.sourceChainId && (!target.origin || this.isSourceOrigin(target.origin))) {
       this.searchSourceChain(searchText);
@@ -554,12 +579,12 @@ export class SearchFormComponent implements OnInit {
         this.router.navigateByUrl(url.pathname + url.search + url.hash);
         this.isSearching=false; return;
       }
-      window.location.assign(target.directUrl);
+      window.location.assign(this.localizedExplorerUrl(target.directUrl));
       return;
     }
 
     if (target.chainId) {
-      window.location.assign(this.explorerRegistry.chainSearchUrl(target.chainId, searchText, target.destinationId));
+      window.location.assign(this.localizedExplorerUrl(this.explorerRegistry.chainSearchUrl(target.chainId, searchText, target.destinationId)));
       return;
     }
 

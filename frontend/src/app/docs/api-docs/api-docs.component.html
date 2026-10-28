@@ -19,7 +19,7 @@
           <div *ngIf="!item.hasOwnProperty('options') || ( item.hasOwnProperty('options') && item.options.hasOwnProperty('officialOnly') && item.options.officialOnly && officialMempoolInstance ) || ( item.hasOwnProperty('options') && item.options.hasOwnProperty('auditOnly') && item.options.auditOnly && auditEnabled )">
             <h3 *ngIf="item.type === 'category'">{{ item.title }}</h3>
             <div *ngIf="item.type !== 'category'" class="endpoint-container" id="{{ item.fragment }}">
-              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})"><table><tr><td>{{ item.title }}</td><td><span>{{ item.category }}</span></td></tr></table></a>
+              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})"><table><tr><td>{{ item.title }}</td><td><span>{{ item.categoryLabel || item.category }}</span></td></tr></table></a>
               <div class="endpoint-content">
                 <ng-container *ngTemplateOutlet="dict[item.fragment]" class="endpoint"></ng-container>
               </div>
@@ -39,14 +39,14 @@
 
       <div class="doc-content">
 
-        <p class="doc-welcome-note">This reference covers the public Bitcoin REST endpoints exposed at <code>btc.tx.taxi/api</code>. Use the explorer's native routes for pages: <code>/tx/:txid</code>, <code>/block/:hash-or-height</code>, and <code>/address/:address</code>.</p>
-        <p class="doc-welcome-note api-note">Responses describe this explorer's observed node and indexer data. Pending transactions and fee estimates are snapshots, so clients should handle cache headers, temporary failures, and a transaction changing state between requests.</p>
+        <p class="doc-welcome-note" *ngIf="locale.startsWith('es'); else restWelcomeEnglish">Esta referencia cubre los puntos de acceso REST públicos de Bitcoin en <code>btc.tx.taxi/api</code>. Para las páginas, usa las rutas del explorador: <code>/tx/:txid</code>, <code>/block/:hash-or-height</code> y <code>/address/:address</code>.</p><ng-template #restWelcomeEnglish><p class="doc-welcome-note">This reference covers the public Bitcoin REST endpoints exposed at <code>btc.tx.taxi/api</code>. Use the explorer's native routes for pages: <code>/tx/:txid</code>, <code>/block/:hash-or-height</code>, and <code>/address/:address</code>.</p></ng-template>
+        <p class="doc-welcome-note api-note" *ngIf="locale.startsWith('es'); else restNoteEnglish">Las respuestas describen los datos observados por el nodo y el indexador de este explorador. Las transacciones pendientes y estimaciones de comisiones son instantáneas: los clientes deben gestionar las cabeceras de caché, fallos temporales y cambios de estado entre solicitudes.</p><ng-template #restNoteEnglish><p class="doc-welcome-note api-note">Responses describe this explorer's observed node and indexer data. Pending transactions and fee estimates are snapshots, so clients should handle cache headers, temporary failures, and a transaction changing state between requests.</p></ng-template>
 
         <div class="doc-item-container" *ngFor="let item of restDocs">
           <div *ngIf="!item.hasOwnProperty('options') || ( item.hasOwnProperty('options') && item.options.hasOwnProperty('officialOnly') && item.options.officialOnly && officialMempoolInstance ) || ( item.hasOwnProperty('options') && item.options.hasOwnProperty('electrsOnly') && item.options.electrsOnly && runningElectrs )">
             <h3 *ngIf="( item.type === 'category' ) && ( item.showConditions.indexOf(network.val) > -1 )">{{ item.title }}</h3>
             <div *ngIf="( item.type !== 'category' ) && ( item.showConditions.indexOf(network.val) > -1 )" class="endpoint-container" id="{{ item.fragment }}">
-              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})">{{ item.title }} <span>{{ item.category }}</span></a>
+              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})">{{ item.title }} <span>{{ item.categoryLabel || item.category }}</span></a>
               <div class="endpoint-content">
                 <div class="endpoint">
                   <div class="subtitle" i18n="Api docs endpoint">Endpoint</div>
@@ -108,21 +108,21 @@
 
       <div class="doc-content">
 
-        <p class="doc-welcome-note">Connect to the Bitcoin WebSocket at <code>{{ websocketUrl(network.val) }}</code>, then send the JSON subscription payload shown for each stream. A plain HTTP request to this URL is not a WebSocket connection.</p>
-        <p class="doc-welcome-note api-note">Keep subscriptions bounded: each connection accepts at most 100 tracked transaction IDs. Reconnect logic should tolerate a connection closing and resubscribe only to the identifiers still needed.</p>
+        <p class="doc-welcome-note" *ngIf="locale.startsWith('es'); else wsWelcomeEnglish">Conéctate al WebSocket de Bitcoin en <code>{{ websocketUrl(network.val) }}</code> y envía la carga JSON de suscripción indicada para cada flujo. Una solicitud HTTP normal a esta URL no es una conexión WebSocket.</p><ng-template #wsWelcomeEnglish><p class="doc-welcome-note">Connect to the Bitcoin WebSocket at <code>{{ websocketUrl(network.val) }}</code>, then send the JSON subscription payload shown for each stream. A plain HTTP request to this URL is not a WebSocket connection.</p></ng-template>
+        <p class="doc-welcome-note api-note" *ngIf="locale.startsWith('es'); else wsNoteEnglish">Limita las suscripciones: cada conexión admite hasta 100 identificadores de transacción. La lógica de reconexión debe tolerar cierres y volver a suscribirse solo a los identificadores que sigan siendo necesarios.</p><ng-template #wsNoteEnglish><p class="doc-welcome-note api-note">Keep subscriptions bounded: each connection accepts at most 100 tracked transaction IDs. Reconnect logic should tolerate a connection closing and resubscribe only to the identifiers still needed.</p></ng-template>
 
         <div class="doc-item-container" *ngFor="let item of wsDocs">
           <div *ngIf="!item.hasOwnProperty('options') || ( item.hasOwnProperty('options') && item.options.hasOwnProperty('officialOnly') && item.options.officialOnly && officialMempoolInstance )">
             <h3 *ngIf="( item.type === 'category' ) && ( item.showConditions.indexOf(network.val) > -1 )">{{ item.title }}</h3>
             <div *ngIf="( item.type !== 'category' ) && ( item.showConditions.indexOf(network.val) > -1 )" class="endpoint-container" id="{{ item.fragment }}">
-              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})">{{ item.title }} <span>{{ item.category }}</span></a>
+              <a id="{{ item.fragment + '-tab-header' }}" class="section-header" (click)="anchorLinkClick({event: $event, fragment: item.fragment})">{{ item.title }} <span>{{ item.categoryLabel || item.category }}</span></a>
               <div class="endpoint-content">
                 <div class="description">
                   <div class="subtitle" i18n>Description</div>
                   <div [innerHTML]="item.description.default" i18n></div>
                 </div>
                 <div class="description">
-                  <div class="subtitle">Payload</div>
+                  <div class="subtitle">{{ locale.startsWith('es') ? 'Carga' : 'Payload' }}</div>
                   <pre><code [innerText]="item.payload"></code></pre>
                 </div>
                 <app-code-template [hostname]="hostname" [baseNetworkUrl]="baseNetworkUrl" [method]="item.httpRequestMethod" [code]="item.codeExample.default" [network]="network.val" [showCodeExample]="item.showJsExamples"></app-code-template>
@@ -137,12 +137,15 @@
 </ng-container>
 
 <ng-template type="what-is-a-mempool">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish0"><p>Un mempool (abreviatura de «memory pool») es el conjunto de transacciones válidas y sin confirmar que mantiene un nodo. No existe un mempool global: las carteras, los mineros y los exploradores pueden observar conjuntos distintos de transacciones pendientes. La documentación de la red entre pares de Bitcoin explica por qué una transacción sin confirmar puede desaparecer, reaparecer tras una reorganización o llegar a distintos nodos en momentos diferentes.</p><p><a href="https://developer.bitcoin.org/devguide/p2p_network.html#memory-pool" target="_blank" rel="noopener noreferrer">Consulta la referencia sobre el mempool en la guía para desarrolladores de Bitcoin.</a></p></ng-container>
+  <ng-template #faqEnglish0>
   <p>A mempool (short for “memory pool”) is a node’s working set of valid, unconfirmed transactions. There is no global mempool: wallets, miners, and explorers can observe different pending sets. Bitcoin’s peer-to-peer documentation explains why unconfirmed transactions can disappear, return after a reorganization, or reach nodes at different times.</p>
   <p><a href="https://developer.bitcoin.org/devguide/p2p_network.html#memory-pool" target="_blank" rel="noopener noreferrer">Read the Bitcoin Developer Guide’s mempool reference.</a></p>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-a-mempool-explorer">
-  <p>A mempool explorer presents observed pending and confirmed Bitcoin data, including blocks, transactions, addresses, fee estimates, and mining statistics. Projected blocks estimate how transactions from this explorer’s mempool could fit into forthcoming blocks; miners can select a different set.</p><p>Projected blocks appear before the divider and confirmed blocks after it.</p>
+  <ng-container *ngIf="locale.startsWith('es'); else faqMempoolExplorerEnglish"><p>Un explorador de mempool muestra los datos de Bitcoin pendientes y confirmados observados, incluidos bloques, transacciones, direcciones, estimaciones de comisiones y estadísticas de minería. Los bloques previstos estiman cómo podrían encajar en los próximos bloques las transacciones del mempool de este explorador; los mineros pueden elegir otro conjunto.</p><p>Los bloques previstos aparecen antes de la división y los confirmados después.</p></ng-container><ng-template #faqMempoolExplorerEnglish><p>A mempool explorer presents observed pending and confirmed Bitcoin data, including blocks, transactions, addresses, fee estimates, and mining statistics. Projected blocks estimate how transactions from this explorer’s mempool could fit into forthcoming blocks; miners can select a different set.</p><p>Projected blocks appear before the divider and confirmed blocks after it.</p></ng-template>
   <div class="blockchain-wrapper" [dir]="timeLtr ? 'rtl' : 'ltr'" [class.time-ltr]="timeLtr">
     <div class="position-container">
       <span>
@@ -157,97 +160,159 @@
 </ng-template>
 
 <ng-template type="what-is-a-blockchain">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish1"><p>La cadena de bloques de Bitcoin es una secuencia ordenada de bloques que contienen transacciones. Los mineros de prueba de trabajo proponen bloques; los nodos los validan de forma independiente según las reglas de consenso de Bitcoin antes de aceptarlos.</p></ng-container>
+  <ng-template #faqEnglish1>
   <p>Bitcoin’s blockchain is an ordered chain of blocks containing transactions. Proof-of-work miners propose blocks; nodes independently validate them against Bitcoin’s consensus rules before accepting the chain.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="what-is-a-block-explorer">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish2"><p>Un explorador de bloques permite consultar información histórica y en tiempo real sobre la cadena de bloques de una criptomoneda, incluidos bloques, transacciones, direcciones y otros datos.</p></ng-container>
+  <ng-template #faqEnglish2>
   <p>A block explorer is a tool that enables you to explore real-time and historical information about the blockchain of a cryptocurrency. This includes data related to blocks, transactions, addresses, and more.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="what-is-mining">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish3"><p>La minería es el proceso de prueba de trabajo que propone nuevos bloques de Bitcoin. Un minero elige transacciones de su propio mempool, construye un bloque y busca un hash válido. El bloque aceptado puede cobrar su subsidio y las comisiones de las transacciones incluidas.</p></ng-container>
+  <ng-template #faqEnglish3>
   <p>Mining is the proof-of-work process that proposes new Bitcoin blocks. A miner chooses transactions from its own mempool, constructs a block, and searches for a valid block hash. The successful block can collect its subsidy and the fees paid by included transactions.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="what-are-mining-pools">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish4">Los grupos de minería reúnen la capacidad de cómputo de varios mineros para aumentar la probabilidad de encontrar nuevos bloques.</ng-container>
+  <ng-template #faqEnglish4>
   Mining pools are groups of miners that combine their computational power in order to increase the probability of finding new blocks.
+</ng-template>
 </ng-template>
 
 <ng-template type="what-are-vb-wu">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish5"><p>Los bytes virtuales (vB) y las unidades de peso (WU) se utilizan para medir el tamaño de las transacciones y los bloques en la red Bitcoin.</p><p>El tamaño de una transacción en la cadena <i>no</i> depende de la cantidad de bitcoin que transfiere, sino de factores técnicos como el número de entradas, salidas y firmas y el formato utilizado (legacy, SegWit, etc.). Como el espacio en la cadena es limitado, las transacciones más grandes pagan más comisiones que las pequeñas.</p><p>El tamaño de los bloques está limitado a 4.000.000 WU (o 1.000.000 vB, ya que 1 vB = 4 WU).</p><p>Antes se medían los tamaños en bytes normales; los bytes virtuales y las unidades de peso se introdujeron para mantener la compatibilidad con versiones anteriores tras la actualización SegWit de 2017. Consulta <a href="https://programmingbitcoin.com/understanding-segwit-block-size" target="_blank">esta explicación</a> para más detalles.</p></ng-container>
+  <ng-template #faqEnglish5>
   <p>Virtual bytes (vB) and weight units (WU) are used to measure the size of transactions and blocks on the Bitcoin network.</p>
   <p>A Bitcoin transaction's size in the blockchain is <i>not</i> determined how much bitcoin it transfers—instead, a transaction's size is determined by technical factors such as how many inputs and outputs it has, how many signatures it has, and the format it uses (legacy, SegWit, etc). Since space in the Bitcoin blockchain is limited, bigger transactions pay more in mining fees than smaller transactions.</p>
   <p>Block sizes are limited to 4,000,000 WU (or 1,000,000 vB since 1 vB = 4 WU).</p>
   <p>Transaction sizes and block sizes used to be measured in plain bytes, but virtual bytes and weight units were devised to maintain backward compatibility after the SegWit upgrade in 2017. See <a href="https://programmingbitcoin.com/understanding-segwit-block-size" target="_blank">this post</a> for more details.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-svb">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish6"><p>La prioridad de una transacción pendiente de Bitcoin está determinada por su tasa de comisión, medida en sat/vB.</p><p>Una tasa mayor en sat/vB puede mejorar sus posibilidades de inclusión, pero no garantiza un tiempo de confirmación. Consulta las estimaciones actuales justo antes de crear una transacción y utiliza los controles de comisión de tu cartera.</p><p>En la parte superior del <a [routerLink]="['/' | relativeUrl]">panel principal</a> hay estimaciones que puedes usar como guía. Consulta <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="looking-up-fee-estimates">esta pregunta</a> para saber cómo elegir una tasa.</p></ng-container>
+  <ng-template #faqEnglish6>
   <p>The priority of a pending Bitcoin transaction is determined by its feerate. Feerates are measured in sat/vB.</p>
   <p>Using a higher sat/vB feerate can make a transaction more competitive for inclusion, but it does not guarantee confirmation time. Check current estimates immediately before creating a transaction and use your wallet’s fee controls.</p>
   <p>There are feerate estimates on the top of <a [routerLink]="['/' | relativeUrl]">the main dashboard</a> you can use as a guide. See <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="looking-up-fee-estimates">this FAQ</a> for more on picking the right feerate.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-is-transaction-stuck-in-mempool">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish7"><p>Una tasa de comisión baja frente a otras transacciones que compiten por espacio en el bloque es una causa frecuente de retraso. Que una transacción esté pendiente no garantiza que todos los nodos o mineros la conserven. Consulta su página aquí y pregunta a la cartera o al servicio que la creó qué opciones tienes.</p><p>btc.tx.taxi solo muestra datos públicos de la red. No puede cambiar la prioridad de una transacción, recuperar fondos ni modificar una transacción de una cartera.</p></ng-container>
+  <ng-template #faqEnglish7>
   <p>A low feerate relative to transactions competing for block space is a common reason for delay. A pending transaction is not a guarantee that every node or miner still has it, so check its page here and consult the wallet or service that created it for options.</p><p>btc.tx.taxi only reports public network data. It cannot change transaction priority, recover funds, or alter a wallet’s transaction.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="how-to-get-transaction-confirmed-quickly">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish8"><p>Para intentar confirmar antes una transacción, tendrás que aumentar su tasa de comisión efectiva.</p><p>Si se creó con RBF activado, puedes sustituirla por otra con una comisión mayor. Si no, y controlas alguna de sus salidas, puedes usar CPFP para aumentar su tasa efectiva.</p><p>Si no sabes cómo usar RBF o CPFP, consulta la herramienta que utilizaste para crearla (cartera, casa de cambio, etc.).</p></ng-container>
+  <ng-template #faqEnglish8>
   <p>To get your transaction confirmed quicker, you will need to increase its effective feerate.</p><p>If your transaction was created with RBF enabled, your stuck transaction can simply be replaced with a new one that has a higher fee. Otherwise, if you control any of the stuck transaction's outputs, you can use CPFP to increase your stuck transaction's effective feerate.</p><p>If you are not sure how to do RBF or CPFP, work with the tool you used to make the transaction (wallet software, exchange company, etc).</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="how-prevent-stuck-transaction">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish9"><p>Elige una comisión adecuada al tiempo de confirmación que necesitas usando las estimaciones del <a [routerLink]="['/' | relativeUrl]">panel</a>. Si tu cartera lo admite, activar RBF permite sustituir una transacción no confirmada por otra con una comisión mayor.</p></ng-container>
+  <ng-template #faqEnglish9>
   <p>Choose a fee appropriate to how quickly you need confirmation using the estimates on the <a [routerLink]="['/' | relativeUrl]">dashboard</a>. If supported by your wallet, opt-in RBF can let you replace an unconfirmed transaction with one paying a higher fee.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="looking-up-transactions">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish10">Busca el identificador de la transacción en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
+  <ng-template #faqEnglish10>
   Search for the transaction ID in the search box at the top-right of this website.
+</ng-template>
 </ng-template>
 
 <ng-template type="looking-up-addresses">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish11">Busca la dirección en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
+  <ng-template #faqEnglish11>
   Search for the address in the search box at the top-right of this website.
+</ng-template>
 </ng-template>
 
 <ng-template type="looking-up-blocks">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish12">Busca el número o el hash del bloque en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
+  <ng-template #faqEnglish12>
   Search for the block number (or block hash) in the search box at the top-right of this website.
+</ng-template>
 </ng-template>
 
 <ng-template type="looking-up-fee-estimates">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish13"><p>Consulta las estimaciones actuales en el <a [routerLink]="['/' | relativeUrl]">panel</a> o usa <code>/api/v1/fees/recommended</code>. Los valores son recomendaciones en sat/vB basadas en el mempool y los bloques previstos por el explorador.</p><p>Los bloques previstos son una estimación, no una promesa. Los mineros usan sus propios nodos, políticas y plantillas, por lo que una estimación no garantiza la confirmación en un bloque o plazo concreto.</p></ng-container>
+  <ng-template #faqEnglish13>
   <p>See current estimates on the <a [routerLink]="['/' | relativeUrl]">dashboard</a> or call <code>/api/v1/fees/recommended</code>. The values are sat/vB recommendations derived from the explorer’s current mempool and projected blocks.</p><p>Projected blocks are an estimate, not a promise. Miners use their own nodes, policies, and templates, so an estimate cannot guarantee confirmation in a particular block or time period.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="looking-up-historical-trends">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish14">Consulta la <a [routerLink]="['/graphs' | relativeUrl]">página de gráficos</a> para ver tendencias agregadas a lo largo del tiempo, como el tamaño del mempool y la velocidad de llegada de las transacciones.</ng-container>
+  <ng-template #faqEnglish14>
   See the <a [routerLink]="['/graphs' | relativeUrl]">graphs page</a> for aggregate trends over time: mempool size over time and incoming transaction velocity over time.
+</ng-template>
 </ng-template>
 
 <ng-template type="what-is-full-mempool">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish15"><p>Antes de confirmarse en un bloque, una transacción de Bitcoin se almacena en el mempool de un nodo. Cuando las transacciones llegan más rápido de lo que se confirman, el mempool crece.</p><p>Bitcoin Core asigna 300 MB de memoria al mempool por defecto. Cuando un nodo utiliza toda la memoria asignada, se dice que su mempool está «lleno».</p><p>Al agotarse la memoria asignada, el nodo empieza a rechazar nuevas transacciones cuya tasa de comisión esté por debajo de un umbral. En ese caso, asegúrate de elegir una tasa que, como mínimo, lo supere. El umbral actual y el uso de memoria se muestran en la página principal de Mempool.</p></ng-container>
+  <ng-template #faqEnglish15>
   <p>When a Bitcoin transaction is made, it is stored in a Bitcoin node's mempool before it is confirmed into a block. When the rate of incoming transactions exceeds the rate transactions are confirmed, the mempool grows in size.</p><p>By default, Bitcoin Core allocates 300MB of memory for its mempool, so when a node's mempool grows big enough to use all 300MB of allocated memory, we say it's "full".</p><p>Once a node's mempool is using all of its allocated memory, it will start rejecting new transactions below a certain feerate threshold—so when this is the case, be extra sure to set a feerate that (at a minimum) exceeds that threshold. The current threshold feerate (and memory usage) are displayed right on Mempool's front page.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="how-big-is-mempool-used-by-mempool-space">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish16"><p>Los exploradores de Bitcoin pueden utilizar nodos con distintos límites de mempool. Un nodo con el límite predeterminado de 300 MB de Bitcoin Core puede rechazar antes las transacciones con comisiones bajas que otro configurado con un mempool mayor.</p><p>Muchos nodos usan el límite predeterminado de 300 MB. Cuando se agota esa memoria, rechazan transacciones por debajo de un umbral variable de comisión. La tasa de «Purging» del explorador indica ese umbral cuando la fuente de datos lo proporciona.</p><p>Los nodos con mempools mayores pueden conservar durante más tiempo las transacciones con comisiones bajas. Por ello, tu cartera, este explorador y un minero pueden mostrar distintos conjuntos de transacciones pendientes.</p></ng-container>
+  <ng-template #faqEnglish16>
   <p>Bitcoin explorers can use nodes with different mempool limits. A node using Bitcoin Core's default 300MB limit can reject low-feerate transactions sooner than a node configured with a larger mempool.</p>
   <p>Many Bitcoin nodes use the default 300MB mempool setting. When that memory is exhausted, nodes reject transactions below a changing threshold feerate. The "Purging" feerate shown by the explorer indicates that threshold when the configured data source reports it.</p>
     <p>Nodes configured with larger mempools can retain lower-feerate transactions for longer. Your wallet, this explorer, and a miner can therefore have different views of which transactions are currently pending.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-memory-usage">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish17"><p>El uso de memoria de la página principal es la cantidad de memoria del sistema que utiliza en tiempo real el mempool de un nodo Bitcoin. Esta cifra es mayor que el tamaño total de sus transacciones pendientes debido a los índices, punteros y otros recursos que Bitcoin Core emplea para almacenarlas y procesarlas.</p><p>El uso mostrado por btc.tx.taxi corresponde a su servidor configurado y puede superar el límite predeterminado de 300 MB de Bitcoin Core. Es la visión de congestión de un nodo, no un total de toda la red.</p><p>Un nodo con el límite predeterminado de 300 MB, como la mayoría de los nodos Raspberry Pi, no superará los 300 MB de uso de memoria del mempool.</p></ng-container>
+  <ng-template #faqEnglish17>
   <p>Memory usage on the front page refers to the real-time amount of system memory used by a Bitcoin node's mempool. This memory usage number is always higher than the total size of all pending transactions in the mempool due to indexes, pointers, and other overhead used by Bitcoin Core for storage and processing.</p>
   <p>The memory usage shown by btc.tx.taxi reflects its configured backend and may exceed Bitcoin Core's default 300MB limit. Treat it as one node's view of current congestion, not a network-wide total.</p>
   <p>A Bitcoin node running the default 300MB mempool memory limit, like most Raspberry Pi nodes, will never go past 300MB of memory usage.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-empty-blocks">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish18"><p>Cuando se encuentra un bloque, los grupos de minería suelen enviar nuevas plantillas a los mineros antes de validar completamente el bloque nuevo, a menudo antes incluso de recibirlo. En ese intervalo no pueden seleccionar transacciones para el siguiente bloque porque todavía no saben cuáles entrarían en conflicto con las ya minadas.</p><p>Aunque los bloques vacíos no añaden transacciones adicionales, contribuyen a la seguridad de las transacciones que ya están en la cadena.</p></ng-container>
+  <ng-template #faqEnglish18>
   <p>When a new block is found, mining pools often send miners new block templates prior to fully validating the new block, often before they've even received the new block. During this time, it is not possible to select transactions for the next block as a pool isn't sure which transactions conflict with transactions already mined.</p><p>While empty blocks do not add additional transactions to the blockchain, they do contribute to the overall security of transactions already in the chain.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="why-block-timestamps-dont-always-increase">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish19"><p>Las reglas de validación no exigen estrictamente que la marca de tiempo de un bloque sea posterior a la del bloque anterior. Sin una autoridad central, no es posible conocer la hora exacta; el protocolo exige en cambio ciertos requisitos. Uno de ellos es que la marca no sea anterior a la mediana de las marcas de tiempo de los 12 bloques precedentes. Consulta más detalles <a href="https://en.bitcoin.it/wiki/Block_timestamp" target="_blank">aquí</a>.</p><p>Por ello, las marcas de tiempo tienen una precisión aproximada de una hora y a veces parecen estar fuera de orden.</p></ng-container>
+  <ng-template #faqEnglish19>
   <p>Block validation rules do not strictly require that a block's timestamp be more recent than the timestamp of the block preceding it. Without a central authority, it's impossible to know what the exact correct time is. Instead, the Bitcoin protocol requires that a block's timestamp meet certain requirements. One of those requirements is that a block's timestamp cannot be older than the median timestamp of the 12 blocks that came before it. See more details <a href="https://en.bitcoin.it/wiki/Block_timestamp" target="_blank">here</a>.</p><p>As a result, timestamps are only accurate to within an hour or so, which sometimes results in blocks with timestamps that appear out of order.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="why-dont-fee-ranges-match">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish20"><p>Mempool intenta mostrar el rango de <i>tasas de comisión efectivas</i> de los bloques: cuánto habría que pagar realmente para incluir una transacción.</p><p>La tasa efectiva no siempre coincide con la tasa explícita. Por ejemplo, una transacción de 1 sat/vB en un bloque cuyo rango es de 5 a 72 sat/vB podría tener una transacción hija con una tasa alta que eleve su tasa efectiva a 5 sat/vB o más (así funciona el aumento de comisión mediante CPFP). En ese caso sería engañoso usar 1 sat/vB como límite inferior, pues su confirmación requirió una tasa mayor.</p><p>En la página de detalles puedes consultar la tasa de una transacción. Si tiene relaciones CPFP, también verás la tasa efectiva y enlaces a las transacciones descendientes o antecesoras.</p></ng-container>
+  <ng-template #faqEnglish20>
   <p>Mempool aims to show you the <i>effective feerate</i> range for blocks—how much would you actually need to pay to get a transaction included in a block.</p>
   <p>A transaction's effective feerate is not always the same as the feerate explicitly set for it. For example, if you see a 1 s/vb transaction in a block with a displayed feerate range of 5 s/vb to 72 s/vb, chances are that 1 s/vb transaction had a high-feerate child transaction that boosted its effective feerate to 5 s/vb or higher (this is how CPFP fee-bumping works). In such a case, it would be misleading to use 1 s/vb as the lower bound of the block's feerate range since it actually required more than 1 s/vb to confirm that transaction in that block.</p>
   <p>You can find a transaction's feerate on its transaction details page. If the transaction has any CPFP relationships, the page will also show the transaction's effective feerate along with links to descendent and/or ancestor transactions.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-do-block-audits-work">
+  <ng-container *ngIf="locale.startsWith('es'); else faqExtraEnglish1"><p>Una auditoría compara visualmente el bloque esperado por Mempool con el bloque real de una altura determinada.</p><p>Mempool observa su propio mempool y ejecuta una implementación del algoritmo de selección de transacciones de Bitcoin Core para determinar las transacciones que espera en próximos bloques (<a href="https://github.com/mempool/mempool/blob/master/backend/src/api/mempool-blocks.ts" target="_blank">código fuente</a>). Como llegan transacciones continuamente, el algoritmo se ejecuta cada dos segundos y los <a href="/mempool-block/0">bloques previstos</a> cambian casi en tiempo real.</p><p>Cuando se mina un bloque, Mempool guarda una instantánea de la plantilla prevista. Esta instantánea se llama <b>bloque esperado</b> para esa altura y sirve de base para la auditoría.</p><p>Cuando ambos bloques están disponibles se comparan. <b>La auditoría intenta deducir si los mineros incluyeron o excluyeron transacciones deliberadamente.</b> Como no puede saberse con certeza, se usan heurísticas.</p><ul><li><b>Añadida:</b> aparece en el bloque real pero no en el esperado y está muy fuera del rango de comisiones esperado o no estaba en el mempool. Podría haberse priorizado o recibido fuera de banda. No reduce la salud del bloque.</li><li><b>Difundida recientemente:</b> estaba en el bloque esperado pero no en el real y el nodo la observó menos de tres minutos antes de minar el bloque. La latencia puede impedir que llegue al minero, por lo que no se considera una exclusión intencional ni reduce la salud.</li><li><b>Comisión marginal:</b> está en el extremo inferior del rango esperado y falta en uno de los bloques. Otra transacción podría haberla desplazado; no se considera una diferencia destacable ni reduce la salud.</li><li><b>Eliminada:</b> estaba en el bloque esperado pero no en el real, no es reciente ni de comisión marginal. Pudo haberse excluido deliberadamente y reduce la salud del bloque.</li></ul><p>Consulta cómo se usa la auditoría para calcular la <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">salud del bloque</a>.</p><p class="note">Por sus requisitos de recursos y disponibilidad, esta función solo es compatible con las instancias oficiales de mempool.space.</p></ng-container>
+  <ng-template #faqExtraEnglish1>
   <p>A block audit visually compares Mempool's expected block to the actual block for a particular block height.</p>
   <p>How is the expected block determined? Mempool monitors its view of the mempool and runs a re-implementation of Bitcoin Core's transaction selection algorithm to determine the transactions it expects to see in upcoming blocks (<a href="https://github.com/mempool/mempool/blob/master/backend/src/api/mempool-blocks.ts" target="_blank">source code here</a>). Since there is a continual flow of new transactions, this algorithm runs every 2 seconds, and as a result, you will see the transactions <a href="/mempool-block/0">projected to be in upcoming blocks</a> change in near real-time.</p>
   <p>At the moment a new block is mined, Mempool saves a snapshot of its projected block template for the next block. We call this snapshot the <b>expected block</b> for the block height in question, and it serves as the basis for the block audit.</p>
@@ -269,8 +334,11 @@
   <p>See how results of the block audit are used to devise the block health score <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">below</a>.</p>
     <p class='note'>Because of this feature's resource usage and availability requirements, it is only supported on official mempool.space instances.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-block-health">
+  <ng-container *ngIf="locale.startsWith('es'); else faqExtraEnglish2"><p>La salud del bloque mide cuántas transacciones parecen haber sido excluidas deliberadamente. Un bloque sin exclusiones aparentes tiene una salud del 100 %; si hay una o más, es inferior al 100 %.</p><p>Sea <span class="math">s<sub>expected</sub></span> el conjunto de transacciones del bloque esperado y <span class="math">s<sub>actual</sub></span> el del bloque real. Sea <span class="math">n</span> el número de transacciones presentes en ambos conjuntos y <span class="math">r</span> el número que Mempool deduce que se <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">excluyeron deliberadamente</a> del bloque real. La salud es <span class="math">n / (n + r)</span>.</p><p>Se usa la intersección, y no el total del bloque, para reducir el efecto de transacciones que probablemente no fueron excluidas intencionalmente: las difundidas recientemente que el minero quizá no recibió y algunas de tasa baja que pudieron reemplazarse por transacciones más rentables recibidas fuera de banda.</p><p>La salud <i>no</i> mide cuánto se parece el bloque esperado al real. Pueden ser muy diferentes y aun así tener una puntuación alta si no hay exclusiones aparentes (<a [routerLink]="['/block/0000000000000000000515e202c8ae73c8155fc472422d7593af87aa74f2cf3d']">ejemplo extremo</a>). Consulta las <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">auditorías de bloques</a> para más contexto.</p><p class="note">Por sus requisitos de recursos y disponibilidad, esta función solo es compatible con las instancias oficiales de mempool.space.</p></ng-container>
+  <ng-template #faqExtraEnglish2>
   <p>Block health is a measure of how many transactions appear to be intentionally excluded from a block—a block without any transactions that appear intentionally excluded will have 100% health, while a block with 1 or more transactions that appear intentionally excluded will have sub-100% health.</p>
   <p>How is it calculated? Let <span class='math'>s<sub>expected</sub></span> be the set of all transactions in Mempool's expected block and let <span class='math'>s<sub>actual</sub></span> be the set of all transactions in the actual block. Then let <span class='math'>n</span> be the number of all transactions in both <span class='math'>s<sub>expected</sub></span> and <span class='math'>s<sub>actual</sub></span>.</p>
   <p>Furthermore, let <span class='math'>r</span> be the number of transactions Mempool deduces were <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">intentionally excluded</a> from <span class='math'>s<sub>actual</sub></span>.</p>
@@ -284,8 +352,11 @@
   <p>See more context in our FAQ on <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">block audits</a>.</p>
     <p class='note'>Because of this feature's resource usage and availability requirements, it is only supported on official mempool.space instances.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-do-mempool-goggles-work">
+  <ng-container *ngIf="locale.startsWith('es'); else faqExtraEnglish0"><p>Los filtros de transacciones pendientes se pueden aplicar a las <a [routerLink]="['/mempool-block/0' | relativeUrl]">visualizaciones de bloques del mempool</a> para destacar distintos tipos de transacciones.</p><p>Actualmente hay 25 filtros, agrupados en seis categorías:</p><dl><dt>Características</dt><dd><dl><dt>RBF activado</dt><dd>La transacción admite reemplazo según BIP-125.</dd><dt>RBF desactivado</dt><dd>La transacción no indica que admita reemplazo según BIP-125.</dd><dt>Versión 1</dt><dd>La versión predeterminada para la mayoría de las transacciones.</dd><dt>Versión 2</dt><dd>Necesaria para transacciones que usan bloqueos temporales relativos OP_CHECKSEQUENCEVERIFY.</dd></dl></dd><dt>Tipos de dirección</dt><dd><dl><dt>P2PK</dt><dd>Pago a clave pública; formato heredado habitual en transacciones coinbase antiguas.</dd><dt>Multifirma sin envoltura</dt><dd>Forma heredada de multifirma que suele utilizarse para incrustar datos (véase también «Clave pública falsa»).</dd><dt>P2PKH</dt><dd>Pago a hash de clave pública; tipo de dirección heredado que bloquea las salidas a una clave pública.</dd><dt>P2SH</dt><dd>Pago a hash de script; tipo heredado que bloquea las salidas a un <em>script de canje</em>.</dd><dt>P2WPKH</dt><dd>Pago a hash de clave pública de testigo; versión SegWit de P2PKH.</dd><dt>P2WSH</dt><dd>Pago a hash de script de testigo; versión SegWit de P2SH.</dd><dt>Taproot</dt><dd>Direcciones que usan el formato SegWit V1 introducido por Taproot.</dd></dl></dd><dt>Comportamiento</dt><dd><dl><dt>Pagada por una hija</dt><dd>La tasa efectiva de la transacción aumentó por una hija CPFP de mayor tasa.</dd><dt>Paga por una antecesora</dt><dd>La transacción aumenta la tasa efectiva de una antecesora CPFP de menor tasa.</dd><dt>Reemplazo</dt><dd>La transacción reemplazó una versión anterior mediante RBF.</dd></dl></dd><dt>Datos</dt><dd>Métodos para incrustar datos arbitrarios en una transacción Bitcoin.<dl><dt>OP_RETURN</dt><dt>Clave pública falsa</dt><dd>Los datos pueden incrustarse en una clave pública inválida de una salida P2PK o multifirma sin envoltura. Es un filtro heurístico que puede producir falsos positivos y negativos.</dd><dt>Inscripción</dt><dd>Los datos se incrustan en el script de testigo de una entrada Taproot.</dd></dl></dd><dt>Heurísticas</dt><dd>Estos filtros identifican tipos habituales de transacciones según criterios subjetivos.<dl><dt>Coinjoin</dt><dd>Transacción colaborativa que mejora la privacidad.</dd><dt>Consolidación</dt><dd>La transacción reúne muchas entradas en pocas salidas.</dd><dt>Pago por lotes</dt><dd>La transacción envía monedas de pocas entradas a muchas salidas.</dd></dl></dd><dt>Indicadores sighash</dt><dd>Formas de firmar entradas de transacciones Bitcoin. Al seleccionar varios filtros se destacan transacciones que usan cada indicador, aunque no necesariamente en la misma entrada.<dl><dt>sighash_all</dt><dt>sighash_none</dt><dt>sighash_single</dt><dt>sighash_default</dt><dt>sighash_anyonecanpay</dt></dl></dd></dl></ng-container>
+  <ng-template #faqExtraEnglish0>
   <p>Pending transaction filters can be applied to the <a [routerLink]="['/mempool-block/0' | relativeUrl]">mempool block visualizations</a> to highlight different types of transactions.</p>
   <p>There are currently 25 filters, grouped into six categories:</p>
   <dl>
@@ -373,27 +444,37 @@
     </dd>
   </dl>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-are-sigops">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish21"><p>Una «sigop» es una forma de contabilizar el coste de las operaciones de firma en los scripts de Bitcoin, como <code>OP_CHECKSIG</code>, <code>OP_CHECKSIGVERIFY</code>, <code>OP_CHECKMULTISIG</code> y <code>OP_CHECKMULTISIGVERIFY</code>.</p><p>Estas operaciones tienen costes diferentes según sean de firma única o múltiple y según su ubicación en la transacción.</p><p>Por consenso, un bloque de Bitcoin puede incluir como máximo 80.000 sigops.</p></ng-container>
+  <ng-template #faqEnglish21>
   <p>A "sigop" is a way of accounting for the cost of "signature operations" in Bitcoin script, like <code>OP_CHECKSIG</code>, <code>OP_CHECKSIGVERIFY</code>, <code>OP_CHECKMULTISIG</code> and <code>OP_CHECKMULTISIGVERIFY</code></p>
   <p>These signature operations incur different costs depending on whether they are single or multi-sig operations, and on where they appear in a Bitcoin transaction.</p>
   <p>By consensus, each Bitcoin block is permitted to include a maximum of 80,000 sigops.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-adjusted-vsize">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish22"><p>Los bloques de Bitcoin tienen dos límites de recursos independientes impuestos por consenso: un peso máximo de 4 MWU y un máximo de 80.000 sigops.</p><p>La mayoría de las transacciones consumen una proporción mayor del límite de peso que del límite de sigops; algunas, sin embargo, usan un número desproporcionado de sigops para su peso.</p><p>Para tenerlo en cuenta, Bitcoin Core calcula un «tamaño virtual ajustado»: el mayor entre cinco veces el número de sigops y el tamaño virtual sin ajustar.</p><p>Al construir la plantilla de un bloque, Bitcoin Core selecciona transacciones en orden descendente de tasa de comisión, medida en satoshis por <i>tamaño virtual ajustado</i>.</p><p>En mempool.space, las tasas efectivas de las transacciones no confirmadas también se miden en satoshis por tamaño virtual ajustado, teniendo en cuenta las relaciones CPFP y otras dependencias.</p></ng-container>
+  <ng-template #faqEnglish22>
   <p>Bitcoin blocks have two independent consensus-enforced resource constraints - a 4MWU weight limit, and the 80,000 sigop limit.</p>
   <p>Most transactions use more of the weight limit than the sigop limit. However, some transactions use a disproportionate number of sigops compared to their weight.</p>
   <p>To account for this, Bitcoin Core calculates and uses an "adjusted vsize" equal 5 times the number of sigops, or the unadjusted vsize, whichever is larger.</p>
   <p>Then, during block template construction, Bitcoin Core selects transactions in descending order of fee rate measured in satoshis per <i>adjusted vsize</i></p>
   <p>On mempool.space, effective fee rates for unconfirmed transactions are also measured in terms of satoshis per adjusted vsize, after accounting for CPFP relationships and other dependencies.</p>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-do-the-projected-block-fee-ranges-overlap">
+  <ng-container *ngIf="locale.startsWith('es'); else faqEnglish23"><p>Los bloques previstos representan cómo estimamos que serían los siguientes bloques si se minaran ahora; por ello, cada uno sigue las mismas reglas y límites que un bloque real.</p><p>Esos límites pueden hacer que una transacción con una tasa menor se incluya antes que otra con una tasa mayor.</p><p>Por ejemplo, si queda muy poco espacio en un bloque previsto, podría caber una transacción pequeña de baja comisión, mientras que transacciones mayores con tasas más altas tendrían que esperar al siguiente bloque.</p><p>Algo similar puede ocurrir cuando hay muchas transacciones con gran cantidad de sigops. Cada bloque previsto solo puede incluir hasta 80.000 sigops; el espacio restante podría llenarse con transacciones sin sigops y tasas mucho más bajas.</p><p>En casos extremos esto puede producir varios bloques previstos consecutivos con rangos de comisión superpuestos, al contener cada uno transacciones con tasas altas y muchas sigops junto con otras sin sigops y con tasas inferiores.</p></ng-container>
+  <ng-template #faqEnglish23>
   <p>The projected mempool blocks represent what we expect the next blocks would look like if they were mined right now, and so each projected block follows all of the same rules and constraints as real mined blocks.</p>
   <p>Those constraints can sometimes cause transactions with lower fee rates to be included "ahead" of transactions with higher rates.</p>
   <p>For example, if one projected block has a very small amount of space left, it might be able to fit one more tiny low fee rate transaction, while larger higher fee rate transactions have to wait for the following block.</p>
   <p>A similar effect can occur when there are a large number of transactions with very many sigops. In that scenario, each projected block can only include up to 80,000 sigops worth of transactions, after which the remaining space can only be filled by potentially much lower fee transactions with zero sigops.</p>
   <p>In extreme cases this can produce several projected blocks in a row with overlapping fee ranges, as a result of each projected block containing both high-feerate high-sigop transactions and lower feerate zero-sigop transactions.</p>
+</ng-template>
 </ng-template>
 
 <ng-template type="who-runs-this-website">

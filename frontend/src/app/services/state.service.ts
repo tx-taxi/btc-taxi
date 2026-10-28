@@ -9,6 +9,8 @@ import { filter, map, scan, share, shareReplay } from 'rxjs/operators';
 import { StorageService } from '@app/services/storage.service';
 import { hasTouchScreen } from '@app/shared/pipes/bytes-pipe/utils';
 import { ActiveFilter } from '@app/shared/filters.utils';
+import { fiatCurrencies } from '@app/app.constants';
+import { readSharedPreference } from '@app/services/shared-preferences';
 
 export interface MarkBlockState {
   blockHeight?: number;
@@ -385,8 +387,24 @@ export class StateService {
       this.storageService.setValue('audit-preference', hide ? 'hide' : 'show');
     });
 
-    const fiatPreference = this.storageService.getValue('fiat-preference');
-    this.fiatCurrency$ = new BehaviorSubject<string>(fiatPreference || 'USD');
+    const supportedFiat = (value: string): boolean => !!value && Object.prototype.hasOwnProperty.call(fiatCurrencies, value) &&
+      (this.env.ADDITIONAL_CURRENCIES || ['AUD', 'CAD', 'EUR', 'JPY', 'GBP', 'CHF', 'USD'].includes(value));
+    const sharedFiat = this.isBrowser ? readSharedPreference(document, 'txtaxi_currency') : null;
+    const localFiat = this.storageService.getValue('fiat-preference');
+    this.fiatCurrency$ = new BehaviorSubject<string>(supportedFiat(sharedFiat) ? sharedFiat : supportedFiat(localFiat) ? localFiat : 'USD');
+    if (this.isBrowser) {
+      // Cookies are shared across origins but do not emit a storage event. Refresh
+      // when a previously open explorer becomes active after another changes it.
+      const syncFiat = () => {
+        const next = readSharedPreference(document, 'txtaxi_currency');
+        if (supportedFiat(next) && next !== this.fiatCurrency$.value) {
+          this.storageService.setValue('fiat-preference', next);
+          this.fiatCurrency$.next(next);
+        }
+      };
+      window.addEventListener('focus', syncFiat);
+      window.addEventListener('pageshow', syncFiat);
+    }
 
     const rateUnitPreference = this.storageService.getValue('rate-unit-preference');
     this.rateUnits$ = new BehaviorSubject<string>(rateUnitPreference || 'vb');

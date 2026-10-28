@@ -1,5 +1,5 @@
 import { TxTaxiDocsIntroComponent } from '@app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component';
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding, Inject, LOCALE_ID } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Env, StateService } from '@app/services/state.service';
 import { WebsocketService } from '@app/services/websocket.service';
@@ -22,6 +22,7 @@ export class DocsComponent implements OnInit {
   @HostBinding('attr.dir') dir = 'ltr';
 
   constructor(
+    @Inject(LOCALE_ID) readonly locale: string,
     private route: ActivatedRoute,
     private stateService: StateService,
     private websocket: WebsocketService,
@@ -37,6 +38,8 @@ export class DocsComponent implements OnInit {
     document.querySelector<HTMLElement>( 'html' ).style.scrollBehavior = 'smooth';
   }
 
+  get es(): boolean { return this.locale.startsWith('es'); }
+
   ngDoCheck(): void {
 
     const url = this.route.snapshot.url;
@@ -44,7 +47,7 @@ export class DocsComponent implements OnInit {
     if (url[0].path === 'faq' ) {
       this.activeTab = 0;
       this.seoService.setTitle($localize`:@@meta.title.docs.faq:FAQ`);
-      this.seoService.setDescription($localize`:@@meta.description.docs.faq:Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.`);
+      this.seoService.setDescription(this.es ? 'Respuestas sobre nodos públicos, canales, comisiones de enrutamiento y estadísticas de la red Lightning.' : 'Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.');
       this.ogService.setManualOgImage('faq.jpg');
     } else if(url[1]?.path === 'rest' ) {
       this.activeTab = 1;
@@ -52,7 +55,7 @@ export class DocsComponent implements OnInit {
       if (this.stateService.network === 'liquid' || this.stateService.network === 'liquidtestnet' ) {
         this.seoService.setDescription($localize`:@@meta.description.docs.rest-liquid:Documentation for the liquid.network REST API service: get info on addresses, transactions, assets, blocks, and more.`);
       } else {
-        this.seoService.setDescription($localize`:@@meta.description.docs.rest-bitcoin:Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.`);
+        this.seoService.setDescription(this.es ? 'Documentación de la API REST de lightning.btc.tx.taxi: consulta nodos y canales públicos, clasificaciones y estadísticas Lightning.' : 'Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.');
       }
     } else if(url[1]?.path === 'websocket' ) {
       this.activeTab = 2;

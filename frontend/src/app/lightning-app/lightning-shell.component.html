@@ -1,6 +1,6 @@
 <header class="sticky-header">
   <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" routerLink="/" (click)="brandClick($event)" aria-label="Lightning dashboard" title="Lightning dashboard">
+    <a class="navbar-brand" routerLink="/" (click)="brandClick($event)" [attr.aria-label]="es ? 'Panel de Lightning' : 'Lightning dashboard'" [attr.title]="es ? 'Panel de Lightning' : 'Lightning dashboard'">
       <img src="/resources/branding/lightning-dark-navbar.svg?v=cd42f6e25796" alt="tx.taxi" class="btc-brand-navbar">
     </a>
     <div class="navbar-collapse">
@@ -9,14 +9,14 @@
           <a class="nav-link" [routerLink]="item.path" [attr.aria-label]="item.label" [attr.title]="item.label"><div class="svg-wrapper"><app-svg-images [name]="item.icon" width="21.59" height="100%"></app-svg-images></div></a>
         </li>
       </ul>
-      <a *ngIf="false" class="chain-sponsorship" href="mailto:contact@u.software?subject=tx.taxi%20sponsorship%3A%20Lightning%20%28%2475%2Fweek%29&amp;body=Hi%2C%0A%0AI%20would%20like%20to%20sponsor%20Lightning%20on%20lightning.btc.tx.taxi%20for%20%2475%2Fweek.%0A%0A" aria-label="Sponsor Lightning for $75 per week">Sponsor this chain for $75/wk</a>
+      <a *ngIf="false" class="chain-sponsorship" href="mailto:contact@u.software?subject=tx.taxi%20sponsorship%3A%20Lightning%20%28%2475%2Fweek%29&amp;body=Hi%2C%0A%0AI%20would%20like%20to%20sponsor%20Lightning%20on%20lightning.btc.tx.taxi%20for%20%2475%2Fweek.%0A%0A" aria-label="Sponsor Lightning for $75 per week">{{es ? 'Patrocina esta red por $75/semana' : 'Sponsor this chain for $75/wk'}}</a>
       <div class="search-form-container"><app-search-form></app-search-form></div>
     </div>
   </nav>
 </header>
 <main class="lightning-content">
   <div *ngIf="health$ | async as health" class="lightning-data-status">
-    <span *ngIf="health.state !== 'online'" class="badge bg-warning" role="status">{{health.state === 'connecting' ? 'Connecting…' : health.state === 'offline' ? 'Reconnecting…' : 'Cached data'}}<ng-container *ngIf="health.state === 'stale' && health.sourceUpdatedAt"> · {{health.sourceUpdatedAt | date:'MMM d, y':'UTC'}}</ng-container></span>
+    <span *ngIf="health.state !== 'online'" class="badge bg-warning" role="status">{{health.state === 'connecting' ? (es ? 'Conectando…' : 'Connecting…') : health.state === 'offline' ? (es ? 'Reconectando…' : 'Reconnecting…') : (es ? 'Datos en caché' : 'Cached data')}}<ng-container *ngIf="health.state === 'stale' && health.sourceUpdatedAt"> · {{health.sourceUpdatedAt | date:'MMM d, y':'UTC'}}</ng-container></span>
   </div>
   <router-outlet></router-outlet>
 </main>

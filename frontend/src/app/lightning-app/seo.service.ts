@@ -43,7 +43,7 @@ export class SeoService {
       this.clearSoft404();
       const path = this.router.url.split('?')[0].split('#')[0];
       this.updateCanonical(path);
-      const metadata = window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
+      const metadata = document.documentElement.lang.toLowerCase().startsWith('es') ? null : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
       if (metadata?.title && metadata?.description) {
         this.titleService.setTitle(metadata.title);
         this.metaService.updateTag({ property: 'og:title', content: metadata.title });
@@ -91,7 +91,8 @@ export class SeoService {
   }
 
   updateCanonical(path) {
-    const canonicalUrl = 'https://' + this.baseDomain + path;
+    const prefix = document.documentElement.lang.toLowerCase().startsWith('es') ? '/es' : '';
+    const canonicalUrl = 'https://' + this.baseDomain + prefix + path;
     this.canonicalLink.setAttribute('href', canonicalUrl);
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
   }

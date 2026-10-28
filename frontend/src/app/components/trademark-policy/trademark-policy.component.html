@@ -1,3 +1,48 @@
+<ng-container *ngIf="es; else englishLegal">
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Marcas y atribuciones</h2>
+    <h6>Actualizado: 20 de septiembre de 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Identidad de tx.taxi</h4>
+      <p>btc.tx.taxi es un explorador de Bitcoin de la familia tx.taxi operado de forma independiente. Su dominio, logotipo, paleta de la cadena e identidad del servicio distinguen esta versión derivada del proyecto original.</p>
+
+      <br>
+
+      <h4>Atribución del proyecto original</h4>
+      <p>Este software deriva del proyecto de código abierto Mempool. El código fuente original, el sistema visual, los nombres de proyectos, los logotipos y las marcas pertenecen a sus respectivos propietarios.</p>
+
+      <br>
+
+      <h4>Sin afiliación</h4>
+      <p>btc.tx.taxi no está afiliado a Mempool Holdings S.A. de C.V. ni cuenta con su patrocinio o respaldo. Las referencias a mempool.space y mempool/mempool son atribuciones nominativas al software del que deriva esta versión.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin es una red y un protocolo abiertos. Las referencias a Bitcoin, BTC, satoshis, bloques, transacciones, direcciones, minería y Lightning describen los datos de la red que presenta este explorador.</p>
+
+      <br>
+
+      <h4>Licencia</h4>
+      <p>Esta versión derivada cumple las obligaciones de la licencia AGPLv3 del proyecto original. Contacta con el operador para obtener la información aplicable sobre el código fuente y la licencia.</p>
+
+      <br>
+
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-container>
+<ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
     <br>
@@ -39,3 +84,5 @@
   </div>
   <br><br>
 </div>
+
+</ng-template>

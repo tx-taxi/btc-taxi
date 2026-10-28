@@ -33,5 +33,8 @@ export function exactBlockAmount(value: number | string): string {
 
 export function blockValueDetails(total: number | string, median: number, min: number, max: number): string {
   const rate = (value: number) => value == null || !Number.isFinite(value) ? '—' : String(value / FEE_SCALE);
-  return `Total fees: ${exactBlockAmount(total)} ${SYMBOL}. Median fee rate: ${rate(median)} ${FEE_UNIT}. Fee range: ${rate(min)}–${rate(max)} ${FEE_UNIT}.`;
+  const totalFees = $localize`:@@taxi.block.details.totalFees:Total fees`;
+  const medianFeeRate = $localize`:@@taxi.block.details.medianFeeRate:Median fee rate`;
+  const feeRange = $localize`:@@taxi.block.details.feeRange:Fee range`;
+  return `${totalFees}: ${exactBlockAmount(total)} ${SYMBOL}. ${medianFeeRate}: ${rate(median)} ${FEE_UNIT}. ${feeRange}: ${rate(min)}–${rate(max)} ${FEE_UNIT}.`;
 }

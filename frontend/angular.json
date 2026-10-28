@@ -194,6 +194,7 @@
           },
           "configurations": {
             "production": {
+              "localize": ["en-US", "es"],
               "assets": [
                 "src/favicon.ico",
                 "src/robots.txt"
@@ -367,6 +368,10 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": { "code": "en-US", "baseHref": "/" },
+        "locales": { "es": { "translation": "src/locale/messages.es.xlf", "baseHref": "/es/" } }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -709,7 +714,7 @@
                   "maximumWarning": "6kb"
                 }
               ],
-              "localize": false
+              "localize": ["en-US", "es"]
             }
           },
           "defaultConfiguration": ""
