@@ -11565,6 +11565,60 @@
         <source>Third-party Licenses</source>
         <target>Licences tierces</target>
       </trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>Le réseau Lightning à portée de vue.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>Explorer Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>Documentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>Code source</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>État</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>Les nœuds, les canaux et le réseau qui les relie</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>Explorez les nœuds et canaux Lightning publics, les règles de routage, la capacité du réseau, la répartition géographique et les statistiques historiques. Suivez les connexions d’un nœud ou consultez l’ouverture et la fermeture d’un canal.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>Une partie de tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>Utilisez la même recherche pour trouver un nœud ou un canal Lightning, changer d’explorateur ou diriger une transaction vers sa blockchain. L’explorateur Bitcoin se trouve à</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>Une vue du réseau public</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Les paiements Lightning et les canaux privés ne sont pas visibles publiquement. La capacité désigne les bitcoins engagés dans un canal public ; elle ne révèle pas le solde actuellement disponible de chaque partie. Les emplacements des nœuds correspondent aux points de connexion annoncés.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>Les statistiques indiquent la date de l’instantané source. Les données en cache restent disponibles pendant les interruptions.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>Code source ouvert</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>Basé sur le</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>projet Mempool</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>publié sous la licence GNU AGPLv3. Fait avec 🚕 par</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Nœuds, canaux et activité du réseau Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>Explorer</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Tableau de bord Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>Classement des nœuds</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>Carte des nœuds</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>Carte des canaux</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>Pénalités</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>Réseau et documentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>Historique du réseau</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>Pays</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>Fournisseurs d’accès</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>FAQ Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>Documentation de l’API</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>À propos</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>Code source</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>État</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>Nous contacter</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>Publié sous AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>Mentions légales</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>Conditions d’utilisation</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>Politique de confidentialité</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>Marques et attribution</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>Licences tierces</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Fait avec</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>par</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Rejoindre le canal Telegram de tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>Explorateur Lightning de tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>Aucun nœud trouvé.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>Aucun canal trouvé.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Les données Lightning sont indisponibles.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>Réessayer</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Données en cache</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Reconnexion…</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>Bits bruts</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>Obligatoire</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Adresse du nœud</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Aucun nœud ou canal Lightning trouvé.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>La recherche est indisponible. Réessayez.</target></trans-unit>
     </body>
   </file>
 </xliff>
