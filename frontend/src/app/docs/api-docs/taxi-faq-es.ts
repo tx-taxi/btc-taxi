@@ -20,6 +20,8 @@ const titles: Record<string, string> = {
   'looking-up-fee-estimates': '¿Cómo consulto las estimaciones de comisiones?',
   'looking-up-historical-trends': '¿Cómo consulto las tendencias históricas?',
   'advanced': 'Avanzado',
+  'self-hosting': 'Alojamiento propio',
+  'address-lookup-issues': '¿Por qué fallan algunas consultas de direcciones en mi instancia de Mempool?',
   'what-is-full-mempool': '¿Qué significa que el mempool esté lleno?',
   'how-big-is-mempool-used-by-mempool-space': '¿Qué tamaño tiene el mempool de mempool.space?',
   'what-is-memory-usage': '¿Qué es el uso de memoria?',

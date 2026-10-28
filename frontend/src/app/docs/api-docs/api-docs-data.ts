@@ -12975,7 +12975,7 @@ const taxiExcludedRestCategories = new Set(['lightning', 'accelerator-public', '
 const taxiExcludedFaqCategories = new Set(['self-hosting']);
 
 export const taxiRestApiDocsData = restApiDocsData.filter((item) => !taxiExcludedRestCategories.has(item.category));
-export const taxiFaqData = faqData.filter((item) => !taxiExcludedFaqCategories.has(item.category));
+export const taxiFaqData = faqData.filter((item) => !taxiExcludedFaqCategories.has(item.category) || item.fragment === 'self-hosting' || item.fragment === 'address-lookup-issues');
 
 export const electrumApiDocsData = [
   {
