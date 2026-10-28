@@ -11729,6 +11729,23 @@
       <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Ruf ein Taxi und füge hier etwas ein.</target></trans-unit>
       <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>Bitcoin für 150 $ pro Woche sponsern</target></trans-unit>
       <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>Diese Chain für 150 $/Woche sponsern</target></trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html"><source>Loading transaction prevouts</source><target>Vorherige Transaktionsausgänge werden geladen</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html"><source>Loading CPFP</source><target>CPFP-Daten werden geladen</target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html"><source>Loading</source><target>Wird geladen</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html"><source>Some prevouts do not exist or are already spent</source><target>Einige vorherige Ausgänge existieren nicht oder wurden bereits ausgegeben</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target>Die Transaktion konnte nicht übertragen werden. Grund: </target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html"><source>Hex or base64 encoded PSBT involving this address</source><target>PSBT mit dieser Adresse, hexadezimal oder Base64-kodiert</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html"><source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source><target>Kommagetrennte, hexadezimal oder Base64-kodierte PSBT_IN_TAP_LEAF_SCRIPT-Werte (&lt;Kontrollblock&gt;:&lt;Skript&gt;&lt;Blattversion&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html"><source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source><target>Hexadezimal oder Base64-kodiertes Feld PSBT_OUT_TAP_TREE</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html"><source>Hex or base64 encoded x-only public key</source><target>Hexadezimal oder Base64-kodierter öffentlicher X-only-Schlüssel</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html"><source>Tapleaves</source><target>Taproot-Blätter</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html"><source>Taptree</source><target>Taproot-Baum</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html"><source>Internal Key</source><target>Interner Schlüssel</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html"><source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source><target>Taproot-Blätter müssen im Format &quot;&lt;Kontrollblock&gt;:&lt;Skript&gt;&lt;Blattversion&gt;&quot; vorliegen und durch Kommas getrennt sein</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target>Beim Verarbeiten der Taproot-Daten ist ein Fehler aufgetreten</target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>Logo des Mining-Pools <x id="INTERPOLATION"/></target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>Bitcoin-Explorer btc.tx.taxi</target></trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Dem Telegram-Kanal von tx.taxi beitreten</target></trans-unit>
     </body>
   </file>
 </xliff>
