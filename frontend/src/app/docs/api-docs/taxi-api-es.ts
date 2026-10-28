@@ -1,3 +1,6 @@
+import { frenchApiEntries } from './taxi-api-fr';
+import { germanApiEntries } from './taxi-api-de';
+
 /** Bitcoin REST and WebSocket documentation. API paths and examples stay unchanged. */
 const periods = '<code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>';
 const periodNote = `<p><code>:timePeriod</code> admite ${periods}. Para <code>24h</code> y <code>3d</code> se incluyen todos los bloques y los valores son exactos; para <code>1w</code> pueden ser promedios según la velocidad a la que se encontraron los bloques. Para los demás períodos son promedios.</p>`;
@@ -76,10 +79,11 @@ const entries: Record<string, [string, string?]> = {
 };
 
 export function localizedTaxiApi<T extends {fragment: string; title: string; description?: any}>(items: T[], locale: string): T[] {
-  if (!locale.startsWith('es')) return items;
+  const localized = locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : null;
+  if (!localized) return items;
   return items.map(item => {
-    const translated = entries[item.fragment];
+    const translated = localized[item.fragment];
     if (!translated) return item;
-    return {...item, title: translated[0], categoryLabel: entries[(item as any).category]?.[0] || (item as any).category, ...(item.description && translated[1] ? {description: {...item.description, default: translated[1]}} : {})};
+    return {...item, title: translated[0], categoryLabel: localized[(item as any).category]?.[0] || (item as any).category, ...(item.description && translated[1] ? {description: {...item.description, default: translated[1]}} : {})};
   });
 }
