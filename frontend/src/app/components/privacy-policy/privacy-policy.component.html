@@ -1,4 +1,4 @@
-<ng-container *ngIf="es; else englishLegal">
+<ng-container *ngIf="es; else otherLegal">
 <div class="container-xl">
   <div class="text-center">
     <br>
@@ -49,6 +49,114 @@
 </div>
 
 </ng-container>
+
+<ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+
+<ng-template #frenchLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Politique de confidentialité</h2>
+    <h6>Mis à jour le 20 septembre 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Mesure d’audience</h4>
+      <p>tx.taxi utilise Cloudflare Web Analytics pour mesurer les pages vues et les performances, ainsi qu’un cookie propriétaire quotidien partagé entre ses explorateurs pour compter chaque navigateur une fois par jour UTC. Le système de mesure quotidienne ne stocke qu’un identifiant quotidien, le nom d’hôte de l’explorateur et la présence ou non d’une interaction. Il ne reçoit ni texte de recherche, ni adresse, ni identifiant de transaction, ni URL, ni adresse IP. Les enregistrements quotidiens individuels expirent après 31 jours ; les totaux agrégés sont conservés 400 jours. Do Not Track et Global Privacy Control désactivent cette mesure propriétaire. <a href="https://tx.taxi/privacy#audience-measurement">Détails et désactivation</a>.</p>
+      <h4>Utilisez votre propre nœud lorsque la confidentialité est importante</h4>
+      <p>btc.tx.taxi affiche les données publiques de la chaîne Bitcoin et du mempool via le serveur configuré par l’exploitant du site. Pour une vérification indépendante et une confidentialité réseau maximale, utilisez votre propre nœud Bitcoin et votre propre explorateur.</p>
+
+      <br>
+
+      <h4>Données des requêtes</h4>
+      <p>Les requêtes ordinaires au site et à l’API peuvent révéler à l’exploitant des métadonnées Web habituelles, notamment votre adresse IP, l’agent utilisateur, l’URL demandée et l’heure de la requête. Les journaux du serveur peuvent être conservés pour assurer la fiabilité, prévenir les abus et résoudre les problèmes.</p>
+
+      <br>
+
+      <h4>Préférences locales</h4>
+      <p>Les préférences d’affichage, comme le thème, la dénomination, la monnaie fiduciaire, la langue et le fuseau horaire, peuvent être stockées dans votre navigateur. L’utilisation ordinaire de btc.tx.taxi ne nécessite pas de compte.</p>
+
+      <br>
+
+      <h4>Données publiques de la blockchain</h4>
+      <p>Les transactions, adresses, scripts et blocs Bitcoin sont publics. La consultation d’une adresse ou d’une transaction peut être associée à vos métadonnées réseau. Ne considérez pas un explorateur public comme une garantie de confidentialité.</p>
+
+      <br>
+
+      <h4>Liens externes</h4>
+      <p>Ce site contient des liens vers les moyens de contact de tx.taxi, la documentation Bitcoin, le code source du projet d’origine et les informations de licence. Ces services externes ont leurs propres politiques de confidentialité.</p>
+
+      <br>
+
+      <h4>Attribution du code open source</h4>
+      <p>btc.tx.taxi est dérivé de mempool/mempool et hérite de ses obligations AGPLv3. Les noms, logos et marques Mempool restent la propriété de leurs détenteurs respectifs ; btc.tx.taxi n’est ni affilié à Mempool Holdings S.A. de C.V. ni approuvé par cette société.</p>
+
+      <br>
+      <p>EOF</p>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #germanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Datenschutzerklärung</h2>
+    <h6>Aktualisiert: 20. September 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Reichweitenmessung</h4>
+      <p>tx.taxi verwendet Cloudflare Web Analytics für Seitenaufrufe und Leistung sowie ein eigenes tägliches Cookie, das über seine Explorer hinweg geteilt wird, um Browser einmal pro UTC-Tag zu zählen. Die tägliche Reichweitenmessung speichert nur eine Tageskennung, den Hostnamen des Explorers und ob eine Interaktion stattfand. Sie erhält weder Suchtexte, Adressen, Transaktions-IDs, URLs noch IP-Adressen. Einzelne Tagesdatensätze laufen nach 31 Tagen ab; aggregierte Zählwerte werden 400 Tage aufbewahrt. Do Not Track und Global Privacy Control deaktivieren diese eigene Messung. <a href="https://tx.taxi/privacy#audience-measurement">Details und Abmeldung</a>.</p>
+      <h4>Verwende einen eigenen Knoten, wenn Privatsphäre wichtig ist</h4>
+      <p>btc.tx.taxi zeigt öffentliche Bitcoin-Blockchain- und Mempool-Daten über das vom Betreiber konfigurierte Backend an. Für unabhängige Überprüfung und bestmögliche Privatsphäre im Netzwerk verwende deinen eigenen Bitcoin-Knoten und Explorer.</p>
+
+      <br>
+
+      <h4>Anfragedaten</h4>
+      <p>Normale Website- und API-Anfragen können dem Betreiber übliche Web-Metadaten offenlegen, darunter deine IP-Adresse, den User-Agent, die angeforderte URL und den Zeitpunkt der Anfrage. Serverprotokolle können zur Sicherstellung der Zuverlässigkeit, zur Missbrauchsprävention und zur Fehlerbehebung aufbewahrt werden.</p>
+
+      <br>
+
+      <h4>Lokale Einstellungen</h4>
+      <p>Anzeigeeinstellungen wie Design, Einheit, Fiatwährung, Sprache und Zeitzone können in deinem Browser gespeichert werden. Für die gewöhnliche Nutzung von btc.tx.taxi ist kein Konto erforderlich.</p>
+
+      <br>
+
+      <h4>Öffentliche Blockchain-Daten</h4>
+      <p>Bitcoin-Transaktionen, Adressen, Skripte und Blöcke sind öffentlich. Die Suche nach einer Adresse oder Transaktion kann mit deinen Netzwerk-Metadaten verknüpft werden. Betrachte einen öffentlichen Explorer nicht als Schutzgrenze für deine Privatsphäre.</p>
+
+      <br>
+
+      <h4>Externe Links</h4>
+      <p>Diese Website verlinkt auf tx.taxi-Kontaktkanäle, Bitcoin-Dokumentation, den ursprünglichen Quellcode und Lizenzinformationen. Diese externen Dienste haben eigene Datenschutzrichtlinien.</p>
+
+      <br>
+
+      <h4>Open-Source-Zuordnung</h4>
+      <p>btc.tx.taxi basiert auf mempool/mempool und übernimmt dessen AGPLv3-Verpflichtungen. Mempool-Namen, -Logos und -Marken bleiben Eigentum ihrer jeweiligen Inhaber; btc.tx.taxi ist weder mit Mempool Holdings S.A. de C.V. verbunden noch von dieser unterstützt.</p>
+
+      <br>
+      <p>EOF</p>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

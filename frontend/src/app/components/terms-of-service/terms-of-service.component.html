@@ -1,4 +1,4 @@
-<ng-container *ngIf="es; else englishLegal">
+<ng-container *ngIf="es; else otherLegal">
 <div class="container-xl">
   <div class="text-center">
     <br>
@@ -47,6 +47,110 @@
 </div>
 
 </ng-container>
+
+<ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+
+<ng-template #frenchLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Conditions d’utilisation</h2>
+    <h6>Mis à jour le 20 septembre 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Explorateur à titre informatif</h4>
+      <p>btc.tx.taxi permet de consulter les blocs, transactions, adresses et données de minage publics de Bitcoin, les estimations de frais et l’état du mempool. Il s’agit d’un service informatif, et non d’un portefeuille, d’une plateforme d’échange, d’un dépositaire, d’un prestataire de paiement ou d’un service de priorisation des transactions.</p>
+
+      <br>
+
+      <h4>Aucun contrôle sur les transactions Bitcoin</h4>
+      <p>L’exploitant ne peut pas annuler, accélérer, récupérer ou rediriger une transaction Bitcoin. En cas de problème de portefeuille, de plateforme d’échange ou de paiement, contactez le service qui a créé ou reçu la transaction.</p>
+
+      <br>
+
+      <h4>Données et disponibilité</h4>
+      <p>Les données de l’explorateur peuvent être retardées, incomplètes, indisponibles ou différentes de la vue d’un autre nœud. Les estimations de frais ne sont que des estimations et ne garantissent pas la confirmation. Le service est fourni en l’état, sans garantie de disponibilité continue ni d’adéquation à un usage particulier.</p>
+
+      <br>
+
+      <h4>Utilisation acceptable</h4>
+      <p>N’abusez pas du site ou de l’API, ne perturbez pas le fonctionnement du service, ne contournez pas les limites de débit raisonnables et n’utilisez pas le service de manière illégale. L’accès peut être limité lorsque cela est nécessaire pour protéger la disponibilité.</p>
+
+      <br>
+
+      <h4>Services externes</h4>
+      <p>Ce site peut contenir des liens vers les moyens de contact de tx.taxi, des références Bitcoin, des informations de licence et des dépendances d’infrastructure. Les sites externes ont leurs propres conditions et politiques.</p>
+
+      <br>
+
+      <h4>Code open source</h4>
+      <p>btc.tx.taxi est dérivé du projet open source Mempool et distribué conformément aux obligations AGPLv3. Contactez <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> pour obtenir les informations applicables sur le code source et la licence.</p>
+
+      <br>
+      <p>EOF</p>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #germanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Nutzungsbedingungen</h2>
+    <h6>Aktualisiert: 20. September 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Explorer zu Informationszwecken</h4>
+      <p>btc.tx.taxi bietet Einblick in öffentliche Bitcoin-Blöcke, Transaktionen, Adressen, Mining-Daten, Gebührenschätzungen und den Mempool-Status. Es ist ein Informationsdienst und weder Wallet, Börse, Verwahrer, Zahlungsabwickler noch Dienst zur Priorisierung von Transaktionen.</p>
+
+      <br>
+
+      <h4>Keine Kontrolle über Bitcoin-Transaktionen</h4>
+      <p>Der Betreiber kann eine Bitcoin-Transaktion weder rückgängig machen, stornieren, beschleunigen, wiederherstellen noch umleiten. Bei Problemen mit Wallet, Börse oder Zahlung wende dich an den Dienst, der die Transaktion erstellt oder erhalten hat.</p>
+
+      <br>
+
+      <h4>Daten und Verfügbarkeit</h4>
+      <p>Explorer-Daten können verzögert, unvollständig oder nicht verfügbar sein oder von der Ansicht eines anderen Knotens abweichen. Gebührenschätzungen sind lediglich Schätzungen und garantieren keine Bestätigung. Der Dienst wird ohne Zusicherung ununterbrochener Verfügbarkeit oder Eignung für einen bestimmten Zweck im vorliegenden Zustand bereitgestellt.</p>
+
+      <br>
+
+      <h4>Zulässige Nutzung</h4>
+      <p>Missbrauche weder Website noch API, beeinträchtige nicht den Betrieb, umgehe keine angemessenen Anfragelimits und nutze den Dienst nicht rechtswidrig. Der Zugang kann eingeschränkt werden, wenn dies zum Schutz der Verfügbarkeit erforderlich ist.</p>
+
+      <br>
+
+      <h4>Externe Dienste</h4>
+      <p>Diese Website kann auf tx.taxi-Kontaktkanäle, Bitcoin-Referenzen, Lizenzinformationen und Infrastrukturabhängigkeiten verlinken. Externe Websites haben eigene Bedingungen und Richtlinien.</p>
+
+      <br>
+
+      <h4>Open Source</h4>
+      <p>btc.tx.taxi basiert auf dem Mempool Open Source Project und wird gemäß den AGPLv3-Verpflichtungen vertrieben. Kontaktiere <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> für die geltenden Informationen zu Quellcode und Lizenz.</p>
+
+      <br>
+      <p>EOF</p>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

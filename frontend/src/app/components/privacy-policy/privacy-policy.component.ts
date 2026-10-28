@@ -14,9 +14,11 @@ export class PrivacyPolicyComponent {
   ) { }
 
   get es(): boolean { return this.locale.startsWith('es'); }
+  get fr(): boolean { return this.locale.startsWith('fr'); }
+  get de(): boolean { return this.locale.startsWith('de'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.es ? 'Política de privacidad' : 'Privacy Policy');
-    this.seoService.setDescription(this.es ? 'Información de privacidad de btc.tx.taxi sobre datos públicos de Bitcoin, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for btc.tx.taxi, including public Bitcoin data, browser preferences, server logs, and independent verification.');
+    this.seoService.setTitle(this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');
+    this.seoService.setDescription(this.fr ? 'Informations de confidentialité pour btc.tx.taxi : données publiques, préférences du navigateur, journaux du serveur et vérification indépendante.' : this.de ? 'Datenschutzhinweise für btc.tx.taxi zu öffentlichen Daten, Browsereinstellungen, Serverprotokollen und unabhängiger Überprüfung.' : this.es ? 'Información de privacidad de btc.tx.taxi sobre datos públicos de Bitcoin, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for btc.tx.taxi, including public Bitcoin data, browser preferences, server logs, and independent verification.');
   }
 }

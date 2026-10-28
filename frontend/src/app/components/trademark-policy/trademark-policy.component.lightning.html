@@ -1,4 +1,4 @@
-<ng-container *ngIf="es; else englishLegal">
+<ng-container *ngIf="es; else otherLegal">
 <div class="container-xl">
   <div class="text-center">
     <br>
@@ -41,6 +41,98 @@
 </div>
 
 </ng-container>
+
+<ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+
+<ng-template #frenchLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Marques et attributions</h2>
+    <h6>Mis à jour le 3 octobre 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Identité tx.taxi</h4>
+      <p>lightning.btc.tx.taxi est un explorateur Lightning exploité indépendamment au sein de la famille tx.taxi. Son domaine, son logotype, sa palette de couleurs et son identité de service distinguent cette version du projet d’origine.</p>
+
+      <br>
+
+      <h4>Attribution au projet d’origine</h4>
+      <p>Ce logiciel est dérivé du projet open source Mempool. Le code source, l’identité visuelle, les noms du projet, les logos et les marques du projet d’origine appartiennent à leurs détenteurs respectifs.</p>
+
+      <br>
+
+      <h4>Absence d’affiliation</h4>
+      <p>lightning.btc.tx.taxi n’est ni affilié à Mempool Holdings S.A. de C.V., ni sponsorisé ou approuvé par cette société. Les références à mempool.space et mempool/mempool désignent nominativement le logiciel dont cette version est dérivée.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin est un réseau et un protocole ouverts. Les références à Bitcoin, BTC, aux satoshis, à Lightning, aux nœuds, canaux et règles de routage décrivent les données réseau présentées par cet explorateur.</p>
+
+      <br>
+
+      <h4>Licence</h4>
+      <p>Cette version respecte les obligations de la licence AGPLv3 du projet d’origine. Contactez l’exploitant pour obtenir les informations applicables sur le code source et la licence.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #germanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Marken und Quellenangaben</h2>
+    <h6>Aktualisiert: 3. Oktober 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi-Identität</h4>
+      <p>lightning.btc.tx.taxi ist ein unabhängig betriebener Lightning-Explorer der tx.taxi-Familie. Seine Domain, Wortmarke, Chain-Farbpalette und Dienstidentität unterscheiden diesen Fork vom ursprünglichen Projekt.</p>
+
+      <br>
+
+      <h4>Zuordnung zum ursprünglichen Projekt</h4>
+      <p>Diese Software basiert auf dem Mempool Open Source Project. Der ursprüngliche Quellcode, das visuelle System, Projektnamen, Logos und Marken gehören ihren jeweiligen Inhabern.</p>
+
+      <br>
+
+      <h4>Keine Verbindung</h4>
+      <p>lightning.btc.tx.taxi ist weder mit Mempool Holdings S.A. de C.V. verbunden noch wird es von dieser gesponsert oder unterstützt. Verweise auf mempool.space und mempool/mempool dienen der namentlichen Zuordnung zu der Software, aus der dieser Fork hervorgegangen ist.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin ist ein offenes Netzwerk und Protokoll. Verweise auf Bitcoin, BTC, Satoshis, Lightning, Knoten, Kanäle und Routing-Richtlinien beschreiben die von diesem Explorer dargestellten Netzwerkdaten.</p>
+
+      <br>
+
+      <h4>Lizenz</h4>
+      <p>Dieser Fork erfüllt die AGPLv3-Lizenzverpflichtungen des ursprünglichen Projekts. Kontaktiere den Betreiber für die geltenden Informationen zu Quellcode und Lizenz.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

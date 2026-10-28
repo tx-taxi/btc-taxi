@@ -13,9 +13,11 @@ export class TermsOfServiceComponent {
   ) { }
 
   get es(): boolean { return this.locale.startsWith('es'); }
+  get fr(): boolean { return this.locale.startsWith('fr'); }
+  get de(): boolean { return this.locale.startsWith('de'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.es ? 'Términos de servicio' : 'Terms of Service');
-    this.seoService.setDescription(this.es ? 'Términos de uso de btc.tx.taxi como explorador informativo de bloques y mempool de Bitcoin.' : 'Terms for using btc.tx.taxi as an informational Bitcoin block and mempool explorer.');
+    this.seoService.setTitle(this.fr ? 'Conditions d’utilisation' : this.de ? 'Nutzungsbedingungen' : this.es ? 'Términos de servicio' : 'Terms of Service');
+    this.seoService.setDescription(this.fr ? 'Conditions d’utilisation de btc.tx.taxi comme explorateur informatif des blocs et du mempool Bitcoin.' : this.de ? 'Nutzungsbedingungen für btc.tx.taxi als Informations-Explorer für Bitcoin-Blöcke und den Mempool.' : this.es ? 'Términos de uso de btc.tx.taxi como explorador informativo de bloques y mempool de Bitcoin.' : 'Terms for using btc.tx.taxi as an informational Bitcoin block and mempool explorer.');
   }
 }
