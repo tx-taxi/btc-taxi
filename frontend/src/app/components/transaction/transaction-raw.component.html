@@ -244,7 +244,9 @@
     <div class="text-center">
       <div class="spinner-border text-light mt-2 mb-2"></div>
       <h3>
-        Loading {{ isLoadingPrevouts ? 'transaction prevouts' : isLoadingCpfpInfo ? 'CPFP' : '' }}
+        @if (isLoadingPrevouts) { <ng-container i18n="@@btc.raw.loading-prevouts">Loading transaction prevouts</ng-container> }
+        @else if (isLoadingCpfpInfo) { <ng-container i18n="@@btc.raw.loading-cpfp">Loading CPFP</ng-container> }
+        @else { <ng-container i18n="@@btc.raw.loading">Loading</ng-container> }
       </h3>
     </div>
   }

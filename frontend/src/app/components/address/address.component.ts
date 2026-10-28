@@ -581,7 +581,7 @@ export class AddressComponent implements OnInit, OnDestroy {
         const tapleafRecords = tapleaves.reduce((records, leaf) => {
           const parts = leaf.split(':');
           if (parts.length !== 2 || !parts[0] || !parts[1]) {
-            throw new Error('Tapleaves must be in the format "<control block>:<script><leaf version>" separated by commas');
+            throw new Error($localize`:@@btc.address.tapleaves-format:Tapleaves must be in the format "<control block>:<script><leaf version>" separated by commas`);
           }
           records.push({
             keyData: convertTextToBuffer(parts[0]),
@@ -602,7 +602,7 @@ export class AddressComponent implements OnInit, OnDestroy {
         if (error instanceof Error) {
           this.psbtError = error.message;
         } else {
-          this.psbtError = 'An error occurred while processing taproot data';
+          this.psbtError = $localize`:@@btc.address.taproot-error:An error occurred while processing taproot data`;
         }
       }
     }

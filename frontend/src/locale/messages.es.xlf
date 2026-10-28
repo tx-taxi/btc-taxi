@@ -11715,6 +11715,70 @@
       <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Dirección del nodo</target></trans-unit>
       <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>No se encontró ningún nodo o canal Lightning.</target></trans-unit>
       <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>La búsqueda no está disponible. Inténtalo de nuevo.</target></trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>Cargando salidas previas de la transacción</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>Cargando CPFP</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>Cargando</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>Algunas salidas previas no existen o ya se han gastado</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>No se pudo difundir la transacción. Motivo: </target>
+      </trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>PSBT en hexadecimal o base64 que incluya esta dirección</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>PSBT_IN_TAP_LEAF_SCRIPT en hexadecimal o base64, separado por comas (&lt;bloque de control&gt;:&lt;script&gt;&lt;versión de hoja&gt;)</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>Campo PSBT_OUT_TAP_TREE en hexadecimal o base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>Clave pública de solo coordenada x en hexadecimal o base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>Hojas Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>Árbol Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>Clave interna</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format &quot;&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;&quot; separated by commas</source>
+        <target>Las hojas Taproot deben seguir el formato &quot;&lt;bloque de control&gt;:&lt;script&gt;&lt;versión de hoja&gt;&quot; y separarse por comas</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>Se produjo un error al procesar los datos de Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Panel del explorador de Bitcoin</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Mostrar el tamaño de los bloques</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>Mostrar las comisiones totales por bloque</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Mostrar los bloques más recientes a la derecha</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Mostrar los bloques más recientes a la izquierda</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME"/> mining pool</source><target>Logotipo del grupo de minería <x id="NAME"/></target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Logotipo del grupo de minería</target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION"/> mining pool</source><target>Logotipo del grupo de minería <x id="INTERPOLATION"/></target></trans-unit>
     </body>
   </file>
 </xliff>

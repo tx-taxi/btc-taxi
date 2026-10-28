@@ -160,7 +160,7 @@ export class TransactionRawComponent implements OnInit, OnDestroy {
         });
 
         if (this.missingPrevouts.length) {
-          throw new Error(`Some prevouts do not exist or are already spent (${this.missingPrevouts.length})`);
+          throw new Error(`${$localize`:@@btc.raw.prevouts-missing:Some prevouts do not exist or are already spent`} (${this.missingPrevouts.length})`);
         }
 
         this.hasPrevouts = true;
@@ -312,9 +312,9 @@ export class TransactionRawComponent implements OnInit, OnDestroy {
       catchError((error) => {
         if (typeof error.error === 'string') {
           const matchText = error.error.replace(/\\/g, '').match('"message":"(.*?)"');
-          this.errorBroadcast = 'Failed to broadcast transaction, reason: ' + (matchText && matchText[1] || error.error);
+          this.errorBroadcast = $localize`:@@btc.raw.broadcast-failed:Failed to broadcast transaction, reason: ` + (matchText && matchText[1] || error.error);
         } else if (error.message) {
-          this.errorBroadcast = 'Failed to broadcast transaction, reason: ' + error.message;
+          this.errorBroadcast = $localize`:@@btc.raw.broadcast-failed:Failed to broadcast transaction, reason: ` + error.message;
         }
         this.isLoadingBroadcast = false;
         return throwError(() => error);
