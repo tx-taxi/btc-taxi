@@ -1,3 +1,5 @@
+import { frenchFaqTitles } from './taxi-faq-fr';
+
 /** Spanish labels for the Bitcoin FAQ; fragments remain stable for deep links. */
 const titles: Record<string, string> = {
   'basics': 'Conceptos básicos',
@@ -39,6 +41,47 @@ const titles: Record<string, string> = {
   'why-do-the-projected-block-fee-ranges-overlap': '¿Por qué se superponen los rangos de comisiones de los bloques previstos?',
 };
 
+const germanTitles: Record<string, string> = {
+  'basics': 'Grundlagen',
+  'what-is-a-mempool': 'Was ist ein Mempool?',
+  'what-is-a-mempool-explorer': 'Was ist ein Mempool-Explorer?',
+  'what-is-a-blockchain': 'Was ist eine Blockchain?',
+  'what-is-a-block-explorer': 'Was ist ein Block-Explorer?',
+  'what-is-mining': 'Was ist Mining?',
+  'what-are-mining-pools': 'Was sind Mining-Pools?',
+  'what-are-vb-wu': 'Was sind virtuelle Bytes (vB) und Gewichtseinheiten (WU)?',
+  'what-is-svb': 'Was bedeutet sat/vB?',
+  'help-stuck-transaction': 'Hilfe bei einer ausstehenden Transaktion',
+  'help': 'Hilfe',
+  'how-to': 'Diese Website verwenden',
+  'using': 'Diese Website verwenden',
+  'why-is-transaction-stuck-in-mempool': 'Warum wird meine Transaktion nicht bestätigt?',
+  'how-to-get-transaction-confirmed-quickly': 'Wie kann meine Transaktion schneller bestätigt werden?',
+  'how-prevent-stuck-transaction': 'Wie verhindere ich künftig eine ausstehende Transaktion?',
+  'using-this-website': 'Diese Website verwenden',
+  'looking-up-transactions': 'Wie suche ich eine Transaktion?',
+  'looking-up-addresses': 'Wie suche ich eine Adresse?',
+  'looking-up-blocks': 'Wie suche ich einen Block?',
+  'looking-up-fee-estimates': 'Wie finde ich Gebührenschätzungen?',
+  'looking-up-historical-trends': 'Wie erkunde ich historische Entwicklungen?',
+  'advanced': 'Fortgeschritten',
+  'self-hosting': 'Selbst hosten',
+  'address-lookup-issues': 'Warum schlagen manche Adressabfragen auf meiner Mempool-Instanz fehl?',
+  'what-is-full-mempool': 'Was bedeutet ein voller Mempool?',
+  'how-big-is-mempool-used-by-mempool-space': 'Wie groß ist der Mempool von mempool.space?',
+  'what-is-memory-usage': 'Was bedeutet Speichernutzung?',
+  'why-empty-blocks': 'Warum gibt es leere Blöcke?',
+  'why-block-timestamps-dont-always-increase': 'Warum steigen Blockzeitstempel nicht immer?',
+  'why-dont-fee-ranges-match': 'Warum stimmt der Gebührenbereich eines Blocks nicht mit den Gebührensätzen seiner Transaktionen überein?',
+  'how-do-block-audits-work': 'Wie funktionieren Block-Audits?',
+  'what-is-block-health': 'Was ist Blockgesundheit?',
+  'how-do-mempool-goggles-work': 'Wie funktionieren Filter für ausstehende Transaktionen?',
+  'what-are-sigops': 'Was sind Sigops?',
+  'what-is-adjusted-vsize': 'Was ist die angepasste virtuelle Größe?',
+  'why-do-the-projected-block-fee-ranges-overlap': 'Warum überlappen die Gebührenbereiche der prognostizierten Blöcke?',
+};
+
 export function localizedTaxiFaq<T extends {fragment: string; title: string}>(items: T[], locale: string): T[] {
-  return locale.startsWith('es') ? items.map(item => ({...item, title: titles[item.fragment] || item.title, categoryLabel: titles[(item as any).category] || (item as any).category})) : items;
+  const labels = locale.startsWith('es') ? titles : locale.startsWith('de') ? germanTitles : locale.startsWith('fr') ? frenchFaqTitles : null;
+  return labels ? items.map(item => ({...item, title: labels[item.fragment] || item.title, categoryLabel: labels[(item as any).category] || (item as any).category})) : items;
 }
