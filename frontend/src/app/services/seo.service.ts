@@ -88,9 +88,9 @@ export class SeoService {
     // Angular can report an empty URL when returning to a localized root.
     path = path || '/';
     // Location.path() may include query parameters; translated canonicals must identify the page only.
-    if (/^(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(-|$)/i.test(this.locale)) path = path.split(/[?#]/, 1)[0] || '/';
+    if (/^(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|ne|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(-|$)/i.test(this.locale)) path = path.split(/[?#]/, 1)[0] || '/';
     const spanish = this.locale.startsWith('es');
-    const reviewLocale = this.locale.startsWith('ar') ? 'ar' : this.locale.startsWith('he') ? 'he' : this.locale.startsWith('fa') ? 'fa' : this.locale.startsWith('ka') ? 'ka' : this.locale.startsWith('vi') ? 'vi' : this.locale.startsWith('th') ? 'th' : this.locale.startsWith('hu') ? 'hu' : this.locale.startsWith('ro') ? 'ro' : this.locale.startsWith('sl') ? 'sl' : this.locale.startsWith('lt') ? 'lt' : this.locale.startsWith('hr') ? 'hr' : this.locale.startsWith('ca') ? 'ca' : this.locale.startsWith('fi') ? 'fi' : this.locale.startsWith('da') ? 'da' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('hi') ? 'hi' : null;
+    const reviewLocale = this.locale.startsWith('ar') ? 'ar' : this.locale.startsWith('he') ? 'he' : this.locale.startsWith('fa') ? 'fa' : this.locale.startsWith('ne') ? 'ne' : this.locale.startsWith('ka') ? 'ka' : this.locale.startsWith('vi') ? 'vi' : this.locale.startsWith('th') ? 'th' : this.locale.startsWith('hu') ? 'hu' : this.locale.startsWith('ro') ? 'ro' : this.locale.startsWith('sl') ? 'sl' : this.locale.startsWith('lt') ? 'lt' : this.locale.startsWith('hr') ? 'hr' : this.locale.startsWith('ca') ? 'ca' : this.locale.startsWith('fi') ? 'fi' : this.locale.startsWith('da') ? 'da' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('hi') ? 'hi' : null;
     const prefix = spanish ? 'es' : reviewLocale;
     const localizedPath = prefix ? (path === '/' ? '/' + prefix + '/' : '/' + prefix + path) : path;
     const canonicalUrl = 'https://' + this.baseDomain + localizedPath;
@@ -126,7 +126,7 @@ export class SeoService {
   }
 
   private currentPage(path = this.router.url.split('?')[0].split('#')[0]) {
-    if (/^(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(this.locale)) return undefined;
+    if (/^(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|ne|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(this.locale)) return undefined;
     const page = nativeSeoPages[path];
     if (page) return page;
     const match = path.match(/^\/blocks\/([1-9]\d*)$/);
@@ -140,6 +140,7 @@ export class SeoService {
     if (this.locale.startsWith('ar')) return 'مستكشف Bitcoin | btc.tx.taxi';
     if (this.locale.startsWith('he')) return 'סייר Bitcoin | btc.tx.taxi';
     if (this.locale.startsWith('fa')) return 'کاوشگر بیت‌کوین | btc.tx.taxi';
+    if (this.locale.startsWith('ne')) return 'Bitcoin एक्सप्लोरर | btc.tx.taxi';
     if (this.locale.startsWith('ka')) return 'Bitcoin-ის ექსპლორერი | btc.tx.taxi';
     if (this.locale.startsWith('vi')) return 'Trình khám phá Bitcoin | btc.tx.taxi';
     if (this.locale.startsWith('th')) return 'ตัวสำรวจ Bitcoin | btc.tx.taxi';
@@ -185,6 +186,7 @@ export class SeoService {
     if (this.locale.startsWith('ar')) return 'استكشف كتل Bitcoin ومعاملاتها ورسومها ونشاط مجمع المعاملات على btc.tx.taxi.';
     if (this.locale.startsWith('he')) return 'גלו בלוקים, עסקאות, עמלות ופעילות במאגר העסקאות הממתינות של Bitcoin ב־btc.tx.taxi.';
     if (this.locale.startsWith('fa')) return 'بلوک‌ها، تراکنش‌ها، کارمزدها و فعالیت ممپول بیت‌کوین را در btc.tx.taxi بررسی کنید.';
+    if (this.locale.startsWith('ne')) return 'btc.tx.taxi मा Bitcoin ब्लक, कारोबार, शुल्क र मेमपुल गतिविधि हेर्नुहोस्।';
     if (this.locale.startsWith('ka')) return 'დაათვალიერეთ Bitcoin-ის ბლოკები, ტრანზაქციები, საკომისიოები და მემპულის აქტივობა btc.tx.taxi-ზე.';
     if (this.locale.startsWith('vi')) return 'Khám phá các khối, giao dịch, phí và hoạt động mempool Bitcoin trên btc.tx.taxi.';
     if (this.locale.startsWith('th')) return 'สำรวจบล็อก ธุรกรรม ค่าธรรมเนียม และกิจกรรม mempool ของ Bitcoin บน btc.tx.taxi';

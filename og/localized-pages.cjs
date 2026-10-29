@@ -7,6 +7,7 @@ const parse5 = require('parse5');
 const origin = 'https://btc.tx.taxi';
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const copy = {
+  ne: {title:'Bitcoin एक्सप्लोरर | btc.tx.taxi', description:'btc.tx.taxi मा Bitcoin ब्लक, कारोबार, शुल्क र मेमपुल गतिविधि हेर्नुहोस्।', heading:'Bitcoin एक्सप्लोरर'},
   ka: {title:'Bitcoin-ის ექსპლორერი | btc.tx.taxi', description:'დაათვალიერეთ Bitcoin-ის ბლოკები, ტრანზაქციები, საკომისიოები და მემპულის აქტივობა btc.tx.taxi-ზე.', heading:'Bitcoin-ის ექსპლორერი'},
   vi: {title:'Trình khám phá Bitcoin | btc.tx.taxi', description:'Khám phá các khối, giao dịch, phí và hoạt động mempool Bitcoin trên btc.tx.taxi.', heading:'Trình khám phá Bitcoin'},
   th: {title:'ตัวสำรวจ Bitcoin | btc.tx.taxi', description:'สำรวจบล็อก ธุรกรรม ค่าธรรมเนียม และกิจกรรม mempool ของ Bitcoin บน btc.tx.taxi', heading:'ตัวสำรวจ Bitcoin'},
@@ -46,7 +47,7 @@ function createLocalizedPages(indexPath, pages, aliases, image) {
   }
   const known = new Set(pages.map(page => page.route));
   function route(pathname) {
-    const match = pathname.match(/^\/(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
+    const match = pathname.match(/^\/(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|ka|ne|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
     return match && shells[match[1]] ? { lang: match[1], pathname: pathname.slice(3) || '/' } : null;
   }
   function supports(value) {
@@ -80,6 +81,10 @@ function createLocalizedPages(indexPath, pages, aliases, image) {
     }
     if (lang === 'he' && image) {
       const alt = 'דף עסקת Bitcoin ב־btc.tx.taxi המציג מצב אישור, עמלה, כניסות ויציאות.';
+      head.childNodes.push(...parse5.parseFragment(`<meta property="og:image" content="${esc(image.url)}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="${esc(image.width)}"><meta property="og:image:height" content="${esc(image.height)}"><meta property="og:image:alt" content="${esc(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image.url)}"><meta name="twitter:image:alt" content="${esc(alt)}">`).childNodes);
+    }
+    if (lang === 'ne' && image) {
+      const alt = 'btc.tx.taxi को Bitcoin कारोबार पृष्ठमा पुष्टिको अवस्था, शुल्क, इनपुट र आउटपुट देखाइएको छ।';
       head.childNodes.push(...parse5.parseFragment(`<meta property="og:image" content="${esc(image.url)}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="${esc(image.width)}"><meta property="og:image:height" content="${esc(image.height)}"><meta property="og:image:alt" content="${esc(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image.url)}"><meta name="twitter:image:alt" content="${esc(alt)}">`).childNodes);
     }
     if (lang === 'ka' && image) {
@@ -122,7 +127,7 @@ function createLocalizedPages(indexPath, pages, aliases, image) {
       const alt = 'Bitcoin-transaktiosivu btc.tx.taxi-palvelussa näyttää vahvistustilan, maksun, syötteet ja tulosteet.';
       head.childNodes.push(...parse5.parseFragment(`<meta property="og:image" content="${esc(image.url)}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="${esc(image.width)}"><meta property="og:image:height" content="${esc(image.height)}"><meta property="og:image:alt" content="${esc(alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="${esc(image.url)}"><meta name="twitter:image:alt" content="${esc(alt)}">`).childNodes);
     }
-    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'ar' ? 'ar_AR' : lang === 'he' ? 'he_IL' : lang === 'fa' ? 'fa_IR' : lang === 'ka' ? 'ka_GE' : lang === 'vi' ? 'vi_VN' : lang === 'th' ? 'th_TH' : lang === 'hu' ? 'hu_HU' : lang === 'ro' ? 'ro_RO' : lang === 'sl' ? 'sl_SI' : lang === 'lt' ? 'lt_LT' : lang === 'hr' ? 'hr_HR' : lang === 'ca' ? 'ca_ES' : lang === 'fi' ? 'fi_FI' : lang === 'da' ? 'da_DK' : lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : lang === 'it' ? 'it_IT' : lang === 'pt' ? 'pt_PT' : lang === 'ja' ? 'ja_JP' : lang === 'zh' ? 'zh_CN' : lang === 'tr' ? 'tr_TR' : lang === 'hi' ? 'hi_IN' : lang === 'cs' ? 'cs_CZ' : lang === 'sv' ? 'sv_SE' : lang === 'nb' ? 'nb_NO' : lang === 'uk' ? 'uk_UA' : lang === 'pl' ? 'pl_PL' : lang === 'ko' ? 'ko_KR' : lang === 'nl' ? 'nl_NL' : 'ru_RU'}">`).childNodes);
+    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'ar' ? 'ar_AR' : lang === 'he' ? 'he_IL' : lang === 'fa' ? 'fa_IR' : lang === 'ne' ? 'ne_NP' : lang === 'ka' ? 'ka_GE' : lang === 'vi' ? 'vi_VN' : lang === 'th' ? 'th_TH' : lang === 'hu' ? 'hu_HU' : lang === 'ro' ? 'ro_RO' : lang === 'sl' ? 'sl_SI' : lang === 'lt' ? 'lt_LT' : lang === 'hr' ? 'hr_HR' : lang === 'ca' ? 'ca_ES' : lang === 'fi' ? 'fi_FI' : lang === 'da' ? 'da_DK' : lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : lang === 'it' ? 'it_IT' : lang === 'pt' ? 'pt_PT' : lang === 'ja' ? 'ja_JP' : lang === 'zh' ? 'zh_CN' : lang === 'tr' ? 'tr_TR' : lang === 'hi' ? 'hi_IN' : lang === 'cs' ? 'cs_CZ' : lang === 'sv' ? 'sv_SE' : lang === 'nb' ? 'nb_NO' : lang === 'uk' ? 'uk_UA' : lang === 'pl' ? 'pl_PL' : lang === 'ko' ? 'ko_KR' : lang === 'nl' ? 'nl_NL' : 'ru_RU'}">`).childNodes);
     function fill(node) {
       if (node.tagName === 'app-root') { node.childNodes = parse5.parseFragment(`<main class="container-xl"><h1>${esc(heading)}</h1><p>${esc(description)}</p></main>`).childNodes; return; }
       for (const child of node.childNodes || []) fill(child);
