@@ -5040,7 +5040,7 @@
       </trans-unit>
       <trans-unit id="a5a4d2c76b74faddf1aab8dc6e092cddee5a6142" datatype="html">
         <source>Places your transaction in the first mempool block</source>
-        <target>თქვენი ტრანზაცია მოხვდება პირველ და მესამე ბლოკებს შორის</target>
+        <target>თქვენი ტრანზაქცია მოთავსდება მემპულის პირველ ბლოკში</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">10</context>
