@@ -1917,7 +1917,7 @@
       </trans-unit>
       <trans-unit id="3af3e9a4c4d8135f386b2fc59233884ae8fc57fb" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" />of hashrate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
-        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" />of hashrate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" />ჰეშრეიტიდან<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/active-acceleration-box/active-acceleration-box.component.html</context>
           <context context-type="linenumber">32</context>
         </context-group>
@@ -2288,7 +2288,7 @@
       </trans-unit>
       <trans-unit id="6efcd0841523798437b60a3c0c27d305e4db33ac" datatype="html">
         <source>Unspent Outputs</source>
-        <target state="needs-review-translation">დაუხარჯავი შედეგები</target><context-group purpose="location">
+        <target state="needs-review-translation">დაუხარჯავი გამოსავლები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">127</context>
         </context-group>
@@ -6699,7 +6699,7 @@
       </trans-unit>
       <trans-unit id="8be96dc461529381c812f64962c62f4228d01470" datatype="html">
         <source>Fee paid on average for each transaction in the past 144 blocks</source>
-        <target>სულ გადახდილი საკომისიოები 144 ბლოკის შედეგად</target>
+        <target state="needs-review-translation">ბოლო 144 ბლოკში თითოეულ ტრანზაქციაზე საშუალოდ გადახდილი საკომისიო</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reward-stats/reward-stats.component.html</context>
           <context context-type="linenumber">31</context>
@@ -7899,7 +7899,7 @@
       </trans-unit>
       <trans-unit id="d70397ee91f6c9ec91f1c1dff88126f8f9b7c2c4" datatype="html">
         <source>Show more inputs to reveal fee data</source>
-        <target>მეტი input-ის ჩვენება, საკომისიოს დატადან</target>
+        <target state="needs-review-translation">საკომისიოს მონაცემების სანახავად აჩვენეთ მეტი შემავალი მონაცემი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">520</context>
@@ -9458,7 +9458,7 @@
       </trans-unit>
       <trans-unit id="meta.description.lightning.dashboard" datatype="html">
         <source>Get stats on the Lightning network (aggregate capacity, connectivity, etc), Lightning nodes (channels, liquidity, etc) and Lightning channels (status, fees, etc).</source>
-        <target state="needs-review-translation">მიიღეთ სტატისტიკა Lightning ქსელის შესახებ (საერთო სიმძლავრე, კავშირი და ა.შ.), Lightning კვანძები (არხები, ლიკვიდობა და ა.</target><context-group purpose="location">
+        <target state="needs-review-translation">იხილეთ Lightning ქსელის (საერთო ტევადობა, კავშირები და სხვ.), კვანძების (არხები, ლიკვიდურობა და სხვ.) და არხების (სტატუსი, საკომისიოები და სხვ.) სტატისტიკა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/lightning-dashboard/lightning-dashboard.component.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
@@ -11122,7 +11122,7 @@
       <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target state="needs-review-translation">ნაწილი tx.taxi</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target state="needs-review-translation">გამოიყენეთ იგივე ძიება Lightning კვანძის ან არხის მოსაძებნად, მკვლევარების გადართვის ან ტრანზაქციის მის ბლოკჩეინში გასატარებლად. ბიტკოინის ჯაჭვის მკვლევარი ცხოვრობს</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target state="needs-review-translation">საზოგადოებრივი ქსელის ხედი</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target state="needs-review-translation">Lightning გადახდები და პირადი არხები საჯაროდ არ ჩანს. ტევადობა აღწერს ბიტკოინს საჯარო არხზე მიღებულ; ის არ ავლენს არც ერთი მხარის მიმდინარე ხარჯვის ბალანსს. კვანძების მდებარეობები აღწერს გამოცხადებულ ქსელის ბოლო წერტილებს.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target state="needs-review-translation">Lightning გადახდები და პირადი არხები საჯაროდ არ ჩანს. ტევადობა აღნიშნავს საჯარო არხში განთავსებულ ბიტკოინს; ის არ აჩვენებს არც ერთი მხარის ამჟამად დასახარჯ ბალანსს. კვანძების მდებარეობა ასახავს გამოცხადებულ ქსელურ მისამართებს.</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target state="needs-review-translation">სტატისტიკა აჩვენებს წყაროს კადრის თარიღს. ქეშირებული მონაცემები ხელმისაწვდომი რჩება შეფერხებების დროს.</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target state="needs-review-translation">ღია წყარო</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target state="needs-review-translation">აშენდა</target></trans-unit>
