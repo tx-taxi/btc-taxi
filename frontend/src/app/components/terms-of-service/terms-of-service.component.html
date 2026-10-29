@@ -50,7 +50,9 @@
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
-<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -173,6 +175,60 @@
   <br>
   <h4>Open source</h4>
   <p>btc.tx.taxi deriva dal progetto open source Mempool ed è distribuito secondo gli obblighi AGPLv3. Contatta <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> per le informazioni applicabili sul codice sorgente e sulla licenza.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #portugueseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Termos de serviço</h2><h6>Atualizado em: 20 de setembro de 2026</h6><br><br>
+<div class="text-start">
+  <h4>Explorador informativo</h4>
+  <p>O btc.tx.taxi oferece uma visualização de blocos, transações, endereços, dados de mineração, estimativas de taxas e estado do mempool públicos do Bitcoin. É um serviço informativo, não uma carteira, corretora, custodiante, processador de pagamentos ou serviço de priorização de transações.</p>
+  <br>
+  <h4>Nenhum controle sobre transações Bitcoin</h4>
+  <p>O operador não pode reverter, cancelar, acelerar, recuperar ou redirecionar uma transação Bitcoin. Para problemas com carteira, corretora ou pagamento, entre em contato com o serviço que criou ou recebeu a transação.</p>
+  <br>
+  <h4>Dados e disponibilidade</h4>
+  <p>Os dados do explorador podem estar atrasados, incompletos, indisponíveis ou diferir da visão de outro nó. As estimativas de taxas são apenas estimativas e não garantem confirmação. O serviço é fornecido como está, sem promessa de disponibilidade ininterrupta ou adequação a uma finalidade específica.</p>
+  <br>
+  <h4>Uso aceitável</h4>
+  <p>Não abuse do site ou da API, interfira na operação do serviço, contorne limites razoáveis de requisições ou use o serviço de forma ilegal. O acesso poderá ser limitado quando necessário para proteger a disponibilidade.</p>
+  <br>
+  <h4>Serviços externos</h4>
+  <p>Este site pode conter links para canais de contato do tx.taxi, referências sobre Bitcoin, informações de licença e dependências de infraestrutura. Sites externos têm seus próprios termos e políticas.</p>
+  <br>
+  <h4>Código aberto</h4>
+  <p>btc.tx.taxi é derivado do Mempool Open Source Project e é distribuído sob as obrigações da AGPLv3. Entre em contato com <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> para obter informações sobre o código-fonte e a licença aplicáveis.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #russianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Условия использования</h2><h6>Обновлено: 20 сентября 2026 г.</h6><br><br>
+<div class="text-start">
+  <h4>Информационный обозреватель</h4>
+  <p>btc.tx.taxi предоставляет сведения о публичных блоках, транзакциях, адресах, данных майнинга, оценках комиссий и состоянии мемпула Bitcoin. Это информационный сервис, а не кошелек, биржа, кастодиальный сервис, платежный процессор или сервис приоритизации транзакций.</p>
+  <br>
+  <h4>Нет контроля над транзакциями Bitcoin</h4>
+  <p>Оператор не может обратить, отменить, ускорить, восстановить или перенаправить транзакцию Bitcoin. По вопросам кошелька, биржи или платежа обратитесь к сервису, который создал или получил транзакцию.</p>
+  <br>
+  <h4>Данные и доступность</h4>
+  <p>Данные обозревателя могут поступать с задержкой, быть неполными или недоступными либо отличаться от данных другого узла. Оценки комиссий являются лишь оценками и не гарантируют подтверждения. Сервис предоставляется как есть, без обещания бесперебойной доступности или пригодности для определенной цели.</p>
+  <br>
+  <h4>Допустимое использование</h4>
+  <p>Не злоупотребляйте сайтом или API, не мешайте работе сервиса, не обходите разумные ограничения частоты запросов и не используйте сервис незаконно. При необходимости доступ может быть ограничен для обеспечения доступности.</p>
+  <br>
+  <h4>Внешние сервисы</h4>
+  <p>Сайт может содержать ссылки на контактные каналы tx.taxi, материалы о Bitcoin, сведения о лицензии и инфраструктурные зависимости. Внешние сайты имеют собственные условия и политики.</p>
+  <br>
+  <h4>Открытый исходный код</h4>
+  <p>btc.tx.taxi основан на Mempool Open Source Project и распространяется с соблюдением обязательств AGPLv3. Для получения сведений о соответствующем исходном коде и лицензии обратитесь по адресу <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
   <br>
 </div></div><br><br></div>
 </ng-template>
