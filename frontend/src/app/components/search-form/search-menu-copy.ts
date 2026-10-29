@@ -1,5 +1,29 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  ar: {
+    choose: 'اختيار سلسلة البحث', selectedAria: 'المستكشف المحدد', selected: 'المحدد',
+    unavailable: 'قائمة المستكشفات غير متاحة', loading: 'جارٍ تحميل المستكشفات', automatic: 'التوجيه التلقائي',
+    viewHub: 'عرض الصفحة الرئيسية', hint: 'أو انتقل مباشرةً', searchExample: '[عبارة البحث]',
+    native: 'المستكشفات الأصلية', external: 'مستكشفات خارجية', opened: 'مفتوح',
+    open: 'فتح', switch: 'تبديل', found: 'تم العثور', possible: 'محتمل', search: 'بحث',
+    additional: (name: string) => `مستكشفات إضافية لـ ${name}`,
+    openExplorer: (name: string) => `فتح ${name}`,
+    openNewTab: (name: string) => `فتح ${name} في علامة تبويب جديدة`,
+    switchTo: (name: string) => `التبديل إلى ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'إخفاء' : 'عرض'} ${count} من الخيارات الإضافية لـ ${name}`,
+  },
+  fa: {
+    choose: 'انتخاب زنجیرهٔ جست‌وجو', selectedAria: 'کاوشگر انتخاب‌شده', selected: 'انتخاب‌شده',
+    unavailable: 'فهرست کاوشگرها در دسترس نیست', loading: 'در حال بارگذاری کاوشگرها', automatic: 'مسیریابی خودکار',
+    viewHub: 'نمایش صفحهٔ اصلی', hint: 'یا مستقیم بروید', searchExample: '[عبارت جست‌وجو]',
+    native: 'کاوشگرهای بومی', external: 'کاوشگرهای شخص ثالث', opened: 'باز است',
+    open: 'باز کردن', switch: 'تغییر', found: 'یافت شد', possible: 'احتمالی', search: 'جست‌وجو',
+    additional: (name: string) => `کاوشگرهای بیشتر برای ${name}`,
+    openExplorer: (name: string) => `باز کردن ${name}`,
+    openNewTab: (name: string) => `باز کردن ${name} در زبانهٔ جدید`,
+    switchTo: (name: string) => `تغییر به ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'پنهان کردن' : 'نمایش'} ${count} گزینهٔ دیگر برای ${name}`,
+  },
   ko: {
     choose: '검색할 체인 선택', selectedAria: '선택한 탐색기', selected: '선택됨',
     unavailable: '탐색기 목록을 사용할 수 없습니다', loading: '탐색기 불러오는 중', automatic: '자동 라우팅',
