@@ -1,4 +1,16 @@
-/** Ukrainian Lightning REST reference. Protocol names and URLs stay unchanged. */
+/** Ukrainian Lightning FAQ headings and REST reference. */
+export const ukrainianLightningFaqTitles: Record<string, string> = {
+ 'lightning-explore':'Що можна дослідити?',
+ 'lightning-search':'Як знайти вузол або канал?',
+ 'lightning-capacity':'Що означає місткість каналу?',
+ 'lightning-fees':'Що показують комісії маршрутизації?',
+ 'lightning-payments':'Чи можна побачити платіж Lightning?',
+ 'lightning-locations':'Звідки беруться розташування вузлів?',
+ 'lightning-status':'Що означають стан каналу та штрафи?',
+ 'lightning-freshness':'Наскільки актуальна статистика мережі?',
+ 'lightning-bitcoin':'Чому транзакції відкриття та закриття ведуть до Bitcoin?',
+};
+export const ukrainianLightningFaqCategories: Record<string, string> = { Search:'Пошук', Channels:'Канали', Fees:'Комісії', Payments:'Платежі', Maps:'Мапи', Statistics:'Статистика' };
 export const ukrainianLightningRestDocs: Record<string, [string, string]> = {
  'get-lightning-network-stats':['Статистика мережі','<p>Повертає статистику всієї мережі, зокрема кількість каналів і вузлів, загальну місткість, середню та медіанну комісії.</p><p>Для <code>:interval</code> можна вказати <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> або <code>3y</code>.</p>'],
  'get-lightning-nodes-channels':['Вузли й канали','<p>Повертає вузли й канали Lightning, що відповідають <code>:query</code>. Шукає псевдоніми та публічні ключі вузлів, повні й короткі ID каналів без урахування регістру.</p>'],
