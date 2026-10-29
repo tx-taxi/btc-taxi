@@ -27,6 +27,7 @@ export class PrivacyPolicyComponent {
   get fi(): boolean { return this.locale.startsWith('fi'); }
   get hr(): boolean { return this.locale.startsWith('hr'); }
   get sl(): boolean { return this.locale.startsWith('sl'); }
+  get ro(): boolean { return this.locale.startsWith('ro'); }
   get he(): boolean { return this.locale.startsWith('he'); }
   get lt(): boolean { return this.locale.startsWith('lt'); }
   get ca(): boolean { return this.locale.startsWith('ca'); }

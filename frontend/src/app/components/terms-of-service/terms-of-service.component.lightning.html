@@ -446,7 +446,7 @@
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
 <ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else hebrewOrEnglish" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
-<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else englishLegal" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
+<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else romanianOrEnglish" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
 <ng-template #slovenianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -645,6 +645,56 @@
   </div>
   <br><br>
 </div>
+</ng-template>
+
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Termeni de utilizare</h2>
+    <h6>Actualizat: 3 octombrie 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Explorator informativ</h4>
+      <p>lightning.btc.tx.taxi oferă o vedere asupra nodurilor și canalelor Lightning publice, politicilor de rutare, capacității rețelei și statisticilor istorice. Este un serviciu informativ, nu un portofel, o platformă de schimb, un custode, un procesator de plăți sau un serviciu de prioritizare a tranzacțiilor.</p>
+
+      <br>
+
+      <h4>Fără control asupra plăților sau canalelor</h4>
+      <p>Operatorul nu poate trimite, inversa, recupera sau redirecționa o plată Lightning și nu poate controla un canal. Pentru probleme legate de portofel sau de plată, contactați serviciul care a creat sau a primit plata.</p>
+
+      <br>
+
+      <h4>Date și disponibilitate</h4>
+      <p>Datele exploratorului pot fi întârziate, incomplete, indisponibile sau diferite de perspectiva altui nod. Comisioanele de rutare anunțate nu garantează disponibilitatea unei rute sau succesul unei plăți. Serviciul este furnizat ca atare, fără promisiunea disponibilității neîntrerupte sau a adecvării pentru un anumit scop.</p>
+
+      <br>
+
+      <h4>Utilizare acceptabilă</h4>
+      <p>Nu abuzați de site sau de API, nu perturbați funcționarea serviciului, nu ocoliți limitele rezonabile de frecvență și nu utilizați serviciul ilegal. Accesul poate fi limitat atunci când este necesar pentru protejarea disponibilității.</p>
+
+      <br>
+
+      <h4>Servicii externe</h4>
+      <p>Site-ul poate conține linkuri către canalele de contact tx.taxi, referințe Bitcoin, informații despre licență și servicii de infrastructură. Site-urile externe au propriii termeni și propriile politici.</p>
+
+      <br>
+
+      <h4>Sursă deschisă</h4>
+      <p>lightning.btc.tx.taxi derivă din Mempool Open Source Project și este distribuit cu respectarea obligațiilor AGPLv3. Contactați <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> pentru informații despre codul sursă și licența aplicabilă.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>
 
 <ng-template #englishLegal>

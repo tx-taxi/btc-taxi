@@ -470,7 +470,7 @@
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
 <ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else hebrewOrEnglish" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
-<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else englishLegal" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
+<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else romanianOrEnglish" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
 <ng-template #slovenianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -682,6 +682,58 @@
   </div>
   <br><br>
 </div>
+</ng-template>
+
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Politica de confidențialitate</h2>
+    <h6>Actualizat: 29 octombrie 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Măsurarea audienței</h4>
+      <p>tx.taxi folosește Cloudflare Web Analytics pentru vizualizările paginilor și performanță, precum și un cookie propriu zilnic, partajat între exploratoare, pentru a număra fiecare browser o dată pe zi UTC. Sistemul de măsurare zilnică stochează doar un identificator zilnic, numele de gazdă al exploratorului și dacă a existat interacțiune. Nu stochează textul căutărilor, adrese blockchain, ID-uri de tranzacții, URL-urile paginilor vizitate sau adrese IP. Înregistrările zilnice individuale expiră după 31 de zile; totalurile agregate sunt păstrate timp de 400 de zile. Do Not Track și Global Privacy Control dezactivează această măsurare proprie. <a href="https://tx.taxi/privacy#audience-measurement">Detalii și dezactivare</a>.</p>
+      <h4>Folosiți propriul nod când confidențialitatea este importantă</h4>
+      <p>btc.tx.taxi afișează date publice din blockchainul și mempoolul Bitcoin prin backendul configurat de operatorul site-ului. Pentru verificare independentă și confidențialitate maximă în rețea, folosiți propriul nod Bitcoin și propriul explorator.</p>
+
+      <br>
+
+      <h4>Datele cererilor</h4>
+      <p>Cererile obișnuite către site și API pot dezvălui operatorului metadate web standard, inclusiv adresa IP, agentul utilizator, URL-ul solicitat și ora cererii. Jurnalele serverului pot fi păstrate pentru fiabilitate, prevenirea abuzurilor și depanare.</p>
+
+      <br>
+
+      <h4>Preferințe locale</h4>
+      <p>Preferințele de afișare, precum tema, denominația, moneda fiduciară, limba și fusul orar, pot fi stocate în browser. btc.tx.taxi nu necesită cont pentru utilizarea obișnuită a exploratorului.</p>
+
+      <br>
+
+      <h4>Date publice din blockchain</h4>
+      <p>Tranzacțiile, adresele, scripturile și blocurile Bitcoin sunt publice. Căutarea unei adrese sau tranzacții poate asocia această căutare cu metadatele dumneavoastră de rețea. Nu considerați un explorator public o barieră de confidențialitate.</p>
+
+      <br>
+
+      <h4>Linkuri externe</h4>
+      <p>Site-ul conține linkuri către canalele de contact tx.taxi, documentația Bitcoin, codul sursă al proiectului original și informații despre licență. Aceste servicii externe au propriile politici de confidențialitate.</p>
+
+      <br>
+
+      <h4>Atribuirea proiectului open source</h4>
+      <p>btc.tx.taxi derivă din mempool/mempool și moștenește obligațiile AGPLv3. Numele, logourile și mărcile Mempool rămân proprietatea titularilor respectivi; btc.tx.taxi nu este afiliat și nu este susținut de Mempool Holdings S.A. de C.V.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>
 
 <ng-template #englishLegal>

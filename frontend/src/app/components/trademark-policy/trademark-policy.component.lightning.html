@@ -402,7 +402,7 @@
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
 <ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else hebrewOrEnglish" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
-<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else englishLegal" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
+<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else romanianOrEnglish" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
 <ng-template #slovenianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -582,6 +582,51 @@
   </div>
   <br><br>
 </div>
+</ng-template>
+
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Mărci comerciale și atribuire</h2>
+    <h6>Actualizat: 3 octombrie 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Identitatea tx.taxi</h4>
+      <p>lightning.btc.tx.taxi este un explorator Lightning administrat independent, din familia tx.taxi. Domeniul, sigla textuală, paleta blockchainului și identitatea serviciului disting acest fork de proiectul original.</p>
+
+      <br>
+
+      <h4>Atribuirea proiectului original</h4>
+      <p>Acest software derivă din Mempool Open Source Project. Codul sursă original, sistemul vizual, numele proiectelor, logourile și mărcile comerciale aparțin proprietarilor respectivi.</p>
+
+      <br>
+
+      <h4>Fără afiliere</h4>
+      <p>lightning.btc.tx.taxi nu este afiliat, sponsorizat sau susținut de Mempool Holdings S.A. de C.V. Mențiunile mempool.space și mempool/mempool sunt atribuiri nominative ale software-ului din care derivă acest fork.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin este o rețea și un protocol deschis. Referințele la Bitcoin, BTC, satoshi, Lightning, noduri, canale și politici de rutare descriu datele de rețea prezentate de acest explorator.</p>
+
+      <br>
+
+      <h4>Licență</h4>
+      <p>Acest fork respectă obligațiile licenței AGPLv3 a proiectului original. Contactați operatorul pentru informații despre codul sursă și licența aplicabilă.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>
 
 <ng-template #englishLegal>
