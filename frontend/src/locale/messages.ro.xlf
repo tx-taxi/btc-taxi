@@ -1488,7 +1488,7 @@
       </trans-unit>
       <trans-unit id="8b01e0411c7160bfee109e504c84ecee5079c326" datatype="html">
         <source>Accelerated fee rate</source>
-        <target>Comision accelerat</target>
+        <target>Rata accelerată a comisionului</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">39</context>
@@ -1533,7 +1533,7 @@
       </trans-unit>
       <trans-unit id="bcf34abc2d9ed8f45a2f65dd464c46694e9a181e" datatype="html">
         <source>Acceleration Fees</source>
-        <target>Comisoane de accelerare</target>
+        <target>Comisioane de accelerare</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-fees-graph/acceleration-fees-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -1659,7 +1659,7 @@
       </trans-unit>
       <trans-unit id="cf2ec414465d65ab24b354663d94d051a67e26e9" datatype="html">
         <source>Total vSize</source>
-        <target>Total vSize</target>
+        <target>Dimensiune virtuală totală</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-stats/acceleration-stats.component.html</context>
           <context context-type="linenumber">20</context>
@@ -2795,6 +2795,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.assets" datatype="html">
         <source>Explore all the assets issued on the Liquid network like LBTC, L-CAD, USDT, and more.</source>
+        <target>Explorează activele emise în rețeaua Liquid, inclusiv LBTC, L-CAD, USDT și altele.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/assets-nav/assets-nav.component.ts</context>
           <context context-type="linenumber">44</context>
@@ -2960,7 +2961,7 @@
       </trans-unit>
       <trans-unit id="6c453b11fd7bd159ae30bc381f367bc736d86909" datatype="html">
         <source>Block Fees</source>
-        <target>Comisioane medii de bloc</target>
+        <target>Comisioanele blocurilor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -3101,6 +3102,7 @@
       </trans-unit>
       <trans-unit id="a2f14a73f7a6e94479f67423cc51102da8d6f524" datatype="html">
         <source>None</source>
+        <target>Niciuna</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">27</context>
@@ -4591,7 +4593,7 @@
       </trans-unit>
       <trans-unit id="86d26b45470e43b409e589517922276109138e87" datatype="html">
         <source>Transaction Fees</source>
-        <target>Comisioane de tranzacționare</target>
+        <target>Comisioane de tranzacție</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5459,6 +5461,7 @@
       </trans-unit>
       <trans-unit id="cad77115d6fd3adb4383841223f9feae57e1ee86" datatype="html">
         <source>Hashrate (1w)</source>
+        <target>Hashrate (1 săptămână)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -6122,6 +6125,7 @@
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Gravarea<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
@@ -6703,6 +6707,7 @@
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
         <source>See the Bitcoin price in USD visualized over time.</source>
+        <target>Vezi evoluția prețului Bitcoin în USD de-a lungul timpului.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
@@ -6789,6 +6794,7 @@
       </trans-unit>
       <trans-unit id="b3f9018166b8be3686c3cf58059a9f0ad993115e" datatype="html">
         <source>Maximum burn amount (sats)</source>
+        <target>Suma maximă arsă (sats)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">23</context>
@@ -6822,8 +6828,8 @@
         <note priority="1" from="description">test-tx.rejection-reason</note>
       </trans-unit>
       <trans-unit id="meta.description.push-tx" datatype="html">
-        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's hash.</source>
-        <target>Difuzați o tranzacție în rețeaua <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> folosind hash-ul tranzacției.</target>
+        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the raw transaction in hexadecimal format.</source>
+        <target>Transmite o tranzacție în rețeaua <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> folosind tranzacția brută în format hexazecimal.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -6945,7 +6951,7 @@
       </trans-unit>
       <trans-unit id="a0d4ab5b063e7be1c9ea980f5fd6ce1b5384ad0b" datatype="html">
         <source>Average fees per block in the past 144 blocks</source>
-        <target>Comioane medii per bloc în ultimele 144 de blocuri</target>
+        <target>Comisioane medii per bloc în ultimele 144 de blocuri</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/reward-stats/reward-stats.component.html</context>
           <context context-type="linenumber">18</context>
@@ -7366,8 +7372,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
-        <source>See mempool size (in MvB) and transactions per second (in vB/s) visualized over time.</source>
-        <target>Vedeți mărimea mempool (în MvB) și tranzacții pe secundă (în vB/s) vizualizate în timp.</target>
+        <source>See mempool size (in MvB) and transaction virtual bytes per second (in vB/s) visualized over time.</source>
+        <target>Vezi evoluția dimensiunii mempool-ului (în MvB) și a numărului de octeți virtuali ai tranzacțiilor pe secundă (în vB/s).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7384,6 +7390,7 @@
       </trans-unit>
       <trans-unit id="20f7365369829a33d386606ac91e8347e51aefa1" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> levels remaining</source>
+        <target><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="{{ x }}"/> niveluri rămase</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/taproot-address-scripts/taproot-address-scripts.component.html</context>
           <context context-type="linenumber">19</context>
@@ -7392,6 +7399,7 @@
       </trans-unit>
       <trans-unit id="19ace4a71a746941a27da08cd891db79e5bc7b0c" datatype="html">
         <source>1 level remaining</source>
+        <target>1 nivel rămas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/taproot-address-scripts/taproot-address-scripts.component.html</context>
           <context context-type="linenumber">20</context>
@@ -8030,6 +8038,7 @@
       </trans-unit>
       <trans-unit id="meta.description.preview-tx" datatype="html">
         <source>Preview a transaction to the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's raw hex data.</source>
+        <target>Previzualizează o tranzacție în rețeaua Bitcoin<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> folosind datele hexadecimale brute ale tranzacției.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.ts</context>
           <context context-type="linenumber">91</context>
@@ -8037,6 +8046,7 @@
       </trans-unit>
       <trans-unit id="df5fd5288dc0b13ce611a0c857e97baee9595e67" datatype="html">
         <source> This transaction ID appears twice in the blockchain as the coinbase of blocks <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, due to a bug later mitigated by <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target> Acest ID de tranzacție apare de două ori în blockchain, ca tranzacție coinbase a blocurilor <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="locks[0] }}"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> și <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, din cauza unei erori atenuate ulterior de <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">40,42</context>
@@ -8103,6 +8113,7 @@
       </trans-unit>
       <trans-unit id="5d3ef9e29e08e99ad4983c437d98a2104a7f84ec" datatype="html">
         <source>Warning! This transaction involves deceptively similar addresses. It may be an address poisoning attack.</source>
+        <target>Atenție! Această tranzacție implică adrese înșelător de asemănătoare. Ar putea fi un atac de otrăvire a adreselor.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">21</context>
@@ -8376,6 +8387,7 @@
       </trans-unit>
       <trans-unit id="72e6057334075c4f46bfc220bde4838fea41d3ea" datatype="html">
         <source>Treasury Distribution</source>
+        <target>Distribuția trezoreriei</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/treasuries.component.html</context>
           <context context-type="linenumber">50</context>
@@ -8689,6 +8701,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
         <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
+        <target>Vezi tranzacțiile din mempool, tranzacțiile confirmate, soldul și alte detalii pentru portofelul <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="walletName"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">151</context>
@@ -8854,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>Obțineți răspunsuri la întrebări frecvente precum: Ce este un mempool? De ce nu se confirmă tranzacția mea? Cum pot rula propria instanță a proiectului Open Source Mempool? Și altele.</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Află răspunsuri la întrebări frecvente despre Bitcoin, inclusiv despre mempool, confirmarea tranzacțiilor, comisioane, minerit și blocuri.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8878,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>Documentație pentru serviciul mempool.space REST API: obțineți informații despre adrese, tranzacții, blocuri, comisioane, minerit, rețeaua Lightning și altele.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>Documentația API-ului REST btc.tx.taxi: interoghează adrese, tranzacții, blocuri, comisioane, minerit și date de rețea Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8902,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Documentație pentru serviciul mempool.space WebSocket API: obțineți informații în timp real despre blocuri, mempool-uri, tranzacții, adrese și altele.</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>Documentația API-ului WebSocket btc.tx.taxi: primește actualizări în timp real despre blocuri, mempool, tranzacții și adrese Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -9486,7 +9499,7 @@
       </trans-unit>
       <trans-unit id="db1f0c0605ab0c4a904523635982253ff72eed40" datatype="html">
         <source>The average fee rate charged by routing nodes, ignoring fee rates &gt; 0.5% or 5000ppm</source>
-        <target>Comisionul mediu perceput de nodurile de rutare, ignorând valori &gt; 0,5% sau 5000 ppm</target>
+        <target>Rata medie a comisionului percepută de nodurile de rutare, excluzând ratele &gt; 0,5% sau 5000 ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">28</context>
@@ -10094,7 +10107,7 @@
       </trans-unit>
       <trans-unit id="8af4768ed9112268945c697923ce017fbe23e1b7" datatype="html">
         <source>Channel fee rate</source>
-        <target>Comisionul canalului</target>
+        <target>Rata comisionului canalului</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">214</context>
@@ -11283,6 +11296,7 @@
       </trans-unit>
       <trans-unit id="ba7f0c6fdfa0ab7afc59e9384bca0265d23fb018" datatype="html">
         <source>Your balance is too low.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Please <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;"/>top up your account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Soldul tău este prea mic.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Te rugăm să îți <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;"/>alimentezi contul<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
           <context context-type="linenumber">9</context>
@@ -11309,7 +11323,7 @@
       </trans-unit>
       <trans-unit id="6052761358428332094" datatype="html">
         <source>Batch payment</source>
-        <target>Lot plată</target>
+        <target>Plată în lot</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">110</context>
@@ -11341,7 +11355,7 @@
       </trans-unit>
       <trans-unit id="2259944601214794924" datatype="html">
         <source>Sighash Flags</source>
-        <target>Sighash Flags</target>
+        <target>Indicatori Sighash</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">125</context>
@@ -11551,6 +11565,266 @@
         <source>Third-party Licenses</source>
         <target>Licențe de la terți</target>
       </trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html"><source>child</source><target>copil</target></trans-unit>
+      <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target>apariție</target></trans-unit>
+      <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target>Deficit de rezerve</target></trans-unit>
+      <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target>această tranzacție</target></trans-unit>
+      <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Soldul tău este prea mic.</target></trans-unit>
+      <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html"><source>occurrence</source><target>apariție</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Mai multe</target></trans-unit>
+      <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>Într-un cluster mempool care conține încă un grup de tranzacții.</target></trans-unit>
+      <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target>Deficit de rezerve</target></trans-unit>
+      <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>selectează categorii de filtre pentru a evidenția tranzacțiile în așteptare care corespund</target></trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target>copii</target></trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target>Mai multe</target></trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target>Într-un cluster mempool care conține alte <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}"/> grupuri de tranzacții.</target></trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target>Dimensiune virtuală</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html"><source>Internal Key</source><target>Cheie internă</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html"><source>Hex or base64 encoded x-only public key</source><target>Cheie publică doar cu coordonata x, codificată hex sau base64</target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html"><source>Hex or base64 encoded PSBT involving this address</source><target>PSBT codificată hex sau base64 care implică această adresă</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html"><source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source><target>PSBT_IN_TAP_LEAF_SCRIPT codificate hex sau base64, separate prin virgule (&lt;bloc de control&gt;:&lt;script&gt;&lt;versiune leaf&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html"><source>Tapleaves</source><target>Frunze Taproot</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html"><source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source><target>Frunzele Taproot trebuie să aibă formatul „&lt;bloc de control&gt;:&lt;script&gt;&lt;versiune leaf&gt;”, separate prin virgule</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target>A apărut o eroare la procesarea datelor Taproot</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html"><source>Taptree</source><target>Arbore Taproot</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html"><source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source><target>Câmp PSBT_OUT_TAP_TREE codificat hex sau base64</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Panoul exploratorului Bitcoin</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>Exploratorul Bitcoin btc.tx.taxi</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target>Tranzacția nu a putut fi transmisă. Motiv: </target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html"><source>Loading</source><target>Se încarcă</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html"><source>Loading CPFP</source><target>Se încarcă CPFP</target></trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html"><source>Loading transaction prevouts</source><target>Se încarcă ieșirile anterioare ale tranzacției</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html"><source>Some prevouts do not exist or are already spent</source><target>Unele ieșiri anterioare nu există sau au fost deja cheltuite</target></trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html"><source>Your balance is too low.</source><target>Soldul tău este prea mic.</target></trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html"><source> Values were capped at the max supply of 21M BTC </source><target> Valorile au fost limitate la oferta maximă de 21 de milioane BTC </target></trans-unit>
+      <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>Într-un cluster mempool care conține încă un grup de tranzacții.</target></trans-unit>
+      <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>selectează categorii de filtre pentru a evidenția tranzacțiile în așteptare care corespund</target></trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html"><source>* On average around block <x id="block" /></source><target>* În medie, în jurul blocului <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="block"/></target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target>Comisioane BTC</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency" /></source><target>Comisioane <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="currency"/></target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH" /> network, updated in real-time.</source><target>Vezi cele mai recente tranzacții din rețeaua Bitcoin<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="PH"/>, actualizate în timp real.</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>ro-RO</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target>Valorile rămân exprimate în BTC, satoshi sau moneda fiat selectată. Ratele comisioanelor rămân în sat/vB, dimensiunile tranzacțiilor în vB sau unități de greutate, iar conceptele legate de blocuri, adrese și minerit își păstrează sensul Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target>Date specifice Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target>Documentație Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html"><source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source><target>Exploratorul citește datele publice ale rețelei Bitcoin prin backendul configurat. Rezultatele au caracter informativ și pot diferi de perspectiva altui nod asupra mempool-ului. Verifică întotdeauna detaliile plății în portofel și folosește propriul nod când verificarea independentă este importantă.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html"><source>Infrastructure</source><target>Infrastructură</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html"><source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source><target>btc.tx.taxi este exploratorul Bitcoin din familia multichain tx.taxi. Păstrează interfața Mempool pentru explorarea blocurilor, tranzacțiilor, adreselor, activității de minerit, estimărilor de comisioane și mempool-ului Bitcoin în timp real, cu o identitate tx.taxi specifică Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html"><source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source><target>btc.tx.taxi include componente open-source licențiate. Consultă notificările privind licențele terților pentru detalii despre atribuire.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html"><source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source><target>Acest explorator se bazează pe <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/>Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Consultă <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;"/>atribuirea terților<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> și contactează responsabilul pentru informații despre cod și licență.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html"><source>The Bitcoin explorer in the tx.taxi family.</source><target>Exploratorul Bitcoin din familia tx.taxi.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html"><source>About btc.tx.taxi</source><target>Despre btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html"><source>Copied</source><target>Copiat</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html"><source>Copied to clipboard</source><target>Copiat în clipboard</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html"><source>Copy</source><target>Copiază</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html"><source>Copy to clipboard</source><target>Copiază în clipboard</target></trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html"><source>Inscription</source><target>Inscripție</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html"><source>Bitcoin FAQ</source><target>Întrebări frecvente Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target>Grafice Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target>Blocuri Bitcoin, comisioane și activitatea mempool-ului</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target>Instrumente și documentație</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>Rețeaua Lightning, la vedere.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>Explorează Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>Documentație</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>Noduri, canale și rețeaua dintre ele</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>Explorează nodurile și canalele publice Lightning, politicile de rutare, capacitatea rețelei, distribuția geografică și statisticile istorice. Urmărește conexiunile unui nod sau examinează deschiderea și închiderea unui canal.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>Parte din tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>Folosește aceeași căutare pentru a găsi un nod sau un canal Lightning, a schimba exploratorul sau a ruta o tranzacție către blockchainul său. Exploratorul on-chain Bitcoin este la</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>O perspectivă asupra rețelei publice</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Plățile Lightning și canalele private nu sunt vizibile public. Capacitatea descrie bitcoinul angajat într-un canal public; nu dezvăluie soldul disponibil pentru cheltuire al niciuneia dintre părți. Locațiile nodurilor descriu punctele de acces anunțate ale rețelei.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>Statisticile indică data instantaneului sursă. Datele din cache rămân disponibile în timpul întreruperilor.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>Sursă deschisă</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>Bazat pe</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>proiectul Mempool</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>publicat sub licența GNU AGPLv3. Creat cu 🚕 de</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>Nu a fost găsit niciun canal.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>Nu a fost găsit niciun nod.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Datele Lightning nu sunt disponibile.</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>Biți bruti</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>Obligatoriu</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>Exploratorul Lightning tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Noduri, canale și activitatea rețelei Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>Explorați</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Panou Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>Clasamentul nodurilor</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>Harta nodurilor</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>Harta canalelor</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>Penalizări</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>Rețea și documentație</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>Istoricul rețelei</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>Țări</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>Furnizori de internet</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>Întrebări frecvente Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>Documentația API</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>Despre</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>Legal</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>Termenii serviciului</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>Politica de confidențialitate</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>Licențe de la terți</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Despre Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>Vezi pe btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Panou Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>Documentație</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Grafice Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>Clasamentul nodurilor</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Adresa nodului</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Nu a fost găsit niciun nod sau canal Lightning.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>Deschide</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>Căutare</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Căutare</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>Căutarea nu este disponibilă. Încearcă din nou.</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Date din cache</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Se conectează…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Se reconectează…</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>Despre btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>Panoul btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target>Grafice Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target>Eroare la încărcarea datelor CPFP</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target>Eroare la încărcarea ieșirilor anterioare lipsă</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target>Motiv:</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target>Ieșirile anterioare lipsă nu sunt încărcate. Unele câmpuri, precum rata comisionului, nu pot fi calculate.</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>Sponsorizează Bitcoin pentru 150 $ pe săptămână</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>Sponsorizează acest lanț pentru 150 $/săptămână</target></trans-unit>
+      <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target>utilizări</target></trans-unit>
+      <trans-unit id="1cdb643999eb6d66bcd839aeaa381b62b8be8cd4" datatype="html"><source>mempool chunk</source><target>grup de tranzacții din mempool</target></trans-unit>
+      <trans-unit id="1eb8a98f68c1c98884c6436650f5ad80f4b3d5bf" datatype="html"><source>parents</source><target>părinți</target></trans-unit>
+      <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Această tranzacție aparține unui grup cu 1 tranzacție, cu o rată efectivă combinată a comisionului de <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_STRONG"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION"/> sat/vB<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_STRONG"/>.</target></trans-unit>
+      <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target>Folosind codul partenerului</target></trans-unit>
+      <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target>apariții</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target>părinți</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target>copil</target></trans-unit>
+      <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target>Dimensiune virtuală</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Comisionul de bază mediu perceput de nodurile de rutare, excluzând comisioanele de bază &gt; 5000 mSats</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target>această tranzacție</target></trans-unit>
+      <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_PARAGRAPH"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_BOLD_TEXT"/>btc.tx.taxi afișează doar date publice despre rețeaua Bitcoin.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_BOLD_TEXT"/> Nu poate recupera fonduri, rezolva problemele portofelului, anula tranzacții sau schimba prioritatea confirmării.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_PARAGRAPH"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_PARAGRAPH"/>Pentru astfel de solicitări, contactează portofelul, platforma de schimb sau serviciul de plată care a creat tranzacția.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_PARAGRAPH"/></target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target>părinte</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target>Dimensiune</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target>Într-un cluster mempool care conține alte <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION"/> grupuri de tranzacții.</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target>Pauză/Reluare</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target>copii</target></trans-unit>
+      <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION"/> tranzacții noi</target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Această tranzacție aparține unui grup cu <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION"/> tranzacții, cu o rată efectivă combinată a comisionului de <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_STRONG"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION_1"/> sat/vB<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_STRONG"/>.</target></trans-unit>
+      <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target> Valorile au fost limitate la oferta maximă de 21 de milioane BTC </target></trans-unit>
+      <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target>Volum în 24 h</target></trans-unit>
+      <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html"><source>24h Volume</source><target>Volum în 24 h</target></trans-unit>
+      <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target>Această tranzacție aparține unui grup cu 1 tranzacție, cu o rată efectivă combinată a comisionului de <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}"/> sat/vB<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</target></trans-unit>
+      <trans-unit id="5111568433154163082" datatype="html"><source>mempool chunk" - "cluster.mempool-chunk</source><target>grup de tranzacții din mempool</target></trans-unit>
+      <trans-unit id="5149188584039150457" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>Oferta LBTC față de deținerile BTC</target></trans-unit>
+      <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html"><source>usages</source><target>utilizări</target></trans-unit>
+      <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html"><source>Using partner code</source><target>Folosind codul partenerului</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>Pauză/Reluare</target></trans-unit>
+      <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html"><source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source><target><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only"/>btc.tx.taxi afișează doar date publice despre rețeaua Bitcoin.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Nu poate recupera fonduri, rezolva problemele portofelului, anula tranzacții sau schimba prioritatea confirmării.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request"/>Pentru astfel de solicitări, contactează portofelul, platforma de schimb sau serviciul de plată care a creat tranzacția.<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Comisionul de bază median perceput de nodurile de rutare, excluzând comisioanele de bază &gt; 5000 mSats</target></trans-unit>
+      <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html"><source>occurrences</source><target>apariții</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>Cluster</target></trans-unit>
+      <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html"><source>Cluster</source><target>Cluster</target></trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html"><source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source><target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla"/> tranzacții noi</target></trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target>Această tranzacție aparține unui grup cu <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}"/> tranzacții, cu o rată efectivă combinată a comisionului de <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}"/> sat/vB<x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target>Sigla grupului de minerit <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="NAME"/></target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>Sigla grupului de minerit <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="INTERPOLATION"/></target></trans-unit>
+      <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>Oferta LBTC față de deținerile BTC</target></trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html"><source>parent</source><target>părinte</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo" datatype="html"><source>Logo of <x id="pool" /> mining pool</source><target>Sigla grupului de minerit <x xmlns="urn:oasis:names:tc:xliff:document:1.2" id="pool"/></target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF activat</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF dezactivat</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>Versiunea 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>Versiunea 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>Versiunea 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Nestandard</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Multisig simplu</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Plătită de tranzacția copil</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Plătește pentru tranzacția părinte</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Înlocuire</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Cheie publică falsă</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>Hash de script fals</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Anexă</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>Filtre de tranzacții</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Afișează cele mai noi blocuri în stânga</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Afișează cele mai noi blocuri în dreapta</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>Afișează comisioanele totale per bloc</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Afișează dimensiunile blocurilor</target></trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Alătură-te canalului Telegram tx.taxi</target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Sigla poolului de minerit</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target>Comisioane (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target>Comisioane (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>Subvenție</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>Subvenție (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>Subvenție (USD)</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Intervalul comisioanelor</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Mediana ratei comisionului</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>Contactează responsabilul</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>Licență</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target>Linkurile proiectului</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target>Construit pe software open source</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>de</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>Contact</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target>Panou</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>Publicat sub AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>Creat cu</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>Tranzacții în așteptare</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target>Cod sursă</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>Mărci și atribuire</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>Cod sursă</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>Stare</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>Reîncearcă</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Alătură-te canalului Telegram tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>Cod sursă</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>Stare</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>Contact</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>Publicat sub AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>Mărci și atribuire</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Creat cu</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>de</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>Rutare automată</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>Alege lanțul pentru căutare</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>EXPLORATOARE TERȚE</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>Găsit</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>Se încarcă exploratoarele</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>EXPLORATOARE NATIVE</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>Deschis</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Cheamă un taxi, lipește orice aici.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>Posibil</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>Registrul exploratoarelor nu este disponibil</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>SELECTAT</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>Exploratorul selectat</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>Schimbă</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>Vezi centrul</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html"><source>Mining pool logo</source><target>Sigla poolului de minerit</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>Blocuri recente</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target>Panou</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target>Panou de minerit</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Cheamă un taxi, lipește orice aici.</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target>Ora Azorelor (AZOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target>Ora standard Hawaii (HST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target>Ora standard Samoa (SST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html"><source>Anywhere on Earth (AoE)</source><target>Oriunde pe Pământ (AoE)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html"><source>Fernando de Noronha Time (FNT)</source><target>Ora Fernando de Noronha (FNT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target>Ora Argentinei (ART)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target>Ora standard atlantică (AST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target>Ora standard de est (EST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target>Ora standard centrală (CST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target>Ora standard a munților (MST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target>Ora standard a Pacificului (PST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target>Ora standard Alaska (AKST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target>Ora Greenwich (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target>Ora Europei Centrale (CET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target>Ora standard a estului Australiei (AEST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html"><source>Norfolk Time (NFT)</source><target>Ora Norfolk (NFT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>Ora standard Noua Zeelandă (NZST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>Ora Tonga (TOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Ora insulelor Line (LINT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target>Ora Europei de Est (EET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target>Ora standard Moscova (MSK)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html"><source>Armenia Time (AMT)</source><target>Ora Armeniei (AMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target>Ora Pakistanului (PKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html"><source>Xinjiang Time (XJT)</source><target>Ora Xinjiang (XJT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html"><source>Indochina Time (ICT)</source><target>Ora Indochinei (ICT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html"><source>Hong Kong Time (HKT)</source><target>Ora Hong Kong (HKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target>Ora standard Japonia (JST)</target></trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html"><source>Pause/Resume</source><target>Pauză / reia</target></trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html"><source>1 new transaction</source><target>1 tranzacție nouă</target></trans-unit>
+      <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 tranzacție nouă</target></trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html"><source>Pause/Resume</source><target>Pauză / reia</target></trans-unit>
     </body>
   </file>
 </xliff>
