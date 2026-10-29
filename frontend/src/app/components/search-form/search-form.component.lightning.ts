@@ -162,9 +162,27 @@ export class SearchFormComponent implements OnInit {
     this.explorers$ = this.explorerRegistry.explorers$;
   }
 
+  hubLocaleReady = false;
   private refreshLocales = (): void => {
-    void refreshLocalizedCapabilities(this.explorerRegistry.hubUrl).then(() => this.cdr.markForCheck());
+    void refreshLocalizedCapabilities(this.explorerRegistry.hubUrl).then(() => {
+      this.hubLocaleReady = true;
+      this.cdr.markForCheck();
+    });
   };
+
+  async openHub(event: MouseEvent): Promise<void> {
+    if (this.hubLocaleReady || event.button !== 0) return;
+    event.preventDefault();
+    const newTab = (event.currentTarget as HTMLAnchorElement).target === '_blank' || event.ctrlKey || event.metaKey || event.shiftKey;
+    const popup = newTab ? window.open('about:blank', '_blank') : null;
+    if (newTab && !popup) return;
+    if (popup) popup.opener = null;
+    await refreshLocalizedCapabilities(this.explorerRegistry.hubUrl);
+    this.hubLocaleReady = true;
+    this.cdr.markForCheck();
+    if (popup) popup.location.replace(this.hubUrl);
+    else window.location.assign(this.hubUrl);
+  }
 
   ngOnDestroy(): void {
     if (typeof window !== 'undefined') window.removeEventListener('focus', this.refreshLocales);
