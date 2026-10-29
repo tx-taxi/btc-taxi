@@ -77,32 +77,45 @@ export function toFilters(flags: bigint): Filter[] {
   return filters;
 }
 
+// Runtime language matches the compiled shell; preserve technical names and flags.
+const finnishFilterLabels: Record<string, string> = {
+  rbf: 'RBF käytössä', no_rbf: 'RBF pois käytöstä', v1: 'Versio 1', v2: 'Versio 2', v3: 'Versio 3',
+  nonstandard: 'Epästandardi', p2ms: 'Paljas moniallekirjoitus',
+  cpfp_parent: 'Lapsi maksaa', cpfp_child: 'Maksaa edeltäjän puolesta', replacement: 'Korvaava transaktio',
+  fake_pubkey: 'Virheellinen julkinen avain', fake_scripthash: 'Virheellinen skriptitiiviste', annex: 'Annex-lisätieto',
+  menu: 'Transaktiosuodattimet',
+};
+export function filterLabel(key: string, fallback: string): string {
+  const lang = typeof document === 'undefined' ? '' : document.documentElement.lang;
+  return /^fi(?:-|$)/i.test(lang) ? (finnishFilterLabels[key] || fallback) : fallback;
+}
+
 export const TransactionFilters: { [key: string]: Filter } = {
     /* features */
-    rbf: { key: 'rbf', label: 'RBF enabled', flag: TransactionFlags.rbf, toggle: 'rbf', important: true, tooltip: true, txPage: false, },
-    no_rbf: { key: 'no_rbf', label: 'RBF disabled', flag: TransactionFlags.no_rbf, toggle: 'rbf', important: true, tooltip: true, txPage: false, },
-    v1: { key: 'v1', label: 'Version 1', flag: TransactionFlags.v1, toggle: 'version', tooltip: true, txPage: false, },
-    v2: { key: 'v2', label: 'Version 2', flag: TransactionFlags.v2, toggle: 'version', tooltip: true, txPage: false, },
-    v3: { key: 'v3', label: 'Version 3', flag: TransactionFlags.v3, toggle: 'version', tooltip: true, txPage: false, },
-    nonstandard: { key: 'nonstandard', label: 'Non-Standard', flag: TransactionFlags.nonstandard, important: true, tooltip: true, txPage: true, },
+    rbf: { key: 'rbf', label: filterLabel('rbf', 'RBF enabled'), flag: TransactionFlags.rbf, toggle: 'rbf', important: true, tooltip: true, txPage: false, },
+    no_rbf: { key: 'no_rbf', label: filterLabel('no_rbf', 'RBF disabled'), flag: TransactionFlags.no_rbf, toggle: 'rbf', important: true, tooltip: true, txPage: false, },
+    v1: { key: 'v1', label: filterLabel('v1', 'Version 1'), flag: TransactionFlags.v1, toggle: 'version', tooltip: true, txPage: false, },
+    v2: { key: 'v2', label: filterLabel('v2', 'Version 2'), flag: TransactionFlags.v2, toggle: 'version', tooltip: true, txPage: false, },
+    v3: { key: 'v3', label: filterLabel('v3', 'Version 3'), flag: TransactionFlags.v3, toggle: 'version', tooltip: true, txPage: false, },
+    nonstandard: { key: 'nonstandard', label: filterLabel('nonstandard', 'Non-Standard'), flag: TransactionFlags.nonstandard, important: true, tooltip: true, txPage: true, },
     /* address types */
     p2pk: { key: 'p2pk', label: 'P2PK', flag: TransactionFlags.p2pk, important: true, tooltip: true, txPage: true, },
-    p2ms: { key: 'p2ms', label: 'Bare multisig', flag: TransactionFlags.p2ms, important: true, tooltip: true, txPage: true, },
+    p2ms: { key: 'p2ms', label: filterLabel('p2ms', 'Bare multisig'), flag: TransactionFlags.p2ms, important: true, tooltip: true, txPage: true, },
     p2pkh: { key: 'p2pkh', label: 'P2PKH', flag: TransactionFlags.p2pkh, important: true, tooltip: false, },
     p2sh: { key: 'p2sh', label: 'P2SH', flag: TransactionFlags.p2sh, important: true, tooltip: false, },
     p2wpkh: { key: 'p2wpkh', label: 'P2WPKH', flag: TransactionFlags.p2wpkh, important: true, tooltip: false, },
     p2wsh: { key: 'p2wsh', label: 'P2WSH', flag: TransactionFlags.p2wsh, important: true, tooltip: false, },
     p2tr: { key: 'p2tr', label: 'Taproot', flag: TransactionFlags.p2tr, important: true, tooltip: false, },
     /* behavior */
-    cpfp_parent: { key: 'cpfp_parent', label: 'Paid for by child', flag: TransactionFlags.cpfp_parent, important: true, tooltip: true, txPage: false, },
-    cpfp_child: { key: 'cpfp_child', label: 'Pays for parent', flag: TransactionFlags.cpfp_child, important: true, tooltip: true, txPage: false, },
-    replacement: { key: 'replacement', label: 'Replacement', flag: TransactionFlags.replacement, important: true, tooltip: true, txPage: false, },
+    cpfp_parent: { key: 'cpfp_parent', label: filterLabel('cpfp_parent', 'Paid for by child'), flag: TransactionFlags.cpfp_parent, important: true, tooltip: true, txPage: false, },
+    cpfp_child: { key: 'cpfp_child', label: filterLabel('cpfp_child', 'Pays for parent'), flag: TransactionFlags.cpfp_child, important: true, tooltip: true, txPage: false, },
+    replacement: { key: 'replacement', label: filterLabel('replacement', 'Replacement'), flag: TransactionFlags.replacement, important: true, tooltip: true, txPage: false, },
     /* data */
     op_return: { key: 'op_return', label: 'OP_RETURN', flag: TransactionFlags.op_return, important: true, tooltip: true, txPage: true, },
-    fake_pubkey: { key: 'fake_pubkey', label: 'Fake pubkey', flag: TransactionFlags.fake_pubkey, tooltip: true, txPage: true, },
+    fake_pubkey: { key: 'fake_pubkey', label: filterLabel('fake_pubkey', 'Fake pubkey'), flag: TransactionFlags.fake_pubkey, tooltip: true, txPage: true, },
     inscription: { key: 'inscription', label: $localize`:@@taxi.filter.inscription:Inscription`, flag: TransactionFlags.inscription, important: true, tooltip: true, txPage: true, },
-    fake_scripthash: { key: 'fake_scripthash', label: 'Fake scripthash', flag: TransactionFlags.fake_scripthash, tooltip: true, txPage: true,},
-    annex: { key: 'annex', label: 'Annex', flag: TransactionFlags.annex, important: false, tooltip: true, txPage: true,},
+    fake_scripthash: { key: 'fake_scripthash', label: filterLabel('fake_scripthash', 'Fake scripthash'), flag: TransactionFlags.fake_scripthash, tooltip: true, txPage: true,},
+    annex: { key: 'annex', label: filterLabel('annex', 'Annex'), flag: TransactionFlags.annex, important: false, tooltip: true, txPage: true,},
     /* heuristics */
     coinjoin: { key: 'coinjoin', label: $localize`Coinjoin`, flag: TransactionFlags.coinjoin, important: true, tooltip: true, txPage: true, },
     consolidation: { key: 'consolidation', label: $localize`Consolidation`, flag: TransactionFlags.consolidation, tooltip: true, txPage: true, },
