@@ -1,6 +1,6 @@
 /** Persian Bitcoin REST and WebSocket documentation. */
 const periods = '<code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>';
-const periodNote = `<p>برای <code>:timePeriod</code> از ${periods} استفاده کنید. برای <code>24h</code> و <code>3d</code> مقادیر دقیق تمام بلاک‌ها ارائه می‌شوند. برای <code>1w</code> بسته به سرعت ایجاد بلاک‌ها ممکن است از مقادیر میانگین استفاده شود. سایر دوره‌ها مقادیر میانگین را نشان می‌دهند.</p>`;
+const periodNote = `<p>برای <code>:timePeriod</code> از ${periods} استفاده کنید. برای <code>24h</code> و <code>3d</code> مقادیر دقیق تمام بلاک‌ها ارائه می‌شوند. برای <code>1w</code> بسته به سرعت ایجاد بلاک‌ها در حوالی هر زمان ثبت‌شده ممکن است از مقادیر میانگین استفاده شود. سایر دوره‌ها مقادیر میانگین را نشان می‌دهند.</p>`;
 export const persianApiEntries: Record<string, [string, string?]> = {
  general:['عمومی'], addresses:['نشانی‌ها'], blocks:['بلاک‌ها'], mining:['استخراج'], fees:['کارمزدها'], mempool:['مِمپول'], transactions:['تراکنش‌ها'],
  'get-difficulty-adjustment':['GET تنظیم سختی','اطلاعات تنظیم سختی را برمی‌گرداند.'],
