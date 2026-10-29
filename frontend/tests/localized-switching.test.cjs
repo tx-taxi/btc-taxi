@@ -5,11 +5,11 @@ const path = require('node:path');
 const vm = require('node:vm');
 const ts = require('typescript');
 
-function loadTs(filename, imports) {
+function loadTs(filename, imports, globals = {}) {
   const source = fs.readFileSync(path.join(__dirname, '../src/app', filename), 'utf8');
   const code = ts.transpile(source, { module: ts.ModuleKind.CommonJS, experimentalDecorators: true });
   const module = { exports: {} };
-  const sandbox = { module, exports: module.exports, require: id => imports[id] || {}, console };
+  const sandbox = { module, exports: module.exports, require: id => imports[id] || {}, console, ...globals };
   vm.runInNewContext(code, sandbox, { filename });
   return module.exports;
 }
@@ -133,3 +133,14 @@ for (const file of ['index.mempool.html', 'resources/branding/chain-transition.j
     assert.equal(cookies.get('txtaxi_currency'), 'EUR');
   });
 }
+
+test('Lightning Bitcoin links preserve query and fragment and never rewrite foreign origins', async () => {
+  const api = loadTs('services/localized-native-url.ts', {}, {
+    URL, AbortController, setTimeout, clearTimeout, location:{hostname:'lightning.btc.tx.taxi'},
+    fetch: async () => ({ok:true,text:async () => JSON.stringify({version:1,hosts:{'btc.tx.taxi':['nl']}})}),
+  });
+  await api.refreshLocalizedCapabilities('https://tx.taxi');
+  assert.equal(api.localizedNativeUrl('https://btc.tx.taxi/tx/abc?view=details#fees', 'nl'), 'https://btc.tx.taxi/nl/tx/abc?view=details#fees');
+  assert.equal(api.localizedNativeUrl('https://other.example/tx/abc?view=details#fees', 'nl'), 'https://other.example/tx/abc?view=details#fees');
+  assert.equal(api.localizedNativeUrl('https://btc.tx.taxi/fr/tx/abc?view=details#fees', 'nl'), 'https://btc.tx.taxi/fr/tx/abc?view=details#fees');
+});
