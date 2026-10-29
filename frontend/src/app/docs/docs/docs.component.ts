@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Env, StateService } from '@app/services/state.service';
 import { WebsocketService } from '@app/services/websocket.service';
@@ -18,7 +18,6 @@ export class DocsComponent implements OnInit {
   showWebSocketTab = true;
   showFaqTab = true;
 
-  @HostBinding('attr.dir') dir = 'ltr';
 
   constructor(
     private route: ActivatedRoute,

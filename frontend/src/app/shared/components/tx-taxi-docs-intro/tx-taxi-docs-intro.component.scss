@@ -3,7 +3,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  text-align: left;
+  text-align: start;
   background: var(--bg);
   color: var(--fg);
   border: 1px solid var(--border-subtle, var(--secondary));
@@ -49,4 +49,12 @@ a:focus-visible { outline: 2px solid var(--info); outline-offset: 4px; }
   h2 { font-size: 1.5rem; }
   .taxi-docs-art { width: 170%; right: -72%; top: -110px; opacity: .3; }
   .taxi-docs-intro::after { background: linear-gradient(90deg, var(--bg), color-mix(in srgb, var(--bg) 88%, transparent) 55%, color-mix(in srgb, var(--bg) 65%, transparent)); }
+}
+
+:host-context(.rtl-layout) .taxi-docs-intro { direction: rtl; }
+:host-context(.rtl-layout) .taxi-docs-art { right: auto; left: -12%; transform: perspective(1100px) rotateY(16deg) rotateZ(12deg); }
+:host-context(.rtl-layout) .taxi-docs-intro::after { background: linear-gradient(270deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 96%, transparent) 28%, color-mix(in srgb, var(--bg) 72%, transparent) 54%, color-mix(in srgb, var(--bg) 12%, transparent) 100%); }
+@media (max-width: 767.98px) {
+  :host-context(.rtl-layout) .taxi-docs-art { right: auto; left: -72%; }
+  :host-context(.rtl-layout) .taxi-docs-intro::after { background: linear-gradient(270deg, var(--bg), color-mix(in srgb, var(--bg) 88%, transparent) 55%, color-mix(in srgb, var(--bg) 65%, transparent)); }
 }

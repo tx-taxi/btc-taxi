@@ -1,5 +1,5 @@
 import { TxTaxiDocsIntroComponent } from '@app/shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component';
-import { Component, OnInit, HostBinding, Inject, LOCALE_ID } from '@angular/core';
+import { Component, OnInit, Inject, LOCALE_ID } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Env, StateService } from '@app/services/state.service';
 import { WebsocketService } from '@app/services/websocket.service';
@@ -19,7 +19,6 @@ export class DocsComponent implements OnInit {
   showWebSocketTab = false;
   showFaqTab = true;
 
-  @HostBinding('attr.dir') dir = 'ltr';
 
   constructor(
     @Inject(LOCALE_ID) readonly locale: string,
