@@ -21,6 +21,7 @@ export class TermsOfServiceComponent {
   get ja(): boolean { return this.locale.startsWith('ja'); }
   get zh(): boolean { return this.locale.startsWith('zh'); }
   get tr(): boolean { return this.locale.startsWith('tr'); }
+  get nl(): boolean { return this.locale.startsWith('nl'); }
 
   ngOnInit(): void {
     this.seoService.setTitle(this.tr ? 'Hizmet Koşulları' : this.zh ? '服务条款' : this.ja ? '利用規約' : this.pt ? 'Termos de serviço' : this.ru ? 'Условия использования' : this.it ? 'Termini di servizio' : this.fr ? 'Conditions d’utilisation' : this.de ? 'Nutzungsbedingungen' : this.es ? 'Términos de servicio' : 'Terms of Service');

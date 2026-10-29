@@ -282,7 +282,7 @@
 </div>
 
 </ng-template>
-<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else dutchOrJapanese" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
 <ng-template #turkishLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -331,6 +331,8 @@
 </div>
 
 </ng-template>
+<ng-template #dutchOrJapanese><ng-container *ngIf="nl; else japaneseOrEnglish" [ngTemplateOutlet]="dutchLegal"></ng-container></ng-template>
+<ng-template #dutchLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Gebruiksvoorwaarden</h2><h6>Bijgewerkt: 20 september 2026</h6><br><br><div class="text-start"><h4>Informatieve verkenner</h4><p>btc.tx.taxi toont openbare Bitcoin-blokken, transacties, adressen, mijnbouwgegevens, kostenschattingen en de mempoolstatus. Het is een informatiedienst, geen wallet, beurs, bewaarder, betaalverwerker of dienst voor transactieprioriteit.</p><br><h4>Geen controle over Bitcoin-transacties</h4><p>De beheerder kan een Bitcoin-transactie niet terugdraaien, annuleren, versnellen, terughalen of omleiden. Neem bij problemen met een wallet, beurs of betaling contact op met de dienst die de transactie heeft aangemaakt of ontvangen.</p><br><h4>Gegevens en beschikbaarheid</h4><p>Gegevens kunnen vertraagd, onvolledig of niet beschikbaar zijn, of afwijken van wat een andere node ziet. Kostenschattingen zijn slechts schattingen en garanderen geen bevestiging. De dienst wordt aangeboden zoals hij is, zonder garantie op ononderbroken beschikbaarheid of geschiktheid voor een bepaald doel.</p><br><h4>Aanvaardbaar gebruik</h4><p>Maak geen misbruik van de website of API, verstoor de werking niet, omzeil geen redelijke snelheidslimieten en gebruik de dienst niet onrechtmatig. Toegang kan zo nodig worden beperkt om de beschikbaarheid te beschermen.</p><br><h4>Externe diensten</h4><p>Deze site kan verwijzen naar contactkanalen van tx.taxi, Bitcoin-bronnen, licentie-informatie en gebruikte infrastructuur. Externe websites hebben hun eigen voorwaarden en beleid.</p><br><h4>Opensource</h4><p>btc.tx.taxi is afgeleid van het Mempool Open Source Project en wordt gedistribueerd met AGPLv3-verplichtingen. Neem contact op via <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> voor toepasselijke broncode en licentie-informatie.</p><br></div></div><br><br></div></ng-template>
 <ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
 <ng-template #japaneseLegal>
 <div class="container-xl">

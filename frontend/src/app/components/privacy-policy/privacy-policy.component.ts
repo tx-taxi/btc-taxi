@@ -22,6 +22,7 @@ export class PrivacyPolicyComponent {
   get ja(): boolean { return this.locale.startsWith('ja'); }
   get zh(): boolean { return this.locale.startsWith('zh'); }
   get tr(): boolean { return this.locale.startsWith('tr'); }
+  get nl(): boolean { return this.locale.startsWith('nl'); }
 
   ngOnInit(): void {
     this.seoService.setTitle(this.tr ? 'Gizlilik Politikası' : this.zh ? '隐私政策' : this.ja ? 'プライバシーポリシー' : this.pt ? 'Política de privacidade' : this.ru ? 'Политика конфиденциальности' : this.it ? 'Informativa sulla privacy' : this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');

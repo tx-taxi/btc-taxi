@@ -281,7 +281,7 @@
 </div>
 
 </ng-template>
-<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else dutchOrJapanese" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
 <ng-template #turkishLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -330,6 +330,8 @@
 </div>
 
 </ng-template>
+<ng-template #dutchOrJapanese><ng-container *ngIf="nl; else japaneseOrEnglish" [ngTemplateOutlet]="dutchLegal"></ng-container></ng-template>
+<ng-template #dutchLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Privacybeleid</h2><h6>Bijgewerkt: 3 oktober 2026</h6><br><br><div class="text-start"><h4>Openbare netwerkgegevens</h4><p>lightning.btc.tx.taxi toont openbare Lightning-gossip en netwerkstatistieken. Privékanalen, individuele betalingen en kanaalsaldi zijn niet openbaar zichtbaar. Vergelijk voor onafhankelijke verificatie de openbare netwerkgrafiek met je eigen Lightning-node.</p><br><h4>Verzoekgegevens</h4><p>Normale website- en API-verzoeken kunnen standaard webmetadata aan de beheerder bekendmaken, waaronder je IP-adres, useragent, opgevraagde URL en tijdstip. Serverlogs kunnen worden bewaard voor betrouwbaarheid, misbruikpreventie en foutopsporing.</p><br><h4>Lokale voorkeuren</h4><p>Weergavevoorkeuren zoals thema, eenheid, fiatvaluta, taal en tijdzone kunnen in je browser worden opgeslagen. Voor normaal gebruik van lightning.btc.tx.taxi is geen account nodig.</p><br><h4>Zoekopdrachten en openbare kanalen</h4><p>Openbare Lightning-nodesleutels, aangekondigde endpoints, kanaalbeleid en Bitcoin-financieringstransacties zijn openbaar. Een zoekopdracht naar een node of kanaal kan met je netwerkmetadata worden gekoppeld. Beschouw een openbare verkenner niet als een privacygrens.</p><br><h4>Externe links</h4><p>Deze site verwijst naar contactkanalen van tx.taxi, Bitcoin-documentatie, broncode van het oorspronkelijke project en licentie-informatie. Externe diensten hebben hun eigen privacybeleid.</p><br><h4>Opensourcenaamsvermelding</h4><p>lightning.btc.tx.taxi is afgeleid van mempool/mempool en neemt de AGPLv3-verplichtingen over. Mempool-namen, logo’s en handelsmerken blijven eigendom van hun respectieve eigenaren; lightning.btc.tx.taxi is niet verbonden met of goedgekeurd door Mempool Holdings S.A. de C.V.</p><br></div></div><br><br></div></ng-template>
 <ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
 <ng-template #japaneseLegal>
 <div class="container-xl">

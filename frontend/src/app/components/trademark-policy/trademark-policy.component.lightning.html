@@ -252,7 +252,7 @@
 </div>
 
 </ng-template>
-<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else dutchOrJapanese" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
 <ng-template #turkishLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -296,6 +296,8 @@
 </div>
 
 </ng-template>
+<ng-template #dutchOrJapanese><ng-container *ngIf="nl; else japaneseOrEnglish" [ngTemplateOutlet]="dutchLegal"></ng-container></ng-template>
+<ng-template #dutchLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Handelsmerken en naamsvermelding</h2><h6>Bijgewerkt: 3 oktober 2026</h6><br><br><div class="text-start"><h4>tx.taxi-identiteit</h4><p>lightning.btc.tx.taxi is een onafhankelijk beheerde Lightning-verkenner in de tx.taxi-familie. De domeinnaam, het woordmerk, de blockchainkleuren en de dienstidentiteit onderscheiden deze fork van het oorspronkelijke project.</p><br><h4>Naamsvermelding van het oorspronkelijke project</h4><p>Deze software is afgeleid van het Mempool Open Source Project. De oorspronkelijke broncode, het visuele systeem, projectnamen, logo’s en handelsmerken blijven eigendom van hun respectieve eigenaren.</p><br><h4>Geen verbondenheid</h4><p>lightning.btc.tx.taxi is niet verbonden met, gesponsord door of goedgekeurd door Mempool Holdings S.A. de C.V. Verwijzingen naar mempool.space en mempool/mempool dienen uitsluitend om de software te benoemen waarvan deze fork is afgeleid.</p><br><h4>Bitcoin</h4><p>Bitcoin is een open netwerk en protocol. Verwijzingen naar Bitcoin, BTC, satoshi, Lightning, nodes, kanalen en routeringsbeleid beschrijven de netwerkgegevens die deze verkenner toont.</p><br><h4>Licentie</h4><p>Deze fork voldoet aan de AGPLv3-licentieverplichtingen van het oorspronkelijke project. Neem contact op met de beheerder voor toepasselijke broncode en licentie-informatie.</p><br></div></div><br><br></div></ng-template>
 <ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
 <ng-template #japaneseLegal>
 <div class="container-xl">
