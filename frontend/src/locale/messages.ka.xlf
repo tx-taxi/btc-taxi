@@ -729,7 +729,7 @@
       </trans-unit>
       <trans-unit id="d2eb45d1cd8cd146b7cb0223ab97a4b03b614060" datatype="html">
         <source>sat/vB</source>
-        <target>სატ/vB</target>
+        <target state="needs-review-translation">sat/vB</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">121</context>
@@ -5190,7 +5190,7 @@
       </trans-unit>
       <trans-unit id="8573a1576789bd2c4faeaed23037c4917812c6cf" datatype="html">
         <source>Lightning Nodes Per ISP</source>
-        <target state="needs-review-translation">ელვისებური კვანძები თითო ISP-ზე</target><context-group purpose="location">
+        <target state="needs-review-translation">Lightning კვანძები ინტერნეტპროვაიდერის მიხედვით</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
@@ -8651,7 +8651,7 @@
       </trans-unit>
       <trans-unit id="3bbd25c289760a3ba57e30df5ad5fe8977ab25a5" datatype="html">
         <source>lightning channel</source>
-        <target state="needs-review-translation">ელვისებური არხი</target><context-group purpose="location">
+        <target state="needs-review-translation">Lightning არხი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-preview.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
@@ -10060,7 +10060,7 @@
       </trans-unit>
       <trans-unit id="5735693498020397727" datatype="html">
         <source>Lightning nodes on ISP: <x id="PH" equiv-text="response.isp" /> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />]</source>
-        <target state="needs-review-translation">ელვისებური კვანძები ISP-ზე: <x id="PH" equiv-text="response.isp" /> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />]</target><context-group purpose="location">
+        <target state="needs-review-translation">Lightning კვანძები ISP-ზე: <x id="PH" equiv-text="response.isp" /> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />]</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
@@ -10082,7 +10082,7 @@
       </trans-unit>
       <trans-unit id="d82f436f033a7d81680b8430275f94dda530151c" datatype="html">
         <source>Lightning nodes on ISP: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}" /></source>
-        <target state="needs-review-translation">ელვისებური კვანძები ISP-ზე: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}" /></target><context-group purpose="location">
+        <target state="needs-review-translation">Lightning კვანძები ინტერნეტპროვაიდერზე: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp.component.html</context>
           <context context-type="linenumber">2,4</context>
         </context-group>
@@ -10108,7 +10108,7 @@
       </trans-unit>
       <trans-unit id="5b727d251b06e9959cf24a90250a480d425339de" datatype="html">
         <source>Top 100 oldest lightning nodes</source>
-        <target>ტოპ 100 ყველაზე ძველი ნოდა</target>
+        <target state="needs-review-translation">100 უძველესი Lightning კვანძი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-ranking/oldest-nodes/oldest-nodes.component.html</context>
           <context context-type="linenumber">3</context>
@@ -11075,7 +11075,7 @@
       <trans-unit id="btc.address.tapleaf-placeholder" datatype="html"><source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source><target state="needs-review-translation">Hex ან base64 კოდირებული, მძიმით გამოყოფილი PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</target></trans-unit>
       <trans-unit id="btc.address.tapleaves" datatype="html"><source>Tapleaves</source><target state="needs-review-translation">ფურცლები</target></trans-unit>
       <trans-unit id="btc.address.tapleaves-format" datatype="html"><source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source><target state="needs-review-translation">ფურცლები უნდა იყოს ფორმატში "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" გამოყოფილი მძიმეებით</target></trans-unit>
-      <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target state="needs-review-translation">ძირეული მონაცემების დამუშავებისას მოხდა შეცდომა</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target state="needs-review-translation">Taproot მონაცემების დამუშავებისას მოხდა შეცდომა</target></trans-unit>
       <trans-unit id="btc.address.taptree" datatype="html"><source>Taptree</source><target state="needs-review-translation">ტაპტრი</target></trans-unit>
       <trans-unit id="btc.address.taptree-placeholder" datatype="html"><source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source><target state="needs-review-translation">Hex ან base64 კოდირებული PSBT_OUT_TAP_TREE ველი</target></trans-unit>
       <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target state="needs-review-translation">Bitcoin Explorer-ის დაფა</target></trans-unit>
@@ -11113,7 +11113,7 @@
       <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target state="needs-review-translation">ბიტკოინის გრაფიკები</target></trans-unit>
       <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target state="needs-review-translation">ბიტკოინის ბლოკები, მოსაკრებლები და მემპულის აქტივობა</target></trans-unit>
       <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target state="needs-review-translation">ხელსაწყოები და დოკუმენტები</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target state="needs-review-translation">ელვის ქსელი, ხედით.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target state="needs-review-translation">Lightning ქსელი ერთი შეხედვით.</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target state="needs-review-translation">გამოიკვლიეთ Lightning</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target state="needs-review-translation">დოკუმენტაცია</target>
         </trans-unit>
@@ -11134,7 +11134,7 @@
       <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target state="needs-review-translation">ნედლი ბიტები</target></trans-unit>
       <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target state="needs-review-translation">საჭირო</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target state="needs-review-translation">tx.taxi Lightning Explorer</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target state="needs-review-translation">ელვისებური კვანძები, არხები და ქსელის აქტივობა</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target state="needs-review-translation">Lightning კვანძები, არხები და ქსელის აქტივობა</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target state="needs-review-translation">დათვალიერება</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target state="needs-review-translation">Lightning-ის მიმოხილვა</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target state="needs-review-translation">კვანძების რეიტინგი</target></trans-unit>
@@ -11154,12 +11154,12 @@
       <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target state="needs-review-translation">Კონფიდენციალურობის პოლიტიკა</target>
         </trans-unit>
       <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target state="needs-review-translation">მესამე მხარის ლიცენზიები</target></trans-unit>
-      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target state="needs-review-translation">ელვის შესახებ</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target state="needs-review-translation">Lightning-ის შესახებ</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target state="needs-review-translation">ნახვა btc.tx.taxi-ზე</target></trans-unit>
-      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target state="needs-review-translation">ელვის დაფა</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target state="needs-review-translation">Lightning-ის მიმოხილვა</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target state="needs-review-translation">დოკუმენტაცია</target>
         </trans-unit>
-      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target state="needs-review-translation">ელვისებური გრაფიკები</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target state="needs-review-translation">Lightning-ის გრაფიკები</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target state="needs-review-translation">კვანძების რეიტინგი</target></trans-unit>
       <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target state="needs-review-translation">კვანძის მისამართი</target></trans-unit>
       <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target state="needs-review-translation">Lightning კვანძი ან არხი ვერ მოიძებნა.</target></trans-unit>
