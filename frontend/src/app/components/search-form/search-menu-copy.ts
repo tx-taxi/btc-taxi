@@ -60,6 +60,18 @@ const copy = {
     switchTo: (name: string) => `Mudar para ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ocultar' : 'Mostrar'} ${count} ${count === 1 ? 'opção adicional' : 'opções adicionais'} de ${name}`,
   },
+  zh: {
+    choose: '选择搜索链', selectedAria: '已选浏览器', selected: '已选择',
+    unavailable: '浏览器列表不可用', loading: '正在加载浏览器', automatic: '自动路由',
+    viewHub: '查看主页', hint: '或直接前往', searchExample: '[搜索内容]',
+    native: '原生浏览器', external: '第三方浏览器', opened: '已打开',
+    open: '打开', switch: '切换', found: '已找到', possible: '可能匹配', search: '搜索',
+    additional: (name: string) => `${name}的其他浏览器`,
+    openExplorer: (name: string) => `打开${name}`,
+    openNewTab: (name: string) => `在新标签页打开${name}`,
+    switchTo: (name: string) => `切换到${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? '隐藏' : '显示'}${name}的${count}个其他选项`,
+  },
   ru: {
     choose: 'Выбрать сеть для поиска', selectedAria: 'Выбранный обозреватель', selected: 'ВЫБРАНО',
     unavailable: 'Список обозревателей недоступен', loading: 'Загрузка обозревателей', automatic: 'Автоматическая маршрутизация',
