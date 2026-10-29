@@ -9028,7 +9028,7 @@
       </trans-unit>
       <trans-unit id="9fe79011b50c2ca1f9b7db7066046631bfc6b3cb" datatype="html">
         <source>Timelock delta</source>
-        <target>Timelock delta</target>
+        <target>タイムロック差分</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">69</context>
@@ -10126,7 +10126,7 @@
       </trans-unit>
       <trans-unit id="e8e09fa12864e94f094a2a7c8c97cfdf0cff8aab" datatype="html">
         <source>Compact lease</source>
-        <target>Compact lease</target>
+        <target>コンパクトリース</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">234</context>
@@ -10135,7 +10135,7 @@
       </trans-unit>
       <trans-unit id="aa687f4987e2d4e0010be692d402174962ece70e" datatype="html">
         <source>TLV extension records</source>
-        <target>TLV extension records</target>
+        <target>TLV拡張レコード</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">245</context>
@@ -12078,8 +12078,8 @@
       <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>お問い合わせ</target></trans-unit>
       <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>AGPLv3で公開</target></trans-unit>
       <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>商標と帰属表示</target></trans-unit>
-      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>Made with</target></trans-unit>
-      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>by</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>制作</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>：</target></trans-unit>
       <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Bitcoinエクスプローラーのダッシュボード</target></trans-unit>
       <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>ブロックサイズの表示に切り替え</target></trans-unit>
       <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>ブロックごとの合計手数料の表示に切り替え</target></trans-unit>
@@ -12136,8 +12136,8 @@
       <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>プライバシーポリシー</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>商標と帰属表示</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>サードパーティライセンス</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Made with</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>by</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>制作</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>：</target></trans-unit>
       <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>接続中…</target></trans-unit>
       <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>再接続中…</target></trans-unit>
       <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>キャッシュ済みデータ</target></trans-unit>
