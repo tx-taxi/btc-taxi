@@ -445,7 +445,8 @@
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
-<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else englishLegal" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else hebrewOrEnglish" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else englishLegal" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
 <ng-template #slovenianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -612,6 +613,40 @@
 </div>
 
 </ng-template>
+<ng-template #hebrewLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>תנאי השירות</h2>
+    <h6>עודכן: 3 באוקטובר 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>סייר למידע</h4>
+      <p>lightning.btc.tx.taxi מציג צומתי Lightning ציבוריים, ערוצים, מדיניות ניתוב, קיבולת רשת וסטטיסטיקות היסטוריות. זהו שירות מידע, ולא ארנק, זירת מסחר, משמורן, מעבד תשלומים או שירות לתעדוף עסקאות.</p>
+      <br>
+      <h4>אין שליטה על תשלומים או ערוצים</h4>
+      <p>המפעיל אינו יכול לשלוח, לבטל, לשחזר או להפנות תשלום Lightning או לשלוט בערוץ. בבעיות ארנק או תשלום יש לפנות לשירות שיצר או קיבל את התשלום.</p>
+      <br>
+      <h4>נתונים וזמינות</h4>
+      <p>נתוני הסייר עשויים להתעכב, להיות חלקיים, לא זמינים או שונים מהנתונים שבצומת אחר. עמלות ניתוב שהוכרזו אינן מבטיחות שנתיב זמין או שתשלום יצליח. השירות מסופק כפי שהוא, ללא הבטחה לזמינות רציפה או להתאמה למטרה מסוימת.</p>
+      <br>
+      <h4>שימוש מותר</h4>
+      <p>אין לנצל לרעה את האתר או את ה־API, להפריע לפעולת השירות, לעקוף מגבלות קצב סבירות או להשתמש בשירות בניגוד לחוק. הגישה עשויה להיות מוגבלת כאשר הדבר נחוץ לשמירה על זמינות השירות.</p>
+      <br>
+      <h4>שירותים חיצוניים</h4>
+      <p>האתר עשוי לקשר לערוצי הקשר של tx.taxi, למקורות מידע על Bitcoin, למידע על רישיונות ולתשתיות שעליהן הוא מסתמך. לאתרים חיצוניים יש תנאים ומדיניות משלהם.</p>
+      <br>
+      <h4>קוד פתוח</h4>
+      <p>lightning.btc.tx.taxi נגזר מ־Mempool Open Source Project ומופץ בכפוף לחובות AGPLv3. למידע על קוד המקור והרישיון החלים, ניתן לפנות אל <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

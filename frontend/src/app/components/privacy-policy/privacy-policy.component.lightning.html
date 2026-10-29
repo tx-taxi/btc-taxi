@@ -499,7 +499,8 @@
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
-<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else englishLegal" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else hebrewOrEnglish" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #hebrewOrEnglish><ng-container *ngIf="he; else englishLegal" [ngTemplateOutlet]="hebrewLegal"></ng-container></ng-template>
 <ng-template #slovenianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -682,6 +683,43 @@
 </div>
 
 </ng-template>
+<ng-template #hebrewLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>מדיניות פרטיות</h2>
+    <h6>עודכן: 29 באוקטובר 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>מדידת קהל</h4>
+      <p>tx.taxi משתמש ב־Cloudflare Web Analytics למדידת צפיות בדפים וביצועים, ובקובץ cookie יומי של צד ראשון המשותף לסיירים שלו כדי לספור דפדפנים פעם אחת בכל יום לפי UTC. מערכת מדידת הקהל היומית שומרת רק מזהה יומי, את שם המארח של הסייר והאם הייתה אינטראקציה. היא אינה שומרת טקסט חיפוש, כתובות בלוקצ׳יין, מזהי עסקאות, כתובות URL של דפים שנצפו או כתובות IP. רשומות יומיות פרטניות פגות לאחר 31 ימים; ספירות מצטברות נשמרות במשך 400 ימים. ההגדרות Do Not Track ו־Global Privacy Control משביתות מדידה זו של צד ראשון. <a href="https://tx.taxi/privacy#audience-measurement">פרטים ואפשרות לביטול</a>.</p>
+      <br>
+      <h4>נתוני רשת ציבוריים</h4>
+      <p>lightning.btc.tx.taxi מציג הודעות רשת ציבוריות (gossip) וסטטיסטיקות של רשת Lightning. ערוצים פרטיים, תשלומים בודדים ויתרות ערוצים אינם גלויים לציבור. לאימות עצמאי ניתן להשוות את גרף הרשת הציבורי לצומת Lightning משלך.</p>
+      <br>
+      <h4>נתוני בקשות</h4>
+      <p>בקשות רגילות לאתר ול־API עשויות לחשוף למפעיל מטא־נתונים רגילים של האינטרנט, כולל כתובת IP, סוכן המשתמש, כתובת ה־URL המבוקשת וזמן הבקשה. ייתכן שיומני שרת יישמרו לצורכי אמינות, מניעת שימוש לרעה ואיתור תקלות.</p>
+      <br>
+      <h4>העדפות מקומיות</h4>
+      <p>העדפות תצוגה כגון ערכת נושא, יחידת מידה, מטבע פיאט, שפה ואזור זמן עשויות להישמר בדפדפן שלך. שימוש רגיל בסייר lightning.btc.tx.taxi אינו מחייב חשבון.</p>
+      <br>
+      <h4>חיפושים וערוצים ציבוריים</h4>
+      <p>מפתחות ציבוריים של צומתי Lightning, נקודות קצה שהוכרזו, מדיניות ערוצים ועסקאות מימון של Bitcoin הם ציבוריים. חיפוש צומת או ערוץ עשוי לקשר את החיפוש למטא־נתונים של הרשת שלך. אין להתייחס לסייר ציבורי כאל מחסום המבטיח פרטיות.</p>
+      <br>
+      <h4>קישורים חיצוניים</h4>
+      <p>האתר מקשר לערוצי הקשר של tx.taxi, לתיעוד Bitcoin, לקוד המקור של הפרויקט המקורי ולמידע על רישיונות. לשירותים חיצוניים אלה יש מדיניות פרטיות משלהם.</p>
+      <br>
+      <h4>ייחוס לקוד פתוח</h4>
+      <p>lightning.btc.tx.taxi נגזר מ־mempool/mempool ויורש את חובותיו לפי AGPLv3. השמות, הסמלים וסימני המסחר של Mempool נשארים בבעלות בעליהם; lightning.btc.tx.taxi אינו קשור ל־Mempool Holdings S.A. de C.V. ואינו זוכה לתמיכתה.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
