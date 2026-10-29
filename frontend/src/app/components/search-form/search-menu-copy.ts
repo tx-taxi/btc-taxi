@@ -24,6 +24,18 @@ const copy = {
     switchTo: (name: string) => `Przełącz na ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ukryj' : 'Pokaż'} dodatkowe opcje ${name}: ${count}`,
   },
+  uk: {
+    choose: 'Вибрати мережу для пошуку', selectedAria: 'Вибраний оглядач', selected: 'ВИБРАНО',
+    unavailable: 'Список оглядачів недоступний', loading: 'Завантаження оглядачів', automatic: 'Автоматична маршрутизація',
+    viewHub: 'Відкрити головну', hint: 'Або перейти безпосередньо до', searchExample: '[ваш пошук]',
+    native: 'ВЛАСНІ ОГЛЯДАЧІ', external: 'СТОРОННІ ОГЛЯДАЧІ', opened: 'Відкрито',
+    open: 'Відкрити', switch: 'Перемкнути', found: 'Знайдено', possible: 'Можливо', search: 'Пошук',
+    additional: (name: string) => `Інші оглядачі ${name}`,
+    openExplorer: (name: string) => `Відкрити ${name}`,
+    openNewTab: (name: string) => `Відкрити ${name} у новій вкладці`,
+    switchTo: (name: string) => `Перемкнутися на ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Приховати' : 'Показати'} додаткові варіанти ${name}: ${count}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
