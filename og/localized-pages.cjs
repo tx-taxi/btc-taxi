@@ -11,6 +11,7 @@ const copy = {
   de: {title:'Bitcoin-Explorer | btc.tx.taxi', description:'Erkunde Bitcoin-Blöcke, Transaktionen, Gebühren und die Mempool-Aktivität mit btc.tx.taxi.', heading:'Bitcoin-Explorer'},
   it: {title:'Esploratore Bitcoin | btc.tx.taxi', description:'Esplora blocchi, transazioni, commissioni e attività del mempool Bitcoin con btc.tx.taxi.', heading:'Esploratore Bitcoin'},
   pt: {title:'Explorador Bitcoin | btc.tx.taxi', description:'Explore blocos, transações, taxas e a atividade da mempool Bitcoin com btc.tx.taxi.', heading:'Explorador Bitcoin'},
+  da: {title:'Bitcoin-udforsker | btc.tx.taxi', description:'Udforsk Bitcoin-blokke, transaktioner, gebyrer og mempoolaktivitet på btc.tx.taxi.', heading:'Bitcoin-udforsker'},
   hi: {title:'Bitcoin एक्सप्लोरर | btc.tx.taxi', description:'btc.tx.taxi पर Bitcoin ब्लॉक, लेनदेन, शुल्क और मेमपूल गतिविधि देखें।', heading:'Bitcoin एक्सप्लोरर'},
   cs: {title:'Průzkumník Bitcoin | btc.tx.taxi', description:'Prozkoumejte bloky, transakce, poplatky a aktivitu mempoolu Bitcoinu na btc.tx.taxi.', heading:'Průzkumník Bitcoin'},
   sv: {title:'Bitcoin-utforskare | btc.tx.taxi', description:'Utforska Bitcoin-block, transaktioner, avgifter och mempoolaktivitet med btc.tx.taxi.', heading:'Bitcoin-utforskare'},
@@ -32,7 +33,7 @@ function createLocalizedPages(indexPath, pages, aliases) {
   }
   const known = new Set(pages.map(page => page.route));
   function route(pathname) {
-    const match = pathname.match(/^\/(fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
+    const match = pathname.match(/^\/(fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi|da)(?:\/|$)/);
     return match && shells[match[1]] ? { lang: match[1], pathname: pathname.slice(3) || '/' } : null;
   }
   function supports(value) {
@@ -55,7 +56,7 @@ function createLocalizedPages(indexPath, pages, aliases) {
     if (base) { const href = base.attrs.find(a => a.name === 'href'); if (href) href.value = '/' + lang + '/'; else base.attrs.push({name:'href',value:'/' + lang + '/'}); }
     else head.childNodes.unshift(...parse5.parseFragment('<base href="/' + lang + '/">').childNodes);
     const {title, description, heading} = copy[lang];
-    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : lang === 'it' ? 'it_IT' : lang === 'pt' ? 'pt_PT' : lang === 'ja' ? 'ja_JP' : lang === 'zh' ? 'zh_CN' : lang === 'tr' ? 'tr_TR' : lang === 'hi' ? 'hi_IN' : lang === 'cs' ? 'cs_CZ' : lang === 'sv' ? 'sv_SE' : lang === 'nb' ? 'nb_NO' : lang === 'uk' ? 'uk_UA' : lang === 'pl' ? 'pl_PL' : lang === 'ko' ? 'ko_KR' : lang === 'nl' ? 'nl_NL' : 'ru_RU'}">`).childNodes);
+    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : lang === 'it' ? 'it_IT' : lang === 'pt' ? 'pt_PT' : lang === 'ja' ? 'ja_JP' : lang === 'zh' ? 'zh_CN' : lang === 'tr' ? 'tr_TR' : lang === 'da' ? 'da_DK' : lang === 'hi' ? 'hi_IN' : lang === 'cs' ? 'cs_CZ' : lang === 'sv' ? 'sv_SE' : lang === 'nb' ? 'nb_NO' : lang === 'uk' ? 'uk_UA' : lang === 'pl' ? 'pl_PL' : lang === 'ko' ? 'ko_KR' : lang === 'nl' ? 'nl_NL' : 'ru_RU'}">`).childNodes);
     function fill(node) {
       if (node.tagName === 'app-root') { node.childNodes = parse5.parseFragment(`<main class="container-xl"><h1>${esc(heading)}</h1><p>${esc(description)}</p></main>`).childNodes; return; }
       for (const child of node.childNodes || []) fill(child);
