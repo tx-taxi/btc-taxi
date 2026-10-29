@@ -945,7 +945,8 @@
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
-<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1045,4 +1046,53 @@
 <p>lightning.btc.tx.taxi được phát triển từ Mempool Open Source Project và được phân phối theo các nghĩa vụ AGPLv3. Liên hệ <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> để biết thông tin áp dụng về mã nguồn và giấy phép.</p>
 <br>
 </div></div><br><br></div>
+</ng-template>
+
+<ng-template #georgianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>მომსახურების პირობები</h2>
+    <h6>განახლებულია: 2026 წლის 3 ოქტომბერს</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>საინფორმაციო ბრაუზერი</h4>
+      <p>lightning.btc.tx.taxi აჩვენებს Lightning-ის საჯარო კვანძებს, არხებს, მარშრუტიზაციის წესებს, ქსელის გამტარუნარიანობასა და ისტორიულ სტატისტიკას. ეს საინფორმაციო სერვისია და არა საფულე, ბირჟა, აქტივების მცველი, გადახდების დამმუშავებელი ან ტრანზაქციების პრიორიტეტიზაციის სერვისი.</p>
+
+      <br>
+
+      <h4>გადახდებსა და არხებზე კონტროლის არარსებობა</h4>
+      <p>ოპერატორს არ შეუძლია Lightning გადახდის გაგზავნა, უკან დაბრუნება, აღდგენა ან გადამისამართება და ვერც არხის კონტროლი. საფულესთან ან გადახდასთან დაკავშირებული პრობლემების შემთხვევაში დაუკავშირდით სერვისს, რომელმაც შექმნა ან მიიღო გადახდა.</p>
+
+      <br>
+
+      <h4>მონაცემები და ხელმისაწვდომობა</h4>
+      <p>ბრაუზერის მონაცემები შეიძლება დაგვიანებული, არასრული, მიუწვდომელი ან სხვა კვანძის მონაცემებისგან განსხვავებული იყოს. გამოცხადებული მარშრუტიზაციის საკომისიოები არ იძლევა გარანტიას, რომ მარშრუტი ხელმისაწვდომი იქნება ან გადახდა წარმატებით შესრულდება. სერვისი მოწოდებულია არსებული სახით, უწყვეტი ხელმისაწვდომობის ან კონკრეტული მიზნისთვის ვარგისიანობის დაპირების გარეშე.</p>
+
+      <br>
+
+      <h4>დასაშვები გამოყენება</h4>
+      <p>არ გამოიყენოთ ვებსაიტი ან API ბოროტად, არ შეუშალოთ ხელი სერვისის მუშაობას, არ აუაროთ გვერდი მოთხოვნების სიხშირის გონივრულ შეზღუდვებს და არ გამოიყენოთ სერვისი უკანონოდ. ხელმისაწვდომობის დასაცავად საჭიროების შემთხვევაში წვდომა შეიძლება შეიზღუდოს.</p>
+
+      <br>
+
+      <h4>გარე სერვისები</h4>
+      <p>ეს საიტი შეიძლება შეიცავდეს tx.taxi-ის საკონტაქტო არხების, Bitcoin-ის შესახებ წყაროების, ლიცენზიის ინფორმაციისა და ინფრასტრუქტურის დამოკიდებულებების ბმულებს. გარე ვებსაიტებს საკუთარი პირობები და პოლიტიკა აქვთ.</p>
+
+      <br>
+
+      <h4>ღია კოდი</h4>
+      <p>lightning.btc.tx.taxi მომდინარეობს Mempool-ის ღია კოდის პროექტიდან და ვრცელდება AGPLv3 ვალდებულებების შესაბამისად. მოქმედი საწყისი კოდისა და ლიცენზიის შესახებ ინფორმაციისთვის დაუკავშირდით <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>-ს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>

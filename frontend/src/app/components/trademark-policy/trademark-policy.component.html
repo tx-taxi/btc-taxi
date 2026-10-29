@@ -853,7 +853,8 @@
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
-<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -942,4 +943,48 @@
 <p>Bản fork này tuân theo các nghĩa vụ của giấy phép AGPLv3 của dự án gốc. Hãy liên hệ người vận hành để biết thông tin áp dụng về mã nguồn và giấy phép.</p>
 <br>
 </div></div><br><br></div>
+</ng-template>
+
+<ng-template #georgianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>სავაჭრო ნიშნები და წყაროს მითითება</h2>
+    <h6>განახლებულია: 2026 წლის 20 სექტემბერს</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi-ის იდენტობა</h4>
+      <p>btc.tx.taxi არის დამოუკიდებლად მოქმედი Bitcoin ბრაუზერი tx.taxi-ის ოჯახში. მისი დომენი, ტექსტური ლოგო, ქსელის ფერთა პალიტრა და სერვისის იდენტობა ამ განშტოებას საწყისი პროექტისგან განასხვავებს.</p>
+
+      <br>
+
+      <h4>საწყისი პროექტის წყაროს მითითება</h4>
+      <p>ეს პროგრამა მომდინარეობს Mempool-ის ღია კოდის პროექტიდან. საწყისი კოდი, ვიზუალური სისტემა, პროექტების სახელები, ლოგოები და სავაჭრო ნიშნები შესაბამის მფლობელებს ეკუთვნის.</p>
+
+      <br>
+
+      <h4>კავშირის არარსებობა</h4>
+      <p>btc.tx.taxi არ არის დაკავშირებული Mempool Holdings S.A. de C.V.-თან და მისგან არც დაფინანსებასა და არც მხარდაჭერას არ იღებს. mempool.space-ისა და mempool/mempool-ის ხსენება წარმოადგენს იმ პროგრამის სახელით მითითებას, საიდანაც ეს განშტოება მომდინარეობს.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin ღია ქსელი და პროტოკოლია. Bitcoin-ის, BTC-ის, სატოშების, ბლოკების, ტრანზაქციების, მისამართების, მაინინგისა და Lightning-ის ხსენება აღწერს ამ ბრაუზერში ნაჩვენებ ქსელის მონაცემებს.</p>
+
+      <br>
+
+      <h4>ლიცენზია</h4>
+      <p>ეს განშტოება იცავს საწყისი პროექტის AGPLv3 ლიცენზიის ვალდებულებებს. მოქმედი საწყისი კოდისა და ლიცენზიის შესახებ ინფორმაციისთვის დაუკავშირდით ოპერატორს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>

@@ -1048,7 +1048,8 @@
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
-<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1159,4 +1160,58 @@
 <p>lightning.btc.tx.taxi được phát triển từ mempool/mempool và kế thừa các nghĩa vụ AGPLv3 của dự án. Tên, logo và nhãn hiệu Mempool vẫn thuộc về các chủ sở hữu tương ứng; lightning.btc.tx.taxi không liên kết với hoặc được Mempool Holdings S.A. de C.V. chứng thực.</p>
 <br>
 </div></div><br><br></div>
+</ng-template>
+
+<ng-template #georgianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>კონფიდენციალურობის პოლიტიკა</h2>
+    <h6>განახლებულია: 2026 წლის 29 ოქტომბერს</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>აუდიტორიის გაზომვა</h4>
+      <p>tx.taxi გვერდების ნახვებისა და წარმადობის გასაზომად იყენებს Cloudflare Web Analytics-ს, ხოლო თავის სხვადასხვა ექსპლორერს შორის გაზიარებულ ყოველდღიურ პირველი მხარის cookie-ს იყენებს თითოეული ბრაუზერის UTC დღეში ერთხელ დასათვლელად. აუდიტორიის ყოველდღიური მონაცემების შემგროვებელი ინახავს მხოლოდ დღიურ იდენტიფიკატორს, ექსპლორერის ჰოსტის სახელს და ინფორმაციას იმის შესახებ, მოხდა თუ არა ურთიერთქმედება. ის არ ინახავს საძიებო ტექსტს, ბლოკჩეინის მისამართებს, ტრანზაქციის ID-ებს, მონახულებული გვერდების URL-ებს ან IP მისამართებს. ცალკეული ყოველდღიური ჩანაწერები 31 დღის შემდეგ იშლება; გაერთიანებული რაოდენობები 400 დღე ინახება. Do Not Track და Global Privacy Control ამ პირველი მხარის გაზომვას გამორთავს. <a href="https://tx.taxi/privacy#audience-measurement">დეტალები და უარის თქმა</a>.</p>
+
+      <br>
+
+      <h4>ქსელის საჯარო მონაცემები</h4>
+      <p>lightning.btc.tx.taxi აჩვენებს Lightning-ის საჯარო gossip მონაცემებსა და ქსელის სტატისტიკას. კერძო არხები, ცალკეული გადახდები და არხების ბალანსები საჯაროდ ხილული არ არის. დამოუკიდებლად გადასამოწმებლად საჯარო გრაფი თქვენს საკუთარ Lightning კვანძს შეადარეთ.</p>
+
+      <br>
+
+      <h4>მოთხოვნების მონაცემები</h4>
+      <p>ვებსაიტისა და API-ის ჩვეულებრივმა მოთხოვნებმა შეიძლება ოპერატორს გაუმჟღავნოს სტანდარტული ვებ-მეტამონაცემები, მათ შორის თქვენი IP მისამართი, მომხმარებლის აგენტი, მოთხოვნილი URL და მოთხოვნის დრო. სერვერის ჟურნალები შეიძლება შენახულ იქნეს საიმედოობის, ბოროტად გამოყენების თავიდან აცილებისა და ხარვეზების გამოსწორების მიზნით.</p>
+
+      <br>
+
+      <h4>ლოკალური პარამეტრები</h4>
+      <p>ჩვენების პარამეტრები, როგორიცაა თემა, ერთეული, ფიატური ვალუტა, ენა და დროის სარტყელი, შეიძლება თქვენს ბრაუზერში შეინახოს. lightning.btc.tx.taxi-ის ჩვეულებრივი გამოყენებისთვის ანგარიში საჭირო არ არის.</p>
+
+      <br>
+
+      <h4>ძიება და საჯარო არხები</h4>
+      <p>Lightning-ის საჯარო კვანძების გასაღებები, გამოცხადებული ბოლო წერტილები, არხების წესები და Bitcoin-ის დამაფინანსებელი ტრანზაქციები საჯაროა. კვანძის ან არხის მოძიება შეიძლება თქვენს ქსელურ მეტამონაცემებთან დაკავშირებული აღმოჩნდეს. საჯარო ბრაუზერს კონფიდენციალურობის დაცვის საზღვრად ნუ მიიჩნევთ.</p>
+
+      <br>
+
+      <h4>გარე ბმულები</h4>
+      <p>ეს საიტი შეიცავს tx.taxi-ის საკონტაქტო არხების, Bitcoin-ის დოკუმენტაციის, საწყისი კოდის და ლიცენზიის შესახებ ინფორმაციის ბმულებს. ამ გარე სერვისებს საკუთარი კონფიდენციალურობის პოლიტიკა აქვთ.</p>
+
+      <br>
+
+      <h4>ღია კოდის წყაროს მითითება</h4>
+      <p>lightning.btc.tx.taxi მომდინარეობს mempool/mempool-იდან და მის AGPLv3 ვალდებულებებს მემკვიდრეობით იღებს. Mempool-ის სახელები, ლოგოები და სავაჭრო ნიშნები შესაბამისი მფლობელების საკუთრებად რჩება; lightning.btc.tx.taxi არ არის დაკავშირებული Mempool Holdings S.A. de C.V.-თან და არც მისი მხარდაჭერით მოქმედებს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
 </ng-template>
