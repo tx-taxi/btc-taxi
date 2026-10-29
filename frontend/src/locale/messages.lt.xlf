@@ -11758,11 +11758,11 @@
       <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>Licencija</target></trans-unit>
       <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target state="needs-review-translation">Projekto nuorodos</target></trans-unit>
       <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target state="needs-review-translation">Sukurta remiantis atviruoju kodu</target></trans-unit>
-      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target state="needs-review-translation">sukūrė</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target state="needs-review-translation">— kūrėjas:</target></trans-unit>
       <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target state="needs-review-translation">Susisiekite</target></trans-unit>
       <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target state="needs-review-translation">Apžvalga</target></trans-unit>
       <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>Platinama pagal AGPLv3</target></trans-unit>
-      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target state="needs-review-translation">Sukurta su</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target state="needs-review-translation">Sukurta</target></trans-unit>
       <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>Laukiantys sandoriai</target></trans-unit>
       <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target state="needs-review-translation">Pirminis kodas</target></trans-unit>
       <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>Prekių ženklai ir priskyrimas</target></trans-unit>
@@ -11775,8 +11775,8 @@
       <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target state="needs-review-translation">Susisiekite</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>Platinama pagal AGPLv3</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>Prekių ženklai ir priskyrimas</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target state="needs-review-translation">Sukurta su</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target state="needs-review-translation">sukūrė</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target state="needs-review-translation">Sukurta</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target state="needs-review-translation">— kūrėjas:</target></trans-unit>
       <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target state="needs-review-translation">Automatinis nukreipimas</target></trans-unit>
       <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target state="needs-review-translation">Pasirinkite paieškos grandinę</target></trans-unit>
       <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target state="needs-review-translation">TREČIŲJŲ ŠALIŲ NARŠYKLĖS</target></trans-unit>
