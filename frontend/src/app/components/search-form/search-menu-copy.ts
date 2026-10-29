@@ -48,6 +48,18 @@ const copy = {
     switchTo: (name: string) => `Bytt til ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skjul' : 'Vis'} ${count} ekstra valg for ${name}`,
   },
+  sv: {
+    choose: 'Välj kedja att söka i', selectedAria: 'Vald utforskare', selected: 'VALD',
+    unavailable: 'Utforskarlistan är otillgänglig', loading: 'Laddar utforskare', automatic: 'Automatisk routning',
+    viewHub: 'Öppna startsidan', hint: 'Eller gå direkt till', searchExample: '[din sökning]',
+    native: 'EGNA UTFORSKARE', external: 'TREDJEPARTSUTFORSKARE', opened: 'Öppnad',
+    open: 'Öppna', switch: 'Byt', found: 'Hittad', possible: 'Möjlig', search: 'Sök',
+    additional: (name: string) => `Fler ${name}-utforskare`,
+    openExplorer: (name: string) => `Öppna ${name}`,
+    openNewTab: (name: string) => `Öppna ${name} i en ny flik`,
+    switchTo: (name: string) => `Byt till ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Dölj' : 'Visa'} ${count} extra alternativ för ${name}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
