@@ -11777,6 +11777,8 @@
       <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target>Heure normale de Nouvelle-Zélande (NZST)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target>Heure des Tonga (TOT)</target></trans-unit>
       <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Heure des îles de la Ligne (LINT)</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Les frais de base moyens facturés par les nœuds de routage, hors frais de base supérieurs à 5 000 mSats</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>La médiane des frais de base facturés par les nœuds de routage, hors frais de base supérieurs à 5 000 mSats</target></trans-unit>
     </body>
   </file>
 </xliff>
