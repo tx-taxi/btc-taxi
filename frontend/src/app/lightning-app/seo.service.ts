@@ -44,7 +44,7 @@ export class SeoService {
       const path = this.router.url.split('?')[0].split('#')[0];
       this.updateCanonical(path);
       const lang = document.documentElement.lang.toLowerCase();
-      const metadata = /^(ar|fa|fi|da|ca|hr|lt|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(lang) ? undefined : lang.startsWith('es') ? window['__env']?.LIGHTNING_PAGE_METADATA_ES?.[path] : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
+      const metadata = /^(ar|fa|fi|da|ca|hr|lt|sl|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(lang) ? undefined : lang.startsWith('es') ? window['__env']?.LIGHTNING_PAGE_METADATA_ES?.[path] : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
       if (metadata?.title && metadata?.description) {
         this.titleService.setTitle(metadata.title);
         this.metaService.updateTag({ property: 'og:title', content: metadata.title });
@@ -93,8 +93,8 @@ export class SeoService {
 
   updateCanonical(path) {
     const lang = document.documentElement.lang.toLowerCase();
-    if (/^(ar|fa|fi|da|ca|hr|lt|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(-|$)/.test(lang)) path = (path || '/').split(/[?#]/, 1)[0] || '/';
-    const reviewLocale = /^(ar|fa|fi|da|ca|hr|lt|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(lang) ? lang.slice(0, 2) : null;
+    if (/^(ar|fa|fi|da|ca|hr|lt|sl|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(-|$)/.test(lang)) path = (path || '/').split(/[?#]/, 1)[0] || '/';
+    const reviewLocale = /^(ar|fa|fi|da|ca|hr|lt|sl|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)/.test(lang) ? lang.slice(0, 2) : null;
     const prefix = lang.startsWith('es') ? '/es' : reviewLocale ? '/' + reviewLocale : '';
     const canonicalUrl = 'https://' + this.baseDomain + prefix + (path || '/');
     if (reviewLocale) {
@@ -105,12 +105,13 @@ export class SeoService {
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
   }
 
-  getTitle(): string { const lang = document.documentElement.lang.toLowerCase(); if (lang.startsWith('ar')) return 'مستكشف Lightning | lightning.btc.tx.taxi'; if (lang.startsWith('fa')) return 'کاوشگر لایتنینگ | lightning.btc.tx.taxi'; if (lang.startsWith('lt')) return 'Lightning naršyklė | lightning.btc.tx.taxi'; if (lang.startsWith('hr')) return 'Lightning preglednik | lightning.btc.tx.taxi'; if (lang.startsWith('ca')) return 'Explorador de Lightning | lightning.btc.tx.taxi'; if (lang.startsWith('fi')) return 'Lightning-selain | lightning.btc.tx.taxi'; return lang.startsWith('da') ? 'Lightning-udforsker | lightning.btc.tx.taxi' : lang.startsWith('hi') ? 'Lightning एक्सप्लोरर | lightning.btc.tx.taxi' : lang.startsWith('cs') ? 'Průzkumník Lightning | lightning.btc.tx.taxi' : lang.startsWith('sv') ? 'Lightning-utforskare | lightning.btc.tx.taxi' : lang.startsWith('nb') ? 'Lightning-utforsker | lightning.btc.tx.taxi' : lang.startsWith('uk') ? 'Оглядач Lightning | lightning.btc.tx.taxi' : lang.startsWith('pl') ? 'Eksplorator Lightning | lightning.btc.tx.taxi' : lang.startsWith('ko') ? 'Lightning 탐색기 | lightning.btc.tx.taxi' : lang.startsWith('nl') ? 'Lightning-verkenner | lightning.btc.tx.taxi' : lang.startsWith('tr') ? 'Lightning Gezgini | lightning.btc.tx.taxi' : lang.startsWith('zh') ? 'Lightning浏览器 | lightning.btc.tx.taxi' : lang.startsWith('ja') ? 'Lightningエクスプローラー | lightning.btc.tx.taxi' : lang.startsWith('fr') ? 'Explorateur Lightning | lightning.btc.tx.taxi' : lang.startsWith('de') ? 'Lightning-Explorer | lightning.btc.tx.taxi' : lang.startsWith('it') ? 'Esploratore Lightning | lightning.btc.tx.taxi' : lang.startsWith('pt') ? 'Explorador Lightning | lightning.btc.tx.taxi' : lang.startsWith('ru') ? 'Обозреватель Lightning | lightning.btc.tx.taxi' : 'lightning.btc.tx.taxi - Lightning Explorer'; }
+  getTitle(): string { const lang = document.documentElement.lang.toLowerCase(); if (lang.startsWith('ar')) return 'مستكشف Lightning | lightning.btc.tx.taxi'; if (lang.startsWith('fa')) return 'کاوشگر لایتنینگ | lightning.btc.tx.taxi'; if (lang.startsWith('sl')) return 'Raziskovalec Lightning | lightning.btc.tx.taxi'; if (lang.startsWith('lt')) return 'Lightning naršyklė | lightning.btc.tx.taxi'; if (lang.startsWith('hr')) return 'Lightning preglednik | lightning.btc.tx.taxi'; if (lang.startsWith('ca')) return 'Explorador de Lightning | lightning.btc.tx.taxi'; if (lang.startsWith('fi')) return 'Lightning-selain | lightning.btc.tx.taxi'; return lang.startsWith('da') ? 'Lightning-udforsker | lightning.btc.tx.taxi' : lang.startsWith('hi') ? 'Lightning एक्सप्लोरर | lightning.btc.tx.taxi' : lang.startsWith('cs') ? 'Průzkumník Lightning | lightning.btc.tx.taxi' : lang.startsWith('sv') ? 'Lightning-utforskare | lightning.btc.tx.taxi' : lang.startsWith('nb') ? 'Lightning-utforsker | lightning.btc.tx.taxi' : lang.startsWith('uk') ? 'Оглядач Lightning | lightning.btc.tx.taxi' : lang.startsWith('pl') ? 'Eksplorator Lightning | lightning.btc.tx.taxi' : lang.startsWith('ko') ? 'Lightning 탐색기 | lightning.btc.tx.taxi' : lang.startsWith('nl') ? 'Lightning-verkenner | lightning.btc.tx.taxi' : lang.startsWith('tr') ? 'Lightning Gezgini | lightning.btc.tx.taxi' : lang.startsWith('zh') ? 'Lightning浏览器 | lightning.btc.tx.taxi' : lang.startsWith('ja') ? 'Lightningエクスプローラー | lightning.btc.tx.taxi' : lang.startsWith('fr') ? 'Explorateur Lightning | lightning.btc.tx.taxi' : lang.startsWith('de') ? 'Lightning-Explorer | lightning.btc.tx.taxi' : lang.startsWith('it') ? 'Esploratore Lightning | lightning.btc.tx.taxi' : lang.startsWith('pt') ? 'Explorador Lightning | lightning.btc.tx.taxi' : lang.startsWith('ru') ? 'Обозреватель Lightning | lightning.btc.tx.taxi' : 'lightning.btc.tx.taxi - Lightning Explorer'; }
 
   getDescription(): string {
     const lang = document.documentElement.lang.toLowerCase();
     if (lang.startsWith('ar')) return 'استكشف عقد Lightning وقنواتها وسياسات التوجيه وإحصاءات الشبكة.';
     if (lang.startsWith('fa')) return 'گره‌ها، کانال‌ها، سیاست‌های مسیریابی و آمار شبکه لایتنینگ را بررسی کنید.';
+    if (lang.startsWith('sl')) return 'Raziščite vozlišča, kanale, pravila usmerjanja in statistiko omrežja Lightning.';
     if (lang.startsWith('lt')) return 'Naršykite Lightning mazgus, kanalus, maršrutų parinkimo taisykles ir tinklo statistiką.';
     if (lang.startsWith('hr')) return 'Istražite Lightning čvorove, kanale, pravila usmjeravanja i statistiku mreže.';
     if (lang.startsWith('ca')) return 'Explora els nodes, els canals, les polítiques d’encaminament i les estadístiques de la xarxa Lightning.';
