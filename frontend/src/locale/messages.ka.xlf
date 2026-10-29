@@ -11275,7 +11275,7 @@
       <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target state="needs-review-translation">ავტორი</target></trans-unit>
       <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target state="needs-review-translation">ავტომატური მარშრუტი</target></trans-unit>
       <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target state="needs-review-translation">აირჩიეთ საძიებო ქსელი</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target state="needs-review-translation">მესამე მხარის 3 მაძიებლები</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target state="needs-review-translation">მესამე მხარის მაძიებლები</target></trans-unit>
       <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target state="needs-review-translation">ნაპოვნია</target></trans-unit>
       <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target state="needs-review-translation">მაძიებლები იტვირთება</target></trans-unit>
       <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target state="needs-review-translation">ჩვენი მაძიებლები</target></trans-unit>
