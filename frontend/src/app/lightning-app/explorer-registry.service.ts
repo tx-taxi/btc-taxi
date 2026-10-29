@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, LOCALE_ID } from '@angular/core';
+import { explorerIconAlt, explorerSearchPlaceholder, explorerStatusCopy, lightningStatusCopy, genericSearchPlaceholder } from '@app/services/explorer-registry-copy';
 import { StateService } from '@app/services/state.service';
 import { Observable, of } from 'rxjs';
 import { catchError, map, shareReplay, switchMap, tap, timeout } from 'rxjs/operators';
@@ -161,6 +162,7 @@ export class TxTaxiExplorerRegistryService {
   constructor(
     private http: HttpClient,
     private stateService: StateService,
+    @Inject(LOCALE_ID) private locale: string = 'en',
   ) {
     this.routerOrigin = (this.stateService.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, '');
     const registry$ = this.http.get<RouterChainsResponse>(`${this.routerOrigin}/api/v1/chains`).pipe(tap(response => this.chains = response.chains), shareReplay(1));
@@ -216,6 +218,7 @@ export class TxTaxiExplorerRegistryService {
             ...(destination ? { destinationId: destination.id, destinationName: destination.name, destinationDefault: Boolean(destination.default), host: new URL(destination.origin).host } : {}),
             ...(candidate.directUrl ? { directUrl: this.navigationUrl(candidate.directUrl) } : {}),
             iconUrl: this.absoluteRouterUrl(destination?.icon?.url || candidate.iconUrl),
+            iconAlt: explorerIconAlt(this.locale, destination?.icon?.alt || candidate.iconAlt),
           };
         }),
         ...(response.resolvedChainId ? { resolvedChainId: response.resolvedChainId } : {}),
@@ -246,6 +249,7 @@ export class TxTaxiExplorerRegistryService {
         ) ?? healthSnapshots.find((snapshot) => snapshot.chainId === chain.id);
         const status = this.statusFor(health);
         const latency = health?.latencyMs ? `, ${Math.round(health.latencyMs)} ms` : '';
+        const statusCopy = explorerStatusCopy(this.locale, status, latency);
 
         const explorer: TxTaxiExplorer = {
           id: chain.id,
@@ -255,12 +259,12 @@ export class TxTaxiExplorerRegistryService {
           origin: site.origin,
           host: site.host,
           accentColor: chain.brand.accentColor,
-          searchPlaceholder: site.searchPlaceholder || `Search ${chain.name}`,
+          searchPlaceholder: site.searchPlaceholder ? explorerSearchPlaceholder(this.locale, site.searchPlaceholder) : genericSearchPlaceholder(this.locale, chain.name),
           iconUrl: this.absoluteRouterUrl(logo.url),
-          iconAlt: logo.alt,
+          iconAlt: explorerIconAlt(this.locale, logo.alt),
           status,
-          statusLabel: status === 'live' ? 'Live' : status === 'unavailable' ? 'Unavailable' : 'Checking',
-          statusTitle: status === 'live' ? `Live${latency}` : status === 'unavailable' ? 'Unavailable' : 'Status is being checked',
+          statusLabel: statusCopy.label,
+          statusTitle: statusCopy.title,
         };
         explorer.destinations = (site.destinations || []).filter(destination => {
           try {
@@ -277,10 +281,10 @@ export class TxTaxiExplorerRegistryService {
           host: new URL(destination.origin).host,
           default: destination.default,
           accentColor: destination.accentColor || explorer.accentColor,
-          searchPlaceholder: destination.searchPlaceholder || `Search ${chain.name} · ${destination.name}`,
+          searchPlaceholder: destination.searchPlaceholder ? explorerSearchPlaceholder(this.locale, destination.searchPlaceholder) : genericSearchPlaceholder(this.locale, `${chain.name} · ${destination.name}`),
           iconUrl: destination.icon ? this.absoluteRouterUrl(destination.icon.url) : explorer.iconUrl,
-          iconAlt: destination.icon?.alt || explorer.iconAlt,
-          ...(destination.search.kind === 'lightning' ? { status: 'checking' as const, statusLabel: 'Checking', statusTitle: 'Lightning status is checked independently of Bitcoin' } : {}),
+          iconAlt: destination.icon ? explorerIconAlt(this.locale, destination.icon.alt) : explorer.iconAlt,
+          ...(destination.search.kind === 'lightning' ? { status: 'checking' as const, statusLabel: lightningStatusCopy(this.locale).label, statusTitle: lightningStatusCopy(this.locale).title } : {}),
         }));
         return explorer;
       });
