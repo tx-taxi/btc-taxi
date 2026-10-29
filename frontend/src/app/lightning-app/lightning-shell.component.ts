@@ -26,7 +26,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private applyingSharedCurrency = false;
   private navigatingHub = false;
   private get explicitLanguage(): string | null {
-    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi|da)(?:\/|$)/i)?.[1].toLowerCase();
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|ar|ca|cs|da|de|es|fa|fi|fr|he|hi|hr|hu|it|ja|ka|ko|lt|mk|nb|ne|nl|pl|pt|ro|ru|sl|sr|sv|th|tr|uk|vi|zh)(?:\/|$)/i)?.[1].toLowerCase();
     return explicit ? (explicit.startsWith('en') ? 'en' : explicit) : null;
   }
   private get language(): string {
@@ -81,14 +81,16 @@ export class LightningShellComponent implements OnInit, OnDestroy {
     this.linksObserver = new MutationObserver(convert); this.linksObserver.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['href']}); convert();
     document.addEventListener('click',this.onBitcoinLink,true);
   }
-  private onBitcoinLink = (event:MouseEvent) => {
+  private onBitcoinLink = async (event:MouseEvent) => {
     const anchor = (event.target as Element)?.closest?.('a');
     if(!anchor || new URL(anchor.href,location.origin).origin !== 'https://btc.tx.taxi') return;
-    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi|da)(?:\/|$)/i)?.[1].toLowerCase();
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|ar|ca|cs|da|de|es|fa|fi|fr|he|hi|hr|hu|it|ja|ka|ko|lt|mk|nb|ne|nl|pl|pt|ro|ru|sl|sr|sv|th|tr|uk|vi|zh)(?:\/|$)/i)?.[1].toLowerCase();
     const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en';
     anchor.href = localizedNativeUrl(anchor.href, language);
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
-    event.preventDefault(); event.stopImmediatePropagation(); location.assign(anchor.href);
+    event.preventDefault(); event.stopImmediatePropagation();
+    if (language !== 'en') await refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi');
+    location.assign(localizedNativeUrl(anchor.href, language));
   };
   async brandClick(event:MouseEvent): Promise<void> {
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
