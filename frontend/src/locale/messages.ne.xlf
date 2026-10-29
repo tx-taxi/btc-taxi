@@ -1111,7 +1111,7 @@
       </trans-unit>
       <trans-unit id="cae178cb66733552da9e3baefc1949a18af63ee0" datatype="html">
         <source>Your transaction will be prioritized by up to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> of miners.</source>
-        <target state="needs-review-translation">तपाईंको लेनदेनलाई <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> खानी कामदारहरूद्वारा प्राथमिकता दिइनेछ।</target><context-group purpose="location">
+        <target state="needs-review-translation">तपाईंको लेनदेनलाई बढीमा <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> खानी कामदारहरूद्वारा प्राथमिकता दिइनेछ।</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">643</context>
         </context-group>
@@ -2562,7 +2562,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.asset" datatype="html">
         <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
-        <target state="needs-review-translation">तरल सम्पत्ति <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />) को एक सिंहावलोकन ब्राउज गर्नुहोस्: जारी रकम, जलेको रकम, परिसंचरण रकम, सम्बन्धित लेनदेन, र थप हेर्नुहोस्।</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid सम्पत्ति <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />) को एक सिंहावलोकन ब्राउज गर्नुहोस्: जारी रकम, जलेको रकम, परिसंचरण रकम, सम्बन्धित लेनदेन, र थप हेर्नुहोस्।</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">109</context>
         </context-group>
@@ -2680,7 +2680,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.assets" datatype="html">
         <source>Explore all the assets issued on the Liquid network like LBTC, L-CAD, USDT, and more.</source>
-        <target state="needs-review-translation">LBTC, L-CAD, USDT, र थप जस्ता तरल नेटवर्कमा जारी गरिएका सबै सम्पत्तिहरू अन्वेषण गर्नुहोस्।</target><context-group purpose="location">
+        <target state="needs-review-translation">LBTC, L-CAD, USDT, र थप जस्ता Liquid नेटवर्कमा जारी गरिएका सबै सम्पत्तिहरू अन्वेषण गर्नुहोस्।</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/assets-nav/assets-nav.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
@@ -5517,7 +5517,7 @@
       </trans-unit>
       <trans-unit id="993e5bc509c26db81d93018e24a6afe6e50cae52" datatype="html">
         <source>Liquid Federation Wallet</source>
-        <target state="needs-review-translation">तरल संघ वालेट</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid फेडेरेसन वालेट</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-addresses-stats/federation-addresses-stats.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -6385,7 +6385,7 @@
       </trans-unit>
       <trans-unit id="bb524ddbf557b5f14c391e4de3a1e6d28230d319" datatype="html">
         <source>1m</source>
-        <target state="needs-review-translation">१ मि</target><context-group purpose="location">
+        <target state="needs-review-translation">१ महिना</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">144</context>
         </context-group>
@@ -6884,7 +6884,7 @@
       </trans-unit>
       <trans-unit id="f091ae234382282726f5a93bb7b3802ed468e8b9" datatype="html">
         <source>Liquid Asset</source>
-        <target state="needs-review-translation">तरल सम्पत्ति</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid सम्पत्ति</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
@@ -6969,7 +6969,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
-        <target state="needs-review-translation">हालको बासी चेन सुझावहरू</target><context-group purpose="location">
+        <target state="needs-review-translation">मुख्य चेनमा नरहेका शाखाका हालका अन्तिम ब्लकहरू</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
@@ -7049,14 +7049,14 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
-        <target state="needs-review-translation">बासी चेन सुझावहरू</target><context-group purpose="location">
+        <target state="needs-review-translation">मुख्य चेनमा नरहेका शाखाका अन्तिम ब्लकहरू</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network.</source>
-        <target state="needs-review-translation">Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> नेटवर्कमा सबैभन्दा हालको बासी चेन सुझावहरू हेर्नुहोस्।</target><context-group purpose="location">
+        <target state="needs-review-translation">Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> नेटवर्कमा मुख्य चेनमा नरहेका शाखाका हालका अन्तिम ब्लकहरू हेर्नुहोस्।</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
         </context-group>
@@ -7899,7 +7899,7 @@
       </trans-unit>
       <trans-unit id="7d94a59c779ba549751c9f36eb40fd339725fec6" datatype="html">
         <source>P2TR Simplicity script</source>
-        <target state="needs-review-translation">P2TR सरलता लिपि</target><context-group purpose="location">
+        <target state="needs-review-translation">P2TR Simplicity स्क्रिप्ट</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">256</context>
         </context-group>
@@ -8400,7 +8400,7 @@
       </trans-unit>
       <trans-unit id="2d70cb7985eaebe99c35bcdfa7dc49b2662c345b" datatype="html">
         <source>Liquid Federation Holdings</source>
-        <target state="needs-review-translation">तरल महासंघ होल्डिंग्स</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid फेडेरेसन होल्डिङ्स</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">165</context>
         </context-group>
@@ -10604,7 +10604,7 @@
       </trans-unit>
       <trans-unit id="6d5788756fcb0b8fc937226ff60bf1bd12a8e464" datatype="html">
         <source>provably unspendable</source>
-        <target state="needs-review-translation">सम्भवतः खर्च गर्न नसकिने</target><context-group purpose="location">
+        <target state="needs-review-translation">प्रमाणित रूपमा खर्च गर्न नसकिने</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
@@ -10821,7 +10821,7 @@
       </trans-unit>
       <trans-unit id="3c07f1c84d76a9999153e87343fd642852bb6d34" datatype="html">
         <source>Liquid Explorer</source>
-        <target state="needs-review-translation">तरल एक्सप्लोरर</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid एक्सप्लोरर</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">102</context>
         </context-group>
@@ -11149,7 +11149,7 @@
         <source>Third-party Licenses</source>
         <target state="needs-review-translation">तेस्रो-पक्ष इजाजतपत्र</target>
         </trans-unit>
-      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html"><source>child</source><target state="needs-review-translation">बच्चा</target></trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html"><source>child</source><target state="needs-review-translation">child कारोबार</target></trans-unit>
       <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target state="needs-review-translation">घटना</target></trans-unit>
       <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">रिजर्भ घाटा</target></trans-unit>
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target state="needs-review-translation">यो लेनदेन</target></trans-unit>
@@ -11160,7 +11160,7 @@
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target state="needs-review-translation">१ अन्य टुक्रा भएको मेम्पपुल क्लस्टरमा।</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">रिजर्भ घाटा</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target state="needs-review-translation">मिल्दो पेन्डिङ कारोबारहरू हाइलाइट गर्न फिल्टर कोटीहरू चयन गर्नुहोस्</target></trans-unit>
-      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">बच्चाहरु</target></trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">child कारोबारहरू</target></trans-unit>
       <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">थप</target>
         </trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> अन्य खण्डहरू समावेश भएको मेम्पपूल क्लस्टरमा।</target></trans-unit>
@@ -11235,7 +11235,7 @@
       <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target state="needs-review-translation">उपकरण र कागजात</target></trans-unit>
       <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target state="needs-review-translation">ट्रेडमार्क र श्रेय</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target state="needs-review-translation">लाइटनिङ नेटवर्क, दृश्यमा।</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target state="needs-review-translation">बिजुली अन्वेषण गर्नुहोस्</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target state="needs-review-translation">Lightning अन्वेषण गर्नुहोस्</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target state="needs-review-translation">कागजात</target>
         </trans-unit>
       <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target state="needs-review-translation">स्रोत कोड</target></trans-unit>
@@ -11245,7 +11245,7 @@
       <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target state="needs-review-translation">tx.taxi को भाग</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target state="needs-review-translation">लाइटनिङ नोड वा च्यानल फेला पार्न, अन्वेषकहरू स्विच गर्न, वा यसको ब्लकचेनमा लेनदेन रुट गर्न उही खोज प्रयोग गर्नुहोस्। Bitcoin को अन-चेन अन्वेषक मा बस्छ</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target state="needs-review-translation">सार्वजनिक नेटवर्क दृश्य</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target state="needs-review-translation">लाइटनिङ भुक्तानी र निजी च्यानलहरू सार्वजनिक रूपमा देखिँदैनन्। क्षमताले सार्वजनिक च्यानलमा प्रतिबद्ध बिटकोइनको वर्णन गर्दछ; यसले दुबै पक्षको हालको खर्चयोग्य ब्यालेन्स प्रकट गर्दैन। नोड स्थानहरूले घोषणा गरिएको नेटवर्क अन्त्य बिन्दुहरू वर्णन गर्दछ।</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target state="needs-review-translation">लाइटनिङ भुक्तानी र निजी च्यानलहरू सार्वजनिक रूपमा देखिँदैनन्। क्षमताले सार्वजनिक च्यानलमा प्रतिबद्ध बिटकोइनको वर्णन गर्दछ; यसले कुनै पनि पक्षको हाल खर्च गर्न सकिने मौज्दात देखाउँदैन। नोड स्थानहरूले घोषणा गरिएको नेटवर्क अन्त्य बिन्दुहरू वर्णन गर्दछ।</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target state="needs-review-translation">तथ्याङ्कहरूले स्रोत स्न्यापसटको मिति देखाउँछन्। क्यास गरिएको डाटा अवरोधहरूको समयमा उपलब्ध रहन्छ।</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target state="needs-review-translation">खुला स्रोत</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target state="needs-review-translation">मा निर्मित</target></trans-unit>
@@ -11254,7 +11254,7 @@
       <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target state="needs-review-translation">कुनै च्यानल फेला परेन।</target></trans-unit>
       <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target state="needs-review-translation">कुनै नोड फेला परेन।</target></trans-unit>
       <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target state="needs-review-translation">पुनः प्रयास गर्नुहोस्</target></trans-unit>
-      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target state="needs-review-translation">बिजुली डेटा उपलब्ध छैन।</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target state="needs-review-translation">Lightning डेटा उपलब्ध छैन।</target></trans-unit>
       <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target state="needs-review-translation">कच्चा बिट्स</target></trans-unit>
       <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target state="needs-review-translation">आवश्यक छ</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target state="needs-review-translation">tx.taxi लाइटनिङ एक्सप्लोरर</target></trans-unit>
@@ -11288,9 +11288,9 @@
         </trans-unit>
       <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target state="needs-review-translation">यसबाट बनाइएको</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target state="needs-review-translation">द्वारा</target></trans-unit>
-      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target state="needs-review-translation">बिजुली को बारेमा</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target state="needs-review-translation">Lightning को बारेमा</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target state="needs-review-translation">btc.tx.taxi मा हेर्नुहोस्</target></trans-unit>
-      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target state="needs-review-translation">बिजुली ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target state="needs-review-translation">Lightning ड्यासबोर्ड</target></trans-unit>
       <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target state="needs-review-translation">कागजात</target>
         </trans-unit>
       <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target state="needs-review-translation">लाइटनिङ ग्राफहरू</target></trans-unit>
@@ -11324,7 +11324,7 @@
       <trans-unit id="taxi.mining-pool.logo-generic" datatype="html"><source>Mining pool logo</source><target state="needs-review-translation">माइनिङ पूलको लोगो</target></trans-unit>
       <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target state="needs-review-translation">btc.tx.taxi को बारेमा</target></trans-unit>
       <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target state="needs-review-translation">हालका ब्लकहरू</target></trans-unit>
-      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target state="needs-review-translation">btc.tx.ट्याक्सी ड्यासबोर्ड</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target state="needs-review-translation">btc.tx.taxi ड्यासबोर्ड</target></trans-unit>
       <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target state="needs-review-translation">ड्यासबोर्ड</target></trans-unit>
       <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target state="needs-review-translation">बिटकोइन ग्राफहरू</target></trans-unit>
       <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target state="needs-review-translation">माइनिङ ड्यासबोर्ड</target></trans-unit>
@@ -11368,17 +11368,17 @@
       <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">यो लेनदेन 1 लेनदेनको एक भागसँग सम्बन्धित छ, संयुक्त प्रभावकारी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />।</target></trans-unit>
       <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target state="needs-review-translation">साझेदार कोड प्रयोग गर्दै</target></trans-unit>
       <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target state="needs-review-translation">घटनाहरू</target></trans-unit>
-      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target state="needs-review-translation">अभिभावक" - "cluster.parents</target></trans-unit>
-      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target state="needs-review-translation">बच्चा" - "cluster.child</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target state="needs-review-translation">parent कारोबारहरू" - "cluster.parents</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target state="needs-review-translation">child कारोबार" - "cluster.child</target></trans-unit>
       <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target state="needs-review-translation">vSize" - "transaction.vsize</target></trans-unit>
       <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target state="needs-review-translation">आधार शुल्क &gt; 5000 mSats लाई बेवास्ता गर्दै राउटिङ नोडहरूद्वारा चार्ज गरिएको औसत आधार शुल्क</target></trans-unit>
-      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target state="needs-review-translation">यो लेनदेन" - "cluster.this-लेनदेन</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target state="needs-review-translation">यो कारोबार" - "cluster.this-transaction</target></trans-unit>
       <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi ले Bitcoin नेटवर्क बारे सार्वजनिक डाटा मात्र प्रदर्शन गर्दछ।<x id="CLOSE_BOLD_TEXT" /> यसले कोष पुन: प्राप्त गर्न सक्दैन, वालेट समस्याहरू समाधान गर्न, लेनदेन उल्टो, वा पुष्टिकरण प्राथमिकता परिवर्तन गर्न सक्दैन।<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />ती अनुरोधहरूको लागि, लेनदेन सिर्जना गर्ने वालेट, विनिमय, वा भुक्तानी सेवालाई सम्पर्क गर्नुहोस्।<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
-      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">अभिभावक" - "cluster.parent</target></trans-unit>
-      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target state="needs-review-translation">साइज" - "लेनदेन.vsize</target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">parent कारोबार" - "cluster.parent</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target state="needs-review-translation">आकार" - "transaction.vsize</target></trans-unit>
       <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation"><x id="INTERPOLATION" /> अन्य खण्डहरू समावेश भएको मेम्पपूल क्लस्टरमा।</target></trans-unit>
-      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target state="needs-review-translation">पज/पुन:सुरु" - "हालको-लेनदेन।pause-toggle.title</target></trans-unit>
-      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">बालबालिका" - "cluster.children</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target state="needs-review-translation">रोक्नुहोस्/पुनः सुरु गर्नुहोस्" - "recent-transactions.pause-toggle.title</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">child कारोबारहरू" - "cluster.children</target></trans-unit>
       <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target state="needs-review-translation"><x id="INTERPOLATION" /> नयाँ लेनदेन</target></trans-unit>
       <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">यो कारोबार <x id="INTERPOLATION" /> लेनदेनको एक भागसँग सम्बन्धित छ, संयुक्त प्रभावकारी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" /> सँग।</target></trans-unit>
       <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target state="needs-review-translation">मानहरू 21M BTC को अधिकतम आपूर्तिमा क्याप गरिएको थियो " - "calculator.max-supply-warning</target></trans-unit>
@@ -11391,7 +11391,7 @@
       <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html"><source>usages</source><target state="needs-review-translation">प्रयोगहरू</target></trans-unit>
       <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html"><source>Using partner code</source><target state="needs-review-translation">साझेदार कोड प्रयोग गर्दै</target></trans-unit>
       <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html"><source>1 new transaction</source><target state="needs-review-translation">1 नयाँ कारोबार</target></trans-unit>
-      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target state="needs-review-translation">पज/पुन:सुरु" - "हालको-लेनदेन।pause-toggle.aria-label</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target state="needs-review-translation">रोक्नुहोस्/पुनः सुरु गर्नुहोस्" - "recent-transactions.pause-toggle.aria-label</target></trans-unit>
       <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target state="needs-review-translation">1 नयाँ कारोबार</target></trans-unit>
       <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html"><source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi ले Bitcoin नेटवर्क बारे सार्वजनिक डाटा मात्र प्रदर्शन गर्दछ।<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> यसले कोष पुन: प्राप्त गर्न सक्दैन, वालेट समस्याहरू समाधान गर्न, लेनदेन उल्टो, वा पुष्टिकरण प्राथमिकता परिवर्तन गर्न सक्दैन।<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />ती अनुरोधहरूको लागि, लेनदेन सिर्जना गर्ने वालेट, विनिमय, वा भुक्तानी सेवालाई सम्पर्क गर्नुहोस्।<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target></trans-unit>
       <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target state="needs-review-translation">5000 mSats भन्दा बढी आधार शुल्क बाहेक राउटिङ नोडले लिने माध्यिका आधार शुल्क</target></trans-unit>
@@ -11404,7 +11404,7 @@
       <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target state="needs-review-translation"><x id="NAME" /> खनन पूल को लोगो</target></trans-unit>
       <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target state="needs-review-translation"><x id="INTERPOLATION" /> खनन पूल को लोगो</target></trans-unit>
       <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target state="needs-review-translation">LBTC आपूर्ति बनाम BTC होल्डिंग्स</target></trans-unit>
-      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html"><source>parent</source><target state="needs-review-translation">अभिभावक</target></trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html"><source>parent</source><target state="needs-review-translation">parent कारोबार</target></trans-unit>
       <trans-unit id="taxi.mining-pool.logo" datatype="html"><source>Logo of <x id="pool" /> mining pool</source><target state="needs-review-translation"><x id="pool" /> खनन पूल को लोगो</target></trans-unit>
       <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target state="needs-review-translation">RBF सक्षम गरियो</target></trans-unit>
       <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target state="needs-review-translation">RBF असक्षम पारियो</target></trans-unit>
@@ -11413,8 +11413,8 @@
       <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target state="needs-review-translation">संस्करण ३</target></trans-unit>
       <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target state="needs-review-translation">गैर-मानक</target></trans-unit>
       <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target state="needs-review-translation">बेयर मल्टीसिग</target></trans-unit>
-      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target state="needs-review-translation">बच्चा द्वारा तिरेको</target></trans-unit>
-      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target state="needs-review-translation">अभिभावकको लागि भुक्तानी गर्दछ</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target state="needs-review-translation">child कारोबारले शुल्क तिरेको</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target state="needs-review-translation">parent कारोबारको शुल्क तिर्छ</target></trans-unit>
       <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target state="needs-review-translation">प्रतिस्थापन</target></trans-unit>
       <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target state="needs-review-translation">नक्कली पबकी</target></trans-unit>
       <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target state="needs-review-translation">नक्कली स्क्रिप्टस</target></trans-unit>
