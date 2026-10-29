@@ -2998,7 +2998,7 @@
       </trans-unit>
       <trans-unit id="b1fa5b210c9670d49a6506f046d4a0c2797fd402" datatype="html">
         <source>Block Health</source>
-        <target state="needs-review-translation">ჯანმრთელობის ბლოკირება</target><context-group purpose="location">
+        <target state="needs-review-translation">ბლოკის მდგომარეობა</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-health-graph/block-health-graph.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -3337,7 +3337,7 @@
       </trans-unit>
       <trans-unit id="56fa1cd221491b6478998679cba2dc8d55ba330d" datatype="html">
         <source>Block Sizes and Weights</source>
-        <target>ბლოკის ზომები</target>
+        <target state="needs-review-translation">ბლოკების ზომები და წონა</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-sizes-weights-graph/block-sizes-weights-graph.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3572,7 +3572,7 @@
       </trans-unit>
       <trans-unit id="0b47a777f024ab4e3cdf0062acb4d86e9ae1f635" datatype="html">
         <source>Median fee</source>
-        <target>საშუალო საკომისიო</target>
+        <target state="needs-review-translation">მედიანური საკომისიო</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">36</context>
@@ -3941,7 +3941,7 @@
       </trans-unit>
       <trans-unit id="6efa73f0d6f0844a1e0c341c9b88323f51852d91" datatype="html">
         <source>Actual Block</source>
-        <target>მიმდინარე ბლოკი</target>
+        <target state="needs-review-translation">ფაქტობრივი ბლოკი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">296</context>
@@ -4695,7 +4695,7 @@
       </trans-unit>
       <trans-unit id="63da83692b85cf17e0606153029a83fd4038d6dd" datatype="html">
         <source>Difficulty Adjustment</source>
-        <target>სირთულე</target>
+        <target state="needs-review-translation">სირთულის კორექტირება</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-mining/difficulty-mining.component.html</context>
           <context context-type="linenumber">1</context>
@@ -9710,7 +9710,7 @@
       </trans-unit>
       <trans-unit id="b371db1a7ab2167dc8dd91b48ea929d71bb4ef4c" datatype="html">
         <source>Open channels</source>
-        <target>ჩანელის გახსნა</target>
+        <target state="needs-review-translation">ღია არხები</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">286</context>
@@ -9719,7 +9719,7 @@
       </trans-unit>
       <trans-unit id="a2dff531c3d7477178553f579e0ec7c3ac7a6f30" datatype="html">
         <source>Closed channels</source>
-        <target>ჩანელის დახურვა</target>
+        <target state="needs-review-translation">დახურული არხები</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">290</context>
@@ -11006,7 +11006,7 @@
       </trans-unit>
       <trans-unit id="taxi.footer.broadcast" datatype="html">
         <source>Broadcast Transaction</source>
-        <target state="needs-review-translation">სამაუწყებლო ტრანზაქცია</target></trans-unit>
+        <target state="needs-review-translation">ტრანზაქციის ქსელში გაგზავნა</target></trans-unit>
       <trans-unit id="taxi.footer.about" datatype="html">
         <source>About</source>
         <target>ჩვენს შესახებ</target>
@@ -11080,7 +11080,7 @@
       <trans-unit id="btc.address.taptree-placeholder" datatype="html"><source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source><target state="needs-review-translation">Hex ან base64 კოდირებული PSBT_OUT_TAP_TREE ველი</target></trans-unit>
       <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target state="needs-review-translation">Bitcoin Explorer-ის დაფა</target></trans-unit>
       <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target state="needs-review-translation">btc.tx.taxi Bitcoin-ის მკვლევარი</target></trans-unit>
-      <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target state="needs-review-translation">ტრანზაქციის ჩვენება ვერ მოხერხდა, მიზეზი:</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target state="needs-review-translation">ტრანზაქციის ქსელში გაგზავნა ვერ მოხერხდა, მიზეზი:</target></trans-unit>
       <trans-unit id="btc.raw.loading" datatype="html"><source>Loading</source><target state="needs-review-translation">იტვირთება</target></trans-unit>
       <trans-unit id="btc.raw.loading-cpfp" datatype="html"><source>Loading CPFP</source><target state="needs-review-translation">იტვირთება CPFP</target></trans-unit>
       <trans-unit id="btc.raw.loading-prevouts" datatype="html"><source>Loading transaction prevouts</source><target state="needs-review-translation">იტვირთება ტრანზაქციის პრევოუტები</target></trans-unit>
@@ -11113,7 +11113,7 @@
       <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target state="needs-review-translation">ბიტკოინის გრაფიკები</target></trans-unit>
       <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target state="needs-review-translation">ბიტკოინის ბლოკები, მოსაკრებლები და მემპულის აქტივობა</target></trans-unit>
       <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target state="needs-review-translation">ხელსაწყოები და დოკუმენტები</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target state="needs-review-translation">Lightning ქსელი ერთი შეხედვით.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target state="needs-review-translation">Lightning ქსელი თქვენს თვალწინ</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target state="needs-review-translation">გამოიკვლიეთ Lightning</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target state="needs-review-translation">დოკუმენტაცია</target>
         </trans-unit>
@@ -11134,7 +11134,7 @@
       <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target state="needs-review-translation">ნედლი ბიტები</target></trans-unit>
       <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target state="needs-review-translation">საჭირო</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target state="needs-review-translation">tx.taxi Lightning Explorer</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target state="needs-review-translation">Lightning კვანძები, არხები და ქსელის აქტივობა</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target state="needs-review-translation">Lightning-ის კვანძები, არხები და ქსელის აქტივობა</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target state="needs-review-translation">დათვალიერება</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target state="needs-review-translation">Lightning-ის მიმოხილვა</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target state="needs-review-translation">კვანძების რეიტინგი</target></trans-unit>
