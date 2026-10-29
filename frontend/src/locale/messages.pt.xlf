@@ -12705,6 +12705,240 @@
         <source>Selected explorer</source>
         <target>Explorador selecionado</target>
       </trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html">
+        <source>Bitcoin explorer dashboard</source>
+        <target>Painel do explorador Bitcoin</target>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target>Mudar para tamanhos dos blocos</target>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target>Mudar para taxas totais por bloco</target>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target>Mostrar os blocos mais recentes à direita</target>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target>Mostrar os blocos mais recentes à esquerda</target>
+      </trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html">
+        <source>Logo of <x id="NAME" /> mining pool</source>
+        <target>Logótipo do pool de mineração <x id="NAME" />
+        </target>
+      </trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target>Logótipo do pool de mineração</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>A carregar saídas anteriores da transação</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>A carregar CPFP</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>A carregar</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>Algumas saídas anteriores não existem ou já foram gastas</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>Não foi possível transmitir a transação. Motivo:</target>
+      </trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>PSBT em hexadecimal ou base64 que envolve este endereço</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>PSBT_IN_TAP_LEAF_SCRIPT em hexadecimal ou base64, separado por vírgulas (&lt;bloco de controlo&gt;:&lt;script&gt;&lt;versão da folha&gt;)</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>Campo PSBT_OUT_TAP_TREE em hexadecimal ou base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>Chave pública apenas x em hexadecimal ou base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>Folhas Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>Árvore Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>Chave interna</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source>
+        <target>As folhas Taproot devem ter o formato "&lt;bloco de controlo&gt;:&lt;script&gt;&lt;versão da folha&gt;" e ser separadas por vírgulas</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>Ocorreu um erro ao processar os dados Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html">
+        <source>Logo of <x id="INTERPOLATION" /> mining pool</source>
+        <target>Logótipo do pool de mineração <x id="INTERPOLATION" />
+        </target>
+      </trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html">
+        <source>btc.tx.taxi Bitcoin explorer</source>
+        <target>Explorador Bitcoin btc.tx.taxi</target>
+      </trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source>
+        <target>Aderir ao canal Telegram do tx.taxi</target>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html">
+        <source>Copy</source>
+        <target>Copiar</target>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html">
+        <source>Copied</source>
+        <target>Copiado</target>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html">
+        <source>Copy to clipboard</source>
+        <target>Copiar para a área de transferência</target>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html">
+        <source>Copied to clipboard</source>
+        <target>Copiado para a área de transferência</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target>Qualquer lugar na Terra (AoE)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target>Hora padrão de Samoa (SST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target>Hora padrão do Havai (HST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target>Hora padrão do Alasca (AKST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target>Hora padrão do Pacífico (PST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target>Hora padrão das Montanhas (MST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target>Hora padrão Central (CST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target>Hora padrão do Leste (EST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target>Hora padrão do Atlântico (AST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target>Hora da Argentina (ART)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target>Hora de Fernando de Noronha (FNT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target>Hora dos Açores (AZOT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target>Hora Média de Greenwich (GMT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target>Hora da Europa Central (CET)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target>Hora da Europa Oriental (EET)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target>Hora padrão de Moscovo (MSK)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target>Hora da Arménia (AMT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target>Hora padrão do Paquistão (PKT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target>Hora de Xinjiang (XJT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target>Hora da Indochina (ICT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target>Hora de Hong Kong (HKT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target>Hora padrão do Japão (JST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target>Hora padrão do Leste da Austrália (AEST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target>Hora de Norfolk (NFT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target>Hora padrão da Nova Zelândia (NZST)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target>Hora de Tonga (TOT)</target>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target>Hora das Ilhas da Linha (LINT)</target>
+      </trans-unit>
+      <trans-unit id="297163664342399426" datatype="html">
+        <source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source>
+        <target>A taxa base média cobrada por nós de encaminhamento, excluindo taxas base superiores a 5000 mSats</target>
+      </trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html">
+        <source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source>
+        <target>A taxa base mediana cobrada por nós de encaminhamento, excluindo taxas base superiores a 5000 mSats</target>
+      </trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target>Inscrição</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
