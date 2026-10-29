@@ -34,10 +34,6 @@
             "translation": "src/locale/messages.cs.xlf",
             "baseHref": "/cs/"
           },
-          "hi": {
-            "translation": "src/locale/messages.hi.xlf",
-            "baseHref": "/hi/"
-          },
           "de": {
             "translation": "src/locale/messages.de.xlf",
             "baseHref": "/de/"
