@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { localizedTaxiApi } from '@app/docs/api-docs/taxi-api-es';
 import { localizedTaxiFaq } from '@app/docs/api-docs/taxi-faq-es';
 import { Inject, LOCALE_ID, Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
@@ -27,6 +28,7 @@ export class ApiDocsNavComponent implements OnInit {
 
   constructor(
     @Inject(LOCALE_ID) private locale: string,
+    @Inject(DOCUMENT) private document: Document,
     private stateService: StateService
   ) { }
 
@@ -47,7 +49,13 @@ export class ApiDocsNavComponent implements OnInit {
     }
   }
 
-  navLinkClick(event, fragment) {
+  fragmentHref(fragment: string): string {
+    const { pathname, search } = this.document.location;
+    return pathname + search + '#' + encodeURIComponent(fragment);
+  }
+
+  navLinkClick(event: MouseEvent, fragment: string): void {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     this.navLinkClickEvent.emit({event: event, fragment: fragment});
   }

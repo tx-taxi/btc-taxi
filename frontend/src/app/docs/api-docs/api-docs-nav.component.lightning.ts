@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import { Component, OnInit, Inject, LOCALE_ID, Input, Output, EventEmitter } from '@angular/core';
 import { Env, StateService } from '@app/services/state.service';
 import { Subject } from 'rxjs';
@@ -26,6 +27,7 @@ export class ApiDocsNavComponent implements OnInit {
 
   constructor(
     @Inject(LOCALE_ID) readonly locale: string,
+    @Inject(DOCUMENT) private document: Document,
     private stateService: StateService
   ) { }
 
@@ -46,7 +48,13 @@ export class ApiDocsNavComponent implements OnInit {
     }
   }
 
-  navLinkClick(event, fragment) {
+  fragmentHref(fragment: string): string {
+    const { pathname, search } = this.document.location;
+    return pathname + search + '#' + encodeURIComponent(fragment);
+  }
+
+  navLinkClick(event: MouseEvent, fragment: string): void {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     this.navLinkClickEvent.emit({event: event, fragment: fragment});
   }
