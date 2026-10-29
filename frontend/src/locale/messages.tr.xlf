@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<?xml version='1.0' encoding='utf-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="tr">
     <body>
       <trans-unit id="ngb.alert.close" datatype="html">
@@ -10,8 +11,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.carousel.slide-number" datatype="html">
-        <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli"/> of <x id="INTERPOLATION_1" equiv-text="EventSource = N"/> </source>
-        <target> Slayt <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli"/>/<x id="INTERPOLATION_1" equiv-text="EventSource = N"/> </target>
+        <source> Slide <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" /> of <x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </source>
+        <target> Slayt <x id="INTERPOLATION" equiv-text="ueryList&lt;NgbSli" />/<x id="INTERPOLATION_1" equiv-text="EventSource = N" /> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
           <context context-type="linenumber">131,135</context>
@@ -251,16 +252,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.timepicker.PM" datatype="html">
-        <source><x id="INTERPOLATION"/></source>
-        <target><x id="INTERPOLATION"/></target>
+        <source><x id="INTERPOLATION" /></source>
+        <target><x id="INTERPOLATION" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/ngb-config.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></source>
-        <target><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></target>
+        <source><x id="INTERPOLATION" equiv-text="barConfig);  pu" /></source>
+        <target><x id="INTERPOLATION" equiv-text="barConfig);  pu" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">41,42</context>
@@ -478,8 +479,8 @@
         <note priority="1" from="description">accelerator.your-transaction</note>
       </trans-unit>
       <trans-unit id="bee6b649ee82d9a7cde233070b665eec7c531b1d" datatype="html">
-        <source>Plus <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}"/> unconfirmed ancestor(s)</source>
-        <target>Artı <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}"/> onaylanmamış üst işlem(ler)</target>
+        <source>Plus <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> unconfirmed ancestor(s)</source>
+        <target>Artı <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> onaylanmamış üst işlem(ler)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">49</context>
@@ -722,8 +723,8 @@
         <note priority="1" from="description">accelerator.how-much-faster</note>
       </trans-unit>
       <trans-unit id="d1a62bdb732f1efbfdc8af6fbb4349b89015b5e5" datatype="html">
-        <source>This will reduce your expected waiting time until the first confirmation to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="n&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;"/><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/strong&gt;&lt;/s"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/small&gt;"/></source>
-        <target>İlk onaya kadar geçen bekleme süresini <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="n&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;"/><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/strong&gt;&lt;/s"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/small&gt;"/>kadar azaltacak.</target>
+        <source>This will reduce your expected waiting time until the first confirmation to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="n&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;" /><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/strong&gt;&lt;/s" /><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/small&gt;" /></source>
+        <target>İlk onaya kadar geçen bekleme süresini <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="n&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;" /><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/strong&gt;&lt;/s" /><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/small&gt;" />kadar azaltacak.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">84,85</context>
@@ -927,8 +928,8 @@
         <note priority="1" from="description">accelerator.for-an-additional-cost</note>
       </trans-unit>
       <trans-unit id="b0cd496dc7758e691f57213379a47f0a043010ac" datatype="html">
-        <source>Reducing expected confirmation time to <x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;app-time kind=&quot;within&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;"/><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/ng-contain"/></source>
-        <target>Beklenen onaylama zamanı <x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;app-time kind=&quot;within&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;"/><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/ng-contain"/> azaltılıyor.</target>
+        <source>Reducing expected confirmation time to <x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;app-time kind=&quot;within&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;" /><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/ng-contain" /></source>
+        <target>Beklenen onaylama zamanı <x id="START_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;app-time kind=&quot;within&quot; [time]=&quot;etaInfo.acceleratedETA&quot; [fastRender]=&quot;false&quot; [fixedRender]=&quot;true&quot;&gt;" /><x id="CLOSE_TAG_APP_TIME" ctype="x-app_time" equiv-text="&lt;/ng-contain" /> azaltılıyor.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">359,360</context>
@@ -936,8 +937,8 @@
         <note priority="1" from="description">accelerator.reducing-expected-confirmation-time</note>
       </trans-unit>
       <trans-unit id="b62e50ad8bdbb107a2ec978648faf36e9f91c3c1" datatype="html">
-        <source>Payment to mempool.space for acceleration of txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;"/><x id="INTERPOLATION" equiv-text="tr(0, 10) }}"/>..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;"/></source>
-        <target>txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;"/><x id="INTERPOLATION" equiv-text="tr(0, 10) }}"/>..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;"/> hızlandırması için mempool.space'e ödeme</target>
+        <source>Payment to mempool.space for acceleration of txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;" /><x id="INTERPOLATION" equiv-text="tr(0, 10) }}" />..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;" /></source>
+        <target>txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;" /><x id="INTERPOLATION" equiv-text="tr(0, 10) }}" />..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;" /> hızlandırması için mempool.space'e ödeme</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">370,371</context>
@@ -1141,8 +1142,8 @@
         <note priority="1" from="description">accelerator.customize</note>
       </trans-unit>
       <trans-unit id="fc60844faa5ea496fe8b8cfb7620b2bfc733c90b" datatype="html">
-        <source>Accelerate to ~<x id="INTERPOLATION" equiv-text="{{ x | number : '1.0-0' }}"/> sat/vB</source>
-        <target>~<x id="INTERPOLATION" equiv-text="{{ x | number : '1.0-0' }}"/> sat/vB ücrete hızlandırılıyor</target>
+        <source>Accelerate to ~<x id="INTERPOLATION" equiv-text="{{ x | number : '1.0-0' }}" /> sat/vB</source>
+        <target>~<x id="INTERPOLATION" equiv-text="{{ x | number : '1.0-0' }}" /> sat/vB ücrete hızlandırılıyor</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">615</context>
@@ -1168,8 +1169,8 @@
         <note priority="1" from="meaning">transaction.accelerate</note>
       </trans-unit>
       <trans-unit id="cae178cb66733552da9e3baefc1949a18af63ee0" datatype="html">
-        <source>Your transaction will be prioritized by up to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="1' }}"/>%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> of miners.</source>
-        <target>İşleminin, madencilerin <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="1' }}"/>% <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>'ü tarafında önceliklendirilecek</target>
+        <source>Your transaction will be prioritized by up to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> of miners.</source>
+        <target>İşleminin, madencilerin <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />% <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />'ü tarafında önceliklendirilecek</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">643</context>
@@ -1557,8 +1558,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8918254921747459635" datatype="html">
-        <source>Around block: <x id="PH" equiv-text="ticks[0].data[2]"/></source>
-        <target>Yaklaşık olarak blok:  <x id="PH" equiv-text="ticks[0].data[2]"/></target>
+        <source>Around block: <x id="PH" equiv-text="ticks[0].data[2]" /></source>
+        <target>Yaklaşık olarak blok:  <x id="PH" equiv-text="ticks[0].data[2]" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-fees-graph/acceleration-fees-graph.component.ts</context>
           <context context-type="linenumber">192</context>
@@ -2013,8 +2014,8 @@
         <note priority="1" from="meaning">transaction.accelerated-to-feerate</note>
       </trans-unit>
       <trans-unit id="3af3e9a4c4d8135f386b2fc59233884ae8fc57fb" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;"/>of hashrate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> hash gücünün <x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;"/> 'si </target>
+        <source><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" />of hashrate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> hash gücünün <x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" /> 'si </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/active-acceleration-box/active-acceleration-box.component.html</context>
           <context context-type="linenumber">32</context>
@@ -2328,8 +2329,8 @@
         <note priority="1" from="description">shared.confidential</note>
       </trans-unit>
       <trans-unit id="address.component.browser-title" datatype="html">
-        <source>Address: <x id="INTERPOLATION" equiv-text="this.addressString"/></source>
-        <target>Adres: <x id="INTERPOLATION" equiv-text="this.addressString"/></target>
+        <source>Address: <x id="INTERPOLATION" equiv-text="this.addressString" /></source>
+        <target>Adres: <x id="INTERPOLATION" equiv-text="this.addressString" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address-preview.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -2340,8 +2341,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.address" datatype="html">
-        <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> address <x id="INTERPOLATION" equiv-text="this.addressString"/>.</source>
-        <target><x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> adres <x id="INTERPOLATION" equiv-text="this.addressString"/> için Mempool işlemlerini, gerçekleşen işlemler ve daha fazlasını görüntüle. </target>
+        <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> address <x id="INTERPOLATION" equiv-text="this.addressString" />.</source>
+        <target><x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> adres <x id="INTERPOLATION" equiv-text="this.addressString" /> için Mempool işlemlerini, gerçekleşen işlemler ve daha fazlasını görüntüle. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address-preview.component.ts</context>
           <context context-type="linenumber">75</context>
@@ -2404,8 +2405,8 @@
         <note priority="1" from="description">address.unspent-outputs</note>
       </trans-unit>
       <trans-unit id="0a4ec18d2eb002662ee1c390be17000eace08818" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou"/> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> transaction</source>
-        <target><x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> işlemin <x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou"/> 'i </target>
+        <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou" /> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> transaction</source>
+        <target><x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> işlemin <x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou" /> 'i </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">142</context>
@@ -2413,8 +2414,8 @@
         <note priority="1" from="description">X of X Address Transaction</note>
       </trans-unit>
       <trans-unit id="b2e947b5b892e2d2c5d216b1a198b8bf40da45eb" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb"/> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> transactions</source>
-        <target><x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> işlemin <x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb"/> 'i </target>
+        <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb" /> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> transactions</source>
+        <target><x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> işlemin <x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb" /> 'i </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">143</context>
@@ -2431,8 +2432,8 @@
         <note priority="1" from="description">address.error.loading-address-data</note>
       </trans-unit>
       <trans-unit id="5a2eb7e4a712829c906f69ced254900546d82eca" datatype="html">
-        <source><x id="LINE_BREAK" ctype="lb"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>There are too many transactions on this address, more than your backend can handle. See more on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;"/>setting up a stronger backend<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/><x id="LINE_BREAK" ctype="lb"/><x id="LINE_BREAK" ctype="lb"/> Consider viewing this address on the official Mempool website instead: </source>
-        <target><x id="LINE_BREAK" ctype="lb"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Bu adreste çok fazla işlem var, backend'inizin kaldırabileceğinden fazla. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;"/>Daha güçlü bir backend kurmayı<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> inceleyin.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/><x id="LINE_BREAK" ctype="lb"/><x id="LINE_BREAK" ctype="lb"/> Bunun yerine bu adresi resmi Mempool sitesinde görüntülemeyi düşünün: </target>
+        <source><x id="LINE_BREAK" ctype="lb" /><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;" />There are too many transactions on this address, more than your backend can handle. See more on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;" />setting up a stronger backend<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;" /><x id="LINE_BREAK" ctype="lb" /><x id="LINE_BREAK" ctype="lb" /> Consider viewing this address on the official Mempool website instead: </source>
+        <target><x id="LINE_BREAK" ctype="lb" /><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;" />Bu adreste çok fazla işlem var, backend'inizin kaldırabileceğinden fazla. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;" />Daha güçlü bir backend kurmayı<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> inceleyin.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;" /><x id="LINE_BREAK" ctype="lb" /><x id="LINE_BREAK" ctype="lb" /> Bunun yerine bu adresi resmi Mempool sitesinde görüntülemeyi düşünün: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">247,251</context>
@@ -2502,7 +2503,7 @@
       </trans-unit>
       <trans-unit id="9a1fbb23439ab07ca411d9cb744ea3564911e024" datatype="html">
         <source>Fiat</source>
-        <target>Fiat</target>
+        <target>İtibari para</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/amount-selector/amount-selector.component.html</context>
           <context context-type="linenumber">5</context>
@@ -2577,7 +2578,7 @@
       </trans-unit>
       <trans-unit id="c5b2c0d65b8fd12ebf8c0d79f562703776fc954e" datatype="html">
         <source>Pegged in</source>
-        <target>Pegged in</target>
+        <target>Zincire aktarılan</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.html</context>
           <context context-type="linenumber">37</context>
@@ -2587,7 +2588,7 @@
       </trans-unit>
       <trans-unit id="8f5d6ce525a24b049fee47f9b2d8447cca97ccc8" datatype="html">
         <source>Pegged out</source>
-        <target>Pegged out</target>
+        <target>Zincirden çıkarılan</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.html</context>
           <context context-type="linenumber">41</context>
@@ -2630,8 +2631,8 @@
         <note priority="1" from="meaning">asset.circulating-amount</note>
       </trans-unit>
       <trans-unit id="c3360a933cb312b395d276a2b865214cf832df58" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ (transactions?.length | number) || '?' }}"/> of <x id="INTERPOLATION_1" equiv-text="{{ txCount | number }}"/> </source>
-        <target><x id="INTERPOLATION" equiv-text="{{ (transactions?.length | number) || '?' }}"/>/<x id="INTERPOLATION_1" equiv-text="{{ txCount | number }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ (transactions?.length | number) || '?' }}" /> of <x id="INTERPOLATION_1" equiv-text="{{ txCount | number }}" /> </source>
+        <target><x id="INTERPOLATION" equiv-text="{{ (transactions?.length | number) || '?' }}" />/<x id="INTERPOLATION_1" equiv-text="{{ txCount | number }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.html</context>
           <context context-type="linenumber">78</context>
@@ -2666,24 +2667,24 @@
         <note priority="1" from="description">asset.error.loading-asset-data</note>
       </trans-unit>
       <trans-unit id="asset.component.asset-browser-title" datatype="html">
-        <source>Asset: <x id="INTERPOLATION" equiv-text="this.assetString"/></source>
-        <target>Varlık: <x id="INTERPOLATION" equiv-text="this.assetString"/></target>
+        <source>Asset: <x id="INTERPOLATION" equiv-text="this.assetString" /></source>
+        <target>Varlık: <x id="INTERPOLATION" equiv-text="this.assetString" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.liquid.asset" datatype="html">
-        <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]"/> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]"/>): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
-        <target>Liquid varlığın genel görünümünü incele <x id="INTERPOLATION" equiv-text="this.assetContract[1]"/>(<x id="INTERPOLATION" equiv-text="this.assetContract[1]"/>): üretilen, yakılan, dolaşan miktarlır ve ilişkili işlemleri ve daha fazlasını gör. </target>
+        <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
+        <target>Liquid varlığın genel görünümünü incele <x id="INTERPOLATION" equiv-text="this.assetContract[1]" />(<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): üretilen, yakılan, dolaşan miktarlır ve ilişkili işlemleri ve daha fazlasını gör. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="e3f9fda25b281496fe296fb7e8228f59b50983ad" datatype="html">
-        <source>Group of <x id="INTERPOLATION" equiv-text="{{ group.assets.length | number }}"/> assets</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ group.assets.length | number }}"/> varlık grubu</target>
+        <source>Group of <x id="INTERPOLATION" equiv-text="{{ group.assets.length | number }}" /> assets</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ group.assets.length | number }}" /> varlık grubu</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/asset-group/asset-group.component.html</context>
           <context context-type="linenumber">8</context>
@@ -2803,7 +2804,7 @@
       </trans-unit>
       <trans-unit id="4ad173c0e4010b1f25bf58e96a383edc1b59cd80" datatype="html">
         <source>Ticker</source>
-        <target>Ticker</target>
+        <target>Sembol</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/assets.component.html</context>
           <context context-type="linenumber">5</context>
@@ -2944,8 +2945,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4793828002882320882" datatype="html">
-        <source>At block: <x id="PH" equiv-text="data[0].data[2]"/></source>
-        <target>Blok: <x id="PH" equiv-text="data[0].data[2]"/> için</target>
+        <source>At block: <x id="PH" equiv-text="data[0].data[2]" /></source>
+        <target>Blok: <x id="PH" equiv-text="data[0].data[2]" /> için</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">256</context>
@@ -3050,16 +3051,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8538305450922736186" datatype="html">
-        <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
-        <target>Block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/>'de</target>
+        <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></source>
+        <target>Block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" />'de</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">186</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8807945662832318286" datatype="html">
-        <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
-        <target>Yaklaşık olarak blok <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/>'de </target>
+        <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></source>
+        <target>Yaklaşık olarak blok <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" />'de </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">188</context>
@@ -3629,8 +3630,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="block.component.browser-title" datatype="html">
-        <source>Block <x id="BLOCK_HEIGHT" equiv-text="block.height"/>: <x id="BLOCK_ID" equiv-text="block.id"/></source>
-        <target>Blok: <x id="BLOCK_HEIGHT" equiv-text="block.height"/>/<x id="BLOCK_ID" equiv-text="block.id"/></target>
+        <source>Block <x id="BLOCK_HEIGHT" equiv-text="block.height" />: <x id="BLOCK_ID" equiv-text="block.id" /></source>
+        <target>Blok: <x id="BLOCK_HEIGHT" equiv-text="block.height" />/<x id="BLOCK_ID" equiv-text="block.id" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-view/block-view.component.ts</context>
           <context context-type="linenumber">111</context>
@@ -3645,8 +3646,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.liquid.block" datatype="html">
-        <source>See size, weight, fee range, included transactions, and more for Liquid<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target>Liquid <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> bloğundaki <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>) boyut, ağırlık, ücret aralığı, dahil edilen işlemler ve daha fazlasını gör.</target>
+        <source>See size, weight, fee range, included transactions, and more for Liquid<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> block <x id="BLOCK_HEIGHT" equiv-text="block.height" /> (<x id="BLOCK_ID" equiv-text="block.id" />).</source>
+        <target>Liquid <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> bloğundaki <x id="BLOCK_HEIGHT" equiv-text="block.height" /> (<x id="BLOCK_ID" equiv-text="block.id" />) boyut, ağırlık, ücret aralığı, dahil edilen işlemler ve daha fazlasını gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-view/block-view.component.ts</context>
           <context context-type="linenumber">113</context>
@@ -3661,8 +3662,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.block" datatype="html">
-        <source>See size, weight, fee range, included transactions, audit (expected v actual), and more for Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> block <x id="BLOCK_HEIGHT" equiv-text="block.height"/> (<x id="BLOCK_ID" equiv-text="block.id"/>).</source>
-        <target>Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> block <x id="BLOCK_HEIGHT" equiv-text="block.height"/>(<x id="BLOCK_ID" equiv-text="block.id"/>) için boyut, ağırlıklar, ücret aralığı, dahili işlemler, denetim (beklene vs gerçek) ve daha fazlasını gör.</target>
+        <source>See size, weight, fee range, included transactions, audit (expected v actual), and more for Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> block <x id="BLOCK_HEIGHT" equiv-text="block.height" /> (<x id="BLOCK_ID" equiv-text="block.id" />).</source>
+        <target>Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> block <x id="BLOCK_HEIGHT" equiv-text="block.height" />(<x id="BLOCK_ID" equiv-text="block.id" />) için boyut, ağırlıklar, ücret aralığı, dahili işlemler, denetim (beklene vs gerçek) ve daha fazlasını gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-view/block-view.component.ts</context>
           <context context-type="linenumber">115</context>
@@ -3802,8 +3803,8 @@
         <note priority="1" from="description">block.miner</note>
       </trans-unit>
       <trans-unit id="27387c2af5dcaf343a548feba821515f5dc00faa" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/> transaction</source>
-        <target>İşlem <x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/></target>
+        <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti" /> transaction</source>
+        <target>İşlem <x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">4</context>
@@ -3823,8 +3824,8 @@
         <note priority="1" from="description">shared.transaction-count.singular</note>
       </trans-unit>
       <trans-unit id="14779b0ce4cbc4d975a35a8fe074426228a324f3" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/> transactions</source>
-        <target>İşlemler <x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/></target>
+        <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri" /> transactions</source>
+        <target>İşlemler <x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">5</context>
@@ -4233,8 +4234,8 @@
         <note priority="1" from="description">block.stale-block-singular</note>
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
-        <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source>
-        <target>Bu yükseklikte <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> eskimiş blok var</target>
+        <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}" /> stale blocks at this height</source>
+        <target>Bu yükseklikte <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}" /> eskimiş blok var</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
@@ -4486,16 +4487,16 @@
         <note priority="1" from="description">dashboard.txs</note>
       </trans-unit>
       <trans-unit id="meta.description.liquid.blocks" datatype="html">
-        <source>See the most recent Liquid<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blocks along with basic stats such as block height, block size, and more.</source>
-        <target>En güncel Liquid <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blokları için blok yüksekliği, blok büyüklüğü vb temel dataları gör.</target>
+        <source>See the most recent Liquid<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> blocks along with basic stats such as block height, block size, and more.</source>
+        <target>En güncel Liquid <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> blokları için blok yüksekliği, blok büyüklüğü vb temel dataları gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.ts</context>
           <context context-type="linenumber">74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.blocks" datatype="html">
-        <source>See the most recent Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blocks along with basic stats such as block height, block reward, block size, and more.</source>
-        <target>En güncel Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blokları için blok yüksekliği, blok büyüklüğü vb temel dataları gör.</target>
+        <source>See the most recent Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> blocks along with basic stats such as block height, block reward, block size, and more.</source>
+        <target>En güncel Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> blokları için blok yüksekliği, blok büyüklüğü vb temel dataları gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -4909,8 +4910,8 @@
         <note priority="1" from="description">difficulty-box.remaining</note>
       </trans-unit>
       <trans-unit id="1bb6965f8e1bbe40c076528ffd841da86f57f119" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>blocks<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/> bloğun <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>&quot;</target>
+        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" />blocks<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;blocks&lt;/span&gt;&lt;/ng-template&gt;             &lt;ng-" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" /> bloğun <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />"</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-mining/difficulty-mining.component.html</context>
           <context context-type="linenumber">10,11</context>
@@ -4934,8 +4935,8 @@
         <note priority="1" from="description">shared.blocks</note>
       </trans-unit>
       <trans-unit id="b7ef3894d9b6f157c400ddc937c70c9881ecd896" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;block&lt;/span&gt;&lt;/ng-template&gt;           &lt;/div&gt;"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>block<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;block&lt;/span&gt;&lt;/ng-template&gt;           &lt;/div&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;"/>blok<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;block&lt;/span&gt;&lt;/ng-template&gt;           &lt;/div&gt;" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" />block<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="INTERPOLATION" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;block&lt;/span&gt;&lt;/ng-template&gt;           &lt;/div&gt;" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;shared-block&quot;&gt;" />blok<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-mining/difficulty-mining.component.html</context>
           <context context-type="linenumber">11,12</context>
@@ -4999,8 +5000,8 @@
         <note priority="1" from="description">difficulty-box.next-halving</note>
       </trans-unit>
       <trans-unit id="0c65c3ee0ce537e507e0b053b479012e5803d2cf" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks expected</source>
-        <target>beklenen blok: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks expected</source>
+        <target>beklenen blok: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">50</context>
@@ -5008,8 +5009,8 @@
         <note priority="1" from="description">difficulty-box.expected-blocks</note>
       </trans-unit>
       <trans-unit id="ec9f27d00a7778cd1cfe1806105d2ca3314fa506" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block expected</source>
-        <target>beklenen blok: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block expected</source>
+        <target>beklenen blok: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">51</context>
@@ -5017,8 +5018,8 @@
         <note priority="1" from="description">difficulty-box.expected-block</note>
       </trans-unit>
       <trans-unit id="b89cb92adf0a831d4a263ecdba02139abbda02ae" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks mined</source>
-        <target>kazılan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks mined</source>
+        <target>kazılan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">52</context>
@@ -5026,8 +5027,8 @@
         <note priority="1" from="description">difficulty-box.mined-blocks</note>
       </trans-unit>
       <trans-unit id="4f7e823fd45c6def13a3f15f678888c7fe254fa5" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block mined</source>
-        <target>kazılan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block mined</source>
+        <target>kazılan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">53</context>
@@ -5035,8 +5036,8 @@
         <note priority="1" from="description">difficulty-box.mined-block</note>
       </trans-unit>
       <trans-unit id="229dfb17b342aa8b9a1db27557069445ea1a7051" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks remaining</source>
-        <target>kalan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks remaining</source>
+        <target>kalan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">54</context>
@@ -5044,8 +5045,8 @@
         <note priority="1" from="description">difficulty-box.remaining-blocks</note>
       </trans-unit>
       <trans-unit id="13ff0d092caf85cd23815f0235e316dc3a6d1bbe" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block remaining</source>
-        <target>kalan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}"/></target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block remaining</source>
+        <target>kalan bloklar: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">55</context>
@@ -5053,8 +5054,8 @@
         <note priority="1" from="description">difficulty-box.remaining-block</note>
       </trans-unit>
       <trans-unit id="4f78348af343fb64016891d67b53bdab473f9dbf" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks ahead</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok önde</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks ahead</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> blok önde</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">56</context>
@@ -5062,8 +5063,8 @@
         <note priority="1" from="description">difficulty-box.blocks-ahead</note>
       </trans-unit>
       <trans-unit id="15c5f3475966bf3be381378b046a65849f0f6bb6" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block ahead</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok önde</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block ahead</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> blok önde</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">57</context>
@@ -5071,8 +5072,8 @@
         <note priority="1" from="description">difficulty-box.block-ahead</note>
       </trans-unit>
       <trans-unit id="697b8cb1caaf1729809bc5c065d4dd873810550a" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks behind</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok geride</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks behind</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> blok geride</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">58</context>
@@ -5080,8 +5081,8 @@
         <note priority="1" from="description">difficulty-box.blocks-behind</note>
       </trans-unit>
       <trans-unit id="32137887e3f5a25b3a016eb03357f4e363fccb0b" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> block behind</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> blok geride</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block behind</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> blok geride</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">59</context>
@@ -5502,8 +5503,8 @@
         <note priority="1" from="description">mining.hashrate</note>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
-        <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
-        <target>Bitcoin ağı <x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> için hashrate ve zorluk seviyelerinin değişimini zaman içinde gör.</target>
+        <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)" /> network visualized over time.</source>
+        <target>Bitcoin ağı <x id="PH" equiv-text="seoDescriptionNetwork(this.network)" /> için hashrate ve zorluk seviyelerinin değişimini zaman içinde gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
@@ -5990,24 +5991,24 @@
         <note priority="1" from="description">shared.as-of-block</note>
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
-        <source>See stats for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> transactions in the mempool: fee range, aggregate size, and more. Mempool blocks are updated in real-time as the network receives new transactions.</source>
-        <target>İşlemler <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> için mempool istatistiklerini göster: ücret aralığı, toplam büyüklük, ve fazlasını gör. Mempool blokları, ağa yeni işlem geldiğinde anlık olarak güncellenir. </target>
+        <source>See stats for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> transactions in the mempool: fee range, aggregate size, and more. Mempool blocks are updated in real-time as the network receives new transactions.</source>
+        <target>İşlemler <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> için mempool istatistiklerini göster: ücret aralığı, toplam büyüklük, ve fazlasını gör. Mempool blokları, ağa yeni işlem geldiğinde anlık olarak güncellenir. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mempool-block.stack.of.blocks" datatype="html">
-        <source>Stack of <x id="INTERPOLATION" equiv-text="blocksInBlock"/> mempool blocks</source>
-        <target><x id="INTERPOLATION" equiv-text="blocksInBlock"/> mempool blok yığını</target>
+        <source>Stack of <x id="INTERPOLATION" equiv-text="blocksInBlock" /> mempool blocks</source>
+        <target><x id="INTERPOLATION" equiv-text="blocksInBlock" /> mempool blok yığını</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="mempool-block.block.no" datatype="html">
-        <source>Mempool block <x id="INTERPOLATION" equiv-text="this.mempoolBlockIndex + 1"/></source>
-        <target>Mempool bloğu <x id="INTERPOLATION" equiv-text="this.mempoolBlockIndex + 1"/></target>
+        <source>Mempool block <x id="INTERPOLATION" equiv-text="this.mempoolBlockIndex + 1" /></source>
+        <target>Mempool bloğu <x id="INTERPOLATION" equiv-text="this.mempoolBlockIndex + 1" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">90</context>
@@ -6106,8 +6107,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="667d1fa0b03107009b84c29319f1393e93992788" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Mint<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Mint<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Mint<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;" /> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}" /> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;" /></source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Basım<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">3,5</context>
@@ -6115,8 +6116,8 @@
         <note priority="1" from="description">ord.mint-n-runes</note>
       </trans-unit>
       <trans-unit id="82fba6b80bb7d525e585eda53e8ae77784be7240" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Premine<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> (<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}"/>% of total supply)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Ön-basım<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> (toplam arzın %<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}"/>'i)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Premine<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;" /> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}" /> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" /> (<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}" />% of total supply)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Ön-basım<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;" /> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}" /> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" /> (toplam arzın %<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}" />'i)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">11,15</context>
@@ -6124,8 +6125,8 @@
         <note priority="1" from="description">ord.premine-n-runes</note>
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> için <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> işlenmesi</target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> için <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" /> işlenmesi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
@@ -6133,8 +6134,8 @@
         <note priority="1" from="description">ord.etch-rune</note>
       </trans-unit>
       <trans-unit id="10ed70ee6d9d9b753cd59c37cd1fed4a3089f882" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;" /></source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">28,29</context>
@@ -6353,8 +6354,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="312539377512157124" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="i"/> blocks</source>
-        <target><x id="INTERPOLATION" equiv-text="i"/> bloklar</target>
+        <source><x id="INTERPOLATION" equiv-text="i" /> blocks</source>
+        <target><x id="INTERPOLATION" equiv-text="i" /> bloklar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">171</context>
@@ -6373,8 +6374,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3666195172774554282" datatype="html">
-        <source>Other (<x id="PH" equiv-text="percentage"/>)</source>
-        <target>Diğer (<x id="PH" equiv-text="percentage"/>)</target>
+        <source>Other (<x id="PH" equiv-text="percentage" />)</source>
+        <target>Diğer (<x id="PH" equiv-text="percentage" />)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">190</context>
@@ -6443,8 +6444,8 @@
         <note priority="1" from="description">mining.tags</note>
       </trans-unit>
       <trans-unit id="meta.description.mining.pool" datatype="html">
-        <source>See mining pool stats for <x id="PH" equiv-text="poolStats.pool.name"/>: most recent mined blocks, hashrate over time, total block reward to date, known coinbase addresses, and more.</source>
-        <target>Madencilik havuzu istatistiklerini <x id="PH" equiv-text="poolStats.pool.name"/>: en son bulunan bloklar, hashrate'in zaman içindeki değişimi, bugüne kadarki toplam ödül miktarı, bilinen Coinbase adresleri vb gör.</target>
+        <source>See mining pool stats for <x id="PH" equiv-text="poolStats.pool.name" />: most recent mined blocks, hashrate over time, total block reward to date, known coinbase addresses, and more.</source>
+        <target>Madencilik havuzu istatistiklerini <x id="PH" equiv-text="poolStats.pool.name" />: en son bulunan bloklar, hashrate'in zaman içindeki değişimi, bugüne kadarki toplam ödül miktarı, bilinen Coinbase adresleri vb gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool-preview.component.ts</context>
           <context context-type="linenumber">89</context>
@@ -6828,8 +6829,8 @@
         <note priority="1" from="description">test-tx.rejection-reason</note>
       </trans-unit>
       <trans-unit id="meta.description.push-tx" datatype="html">
-        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's hash.</source>
-        <target>İşlem hashini kullanarak, işlemi <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> ağına yayınla.</target>
+        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network using the transaction's hash.</source>
+        <target>İşlem hashini kullanarak, işlemi <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ağına yayınla.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.ts</context>
           <context context-type="linenumber">59</context>
@@ -6858,8 +6859,8 @@
         <note priority="1" from="description">rbf.no-replacements-yet</note>
       </trans-unit>
       <trans-unit id="meta.description.rbf-list" datatype="html">
-        <source>See the most recent RBF replacements on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network, updated in real-time.</source>
-        <target>Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> ağı üzerindeki en yeni RBF değişimlerini gerçek zamanlı olarak görüntüle.</target>
+        <source>See the most recent RBF replacements on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network, updated in real-time.</source>
+        <target>Bitcoin <x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ağı üzerindeki en yeni RBF değişimlerini gerçek zamanlı olarak görüntüle.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-list/rbf-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -6911,8 +6912,8 @@
         <note priority="1" from="description">show-less</note>
       </trans-unit>
       <trans-unit id="ea7c261363dc5f6134b7bacba2a1ef97f4ff7859" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> remaining</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ x }}"/> kalan</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ x }}" /> remaining</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ x }}" /> kalan</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-timeline/rbf-timeline.component.html</context>
           <context context-type="linenumber">86</context>
@@ -7031,8 +7032,8 @@
         <note priority="1" from="description">search-form.search-title</note>
       </trans-unit>
       <trans-unit id="920339d7b35b44632c8ec42aa2bd2cf5929e7619" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Block Height</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Blok Yüksekliği</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Block Height</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Blok Yüksekliği</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">3</context>
@@ -7040,8 +7041,8 @@
         <note priority="1" from="description">search.bitcoin-block-height</note>
       </trans-unit>
       <trans-unit id="c6a48e5ee096fba914fb4927d16a5d2e0941e0fe" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Transaction</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> İşlem</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Transaction</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> İşlem</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">21</context>
@@ -7049,8 +7050,8 @@
         <note priority="1" from="description">search.bitcoin-transaction</note>
       </trans-unit>
       <trans-unit id="1f8b2a9743e513d1e645f6986bae2130e914c34b" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Address</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}"/>Adres</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Address</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}" />Adres</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">27</context>
@@ -7062,8 +7063,8 @@
         <note priority="1" from="description">search.bitcoin-address</note>
       </trans-unit>
       <trans-unit id="ba18d02396f5998bb46cd5d771de107bfab6e177" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Block</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Blok</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Block</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">33</context>
@@ -7071,8 +7072,8 @@
         <note priority="1" from="description">search.bitcoin-block</note>
       </trans-unit>
       <trans-unit id="1221b439226cb36736030a9398c7c3a07d61bdb4" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Addresses</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}"/> Adresler</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Addresses</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ networkName }}" /> Adresler</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">39</context>
@@ -7116,8 +7117,8 @@
         <note priority="1" from="description">search.liquid-asset</note>
       </trans-unit>
       <trans-unit id="2abc4d0d3ae0b49fa9e94a2efb8c2e1a47e680f4" datatype="html">
-        <source>Go to &quot;<x id="INTERPOLATION" equiv-text="{{ x }}"/>&quot;</source>
-        <target>&quot;<x id="INTERPOLATION" equiv-text="{{ x }}"/>&quot; 'e git</target>
+        <source>Go to "<x id="INTERPOLATION" equiv-text="{{ x }}" />"</source>
+        <target>"<x id="INTERPOLATION" equiv-text="{{ x }}" />" 'e git</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">93</context>
@@ -7254,8 +7255,8 @@
         <note priority="1" from="description">chain-tips.invalid</note>
       </trans-unit>
       <trans-unit id="e5d635bb34351542376d19963ec6bd1d1e6dc9da" datatype="html">
-        <source>Depth <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}"/></source>
-        <target>Derinlik <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}"/></target>
+        <source>Depth <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}" /></source>
+        <target>Derinlik <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">20,21</context>
@@ -7263,8 +7264,8 @@
         <note priority="1" from="description">chain-tips.depth</note>
       </trans-unit>
       <trans-unit id="3181f08827514236ffd311786fe8ae62f0b361ab" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w"/>Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w"/>Eskimiş<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w" />Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w" />Eskimiş<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">26,27</context>
@@ -7272,8 +7273,8 @@
         <note priority="1" from="description">chain-tips.stale-block</note>
       </trans-unit>
       <trans-unit id="07d1fa61f7c289626ee8abdaa9a4f45157a35460" datatype="html">
-        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b"/>Winning<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b"/>Kazanan<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b" />Winning<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b" />Kazanan<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">73,74</context>
@@ -7298,8 +7299,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
-        <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network.</source>
-        <target>Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> ağındaki en güncel eskimiş zincir uçlarını gör.</target>
+        <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network.</source>
+        <target>Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ağındaki en güncel eskimiş zincir uçlarını gör.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -7389,8 +7390,8 @@
         <note priority="1" from="description">master-page.blocks</note>
       </trans-unit>
       <trans-unit id="20f7365369829a33d386606ac91e8347e51aefa1" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> levels remaining</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ x }}"/> seviye kaldı</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ x }}" /> levels remaining</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ x }}" /> seviye kaldı</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/taproot-address-scripts/taproot-address-scripts.component.html</context>
           <context context-type="linenumber">19</context>
@@ -7597,8 +7598,8 @@
         <note priority="1" from="description">accelerator.show-more-details</note>
       </trans-unit>
       <trans-unit id="bisq.transaction.browser-title" datatype="html">
-        <source>Transaction: <x id="INTERPOLATION" equiv-text="this.txId"/></source>
-        <target>İşlem: <x id="INTERPOLATION" equiv-text="this.txId"/></target>
+        <source>Transaction: <x id="INTERPOLATION" equiv-text="this.txId" /></source>
+        <target>İşlem: <x id="INTERPOLATION" equiv-text="this.txId" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.ts</context>
           <context context-type="linenumber">446</context>
@@ -7613,8 +7614,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.transaction" datatype="html">
-        <source>Get real-time status, addresses, fees, script info, and more for <x id="PH" equiv-text="network"/><x id="PH_1" equiv-text="seoDescription"/> transaction with txid <x id="PH_2" equiv-text="this.txId"/>.</source>
-        <target>İşlemler <x id="PH" equiv-text="network"/><x id="PH_1" equiv-text="seoDescription"/> ve işlem id'si <x id="PH_2" equiv-text="this.txId"/> için anlık durum, adresler, ücretler, script vb bilgileri çek.</target>
+        <source>Get real-time status, addresses, fees, script info, and more for <x id="PH" equiv-text="network" /><x id="PH_1" equiv-text="seoDescription" /> transaction with txid <x id="PH_2" equiv-text="this.txId" />.</source>
+        <target>İşlemler <x id="PH" equiv-text="network" /><x id="PH_1" equiv-text="seoDescription" /> ve işlem id'si <x id="PH_2" equiv-text="this.txId" /> için anlık durum, adresler, ücretler, script vb bilgileri çek.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.ts</context>
           <context context-type="linenumber">450</context>
@@ -7845,8 +7846,8 @@
         <note priority="1" from="description">transaction.fetch-prevout-data</note>
       </trans-unit>
       <trans-unit id="30672d37c5c8491965bb7b78ad8baba58accec06" datatype="html">
-        <source>Error decoding transaction, reason: <x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
-        <target>İşlem çözümlenirken hata oluştu, nedeni: <x id="INTERPOLATION" equiv-text="{{ error }}"/></target>
+        <source>Error decoding transaction, reason: <x id="INTERPOLATION" equiv-text="{{ error }}" /></source>
+        <target>İşlem çözümlenirken hata oluştu, nedeni: <x id="INTERPOLATION" equiv-text="{{ error }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">16,18</context>
@@ -8037,16 +8038,16 @@
         <note priority="1" from="meaning">transaction.sigops</note>
       </trans-unit>
       <trans-unit id="meta.description.preview-tx" datatype="html">
-        <source>Preview a transaction to the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's raw hex data.</source>
-        <target>İşlemin ham hex data'sını kullanarak Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> ağı işlemini önizle.</target>
+        <source>Preview a transaction to the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network using the transaction's raw hex data.</source>
+        <target>İşlemin ham hex data'sını kullanarak Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ağı işlemini önizle.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.ts</context>
           <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="df5fd5288dc0b13ce611a0c857e97baee9595e67" datatype="html">
-        <source> This transaction ID appears twice in the blockchain as the coinbase of blocks <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, due to a bug later mitigated by <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
-        <target>Bu işlem ID'si (numarası) blokzincirde, BIP-30'daki <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/> hatasından dolayı <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ve <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/> <x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>  olacak şekilde iki kere gözükmektedir. </target>
+        <source> This transaction ID appears twice in the blockchain as the coinbase of blocks <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;" /><x id="INTERPOLATION" equiv-text="locks[0] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="cks[1] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />, due to a bug later mitigated by <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. </source>
+        <target>Bu işlem ID'si (numarası) blokzincirde, BIP-30'daki <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />, <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" /> hatasından dolayı <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;" /><x id="INTERPOLATION" equiv-text="locks[0] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> ve <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;" /> <x id="INTERPOLATION_1" equiv-text="cks[1] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />  olacak şekilde iki kere gözükmektedir. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">40,42</context>
@@ -8131,7 +8132,7 @@
       </trans-unit>
       <trans-unit id="5de25175982d51c72d25bd79933e7b412d51e343" datatype="html">
         <source>Peg-in</source>
-        <target>Peg-in</target>
+        <target>Zincire aktarma</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">92</context>
@@ -8140,7 +8141,7 @@
       </trans-unit>
       <trans-unit id="81f138da4f955badade9fb60e0e2248627fc647f" datatype="html">
         <source>Inscription</source>
-        <target>Kaynak Yazıt</target>
+        <target>Yazıt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">123</context>
@@ -8169,7 +8170,7 @@
       </trans-unit>
       <trans-unit id="c64b73564fd858ee5a4f73040893c9d625ca56ad" datatype="html">
         <source>Witness</source>
-        <target>Witness</target>
+        <target>Tanık</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">173</context>
@@ -8249,8 +8250,8 @@
         <note priority="1" from="description">transactions-list.previous-output-type</note>
       </trans-unit>
       <trans-unit id="9fb28e77d5963f2275397f2f9cee54f32942aeeb" datatype="html">
-        <source>Peg-out to <x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;pegOutLink&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-contain"/></source>
-        <target><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;pegOutLink&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-contain"/> 'ye çıkar</target>
+        <source>Peg-out to <x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;pegOutLink&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-contain" /></source>
+        <target><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;pegOutLink&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-contain" /> 'ye çıkar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">345,346</context>
@@ -8516,8 +8517,8 @@
         <note priority="1" from="description">shared.n-blocks-later</note>
       </trans-unit>
       <trans-unit id="25d58cd5c18fd9c1c89d6062d67dcc2482161410" datatype="html">
-        <source>This transaction saved <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}"/>% on fees by using native SegWit</source>
-        <target>Bu işlem Native SegWit kullandığı için %<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}"/> ücret tasarrufu sağladı</target>
+        <source>This transaction saved <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}" />% on fees by using native SegWit</source>
+        <target>Bu işlem Native SegWit kullandığı için %<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}" /> ücret tasarrufu sağladı</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">2</context>
@@ -8543,8 +8544,8 @@
         <note priority="1" from="meaning">tx-features.tag.segwit</note>
       </trans-unit>
       <trans-unit id="b6a3f6afdac6873e2d261647d834c02c91376893" datatype="html">
-        <source>This transaction saved <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}"/>% on fees by using SegWit and could save <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}"/>% more by fully upgrading to native SegWit</source>
-        <target>Bu işlem SegWit kullandığı için %1<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}"/>ücret tasarrufu sağladı, Native SegWit kullanımı ile %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}"/> daha tasarruf edilebilir</target>
+        <source>This transaction saved <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}" />% on fees by using SegWit and could save <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}" />% more by fully upgrading to native SegWit</source>
+        <target>Bu işlem SegWit kullandığı için %1<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedSegwitGains * 100 | number:  '1.0-0' }}" />ücret tasarrufu sağladı, Native SegWit kullanımı ile %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}" /> daha tasarruf edilebilir</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">4</context>
@@ -8552,8 +8553,8 @@
         <note priority="1" from="description">ngbTooltip about double segwit gains</note>
       </trans-unit>
       <trans-unit id="a67530e246368aa7e5d010061fd84c3c4fe755c2" datatype="html">
-        <source>This transaction could save <x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}"/>% on fees by upgrading to native SegWit or <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialP2shSegwitGains * 100 | number:  '1.0-0' }}"/>% by upgrading to SegWit-P2SH</source>
-        <target>Bu işlem SegWit kullanarak %<x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}"/> ücret tasarrufu sağlayabilirdi ya da Native SegWit kullanımı ile %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialP2shSegwitGains * 100 | number:  '1.0-0' }}"/>  tasarruf edilebilirdi</target>
+        <source>This transaction could save <x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}" />% on fees by upgrading to native SegWit or <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialP2shSegwitGains * 100 | number:  '1.0-0' }}" />% by upgrading to SegWit-P2SH</source>
+        <target>Bu işlem SegWit kullanarak %<x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialSegwitGains * 100 | number : '1.0-0' }}" /> ücret tasarrufu sağlayabilirdi ya da Native SegWit kullanımı ile %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialP2shSegwitGains * 100 | number:  '1.0-0' }}" />  tasarruf edilebilirdi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">6</context>
@@ -8561,8 +8562,8 @@
         <note priority="1" from="description">ngbTooltip about missed out gains</note>
       </trans-unit>
       <trans-unit id="17e9c05e053cbd29d3835d8ecb19508d0f07241b" datatype="html">
-        <source>This transaction uses Taproot and thereby saved at least <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}"/>% on fees</source>
-        <target>Bu işlem Taproot kullanıyor ve en az %<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}"/> ücret tasarrufu sağladı</target>
+        <source>This transaction uses Taproot and thereby saved at least <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}" />% on fees</source>
+        <target>Bu işlem Taproot kullanıyor ve en az %<x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}" /> ücret tasarrufu sağladı</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">12</context>
@@ -8570,8 +8571,8 @@
         <note priority="1" from="description">Tooltip about fees saved with taproot</note>
       </trans-unit>
       <trans-unit id="47b821c7df420c96de0b22844a88c04d52628540" datatype="html">
-        <source>This transaction uses Taproot and already saved at least <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}"/>% on fees, but could save an additional <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}"/>% by fully using Taproot</source>
-        <target>Bu işlem Taproot kullanıyor ve en azından % <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}"/> işlem ücreti tasarrufu sağladı, tümü ile Taproot kullanması halinde %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}"/> daha tasarruf sağlayabilirdi. </target>
+        <source>This transaction uses Taproot and already saved at least <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}" />% on fees, but could save an additional <x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}" />% by fully using Taproot</source>
+        <target>Bu işlem Taproot kullanıyor ve en azından % <x id="INTERPOLATION" equiv-text="{{ segwitGains.realizedTaprootGains * 100 | number: '1.0-0' }}" /> işlem ücreti tasarrufu sağladı, tümü ile Taproot kullanması halinde %<x id="INTERPOLATION_1" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}" /> daha tasarruf sağlayabilirdi. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">14</context>
@@ -8579,8 +8580,8 @@
         <note priority="1" from="description">Tooltip about fees that saved and could be saved with taproot</note>
       </trans-unit>
       <trans-unit id="aa31fc4d29f35b2fd36080bb6ff84be8eaab66fd" datatype="html">
-        <source>This transaction could save <x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}"/>% on fees by using Taproot</source>
-        <target>Bu işlem Taproot kullanarak %<x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}"/> işlem ücreti tasarrufu sağlayabilirdi</target>
+        <source>This transaction could save <x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}" />% on fees by using Taproot</source>
+        <target>Bu işlem Taproot kullanarak %<x id="INTERPOLATION" equiv-text="{{ segwitGains.potentialTaprootGains * 100 | number: '1.0-0' }}" /> işlem ücreti tasarrufu sağlayabilirdi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">16</context>
@@ -8634,8 +8635,8 @@
         <note priority="1" from="meaning">tx-fee-rating.optimal</note>
       </trans-unit>
       <trans-unit id="60601e02e7c1f6c4dbabd0ef0bb8946003db8dec" datatype="html">
-        <source>Only ~<x id="INTERPOLATION" equiv-text="{{ medianFeeNeeded | feeRounding }}"/> sat/vB was needed to get into this block</source>
-        <target>Bu bloğa dahil olmak için yaklaşık ~ olarak sadece <x id="INTERPOLATION" equiv-text="{{ medianFeeNeeded | feeRounding }}"/> sat/vB gerekli</target>
+        <source>Only ~<x id="INTERPOLATION" equiv-text="{{ medianFeeNeeded | feeRounding }}" /> sat/vB was needed to get into this block</source>
+        <target>Bu bloğa dahil olmak için yaklaşık ~ olarak sadece <x id="INTERPOLATION" equiv-text="{{ medianFeeNeeded | feeRounding }}" /> sat/vB gerekli</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-fee-rating/tx-fee-rating.component.html</context>
           <context context-type="linenumber">2</context>
@@ -8647,8 +8648,8 @@
         <note priority="1" from="description">tx-fee-rating.warning-tooltip</note>
       </trans-unit>
       <trans-unit id="0fa66b0c410bef320d3f370d7c98c51754b5f28f" datatype="html">
-        <source>Overpaid <x id="INTERPOLATION" equiv-text="{{ overpaidTimes }}"/>x</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ overpaidTimes }}"/>x Fazla ödendi</target>
+        <source>Overpaid <x id="INTERPOLATION" equiv-text="{{ overpaidTimes }}" />x</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ overpaidTimes }}" />x Fazla ödendi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-fee-rating/tx-fee-rating.component.html</context>
           <context context-type="linenumber">2</context>
@@ -8688,8 +8689,8 @@
         <note priority="1" from="description">wallet.balance-usd</note>
       </trans-unit>
       <trans-unit id="wallet.component.browser-title" datatype="html">
-        <source>Wallet: <x id="INTERPOLATION" equiv-text="walletName"/></source>
-        <target>Cüzdan: <x id="INTERPOLATION" equiv-text="walletName"/></target>
+        <source>Wallet: <x id="INTERPOLATION" equiv-text="walletName" /></source>
+        <target>Cüzdan: <x id="INTERPOLATION" equiv-text="walletName" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">150</context>
@@ -8700,8 +8701,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
-        <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
-        <target><x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> cüzdan<x id="INTERPOLATION" equiv-text="walletName"/> için mempool işlemlerini, gerçekleşen işlemleri ve daha fazlasını görüntüle.</target>
+        <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> wallet <x id="INTERPOLATION" equiv-text="walletName" />.</source>
+        <target><x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> cüzdan<x id="INTERPOLATION" equiv-text="walletName" /> için mempool işlemlerini, gerçekleşen işlemleri ve daha fazlasını görüntüle.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">151</context>
@@ -8764,8 +8765,8 @@
         <note priority="1" from="description">dashboard.lbtc-supply-against-btc-holdings</note>
       </trans-unit>
       <trans-unit id="999bb1a0150c2815a6b4dd64a1850e763603e525" datatype="html">
-        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="mempool.space mer"/>mempool.space merely provides data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> It cannot help you with retrieving funds, wallet issues, etc.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ"/>For any such requests, you need to get in touch with the entity that helped make the transaction (wallet software, exchange company, etc).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
-        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="mempool.space mer"/>mempool.space Bitcoin ağı hakkında sadece bilgi sağlar. <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>kaybettiğiniz fonları, cüzdanlar ile yaşadığınız sorunları çözmekte yardımcı olamaz. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ"/>İşlemler ile ilgili sorun yaşarsanız bu işlemi gerçekleştirdiğiniz entite ile iletişime geçmeniz gerekir. (cüzdan yazılımı, borsa vb)<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></target>
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="mempool.space mer" />mempool.space merely provides data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot help you with retrieving funds, wallet issues, etc.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ" />For any such requests, you need to get in touch with the entity that helped make the transaction (wallet software, exchange company, etc).<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="mempool.space mer" />mempool.space Bitcoin ağı hakkında sadece bilgi sağlar. <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />kaybettiğiniz fonları, cüzdanlar ile yaşadığınız sorunları çözmekte yardımcı olamaz. <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For any such requ" />İşlemler ile ilgili sorun yaşarsanız bu işlemi gerçekleştirdiğiniz entite ile iletişime geçmeniz gerekir. (cüzdan yazılımı, borsa vb)<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/api-docs/api-docs.component.html</context>
           <context context-type="linenumber">15,16</context>
@@ -8891,8 +8892,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>mempool.space REST API servisi dökümantasyonu: adresler ile ilgili bilgi al, işlemler, bloklar, ücretler, madencilik, Lightning ağı ve daha fazlası. </target>
+        <source>Documentation for the btc.tx.taxi REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
+        <target>btc.tx.taxi REST API belgeleri: adresler, işlemler, bloklar, ücretler, madencilik ve Lightning ağı hakkında bilgi alın.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8915,8 +8916,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Mempool.space Websoket API servisi için, bloklardan gerçek-zamanlı bilgi çek, mempoollar, işlemler, adresler vb talepler için dökümantasyon. </target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source><target>btc.tx.taxi WebSocket API belgeleri: Bitcoin blokları, mempool, işlemler ve adresler için gerçek zamanlı güncellemeler alın.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -9010,7 +9010,7 @@
       </trans-unit>
       <trans-unit id="055060668d0b9902c37abfb6168a08a36eba4496" datatype="html">
         <source>Min HTLC</source>
-        <target>Min HTLC</target>
+        <target>Asgari HTLC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">57</context>
@@ -9019,7 +9019,7 @@
       </trans-unit>
       <trans-unit id="c3d94c1a5aef6211f4a902027bd08540d7222b0d" datatype="html">
         <source>Max HTLC</source>
-        <target>Max HTLC</target>
+        <target>Azami HTLC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">63</context>
@@ -9036,8 +9036,8 @@
         <note priority="1" from="description">lightning.timelock-delta</note>
       </trans-unit>
       <trans-unit id="205c1b86ac1cc419c4d0cca51fdde418c4ffdc20" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> channels</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> kanallar</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> channels</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> kanallar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">79</context>
@@ -9248,8 +9248,8 @@
         <note priority="1" from="description">lightning.ppm</note>
       </trans-unit>
       <trans-unit id="meta.description.lightning.channel" datatype="html">
-        <source>Overview for Lightning channel <x id="PH" equiv-text="params.get('short_id')"/>. See channel capacity, the Lightning nodes involved, related on-chain transactions, and more.</source>
-        <target>Lightning Kanalı <x id="PH" equiv-text="params.get('short_id')"/> için genel bakış sağlar. Kanal kapasitesi, bağlantılı Lightning nodeları, alakalı zincir üstü işlemler vb veriler. </target>
+        <source>Overview for Lightning channel <x id="PH" equiv-text="params.get('short_id')" />. See channel capacity, the Lightning nodes involved, related on-chain transactions, and more.</source>
+        <target>Lightning Kanalı <x id="PH" equiv-text="params.get('short_id')" /> için genel bakış sağlar. Kanal kapasitesi, bağlantılı Lightning nodeları, alakalı zincir üstü işlemler vb veriler. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-preview.component.ts</context>
           <context context-type="linenumber">40</context>
@@ -9354,8 +9354,8 @@
         <note priority="1" from="description">lightning.closing-transaction</note>
       </trans-unit>
       <trans-unit id="6008566722612122663" datatype="html">
-        <source>Channel: <x id="PH" equiv-text="value.short_id"/></source>
-        <target>Kanal: <x id="PH" equiv-text="value.short_id"/></target>
+        <source>Channel: <x id="PH" equiv-text="value.short_id" /></source>
+        <target>Kanal: <x id="PH" equiv-text="value.short_id" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel.component.ts</context>
           <context context-type="linenumber">38</context>
@@ -9998,8 +9998,8 @@
         <note priority="1" from="description">country</note>
       </trans-unit>
       <trans-unit id="meta.description.lightning.node" datatype="html">
-        <source>Overview for the Lightning network node named <x id="PH" equiv-text="node.alias"/>. See channels, capacity, location, fee stats, and more.</source>
-        <target><x id="PH" equiv-text="node.alias"/> adındaki Lightning ağı nodu için genel bakış. Kanalları, kapasiteyi, lokasyonu, ücret bilgileri ve daha fazlasını gör. </target>
+        <source>Overview for the Lightning network node named <x id="PH" equiv-text="node.alias" />. See channels, capacity, location, fee stats, and more.</source>
+        <target><x id="PH" equiv-text="node.alias" /> adındaki Lightning ağı nodu için genel bakış. Kanalları, kapasiteyi, lokasyonu, ücret bilgileri ve daha fazlasını gör. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node-preview.component.ts</context>
           <context context-type="linenumber">55</context>
@@ -10161,8 +10161,8 @@
         <note priority="1" from="description">lightning.open-channels</note>
       </trans-unit>
       <trans-unit id="2519445964020754921" datatype="html">
-        <source>Node: <x id="PH" equiv-text="node.alias"/></source>
-        <target>Node: <x id="PH" equiv-text="node.alias"/></target>
+        <source>Node: <x id="PH" equiv-text="node.alias" /></source>
+        <target>Düğüm: <x id="PH" equiv-text="node.alias"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -10308,8 +10308,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5222540403093176126" datatype="html">
-        <source><x id="PH" equiv-text="nodeCount"/> nodes</source>
-        <target><x id="PH" equiv-text="nodeCount"/> düğüm</target>
+        <source><x id="PH" equiv-text="nodeCount" /> nodes</source>
+        <target><x id="PH" equiv-text="nodeCount" /> düğüm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.ts</context>
           <context context-type="linenumber">105</context>
@@ -10328,16 +10328,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7032954508645880700" datatype="html">
-        <source><x id="PH" equiv-text="this.amountShortenerPipe.transform(country.capacity / 100000000, 2)"/> BTC capacity</source>
-        <target><x id="PH" equiv-text="this.amountShortenerPipe.transform(country.capacity / 100000000, 2)"/> BTC kapasite</target>
+        <source><x id="PH" equiv-text="this.amountShortenerPipe.transform(country.capacity / 100000000, 2)" /> BTC capacity</source>
+        <target><x id="PH" equiv-text="this.amountShortenerPipe.transform(country.capacity / 100000000, 2)" /> BTC kapasite</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country-chart/nodes-per-country-chart.component.ts</context>
           <context context-type="linenumber">106</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7ede3edfacd291eb9db08e11845d9efdf197f417" datatype="html">
-        <source>Lightning nodes in <x id="INTERPOLATION" equiv-text="{{ country?.name }}"/></source>
-        <target><x id="INTERPOLATION" equiv-text="{{ country?.name }}"/>'deki Lightning Node'ları</target>
+        <source>Lightning nodes in <x id="INTERPOLATION" equiv-text="{{ country?.name }}" /></source>
+        <target><x id="INTERPOLATION" equiv-text="{{ country?.name }}" />'deki Lightning Node'ları</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country/nodes-per-country.component.html</context>
           <context context-type="linenumber">3,4</context>
@@ -10363,16 +10363,16 @@
         <note priority="1" from="description">lightning.top-isp</note>
       </trans-unit>
       <trans-unit id="7246059109648045954" datatype="html">
-        <source>Lightning nodes in <x id="PH" equiv-text="response.country.en"/></source>
-        <target><x id="PH" equiv-text="response.country.en"/> 'deki Lightning Node'ları</target>
+        <source>Lightning nodes in <x id="PH" equiv-text="response.country.en" /></source>
+        <target><x id="PH" equiv-text="response.country.en" /> 'deki Lightning Node'ları</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country/nodes-per-country.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.lightning.nodes-country" datatype="html">
-        <source>Explore all the Lightning nodes hosted in <x id="PH" equiv-text="response.country.en"/> and see an overview of each node's capacity, number of open channels, and more.</source>
-        <target><x id="PH" equiv-text="response.country.en"/> de çalıştırılan bütün Lightning nodeları içn node kapasitesi, açık node sayısı vb bilgileri incele.</target>
+        <source>Explore all the Lightning nodes hosted in <x id="PH" equiv-text="response.country.en" /> and see an overview of each node's capacity, number of open channels, and more.</source>
+        <target><x id="PH" equiv-text="response.country.en" /> de çalıştırılan bütün Lightning nodeları içn node kapasitesi, açık node sayısı vb bilgileri incele.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country/nodes-per-country.component.ts</context>
           <context context-type="linenumber">45</context>
@@ -10462,8 +10462,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3627306100664959238" datatype="html">
-        <source><x id="PH" equiv-text="this.amountShortenerPipe.transform(isp[2] / 100000000, 2)"/> BTC</source>
-        <target><x id="PH" equiv-text="this.amountShortenerPipe.transform(isp[2] / 100000000, 2)"/> BTC</target>
+        <source><x id="PH" equiv-text="this.amountShortenerPipe.transform(isp[2] / 100000000, 2)" /> BTC</source>
+        <target><x id="PH" equiv-text="this.amountShortenerPipe.transform(isp[2] / 100000000, 2)" /> BTC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.ts</context>
           <context context-type="linenumber">165</context>
@@ -10505,8 +10505,8 @@
         <note priority="1" from="description">lightning.top-node</note>
       </trans-unit>
       <trans-unit id="5735693498020397727" datatype="html">
-        <source>Lightning nodes on ISP: <x id="PH" equiv-text="response.isp"/> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp"/>]</source>
-        <target>ISP üzerindeki Lightning Node'ları: <x id="PH" equiv-text="response.isp"/>[AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp"/>]</target>
+        <source>Lightning nodes on ISP: <x id="PH" equiv-text="response.isp" /> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />]</source>
+        <target>ISP üzerindeki Lightning Node'ları: <x id="PH" equiv-text="response.isp" />[AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />]</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.ts</context>
           <context context-type="linenumber">47</context>
@@ -10517,8 +10517,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.lightning.nodes-isp" datatype="html">
-        <source>Browse all Bitcoin Lightning nodes using the <x id="PH" equiv-text="response.isp"/> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp"/>] ISP and see aggregate stats like total number of nodes, total capacity, and more for the ISP.</source>
-        <target><x id="PH" equiv-text="response.isp"/> ISP [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp"/>] kulanan bütün Lightning nodelarını ve onların toplam node sayısı, toplam kapasites vb görüntüle. </target>
+        <source>Browse all Bitcoin Lightning nodes using the <x id="PH" equiv-text="response.isp" /> [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />] ISP and see aggregate stats like total number of nodes, total capacity, and more for the ISP.</source>
+        <target><x id="PH" equiv-text="response.isp" /> ISP [AS<x id="PH_1" equiv-text="this.route.snapshot.params.isp" />] kulanan bütün Lightning nodelarını ve onların toplam node sayısı, toplam kapasites vb görüntüle. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -10529,8 +10529,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="d82f436f033a7d81680b8430275f94dda530151c" datatype="html">
-        <source>Lightning nodes on ISP: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}"/></source>
-        <target>ISP üzerindeki Lightning Node'ları: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}"/></target>
+        <source>Lightning nodes on ISP: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}" /></source>
+        <target>ISP üzerindeki Lightning Node'ları: <x id="INTERPOLATION" equiv-text="{{ isp?.name }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp.component.html</context>
           <context context-type="linenumber">2,4</context>
@@ -10654,8 +10654,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-since" datatype="html">
-        <source><x id="DATE" equiv-text="dateStrings.i18nYear"/> ago</source>
-        <target><x id="DATE" equiv-text="dateStrings.i18nYear"/> önce</target>
+        <source><x id="DATE" equiv-text="dateStrings.i18nYear" /> ago</source>
+        <target><x id="DATE" equiv-text="dateStrings.i18nYear" /> önce</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">129</context>
@@ -10714,8 +10714,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-until" datatype="html">
-        <source>In ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
-        <target>Yaklaşık <x id="DATE" equiv-text="dateStrings.i18nYear"/></target>
+        <source>In ~<x id="DATE" equiv-text="dateStrings.i18nYear" /></source>
+        <target>Yaklaşık <x id="DATE" equiv-text="dateStrings.i18nYear" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">152</context>
@@ -10774,8 +10774,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-within" datatype="html">
-        <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
-        <target>~<x id="DATE" equiv-text="dateStrings.i18nYear"/> içinde </target>
+        <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear" /></source>
+        <target>~<x id="DATE" equiv-text="dateStrings.i18nYear" /> içinde </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">175</context>
@@ -10834,8 +10834,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-span" datatype="html">
-        <source>After <x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
-        <target><x id="DATE" equiv-text="dateStrings.i18nYear"/> sonrası</target>
+        <source>After <x id="DATE" equiv-text="dateStrings.i18nYear" /></source>
+        <target><x id="DATE" equiv-text="dateStrings.i18nYear" /> sonrası</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">198</context>
@@ -10894,8 +10894,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="time-before" datatype="html">
-        <source><x id="DATE" equiv-text="dateStrings.i18nYear"/> before</source>
-        <target><x id="DATE" equiv-text="dateStrings.i18nYear"/> önce</target>
+        <source><x id="DATE" equiv-text="dateStrings.i18nYear" /> before</source>
+        <target><x id="DATE" equiv-text="dateStrings.i18nYear" /> önce</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">221</context>
@@ -10999,8 +10999,8 @@
         <note priority="1" from="description">address.bare-multisig</note>
       </trans-unit>
       <trans-unit id="8e623d3cfecb7c560c114390db53c1f430ffd0de" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmation</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> onay</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> confirmation</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> onay</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">4</context>
@@ -11009,8 +11009,8 @@
         <note priority="1" from="meaning">shared.confirmation-count.singular</note>
       </trans-unit>
       <trans-unit id="bc5b0a2631f0b7bc71aaec6aa6f01af21f9a80d4" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> confirmations</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}"/> onaylar</target>
+        <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> confirmations</source>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> onaylar</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/confirmations/confirmations.component.html</context>
           <context context-type="linenumber">5</context>
@@ -11295,8 +11295,8 @@
         <note priority="1" from="meaning">shared.trademark-policy</note>
       </trans-unit>
       <trans-unit id="ba7f0c6fdfa0ab7afc59e9384bca0265d23fb018" datatype="html">
-        <source>Your balance is too low.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Please <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;"/>top up your account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
-        <target>Balansınız çok düşük. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> lütfen <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;"/>, <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> hesabınıza ekleme yapınız .</target>
+        <source>Your balance is too low.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />Please <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;" />top up your account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />.</source>
+        <target>Balansınız çok düşük. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" /> lütfen <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;" />, <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> hesabınıza ekleme yapınız .</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
           <context context-type="linenumber">9</context>
@@ -11313,8 +11313,8 @@
         <note priority="1" from="description">warning-testnet</note>
       </trans-unit>
       <trans-unit id="52a5264f8dcf69b24e496d0a37fbcdd688c54353" datatype="html">
-        <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/>Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target>Testnet3 artık kullanılamıyor yakında <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/> Testnet4 <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> ile değiştirilecek </target>
+        <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></source>
+        <target>Testnet3 artık kullanılamıyor yakında <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" /> Testnet4 <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> ile değiştirilecek </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">6</context>
@@ -11362,112 +11362,112 @@
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.year" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> year</source>
-        <target><x id="DATE" equiv-text="counter"/>yıl</target>
+        <source><x id="DATE" equiv-text="counter" /> year</source>
+        <target><x id="DATE" equiv-text="counter" />yıl</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.years" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> years</source>
-        <target><x id="DATE" equiv-text="counter"/> yıl</target>
+        <source><x id="DATE" equiv-text="counter" /> years</source>
+        <target><x id="DATE" equiv-text="counter" /> yıl</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.month" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> month</source>
-        <target><x id="DATE" equiv-text="counter"/> ay</target>
+        <source><x id="DATE" equiv-text="counter" /> month</source>
+        <target><x id="DATE" equiv-text="counter" /> ay</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.months" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> months</source>
-        <target><x id="DATE" equiv-text="counter"/> ay</target>
+        <source><x id="DATE" equiv-text="counter" /> months</source>
+        <target><x id="DATE" equiv-text="counter" /> ay</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.week" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> week</source>
-        <target><x id="DATE" equiv-text="counter"/> hafta</target>
+        <source><x id="DATE" equiv-text="counter" /> week</source>
+        <target><x id="DATE" equiv-text="counter" /> hafta</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.weeks" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> weeks</source>
-        <target><x id="DATE" equiv-text="counter"/> hafta</target>
+        <source><x id="DATE" equiv-text="counter" /> weeks</source>
+        <target><x id="DATE" equiv-text="counter" /> hafta</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.day" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> day</source>
-        <target><x id="DATE" equiv-text="counter"/> gün</target>
+        <source><x id="DATE" equiv-text="counter" /> day</source>
+        <target><x id="DATE" equiv-text="counter" /> gün</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.days" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> days</source>
-        <target><x id="DATE" equiv-text="counter"/> gün</target>
+        <source><x id="DATE" equiv-text="counter" /> days</source>
+        <target><x id="DATE" equiv-text="counter" /> gün</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.hour" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> hour</source>
-        <target><x id="DATE" equiv-text="counter"/> saat</target>
+        <source><x id="DATE" equiv-text="counter" /> hour</source>
+        <target><x id="DATE" equiv-text="counter" /> saat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.hours" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> hours</source>
-        <target><x id="DATE" equiv-text="counter"/> saat</target>
+        <source><x id="DATE" equiv-text="counter" /> hours</source>
+        <target><x id="DATE" equiv-text="counter" /> saat</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.minute" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> minute</source>
-        <target><x id="DATE" equiv-text="counter"/> dakika</target>
+        <source><x id="DATE" equiv-text="counter" /> minute</source>
+        <target><x id="DATE" equiv-text="counter" /> dakika</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.minutes" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> minutes</source>
-        <target><x id="DATE" equiv-text="counter"/> dakika</target>
+        <source><x id="DATE" equiv-text="counter" /> minutes</source>
+        <target><x id="DATE" equiv-text="counter" /> dakika</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.second" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> second</source>
-        <target><x id="DATE" equiv-text="counter"/> saniye</target>
+        <source><x id="DATE" equiv-text="counter" /> second</source>
+        <target><x id="DATE" equiv-text="counter" /> saniye</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="date-base.seconds" datatype="html">
-        <source><x id="DATE" equiv-text="counter"/> seconds</source>
-        <target><x id="DATE" equiv-text="counter"/> saniye</target>
+        <source><x id="DATE" equiv-text="counter" /> seconds</source>
+        <target><x id="DATE" equiv-text="counter" /> saniye</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/i18n/dates.ts</context>
           <context context-type="linenumber">16</context>
@@ -11482,8 +11482,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="address-label.multisig" datatype="html">
-        <source>Multisig <x id="multisigM" equiv-text="m"/> of <x id="multisigN" equiv-text="n"/></source>
-        <target>Çoklu imza <x id="multisigM" equiv-text="m"/>/<x id="multisigN" equiv-text="n"/></target>
+        <source>Multisig <x id="multisigM" equiv-text="m" /> of <x id="multisigN" equiv-text="n" /></source>
+        <target>Çoklu imza <x id="multisigM" equiv-text="m" />/<x id="multisigN" equiv-text="n" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/script.utils.ts</context>
           <context context-type="linenumber">173</context>
@@ -11565,6 +11565,358 @@
         <source>Third-party Licenses</source>
         <target>3. Parti Lisanlar</target>
       </trans-unit>
+    <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html">
+        <source>select filter categories to highlight matching pending transactions</source>
+        <target>Eşleşen bekleyen işlemleri vurgulamak için filtre kategorilerini seçin</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Transaction filters tooltip</note>
+      </trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
+        <source>1 new transaction</source>
+        <target>1 yeni işlem</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.singular</note>
+      </trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
+        <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> yeni işlem</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.plural</note>
+      </trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
+        <source>Pause/Resume</source>
+        <target>Duraklat/sürdür</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Tooltip for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.title</note>
+      </trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
+        <source>Pause/Resume</source>
+        <target>Duraklat/sürdür</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Accessible label for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.aria-label</note>
+      </trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html">
+        <source>vSize</source>
+        <target>Sanal boyut</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Transaction Virtual Size</note>
+        <note priority="1" from="meaning">transaction.vsize</note>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target>Dünyanın herhangi bir yeri saati (AoE)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target>Samoa standart saati (SST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target>Hawaii standart saati (HST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target>Alaska standart saati (AKST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target>Pasifik standart saati (PST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target>Dağ standart saati (MST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target>Merkez standart saati (CST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target>Doğu standart saati (EST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target>Atlantik standart saati (AST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target>Arjantin saati (ART)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target>Fernando de Noronha saati (FNT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target>Azorlar saati (AZOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target>Greenwich Ortalama Saati (GMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target>Orta Avrupa saati (CET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target>Doğu Avrupa saati (EET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target>Moskova standart saati (MSK)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target>Ermenistan saati (AMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target>Pakistan standart saati (PKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target>Sincan saati (XJT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target>Çinhindi saati (ICT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target>Hong Kong saati (HKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target>Japonya standart saati (JST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target>Avustralya doğu standart saati (AEST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target>Norfolk saati (NFT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target>Yeni Zelanda standart saati (NZST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target>Tonga saati (TOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target>Line Adaları saati (LINT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html">
+        <source>Your balance is too low.</source>
+        <target>Bakiyeniz çok düşük.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">accelerator.low-balance</note>
+      </trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target>Yazıt</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+        <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Bitcoin gezgini ana sayfası</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Blok boyutlarını göstermeye geç</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>Blok başına toplam ücretleri göstermeye geç</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>En yeni blokları sağda göstermeye geç</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>En yeni blokları solda göstermeye geç</target></trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html"><source> Values were capped at the max supply of 21M BTC </source><target> Değerler 21 milyon BTC azami arzıyla sınırlandırıldı </target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html"><source>Copy</source><target>Kopyala</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html"><source>Copied</source><target>Kopyalandı</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html"><source>Copy to clipboard</source><target>Panoya kopyala</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html"><source>Copied to clipboard</source><target>Panoya kopyalandı</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>btc.tx.taxi Bitcoin gezgini</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Lightning düğümü veya kanalı bulunamadı.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>Arama kullanılamıyor. Yeniden deneyin.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>Lightning ağına bir bakış.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>Lightning ağını keşfet</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>Belgeler</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>Kaynak kodu</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>Durum</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>Düğümler, kanallar ve aralarındaki ağ</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>Herkese açık Lightning düğümlerini ve kanallarını, yönlendirme politikalarını, ağ kapasitesini, coğrafi dağılımı ve geçmiş istatistikleri keşfedin. Bir düğümün bağlantılarını takip edin veya bir kanalın açılışını ve kapanışını inceleyin.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>tx.taxi ailesinin bir parçası</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>Aynı aramayı kullanarak Lightning düğümü veya kanalı bulun, gezginler arasında geçiş yapın ya da bir işlemi ilgili blok zincirine yönlendirin. Bitcoin zincir üstü gezgini:</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>Herkese açık ağ görünümü</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Lightning ödemeleri ve özel kanallar herkese açık olarak görüntülenmez. Kapasite, açık bir kanala bağlanan bitcoin miktarını gösterir; tarafların mevcut harcanabilir bakiyelerini göstermez. Düğüm konumları, duyurulan ağ uç noktalarını ifade eder.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>İstatistikler kaynak anlık görüntünün tarihini gösterir. Kesintiler sırasında önbelleğe alınmış veriler kullanılabilir.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>Açık kaynak</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>Temel aldığı proje:</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>Mempool projesi</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>; GNU AGPLv3 lisansıyla yayımlandı. 🚕 ile hazırlayan:</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>Kanal bulunamadı.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Lightning verileri kullanılamıyor.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>Yeniden dene</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>tx.taxi Lightning gezgini</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Lightning düğümleri, kanalları ve ağ etkinliği</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>Keşfet</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Lightning ana sayfası</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>Düğüm sıralamaları</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>Düğüm haritası</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>Kanal haritası</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>Cezalar</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>Ağ ve belgeler</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>Ağ geçmişi</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>Ülkeler</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>İnternet servis sağlayıcıları</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>Lightning SSS</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>API belgeleri</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>Hakkında</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>Kaynak kodu</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>Durum</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>tx.taxi Telegram kanalına katıl</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>Bize ulaşın</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>AGPLv3 lisansıyla yayımlandı</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>Yasal bilgiler</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>Hizmet koşulları</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>Gizlilik politikası</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>Ticari marka ve atıf</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>Üçüncü taraf lisansları</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Hazırlanırken kullanılan:</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>Hazırlayan:</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Bağlanıyor…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Yeniden bağlanıyor…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Önbelleğe alınmış veriler</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Lightning ana sayfası</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>Düğüm sıralamaları</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Lightning grafikleri</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>Belgeler</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Lightning hakkında</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>btc.tx.taxi üzerinde görüntüle</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>Düğüm bulunamadı.</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>Ham bitler</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>Gerekli</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Düğüm adresi</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>Aranacak zinciri seç</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>Seçili gezgin</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>SEÇİLİ</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>Otomatik yönlendirme</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>Ana sayfayı görüntüle</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>YEREL GEZGİNLER</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>Gezgin listesi kullanılamıyor</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>ÜÇÜNCÜ TARAF GEZGİNLER</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>Aç</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>Bulundu</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>Olası</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>Açık</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>Geçiş yap</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>Gezginler yükleniyor</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Bir taksi çağırın, buraya herhangi bir şey yapıştırın.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>Ara</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Ara</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>tr-TR</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Medyan ücret oranı</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Ücret aralığı</target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Madencilik havuzu logosu</target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network, updated in real-time.</source><target>Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> ağındaki en son işlemleri gerçek zamanlı olarak görün.</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" equiv-text="this.name"/> mining pool</source><target><x id="NAME" equiv-text="this.name"/> madencilik havuzunun logosu</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Yönlendirme düğümlerinin aldığı ortalama taban ücret; 5000 mSats üzerindeki taban ücretler hariçtir</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Yönlendirme düğümlerinin aldığı medyan taban ücret; 5000 mSats üzerindeki taban ücretler hariçtir</target></trans-unit>
     </body>
   </file>
 </xliff>
