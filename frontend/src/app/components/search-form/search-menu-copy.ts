@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  ro: {
+    choose: 'Alege lanțul pentru căutare', selectedAria: 'Exploratorul selectat', selected: 'SELECTAT',
+    unavailable: 'Registrul exploratoarelor nu este disponibil', loading: 'Se încarcă exploratoarele', automatic: 'Rutare automată',
+    viewHub: 'Deschide tx.taxi', hint: 'Sau mergi direct la', searchExample: '[căutarea ta]',
+    native: 'EXPLORATOARE NATIVE', external: 'EXPLORATOARE TERȚE', opened: 'Deschis',
+    open: 'Deschide', switch: 'Schimbă', found: 'Găsit', possible: 'Posibil', search: 'Caută',
+    additional: (name: string) => `Alte exploratoare pentru ${name}`,
+    openExplorer: (name: string) => `Deschide ${name}`,
+    openNewTab: (name: string) => `Deschide ${name} într-o filă nouă`,
+    switchTo: (name: string) => `Schimbă la ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ascunde' : 'Arată'} opțiunile suplimentare pentru ${name}: ${count}`,
+  },
   he: {
     choose: 'בחירת רשת לחיפוש', selectedAria: 'הסייר הנבחר', selected: 'נבחר',
     unavailable: 'רשימת הסיירים אינה זמינה', loading: 'טוען סיירים', automatic: 'ניתוב אוטומטי',
