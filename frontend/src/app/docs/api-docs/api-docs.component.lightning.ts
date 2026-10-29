@@ -22,6 +22,7 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
   get ru(): boolean { return this.locale.startsWith('ru'); }
   get ja(): boolean { return this.locale.startsWith('ja'); }
   get zh(): boolean { return this.locale.startsWith('zh'); }
+  get tr(): boolean { return this.locale.startsWith('tr'); }
   private destroy$: Subject<any> = new Subject<any>();
   hostname = document.location.hostname;
   network$: Observable<string>;
