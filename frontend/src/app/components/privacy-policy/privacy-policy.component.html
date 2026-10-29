@@ -684,7 +684,7 @@
 </div>
 </ng-template>
 
-<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else hungarianOrEnglish" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
 <ng-template #romanianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -983,6 +983,58 @@
 
       <h4>Atvirojo kodo kilmės nurodymas</h4>
       <p>btc.tx.taxi sukurtas remiantis mempool/mempool ir perima jo AGPLv3 įsipareigojimus. „Mempool“ pavadinimai, logotipai ir prekių ženklai lieka atitinkamų savininkų nuosavybe; btc.tx.taxi nėra susijęs su „Mempool Holdings S.A. de C.V.“ ir nėra jos patvirtintas.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Adatvédelmi szabályzat</h2>
+    <h6>Frissítve: 2026. október 29.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Közönségmérés</h4>
+      <p>A tx.taxi a Cloudflare Web Analytics szolgáltatással méri az oldalmegtekintéseket és a teljesítményt, valamint a böngészők UTC-naponként egyszeri számlálásához az exploreroldalai között megosztott, saját napi sütit használ. A napi közönségmérő kizárólag napi azonosítót, a böngésző kiszolgálónevét és az interakció tényét tárolja. Nem tárol keresési szöveget, blokklánccímeket, tranzakcióazonosítókat, meglátogatott oldalak URL-jeit vagy IP-címeket. Az egyedi napi rekordok 31 nap után lejárnak; az összesített számlálók 400 napig maradnak meg. A Do Not Track és a Global Privacy Control kikapcsolja ezt a saját mérést. <a href="https://tx.taxi/privacy#audience-measurement">Részletek és leiratkozás</a>.</p>
+      <h4>Használj saját csomópontot, ha fontos az adatvédelem</h4>
+      <p>A btc.tx.taxi nyilvános Bitcoin-lánc- és mempooladatokat jelenít meg a webhely üzemeltetője által beállított háttérrendszeren keresztül. Független ellenőrzéshez és a hálózati adatvédelem legmagasabb szintjéhez használd a saját Bitcoin-csomópontodat és böngésződet.</p>
+
+      <br>
+
+      <h4>A kérések adatai</h4>
+      <p>A webhely és az API szokásos kérései a szokásos webes metaadatokat fedhetik fel az üzemeltetőnek, például az IP-címet, a felhasználói ügynököt, a kért URL-t és a kérés időpontját. A szervernaplókat a megbízhatóság, a visszaélések megelőzése és a hibakeresés érdekében megőrizhetik.</p>
+
+      <br>
+
+      <h4>Helyi beállítások</h4>
+      <p>A megjelenítési beállításokat, például a témát, a címletet, a fiat pénznemet, a nyelvet és az időzónát a böngésződ tárolhatja. A btc.tx.taxi szokásos használatához nem szükséges fiók.</p>
+
+      <br>
+
+      <h4>Nyilvános blokkláncadatok</h4>
+      <p>A Bitcoin-tranzakciók, címek, szkriptek és blokkok nyilvánosak. Egy cím vagy tranzakció lekérdezése összekapcsolhatja a keresést a hálózati metaadataiddal. Ne tekints egy nyilvános böngészőt adatvédelmi határnak.</p>
+
+      <br>
+
+      <h4>Külső hivatkozások</h4>
+      <p>Az oldal a tx.taxi kapcsolattartási csatornáira, Bitcoin-dokumentációra, az eredeti projekt forráskódjára és licencinformációkra hivatkozik. Ezeknek a külső szolgáltatásoknak saját adatvédelmi szabályzata van.</p>
+
+      <br>
+
+      <h4>Nyílt forráskód és forrásmegjelölés</h4>
+      <p>A btc.tx.taxi a mempool/mempool projektből származik, és örökli annak AGPLv3-kötelezettségeit. A Mempool nevei, logói és védjegyei továbbra is megfelelő tulajdonosaik tulajdonát képezik; a btc.tx.taxi nem áll kapcsolatban a Mempool Holdings S.A. de C.V. társasággal, és az nem támogatja.</p>
 
       <br>
     </div>

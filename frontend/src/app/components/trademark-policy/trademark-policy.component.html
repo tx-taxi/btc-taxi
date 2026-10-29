@@ -585,7 +585,7 @@
 </div>
 </ng-template>
 
-<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else hungarianOrEnglish" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
 <ng-template #romanianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -842,6 +842,51 @@
 
       <h4>Licencija</h4>
       <p>Ši projekto atšaka laikosi pirminio projekto AGPLv3 licencijos įsipareigojimų. Dėl taikomos pirminio kodo ir licencijos informacijos kreipkitės į operatorių.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Védjegyek és forrásmegjelölés</h2>
+    <h6>Frissítve: 2026. szeptember 20.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>A tx.taxi arculata</h4>
+      <p>A btc.tx.taxi a tx.taxi család függetlenül üzemeltetett Bitcoin-böngészője. Domainneve, szólogója, lánchoz tartozó színpalettája és szolgáltatási arculata különbözteti meg ezt a változatot az eredeti projekttől.</p>
+
+      <br>
+
+      <h4>Az eredeti projekt forrásmegjelölése</h4>
+      <p>Ez a szoftver a nyílt forráskódú Mempool projektből származik. Az eredeti forráskód, vizuális rendszer, projektnevek, logók és védjegyek a megfelelő tulajdonosok tulajdonát képezik.</p>
+
+      <br>
+
+      <h4>Nincs kapcsolódás</h4>
+      <p>A btc.tx.taxi nem áll kapcsolatban a Mempool Holdings S.A. de C.V. társasággal, amely nem szponzorálja és nem támogatja azt. A mempool.space és a mempool/mempool megnevezések arra a szoftverre utalnak, amelyből ez a változat származik.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>A Bitcoin nyílt hálózat és protokoll. A Bitcoinra, BTC-re, satoshira, blokkokra, tranzakciókra, címekre, bányászatra és Lightningra való hivatkozások a böngésző által bemutatott hálózati adatokat írják le.</p>
+
+      <br>
+
+      <h4>Licenc</h4>
+      <p>Ez a változat követi az eredeti projekt AGPLv3 licencéből eredő kötelezettségeket. Az alkalmazandó forráskód- és licencinformációkért fordulj az üzemeltetőhöz.</p>
 
       <br>
     </div>

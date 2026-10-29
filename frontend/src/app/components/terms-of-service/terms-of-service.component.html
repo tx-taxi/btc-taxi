@@ -648,7 +648,7 @@
 </div>
 </ng-template>
 
-<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else englishLegal" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
+<ng-template #romanianOrEnglish><ng-container *ngIf="ro; else hungarianOrEnglish" [ngTemplateOutlet]="romanianLegal"></ng-container></ng-template>
 <ng-template #romanianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -935,6 +935,56 @@
 
       <h4>Atvirasis kodas</h4>
       <p>btc.tx.taxi sukurtas remiantis „Mempool“ atvirojo kodo projektu ir platinamas laikantis AGPLv3 įsipareigojimų. Dėl taikomos pirminio kodo ir licencijos informacijos kreipkitės per <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Szolgáltatási feltételek</h2>
+    <h6>Frissítve: 2026. szeptember 20.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Tájékoztató böngésző</h4>
+      <p>A btc.tx.taxi nyilvános Bitcoin-blokkokat, tranzakciókat, címeket, bányászati adatokat, díjbecsléseket és a mempool állapotát mutatja be. Ez tájékoztató szolgáltatás, nem pénztárca, tőzsde, letétkezelő, fizetésfeldolgozó vagy tranzakciók priorizálását végző szolgáltatás.</p>
+
+      <br>
+
+      <h4>Nincs befolyás a Bitcoin-tranzakciókra</h4>
+      <p>Az üzemeltető nem tud Bitcoin-tranzakciót visszafordítani, törölni, felgyorsítani, visszaszerezni vagy átirányítani. Pénztárcával, tőzsdével vagy fizetéssel kapcsolatos probléma esetén fordulj a tranzakciót létrehozó vagy fogadó szolgáltatáshoz.</p>
+
+      <br>
+
+      <h4>Adatok és rendelkezésre állás</h4>
+      <p>A böngésző adatai késhetnek, hiányosak vagy elérhetetlenek lehetnek, illetve eltérhetnek egy másik csomópont által látott adatoktól. A díjbecslések csak becslések, és nem garantálják a megerősítést. A szolgáltatást jelen állapotában nyújtjuk, a megszakítás nélküli rendelkezésre állásra vagy valamely célra való alkalmasságra tett ígéret nélkül.</p>
+
+      <br>
+
+      <h4>Elfogadható használat</h4>
+      <p>Ne élj vissza a webhellyel vagy az API-val, ne zavard a szolgáltatás működését, ne kerüld meg az észszerű használati korlátokat, és ne használd a szolgáltatást jogellenesen. A hozzáférés a rendelkezésre állás védelme érdekében szükség esetén korlátozható.</p>
+
+      <br>
+
+      <h4>Külső szolgáltatások</h4>
+      <p>Az oldal hivatkozhat a tx.taxi kapcsolattartási csatornáira, Bitcoin-referenciákra, licencinformációkra és infrastrukturális függőségekre. A külső webhelyekre saját feltételeik és szabályzataik vonatkoznak.</p>
+
+      <br>
+
+      <h4>Nyílt forráskód</h4>
+      <p>A btc.tx.taxi a nyílt forráskódú Mempool projektből származik, terjesztésére az AGPLv3 szerinti kötelezettségek vonatkoznak. Az alkalmazandó forráskód- és licencinformációkért keresd fel: <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
 
       <br>
     </div>
