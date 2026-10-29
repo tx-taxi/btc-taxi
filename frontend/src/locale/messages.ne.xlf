@@ -11417,7 +11417,7 @@
       <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target state="needs-review-translation">parent कारोबारको शुल्क तिर्छ</target></trans-unit>
       <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target state="needs-review-translation">प्रतिस्थापन</target></trans-unit>
       <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target state="needs-review-translation">नक्कली पबकी</target></trans-unit>
-      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target state="needs-review-translation">नक्कली स्क्रिप्टस</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target state="needs-review-translation">नक्कली स्क्रिप्ट ह्यास</target></trans-unit>
       <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target state="needs-review-translation">एनेक्स</target></trans-unit>
       <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target state="needs-review-translation">लेनदेन फिल्टरहरू</target></trans-unit>
     </body>
