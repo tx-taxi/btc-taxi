@@ -3347,7 +3347,7 @@
       </trans-unit>
       <trans-unit id="f0136f1a1d77aa656e0ebd0f3c023118dd2a2776" datatype="html">
         <source>Marginal fee rate</source>
-        <target>Kraštutinis mokestis</target>
+        <target>Ribinis mokesčio tarifas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">72</context>
