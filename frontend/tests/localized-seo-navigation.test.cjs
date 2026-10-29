@@ -454,3 +454,22 @@ test('Vietnamese Bitcoin and Lightning navigation keeps localized titles and noi
   LightningSeo.prototype.updateCanonical.call(lightning, '');
   assert.equal(ln.canonical.href, 'https://lightning.btc.tx.taxi/vi/');
 });
+
+test('Georgian client navigation keeps the localized canonical and noindex', () => {
+  const btc = fixture('ka'), BitcoinSeo = loadService('services/seo.service.ts', btc.document);
+  const context = {locale:'ka', baseDomain:'btc.tx.taxi', canonicalLink:btc.canonical, metaService:btc.metaService,
+    router:{url:'/docs/faq'}, titleService:{setTitle() {}},
+    currentPage: () => BitcoinSeo.prototype.currentPage.call(context), getTitle: () => BitcoinSeo.prototype.getTitle.call(context)};
+  BitcoinSeo.prototype.updateCanonical.call(context, '/docs/faq?source=nav#fees');
+  assert.equal(btc.canonical.href, 'https://btc.tx.taxi/ka/docs/faq');
+  assert.equal(btc.tags.get('robots'), 'noindex, follow');
+  assert.equal(btc.links.length, 0);
+  assert.match(BitcoinSeo.prototype.getTitle.call(context), /^Bitcoin-ის/);
+
+  const ln = fixture('ka'), LightningSeo = loadService('lightning-app/seo.service.ts', ln.document);
+  const lightning = {baseDomain:'lightning.btc.tx.taxi', canonicalLink:ln.canonical, metaService:ln.metaService};
+  LightningSeo.prototype.updateCanonical.call(lightning, '/docs/faq?source=nav#fees');
+  assert.equal(ln.canonical.href, 'https://lightning.btc.tx.taxi/ka/docs/faq');
+  assert.equal(ln.tags.get('robots'), 'noindex, follow');
+  assert.match(LightningSeo.prototype.getTitle.call(lightning), /^Lightning-ის/);
+});
