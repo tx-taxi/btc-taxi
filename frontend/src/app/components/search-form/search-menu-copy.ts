@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  ka: {
+    choose: 'აირჩიეთ საძიებო ქსელი', selectedAria: 'არჩეული ექსპლორერი', selected: 'არჩეულია',
+    unavailable: 'ექსპლორერების სია მიუწვდომელია', loading: 'იტვირთება ექსპლორერები', automatic: 'ავტომატური მარშრუტიზაცია',
+    viewHub: 'მთავარი გვერდი', hint: 'ან პირდაპირ გადადით', searchExample: '[თქვენი ძიება]',
+    native: 'ჩვენი ექსპლორერები', external: 'მესამე მხარის ექსპლორერები', opened: 'გახსნილია',
+    open: 'გახსნა', switch: 'გადართვა', found: 'ნაპოვნია', possible: 'შესაძლოა', search: 'ძიება',
+    additional: (name: string) => `${name}: დამატებითი ექსპლორერები`,
+    openExplorer: (name: string) => `${name}-ის გახსნა`,
+    openNewTab: (name: string) => `${name}-ის ახალ ჩანართში გახსნა`,
+    switchTo: (name: string) => `${name}-ზე გადართვა`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name}: ${count} დამატებითი ვარიანტის ${expanded ? 'დამალვა' : 'ჩვენება'}`,
+  },
   vi: {
     choose: 'Chọn chuỗi để tìm kiếm', selectedAria: 'Trình khám phá đã chọn', selected: 'Đã chọn',
     unavailable: 'Danh sách trình khám phá không khả dụng', loading: 'Đang tải danh sách trình khám phá', automatic: 'Định tuyến tự động',
