@@ -52,7 +52,9 @@
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
-<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -182,6 +184,66 @@
   <br>
   <h4>Attribuzione open source</h4>
   <p>btc.tx.taxi deriva da mempool/mempool e ne eredita gli obblighi AGPLv3. Nomi, loghi e marchi Mempool restano proprietà dei rispettivi titolari; btc.tx.taxi non è affiliato né approvato da Mempool Holdings S.A. de C.V.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #portugueseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Política de privacidade</h2><h6>Atualizado em: 20 de setembro de 2026</h6><br><br>
+<div class="text-start">
+  <h4>Medição de audiência</h4>
+  <p>O tx.taxi usa o Cloudflare Web Analytics para medir visualizações de páginas e desempenho, e um cookie diário próprio compartilhado entre seus exploradores para contar cada navegador uma vez por dia UTC. O coletor diário de audiência armazena apenas um identificador diário, o nome do host do explorador e se houve interação. Ele não recebe textos de pesquisa, endereços, IDs de transações, URLs nem endereços IP. Os registros diários individuais expiram após 31 dias; as contagens agregadas são mantidas por 400 dias. Do Not Track e Global Privacy Control desativam essa medição própria. <a href="https://tx.taxi/privacy#audience-measurement">Detalhes e opção de desativação</a>.</p>
+  <br>
+  <h4>Use seu próprio nó quando a privacidade for importante</h4>
+  <p>O btc.tx.taxi exibe dados públicos da cadeia e do mempool do Bitcoin por meio do backend configurado pelo operador do site. Para verificação independente e máxima privacidade de rede, use seu próprio nó e explorador Bitcoin.</p>
+  <br>
+  <h4>Dados das solicitações</h4>
+  <p>As solicitações normais ao site e à API podem revelar ao operador metadados comuns da web, incluindo seu endereço IP, agente do usuário, URL solicitada e horário da solicitação. Os registros do servidor podem ser mantidos para garantir a confiabilidade, prevenir abusos e resolver problemas.</p>
+  <br>
+  <h4>Preferências locais</h4>
+  <p>Preferências de exibição, como tema, denominação, moeda fiduciária, idioma e fuso horário, podem ser armazenadas no seu navegador. btc.tx.taxi não exige uma conta para o uso comum do explorador.</p>
+  <br>
+  <h4>Dados públicos da blockchain</h4>
+  <p>As transações, endereços, scripts e blocos do Bitcoin são públicos. Consultar um endereço ou uma transação pode associar essa consulta aos seus metadados de rede. Não considere um explorador público uma barreira de privacidade.</p>
+  <br>
+  <h4>Links externos</h4>
+  <p>Este site contém links para canais de contato do tx.taxi, documentação do Bitcoin, código-fonte original e informações de licença. Esses serviços externos têm suas próprias políticas de privacidade.</p>
+  <br>
+  <h4>Atribuição de código aberto</h4>
+  <p>btc.tx.taxi é derivado de mempool/mempool e herda suas obrigações da AGPLv3. Os nomes, logotipos e marcas Mempool continuam sendo propriedade de seus respectivos titulares; btc.tx.taxi não é afiliado à Mempool Holdings S.A. de C.V. nem é endossado por ela.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #russianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Политика конфиденциальности</h2><h6>Обновлено: 20 сентября 2026 г.</h6><br><br>
+<div class="text-start">
+  <h4>Измерение аудитории</h4>
+  <p>tx.taxi использует Cloudflare Web Analytics для измерения просмотров страниц и производительности, а также собственный ежедневный cookie-файл, общий для его обозревателей, чтобы учитывать каждый браузер один раз в день по UTC. Система ежедневного учета аудитории хранит только дневной идентификатор, имя хоста обозревателя и сведения о наличии взаимодействия. Она не получает поисковые запросы, адреса, идентификаторы транзакций, URL или IP-адреса. Отдельные дневные записи удаляются через 31 день; агрегированные показатели хранятся 400 дней. Do Not Track и Global Privacy Control отключают это собственное измерение. <a href="https://tx.taxi/privacy#audience-measurement">Подробности и отказ</a>.</p>
+  <br>
+  <h4>Используйте собственный узел, когда важна конфиденциальность</h4>
+  <p>btc.tx.taxi отображает публичные данные блокчейна Bitcoin и мемпула через серверную часть, настроенную оператором сайта. Для независимой проверки и максимальной сетевой конфиденциальности используйте собственный узел и обозреватель Bitcoin.</p>
+  <br>
+  <h4>Данные запросов</h4>
+  <p>Обычные запросы к сайту и API могут раскрывать оператору стандартные веб-метаданные, включая ваш IP-адрес, пользовательский агент, запрошенный URL и время запроса. Журналы сервера могут сохраняться для обеспечения надежности, предотвращения злоупотреблений и устранения неполадок.</p>
+  <br>
+  <h4>Локальные настройки</h4>
+  <p>Настройки отображения, такие как тема, единица измерения, фиатная валюта, язык и часовой пояс, могут храниться в вашем браузере. Для обычного использования btc.tx.taxi учетная запись не требуется.</p>
+  <br>
+  <h4>Публичные данные блокчейна</h4>
+  <p>Транзакции, адреса, скрипты и блоки Bitcoin публичны. При поиске адреса или транзакции этот запрос может быть связан с вашими сетевыми метаданными. Не считайте публичный обозреватель средством защиты конфиденциальности.</p>
+  <br>
+  <h4>Внешние ссылки</h4>
+  <p>На сайте есть ссылки на контактные каналы tx.taxi, документацию Bitcoin, исходный код первоначального проекта и сведения о лицензии. Эти внешние сервисы имеют собственные политики конфиденциальности.</p>
+  <br>
+  <h4>Указание авторства открытого ПО</h4>
+  <p>btc.tx.taxi основан на mempool/mempool и наследует его обязательства по AGPLv3. Названия, логотипы и товарные знаки Mempool остаются собственностью соответствующих владельцев; btc.tx.taxi не связан с Mempool Holdings S.A. de C.V. и не одобрен ею.</p>
   <br>
 </div></div><br><br></div>
 </ng-template>

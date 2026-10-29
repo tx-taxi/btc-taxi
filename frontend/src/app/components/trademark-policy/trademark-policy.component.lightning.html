@@ -44,7 +44,9 @@
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
-<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -154,6 +156,54 @@
   <br>
   <h4>Licenza</h4>
   <p>Questo fork rispetta gli obblighi AGPLv3 del progetto originale. Contatta il gestore per le informazioni applicabili sul codice sorgente e sulla licenza.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #portugueseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Marcas e atribuição</h2><h6>Atualizado em: 3 de outubro de 2026</h6><br><br>
+<div class="text-start">
+  <h4>Identidade tx.taxi</h4>
+  <p>lightning.btc.tx.taxi é um explorador Lightning operado de forma independente na família tx.taxi. Seu domínio, marca nominativa, paleta da cadeia e identidade do serviço distinguem esta derivação do projeto original.</p>
+  <br>
+  <h4>Atribuição ao projeto original</h4>
+  <p>Este software é derivado do Mempool Open Source Project. O código-fonte original, o sistema visual, os nomes dos projetos, logotipos e marcas pertencem aos seus respectivos titulares.</p>
+  <br>
+  <h4>Sem afiliação</h4>
+  <p>lightning.btc.tx.taxi não é afiliado, patrocinado ou endossado pela Mempool Holdings S.A. de C.V. As referências a mempool.space e mempool/mempool são atribuições nominativas ao software do qual esta derivação se origina.</p>
+  <br>
+  <h4>Bitcoin</h4>
+  <p>Bitcoin é uma rede e um protocolo abertos. As referências a Bitcoin, BTC, satoshis, Lightning, nós, canais e políticas de roteamento descrevem os dados da rede apresentados por este explorador.</p>
+  <br>
+  <h4>Licença</h4>
+  <p>Esta derivação segue as obrigações da licença AGPLv3 do projeto original. Entre em contato com o operador para obter informações sobre o código-fonte e a licença aplicáveis.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #russianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Товарные знаки и авторство</h2><h6>Обновлено: 3 октября 2026 г.</h6><br><br>
+<div class="text-start">
+  <h4>Облик tx.taxi</h4>
+  <p>lightning.btc.tx.taxi — независимо управляемый обозреватель Lightning из семейства tx.taxi. Его домен, текстовый логотип, цветовая палитра сети и облик сервиса отличают этот форк от исходного проекта.</p>
+  <br>
+  <h4>Указание исходного проекта</h4>
+  <p>Это программное обеспечение основано на Mempool Open Source Project. Исходный код первоначального проекта, визуальная система, названия проектов, логотипы и товарные знаки принадлежат соответствующим владельцам.</p>
+  <br>
+  <h4>Отсутствие связи</h4>
+  <p>lightning.btc.tx.taxi не связан с Mempool Holdings S.A. de C.V., не спонсируется и не одобрен ею. Упоминания mempool.space и mempool/mempool являются указанием на программное обеспечение, на основе которого создан этот форк.</p>
+  <br>
+  <h4>Bitcoin</h4>
+  <p>Bitcoin — открытая сеть и протокол. Упоминания Bitcoin, BTC, сатоши, Lightning, узлов, каналов и политик маршрутизации описывают данные сети, представленные этим обозревателем.</p>
+  <br>
+  <h4>Лицензия</h4>
+  <p>Этот форк соблюдает обязательства лицензии AGPLv3 исходного проекта. Для получения сведений о соответствующем исходном коде и лицензии обратитесь к оператору.</p>
   <br>
 </div></div><br><br></div>
 </ng-template>

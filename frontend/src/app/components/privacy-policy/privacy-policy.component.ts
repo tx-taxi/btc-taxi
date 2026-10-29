@@ -17,9 +17,11 @@ export class PrivacyPolicyComponent {
   get fr(): boolean { return this.locale.startsWith('fr'); }
   get de(): boolean { return this.locale.startsWith('de'); }
   get it(): boolean { return this.locale.startsWith('it'); }
+  get pt(): boolean { return this.locale.startsWith('pt'); }
+  get ru(): boolean { return this.locale.startsWith('ru'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.it ? 'Informativa sulla privacy' : this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');
-    this.seoService.setDescription(this.it ? 'Informativa sulla privacy di btc.tx.taxi: dati pubblici, preferenze del browser, registri del server e verifica indipendente.' : this.fr ? 'Informations de confidentialité pour btc.tx.taxi : données publiques, préférences du navigateur, journaux du serveur et vérification indépendante.' : this.de ? 'Datenschutzhinweise für btc.tx.taxi zu öffentlichen Daten, Browsereinstellungen, Serverprotokollen und unabhängiger Überprüfung.' : this.es ? 'Información de privacidad de btc.tx.taxi sobre datos públicos de Bitcoin, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for btc.tx.taxi, including public Bitcoin data, browser preferences, server logs, and independent verification.');
+    this.seoService.setTitle(this.pt ? 'Política de privacidade' : this.ru ? 'Политика конфиденциальности' : this.it ? 'Informativa sulla privacy' : this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');
+    this.seoService.setDescription(this.pt ? 'Informações de privacidade de btc.tx.taxi, incluindo dados públicos, preferências do navegador, registros do servidor e verificação independente.' : this.ru ? 'Сведения о конфиденциальности btc.tx.taxi: публичные данные, настройки браузера, журналы сервера и независимая проверка.' : this.it ? 'Informativa sulla privacy di btc.tx.taxi: dati pubblici, preferenze del browser, registri del server e verifica indipendente.' : this.fr ? 'Informations de confidentialité pour btc.tx.taxi : données publiques, préférences du navigateur, journaux du serveur et vérification indépendante.' : this.de ? 'Datenschutzhinweise für btc.tx.taxi zu öffentlichen Daten, Browsereinstellungen, Serverprotokollen und unabhängiger Überprüfung.' : this.es ? 'Información de privacidad de btc.tx.taxi sobre datos públicos de Bitcoin, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for btc.tx.taxi, including public Bitcoin data, browser preferences, server logs, and independent verification.');
   }
 }

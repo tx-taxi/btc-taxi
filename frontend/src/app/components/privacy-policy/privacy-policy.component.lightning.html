@@ -49,7 +49,9 @@
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
-<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
+<ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -172,6 +174,60 @@
   <br>
   <h4>Attribuzione open source</h4>
   <p>lightning.btc.tx.taxi deriva da mempool/mempool e ne eredita gli obblighi AGPLv3. Nomi, loghi e marchi Mempool restano proprietà dei rispettivi titolari; lightning.btc.tx.taxi non è affiliato né approvato da Mempool Holdings S.A. de C.V.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #portugueseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Política de privacidade</h2><h6>Atualizado em: 3 de outubro de 2026</h6><br><br>
+<div class="text-start">
+  <h4>Dados públicos da rede</h4>
+  <p>O lightning.btc.tx.taxi exibe informações públicas de gossip e estatísticas da rede Lightning. Canais privados, pagamentos individuais e saldos de canais não são visíveis publicamente. Para verificação independente, compare o grafo público com seu próprio nó Lightning.</p>
+  <br>
+  <h4>Dados das solicitações</h4>
+  <p>As solicitações normais ao site e à API podem revelar ao operador metadados comuns da web, incluindo seu endereço IP, agente do usuário, URL solicitada e horário da solicitação. Os registros do servidor podem ser mantidos para garantir a confiabilidade, prevenir abusos e resolver problemas.</p>
+  <br>
+  <h4>Preferências locais</h4>
+  <p>Preferências de exibição, como tema, denominação, moeda fiduciária, idioma e fuso horário, podem ser armazenadas no seu navegador. lightning.btc.tx.taxi não exige uma conta para o uso comum do explorador.</p>
+  <br>
+  <h4>Pesquisas e canais públicos</h4>
+  <p>As chaves de nós Lightning públicos, os endpoints anunciados, as políticas de canais e as transações de financiamento em Bitcoin são públicos. Uma consulta de nó ou canal pode associar essa pesquisa aos seus metadados de rede. Não considere um explorador público uma barreira de privacidade.</p>
+  <br>
+  <h4>Links externos</h4>
+  <p>Este site contém links para canais de contato do tx.taxi, documentação do Bitcoin, código-fonte original e informações de licença. Esses serviços externos têm suas próprias políticas de privacidade.</p>
+  <br>
+  <h4>Atribuição de código aberto</h4>
+  <p>lightning.btc.tx.taxi é derivado de mempool/mempool e herda suas obrigações da AGPLv3. Os nomes, logotipos e marcas Mempool continuam sendo propriedade de seus respectivos titulares; lightning.btc.tx.taxi não é afiliado à Mempool Holdings S.A. de C.V. nem é endossado por ela.</p>
+  <br>
+</div></div><br><br></div>
+</ng-template>
+
+
+<ng-template #russianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Политика конфиденциальности</h2><h6>Обновлено: 3 октября 2026 г.</h6><br><br>
+<div class="text-start">
+  <h4>Публичные данные сети</h4>
+  <p>lightning.btc.tx.taxi отображает публичные сведения протокола gossip и статистику сети Lightning. Приватные каналы, отдельные платежи и балансы каналов публично не видны. Для независимой проверки сравните публичный граф с данными собственного узла Lightning.</p>
+  <br>
+  <h4>Данные запросов</h4>
+  <p>Обычные запросы к сайту и API могут раскрывать оператору стандартные веб-метаданные, включая ваш IP-адрес, пользовательский агент, запрошенный URL и время запроса. Журналы сервера могут сохраняться для обеспечения надежности, предотвращения злоупотреблений и устранения неполадок.</p>
+  <br>
+  <h4>Локальные настройки</h4>
+  <p>Настройки отображения, такие как тема, единица измерения, фиатная валюта, язык и часовой пояс, могут храниться в вашем браузере. Для обычного использования lightning.btc.tx.taxi учетная запись не требуется.</p>
+  <br>
+  <h4>Поиск и публичные каналы</h4>
+  <p>Ключи публичных узлов Lightning, объявленные конечные точки, политики каналов и транзакции Bitcoin для открытия каналов публичны. Поиск узла или канала может быть связан с вашими сетевыми метаданными. Не считайте публичный обозреватель средством защиты конфиденциальности.</p>
+  <br>
+  <h4>Внешние ссылки</h4>
+  <p>На сайте есть ссылки на контактные каналы tx.taxi, документацию Bitcoin, исходный код первоначального проекта и сведения о лицензии. Эти внешние сервисы имеют собственные политики конфиденциальности.</p>
+  <br>
+  <h4>Указание авторства открытого ПО</h4>
+  <p>lightning.btc.tx.taxi основан на mempool/mempool и наследует его обязательства по AGPLv3. Названия, логотипы и товарные знаки Mempool остаются собственностью соответствующих владельцев; lightning.btc.tx.taxi не связан с Mempool Holdings S.A. de C.V. и не одобрен ею.</p>
   <br>
 </div></div><br><br></div>
 </ng-template>
