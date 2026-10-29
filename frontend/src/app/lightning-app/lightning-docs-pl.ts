@@ -1,0 +1,20 @@
+/** Polish Lightning REST reference. Protocol names and URLs stay unchanged. */
+export const polishLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Statystyki sieci','<p>Zwraca statystyki całej sieci, w tym liczby kanałów i węzłów, łączną pojemność oraz średnią i medianę opłat.</p><p>Dla <code>:interval</code> można podać <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> lub <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Węzły i kanały','<p>Zwraca węzły i kanały Lightning pasujące do <code>:query</code>. Przeszukuje aliasy i klucze publiczne węzłów oraz pełne i krótkie ID kanałów bez rozróżniania wielkości liter.</p>'],
+ 'get-lightning-nodes-country':['Węzły według kraju','<p>Zwraca węzły Lightning, których lokalizację w podanym <code>:country</code> oszacowano na podstawie publicznego adresu IP (clearnet). Kraj podaje się dwuliterowym kodem ISO alfa-2.</p>'],
+ 'get-country-node-stats':['Statystyki węzłów według kraju','<p>Zwraca łączną pojemność i liczbę węzłów według kraju, których lokalizację ustalono na podstawie publicznego adresu IP (clearnet). Pojemność jest wyrażona w satoshi.</p>'],
+ 'get-isp-nodes':['Węzły według dostawcy','<p>Zwraca węzły dostawcy <code>:isp</code>, wskazanego numerem ASN.</p>'],
+ 'get-isp-node-stats':['Statystyki węzłów według dostawcy','<p>Zwraca łączną pojemność, liczbę węzłów i kanałów według dostawcy. Pojemność jest wyrażona w satoshi.</p>'],
+ 'get-top-100-nodes':['100 najlepszych węzłów','<p>Zwraca osobno po 100 najlepszych węzłów według płynności (łącznej pojemności kanałów) i łączności (liczby otwartych kanałów).</p>'],
+ 'get-top-100-nodes-liquidity':['100 węzłów o największej płynności','<p>Zwraca 100 węzłów o największej płynności, mierzonej łączną pojemnością kanałów.</p>'],
+ 'get-top-100-nodes-connectivity':['100 węzłów o największej łączności','<p>Zwraca 100 węzłów o największej łączności, mierzonej liczbą otwartych kanałów.</p>'],
+ 'get-top-100-oldest-nodes':['100 najstarszych węzłów','<p>Zwraca 100 najstarszych węzłów.</p>'],
+ 'get-node-stats':['Statystyki węzła','<p>Zwraca szczegóły węzła wskazanego kluczem publicznym <code>:pubKey</code>.</p>'],
+ 'get-historical-node-stats':['Historia statystyk węzła','<p>Zwraca historyczne statystyki węzła wskazanego kluczem publicznym <code>:pubKey</code>.</p>'],
+ 'get-channel':['Kanał','<p>Zwraca informacje o kanale Lightning wskazanym identyfikatorem <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Kanały według ID transakcji','<p>Zwraca kanały odpowiadające podanemu <code>:txid</code>. Można podać wiele ID transakcji.</p>'],
+ 'get-channels-from-pubkey':['Kanały według klucza publicznego węzła','<p>Zwraca kanały węzła wskazanego przez <code>:pubKey</code>, po 10 na stronę. Do stronicowania użyj <code>:index</code>. Dla <code>:channelStatus</code> można podać <code>open</code>, <code>active</code> lub <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Dane geograficzne kanałów','<p>Zwraca listę kanałów z danymi geograficznymi ich węzłów.</p>'],
+ 'get-channel-geodata-node':['Dane geograficzne kanałów węzła','<p>Zwraca kanały i ich dane geograficzne dla węzła wskazanego kluczem publicznym <code>:pubKey</code>.</p>'],
+};
