@@ -4003,7 +4003,7 @@
       </trans-unit>
       <trans-unit id="855f852e5642a1279605465df0cbbe78c2622648" datatype="html">
         <source>Based on average native segwit transaction of 140 vBytes</source>
-        <target>מבוסס על טרנזקציית Native SegWit ממוצעת של 140 בתים</target>
+        <target>מבוסס על עסקת Native SegWit ממוצעת בגודל 140 בתים וירטואליים</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">146</context>
@@ -5202,7 +5202,7 @@
       </trans-unit>
       <trans-unit id="49bba8e970aa3b1bec6fcff7228ef95ceb335f59" datatype="html">
         <source>Usually places your transaction in between the second and third mempool blocks</source>
-        <target>לרב ממקם את הטרנזקציה בטווח שבין הבלוק השני לשלישי שבתור</target>
+        <target>בדרך כלל ממקם את העסקה בין בלוק ה-mempool השני לשלישי</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5224,7 +5224,7 @@
       </trans-unit>
       <trans-unit id="eeeeabc97373285d75acf0f013f68434a6f1935b" datatype="html">
         <source>Usually places your transaction in between the first and second mempool blocks</source>
-        <target>לרב ממקם את הטרנזקציה בטווח שבין הבלוק הראשון לשני שבתור</target>
+        <target>בדרך כלל ממקם את העסקה בין בלוק ה-mempool הראשון לשני</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">9</context>
@@ -5246,7 +5246,7 @@
       </trans-unit>
       <trans-unit id="a5a4d2c76b74faddf1aab8dc6e092cddee5a6142" datatype="html">
         <source>Places your transaction in the first mempool block</source>
-        <target>ממקם את הטרנזקציה שלך בבלוק הבא בתור</target>
+        <target>ממקם את העסקה בבלוק ה-mempool הראשון</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">10</context>
