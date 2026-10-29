@@ -54,7 +54,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else japaneseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -248,6 +248,57 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>プライバシーポリシー</h2>
+    <h6>更新日: 2026年9月20日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>利用状況の測定</h4>
+      <p>tx.taxiはページ閲覧数とパフォーマンスの測定にCloudflare Web Analyticsを使用し、各エクスプローラー間で共有するファーストパーティの日次Cookieを使って、UTC日ごとにブラウザーを1回数えます。日次の利用状況収集では、日次識別子、エクスプローラーのホスト名、操作の有無のみを保存します。検索文字列、アドレス、トランザクションID、URL、IPアドレスは受け取りません。日次の個別記録は31日後に失効し、集計数は400日間保持します。Do Not TrackまたはGlobal Privacy Controlが有効な場合、このファーストパーティ測定は無効になります。<a href="https://tx.taxi/privacy#audience-measurement">詳細とオプトアウト</a>.</p>
+      <h4>プライバシーが重要な場合は自分のノードを使用</h4>
+      <p>btc.tx.taxiはサイト運営者が設定したバックエンドを通じて、Bitcoinの公開チェーンおよびメンプールデータを表示します。独立した検証とより強いネットワーク上のプライバシーのためには、自分のBitcoinノードとエクスプローラーをご利用ください。</p>
+
+      <br>
+
+      <h4>リクエストデータ</h4>
+      <p>通常のウェブサイトおよびAPIへのリクエストにより、IPアドレス、ユーザーエージェント、リクエストされたURL、リクエスト時刻など、標準的なウェブメタデータが運営者に伝わる場合があります。サーバーログは信頼性の確保、不正利用の防止、デバッグのために保存される場合があります。</p>
+
+      <br>
+
+      <h4>ローカル設定</h4>
+      <p>テーマ、表示単位、法定通貨、言語、タイムゾーンなどの表示設定がブラウザーに保存される場合があります。btc.tx.taxiの通常の利用にアカウントは必要ありません。</p>
+
+      <br>
+
+      <h4>公開ブロックチェーンデータ</h4>
+      <p>Bitcoinのトランザクション、アドレス、スクリプト、ブロックは公開されています。アドレスやトランザクションの検索がネットワークメタデータと関連付けられる場合があります。公開エクスプローラーをプライバシーの境界と見なさないでください。</p>
+
+      <br>
+
+      <h4>外部リンク</h4>
+      <p>このサイトはtx.taxiの連絡先、Bitcoinのドキュメント、元プロジェクトのソースコード、ライセンス情報にリンクしています。外部サービスにはそれぞれ独自のプライバシーポリシーがあります。</p>
+
+      <br>
+
+      <h4>オープンソースの帰属表示</h4>
+      <p>btc.tx.taxiはmempool/mempoolを基にしており、AGPLv3の義務を引き継ぎます。Mempoolの名称、ロゴ、商標はそれぞれの所有者に帰属します。btc.tx.taxiはMempool Holdings S.A. de C.V.と提携しておらず、同社の承認を受けていません。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

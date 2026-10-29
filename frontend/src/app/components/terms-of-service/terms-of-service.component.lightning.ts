@@ -18,9 +18,10 @@ export class TermsOfServiceComponent {
   get it(): boolean { return this.locale.startsWith('it'); }
   get pt(): boolean { return this.locale.startsWith('pt'); }
   get ru(): boolean { return this.locale.startsWith('ru'); }
+  get ja(): boolean { return this.locale.startsWith('ja'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.pt ? 'Termos de serviço' : this.ru ? 'Условия использования' : this.it ? 'Termini di servizio' : this.fr ? 'Conditions d’utilisation' : this.de ? 'Nutzungsbedingungen' : this.es ? 'Términos de servicio' : 'Terms of Service');
-    this.seoService.setDescription(this.pt ? 'Termos de uso de lightning.btc.tx.taxi como explorador informativo Lightning.' : this.ru ? 'Условия использования lightning.btc.tx.taxi как информационного обозревателя Lightning.' : this.it ? 'Termini di utilizzo di lightning.btc.tx.taxi come esploratore informativo Lightning.' : this.fr ? 'Conditions d’utilisation de lightning.btc.tx.taxi comme explorateur informatif des nœuds et canaux Lightning.' : this.de ? 'Nutzungsbedingungen für lightning.btc.tx.taxi als Informations-Explorer für Lightning-Knoten und -Kanäle.' : this.es ? 'Términos de uso de lightning.btc.tx.taxi como explorador informativo de nodos y canales Lightning.' : 'Terms for using lightning.btc.tx.taxi as an informational Lightning node and channel explorer.');
+    this.seoService.setTitle(this.ja ? '利用規約' : this.pt ? 'Termos de serviço' : this.ru ? 'Условия использования' : this.it ? 'Termini di servizio' : this.fr ? 'Conditions d’utilisation' : this.de ? 'Nutzungsbedingungen' : this.es ? 'Términos de servicio' : 'Terms of Service');
+    this.seoService.setDescription(this.ja ? 'lightning.btc.tx.taxiの情報提供エクスプローラーの利用規約。' : this.pt ? 'Termos de uso de lightning.btc.tx.taxi como explorador informativo Lightning.' : this.ru ? 'Условия использования lightning.btc.tx.taxi как информационного обозревателя Lightning.' : this.it ? 'Termini di utilizzo di lightning.btc.tx.taxi come esploratore informativo Lightning.' : this.fr ? 'Conditions d’utilisation de lightning.btc.tx.taxi comme explorateur informatif des nœuds et canaux Lightning.' : this.de ? 'Nutzungsbedingungen für lightning.btc.tx.taxi als Informations-Explorer für Lightning-Knoten und -Kanäle.' : this.es ? 'Términos de uso de lightning.btc.tx.taxi como explorador informativo de nodos y canales Lightning.' : 'Terms for using lightning.btc.tx.taxi as an informational Lightning node and channel explorer.');
   }
 }

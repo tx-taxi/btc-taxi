@@ -51,7 +51,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else japaneseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -232,6 +232,55 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>プライバシーポリシー</h2>
+    <h6>更新日: 2026年10月3日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>公開ネットワークデータ</h4>
+      <p>lightning.btc.tx.taxiは公開されたLightningのgossipとネットワーク統計を表示します。プライベートチャネル、個々の支払い、チャネル残高は公開されません。独立した検証のためには、公開グラフを自分のLightningノードと比較してください。</p>
+
+      <br>
+
+      <h4>リクエストデータ</h4>
+      <p>通常のウェブサイトおよびAPIへのリクエストにより、IPアドレス、ユーザーエージェント、リクエストされたURL、リクエスト時刻など、標準的なウェブメタデータが運営者に伝わる場合があります。サーバーログは信頼性の確保、不正利用の防止、デバッグのために保存される場合があります。</p>
+
+      <br>
+
+      <h4>ローカル設定</h4>
+      <p>テーマ、表示単位、法定通貨、言語、タイムゾーンなどの表示設定がブラウザーに保存される場合があります。lightning.btc.tx.taxiの通常の利用にアカウントは必要ありません。</p>
+
+      <br>
+
+      <h4>検索と公開チャネル</h4>
+      <p>公開Lightningノードの鍵、公開された接続先、チャネルポリシー、Bitcoinの資金投入トランザクションは公開情報です。ノードやチャネルの検索がネットワークメタデータと関連付けられる場合があります。公開エクスプローラーをプライバシーの境界と見なさないでください。</p>
+
+      <br>
+
+      <h4>外部リンク</h4>
+      <p>このサイトはtx.taxiの連絡先、Bitcoinのドキュメント、元プロジェクトのソースコード、ライセンス情報にリンクしています。外部サービスにはそれぞれ独自のプライバシーポリシーがあります。</p>
+
+      <br>
+
+      <h4>オープンソースの帰属表示</h4>
+      <p>lightning.btc.tx.taxiはmempool/mempoolを基にしており、AGPLv3の義務を引き継ぎます。Mempoolの名称、ロゴ、商標はそれぞれの所有者に帰属します。lightning.btc.tx.taxiはMempool Holdings S.A. de C.V.と提携しておらず、同社の承認を受けていません。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

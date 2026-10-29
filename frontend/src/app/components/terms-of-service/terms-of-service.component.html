@@ -52,7 +52,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else japaneseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -233,6 +233,55 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>利用規約</h2>
+    <h6>更新日: 2026年9月20日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>情報提供サービス</h4>
+      <p>btc.tx.taxiはBitcoinの公開ブロック、トランザクション、アドレス、マイニングデータ、手数料推定値、メンプールの状態を表示します。これは情報提供サービスであり、ウォレット、取引所、資産管理者、決済処理業者、トランザクション優先サービスではありません。</p>
+
+      <br>
+
+      <h4>Bitcoinトランザクションの操作はできません</h4>
+      <p>運営者はBitcoinトランザクションの取り消し、キャンセル、促進、回収、送金先の変更を行えません。ウォレット、取引所、支払いに関する問題は、そのトランザクションを作成または受領したサービスにお問い合わせください。</p>
+
+      <br>
+
+      <h4>データと可用性</h4>
+      <p>エクスプローラーのデータは遅延、不完全、利用不能、または他のノードの情報と異なる場合があります。手数料は推定値であり、承認を保証するものではありません。サービスは現状のまま提供され、中断のない可用性や特定目的への適合性は保証されません。</p>
+
+      <br>
+
+      <h4>適切な利用</h4>
+      <p>ウェブサイトやAPIを不正に利用したり、サービスの運営を妨げたり、合理的なレート制限を回避したり、違法に利用したりしないでください。可用性を守るため、必要に応じてアクセスを制限する場合があります。</p>
+
+      <br>
+
+      <h4>外部サービス</h4>
+      <p>このサイトはtx.taxiの連絡先、Bitcoinの参考資料、ライセンス情報、依存するインフラストラクチャにリンクする場合があります。外部サイトにはそれぞれ独自の利用規約とポリシーがあります。</p>
+
+      <br>
+
+      <h4>オープンソース</h4>
+      <p>btc.tx.taxi is derived from the Mempool オープンソース Project and is distributed under AGPLv3 obligations. Contact <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>にお問い合わせください。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

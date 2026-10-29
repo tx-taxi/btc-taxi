@@ -46,7 +46,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else japaneseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -208,6 +208,50 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>商標と帰属表示</h2>
+    <h6>更新日: 2026年10月3日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxiについて</h4>
+      <p>lightning.btc.tx.taxiはtx.taxiファミリーの独立して運営されるLightningエクスプローラーです。ドメイン、ワードマーク、チェーンの配色、サービスのアイデンティティにより、このフォークは元プロジェクトと区別されています。</p>
+
+      <br>
+
+      <h4>元プロジェクトの帰属表示</h4>
+      <p>This software is derived from the Mempool オープンソース Project. The upstream source code, visual system, project names, logos, and trademarks belong to their respective owners.</p>
+
+      <br>
+
+      <h4>関連性について</h4>
+      <p>lightning.btc.tx.taxiはMempool Holdings S.A. de C.V.と提携しておらず、同社による後援や承認を受けていません。mempool.spaceとmempool/mempoolへの言及は、このフォークの基となったソフトウェアを特定するための帰属表示です。</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoinはオープンなネットワークおよびプロトコルです。Bitcoin、BTC、satoshi、Lightning、ノード、チャネル、ルーティングポリシーへの言及は、このエクスプローラーが表示するネットワークデータを説明するものです。</p>
+
+      <br>
+
+      <h4>ライセンス</h4>
+      <p>このフォークは元プロジェクトのAGPLv3ライセンス上の義務に従います。適用されるソースコードおよびライセンス情報については運営者にお問い合わせください。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
