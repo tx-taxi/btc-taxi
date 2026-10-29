@@ -8867,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>Obtenha respostas para perguntas comuns como: O que é um mempool? Por que minha transação não está sendo confirmada? Como posso executar minha própria instância do The Mempool Open Source Project? E mais.</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Encontre respostas a perguntas comuns sobre Bitcoin, incluindo o mempool, confirmação de transações, taxas, mineração e blocos.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8891,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>Documentação para o serviço REST API mempool.space: obtenha informações sobre endereços, transações, blocos, taxas, mineração, rede Lightning e muito mais.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>Documentação da API REST btc.tx.taxi: consulte endereços, transações, blocos, taxas, mineração e dados da rede Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8915,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Documentação para o serviço API WebSocket mempool.space: obtenha informações em tempo real sobre blocos, mempools, transações, endereços e muito mais.</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>Documentação da API WebSocket btc.tx.taxi: receba atualizações em tempo real de blocos, mempool, transações e endereços Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -12110,8 +12110,7 @@
       </trans-unit>
 
       <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html">
-        <source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />
-          <x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}"/> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</source>
         <target>Esta transação pertence a um grupo de 1 transação, com taxa efetiva combinada de <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />
           <x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target>
         <context-group purpose="location">
@@ -12122,8 +12121,7 @@
       </trans-unit>
 
       <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html">
-        <source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />
-          <x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}"/> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}"/> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>.</source>
         <target>Esta transação pertence a um grupo de <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transações, com taxa efetiva combinada de <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" />
           <x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target>
         <context-group purpose="location">
@@ -12236,11 +12234,7 @@
       </trans-unit>
 
       <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html">
-        <source>
-          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />
-          <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-        </source>
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request"/><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only"/>btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request"/>For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
         <target>
           <x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />
           <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />O btc.tx.taxi apresenta apenas dados públicos sobre a rede Bitcoin.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> Não pode recuperar fundos, resolver problemas de carteira, reverter transações ou alterar a prioridade de confirmação.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
