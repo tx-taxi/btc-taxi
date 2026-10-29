@@ -444,7 +444,42 @@
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
-<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else englishLegal" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
+<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
+<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else englishLegal" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #slovenianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>Pogoji uporabe</h2>
+    <h6>Posodobljeno: 3. oktober 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>Informacijski raziskovalec</h4>
+      <p>lightning.btc.tx.taxi omogoča vpogled v javna vozlišča in kanale Lightning, pravila usmerjanja, kapaciteto omrežja in zgodovinsko statistiko. Je informacijska storitev, ne pa denarnica, menjalnica, skrbnik sredstev, obdelovalec plačil ali storitev za prednostno obravnavo transakcij.</p>
+      <br>
+      <h4>Brez nadzora nad plačili ali kanali</h4>
+      <p>Upravljavec ne more poslati, razveljaviti, povrniti ali preusmeriti plačila Lightning niti nadzorovati kanala. Pri težavah z denarnico ali plačilom se obrnite na storitev, ki je ustvarila ali prejela plačilo.</p>
+      <br>
+      <h4>Podatki in razpoložljivost</h4>
+      <p>Podatki raziskovalca lahko zamujajo, so nepopolni, nedostopni ali drugačni od pogleda drugega vozlišča. Objavljene pristojbine za usmerjanje ne zagotavljajo razpoložljivosti poti ali uspeha plačila. Storitev je na voljo takšna, kot je, brez obljube neprekinjene razpoložljivosti ali primernosti za določen namen.</p>
+      <br>
+      <h4>Dovoljena uporaba</h4>
+      <p>Ne zlorabljajte spletne strani ali API-ja, ne motite delovanja storitve, ne obidite razumnih omejitev hitrosti in storitve ne uporabljajte nezakonito. Dostop je lahko omejen, kadar je to potrebno za zaščito razpoložljivosti.</p>
+      <br>
+      <h4>Zunanje storitve</h4>
+      <p>Ta stran lahko vsebuje povezave do kontaktnih kanalov tx.taxi, virov o Bitcoinu, informacij o licencah in infrastrukturnih odvisnosti. Zunanja spletna mesta imajo svoje pogoje in pravilnike.</p>
+      <br>
+      <h4>Odprta koda</h4>
+      <p>lightning.btc.tx.taxi izhaja iz odprtokodnega projekta Mempool in se distribuira v skladu z obveznostmi AGPLv3. Za ustrezne informacije o izvorni kodi in licenci se obrnite na <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
+
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">

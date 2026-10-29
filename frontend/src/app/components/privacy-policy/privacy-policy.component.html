@@ -468,7 +468,45 @@
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
 <ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
-<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else englishLegal" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
+<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else slovenianOrEnglish" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
+<ng-template #slovenianOrEnglish><ng-container *ngIf="sl; else englishLegal" [ngTemplateOutlet]="slovenianLegal"></ng-container></ng-template>
+<ng-template #slovenianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>Pravilnik zasebnosti</h2>
+    <h6>Posodobljeno: 29. oktober 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>Merjenje obiska</h4>
+      <p>tx.taxi uporablja Cloudflare Web Analytics za oglede strani in zmogljivost ter lastni dnevni piškotek, skupen raziskovalcem, za štetje brskalnikov enkrat na dan po UTC. Zbiralnik dnevnih obiskov shrani samo dnevni identifikator, ime gostitelja raziskovalca in podatek o interakciji. Ne shranjuje besedila iskanja, naslovov veriženja blokov, ID-jev transakcij, URL-jev obiskanih strani ali IP-naslovov. Posamezni dnevni zapisi potečejo po 31 dneh; združeni podatki se hranijo 400 dni. Nastavitvi Do Not Track in Global Privacy Control onemogočita to lastno merjenje. <a href="https://tx.taxi/privacy#audience-measurement">Podrobnosti in odjava</a>.</p>
+      <br>
+      <h4>Ko je zasebnost pomembna, uporabite svoje vozlišče</h4>
+      <p>btc.tx.taxi prikazuje javne podatke verige Bitcoin in mempoola prek zalednega sistema, ki ga nastavi upravljavec spletnega mesta. Za neodvisno preverjanje in najvišjo raven omrežne zasebnosti uporabljajte lastno vozlišče Bitcoin in raziskovalec.</p>
+      <br>
+      <h4>Podatki zahtev</h4>
+      <p>Običajne zahteve spletne strani in API-ja lahko upravljavcu razkrijejo običajne spletne metapodatke, vključno z vašim IP-naslovom, uporabniškim agentom, zahtevanim URL-jem in časom zahteve. Strežniški dnevniki se lahko hranijo zaradi zanesljivosti, preprečevanja zlorab in odpravljanja napak.</p>
+      <br>
+      <h4>Lokalne nastavitve</h4>
+      <p>Nastavitve prikaza, kot so tema, obračunska enota, fiat valuta, jezik in časovni pas, se lahko shranijo v vašem brskalniku. btc.tx.taxi za običajno uporabo raziskovalca ne zahteva računa.</p>
+      <br>
+      <h4>Javni podatki verige blokov</h4>
+      <p>Transakcije, naslovi, skripti in bloki Bitcoin so javni. Iskanje naslova ali transakcije lahko to iskanje poveže z vašimi omrežnimi metapodatki. Javnega raziskovalca ne obravnavajte kot mejo zasebnosti.</p>
+      <br>
+      <h4>Zunanje povezave</h4>
+      <p>Ta stran vsebuje povezave do kontaktnih kanalov tx.taxi, dokumentacije Bitcoin, izvorne kode izvornega projekta in informacij o licencah. Te zunanje storitve imajo svoje pravilnike zasebnosti.</p>
+      <br>
+      <h4>Navedba odprtokodne kode</h4>
+      <p>btc.tx.taxi izhaja iz mempool/mempool in prevzema njegove obveznosti AGPLv3. Imena, logotipi in blagovne znamke Mempool ostajajo last njihovih lastnikov; btc.tx.taxi ni povezan z družbo Mempool Holdings S.A. de C.V. in ta ga ne podpira.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
+
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">
