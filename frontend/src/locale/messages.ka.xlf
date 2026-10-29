@@ -7302,7 +7302,7 @@
       </trans-unit>
       <trans-unit id="dd230222e3ae689913445ce93b6ae3f7cce7458b" datatype="html">
         <source>Descendant</source>
-        <target>კლებადი</target>
+        <target>შთამომავალი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/cpfp-info.component.html</context>
           <context context-type="linenumber">20</context>
@@ -7316,7 +7316,7 @@
       </trans-unit>
       <trans-unit id="8c16167a5d7c96d14ff280b09de312d18d5e2511" datatype="html">
         <source>Ancestor</source>
-        <target>შთამომავალი</target>
+        <target>წინაპარი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/cpfp-info.component.html</context>
           <context context-type="linenumber">44</context>
@@ -8045,7 +8045,7 @@
       </trans-unit>
       <trans-unit id="8900247c0476fea8fcbee57a72a1d1da5ddd40ff" datatype="html">
         <source>other outputs</source>
-        <target>სხვა input ები</target>
+        <target>სხვა გამომავლები</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-bowtie-graph-tooltip/tx-bowtie-graph-tooltip.component.html</context>
           <context context-type="linenumber">13</context>
@@ -9532,7 +9532,7 @@
       </trans-unit>
       <trans-unit id="af15c87bfed273bc095ba572cf27e3aaffc33b22" datatype="html">
         <source>Active capacity</source>
-        <target>საშუალო სიმძლავრე</target>
+        <target>აქტიური ტევადობა</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node-preview.component.html</context>
           <context context-type="linenumber">20</context>
@@ -9664,7 +9664,7 @@
       </trans-unit>
       <trans-unit id="5e348f3d51c3bb283c16572bee1e293ea991cf49" datatype="html">
         <source>Funding weight</source>
-        <target>დაფინანსების განაკვეთი</target>
+        <target>დაფინანსების წონა</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">204</context>
