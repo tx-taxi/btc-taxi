@@ -58,6 +58,8 @@ export class OpenGraphService {
       ? 'صفحة معاملة Bitcoin على btc.tx.taxi تعرض حالة التأكيد والرسوم والمدخلات والمخرجات.'
       : this.locale.toLowerCase().startsWith('ca')
       ? 'Una pàgina de transacció de Bitcoin a btc.tx.taxi que mostra l’estat de confirmació, la comissió, les entrades i les sortides.'
+      : this.locale.toLowerCase().startsWith('hr')
+      ? 'Stranica Bitcoin transakcije na btc.tx.taxi prikazuje stanje potvrde, naknadu, ulaze i izlaze.'
       : this.locale.toLowerCase().startsWith('fa')
       ? 'صفحه تراکنش بیت‌کوین در btc.tx.taxi، شامل وضعیت تأیید، کارمزد، ورودی‌ها و خروجی‌ها.'
       : this.locale.toLowerCase().startsWith('fi')
