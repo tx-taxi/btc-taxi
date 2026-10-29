@@ -13123,6 +13123,22 @@
           <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html"><source>Loading transaction prevouts</source><target>در حال بارگذاری خروجی‌های قبلی تراکنش</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html"><source>Loading CPFP</source><target>در حال بارگذاری CPFP</target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html"><source>Loading</source><target>در حال بارگذاری</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html"><source>Some prevouts do not exist or are already spent</source><target>برخی خروجی‌های قبلی وجود ندارند یا قبلاً خرج شده‌اند</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target>انتشار تراکنش ناموفق بود، علت: </target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html"><source>Hex or base64 encoded PSBT involving this address</source><target>PSBT مرتبط با این نشانی با کدگذاری hex یا base64</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html"><source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source><target>PSBT_IN_TAP_LEAF_SCRIPT با کدگذاری hex یا base64، جداشده با ویرگول (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html"><source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source><target>فیلد PSBT_OUT_TAP_TREE با کدگذاری hex یا base64</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html"><source>Hex or base64 encoded x-only public key</source><target>کلید عمومی فقط با مختصات x، با کدگذاری hex یا base64</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html"><source>Tapleaves</source><target>برگ‌های Taproot</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html"><source>Taptree</source><target>درخت Taproot</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html"><source>Internal Key</source><target>کلید داخلی</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html"><source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source><target>برگ‌های Taproot باید با قالب &quot;&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;&quot; و جداشده با ویرگول باشند</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target>هنگام پردازش داده‌های Taproot خطایی رخ داد</target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>نشان استخر استخراج <x id="INTERPOLATION" /></target></trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>پیوستن به کانال تلگرام tx.taxi</target></trans-unit>
     </body>
   </file>
 </xliff>
