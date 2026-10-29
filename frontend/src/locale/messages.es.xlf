@@ -12014,6 +12014,7 @@
       <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target>Hora de las islas de la Línea (LINT)</target></trans-unit>
       <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>La comisión base media cobrada por los nodos de enrutamiento, excluidas las comisiones base superiores a 5000 mSats</target></trans-unit>
       <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>La mediana de la comisión base cobrada por los nodos de enrutamiento, excluidas las comisiones base superiores a 5000 mSats</target></trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html"><source>Inscription</source><target>Inscripción</target></trans-unit>
     </body>
   </file>
 </xliff>
