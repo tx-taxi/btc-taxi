@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  vi: {
+    choose: 'Chọn chuỗi để tìm kiếm', selectedAria: 'Trình khám phá đã chọn', selected: 'Đã chọn',
+    unavailable: 'Danh sách trình khám phá không khả dụng', loading: 'Đang tải danh sách trình khám phá', automatic: 'Định tuyến tự động',
+    viewHub: 'Xem tx.taxi', hint: 'Hoặc truy cập trực tiếp:', searchExample: '[nội dung tìm kiếm]',
+    native: 'Trình khám phá của chúng tôi', external: 'Trình khám phá bên thứ ba', opened: 'Đang mở',
+    open: 'Mở', switch: 'Chuyển', found: 'Đã tìm thấy', possible: 'Có thể', search: 'Tìm kiếm',
+    additional: (name: string) => `Các trình khám phá khác cho ${name}`,
+    openExplorer: (name: string) => `Mở ${name}`,
+    openNewTab: (name: string) => `Mở ${name} trong thẻ mới`,
+    switchTo: (name: string) => `Chuyển sang ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ẩn' : 'Hiện'} thêm lựa chọn cho ${name} (${count})`,
+  },
   th: {
     choose: 'เลือกเชนสำหรับค้นหา', selectedAria: 'ตัวสำรวจที่เลือก', selected: 'เลือกแล้ว',
     unavailable: 'รายการตัวสำรวจไม่พร้อมใช้งาน', loading: 'กำลังโหลดรายการตัวสำรวจ', automatic: 'กำหนดเส้นทางอัตโนมัติ',
