@@ -11669,7 +11669,7 @@
       <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>דירוג צמתים</target></trans-unit>
       <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>כתובת צומת</target></trans-unit>
       <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>לא נמצא צומת או ערוץ Lightning.</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>פתוח</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>פתיחה</target></trans-unit>
       <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>חפש</target></trans-unit>
       <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>חפש</target></trans-unit>
       <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>החיפוש אינו זמין. נסו שוב.</target></trans-unit>
@@ -11747,9 +11747,9 @@
       <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>לוגו בריכת כרייה</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target>עמלות (%)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target>עמלות (USD)</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>תגמול בלוק</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>תגמול בלוק (%)</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>תגמול בלוק (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>תגמול בסיס לבלוק</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>תגמול בסיס לבלוק (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>תגמול בסיס לבלוק (USD)</target></trans-unit>
       <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>טווח עמלות</target></trans-unit>
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>שיעור עמלה חציוני</target></trans-unit>
       <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>יצירת קשר עם המתחזק</target></trans-unit>
