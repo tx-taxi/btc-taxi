@@ -1071,6 +1071,7 @@
       </trans-unit>
       <trans-unit id="2279bfb8531701cc176ff6b266c3fa0df3983bce" datatype="html">
         <source>Confirming your acceleration with our mining pool partners...</source>
+        <target state="needs-review-translation">Підтверджуємо прискорення з нашими партнерами — майнінг-пулами...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">563</context>
@@ -1079,6 +1080,7 @@
       </trans-unit>
       <trans-unit id="d005740e3435cf7e0aad9a67d179ec3b3065205e" datatype="html">
         <source>...sorry, this is taking longer than expected...</source>
+        <target state="needs-review-translation">...перепрошуємо, це займає більше часу, ніж очікувалося...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">565</context>
@@ -1087,6 +1089,7 @@
       </trans-unit>
       <trans-unit id="9b606b2405f1b6112ef90ce6f8b8433617ec547a" datatype="html">
         <source>Transaction is being accelerated!</source>
+        <target state="needs-review-translation">Транзакцію прискорюють!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">575</context>
@@ -1095,6 +1098,7 @@
       </trans-unit>
       <trans-unit id="5d3228c5abc698342a7c0d6c8728e9308425d67e" datatype="html">
         <source>Transaction has been accepted for acceleration by our mining pool partners.</source>
+        <target state="needs-review-translation">Наші партнери — майнінг-пули прийняли транзакцію для прискорення.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">582</context>
@@ -1103,6 +1107,7 @@
       </trans-unit>
       <trans-unit id="54e27b9841ce10e2650f61dbaa3a07a08a3e9fac" datatype="html">
         <source>Get a receipt.</source>
+        <target state="needs-review-translation">Отримати квитанцію.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">586</context>
@@ -1119,6 +1124,7 @@
       </trans-unit>
       <trans-unit id="746506272a06b85cba0efc14907940df4bafdf96" datatype="html">
         <source>Calculating cost...</source>
+        <target state="needs-review-translation">Обчислення вартості...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">606</context>
@@ -1127,6 +1133,7 @@
       </trans-unit>
       <trans-unit id="484e154f1b26e67760d10baa8dddb2c69ddb1990" datatype="html">
         <source>customize</source>
+        <target state="needs-review-translation">налаштувати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">612</context>
@@ -1135,6 +1142,7 @@
       </trans-unit>
       <trans-unit id="fc60844faa5ea496fe8b8cfb7620b2bfc733c90b" datatype="html">
         <source>Accelerate to ~<x id="INTERPOLATION" equiv-text="{{ x | number : '1.0-0' }}"/> sat/vB</source>
+        <target>Прискорити до ~<x id="INTERPOLATION" /> sat/vB</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">615</context>
@@ -1161,6 +1169,7 @@
       </trans-unit>
       <trans-unit id="cae178cb66733552da9e3baefc1949a18af63ee0" datatype="html">
         <source>Your transaction will be prioritized by up to <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="1' }}"/>%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> of miners.</source>
+        <target state="needs-review-translation">Вашій транзакції нададуть пріоритет до <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="1' }}" />%<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" /> майнерів.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">643</context>
@@ -1432,6 +1441,7 @@
       </trans-unit>
       <trans-unit id="c3aaae1073e33c932a5c98f98c3520645c0e3a93" datatype="html">
         <source>Out-of-band fees</source>
+        <target state="needs-review-translation">Комісії поза протоколом</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">27</context>
@@ -1496,6 +1506,7 @@
       </trans-unit>
       <trans-unit id="2c2a527d090d5d030fc130a243135dbc6ba276f0" datatype="html">
         <source>Accelerated by</source>
+        <target state="needs-review-translation">Прискорено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">48</context>
@@ -1509,6 +1520,7 @@
       </trans-unit>
       <trans-unit id="96d56ec71c6e78cb4d6204c4a9359a3d38fcdb59" datatype="html">
         <source>Canceled</source>
+        <target state="needs-review-translation">Скасовано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline.component.html</context>
           <context context-type="linenumber">32</context>
@@ -1647,6 +1659,7 @@
       </trans-unit>
       <trans-unit id="cf2ec414465d65ab24b354663d94d051a67e26e9" datatype="html">
         <source>Total vSize</source>
+        <target state="needs-review-translation">Загальний віртуальний розмір</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-stats/acceleration-stats.component.html</context>
           <context context-type="linenumber">20</context>
@@ -1667,6 +1680,7 @@
       </trans-unit>
       <trans-unit id="d932577b535f10c9b3e25aaa430220bb09efc171" datatype="html">
         <source> of blocks</source>
+        <target state="needs-review-translation"> блоків</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-stats/acceleration-stats.component.html</context>
           <context context-type="linenumber">23</context>
@@ -1737,6 +1751,7 @@
       </trans-unit>
       <trans-unit id="9310d4be621ac60b19a4d73258b25f2b411971e7" datatype="html">
         <source>Bid</source>
+        <target state="needs-review-translation">Ставка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerations-list/accelerations-list.component.html</context>
           <context context-type="linenumber">13</context>
@@ -1823,6 +1838,7 @@
       </trans-unit>
       <trans-unit id="a7c328c4773db932ff14a1954e15e43dca58e7b7" datatype="html">
         <source>Completed</source>
+        <target state="needs-review-translation">Завершено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerations-list/accelerations-list.component.html</context>
           <context context-type="linenumber">65</context>
@@ -1831,6 +1847,7 @@
       </trans-unit>
       <trans-unit id="64b582e0d8e3a28331a14d2a1017fa5d6ffb8d93" datatype="html">
         <source>Failed</source>
+        <target state="needs-review-translation">Не виконано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerations-list/accelerations-list.component.html</context>
           <context context-type="linenumber">68</context>
@@ -1879,6 +1896,7 @@
       </trans-unit>
       <trans-unit id="9467c16588ee9f97dfa4f1dd9c96a02d6dc6e008" datatype="html">
         <source>(1 day)</source>
+        <target>(1 день)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">27</context>
@@ -1887,6 +1905,7 @@
       </trans-unit>
       <trans-unit id="0efb19c3388cbcc9f3cd257f389843f9ad2a1f31" datatype="html">
         <source>(1 month)</source>
+        <target>(1 місяць)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">30</context>
@@ -1895,6 +1914,7 @@
       </trans-unit>
       <trans-unit id="9c45dedfd8ffeab9009a9a272dda615ca3bf31fa" datatype="html">
         <source>(1 year)</source>
+        <target>(1 рік)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">33</context>
@@ -1903,6 +1923,7 @@
       </trans-unit>
       <trans-unit id="9d202e68dd5064ae2e3d01073267b4db63b16c40" datatype="html">
         <source>(all time)</source>
+        <target>(за весь час)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">36</context>
@@ -1911,6 +1932,7 @@
       </trans-unit>
       <trans-unit id="8754c2dbc855d18ee90ffff136caedfd64f71e83" datatype="html">
         <source>all</source>
+        <target>усі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">55</context>
@@ -1923,6 +1945,7 @@
       </trans-unit>
       <trans-unit id="a4029b3c74ad55f210086f85b0d237870b5f7c03" datatype="html">
         <source>Historical Trend</source>
+        <target>Історична динаміка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.html</context>
           <context context-type="linenumber">82</context>
@@ -1981,6 +2004,7 @@
       </trans-unit>
       <trans-unit id="6bb1e9770b5c27f172ae67754ba316fe455a9821" datatype="html">
         <source>Accelerated to</source>
+        <target state="needs-review-translation">Прискорено до</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/active-acceleration-box/active-acceleration-box.component.html</context>
           <context context-type="linenumber">7</context>
@@ -1990,6 +2014,7 @@
       </trans-unit>
       <trans-unit id="3af3e9a4c4d8135f386b2fc59233884ae8fc57fb" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;"/>of hashrate<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="{{ acceleratedByPercentage }}" /> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;symbol hashrate-label&quot;&gt;" />хешрейту<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/active-acceleration-box/active-acceleration-box.component.html</context>
           <context context-type="linenumber">32</context>
@@ -1998,6 +2023,7 @@
       </trans-unit>
       <trans-unit id="4231517605576357140" datatype="html">
         <source>not accelerating</source>
+        <target state="needs-review-translation">не прискорюється</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/active-acceleration-box/active-acceleration-box.component.ts</context>
           <context context-type="linenumber">100</context>
@@ -2027,6 +2053,7 @@
       </trans-unit>
       <trans-unit id="5538e35f9f610af0d1c70fcc7919a93191a810ca" datatype="html">
         <source> of block</source>
+        <target state="needs-review-translation"> блоку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/pending-stats/pending-stats.component.html</context>
           <context context-type="linenumber">23</context>
@@ -2326,6 +2353,7 @@
       </trans-unit>
       <trans-unit id="ff658a99e5e3e830f597b7f87fa653c59ec5afab" datatype="html">
         <source>Taproot Tree</source>
+        <target state="needs-review-translation">Дерево Taproot</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">79</context>
@@ -2359,6 +2387,7 @@
       </trans-unit>
       <trans-unit id="6e9a3395f190e740778f523253e1fd6c53259622" datatype="html">
         <source>recent</source>
+        <target>нещодавні</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">114</context>
@@ -2367,6 +2396,7 @@
       </trans-unit>
       <trans-unit id="6efcd0841523798437b60a3c0c27d305e4db33ac" datatype="html">
         <source>Unspent Outputs</source>
+        <target state="needs-review-translation">Невитрачені виходи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">127</context>
@@ -2375,6 +2405,7 @@
       </trans-unit>
       <trans-unit id="0a4ec18d2eb002662ee1c390be17000eace08818" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou"/> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> transaction</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_cou" /> із <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> транзакції</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">142</context>
@@ -2383,6 +2414,7 @@
       </trans-unit>
       <trans-unit id="b2e947b5b892e2d2c5d216b1a198b8bf40da45eb" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb"/> of <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}"/> transactions</source>
+        <target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="of {{ mempoolStats.tx_count + chainStats.tx_count | numb" /> із <x id="INTERPOLATION_1" equiv-text="{{ mempoolStats.tx_count + chainStats.tx_count | number }}" /> транзакцій</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">143</context>
@@ -2400,6 +2432,7 @@
       </trans-unit>
       <trans-unit id="5a2eb7e4a712829c906f69ced254900546d82eca" datatype="html">
         <source><x id="LINE_BREAK" ctype="lb"/><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>There are too many transactions on this address, more than your backend can handle. See more on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;"/>setting up a stronger backend<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/><x id="LINE_BREAK" ctype="lb"/><x id="LINE_BREAK" ctype="lb"/> Consider viewing this address on the official Mempool website instead: </source>
+        <target state="needs-review-translation"><x id="LINE_BREAK" ctype="lb" /><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;" />На цій адресі більше транзакцій, ніж може обробити ваш сервер. Докладніше про <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/docs/faq#address-lookup-issues&quot;&gt;" />налаштування потужнішого сервера<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;" /><x id="LINE_BREAK" ctype="lb" /><x id="LINE_BREAK" ctype="lb" /> Натомість можна переглянути цю адресу на офіційному сайті Mempool: </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">247,251</context>
@@ -2408,6 +2441,7 @@
       </trans-unit>
       <trans-unit id="88b90b0e9c946e7f151c040b0eb68850498fd5cf" datatype="html">
         <source>Confirmed balance</source>
+        <target state="needs-review-translation">Підтверджений баланс</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">289</context>
@@ -2420,6 +2454,7 @@
       </trans-unit>
       <trans-unit id="c7daf1b7c126095c054f2d3728ae790b0ceef33a" datatype="html">
         <source>Confirmed UTXOs</source>
+        <target state="needs-review-translation">Підтверджені UTXO</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">299</context>
@@ -2432,6 +2467,7 @@
       </trans-unit>
       <trans-unit id="ba986bd9e2848d2ef7329394ec87b7f4eaf61118" datatype="html">
         <source>Pending UTXOs</source>
+        <target state="needs-review-translation">Непідтверджені UTXO</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">304</context>
@@ -2457,6 +2493,7 @@
       </trans-unit>
       <trans-unit id="adf2c4fa4a5cc8f65fbecb85e9aae00f8c58b69e" datatype="html">
         <source>Add unpublished spending paths</source>
+        <target state="needs-review-translation">Додати неопубліковані шляхи витрачання</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address.component.html</context>
           <context context-type="linenumber">319</context>
@@ -2465,6 +2502,7 @@
       </trans-unit>
       <trans-unit id="9a1fbb23439ab07ca411d9cb744ea3564911e024" datatype="html">
         <source>Fiat</source>
+        <target state="needs-review-translation">Фіат</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/amount-selector/amount-selector.component.html</context>
           <context context-type="linenumber">5</context>
@@ -2757,6 +2795,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.assets" datatype="html">
         <source>Explore all the assets issued on the Liquid network like LBTC, L-CAD, USDT, and more.</source>
+        <target state="needs-review-translation">Досліджуйте всі активи, випущені в мережі Liquid, зокрема LBTC, L-CAD, USDT та інші.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/assets-nav/assets-nav.component.ts</context>
           <context context-type="linenumber">44</context>
@@ -2829,6 +2868,7 @@
       </trans-unit>
       <trans-unit id="8072922a37fcba13275c2aaed6efb408454cf943" datatype="html">
         <source>Change (7d)</source>
+        <target state="needs-review-translation">Зміна (7 днів)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/balance-widget/balance-widget.component.html</context>
           <context context-type="linenumber">14</context>
@@ -2841,6 +2881,7 @@
       </trans-unit>
       <trans-unit id="00b2f0e8008ca3c1240f29cec13a5a1ebea14dd9" datatype="html">
         <source>Change (30d)</source>
+        <target state="needs-review-translation">Зміна (30 днів)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/balance-widget/balance-widget.component.html</context>
           <context context-type="linenumber">23</context>
@@ -2904,6 +2945,7 @@
       </trans-unit>
       <trans-unit id="4793828002882320882" datatype="html">
         <source>At block: <x id="PH" equiv-text="data[0].data[2]"/></source>
+        <target state="needs-review-translation">На блоці: <x id="PH" equiv-text="data[0].data[2]" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">256</context>
@@ -2984,6 +3026,7 @@
       </trans-unit>
       <trans-unit id="41545303ec98792b738d6237adbd1f3b54a22196" datatype="html">
         <source>Block Fees Vs Subsidy</source>
+        <target state="needs-review-translation">Комісії блоку та субсидія</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -3000,6 +3043,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
         <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
+        <target>Переглядайте комісії майнерів за блок Bitcoin порівняно з субсидією за блок у BTC та USD протягом часу.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -3007,6 +3051,7 @@
       </trans-unit>
       <trans-unit id="8538305450922736186" datatype="html">
         <source>At block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
+        <target state="needs-review-translation">На блоці <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">186</context>
@@ -3014,6 +3059,7 @@
       </trans-unit>
       <trans-unit id="8807945662832318286" datatype="html">
         <source>Around block <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue"/></source>
+        <target state="needs-review-translation">Біля блоку <x id="PH" equiv-text="'&lt;b style=&quot;color: white; margin-left: 2px&quot;&gt;' + data[0].axisValue" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">188</context>
@@ -3056,6 +3102,7 @@
       </trans-unit>
       <trans-unit id="a2f14a73f7a6e94479f67423cc51102da8d6f524" datatype="html">
         <source>None</source>
+        <target state="needs-review-translation">Немає</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">27</context>
@@ -3064,6 +3111,7 @@
       </trans-unit>
       <trans-unit id="360b9f5c32209001518dbd1dc512f25291473b79" datatype="html">
         <source>Tint</source>
+        <target state="needs-review-translation">Відтінок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">32</context>
@@ -3072,6 +3120,7 @@
       </trans-unit>
       <trans-unit id="4cfabb48965febabe67eb491a3b7e58555d3d52a" datatype="html">
         <source>Classic</source>
+        <target state="needs-review-translation">Класичний</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">35</context>
@@ -3378,6 +3427,7 @@
       </trans-unit>
       <trans-unit id="7ad7e4da036e6fd1f3c16f7a52fd15d58f32fd38" datatype="html">
         <source>Deprioritized</source>
+        <target state="needs-review-translation">Пріоритет знижено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">82</context>
@@ -3405,6 +3455,7 @@
       </trans-unit>
       <trans-unit id="4c58d7502a441dcd221a04ab84bb6e2070f39faf" datatype="html">
         <source>No Match</source>
+        <target state="needs-review-translation">Збігів немає</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-overview-tooltip/block-overview-tooltip.component.html</context>
           <context context-type="linenumber">91</context>
@@ -3752,6 +3803,7 @@
       </trans-unit>
       <trans-unit id="27387c2af5dcaf343a548feba821515f5dc00faa" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti"/> transaction</source>
+        <target state="needs-review-translation">Транзакцій: <x id="INTERPOLATION" equiv-text="transaction&lt;/ng-template&gt;     &lt;ng-template #transactionsPlural let-i i18n=&quot;shared.transacti" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">4</context>
@@ -3772,6 +3824,7 @@
       </trans-unit>
       <trans-unit id="14779b0ce4cbc4d975a35a8fe074426228a324f3" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-ri"/> transactions</source>
+        <target state="needs-review-translation">Транзакцій: <x id="INTERPOLATION" equiv-text="transactions&lt;/ng-template&gt;   &lt;/h2&gt;   &lt;ngb-pagination class=&quot;pagination-container float-en" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-transactions.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3823,6 +3876,7 @@
       </trans-unit>
       <trans-unit id="1c3e02c3cb8731ce0b6ff66dc6b60e54386f4230" datatype="html">
         <source>Stale Block</source>
+        <target state="needs-review-translation">Застарілий блок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">13</context>
@@ -3992,6 +4046,7 @@
       </trans-unit>
       <trans-unit id="2862af5284f66d4b06bdcf77a5519141723b6989" datatype="html">
         <source>Stale</source>
+        <target state="needs-review-translation">Застарілий</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">239</context>
@@ -4000,6 +4055,7 @@
       </trans-unit>
       <trans-unit id="9ec7a3eef7ee27f93c9f69d11b820e636efdcd6d" datatype="html">
         <source>Winning</source>
+        <target state="needs-review-translation">Переможний</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">241</context>
@@ -4039,6 +4095,7 @@
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
         <source>Winning Block</source>
+        <target state="needs-review-translation">Переможний блок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
@@ -4168,6 +4225,7 @@
       </trans-unit>
       <trans-unit id="6dbc0664d5922cbd6b8bdc24d4c9ac8b990bae24" datatype="html">
         <source>There is a stale block at this height</source>
+        <target state="needs-review-translation">На цій висоті є застарілий блок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">372</context>
@@ -4176,6 +4234,7 @@
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
         <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source>
+        <target state="needs-review-translation">На цій висоті застарілих блоків: <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
@@ -4252,6 +4311,7 @@
       </trans-unit>
       <trans-unit id="56ad2f3895f350abdd3cee2d95498deb8819afac" datatype="html">
         <source>Error loading block data.</source>
+        <target state="needs-review-translation">Помилка завантаження даних блоку.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">444</context>
@@ -4715,6 +4775,7 @@
       </trans-unit>
       <trans-unit id="6728a64d6346c29f1b87f19160f6d1c70ca7e894" datatype="html">
         <source>Treasury</source>
+        <target state="needs-review-translation">Казначейство</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">228</context>
@@ -4731,6 +4792,7 @@
       </trans-unit>
       <trans-unit id="6aff623d92cd45f847fe6e8de9452647ffe50984" datatype="html">
         <source>Treasury Transactions</source>
+        <target state="needs-review-translation">Транзакції казначейства</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">251</context>
@@ -4743,6 +4805,7 @@
       </trans-unit>
       <trans-unit id="d5912dcb5ff6c43e081fd2544956d19d39e8fa36" datatype="html">
         <source>X Timeline</source>
+        <target state="needs-review-translation">Стрічка X</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.html</context>
           <context context-type="linenumber">299</context>
@@ -5090,6 +5153,7 @@
       </trans-unit>
       <trans-unit id="f563861ed63d1c6ceffeaf29e8823bb47ed3a0eb" datatype="html">
         <source>Testnet4 Faucet</source>
+        <target state="needs-review-translation">Кран Testnet4</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faucet/faucet.component.html</context>
           <context context-type="linenumber">4</context>
@@ -5098,6 +5162,7 @@
       </trans-unit>
       <trans-unit id="615ba6c4511a36f93c225c725935fdbf16f162a5" datatype="html">
         <source>Amount (sats)</source>
+        <target state="needs-review-translation">Сума (сатоші)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faucet/faucet.component.html</context>
           <context context-type="linenumber">64</context>
@@ -5106,6 +5171,7 @@
       </trans-unit>
       <trans-unit id="2183c5be8b7f219129fdbd07ed2dd14d67fd1711" datatype="html">
         <source>Request Testnet4 Coins</source>
+        <target state="needs-review-translation">Запросити монети Testnet4</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/faucet/faucet.component.html</context>
           <context context-type="linenumber">83</context>
@@ -5395,6 +5461,7 @@
       </trans-unit>
       <trans-unit id="cad77115d6fd3adb4383841223f9feae57e1ee86" datatype="html">
         <source>Hashrate (1w)</source>
+        <target>Хешрейт (1 тиждень)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5488,6 +5555,7 @@
       </trans-unit>
       <trans-unit id="91086e5b2d5bb0e12635fcfc48e94a70c39b20fc" datatype="html">
         <source>Audit in progress</source>
+        <target state="needs-review-translation">Аудит триває</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/lbtc-pegs-graph/lbtc-pegs-graph.component.html</context>
           <context context-type="linenumber">5</context>
@@ -5848,6 +5916,7 @@
       </trans-unit>
       <trans-unit id="9d89af322d1f011851fd136a01a988aec5691e02" datatype="html">
         <source>Number of times that the Federation's BTC holdings fall below 95% of the total LBTC supply</source>
+        <target state="needs-review-translation">Кількість випадків, коли запаси BTC федерації нижчі за 95% загальної пропозиції LBTC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
           <context context-type="linenumber">6</context>
@@ -5900,6 +5969,7 @@
       </trans-unit>
       <trans-unit id="873b07a38129de4c10624d2e3ad7366bc256e898" datatype="html">
         <source>LBTC in circulation</source>
+        <target state="needs-review-translation">LBTC в обігу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-supply-stats/reserves-supply-stats.component.html</context>
           <context context-type="linenumber">3</context>
@@ -6037,6 +6107,7 @@
       </trans-unit>
       <trans-unit id="667d1fa0b03107009b84c29319f1393e93992788" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Mint<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Випуск<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;" /> <x id="INTERPOLATION" equiv-text="{{ minted &gt;= 100000 ? (minted | amountShortener:undefined:undefined:true) : minted }}" /> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: runestone.mint.toString() }&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">3,5</context>
@@ -6045,6 +6116,7 @@
       </trans-unit>
       <trans-unit id="82fba6b80bb7d525e585eda53e8ae77784be7240" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Premine<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;"/> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}"/> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> (<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}"/>% of total supply)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Попередній майнінг<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;amount&quot;&gt;" /> <x id="INTERPOLATION" equiv-text="{{ getAmount(runestone.etching.premine, runestone.etching.divisibility || 0)  &gt;= 100000 ? (getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) | amountShortener:undefined:undefined:true) : getAmount(runestone.etching.premine, runestone.etching.divisibility || 0) }}" /> <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_2" ctype="x-span_2" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_2" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" /> (<x id="INTERPOLATION_3" equiv-text="{{ toNumber(runestone.etching.premine) / toNumber(runestone.etching.supply) * 100 | amountShortener:0}}" />% загальної пропозиції)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">11,15</context>
@@ -6053,6 +6125,7 @@
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Створення<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
@@ -6061,6 +6134,7 @@
       </trans-unit>
       <trans-unit id="10ed70ee6d9d9b753cd59c37cd1fed4a3089f882" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Transfer<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Переказ<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngTemplateOutlet=&quot;runeName; context: { $implicit: rune.key }&quot;&gt;" /><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">28,29</context>
@@ -6069,6 +6143,7 @@
       </trans-unit>
       <trans-unit id="99264845cdffed75db1a32df6e66febbdf1d99f1" datatype="html">
         <source>Source inscription</source>
+        <target state="needs-review-translation">Початковий напис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">44</context>
@@ -6081,6 +6156,7 @@
       </trans-unit>
       <trans-unit id="2719dbc7a7e7a691275cebd0b3a0723c4b6e2487" datatype="html">
         <source>Error decoding data</source>
+        <target state="needs-review-translation">Помилка декодування даних</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">57</context>
@@ -6258,6 +6334,7 @@
       </trans-unit>
       <trans-unit id="fe5317c6c60dd7e0e86f04d22f566f67cf04d404" datatype="html">
         <source>Mining Pools</source>
+        <target state="needs-review-translation">Майнінгові пули</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -6535,6 +6612,7 @@
       </trans-unit>
       <trans-unit id="a1c9b3d4fa67450fe9afd1d726f8a1bd91d990ea" datatype="html">
         <source>Clean</source>
+        <target state="needs-review-translation">Чистий</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">227</context>
@@ -6543,6 +6621,7 @@
       </trans-unit>
       <trans-unit id="5eef71f3169c4ea9311dedb86bb781bd710a47e9" datatype="html">
         <source>Prevhash</source>
+        <target state="needs-review-translation">Попередній хеш</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">228</context>
@@ -6551,6 +6630,7 @@
       </trans-unit>
       <trans-unit id="657338a2448a000525faa07d7ee4afc3414c9563" datatype="html">
         <source>Job Received</source>
+        <target state="needs-review-translation">Завдання отримано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">229</context>
@@ -6559,6 +6639,7 @@
       </trans-unit>
       <trans-unit id="09c61c6c6f04877fbce3db88fa0f20cd046ed9b1" datatype="html">
         <source>Error loading pool data.</source>
+        <target state="needs-review-translation">Помилка завантаження даних пулу.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">589</context>
@@ -6588,6 +6669,7 @@
       </trans-unit>
       <trans-unit id="b15dbef7e036c8131fd8a59555b780a67598c7ca" datatype="html">
         <source>Bitcoin Price</source>
+        <target>Ціна Bitcoin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">8</context>
@@ -6604,6 +6686,7 @@
       </trans-unit>
       <trans-unit id="8c73c5605f32a096f3c08b7b96060b393d53d4df" datatype="html">
         <source>% Change</source>
+        <target state="needs-review-translation">Зміна, %</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.html</context>
           <context context-type="linenumber">14</context>
@@ -6616,6 +6699,7 @@
       </trans-unit>
       <trans-unit id="price-chart.title" datatype="html">
         <source>Bitcoin Price</source>
+        <target>Ціна Bitcoin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">77</context>
@@ -6623,6 +6707,7 @@
       </trans-unit>
       <trans-unit id="price-chart.description" datatype="html">
         <source>See the Bitcoin price in USD visualized over time.</source>
+        <target>Переглядайте графік ціни Bitcoin у USD протягом часу.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/price-chart/price-chart.component.ts</context>
           <context context-type="linenumber">78</context>
@@ -6669,6 +6754,7 @@
       </trans-unit>
       <trans-unit id="0901e5e609b1e5843136e51c7c6dd9461865e782" datatype="html">
         <source>Submit Package</source>
+        <target state="needs-review-translation">Надіслати пакет</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">14</context>
@@ -6682,6 +6768,7 @@
       </trans-unit>
       <trans-unit id="48e4b0c012de5020053ecb26e9ac0d35a1f60688" datatype="html">
         <source>Comma-separated list of raw transactions</source>
+        <target state="needs-review-translation">Список необроблених транзакцій, розділених комами</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">18</context>
@@ -6694,6 +6781,7 @@
       </trans-unit>
       <trans-unit id="ea22e5fb229522f3faa5e87dbf0c5f56ddc234fb" datatype="html">
         <source>Maximum fee rate (sat/vB)</source>
+        <target>Максимальна ставка комісії (sat/vB)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">20</context>
@@ -6706,6 +6794,7 @@
       </trans-unit>
       <trans-unit id="b3f9018166b8be3686c3cf58059a9f0ad993115e" datatype="html">
         <source>Maximum burn amount (sats)</source>
+        <target state="needs-review-translation">Максимальна сума спалювання (сатоші)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">23</context>
@@ -6714,6 +6803,7 @@
       </trans-unit>
       <trans-unit id="b92fb7ca717f99e787cec47dcf1b6f72ba26d685" datatype="html">
         <source>Allowed?</source>
+        <target state="needs-review-translation">Дозволено?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">39</context>
@@ -6726,6 +6816,7 @@
       </trans-unit>
       <trans-unit id="975c3b9c864754453576ced3f18d75ed39638c70" datatype="html">
         <source>Rejection reason</source>
+        <target state="needs-review-translation">Причина відхилення</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">42</context>
@@ -7035,6 +7126,7 @@
       </trans-unit>
       <trans-unit id="e1a9732da86507f7d50c754cea0df73a1578c20e" datatype="html">
         <source>Search by student name or ID...</source>
+        <target state="needs-review-translation">Пошук за іменем або ідентифікатором студента...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-cubo-widget.component.html</context>
           <context context-type="linenumber">28</context>
@@ -7047,6 +7139,7 @@
       </trans-unit>
       <trans-unit id="1cb1d342ec9447b4e42f103a51fda8d307bf9e59" datatype="html">
         <source>Student Name</source>
+        <target state="needs-review-translation">Ім’я студента</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-cubo-widget.component.html</context>
           <context context-type="linenumber">35</context>
@@ -7055,6 +7148,7 @@
       </trans-unit>
       <trans-unit id="45cc8ca94b5a50842a9a8ef804a5ab089a38ae5c" datatype="html">
         <source>ID</source>
+        <target state="needs-review-translation">ID</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-cubo-widget.component.html</context>
           <context context-type="linenumber">42</context>
@@ -7063,6 +7157,7 @@
       </trans-unit>
       <trans-unit id="57dc472f56433ab0543f7717c5185a02ae69cc48" datatype="html">
         <source>Proof</source>
+        <target state="needs-review-translation">Доказ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-cubo-widget.component.html</context>
           <context context-type="linenumber">48</context>
@@ -7075,6 +7170,7 @@
       </trans-unit>
       <trans-unit id="27c7bfba7033cc8dbf4caf42b40b6b3c87197838" datatype="html">
         <source>Verify</source>
+        <target state="needs-review-translation">Перевірити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-cubo-widget.component.html</context>
           <context context-type="linenumber">98</context>
@@ -7087,6 +7183,7 @@
       </trans-unit>
       <trans-unit id="56b5044b468ec079b4881a470e9b00b35a24db54" datatype="html">
         <source>Filename</source>
+        <target state="needs-review-translation">Назва файлу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-widget.component.html</context>
           <context context-type="linenumber">22</context>
@@ -7095,6 +7192,7 @@
       </trans-unit>
       <trans-unit id="814efcc244d182cabfdcdf7754097cdd023514d9" datatype="html">
         <source>Verified</source>
+        <target state="needs-review-translation">Перевірено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/simpleproof-widget/simpleproof-widget.component.html</context>
           <context context-type="linenumber">24</context>
@@ -7103,6 +7201,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
+        <target state="needs-review-translation">Останні застарілі вершини ланцюга</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7111,6 +7210,7 @@
       </trans-unit>
       <trans-unit id="7cbedd89f60daafaf0e56363900d666a4e02ffb1" datatype="html">
         <source>beta</source>
+        <target state="needs-review-translation">бета</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7119,6 +7219,7 @@
       </trans-unit>
       <trans-unit id="1dfa086c48a00c275983ca44f687965008219f9d" datatype="html">
         <source>Headers Only</source>
+        <target state="needs-review-translation">Лише заголовки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">14</context>
@@ -7127,6 +7228,7 @@
       </trans-unit>
       <trans-unit id="5759ce11e2e959cbcbe7cdf05816f89679d82842" datatype="html">
         <source>Valid Headers</source>
+        <target state="needs-review-translation">Дійсні заголовки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">15</context>
@@ -7135,6 +7237,7 @@
       </trans-unit>
       <trans-unit id="4d9d1ba83b190e4f6cd05fc020660977e3e612b1" datatype="html">
         <source>Valid Fork</source>
+        <target state="needs-review-translation">Дійсне відгалуження</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">16</context>
@@ -7143,6 +7246,7 @@
       </trans-unit>
       <trans-unit id="c145a34359b00a08aef9bf3fdf35a985aea25c8c" datatype="html">
         <source>Invalid</source>
+        <target state="needs-review-translation">Недійсний</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">17</context>
@@ -7151,6 +7255,7 @@
       </trans-unit>
       <trans-unit id="e5d635bb34351542376d19963ec6bd1d1e6dc9da" datatype="html">
         <source>Depth <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}"/></source>
+        <target state="needs-review-translation">Глибина <x id="INTERPOLATION" equiv-text="{{ chainTip.branchlen + 1 }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">20,21</context>
@@ -7159,6 +7264,7 @@
       </trans-unit>
       <trans-unit id="3181f08827514236ffd311786fe8ae62f0b361ab" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w"/>Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-wrap" />Застаріло<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">26,27</context>
@@ -7167,6 +7273,7 @@
       </trans-unit>
       <trans-unit id="07d1fa61f7c289626ee8abdaa9a4f45157a35460" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-b"/>Winning<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Winning&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;bitcoin-bloc" />Переможний<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">73,74</context>
@@ -7175,6 +7282,7 @@
       </trans-unit>
       <trans-unit id="26a65abd1f3dedb8b5777f6cb01262096549e94d" datatype="html">
         <source>This node hasn't seen any stale blocks yet!</source>
+        <target state="needs-review-translation">Цей вузол ще не бачив застарілих блоків!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">120</context>
@@ -7183,6 +7291,7 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
+        <target state="needs-review-translation">Застарілі вершини ланцюга</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -7190,6 +7299,7 @@
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network.</source>
+        <target state="needs-review-translation">Перегляньте останні застарілі вершини ланцюга мережі Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -7271,6 +7381,7 @@
       </trans-unit>
       <trans-unit id="69a200e30802920bc6d619bd543cc2a332a8c390" datatype="html">
         <source>Stratum Jobs</source>
+        <target state="needs-review-translation">Завдання Stratum</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stratum/stratum-list/stratum-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7279,6 +7390,7 @@
       </trans-unit>
       <trans-unit id="20f7365369829a33d386606ac91e8347e51aefa1" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ x }}"/> levels remaining</source>
+        <target state="needs-review-translation">Залишилося рівнів: <x id="INTERPOLATION" equiv-text="{{ x }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/taproot-address-scripts/taproot-address-scripts.component.html</context>
           <context context-type="linenumber">19</context>
@@ -7287,6 +7399,7 @@
       </trans-unit>
       <trans-unit id="19ace4a71a746941a27da08cd891db79e5bc7b0c" datatype="html">
         <source>1 level remaining</source>
+        <target state="needs-review-translation">Залишився 1 рівень</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/taproot-address-scripts/taproot-address-scripts.component.html</context>
           <context context-type="linenumber">20</context>
@@ -7295,6 +7408,7 @@
       </trans-unit>
       <trans-unit id="f74d6f23e06c5a75d95a994017c00191c162ba9f" datatype="html">
         <source>Test Transactions</source>
+        <target state="needs-review-translation">Тестові транзакції</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/test-transactions/test-transactions.component.html</context>
           <context context-type="linenumber">3</context>
@@ -7312,6 +7426,7 @@
       </trans-unit>
       <trans-unit id="fec63564786cefc0ca1c650527fdfd859aff4b76" datatype="html">
         <source>Raw hex</source>
+        <target state="needs-review-translation">Необроблений hex</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/test-transactions/test-transactions.component.html</context>
           <context context-type="linenumber">8</context>
@@ -7320,6 +7435,7 @@
       </trans-unit>
       <trans-unit id="cef1d79eace5eb4d2243fad36730e3e65c757bee" datatype="html">
         <source>Sent</source>
+        <target state="needs-review-translation">Надіслано</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker-bar.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7328,6 +7444,7 @@
       </trans-unit>
       <trans-unit id="6092bb2a5d8d9aca468a0007bc1af1c21e8f454c" datatype="html">
         <source>Soon</source>
+        <target state="needs-review-translation">Незабаром</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker-bar.component.html</context>
           <context context-type="linenumber">6</context>
@@ -7364,6 +7481,7 @@
       </trans-unit>
       <trans-unit id="dbd3edcb9583d2d5a624f70b4593d785858b6130" datatype="html">
         <source>Not any time soon</source>
+        <target state="needs-review-translation">Не найближчим часом</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">73</context>
@@ -7377,6 +7495,7 @@
       </trans-unit>
       <trans-unit id="a42474c92670ab75cb387cf44c03b0a4ce0a641a" datatype="html">
         <source>Confirmed at</source>
+        <target state="needs-review-translation">Підтверджено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">87</context>
@@ -7385,6 +7504,7 @@
       </trans-unit>
       <trans-unit id="55b16cd277b9b5de63abe14b475737c753a37b97" datatype="html">
         <source>Block height</source>
+        <target state="needs-review-translation">Висота блоку</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">96</context>
@@ -7393,6 +7513,7 @@
       </trans-unit>
       <trans-unit id="2dbfd0c8beb3cf3f7c23b2ed74d4c625dfc56a24" datatype="html">
         <source>Transaction has been accelerated</source>
+        <target>Транзакцію прискорено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">143</context>
@@ -7401,6 +7522,7 @@
       </trans-unit>
       <trans-unit id="52a68ca949dfcdeaaea81bec4d597256b8ad42b5" datatype="html">
         <source>Waiting for your transaction to appear in the mempool</source>
+        <target state="needs-review-translation">Очікуємо появи вашої транзакції в мемпулі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">153</context>
@@ -7409,6 +7531,7 @@
       </trans-unit>
       <trans-unit id="5ad21d21f3e26ddfe0abeed499db5d5c0bd0e325" datatype="html">
         <source>Your transaction is in the mempool, but it will not be confirmed for some time.</source>
+        <target state="needs-review-translation">Ваша транзакція в мемпулі, але її підтвердять не скоро.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">159</context>
@@ -7417,6 +7540,7 @@
       </trans-unit>
       <trans-unit id="809118722b27889f5424609d1779f356bcef2cc2" datatype="html">
         <source>Your transaction is near the top of the mempool, and is expected to confirm soon.</source>
+        <target state="needs-review-translation">Ваша транзакція близько до початку мемпулу й може бути підтверджена незабаром.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">165</context>
@@ -7425,6 +7549,7 @@
       </trans-unit>
       <trans-unit id="ee76deb7716e90b79e557394b1d256079b7ec24e" datatype="html">
         <source>Your transaction is expected to confirm in the next block</source>
+        <target state="needs-review-translation">Очікується підтвердження вашої транзакції в наступному блоці</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">171</context>
@@ -7442,6 +7567,7 @@
       </trans-unit>
       <trans-unit id="8cfdee58beb2e3306741988c554d1f2562c42b30" datatype="html">
         <source>Your transaction has been replaced by a newer version!</source>
+        <target state="needs-review-translation">Вашу транзакцію замінено новішою версією!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">186</context>
@@ -7463,6 +7589,7 @@
       </trans-unit>
       <trans-unit id="2514309d0421b09a70cf9bf5d59bcc1b82dbec31" datatype="html">
         <source>See more details</source>
+        <target>Докладніше</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">205</context>
@@ -7503,6 +7630,7 @@
       </trans-unit>
       <trans-unit id="431d720cadcda121782035f30d6e8e0f5cb2012c" datatype="html">
         <source>Related Transactions</source>
+        <target state="needs-review-translation">Пов’язані транзакції</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/cpfp-info.component.html</context>
           <context context-type="linenumber">3</context>
@@ -7659,6 +7787,7 @@
       </trans-unit>
       <trans-unit id="1658bcbcb0ca91ce8303e9907b31c524eeb136c7" datatype="html">
         <source>This transaction cannot be accelerated</source>
+        <target>Цю транзакцію неможливо прискорити</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">173</context>
@@ -7667,6 +7796,7 @@
       </trans-unit>
       <trans-unit id="d7f92e6fe26fba6fff568cbdae5db4a5c8c6a55c" datatype="html">
         <source>Preview Transaction</source>
+        <target state="needs-review-translation">Попередній перегляд транзакції</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">5</context>
@@ -7688,6 +7818,7 @@
       </trans-unit>
       <trans-unit id="a2819cc4834566fbbd9f83482df3410842a94ccb" datatype="html">
         <source>Transaction hex or base64 encoded PSBT</source>
+        <target state="needs-review-translation">Шістнадцяткові дані транзакції або PSBT у base64</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">9</context>
@@ -7696,6 +7827,7 @@
       </trans-unit>
       <trans-unit id="11afc7661a79e561e121563f02b2e9f4b2063d4e" datatype="html">
         <source>Preview</source>
+        <target state="needs-review-translation">Попередній перегляд</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">11</context>
@@ -7705,6 +7837,7 @@
       </trans-unit>
       <trans-unit id="7e3863b25b9eb0c4f1fb3e2aedda76063a0cfdf8" datatype="html">
         <source>Fetch missing prevouts</source>
+        <target state="needs-review-translation">Завантажити відсутні попередні виходи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">14</context>
@@ -7713,6 +7846,7 @@
       </trans-unit>
       <trans-unit id="30672d37c5c8491965bb7b78ad8baba58accec06" datatype="html">
         <source>Error decoding transaction, reason: <x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
+        <target state="needs-review-translation">Помилка декодування транзакції, причина: <x id="INTERPOLATION" equiv-text="{{ error }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">16,18</context>
@@ -7721,6 +7855,7 @@
       </trans-unit>
       <trans-unit id="f002a69c46c2ba1a79530d6cbef88241b9a0632a" datatype="html">
         <source>Preview Coinbase</source>
+        <target state="needs-review-translation">Попередній перегляд Coinbase</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">23</context>
@@ -7730,6 +7865,7 @@
       </trans-unit>
       <trans-unit id="c280048575ce581e2dd031ffac4a723cf76e8249" datatype="html">
         <source> This transaction is stored locally in your browser. Broadcast it to add it to the mempool. </source>
+        <target state="needs-review-translation"> Ця транзакція зберігається локально у вашому браузері. Надішліть її в мережу, щоб додати до мемпулу. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">50,52</context>
@@ -7739,6 +7875,7 @@
       </trans-unit>
       <trans-unit id="35117e03fda0fd4c6ecd1ff5737f883eec337a5e" datatype="html">
         <source> Redirecting to transaction page... </source>
+        <target state="needs-review-translation"> Перехід на сторінку транзакції... </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">53,55</context>
@@ -7748,6 +7885,7 @@
       </trans-unit>
       <trans-unit id="db03c262a5396dc95104e2e57d9911bf75c9c09e" datatype="html">
         <source>Transaction cannot be broadcasted because it's missing signature(s)</source>
+        <target state="needs-review-translation">Транзакцію неможливо надіслати в мережу через відсутність підписів</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">58</context>
@@ -7756,6 +7894,7 @@
       </trans-unit>
       <trans-unit id="fe1324d5a070a046a0171ab9c08c49964d6070d4" datatype="html">
         <source>Broadcast</source>
+        <target state="needs-review-translation">Надіслати в мережу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">60</context>
@@ -7765,6 +7904,7 @@
       </trans-unit>
       <trans-unit id="d4e572434cc0b383d775d745983aab4966bb95d2" datatype="html">
         <source>Broadcasted</source>
+        <target state="needs-review-translation">Надіслано в мережу</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">61</context>
@@ -7898,6 +8038,7 @@
       </trans-unit>
       <trans-unit id="meta.description.preview-tx" datatype="html">
         <source>Preview a transaction to the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's raw hex data.</source>
+        <target state="needs-review-translation">Перегляньте транзакцію мережі Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> за її сирими шістнадцятковими даними.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.ts</context>
           <context context-type="linenumber">91</context>
@@ -7905,6 +8046,7 @@
       </trans-unit>
       <trans-unit id="df5fd5288dc0b13ce611a0c857e97baee9595e67" datatype="html">
         <source> This transaction ID appears twice in the blockchain as the coinbase of blocks <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;"/><x id="INTERPOLATION" equiv-text="locks[0] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="cks[1] }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>, due to a bug later mitigated by <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;"/>BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target state="needs-review-translation"> Цей ідентифікатор транзакції двічі трапляється в блокчейні як coinbase блоків <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[0]]&quot;&gt;" /><x id="INTERPOLATION" equiv-text="{{ duplicateTxBlocks[0] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> і <x id="START_LINK_1" equiv-text="&lt;a [routerLink]=&quot;['/block/' | relativeUrl, duplicateTxBlocks[1]]&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ duplicateTxBlocks[1] }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> через помилку, вплив якої згодом обмежив <x id="START_LINK_2" equiv-text="&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0030.mediawiki&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;" />BIP-30<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">40,42</context>
@@ -7914,6 +8056,7 @@
       </trans-unit>
       <trans-unit id="9de91971d4c7103350e818b51f90d1b61b294377" datatype="html">
         <source>Read more</source>
+        <target state="needs-review-translation">Читати далі</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">44</context>
@@ -7923,6 +8066,7 @@
       </trans-unit>
       <trans-unit id="ec972116b4da9e2c5bc0e6e6586061d60cd13e56" datatype="html">
         <source>Hide accelerator</source>
+        <target>Приховати прискорювач</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">92</context>
@@ -7931,6 +8075,7 @@
       </trans-unit>
       <trans-unit id="25fb8afb8c76ae5e793717751d9463001c1e9c01" datatype="html">
         <source>RBF Timeline</source>
+        <target state="needs-review-translation">Хронологія RBF</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">118</context>
@@ -7940,6 +8085,7 @@
       </trans-unit>
       <trans-unit id="24588a1469c694836138a72f0e665eb4793c35dc" datatype="html">
         <source>Acceleration Timeline</source>
+        <target>Історія прискорення</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">127</context>
@@ -7967,6 +8113,7 @@
       </trans-unit>
       <trans-unit id="5d3ef9e29e08e99ad4983c437d98a2104a7f84ec" datatype="html">
         <source>Warning! This transaction involves deceptively similar addresses. It may be an address poisoning attack.</source>
+        <target state="needs-review-translation">Увага! Ця транзакція містить оманливо схожі адреси. Це може бути атака з підміною адреси.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">21</context>
@@ -7993,6 +8140,7 @@
       </trans-unit>
       <trans-unit id="81f138da4f955badade9fb60e0e2248627fc647f" datatype="html">
         <source>Inscription</source>
+        <target state="needs-review-translation">Напис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">123</context>
@@ -8021,7 +8169,7 @@
       </trans-unit>
       <trans-unit id="c64b73564fd858ee5a4f73040893c9d625ca56ad" datatype="html">
         <source>Witness</source>
-        <target>Witness</target>
+        <target>Дані свідка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">173</context>
@@ -8039,6 +8187,7 @@
       </trans-unit>
       <trans-unit id="1268e59388ca73121014b8a58bad57ec20483a91" datatype="html">
         <source>P2TR control block</source>
+        <target state="needs-review-translation">Контрольний блок P2TR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">248</context>
@@ -8047,6 +8196,7 @@
       </trans-unit>
       <trans-unit id="7d94a59c779ba549751c9f36eb40fd339725fec6" datatype="html">
         <source>P2TR Simplicity script</source>
+        <target state="needs-review-translation">Скрипт P2TR Simplicity</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">256</context>
@@ -8138,6 +8288,7 @@
       </trans-unit>
       <trans-unit id="6e6f935e25f2e0a0cb0f84ccb9069701da81ed30" datatype="html">
         <source>leaf version</source>
+        <target state="needs-review-translation">версія листка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">583</context>
@@ -8146,6 +8297,7 @@
       </trans-unit>
       <trans-unit id="1e5fe8dc2194174026a52b0ec238159398b5a492" datatype="html">
         <source>parity</source>
+        <target state="needs-review-translation">парність</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">587</context>
@@ -8154,6 +8306,7 @@
       </trans-unit>
       <trans-unit id="849d069385309aff4f829bb3727261ead9a11bfe" datatype="html">
         <source>key path</source>
+        <target state="needs-review-translation">шлях ключа</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">592</context>
@@ -8162,6 +8315,7 @@
       </trans-unit>
       <trans-unit id="344b8ee2243000ff6ef72754d146afc800afefef" datatype="html">
         <source>script depth</source>
+        <target state="needs-review-translation">глибина скрипта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">597</context>
@@ -8170,6 +8324,7 @@
       </trans-unit>
       <trans-unit id="d51fdb627a84595400e2ef9f7bf79192a5f2e36b" datatype="html">
         <source>Bitcoin Supply</source>
+        <target state="needs-review-translation">Пропозиція Bitcoin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/supply/treasuries-supply.component.html</context>
           <context context-type="linenumber">1</context>
@@ -8178,6 +8333,7 @@
       </trans-unit>
       <trans-unit id="ea60b3f186fcddcc7c3ee3b1b5c5442a03bcfbd8" datatype="html">
         <source>in treasuries</source>
+        <target state="needs-review-translation">у казначействах</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/supply/treasuries-supply.component.html</context>
           <context context-type="linenumber">35</context>
@@ -8186,6 +8342,7 @@
       </trans-unit>
       <trans-unit id="5b019d90616e32c7eb3480b40a4415363a621545" datatype="html">
         <source>of total supply</source>
+        <target state="needs-review-translation">загальної пропозиції</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/supply/treasuries-supply.component.html</context>
           <context context-type="linenumber">42</context>
@@ -8194,6 +8351,7 @@
       </trans-unit>
       <trans-unit id="2a6bed12e69b73ce36f0a8b119c35f1db40937c9" datatype="html">
         <source>yet to be mined</source>
+        <target state="needs-review-translation">ще належить видобути</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/supply/treasuries-supply.component.html</context>
           <context context-type="linenumber">48</context>
@@ -8202,6 +8360,7 @@
       </trans-unit>
       <trans-unit id="ec6ae3256568bcdffb69ef73d0a4481b0f8c051d" datatype="html">
         <source>Treasury Leaderboard</source>
+        <target state="needs-review-translation">Рейтинг казначейств</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/treasuries.component.html</context>
           <context context-type="linenumber">14</context>
@@ -8210,6 +8369,7 @@
       </trans-unit>
       <trans-unit id="bcde4e77600723b4032d3bffe5e44386fa824b47" datatype="html">
         <source>BTC Balance</source>
+        <target state="needs-review-translation">Баланс BTC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/treasuries.component.html</context>
           <context context-type="linenumber">19</context>
@@ -8218,6 +8378,7 @@
       </trans-unit>
       <trans-unit id="b9a22fa33e93d7494edfdb881b44b3e853af4e48" datatype="html">
         <source>USD Value</source>
+        <target state="needs-review-translation">Вартість у USD</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/treasuries.component.html</context>
           <context context-type="linenumber">20</context>
@@ -8226,6 +8387,7 @@
       </trans-unit>
       <trans-unit id="72e6057334075c4f46bfc220bde4838fea41d3ea" datatype="html">
         <source>Treasury Distribution</source>
+        <target state="needs-review-translation">Розподіл казначейств</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/treasuries.component.html</context>
           <context context-type="linenumber">50</context>
@@ -8234,6 +8396,7 @@
       </trans-unit>
       <trans-unit id="584e8e201fe228532f82dddeec59e3aff175f6f7" datatype="html">
         <source>Verified Treasuries</source>
+        <target state="needs-review-translation">Перевірені казначейства</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">1</context>
@@ -8242,6 +8405,7 @@
       </trans-unit>
       <trans-unit id="264b04d29a43ca770d1c046df8ffc045161087bf" datatype="html">
         <source>verified addresses</source>
+        <target state="needs-review-translation">перевірених адрес</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">35</context>
@@ -8250,6 +8414,7 @@
       </trans-unit>
       <trans-unit id="bf91f7ae886628be207b9f68503e8323d64fb192" datatype="html">
         <source>verified of total</source>
+        <target state="needs-review-translation">перевірено від загальної кількості</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">42</context>
@@ -8258,6 +8423,7 @@
       </trans-unit>
       <trans-unit id="77cd8c3c4983cdee6de2d1a71c28ff0d5cab2574" datatype="html">
         <source>verified holdings</source>
+        <target state="needs-review-translation">перевірених активів</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/verify/treasuries-verify.component.html</context>
           <context context-type="linenumber">48</context>
@@ -8496,6 +8662,7 @@
       </trans-unit>
       <trans-unit id="c0d4baf68f21ee9c4246d66f0ac828c5b73ae745" datatype="html">
         <source>Wallet</source>
+        <target state="needs-review-translation">Гаманець</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.html</context>
           <context context-type="linenumber">3</context>
@@ -8504,6 +8671,7 @@
       </trans-unit>
       <trans-unit id="27f315de9bee14d550b7dd052a4bc49948ddca42" datatype="html">
         <source>Balance (BTC)</source>
+        <target state="needs-review-translation">Баланс (BTC)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.html</context>
           <context context-type="linenumber">17</context>
@@ -8512,6 +8680,7 @@
       </trans-unit>
       <trans-unit id="459995244d49db49ab1a4b6b6835bc9ca478be98" datatype="html">
         <source>Balance (USD)</source>
+        <target state="needs-review-translation">Баланс (USD)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.html</context>
           <context context-type="linenumber">20</context>
@@ -8520,6 +8689,7 @@
       </trans-unit>
       <trans-unit id="wallet.component.browser-title" datatype="html">
         <source>Wallet: <x id="INTERPOLATION" equiv-text="walletName"/></source>
+        <target state="needs-review-translation">Гаманець: <x id="INTERPOLATION" equiv-text="walletName" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">150</context>
@@ -8531,6 +8701,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
         <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
+        <target state="needs-review-translation">Перегляньте транзакції мемпулу, підтверджені транзакції, баланс та інші дані гаманця <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> <x id="INTERPOLATION" equiv-text="walletName" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">151</context>
@@ -8542,6 +8713,7 @@
       </trans-unit>
       <trans-unit id="27e45993fffde56413f767f3cc659331a4fdfa4e" datatype="html">
         <source>Error loading wallet data.</source>
+        <target state="needs-review-translation">Помилка завантаження даних гаманця.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet.component.html</context>
           <context context-type="linenumber">139</context>
@@ -8580,6 +8752,7 @@
       </trans-unit>
       <trans-unit id="9f88381443e277aca8bb50a8d0a338ab6cf2a68b" datatype="html">
         <source>LBTC Supply Against BTC Holdings</source>
+        <target>Пропозиція LBTC і запаси BTC</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">184</context>
@@ -8694,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>Отримайте відповіді на часті запитання на кшталт: Що таке мемпул? Чому моя транзакція не підтверджується? Як я можу запустити власну копію проєкту з відкритим кодом Mempol? Та інше.</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Відповіді на поширені запитання про Bitcoin: мемпул, підтвердження транзакцій, комісії, майнінг і блоки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8718,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>Документація для REST API сервісу mempool.space: отримайте інформацію про адреси, транзакції, блоки, комісії, майнінг, мережу Lightning та інше.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>Документація REST API btc.tx.taxi: запитуйте адреси й транзакції Bitcoin, блоки, комісії, дані майнінгу та мережі.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8742,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Документація WebSocket API для сервісу mempool.space: отримуйте інформацію про блоки, мемпул, транзакції, адреси та інше в реальному часі.</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>Документація WebSocket API btc.tx.taxi: отримуйте оновлення блоків, мемпулу, транзакцій та адрес Bitcoin у реальному часі.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -10302,7 +10475,7 @@
       </trans-unit>
       <trans-unit id="c18497e4f0db0d0ad0c71ba294295f42b3d312c9" datatype="html">
         <source>Lightning ISP</source>
-        <target>Lightning ISP</target>
+        <target>Інтернет-провайдер Lightning</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.html</context>
           <context context-type="linenumber">3</context>
@@ -10602,6 +10775,7 @@
       </trans-unit>
       <trans-unit id="time-within" datatype="html">
         <source>within ~<x id="DATE" equiv-text="dateStrings.i18nYear"/></source>
+        <target state="needs-review-translation">протягом ~<x id="DATE" equiv-text="dateStrings.i18nYear" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/services/time.service.ts</context>
           <context context-type="linenumber">175</context>
@@ -10781,6 +10955,7 @@
       </trans-unit>
       <trans-unit id="630c4823008421f6c74812ca4ab21d63a93c2d82" datatype="html">
         <source>This address is deceptively similar to another output. It may be part of an address poisoning attack.</source>
+        <target state="needs-review-translation">Ця адреса оманливо схожа на інший вихід. Вона може бути частиною атаки з підміною адреси.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-text/address-text.component.html</context>
           <context context-type="linenumber">9</context>
@@ -10807,6 +10982,7 @@
       </trans-unit>
       <trans-unit id="6d5788756fcb0b8fc937226ff60bf1bd12a8e464" datatype="html">
         <source>provably unspendable</source>
+        <target state="needs-review-translation">доведено неможливий до витрачання</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">18</context>
@@ -10815,6 +10991,7 @@
       </trans-unit>
       <trans-unit id="40966c5744cc46092c2ae9dee1957e15c1faef4d" datatype="html">
         <source>bare multisig</source>
+        <target state="needs-review-translation">голий мультипідпис</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">21</context>
@@ -10889,6 +11066,7 @@
       </trans-unit>
       <trans-unit id="51a5e241afdecf2cae3acb567d9fed560a817382" datatype="html">
         <source>Test Transaction</source>
+        <target>Перевірити транзакцію</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">78</context>
@@ -10970,6 +11148,7 @@
       </trans-unit>
       <trans-unit id="692f6e6f4f6afc7f48b8194ab03e1d2155650f00" datatype="html">
         <source>Research</source>
+        <target>Дослідження</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">91</context>
@@ -10996,6 +11175,7 @@
       </trans-unit>
       <trans-unit id="7dcdb8435f1421b5ad5920a77278d498691faef2" datatype="html">
         <source>Testnet3 Explorer</source>
+        <target>Оглядач Testnet3</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">97</context>
@@ -11004,6 +11184,7 @@
       </trans-unit>
       <trans-unit id="46a03052a962e6b21651effc05391e2a4e26946a" datatype="html">
         <source>Testnet4 Explorer</source>
+        <target>Оглядач Testnet4</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">98</context>
@@ -11021,6 +11202,7 @@
       </trans-unit>
       <trans-unit id="ef2cbb387f7186248f153267ba4ba3d18d89e1ad" datatype="html">
         <source>Regtest Explorer</source>
+        <target>Оглядач Regtest</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">100</context>
@@ -11114,6 +11296,7 @@
       </trans-unit>
       <trans-unit id="ba7f0c6fdfa0ab7afc59e9384bca0265d23fb018" datatype="html">
         <source>Your balance is too low.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Please <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;top-up-link&quot; href=&quot;/services/accelerator&quot;&gt;"/>top up your account<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.</source>
+        <target>Недостатньо коштів на балансі.<x id="LINE_BREAK" />Будь ласка, <x id="START_LINK" />поповніть рахунок<x id="CLOSE_LINK" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
           <context context-type="linenumber">9</context>
@@ -11131,6 +11314,7 @@
       </trans-unit>
       <trans-unit id="52a5264f8dcf69b24e496d0a37fbcdd688c54353" datatype="html">
         <source>Testnet3 is deprecated, and will soon be replaced by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;"/>Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="needs-review-translation">Testnet3 застаріває і незабаром буде замінено на <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;/testnet4&quot;&gt;" />Testnet4<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/testnet-alert/testnet-alert.component.html</context>
           <context context-type="linenumber">6</context>
@@ -11139,6 +11323,7 @@
       </trans-unit>
       <trans-unit id="6052761358428332094" datatype="html">
         <source>Batch payment</source>
+        <target state="needs-review-translation">Пакетний платіж</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">110</context>
@@ -11298,6 +11483,7 @@
       </trans-unit>
       <trans-unit id="address-label.multisig" datatype="html">
         <source>Multisig <x id="multisigM" equiv-text="m"/> of <x id="multisigN" equiv-text="n"/></source>
+        <target state="needs-review-translation">Мультипідпис <x id="multisigM" equiv-text="m" /> із <x id="multisigN" equiv-text="n" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/script.utils.ts</context>
           <context context-type="linenumber">173</context>
@@ -11371,6 +11557,342 @@
         <source>Third-party Licenses</source>
         <target>Ліцензії третіх сторін</target>
       </trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target>Блоки, комісії та активність мемпулу Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target>Панель</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>Непідтверджені транзакції</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target>Графіки Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target>Інструменти й документація</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html"><source>Bitcoin FAQ</source><target>Поширені запитання про Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target>Вихідний код</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>Зв’язатися з нами</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>Опубліковано за ліцензією AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>Торговельні марки та авторство</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Викличте таксі: вставте будь-що тут.</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>Панель btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target>Панель</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target>Панель майнінгу</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>Останні блоки</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target>Графіки Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>Про btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>Спонсоруйте Bitcoin за 150 доларів на тиждень</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>Спонсоруйте цю мережу за 150 доларів на тиждень</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>Створено з</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>від</target></trans-unit>
+      <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target>використань</target></trans-unit>
+      <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Ця транзакція належить до фрагмента з 1 транзакцією, із загальною ефективною ставкою комісії <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target>Використовується партнерський код</target></trans-unit>
+      <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target>випадків</target></trans-unit>
+      <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target>випадок</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target>батьківські транзакції" - "cluster.parents</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target>дочірня транзакція" - "cluster.child</target></trans-unit>
+      <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target>Дефіцит резерву</target></trans-unit>
+      <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target>віртуальний розмір" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target>ця транзакція" - "cluster.this-transaction</target></trans-unit>
+      <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi показує лише публічні дані мережі Bitcoin.<x id="CLOSE_BOLD_TEXT" /> Він не може повернути кошти, вирішити проблеми гаманця, скасувати транзакцію чи змінити пріоритет її підтвердження.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />Із такими запитами звертайтеся до гаманця, біржі або платіжного сервісу, який створив транзакцію.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target>батьківська транзакція" - "cluster.parent</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target>Розмір" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target>У кластері мемпулу з іншими фрагментами; їх кількість: <x id="INTERPOLATION" />.</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target>Призупинити/продовжити" - "recent-transactions.pause-toggle.title</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target>дочірні транзакції" - "cluster.children</target></trans-unit>
+      <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target>Нові транзакції: <x id="INTERPOLATION" /></target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Ця транзакція належить до фрагмента, кількість транзакцій: <x id="INTERPOLATION" />; загальна ефективна ставка комісії: <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target> Значення обмежено максимальною пропозицією 21 млн BTC " - "calculator.max-supply-warning</target></trans-unit>
+      <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target>Обсяг за 24 години</target></trans-unit>
+      <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Недостатньо коштів на балансі.</target></trans-unit>
+      <trans-unit id="5111568433154163082" datatype="html"><source>mempool chunk" - "cluster.mempool-chunk</source><target>фрагмент мемпулу" - "cluster.mempool-chunk</target></trans-unit>
+      <trans-unit id="5149188584039150457" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>Пропозиція LBTC і запаси BTC</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Більше</target></trans-unit>
+      <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>У кластері мемпулу з одним іншим фрагментом.</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>Призупинити/продовжити" - "recent-transactions.pause-toggle.aria-label</target></trans-unit>
+      <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 нова транзакція</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>Кластер" - "transaction.cluster</target></trans-unit>
+      <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>виберіть категорії фільтрів, щоб виділити відповідні непідтверджені транзакції</target></trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html"><source>* On average around block <x id="block" /></source><target state="needs-review-translation">* У середньому біля блоку <x id="block" equiv-text="data[0].data[2]" /></target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target>Комісії BTC</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency" /></source><target state="needs-review-translation">Комісії <x id="currency" equiv-text="this.currency" /></target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target state="needs-review-translation">Комісії (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target state="needs-review-translation">Комісії (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target state="needs-review-translation">Субсидія блоку</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target state="needs-review-translation">Субсидія (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target state="needs-review-translation">Субсидія (USD)</target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH" /> network, updated in real-time.</source><target>Переглядайте найновіші транзакції мережі Bitcoin<x id="PH" />, що оновлюються в реальному часі.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html"><source>About btc.tx.taxi</source><target>Про btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html"><source>The Bitcoin explorer in the tx.taxi family.</source><target>Оглядач Bitcoin у родині tx.taxi.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target>Посилання проєкту</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target>Документація Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>Зв’язатися з розробником</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html"><source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source><target>btc.tx.taxi — оглядач Bitcoin у багатомережевій родині tx.taxi. Він зберігає перевірений інтерфейс Mempool для перегляду блоків, транзакцій, адрес, майнінгу, оцінок комісій і мемпулу Bitcoin в реальному часі, використовуючи оформлення tx.taxi для Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target>Дані мережі Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target>Значення залишаються в BTC, сатоші або вибраній фіатній валюті. Ставки комісій виражені в sat/vB, розміри транзакцій — у vB або одиницях ваги, а поняття блоків, адрес і майнінгу в інтерфейсі зберігають своє значення для Bitcoin.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html"><source>Infrastructure</source><target>Інфраструктура</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html"><source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source><target>Оглядач зчитує публічні дані мережі Bitcoin через налаштований сервер. Результати є довідковими й можуть відрізнятися від мемпулу іншого вузла. Завжди перевіряйте платіжні дані у своєму гаманці та використовуйте власний вузол, коли потрібна незалежна перевірка.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>Ліцензія</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html"><source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source><target>btc.tx.taxi містить ліцензовані компоненти з відкритим кодом. Інформацію про авторство наведено в повідомленнях про ліцензії третіх сторін.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target>На основі відкритого коду</target></trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html"><source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source><target>Цей оглядач побудовано на основі <x id="START_LINK" />проєкту Mempool Open Source<x id="CLOSE_LINK" />. Перегляньте <x id="START_LINK_1" />відомості про авторство третіх сторін<x id="CLOSE_LINK" /> та зверніться до розробника щодо вихідного коду й ліцензій.</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Медіанна ставка комісії</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Діапазон комісій</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>uk-UA</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target>Відсутні попередні виходи не завантажено. Деякі поля, зокрема ставку комісії, неможливо обчислити.</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target>Помилка завантаження відсутніх попередніх виходів</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target>Причина:</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target>Помилка завантаження даних CPFP</target></trans-unit>
+      <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html">
+        <source>Using partner code</source>
+        <target state="needs-review-translation">Використовується код партнера</target></trans-unit>
+      <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html">
+        <source>select filter categories to highlight matching pending transactions</source>
+        <target>виберіть категорії фільтрів, щоб виділити відповідні непідтверджені транзакції</target></trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html">
+        <source> Values were capped at the max supply of 21M BTC </source>
+        <target>Значення обмежено максимальною пропозицією 21 млн BTC</target></trans-unit>
+      <trans-unit id="1cdb643999eb6d66bcd839aeaa381b62b8be8cd4" datatype="html">
+        <source>mempool chunk</source>
+        <target state="needs-review-translation">фрагмент мемпулу</target></trans-unit>
+      <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html">
+        <source>this transaction</source>
+        <target state="needs-review-translation">ця транзакція</target></trans-unit>
+      <trans-unit id="1eb8a98f68c1c98884c6436650f5ad80f4b3d5bf" datatype="html">
+        <source>parents</source>
+        <target state="needs-review-translation">батьківські</target></trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html">
+        <source>children</source>
+        <target state="needs-review-translation">дочірні</target></trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html">
+        <source>parent</source>
+        <target state="needs-review-translation">батьківська</target></trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html">
+        <source>child</source>
+        <target state="needs-review-translation">дочірня</target></trans-unit>
+      <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html">
+        <source>24h Volume</source>
+        <target state="needs-review-translation">Обсяг за 24 год</target></trans-unit>
+      <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html">
+        <source>Reserve Deficit</source>
+        <target state="needs-review-translation">Дефіцит резерву</target></trans-unit>
+      <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html">
+        <source>occurrence</source>
+        <target state="needs-review-translation">випадок</target></trans-unit>
+      <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html">
+        <source>occurrences</source>
+        <target state="needs-review-translation">випадки</target></trans-unit>
+      <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html">
+        <source>usages</source>
+        <target state="needs-review-translation">використання</target></trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
+        <source>1 new transaction</source>
+        <target state="needs-review-translation">1 нова транзакція</target></trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
+        <target state="needs-review-translation">Нових транзакцій: <x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /></target></trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
+        <source>Pause/Resume</source>
+        <target state="needs-review-translation">Пауза/продовження</target></trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
+        <source>Pause/Resume</source>
+        <target state="needs-review-translation">Пауза/продовження</target></trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html">
+        <source>vSize</source>
+        <target>Віртуальний розмір</target></trans-unit>
+      <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html">
+        <source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>Ця транзакція належить до фрагмента з 1 транзакцією, із загальною ефективною ставкою комісії <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html">
+        <source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>Ця транзакція належить до фрагмента, кількість транзакцій: <x id="INTERPOLATION" />; загальна ефективна ставка комісії: <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html">
+        <source>In a mempool cluster containing 1 other chunk.</source>
+        <target>У кластері мемпулу з одним іншим фрагментом.</target></trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html">
+        <source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source>
+        <target>У кластері мемпулу з іншими фрагментами; їх кількість: <x id="INTERPOLATION" />.</target></trans-unit>
+      <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html">
+        <source>Cluster</source>
+        <target state="needs-review-translation">Кластер</target></trans-unit>
+      <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html">
+        <source>LBTC Supply vs. BTC Holdings</source>
+        <target state="needs-review-translation">Пропозиція LBTC та запаси BTC</target></trans-unit>
+      <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source>
+        <target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi показує лише публічні дані мережі Bitcoin.<x id="CLOSE_BOLD_TEXT" /> Він не може повернути кошти, вирішити проблеми гаманця, скасувати транзакцію чи змінити пріоритет її підтвердження.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />Із такими запитами звертайтеся до гаманця, біржі або платіжного сервісу, який створив транзакцію.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html">
+        <source>Your balance is too low.</source>
+        <target>Недостатньо коштів на балансі.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>Вузол не знайдено.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>Канал не знайдено.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Дані Lightning недоступні.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>Спробувати ще раз</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Кешовані дані</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Повторне підключення…</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>Сирі біти</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>Обов’язково</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>Адреса вузла</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Вузол або канал Lightning не знайдено.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>Пошук недоступний. Спробуйте ще раз.</target></trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>Завантаження попередніх виходів транзакції</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>Завантаження CPFP</target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>Завантаження</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>Деякі попередні виходи не існують або вже витрачені</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>Не вдалося передати транзакцію в мережу. Причина: </target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>PSBT за участю цієї адреси, закодований у hex або base64</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>Розділені комами PSBT_IN_TAP_LEAF_SCRIPT у форматі hex або base64 (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>Поле PSBT_OUT_TAP_TREE у форматі hex або base64</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>Публічний ключ лише з координатою x, закодований у hex або base64</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>Листки Taproot</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>Дерево Taproot</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>Внутрішній ключ</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source>
+        <target>Листки Taproot мають бути у форматі «&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;» і розділені комами</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>Сталася помилка під час обробки даних Taproot</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Панель оглядача Bitcoin</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Показувати розміри блоків</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>Показувати загальні комісії за блок</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>Показувати найновіші блоки праворуч</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>Показувати найновіші блоки ліворуч</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target>Логотип майнінг-пулу <x id="NAME" /></target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Логотип майнінг-пулу</target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>Логотип майнінг-пулу <x id="INTERPOLATION" /></target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>Мережа Lightning як на долоні.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>Дослідити Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>Документація</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>Вихідний код</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>Стан</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>Вузли, канали та мережа між ними</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>Досліджуйте публічні вузли й канали Lightning, правила маршрутизації, місткість мережі, географічний розподіл та історичну статистику. Переглядайте з’єднання вузла або відкриття й закриття каналу.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>Частина tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>Використовуйте той самий пошук, щоб знайти вузол або канал Lightning, змінити оглядач чи спрямувати транзакцію до її блокчейну. Оглядач ончейн-даних Bitcoin доступний за адресою</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>Огляд публічної мережі</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Платежі Lightning і приватні канали не є публічно видимими. Місткість означає кількість біткоїнів, виділених для публічного каналу; вона не показує поточний доступний баланс жодної зі сторін. Розташування вузлів відповідає оголошеним мережевим кінцевим точкам.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>Статистика показує дату вихідного знімка. Під час перебоїв кешовані дані залишаються доступними.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>Відкритий код</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>На основі</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>проєкту Mempool</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>опублікованого за GNU AGPLv3. Створено з 🚕 командою</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Вузли, канали та активність мережі Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>Дослідити</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Панель Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>Рейтинг вузлів</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>Мапа вузлів</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>Мапа каналів</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>Штрафи</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>Мережа й документація</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>Історія мережі</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>Країни</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>Інтернет-провайдери</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>Поширені запитання про Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>Документація API</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>Про проєкт</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>Вихідний код</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>Стан</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>Зв’язатися з нами</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>Опубліковано за ліцензією AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>Правова інформація</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>Умови користування</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>Політика конфіденційності</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>Торговельні марки та авторство</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>Ліцензії третіх сторін</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Створено з</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>від</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Приєднатися до каналу tx.taxi в Telegram</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>Оглядач Lightning tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Панель Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>Рейтинг вузлів</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Графіки Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>Документація</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Про Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>Переглянути на btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Підключення…</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>ВИБРАНО</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>Автоматична маршрутизація</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>Відкрити хаб</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>ВЛАСНІ ОГЛЯДАЧІ</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>СТОРОННІ ОГЛЯДАЧІ</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>Реєстр оглядачів недоступний</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>Завантаження оглядачів</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>Відкрити</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>Відкрито</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>Перемкнути</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>Знайдено</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>Можливо</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>Викличте таксі: вставте будь-що тут.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>Пошук</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Пошук</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>Вибрати мережу для пошуку</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>Вибраний оглядач</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>Оглядач Bitcoin btc.tx.taxi</target></trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Приєднатися до каналу tx.taxi в Telegram</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html"><source>Copy</source><target>Копіювати</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html"><source>Copied</source><target>Скопійовано</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html"><source>Copy to clipboard</source><target>Копіювати в буфер обміну</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html"><source>Copied to clipboard</source><target>Скопійовано в буфер обміну</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo" datatype="html">
+        <source>Logo of <x id="pool" /> mining pool</source>
+        <target>Логотип майнінг-пулу <x id="pool" /></target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html">
+        <source>Mining pool logo</source>
+        <target>Логотип майнінг-пулу</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html"><source>Anywhere on Earth (AoE)</source><target state="needs-review-translation">Час у будь-якій точці Землі (AoE)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target state="needs-review-translation">Стандартний час Самоа (SST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target state="needs-review-translation">Стандартний час Гаваїв (HST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target state="needs-review-translation">Стандартний час Аляски (AKST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target state="needs-review-translation">Тихоокеанський стандартний час (PST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target state="needs-review-translation">Гірський стандартний час (MST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target state="needs-review-translation">Центральний стандартний час (CST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target state="needs-review-translation">Східний стандартний час (EST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target state="needs-review-translation">Атлантичний стандартний час (AST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target state="needs-review-translation">Час Аргентини (ART)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html"><source>Fernando de Noronha Time (FNT)</source><target state="needs-review-translation">Час Фернанду-ді-Норонья (FNT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target state="needs-review-translation">Час Азорських островів (AZOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target state="needs-review-translation">Час за Гринвічем (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target state="needs-review-translation">Центральноєвропейський час (CET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target state="needs-review-translation">Східноєвропейський час (EET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target state="needs-review-translation">Московський стандартний час (MSK)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html"><source>Armenia Time (AMT)</source><target state="needs-review-translation">Час Вірменії (AMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target state="needs-review-translation">Стандартний час Пакистану (PKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html"><source>Xinjiang Time (XJT)</source><target state="needs-review-translation">Час Сіньцзяну (XJT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html"><source>Indochina Time (ICT)</source><target state="needs-review-translation">Час Індокитаю (ICT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html"><source>Hong Kong Time (HKT)</source><target state="needs-review-translation">Час Гонконгу (HKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target state="needs-review-translation">Стандартний час Японії (JST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target state="needs-review-translation">Східний стандартний час Австралії (AEST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html"><source>Norfolk Time (NFT)</source><target state="needs-review-translation">Час Норфолку (NFT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target state="needs-review-translation">Стандартний час Нової Зеландії (NZST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target state="needs-review-translation">Час Тонги (TOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html"><source>Line Islands Time (LINT)</source><target state="needs-review-translation">Час островів Лайн (LINT)</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Середня базова комісія вузлів маршрутизації без урахування комісій понад 5000 mSats</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Медіанна базова комісія вузлів маршрутизації без урахування комісій понад 5000 mSats</target></trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html"><source>Inscription</source><target>Інскрипція</target></trans-unit>
+      <trans-unit id="taxi.footer.test" datatype="html"><source>Test Transaction</source><target>Перевірити транзакцію</target></trans-unit>
+      <trans-unit id="taxi.footer.preview" datatype="html"><source>Preview Transaction</source><target>Попередній перегляд транзакції</target></trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html">
+        <source>More</source>
+        <target>Більше</target></trans-unit>
     </body>
   </file>
 </xliff>
