@@ -1,5 +1,38 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  fi: {
+    choose: 'Valitse haettava ketju', selectedAria: 'Valittu lohkoketjuselain', selected: 'VALITTU',
+    unavailable: 'Lohkoketjuselainten luettelo ei ole saatavilla', loading: 'Ladataan lohkoketjuselaimia', automatic: 'Automaattinen reititys',
+    viewHub: 'Näytä etusivu', hint: 'Tai siirry suoraan', searchExample: '[hakusi]',
+    native: 'OMAT LOHKOKETJUSELAIMET', external: 'ULKOISET LOHKOKETJUSELAIMET', opened: 'Auki',
+    open: 'Avaa', switch: 'Vaihda', found: 'Löytyi', possible: 'Mahdollinen', search: 'Hae',
+    additional: (name: string) => `Muut ${name}-selaimet`,
+    openExplorer: (name: string) => `Avaa ${name}`, openNewTab: (name: string) => `Avaa ${name} uudessa välilehdessä`,
+    switchTo: (name: string) => `Vaihda selaimeen ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Piilota' : 'Näytä'} ${count} lisävaihtoehtoa: ${name}`,
+  },
+  da: {
+    choose: 'Vælg kæde til søgning', selectedAria: 'Valgt udforsker', selected: 'VALGT',
+    unavailable: 'Oversigten over udforskere er ikke tilgængelig', loading: 'Indlæser udforskere', automatic: 'Automatisk routing',
+    viewHub: 'Vis forsiden', hint: 'Eller gå direkte til', searchExample: '[din søgning]',
+    native: 'EGNE UDFORSKERE', external: 'EKSTERNE UDFORSKERE', opened: 'Åben',
+    open: 'Åbn', switch: 'Skift', found: 'Fundet', possible: 'Mulig', search: 'Søg',
+    additional: (name: string) => `Andre udforskere for ${name}`,
+    openExplorer: (name: string) => `Åbn ${name}`, openNewTab: (name: string) => `Åbn ${name} i en ny fane`,
+    switchTo: (name: string) => `Skift til ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skjul' : 'Vis'} ${count} ekstra muligheder for ${name}`,
+  },
+  ca: {
+    choose: 'Tria la cadena de cerca', selectedAria: 'Explorador seleccionat', selected: 'SELECCIONAT',
+    unavailable: 'El directori d’exploradors no està disponible', loading: 'S’estan carregant els exploradors', automatic: 'Encaminament automàtic',
+    viewHub: 'Mostra l’inici', hint: 'O ves directament a', searchExample: '[la teva cerca]',
+    native: 'EXPLORADORS PROPIS', external: 'EXPLORADORS EXTERNS', opened: 'Obert',
+    open: 'Obre', switch: 'Canvia', found: 'Trobat', possible: 'Possible', search: 'Cerca',
+    additional: (name: string) => `Altres exploradors de ${name}`,
+    openExplorer: (name: string) => `Obre ${name}`, openNewTab: (name: string) => `Obre ${name} en una pestanya nova`,
+    switchTo: (name: string) => `Canvia a ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Amaga' : 'Mostra'} ${count} opcions més de ${name}`,
+  },
   ar: {
     choose: 'اختيار سلسلة البحث', selectedAria: 'المستكشف المحدد', selected: 'المحدد',
     unavailable: 'قائمة المستكشفات غير متاحة', loading: 'جارٍ تحميل المستكشفات', automatic: 'التوجيه التلقائي',
