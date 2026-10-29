@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  mk: {
+    choose: 'Изберете мрежа за пребарување', selectedAria: 'Избран прегледувач', selected: 'ИЗБРАНО',
+    unavailable: 'Списокот на прегледувачи не е достапен', loading: 'Се вчитуваат прегледувачите', automatic: 'Автоматско насочување',
+    viewHub: 'Отвори tx.taxi', hint: 'Или одете директно на', searchExample: '[вашето пребарување]',
+    native: 'НАШИ ПРЕГЛЕДУВАЧИ', external: 'ПРЕГЛЕДУВАЧИ ОД ТРЕТИ СТРАНИ', opened: 'Отворено',
+    open: 'Отвори', switch: 'Префрли', found: 'Пронајдено', possible: 'Можно', search: 'Пребарај',
+    additional: (name: string) => `Дополнителни прегледувачи за ${name}`,
+    openExplorer: (name: string) => `Отвори ${name}`,
+    openNewTab: (name: string) => `Отвори ${name} во ново јазиче`,
+    switchTo: (name: string) => `Префрли на ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Скриј' : 'Прикажи'} дополнителни опции за ${name}: ${count}`,
+  },
   ne: {
     choose: 'खोज्नका लागि ब्लकचेन छान्नुहोस्', selectedAria: 'छानिएको एक्सप्लोरर', selected: 'छानिएको',
     unavailable: 'एक्सप्लोररहरूको सूची उपलब्ध छैन', loading: 'एक्सप्लोररहरू लोड हुँदैछन्', automatic: 'स्वतः राउटिङ',
