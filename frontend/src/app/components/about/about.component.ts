@@ -16,8 +16,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     const lang = this.locale.toLowerCase().split(/[-_]/)[0];
-    const titles: Record<string, string> = { hu: 'A btc.tx.taxi névjegye', ro: 'Despre btc.tx.taxi', he: 'על btc.tx.taxi', sl: 'O btc.tx.taxi', lt: 'Apie btc.tx.taxi', hr: 'O btc.tx.taxi', ca: 'Sobre btc.tx.taxi', da: 'Om btc.tx.taxi', fi: 'Tietoa btc.tx.taxista', fa: 'دربارهٔ btc.tx.taxi', ar: 'حول btc.tx.taxi', hi: 'btc.tx.taxi के बारे में', cs: 'O btc.tx.taxi', sv: 'Om btc.tx.taxi', nb: 'Om btc.tx.taxi', uk: 'Про btc.tx.taxi', pl: 'O btc.tx.taxi', ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
+    const titles: Record<string, string> = { th: 'เกี่ยวกับ btc.tx.taxi', hu: 'A btc.tx.taxi névjegye', ro: 'Despre btc.tx.taxi', he: 'על btc.tx.taxi', sl: 'O btc.tx.taxi', lt: 'Apie btc.tx.taxi', hr: 'O btc.tx.taxi', ca: 'Sobre btc.tx.taxi', da: 'Om btc.tx.taxi', fi: 'Tietoa btc.tx.taxista', fa: 'دربارهٔ btc.tx.taxi', ar: 'حول btc.tx.taxi', hi: 'btc.tx.taxi के बारे में', cs: 'O btc.tx.taxi', sv: 'Om btc.tx.taxi', nb: 'Om btc.tx.taxi', uk: 'Про btc.tx.taxi', pl: 'O btc.tx.taxi', ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
     const descriptions: Record<string, string> = {
+      th: 'รู้จัก btc.tx.taxi ตัวสำรวจบล็อกและ mempool ของ Bitcoin ในตระกูล tx.taxi ที่รองรับหลายเชน',
       hu: 'Ismerje meg a btc.tx.taxit, a több láncot támogató tx.taxi család Bitcoin-blokk- és mempoolböngészőjét.',
       ro: 'Descoperă btc.tx.taxi, exploratorul de blocuri și mempool Bitcoin din familia multichain tx.taxi.',
       he: 'הכירו את btc.tx.taxi, סייר הבלוקים וה-mempool של Bitcoin במשפחת tx.taxi לרשתות בלוקצ׳יין.',

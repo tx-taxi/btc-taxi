@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  th: {
+    choose: 'เลือกเชนสำหรับค้นหา', selectedAria: 'ตัวสำรวจที่เลือก', selected: 'เลือกแล้ว',
+    unavailable: 'รายการตัวสำรวจไม่พร้อมใช้งาน', loading: 'กำลังโหลดรายการตัวสำรวจ', automatic: 'กำหนดเส้นทางอัตโนมัติ',
+    viewHub: 'ดู tx.taxi', hint: 'หรือไปยัง URL โดยตรง:', searchExample: '[คำค้นหาของคุณ]',
+    native: 'ตัวสำรวจของเรา', external: 'ตัวสำรวจจากบุคคลที่สาม', opened: 'เปิดอยู่',
+    open: 'เปิด', switch: 'สลับ', found: 'พบ', possible: 'เป็นไปได้', search: 'ค้นหา',
+    additional: (name: string) => `ตัวสำรวจเพิ่มเติมสำหรับ ${name}`,
+    openExplorer: (name: string) => `เปิด ${name}`,
+    openNewTab: (name: string) => `เปิด ${name} ในแท็บใหม่`,
+    switchTo: (name: string) => `สลับไปยัง ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'ซ่อน' : 'แสดง'}ตัวเลือกเพิ่มเติมสำหรับ ${name} (${count})`,
+  },
   hu: {
     choose: 'Válasszon láncot a kereséshez', selectedAria: 'Kiválasztott böngésző', selected: 'KIVÁLASZTVA',
     unavailable: 'A böngészők listája nem érhető el', loading: 'Böngészők betöltése', automatic: 'Automatikus útválasztás',
