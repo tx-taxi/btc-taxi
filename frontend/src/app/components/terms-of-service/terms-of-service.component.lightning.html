@@ -442,6 +442,40 @@
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Podmínky používání</h2><h6>Aktualizováno: 3. října 2026</h6><br><br><div class="text-start"><h4>Informační průzkumník</h4><p>lightning.btc.tx.taxi poskytuje přehled veřejných uzlů a kanálů Lightning, pravidel směrování, kapacity sítě a historických statistik. Jde o informační službu, nikoli peněženku, burzu, správce prostředků, platebního zpracovatele ani službu určující prioritu transakcí.</p><br><h4>Bez kontroly nad platbami či kanály</h4><p>Provozovatel nemůže odeslat, vrátit, obnovit ani přesměrovat platbu Lightning nebo ovládat kanál. Při potížích s peněženkou nebo platbou kontaktujte službu, která platbu vytvořila nebo přijala.</p><br><h4>Data a dostupnost</h4><p>Data průzkumníka mohou být zpožděná, neúplná, nedostupná nebo se lišit od pohledu jiného uzlu. Oznámené směrovací poplatky nezaručují dostupnost trasy ani úspěch platby. Služba se poskytuje tak, jak je, bez příslibu nepřetržité dostupnosti nebo vhodnosti pro určitý účel.</p><br><h4>Přijatelné používání</h4><p>Nezneužívejte web ani API, nenarušujte provoz služby, neobcházejte přiměřené limity požadavků a nepoužívejte službu nezákonně. Přístup může být omezen, pokud je to nutné k ochraně dostupnosti.</p><br><h4>Externí služby</h4><p>Web může odkazovat na kontaktní kanály tx.taxi, zdroje o Bitcoinu, informace o licenci a infrastrukturní závislosti. Externí weby mají vlastní podmínky a zásady.</p><br><h4>Otevřený zdroj</h4><p>lightning.btc.tx.taxi vychází z Mempool Open Source Project a je distribuován v souladu s povinnostmi AGPLv3. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p><br></div></div><br><br></div></ng-template>
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else englishLegal" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #catalanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>Condicions del servei</h2>
+    <h6>Actualitzat: 3 d’octubre de 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>Explorador informatiu</h4>
+      <p>lightning.btc.tx.taxi ofereix una vista dels nodes i canals Lightning públics, les polítiques d’encaminament, la capacitat de la xarxa i les estadístiques històriques. És un servei informatiu, no una cartera, plataforma d’intercanvi, custodi, processador de pagaments ni servei de priorització de transaccions.</p>
+      <br>
+      <h4>Sense control sobre pagaments ni canals</h4>
+      <p>L’operador no pot enviar, revertir, recuperar ni redirigir un pagament Lightning, ni controlar un canal. Si tens problemes amb una cartera o un pagament, contacta amb el servei que ha creat o rebut el pagament.</p>
+      <br>
+      <h4>Dades i disponibilitat</h4>
+      <p>Les dades de l’explorador poden arribar amb retard, ser incompletes, no estar disponibles o diferir de la visió d’un altre node. Les comissions d’encaminament anunciades no garanteixen que hi hagi una ruta disponible ni que un pagament tingui èxit. El servei s’ofereix tal com és, sense garantia de disponibilitat ininterrompuda ni d’idoneïtat per a un propòsit concret.</p>
+      <br>
+      <h4>Ús acceptable</h4>
+      <p>No abusis del lloc web ni de l’API, no interfereixis en el funcionament del servei, no eludeixis límits raonables de sol·licituds i no utilitzis el servei de manera il·legal. L’accés es pot limitar quan sigui necessari per protegir la disponibilitat.</p>
+      <br>
+      <h4>Serveis externs</h4>
+      <p>Aquest lloc pot enllaçar als canals de contacte de tx.taxi, a referències de Bitcoin, a informació de llicències i a dependències d’infraestructura. Els llocs externs tenen les seves pròpies condicions i polítiques.</p>
+      <br>
+      <h4>Codi obert</h4>
+      <p>lightning.btc.tx.taxi deriva de The Mempool Open Source Project i es distribueix sota les obligacions de l’AGPLv3. Contacta amb <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> per obtenir la informació aplicable sobre el codi font i les llicències.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
 <ng-template #hindiLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -492,7 +526,7 @@
 </ng-template>
 <ng-template #finnishOrEnglish><ng-container *ngIf="fi; else danishOrEnglish" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
 <ng-template #finnishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Käyttöehdot</h2><h6>Päivitetty: 3. lokakuuta 2026</h6><br><br><div class="text-start"><h4>Tiedonvälityspalvelu</h4><p>lightning.btc.tx.taxi näyttää julkisia Lightning-solmuja, kanavia, reitityskäytäntöjä, verkon kapasiteettia ja historiallisia tilastoja. Palvelu on tarkoitettu tiedonvälitykseen; se ei ole lompakko, vaihtopalvelu, säilytyspalvelu, maksunkäsittelijä eikä transaktioiden priorisointipalvelu.</p><br><h4>Maksujen tai kanavien hallinta ei ole mahdollista</h4><p>Ylläpitäjä ei voi lähettää, perua, palauttaa tai uudelleenohjata Lightning-maksua eikä hallita kanavaa. Lompakkoon tai maksuun liittyvissä ongelmissa ota yhteyttä maksun luoneeseen tai vastaanottaneeseen palveluun.</p><br><h4>Tiedot ja saatavuus</h4><p>Lohkoketjuselaimen tiedot voivat olla viivästyneitä, puutteellisia, eivät saatavilla tai erilaisia kuin toisen solmun näkymä. Ilmoitetut reititysmaksut eivät takaa reitin saatavuutta tai maksun onnistumista. Palvelu tarjotaan sellaisenaan ilman lupausta keskeytymättömästä saatavuudesta tai soveltuvuudesta tiettyyn tarkoitukseen.</p><br><h4>Hyväksyttävä käyttö</h4><p>Älä käytä sivustoa tai APIa väärin, häiritse palvelun toimintaa, kierrä kohtuullisia pyyntötiheysrajoja tai käytä palvelua lainvastaisesti. Pääsyä voidaan tarvittaessa rajoittaa saatavuuden suojaamiseksi.</p><br><h4>Ulkoiset palvelut</h4><p>Sivusto voi sisältää linkkejä tx.taxin yhteydenottokanaviin, Bitcoin-lähteisiin, lisenssitietoihin ja infrastruktuuririippuvuuksiin. Ulkoisilla sivustoilla on omat ehtonsa ja käytäntönsä.</p><br><h4>Avoin lähdekoodi</h4><p>lightning.btc.tx.taxi perustuu Mempool Open Source Projectiin ja sitä jaetaan AGPLv3-velvoitteiden mukaisesti. Sovellettavista lähdekoodi- ja lisenssitiedoista voi kysyä osoitteesta <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p><br></div></div><br><br></div></ng-template>
-<ng-template #danishOrEnglish><ng-container *ngIf="da; else englishLegal" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
+<ng-template #danishOrEnglish><ng-container *ngIf="da; else catalanOrEnglish" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
 <ng-template #danishLegal>
 <div class="container-xl">
   <div class="text-center">

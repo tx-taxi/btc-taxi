@@ -2,6 +2,7 @@ import { arabicApiEntries } from './taxi-api-ar';
 import { finnishApiEntries } from './taxi-api-fi';
 import { persianApiEntries } from './taxi-api-fa';
 import { danishApiEntries } from './taxi-api-da';
+import { catalanApiEntries } from './taxi-api-ca';
 import { hindiApiEntries } from './taxi-api-hi';
 import { czechApiEntries } from './taxi-api-cs';
 import { swedishApiEntries } from './taxi-api-sv';
@@ -97,7 +98,7 @@ const entries: Record<string, [string, string?]> = {
 };
 
 export function localizedTaxiApi<T extends {fragment: string; title: string; description?: any}>(items: T[], locale: string): T[] {
-  const localized = locale.startsWith('ar') ? arabicApiEntries : locale.startsWith('fi') ? finnishApiEntries : locale.startsWith('fa') ? persianApiEntries : locale.startsWith('da') ? danishApiEntries : locale.startsWith('hi') ? hindiApiEntries : locale.startsWith('cs') ? czechApiEntries : locale.startsWith('sv') ? swedishApiEntries : locale.startsWith('nb') ? norwegianApiEntries : locale.startsWith('uk') ? ukrainianApiEntries : locale.startsWith('pl') ? polishApiEntries : locale.startsWith('ko') ? koreanApiEntries : locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : locale.startsWith('zh') ? chineseApiEntries : locale.startsWith('tr') ? turkishApiEntries : locale.startsWith('nl') ? dutchApiEntries : null;
+  const localized = locale.startsWith('ar') ? arabicApiEntries : locale.startsWith('fi') ? finnishApiEntries : locale.startsWith('fa') ? persianApiEntries : locale.startsWith('da') ? danishApiEntries : locale.startsWith('ca') ? catalanApiEntries : locale.startsWith('hi') ? hindiApiEntries : locale.startsWith('cs') ? czechApiEntries : locale.startsWith('sv') ? swedishApiEntries : locale.startsWith('nb') ? norwegianApiEntries : locale.startsWith('uk') ? ukrainianApiEntries : locale.startsWith('pl') ? polishApiEntries : locale.startsWith('ko') ? koreanApiEntries : locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : locale.startsWith('zh') ? chineseApiEntries : locale.startsWith('tr') ? turkishApiEntries : locale.startsWith('nl') ? dutchApiEntries : null;
   if (!localized) return items;
   return items.map(item => {
     const translated = localized[item.fragment];

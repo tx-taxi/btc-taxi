@@ -1,0 +1,20 @@
+/** Catalan Lightning REST reference. API paths, identifiers, and examples stay unchanged. */
+export const catalanLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Estadístiques de la xarxa','<p>Retorna estadístiques de tota la xarxa, com el nombre de canals i nodes, la capacitat total i les comissions mitjanes i medianes.</p><p>Per a <code>:interval</code>, pots indicar <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> o <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Nodes i canals','<p>Retorna els nodes i canals Lightning que coincideixen amb <code>:query</code>. La cerca inclou àlies i claus públiques de nodes, així com identificadors de canal complets i curts, sense distingir majúscules de minúscules.</p>'],
+ 'get-lightning-nodes-country':['Nodes per país','<p>Retorna els nodes Lightning que s’estima que són al país <code>:country</code> segons la seva adreça IP pública (clearnet). El país s’indica amb un codi ISO alfa-2.</p>'],
+ 'get-country-node-stats':['Estadístiques de nodes per país','<p>Retorna la capacitat total i el nombre de nodes per país, estimats a partir de les adreces IP públiques (clearnet). La capacitat es mesura en satoshis.</p>'],
+ 'get-isp-nodes':['Nodes per proveïdor','<p>Retorna els nodes allotjats pel proveïdor <code>:isp</code>, indicat mitjançant l’ASN.</p>'],
+ 'get-isp-node-stats':['Estadístiques de nodes per proveïdor','<p>Retorna la capacitat total i el nombre de nodes i canals per proveïdor. La capacitat es mesura en satoshis.</p>'],
+ 'get-top-100-nodes':['100 nodes principals','<p>Retorna dues llistes dels 100 nodes principals: una per liquiditat (capacitat total dels canals) i una altra per connectivitat (nombre de canals oberts).</p>'],
+ 'get-top-100-nodes-liquidity':['100 nodes principals per liquiditat','<p>Retorna els 100 nodes amb més liquiditat, mesurada com la capacitat total dels canals.</p>'],
+ 'get-top-100-nodes-connectivity':['100 nodes principals per connectivitat','<p>Retorna els 100 nodes amb més connexions, mesurades pel nombre de canals oberts.</p>'],
+ 'get-top-100-oldest-nodes':['100 nodes més antics','<p>Retorna els 100 nodes més antics.</p>'],
+ 'get-node-stats':['Estadístiques del node','<p>Retorna informació del node identificat amb la clau pública <code>:pubKey</code>.</p>'],
+ 'get-historical-node-stats':['Historial d’estadístiques del node','<p>Retorna les estadístiques històriques del node identificat amb la clau pública <code>:pubKey</code>.</p>'],
+ 'get-channel':['Canal','<p>Retorna informació del canal Lightning amb l’identificador <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Canals per identificador de transacció','<p>Retorna els canals corresponents al <code>:txid</code> indicat. Es poden proporcionar diversos identificadors de transacció.</p>'],
+ 'get-channels-from-pubkey':['Canals per clau pública del node','<p>Retorna els canals del node identificat amb <code>:pubKey</code>, 10 per pàgina. Utilitza <code>:index</code> per a la paginació. <code>:channelStatus</code> pot ser <code>open</code>, <code>active</code> o <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Dades geogràfiques dels canals','<p>Retorna una llista de canals amb les dades geogràfiques dels seus nodes.</p>'],
+ 'get-channel-geodata-node':['Dades geogràfiques dels canals d’un node','<p>Retorna els canals i les dades geogràfiques del node amb la clau pública <code>:pubKey</code>.</p>'],
+};
