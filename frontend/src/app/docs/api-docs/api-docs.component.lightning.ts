@@ -14,6 +14,7 @@ import { FaqTemplateDirective } from '@app/docs/faq-template/faq-template.compon
   standalone: false,
 })
 export class ApiDocsComponent implements OnInit, AfterViewInit {
+  get ka(): boolean { return this.locale.startsWith('ka'); }
   get es(): boolean { return this.locale.startsWith('es'); }
   get fr(): boolean { return this.locale.startsWith('fr'); }
   get de(): boolean { return this.locale.startsWith('de'); }
