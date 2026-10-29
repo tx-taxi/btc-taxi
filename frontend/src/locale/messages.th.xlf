@@ -477,7 +477,7 @@
       </trans-unit>
       <trans-unit id="bee6b649ee82d9a7cde233070b665eec7c531b1d" datatype="html">
         <source>Plus <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> unconfirmed ancestor(s)</source>
-        <target>รวมถึง <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> ธุรกรรมก่อนหน้าที่ไม่ได้รับการยืนยัน</target>
+        <target>รวมถึง <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> ธุรกรรมต้นทางที่ยังไม่ได้รับการยืนยัน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">49</context>
@@ -516,7 +516,7 @@
       </trans-unit>
       <trans-unit id="df89e157bacb4ab32e6ec725bf1eb176dc15201e" datatype="html">
         <source>Size in vbytes of this transaction (including unconfirmed ancestors)</source>
-        <target>ขนาดของธุรกรรมในหน่วย vbyte (รวมธุรกรรมที่ยังไม่ได้รับการยืนยันก่อนหน้าด้วย)</target>
+        <target>ขนาดของธุรกรรมในหน่วย vbyte (รวมธุรกรรมต้นทางที่ยังไม่ได้รับการยืนยัน)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">59</context>
@@ -703,7 +703,7 @@
       </trans-unit>
       <trans-unit id="fad137784196a8fdc10588e27ed5d8ae95fe4e79" datatype="html">
         <source>Fees already paid by this transaction (including unconfirmed ancestors)</source>
-        <target>ค่าธรรมเนียมถูกจ่ายโดยธุรกรรมนี้แล้ว (รวมถึงธุรกรรมก่อนหน้าธุรกรรมนี้ที่ยังไม่ได้รับการยืนยัน)</target>
+        <target>ค่าธรรมเนียมที่ธุรกรรมนี้จ่ายแล้ว (รวมธุรกรรมต้นทางที่ยังไม่ได้รับการยืนยัน)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">70</context>
@@ -906,7 +906,7 @@
       </trans-unit>
       <trans-unit id="4adc5f10d717fbcfc9834dcf5eb203c1156db4d7" datatype="html">
         <source>Confirmation not expected any time soon</source>
-        <target>ไม่ได้รับการยืนยันในเร็วๆนี้</target>
+        <target>ไม่คาดว่าจะได้รับการยืนยันในเร็ว ๆ นี้</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">298</context>
