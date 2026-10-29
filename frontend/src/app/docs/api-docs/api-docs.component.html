@@ -178,7 +178,7 @@
                   <div [innerHTML]="item.description.default" i18n></div>
                 </div>
                 <div class="description">
-                  <div class="subtitle">{{ locale.startsWith('nl') ? 'Payload' : locale.startsWith('tr') ? 'İstek verisi' : locale.startsWith('es') ? 'Carga' : locale.startsWith('fr') ? 'Charge utile' : locale.startsWith('de') ? 'Nutzlast' : locale.startsWith('it') ? 'Carico utile' : locale.startsWith('pt') ? 'Carga útil' : locale.startsWith('ru') ? 'Полезная нагрузка' : 'Payload' }}</div>
+                  <div class="subtitle">{{ locale.startsWith('hi') ? 'पेलोड' : locale.startsWith('cs') ? 'Obsah zprávy' : locale.startsWith('sv') ? 'Nyttolast' : locale.startsWith('nb') ? 'Nyttelast' : locale.startsWith('uk') ? 'Вміст повідомлення' : locale.startsWith('pl') ? 'Dane wiadomości' : locale.startsWith('ko') ? '페이로드' : locale.startsWith('zh') ? '消息负载' : locale.startsWith('ja') ? 'ペイロード' : locale.startsWith('nl') ? 'Payload' : locale.startsWith('tr') ? 'İstek verisi' : locale.startsWith('es') ? 'Carga' : locale.startsWith('fr') ? 'Charge utile' : locale.startsWith('de') ? 'Nutzlast' : locale.startsWith('it') ? 'Carico utile' : locale.startsWith('pt') ? 'Carga útil' : locale.startsWith('ru') ? 'Полезная нагрузка' : 'Payload' }}</div>
                   <pre><code [innerText]="item.payload"></code></pre>
                 </div>
                 <app-code-template [hostname]="hostname" [baseNetworkUrl]="baseNetworkUrl" [method]="item.httpRequestMethod" [code]="item.codeExample.default" [network]="network.val" [showCodeExample]="item.showJsExamples"></app-code-template>
