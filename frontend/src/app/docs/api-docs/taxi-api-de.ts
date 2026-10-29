@@ -21,7 +21,7 @@ export const germanApiEntries: Record<string, [string, string?]> = {
   'get-block-status':['GET Blockstatus','Gibt den Bestätigungsstatus des Blocks zurück. Felder: <code>in_best_chain</code> (Boolean, false für verwaiste Blöcke) und <code>next_best</code> (Hash des nächsten Blocks, nur für Blöcke der Hauptkette verfügbar).'],
   'get-block-tip-height':['GET Höhe des neuesten Blocks','Gibt die Höhe des neuesten Blocks zurück.'],
   'get-block-tip-hash':['GET Hash des neuesten Blocks','Gibt den Hash des neuesten Blocks zurück.'],
-  'get-block-transaction-id':['GET Blocktransaktions-ID','Gibt die Transaktion am Index <code>:index</code> des angegebenen Blocks zurück.'],
+  'get-block-transaction-id':['GET Blocktransaktions-ID','Gibt die ID der Transaktion am Index <code>:index</code> des angegebenen Blocks zurück.'],
   'get-block-transaction-ids':['GET Blocktransaktions-IDs','Gibt eine Liste aller txids des Blocks zurück.'],
   'get-block-transactions':['GET Blocktransaktionen','Gibt bis zu 25 Transaktionen des Blocks ab <code>start_index</code> zurück. Sie enthalten kein Feld <code>status</code>, da sie denselben Block und Bestätigungsstatus teilen.'],
   'get-blocks':['GET Blöcke','Gibt Details der letzten 10 Blöcke zurück. Mit <code>:startHeight</code> werden die 10 Blöcke bis einschließlich dieser Höhe zurückgegeben.'],

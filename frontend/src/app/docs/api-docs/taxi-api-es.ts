@@ -24,7 +24,7 @@ const entries: Record<string, [string, string?]> = {
   'get-block-status':['GET Estado de bloque','Devuelve el estado de confirmación del bloque. Campos: <code>in_best_chain</code> (booleano, falso para bloques huérfanos) y <code>next_best</code> (hash del siguiente bloque, disponible solo para bloques de la cadena principal).'],
   'get-block-tip-height':['GET Altura del último bloque','Devuelve la altura del último bloque.'],
   'get-block-tip-hash':['GET Hash del último bloque','Devuelve el hash del último bloque.'],
-  'get-block-transaction-id':['GET ID de transacción de bloque','Devuelve la transacción en el índice <code>:index</code> del bloque indicado.'],
+  'get-block-transaction-id':['GET ID de transacción de bloque','Devuelve el ID de la transacción en el índice <code>:index</code> del bloque indicado.'],
   'get-block-transaction-ids':['GET ID de transacciones de bloque','Devuelve una lista de todos los txids del bloque.'],
   'get-block-transactions':['GET Transacciones de bloque','Devuelve hasta 25 transacciones del bloque a partir de <code>start_index</code>. No incluyen el campo <code>status</code>, pues todas comparten bloque y estado de confirmación.'],
   'get-blocks':['GET Bloques','Devuelve detalles de los últimos 10 bloques. Si se indica <code>:startHeight</code>, devuelve los 10 bloques anteriores a esa altura, incluida.'],

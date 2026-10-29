@@ -21,7 +21,7 @@ export const frenchApiEntries: Record<string, [string, string?]> = {
   'get-block-status':['GET État de bloc','Renvoie l’état de confirmation du bloc. Champs : <code>in_best_chain</code> (booléen, faux pour les blocs orphelins) et <code>next_best</code> (hash du bloc suivant, disponible uniquement pour les blocs de la chaîne principale).'],
   'get-block-tip-height':['GET Hauteur du dernier bloc','Renvoie la hauteur du dernier bloc.'],
   'get-block-tip-hash':['GET Hash du dernier bloc','Renvoie le hash du dernier bloc.'],
-  'get-block-transaction-id':['GET Identifiant de transaction d’un bloc','Renvoie la transaction à l’indice <code>:index</code> du bloc indiqué.'],
+  'get-block-transaction-id':['GET Identifiant de transaction d’un bloc','Renvoie l’identifiant de la transaction à l’indice <code>:index</code> du bloc indiqué.'],
   'get-block-transaction-ids':['GET Identifiants des transactions d’un bloc','Renvoie la liste de tous les txids du bloc.'],
   'get-block-transactions':['GET Transactions d’un bloc','Renvoie jusqu’à 25 transactions du bloc à partir de <code>start_index</code>. Elles ne comprennent pas le champ <code>status</code>, car elles partagent le même bloc et le même état de confirmation.'],
   'get-blocks':['GET Blocs','Renvoie les détails des 10 derniers blocs. Si <code>:startHeight</code> est indiqué, renvoie les 10 blocs précédant cette hauteur, incluse.'],

@@ -4623,7 +4623,7 @@ export const restApiDocsData = [
     fragment: 'get-block-transaction-id',
     title: 'GET Block Transaction ID',
     description: {
-      default: 'Returns the transaction at index <code>:index</code> within the specified block.'
+      default: 'Returns the transaction ID at index <code>:index</code> within the specified block.'
     },
     urlString: '/block/:hash/txid/:index',
     showConditions: bitcoinNetworks.concat(liquidNetworks),
