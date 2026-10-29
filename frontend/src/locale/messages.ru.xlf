@@ -480,7 +480,7 @@
       </trans-unit>
       <trans-unit id="bee6b649ee82d9a7cde233070b665eec7c531b1d" datatype="html">
         <source>Plus <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> unconfirmed ancestor(s)</source>
-        <target>Плюс <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> неподтвержденных предов</target>
+        <target>Плюс <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}" /> неподтверждённых предков</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">49</context>
@@ -2925,7 +2925,7 @@
       </trans-unit>
       <trans-unit id="de9a93ca8a13ccbd6de65782abb6b1432759b654" datatype="html">
         <source>Avg Block Fee (1m)</source>
-        <target>Ср. комиссия за блок (1 мин.)</target>
+        <target>Ср. комиссия за блок (1 мес.)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">57</context>
@@ -2979,7 +2979,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees" datatype="html">
         <source>See the average mining fees earned per Bitcoin block visualized in BTC and USD over time.</source>
-        <target>Посмотреть среднюю стоимость майнинга одного биткоин-блока, визуализированную в BTC и долларах США, с течением времени.</target>
+        <target>Средние комиссии, полученные майнерами за блок Bitcoin, в BTC и USD с течением времени.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">71</context>
@@ -4096,7 +4096,7 @@
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
         <source>Winning Block</source>
-        <target>Выйгравший блок</target>
+        <target>Выигравший блок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
@@ -4217,7 +4217,7 @@
       </trans-unit>
       <trans-unit id="cbfb79ff517493268a49acffa81ecc02336d8372" datatype="html">
         <source>Block Header Hex</source>
-        <target>Заголовок блока в шестнадцатиричном формате</target>
+        <target>Заголовок блока в шестнадцатеричном формате</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">357</context>
@@ -5001,7 +5001,7 @@
       </trans-unit>
       <trans-unit id="0c65c3ee0ce537e507e0b053b479012e5803d2cf" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> blocks expected</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> блоков добавлено</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> ожидается блоков</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">50</context>
@@ -5010,7 +5010,7 @@
       </trans-unit>
       <trans-unit id="ec9f27d00a7778cd1cfe1806105d2ca3314fa506" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}" /> block expected</source>
-        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> блок добавлен</target>
+        <target><x id="INTERPOLATION" equiv-text="{{ i }}" /> ожидается блок</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">51</context>
@@ -5992,7 +5992,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mempool-block" datatype="html">
         <source>See stats for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> transactions in the mempool: fee range, aggregate size, and more. Mempool blocks are updated in real-time as the network receives new transactions.</source>
-        <target>Посмотреть статистику для <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> транзакциий в мемпуле: диапазон комиссий, совокупный размер и многое другое. Блоки мемпула обновляются в режиме реального времени по мере поступления в сеть новых транзакций.</target>
+        <target>Посмотреть статистику для <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> транзакций в мемпуле: диапазон комиссий, совокупный размер и многое другое. Блоки мемпула обновляются в режиме реального времени по мере поступления в сеть новых транзакций.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-block/mempool-block.component.ts</context>
           <context context-type="linenumber">61</context>
