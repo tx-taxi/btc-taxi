@@ -569,7 +569,7 @@
 
 </ng-template>
 
-<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else finnishOrEnglish" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
+<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else persianOrEnglish" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
 <ng-template #arabicLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -612,6 +612,57 @@
 
       <h4>الإسناد إلى المصدر المفتوح</h4>
       <p>btc.tx.taxi مشتق من mempool/mempool ويلتزم بمتطلبات AGPLv3 الموروثة عنه. تبقى أسماء Mempool وشعاراتها وعلاماتها التجارية ملكًا لأصحابها؛ ولا يرتبط btc.tx.taxi بشركة Mempool Holdings S.A. de C.V. ولا يحظى بتأييدها.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #persianOrEnglish><ng-container *ngIf="fa; else finnishOrEnglish" [ngTemplateOutlet]="persianLegal"></ng-container></ng-template>
+<ng-template #persianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>سیاست حریم خصوصی</h2>
+    <h6>به‌روزرسانی: ۲۹ اکتبر ۲۰۲۶</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>اندازه‌گیری مخاطب</h4>
+      <p>tx.taxi برای بازدید صفحه و عملکرد از Cloudflare Web Analytics و برای شمارش مرورگرها یک بار در هر روز UTC از یک کوکی روزانهٔ شخص اول مشترک میان کاوشگرهای خود استفاده می‌کند. گردآورندهٔ روزانهٔ مخاطب فقط شناسهٔ روزانه، نام میزبان کاوشگر و وقوع تعامل را ذخیره می‌کند. متن جست‌وجو، نشانی‌های بلاک‌چین، شناسهٔ تراکنش، نشانی صفحات بازدیدشده یا نشانی IP را ذخیره نمی‌کند. رکوردهای روزانهٔ فردی پس از ۳۱ روز منقضی می‌شوند؛ شمارش‌های تجمیعی ۴۰۰ روز نگهداری می‌شوند. تنظیمات Do Not Track و Global Privacy Control این اندازه‌گیری شخص اول را غیرفعال می‌کنند. <a href="https://tx.taxi/privacy#audience-measurement">جزئیات و انصراف</a>.</p>
+      <h4>وقتی حریم خصوصی مهم است از گره خود استفاده کنید</h4>
+      <p>btc.tx.taxi داده‌های عمومی زنجیره و ممپول Bitcoin را از طریق بک‌اند تنظیم‌شده توسط گردانندهٔ سایت نمایش می‌دهد. برای راستی‌آزمایی مستقل و بیشترین حریم خصوصی شبکه، از گره و مرورگر Bitcoin خود استفاده کنید.</p>
+
+      <br>
+
+      <h4>داده‌های درخواست</h4>
+      <p>درخواست‌های معمول وب‌سایت و API می‌توانند فراداده‌های استاندارد وب، از جمله نشانی IP، عامل کاربر، URL درخواستی و زمان درخواست را برای گرداننده آشکار کنند. ممکن است گزارش‌های سرور برای پایداری، جلوگیری از سوءاستفاده و اشکال‌زدایی نگهداری شوند.</p>
+
+      <br>
+
+      <h4>ترجیحات محلی</h4>
+      <p>ترجیحات نمایش مانند پوسته، واحد، ارز فیات، زبان و منطقهٔ زمانی ممکن است در مرورگر شما ذخیره شوند. استفادهٔ معمول از btc.tx.taxi به حساب کاربری نیاز ندارد.</p>
+
+      <br>
+
+      <h4>داده‌های عمومی بلاک‌چین</h4>
+      <p>تراکنش‌ها، نشانی‌ها، اسکریپت‌ها و بلاک‌های Bitcoin عمومی هستند. جست‌وجوی نشانی یا تراکنش ممکن است آن جست‌وجو را به فراداده‌های شبکهٔ شما مرتبط کند. مرورگر عمومی را مرز حریم خصوصی تلقی نکنید.</p>
+
+      <br>
+
+      <h4>پیوندهای بیرونی</h4>
+      <p>این سایت به کانال‌های تماس tx.taxi، مستندات Bitcoin، کد منبع پروژهٔ اصلی و اطلاعات مجوز پیوند می‌دهد. این سرویس‌های بیرونی سیاست‌های حریم خصوصی خود را دارند.</p>
+
+      <br>
+
+      <h4>ارجاع به پروژهٔ متن‌باز</h4>
+      <p>btc.tx.taxi از mempool/mempool مشتق شده و تعهدات AGPLv3 آن را به ارث می‌برد. نام‌ها، نشان‌ها و علائم تجاری Mempool متعلق به صاحبان مربوطه هستند؛ btc.tx.taxi به Mempool Holdings S.A. de C.V. وابسته نیست و تأیید آن را ندارد.</p>
 
       <br>
     </div>

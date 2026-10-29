@@ -487,7 +487,7 @@
 
 </ng-template>
 
-<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else finnishOrEnglish" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
+<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else persianOrEnglish" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
 <ng-template #arabicLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -523,6 +523,50 @@
 
       <h4>الترخيص</h4>
       <p>يلتزم هذا الفرع بمتطلبات ترخيص AGPLv3 للمشروع الأصلي. تواصل مع المشغّل للحصول على معلومات الشفرة المصدرية والترخيص المعمول بها.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #persianOrEnglish><ng-container *ngIf="fa; else finnishOrEnglish" [ngTemplateOutlet]="persianLegal"></ng-container></ng-template>
+<ng-template #persianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>علائم تجاری و انتساب</h2>
+    <h6>به‌روزرسانی: ۳ اکتبر ۲۰۲۶</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>هویت tx.taxi</h4>
+      <p>lightning.btc.tx.taxi یک مرورگر Lightning با مدیریت مستقل در خانوادهٔ tx.taxi است. دامنه، نشان‌نوشتاری، رنگ‌های زنجیره و هویت سرویس آن، این فورک را از پروژهٔ اصلی متمایز می‌کنند.</p>
+
+      <br>
+
+      <h4>انتساب به پروژهٔ اصلی</h4>
+      <p>این نرم‌افزار از پروژهٔ متن‌باز Mempool مشتق شده است. کد منبع اصلی، سامانهٔ بصری، نام‌های پروژه، نشان‌ها و علائم تجاری متعلق به صاحبان مربوطه هستند.</p>
+
+      <br>
+
+      <h4>عدم وابستگی</h4>
+      <p>lightning.btc.tx.taxi به Mempool Holdings S.A. de C.V. وابسته نیست و از حمایت یا تأیید آن برخوردار نیست. اشاره به mempool.space و mempool/mempool صرفاً انتساب نام نرم‌افزاری است که این فورک از آن مشتق شده است.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin یک شبکه و پروتکل باز است. اشاره به Bitcoin، BTC، ساتوشی، Lightning، گره‌ها، کانال‌ها و سیاست‌های مسیریابی داده‌های شبکهٔ نمایش‌داده‌شده در این مرورگر را توصیف می‌کند.</p>
+
+      <br>
+
+      <h4>مجوز</h4>
+      <p>این فورک از تعهدات مجوز AGPLv3 پروژهٔ اصلی پیروی می‌کند. برای اطلاعات مربوط به کد منبع و مجوز با گرداننده تماس بگیرید.</p>
 
       <br>
     </div>
