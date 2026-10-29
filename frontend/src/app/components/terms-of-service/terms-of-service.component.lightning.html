@@ -944,7 +944,8 @@
 </ng-template>
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
-<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1016,6 +1017,32 @@
 <br>
 <h4>โอเพนซอร์ส</h4>
 <p>lightning.btc.tx.taxi พัฒนาต่อยอดจาก Mempool Open Source Project และเผยแพร่ภายใต้ข้อผูกพันของ AGPLv3 ติดต่อ <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> เพื่อขอข้อมูลซอร์สโค้ดและใบอนุญาตที่เกี่ยวข้อง</p>
+<br>
+</div></div><br><br></div>
+</ng-template>
+
+<ng-template #vietnameseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Điều khoản dịch vụ</h2><h6>Cập nhật: 3 tháng 10 năm 2026</h6><br><br>
+<div class="text-start">
+<h4>Trình khám phá cung cấp thông tin</h4>
+<p>lightning.btc.tx.taxi cung cấp thông tin về các nút Lightning công khai, kênh, chính sách định tuyến, dung lượng mạng và thống kê lịch sử. Đây là dịch vụ cung cấp thông tin, không phải ví, sàn giao dịch, đơn vị lưu ký, đơn vị xử lý thanh toán hay dịch vụ ưu tiên giao dịch.</p>
+<br>
+<h4>Không kiểm soát thanh toán hoặc kênh</h4>
+<p>Người vận hành không thể gửi, đảo ngược, khôi phục hoặc chuyển hướng khoản thanh toán Lightning hay kiểm soát một kênh. Nếu gặp vấn đề về ví hoặc thanh toán, hãy liên hệ với dịch vụ đã tạo hoặc nhận khoản thanh toán.</p>
+<br>
+<h4>Dữ liệu và khả năng sẵn sàng</h4>
+<p>Dữ liệu của trình khám phá có thể bị trễ, không đầy đủ, không khả dụng hoặc khác với dữ liệu mà một nút khác quan sát được. Phí định tuyến được công bố không đảm bảo có tuyến khả dụng hoặc khoản thanh toán sẽ thành công. Dịch vụ được cung cấp theo hiện trạng, không cam kết sẵn sàng liên tục hoặc phù hợp với một mục đích cụ thể.</p>
+<br>
+<h4>Sử dụng được chấp nhận</h4>
+<p>Không lạm dụng trang web hoặc API, cản trở hoạt động của dịch vụ, vượt qua các giới hạn tốc độ hợp lý hoặc sử dụng dịch vụ trái pháp luật. Quyền truy cập có thể bị hạn chế khi cần thiết để bảo vệ khả năng sẵn sàng.</p>
+<br>
+<h4>Dịch vụ bên ngoài</h4>
+<p>Trang web này có thể liên kết đến các kênh liên hệ của tx.taxi, tài liệu tham khảo về Bitcoin, thông tin giấy phép và các dịch vụ hạ tầng mà trang phụ thuộc. Các trang web bên ngoài có điều khoản và chính sách riêng.</p>
+<br>
+<h4>Mã nguồn mở</h4>
+<p>lightning.btc.tx.taxi được phát triển từ Mempool Open Source Project và được phân phối theo các nghĩa vụ AGPLv3. Liên hệ <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> để biết thông tin áp dụng về mã nguồn và giấy phép.</p>
 <br>
 </div></div><br><br></div>
 </ng-template>

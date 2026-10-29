@@ -1047,7 +1047,8 @@
 </ng-template>
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
-<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1127,6 +1128,35 @@
 <br>
 <h4>การระบุที่มาโอเพนซอร์ส</h4>
 <p>lightning.btc.tx.taxi พัฒนาต่อยอดจาก mempool/mempool และสืบทอดข้อผูกพันตาม AGPLv3 ชื่อ โลโก้ และเครื่องหมายการค้าของ Mempool ยังคงเป็นทรัพย์สินของเจ้าของแต่ละราย lightning.btc.tx.taxi ไม่มีความเกี่ยวข้องกับ Mempool Holdings S.A. de C.V. และไม่ได้รับการรับรองจากบริษัทดังกล่าว</p>
+<br>
+</div></div><br><br></div>
+</ng-template>
+
+<ng-template #vietnameseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Chính sách quyền riêng tư</h2><h6>Cập nhật: 29 tháng 10 năm 2026</h6><br><br>
+<div class="text-start">
+<h4>Đo lường lượng người dùng</h4>
+<p>tx.taxi sử dụng Cloudflare Web Analytics để đo lượt xem trang và hiệu suất, cùng một cookie hàng ngày của bên thứ nhất dùng chung giữa các trình khám phá để đếm mỗi trình duyệt một lần mỗi ngày theo UTC. Bộ thu thập số liệu người dùng hàng ngày chỉ lưu mã định danh hàng ngày, tên máy chủ của trình khám phá và thông tin có tương tác hay không. Bộ này không lưu nội dung tìm kiếm, địa chỉ blockchain, mã giao dịch, URL các trang đã truy cập hoặc địa chỉ IP. Bản ghi hàng ngày riêng lẻ hết hạn sau 31 ngày; số liệu tổng hợp được lưu trong 400 ngày. Do Not Track và Global Privacy Control tắt việc đo lường của bên thứ nhất này. <a href="https://tx.taxi/privacy#audience-measurement">Chi tiết và cách từ chối</a>.</p>
+<br>
+<h4>Dữ liệu mạng công khai</h4>
+<p>lightning.btc.tx.taxi hiển thị dữ liệu gossip Lightning công khai và thống kê mạng. Các kênh riêng tư, từng khoản thanh toán và số dư kênh không hiển thị công khai. Để xác minh độc lập, hãy so sánh đồ thị công khai với nút Lightning của riêng bạn.</p>
+<br>
+<h4>Dữ liệu yêu cầu</h4>
+<p>Các yêu cầu thông thường đến trang web và API có thể tiết lộ cho người vận hành siêu dữ liệu web thông thường, bao gồm địa chỉ IP, user agent, URL được yêu cầu và thời điểm yêu cầu. Nhật ký máy chủ có thể được lưu để đảm bảo độ tin cậy, ngăn chặn lạm dụng và khắc phục sự cố.</p>
+<br>
+<h4>Tùy chọn cục bộ</h4>
+<p>Các tùy chọn hiển thị như giao diện, đơn vị, tiền pháp định, ngôn ngữ và múi giờ có thể được lưu trong trình duyệt của bạn. Không cần tài khoản để sử dụng trình khám phá lightning.btc.tx.taxi thông thường.</p>
+<br>
+<h4>Tìm kiếm và các kênh công khai</h4>
+<p>Khóa của các nút Lightning công khai, điểm kết nối được công bố, chính sách kênh và các giao dịch Bitcoin cấp vốn đều là thông tin công khai. Việc tra cứu một nút hoặc kênh có thể liên kết lượt tìm kiếm đó với siêu dữ liệu mạng của bạn. Đừng coi trình khám phá công khai là một ranh giới bảo vệ quyền riêng tư.</p>
+<br>
+<h4>Liên kết bên ngoài</h4>
+<p>Trang web này liên kết đến các kênh liên hệ của tx.taxi, tài liệu Bitcoin, mã nguồn của dự án gốc và thông tin giấy phép. Các dịch vụ bên ngoài đó có chính sách quyền riêng tư riêng.</p>
+<br>
+<h4>Ghi nhận nguồn mở</h4>
+<p>lightning.btc.tx.taxi được phát triển từ mempool/mempool và kế thừa các nghĩa vụ AGPLv3 của dự án. Tên, logo và nhãn hiệu Mempool vẫn thuộc về các chủ sở hữu tương ứng; lightning.btc.tx.taxi không liên kết với hoặc được Mempool Holdings S.A. de C.V. chứng thực.</p>
 <br>
 </div></div><br><br></div>
 </ng-template>

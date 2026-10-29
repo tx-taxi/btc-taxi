@@ -852,7 +852,8 @@
 </ng-template>
 
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
-<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
+<ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else englishLegal" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -916,6 +917,29 @@
 <br>
 <h4>ใบอนุญาต</h4>
 <p>fork นี้ปฏิบัติตามข้อผูกพันของใบอนุญาต AGPLv3 ของโครงการต้นทาง โปรดติดต่อผู้ดำเนินการเพื่อขอข้อมูลซอร์สโค้ดและใบอนุญาตที่เกี่ยวข้อง</p>
+<br>
+</div></div><br><br></div>
+</ng-template>
+
+<ng-template #vietnameseLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Nhãn hiệu và ghi nhận nguồn</h2><h6>Cập nhật: 20 tháng 9 năm 2026</h6><br><br>
+<div class="text-start">
+<h4>Nhận diện tx.taxi</h4>
+<p>btc.tx.taxi là trình khám phá Bitcoin được vận hành độc lập trong hệ sinh thái tx.taxi. Tên miền, logo chữ, bảng màu của chuỗi và nhận diện dịch vụ phân biệt bản fork này với dự án gốc.</p>
+<br>
+<h4>Ghi nhận dự án gốc</h4>
+<p>Phần mềm này được phát triển từ Mempool Open Source Project. Mã nguồn, hệ thống hình ảnh, tên dự án, logo và nhãn hiệu của dự án gốc thuộc về các chủ sở hữu tương ứng.</p>
+<br>
+<h4>Không liên kết</h4>
+<p>btc.tx.taxi không liên kết với, được tài trợ hoặc chứng thực bởi Mempool Holdings S.A. de C.V. Việc nhắc đến mempool.space và mempool/mempool nhằm ghi nhận đích danh phần mềm mà bản fork này được phát triển từ đó.</p>
+<br>
+<h4>Bitcoin</h4>
+<p>Bitcoin là một mạng và giao thức mở. Các tham chiếu đến Bitcoin, BTC, satoshi, khối, giao dịch, địa chỉ, khai thác và Lightning mô tả dữ liệu mạng được trình khám phá này hiển thị.</p>
+<br>
+<h4>Giấy phép</h4>
+<p>Bản fork này tuân theo các nghĩa vụ của giấy phép AGPLv3 của dự án gốc. Hãy liên hệ người vận hành để biết thông tin áp dụng về mã nguồn và giấy phép.</p>
 <br>
 </div></div><br><br></div>
 </ng-template>
