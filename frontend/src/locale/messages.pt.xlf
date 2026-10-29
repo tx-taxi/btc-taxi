@@ -11634,7 +11634,7 @@
 
       <trans-unit id="taxi.btc.about.data" datatype="html">
         <source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source>
-        <target>Os valores continuam denominados em BTC, satoshis ou na moeda fiduciária selecionada. As taxas permanecem em sat/vB, os tamanhos das transações em vB ou unidades de peso, e todos os conceitos de blocos, endereços e mineração apresentados conservam o seu significado no Bitcoin.</target>
+        <target>Os valores continuam denominados em BTC, satoshis ou na moeda fiduciária selecionada. As taxas de comissão permanecem em sat/vB, os tamanhos das transações em vB ou unidades de peso, e todos os conceitos de blocos, endereços e mineração apresentados conservam o seu significado no Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">18</context>
@@ -12264,7 +12264,7 @@
 
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html">
         <source>Median fee rate</source>
-        <target>Taxa mediana</target>
+        <target>Taxa de comissão mediana</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/block-format.ts</context>
           <context context-type="linenumber">47</context>
