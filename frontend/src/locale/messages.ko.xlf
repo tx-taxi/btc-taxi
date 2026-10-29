@@ -6828,8 +6828,8 @@
         <note priority="1" from="description">test-tx.rejection-reason</note>
       </trans-unit>
       <trans-unit id="meta.description.push-tx" datatype="html">
-        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's hash.</source>
-        <target>트랜잭션의 해시를 사용하여 <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> 네트워크로 트랜잭션을 전파합니다.</target>
+        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the raw transaction in hexadecimal format.</source>
+        <target>원시 트랜잭션의 16진수 데이터를 사용하여 <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> 네트워크로 트랜잭션을 전파합니다.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.ts</context>
           <context context-type="linenumber">59</context>

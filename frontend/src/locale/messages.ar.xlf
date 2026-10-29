@@ -6828,8 +6828,8 @@
         <note priority="1" from="description">test-tx.rejection-reason</note>
       </trans-unit>
       <trans-unit id="meta.description.push-tx" datatype="html">
-        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the transaction's hash.</source>
-        <target>بث معاملة إلى شبكة <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> باستخدام تجزئة المعاملة.</target>
+        <source>Broadcast a transaction to the <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network using the raw transaction in hexadecimal format.</source>
+        <target>بث معاملة إلى شبكة <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> باستخدام المعاملة الخام بتنسيق سداسي عشري.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.ts</context>
           <context context-type="linenumber">59</context>
