@@ -1,0 +1,20 @@
+/** Korean Lightning REST reference. Protocol names and URLs stay unchanged. */
+export const koreanLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['네트워크 통계','<p>채널 수, 노드 수, 총 용량, 수수료 평균과 중앙값 등 전체 네트워크 통계를 반환합니다.</p><p><code>:interval</code>에는 <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>를 지정할 수 있습니다.</p>'],
+ 'get-lightning-nodes-channels':['노드와 채널','<p><code>:query</code>와 일치하는 라이트닝 노드와 채널을 반환합니다. 노드 별칭과 공개 키, 전체 및 단축 채널 ID를 대소문자 구분 없이 검색합니다.</p>'],
+ 'get-lightning-nodes-country':['국가별 노드','<p>공개 IP 주소(clearnet)를 기반으로 지정한 <code>:country</code>에 있다고 추정되는 라이트닝 노드를 반환합니다. 국가는 ISO 알파-2 코드로 지정합니다.</p>'],
+ 'get-country-node-stats':['국가별 노드 통계','<p>공개 IP 주소(clearnet)로 위치를 추정한 노드의 국가별 총 용량과 노드 수를 반환합니다. 용량 단위는 사토시입니다.</p>'],
+ 'get-isp-nodes':['서비스 제공업체별 노드','<p>ASN으로 지정한 제공업체 <code>:isp</code>의 노드를 반환합니다.</p>'],
+ 'get-isp-node-stats':['서비스 제공업체별 노드 통계','<p>제공업체별 총 용량, 노드 수와 채널 수를 반환합니다. 용량 단위는 사토시입니다.</p>'],
+ 'get-top-100-nodes':['상위 100개 노드','<p>유동성(채널 총 용량)과 연결성(열린 채널 수) 순위별 상위 100개 노드를 각각 반환합니다.</p>'],
+ 'get-top-100-nodes-liquidity':['유동성 상위 100개 노드','<p>채널 총 용량으로 측정한 유동성 상위 100개 노드를 반환합니다.</p>'],
+ 'get-top-100-nodes-connectivity':['연결성 상위 100개 노드','<p>열린 채널 수로 측정한 연결성 상위 100개 노드를 반환합니다.</p>'],
+ 'get-top-100-oldest-nodes':['가장 오래된 100개 노드','<p>가장 오래된 노드 100개를 반환합니다.</p>'],
+ 'get-node-stats':['노드 통계','<p>공개 키 <code>:pubKey</code>로 지정한 노드의 상세 정보를 반환합니다.</p>'],
+ 'get-historical-node-stats':['노드 통계 기록','<p>공개 키 <code>:pubKey</code>로 지정한 노드의 과거 통계를 반환합니다.</p>'],
+ 'get-channel':['채널','<p>식별자 <code>:channelId</code>로 지정한 라이트닝 채널의 정보를 반환합니다.</p>'],
+ 'get-channels-from-txid':['트랜잭션 ID로 채널 조회','<p>지정한 <code>:txid</code>에 해당하는 채널을 반환합니다. 여러 트랜잭션 ID를 지정할 수 있습니다.</p>'],
+ 'get-channels-from-pubkey':['노드 공개 키로 채널 조회','<p><code>:pubKey</code>로 지정한 노드의 채널을 페이지당 10개씩 반환합니다. 페이지 지정에는 <code>:index</code>를 사용합니다. <code>:channelStatus</code>에는 <code>open</code>, <code>active</code>, <code>closed</code>를 지정할 수 있습니다.</p>'],
+ 'get-channel-geodata':['채널 위치 정보','<p>채널과 해당 노드의 위치 정보 목록을 반환합니다.</p>'],
+ 'get-channel-geodata-node':['노드의 채널 위치 정보','<p>공개 키 <code>:pubKey</code>로 지정한 노드의 채널과 위치 정보를 반환합니다.</p>'],
+};
