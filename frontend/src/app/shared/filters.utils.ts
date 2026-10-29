@@ -82,7 +82,7 @@ const finnishFilterLabels: Record<string, string> = {
   rbf: 'RBF käytössä', no_rbf: 'RBF pois käytöstä', v1: 'Versio 1', v2: 'Versio 2', v3: 'Versio 3',
   nonstandard: 'Epästandardi', p2ms: 'Paljas moniallekirjoitus',
   cpfp_parent: 'Lapsi maksaa', cpfp_child: 'Maksaa edeltäjän puolesta', replacement: 'Korvaava transaktio',
-  fake_pubkey: 'Virheellinen julkinen avain', fake_scripthash: 'Virheellinen skriptitiiviste', annex: 'Annex-lisätieto',
+  fake_pubkey: 'Näennäinen julkinen avain', fake_scripthash: 'Näennäinen skriptitiiviste', annex: 'Annex-lisätieto',
   menu: 'Transaktiosuodattimet',
 };
 export function filterLabel(key: string, fallback: string): string {
