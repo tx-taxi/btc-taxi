@@ -2922,7 +2922,7 @@
       </trans-unit>
       <trans-unit id="de9a93ca8a13ccbd6de65782abb6b1432759b654" datatype="html">
         <source>Avg Block Fee (1m)</source>
-        <target>Phí Khối Trung Bình (1 phút)</target>
+        <target>Phí khối trung bình (1 tháng)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.html</context>
           <context context-type="linenumber">57</context>
@@ -5521,7 +5521,7 @@
       </trans-unit>
       <trans-unit id="5ee5eb7db86675abd5f0b0db835bf362ee9b23ff" datatype="html">
         <source>Indexing network hashrate</source>
-        <target>Lập chỉ mục mạng băm</target>
+        <target>Lập chỉ mục tốc độ băm của mạng</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/indexing-progress/indexing-progress.component.html</context>
           <context context-type="linenumber">2</context>
@@ -5739,7 +5739,7 @@
       </trans-unit>
       <trans-unit id="a5d0bd2f3fedabd093937eb13a9edb9bcd00b919" datatype="html">
         <source>Change output</source>
-        <target>Thay đổi đầu ra</target>
+        <target>Đầu ra tiền thừa</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">55</context>
@@ -7577,7 +7577,7 @@
       </trans-unit>
       <trans-unit id="dd230222e3ae689913445ce93b6ae3f7cce7458b" datatype="html">
         <source>Descendant</source>
-        <target>Descendant</target>
+        <target>Giao dịch hậu duệ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/cpfp-info.component.html</context>
           <context context-type="linenumber">20</context>
@@ -7591,7 +7591,7 @@
       </trans-unit>
       <trans-unit id="8c16167a5d7c96d14ff280b09de312d18d5e2511" datatype="html">
         <source>Ancestor</source>
-        <target>Ancestor</target>
+        <target>Giao dịch tổ tiên</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/cpfp-info.component.html</context>
           <context context-type="linenumber">44</context>
@@ -7755,7 +7755,7 @@
       </trans-unit>
       <trans-unit id="a2819cc4834566fbbd9f83482df3410842a94ccb" datatype="html">
         <source>Transaction hex or base64 encoded PSBT</source>
-        <target>PSBT được mã hóa hex hoặc base64</target>
+        <target>Giao dịch dạng hex hoặc PSBT mã hóa base64</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">9</context>
@@ -8047,7 +8047,7 @@
       </trans-unit>
       <trans-unit id="5d3ef9e29e08e99ad4983c437d98a2104a7f84ec" datatype="html">
         <source>Warning! This transaction involves deceptively similar addresses. It may be an address poisoning attack.</source>
-        <target>Cảnh báo! Giao dịch này liên quan đến các địa chỉ có vẻ giống nhau. Đây có thể là một cuộc tấn công đánh cắp địa chỉ.</target>
+        <target>Cảnh báo! Giao dịch này liên quan đến các địa chỉ giống nhau một cách đánh lừa. Đây có thể là một cuộc tấn công đầu độc địa chỉ.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">21</context>
@@ -8413,7 +8413,7 @@
       </trans-unit>
       <trans-unit id="95bf37451da5bff541c9380f803a695f2aac28a2" datatype="html">
         <source>blocks earlier</source>
-        <target>vài khối trước</target>
+        <target>khối trước</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-bowtie-graph-tooltip/tx-bowtie-graph-tooltip.component.html</context>
           <context context-type="linenumber">137</context>
@@ -8431,7 +8431,7 @@
       </trans-unit>
       <trans-unit id="21ea333dd6a24e18e5af771634afbaeeeb369a8d" datatype="html">
         <source>blocks later</source>
-        <target>vài khối sau</target>
+        <target>khối sau</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-bowtie-graph-tooltip/tx-bowtie-graph-tooltip.component.html</context>
           <context context-type="linenumber">150</context>
@@ -9245,7 +9245,7 @@
       </trans-unit>
       <trans-unit id="cdd2ea2e12437df848ec474ac15af48859bd09a0" datatype="html">
         <source>Opening transaction</source>
-        <target>Đang mở giao dịch</target>
+        <target>Giao dịch mở kênh</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel.component.html</context>
           <context context-type="linenumber">91</context>
@@ -9258,7 +9258,7 @@
       </trans-unit>
       <trans-unit id="50411064ac48e15659d1985b414ae91af0c8cd36" datatype="html">
         <source>Closing transaction</source>
-        <target>Đang đóng giao dịch</target>
+        <target>Giao dịch đóng kênh</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel.component.html</context>
           <context context-type="linenumber">100</context>
@@ -9446,7 +9446,7 @@
       </trans-unit>
       <trans-unit id="2e72b276a3c5cc2ec27b4c8189639ba2fe62b6cb" datatype="html">
         <source>Med Capacity</source>
-        <target>Công suất Med</target>
+        <target>Dung lượng trung vị</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">59</context>
@@ -10059,7 +10059,7 @@
       </trans-unit>
       <trans-unit id="b371db1a7ab2167dc8dd91b48ea929d71bb4ef4c" datatype="html">
         <source>Open channels</source>
-        <target>Mở các kênh</target>
+        <target>Các kênh đang mở</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">286</context>
@@ -11479,13 +11479,13 @@
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target state="needs-review-translation">giao dịch này</target></trans-unit>
       <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target state="needs-review-translation">Số dư của bạn quá thấp.</target></trans-unit>
       <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html"><source>occurrence</source><target state="needs-review-translation">sự xuất hiện</target></trans-unit>
-      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target state="needs-review-translation">More</target>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target state="needs-review-translation">Thêm</target>
         </trans-unit>
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target state="needs-review-translation">Trong cụm mempool chứa 1 đoạn khác.</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">Thâm hụt dự trữ</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target state="needs-review-translation">chọn danh mục bộ lọc để làm nổi bật các giao dịch đang chờ xử lý phù hợp</target></trans-unit>
       <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">giao dịch con</target></trans-unit>
-      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">More</target>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">Thêm</target>
         </trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Trong cụm mempool có thêm <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> nhóm giao dịch khác.</target></trans-unit>
       <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target state="needs-review-translation">vSize</target></trans-unit>
