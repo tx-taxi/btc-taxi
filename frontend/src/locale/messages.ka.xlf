@@ -4647,7 +4647,7 @@
       </trans-unit>
       <trans-unit id="7816493330657272952" datatype="html">
         <source>Coinjoin</source>
-        <target state="needs-review-translation">შეერთება</target><context-group purpose="location">
+        <target state="needs-review-translation">CoinJoin</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.ts</context>
           <context context-type="linenumber">76</context>
         </context-group>
@@ -7326,7 +7326,7 @@
       </trans-unit>
       <trans-unit id="885666551418fd59011ceb09d5c481095940193b" datatype="html">
         <source>Features</source>
-        <target>მეთოდი</target>
+        <target>მახასიათებლები</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">106</context>
@@ -10856,7 +10856,7 @@
       </trans-unit>
       <trans-unit id="2259944601214794924" datatype="html">
         <source>Sighash Flags</source>
-        <target state="needs-review-translation">სიღაშის დროშები</target><context-group purpose="location">
+        <target state="needs-review-translation">Sighash ნიშნულები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">125</context>
         </context-group>
