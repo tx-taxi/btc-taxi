@@ -22,6 +22,7 @@ export class TermsOfServiceComponent {
   get zh(): boolean { return this.locale.startsWith('zh'); }
   get tr(): boolean { return this.locale.startsWith('tr'); }
   get nl(): boolean { return this.locale.startsWith('nl'); }
+  get cs(): boolean { return this.locale.startsWith('cs'); }
   get sv(): boolean { return this.locale.startsWith('sv'); }
   get nb(): boolean { return this.locale.startsWith('nb'); }
   get uk(): boolean { return this.locale.startsWith('uk'); }
