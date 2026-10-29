@@ -400,7 +400,8 @@
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Ochranné známky a uvedení původu</h2><h6>Aktualizováno: 20. září 2026</h6><br><br><div class="text-start"><h4>Identita tx.taxi</h4><p>btc.tx.taxi je nezávisle provozovaný průzkumník Bitcoin z rodiny tx.taxi. Doména, slovní logo, barevná paleta řetězce a identita služby odlišují tento fork od původního projektu.</p><br><h4>Uvedení původního projektu</h4><p>Tento software vychází z Mempool Open Source Project. Zdrojový kód, vizuální systém, názvy projektu, loga a ochranné známky původního projektu patří příslušným vlastníkům.</p><br><h4>Bez spojení</h4><p>btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí sponzorován nebo schválen. Odkazy na mempool.space a mempool/mempool jmenovitě označují software, z něhož tento fork vychází.</p><br><h4>Bitcoin</h4><p>Bitcoin je otevřená síť a protokol. Odkazy na Bitcoin, BTC, satoshi, bloky, transakce, adresy, těžbu a Lightning popisují síťová data zobrazená tímto průzkumníkem.</p><br><h4>Licence</h4><p>Tento fork dodržuje povinnosti licence AGPLv3 původního projektu. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte provozovatele.</p><br></div></div><br><br></div></ng-template>
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
-<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else englishLegal" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
+<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
+<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else englishLegal" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -688,6 +689,50 @@
 
       <h4>Licenca</h4>
       <p>Ova izvedenica poštuje obveze iz licence AGPLv3 izvornog projekta. Za informacije o pripadajućem izvornom kodu i licenci obratite se operateru.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #lithuanianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Prekių ženklai ir kilmės nurodymas</h2>
+    <h6>Atnaujinta: 2026 m. rugsėjo 20 d.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi tapatybė</h4>
+      <p>btc.tx.taxi yra nepriklausomai valdoma tx.taxi šeimos Bitcoin naršyklė. Jos domenas, žodinis logotipas, tinklo spalvų paletė ir paslaugos tapatybė skiria šią atšaką nuo pirminio projekto.</p>
+
+      <br>
+
+      <h4>Pirminio projekto nurodymas</h4>
+      <p>Ši programinė įranga sukurta remiantis atvirojo kodo projektu „Mempool“. Pirminio projekto kodas, vizualinė sistema, projektų pavadinimai, logotipai ir prekių ženklai priklauso atitinkamiems jų savininkams.</p>
+
+      <br>
+
+      <h4>Nėra ryšio</h4>
+      <p>btc.tx.taxi nėra susijęs su „Mempool Holdings S.A. de C.V.“, nėra jos remiamas ar patvirtintas. mempool.space ir mempool/mempool minimi tik nurodant programinę įrangą, kurios pagrindu sukurta ši atšaka.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin yra atviras tinklas ir protokolas. Bitcoin, BTC, satoshi, blokų, sandorių, adresų, kasimo ir Lightning paminėjimai apibūdina šioje naršyklėje pateikiamus tinklo duomenis.</p>
+
+      <br>
+
+      <h4>Licencija</h4>
+      <p>Ši projekto atšaka laikosi pirminio projekto AGPLv3 licencijos įsipareigojimų. Dėl taikomos pirminio kodo ir licencijos informacijos kreipkitės į operatorių.</p>
 
       <br>
     </div>

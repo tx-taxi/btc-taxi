@@ -443,7 +443,8 @@
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Podmínky používání</h2><h6>Aktualizováno: 3. října 2026</h6><br><br><div class="text-start"><h4>Informační průzkumník</h4><p>lightning.btc.tx.taxi poskytuje přehled veřejných uzlů a kanálů Lightning, pravidel směrování, kapacity sítě a historických statistik. Jde o informační službu, nikoli peněženku, burzu, správce prostředků, platebního zpracovatele ani službu určující prioritu transakcí.</p><br><h4>Bez kontroly nad platbami či kanály</h4><p>Provozovatel nemůže odeslat, vrátit, obnovit ani přesměrovat platbu Lightning nebo ovládat kanál. Při potížích s peněženkou nebo platbou kontaktujte službu, která platbu vytvořila nebo přijala.</p><br><h4>Data a dostupnost</h4><p>Data průzkumníka mohou být zpožděná, neúplná, nedostupná nebo se lišit od pohledu jiného uzlu. Oznámené směrovací poplatky nezaručují dostupnost trasy ani úspěch platby. Služba se poskytuje tak, jak je, bez příslibu nepřetržité dostupnosti nebo vhodnosti pro určitý účel.</p><br><h4>Přijatelné používání</h4><p>Nezneužívejte web ani API, nenarušujte provoz služby, neobcházejte přiměřené limity požadavků a nepoužívejte službu nezákonně. Přístup může být omezen, pokud je to nutné k ochraně dostupnosti.</p><br><h4>Externí služby</h4><p>Web může odkazovat na kontaktní kanály tx.taxi, zdroje o Bitcoinu, informace o licenci a infrastrukturní závislosti. Externí weby mají vlastní podmínky a zásady.</p><br><h4>Otevřený zdroj</h4><p>lightning.btc.tx.taxi vychází z Mempool Open Source Project a je distribuován v souladu s povinnostmi AGPLv3. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p><br></div></div><br><br></div></ng-template>
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
-<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else englishLegal" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
+<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else lithuanianOrEnglish" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
+<ng-template #lithuanianOrEnglish><ng-container *ngIf="lt; else englishLegal" [ngTemplateOutlet]="lithuanianLegal"></ng-container></ng-template>
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -764,6 +765,55 @@
 
       <h4>Otvoreni kôd</h4>
       <p>lightning.btc.tx.taxi izveden je iz projekta otvorenog koda Mempool i distribuira se uz obveze licence AGPLv3. Obratite se <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> za informacije o pripadajućem izvornom kodu i licenci.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #lithuanianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Paslaugos teikimo sąlygos</h2>
+    <h6>Atnaujinta: 2026 m. spalio 3 d.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Informacinė naršyklė</h4>
+      <p>lightning.btc.tx.taxi pateikia viešų Lightning mazgų, kanalų, maršrutų parinkimo taisyklių, tinklo pajėgumo ir istorinės statistikos duomenis. Tai informacinė paslauga, o ne piniginė, keitykla, turto saugotojas, mokėjimų tvarkytojas ar sandorių prioriteto nustatymo paslauga.</p>
+
+      <br>
+
+      <h4>Mokėjimai ir kanalai nevaldomi</h4>
+      <p>Operatorius negali išsiųsti, atšaukti, susigrąžinti ar nukreipti Lightning mokėjimo arba valdyti kanalo. Kilus problemų dėl piniginės ar mokėjimo, kreipkitės į mokėjimą sukūrusią arba gavusią paslaugą.</p>
+
+      <br>
+
+      <h4>Duomenys ir prieinamumas</h4>
+      <p>Naršyklės duomenys gali vėluoti, būti neišsamūs, neprieinami arba skirtis nuo kito mazgo duomenų. Paskelbti maršruto mokesčiai negarantuoja, kad maršrutas bus prieinamas ar mokėjimas pavyks. Paslauga teikiama tokia, kokia yra, nežadant nepertraukiamo prieinamumo ar tinkamumo konkrečiam tikslui.</p>
+
+      <br>
+
+      <h4>Tinkamas naudojimas</h4>
+      <p>Nepiktnaudžiaukite svetaine ar API, netrikdykite paslaugos veikimo, neapeikite pagrįstų užklausų dažnio apribojimų ir nenaudokite paslaugos neteisėtai. Siekiant išsaugoti paslaugos prieinamumą, prieiga prireikus gali būti apribota.</p>
+
+      <br>
+
+      <h4>Išorinės paslaugos</h4>
+      <p>Šioje svetainėje gali būti nuorodų į tx.taxi kontaktų kanalus, Bitcoin informacijos šaltinius, licencijos informaciją ir infrastruktūros priklausomybes. Išorinės svetainės taiko savo sąlygas ir politikas.</p>
+
+      <br>
+
+      <h4>Atvirasis kodas</h4>
+      <p>lightning.btc.tx.taxi sukurtas remiantis „Mempool“ atvirojo kodo projektu ir platinamas laikantis AGPLv3 įsipareigojimų. Dėl taikomos pirminio kodo ir licencijos informacijos kreipkitės per <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p>
 
       <br>
     </div>
