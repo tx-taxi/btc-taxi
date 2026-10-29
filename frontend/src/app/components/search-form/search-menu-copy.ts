@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  ko: {
+    choose: '검색할 체인 선택', selectedAria: '선택한 탐색기', selected: '선택됨',
+    unavailable: '탐색기 목록을 사용할 수 없습니다', loading: '탐색기 불러오는 중', automatic: '자동 라우팅',
+    viewHub: '허브 보기', hint: '또는 바로 이동', searchExample: '[검색어]',
+    native: '기본 탐색기', external: '타사 탐색기', opened: '열려 있음',
+    open: '열기', switch: '전환', found: '찾음', possible: '가능성 있음', search: '검색',
+    additional: (name: string) => `${name}의 추가 탐색기`,
+    openExplorer: (name: string) => `${name} 열기`,
+    openNewTab: (name: string) => `${name} 새 탭에서 열기`,
+    switchTo: (name: string) => `${name}으로 전환`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name} 추가 옵션 ${count}개 ${expanded ? '숨기기' : '보기'}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
