@@ -81,14 +81,21 @@ function spanishRouteMetadata(pathname, data) {
   }
   return {...output, ...SPANISH_METADATA['/'], heading:'Red Lightning'};
 }
+function reviewLocaleMetadata(pathname, data, lang) {
+  const fr = lang === 'fr';
+  const title = fr ? 'Explorateur Lightning | lightning.btc.tx.taxi' : 'Lightning-Explorer | lightning.btc.tx.taxi';
+  const description = fr ? 'Explorez les nœuds, canaux, politiques de routage et statistiques du réseau Lightning.' : 'Erkunde Lightning-Knoten, Kanäle, Routing-Richtlinien und Netzwerkstatistiken.';
+  return { ...data, path:'/' + lang + (pathname === '/' ? '/' : pathname), noindex:true, language:lang, title, description,
+    heading: fr ? 'Réseau Lightning' : 'Lightning-Netzwerk', subtitle: fr ? 'Votre taxi vers chaque transaction.' : 'Dein Taxi zu jeder Transaktion.', rows:[] };
+}
 function injectMetadata(html, data) {
   const canonical = ORIGIN + data.path;
   const title = escape(data.title);
   const description = escape(data.description);
   const card = socialImage();
   const image = card.url;
-  const imageAlt = data.language === 'es' ? 'Explorador de la red Lightning en tx.taxi.' : card.alt;
-  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.noindex || data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="${data.language === 'es' ? 'es_ES' : 'en_US'}"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(imageAlt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(imageAlt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
+  const imageAlt = data.language === 'es' ? 'Explorador de la red Lightning en tx.taxi.' : data.language === 'fr' ? 'Explorateur du réseau Lightning sur tx.taxi.' : data.language === 'de' ? 'Lightning-Netzwerk-Explorer auf tx.taxi.' : card.alt;
+  const tags = `<title>${title}</title><link id="canonical" rel="canonical" href="${escape(canonical)}"><meta name="description" content="${description}"><meta name="robots" content="${data.noindex || data.status === 404 ? 'noindex, follow' : 'index, follow, max-image-preview:large'}"><meta property="og:site_name" content="lightning.btc.tx.taxi"><meta property="og:locale" content="${data.language === 'es' ? 'es_ES' : data.language === 'fr' ? 'fr_FR' : data.language === 'de' ? 'de_DE' : 'en_US'}"><meta property="og:type" content="website"><meta property="og:title" content="${title}"><meta property="og:description" content="${description}"><meta property="og:url" content="${escape(canonical)}"><meta property="og:image" content="${escape(image)}"><meta property="og:image:type" content="${escape(card.type)}"><meta property="og:image:width" content="${card.width}"><meta property="og:image:height" content="${card.height}"><meta property="og:image:alt" content="${escape(imageAlt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}"><meta name="twitter:image" content="${escape(image)}"><meta name="twitter:image:alt" content="${escape(imageAlt)}"><meta name="twitter:domain" content="lightning.btc.tx.taxi">`;
   return html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, '')
     .replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>/gi, '')
     .replace(/<meta\b[^>]*(?:name|property)=["'](?:description|robots|og:[^"']+|twitter:[^"']+)["'][^>]*>/gi, '')
@@ -96,7 +103,7 @@ function injectMetadata(html, data) {
     .replace(/(<app-root\b[^>]*>)[\s\S]*?(<\/app-root>)/i, (_, open, close) => {
       const rows = data.unavailable ? [] : data.rows.filter(([, value]) => value !== null && value !== undefined);
       const table = rows.length ? `<table class="table table-striped"><tbody>${rows.map(([label, value]) => `<tr><th scope="row">${escape(label)}</th><td style="overflow-wrap:anywhere">${escape(value)}</td></tr>`).join('')}</tbody></table>` : '';
-      const description = data.unavailable ? (data.language === 'es' ? (data.status === 404 ? 'No se encontró el elemento de Lightning.' : 'Los datos de Lightning no están disponibles temporalmente. Inténtalo de nuevo.') : (data.status === 404 ? 'Lightning entity not found.' : 'Lightning data temporarily unavailable. Please retry.')) : data.description;
+      const description = data.unavailable ? (data.language === 'es' ? (data.status === 404 ? 'No se encontró el elemento de Lightning.' : 'Los datos de Lightning no están disponibles temporalmente. Inténtalo de nuevo.') : data.language === 'fr' ? (data.status === 404 ? 'Élément Lightning introuvable.' : 'Les données Lightning sont temporairement indisponibles. Réessayez.') : data.language === 'de' ? (data.status === 404 ? 'Lightning-Element nicht gefunden.' : 'Lightning-Daten sind vorübergehend nicht verfügbar. Bitte erneut versuchen.') : (data.status === 404 ? 'Lightning entity not found.' : 'Lightning data temporarily unavailable. Please retry.')) : data.description;
       return `${open}<main class="container-xl"><h1>${escape(data.heading)}</h1><p style="overflow-wrap:anywhere">${escape(data.subtitle)}</p><p>${escape(description)}</p>${table}</main>${close}`;
     });
 }
@@ -136,4 +143,4 @@ function createCards(proxy, options = {}) {
     return work;
   };
 }
-module.exports = { routeMetadata, spanishRouteMetadata, injectMetadata, cardSvg, createCards, ORIGIN, escape };
+module.exports = { routeMetadata, spanishRouteMetadata, reviewLocaleMetadata, injectMetadata, cardSvg, createCards, ORIGIN, escape };

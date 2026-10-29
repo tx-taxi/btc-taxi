@@ -8,6 +8,7 @@ const parse5 = require('parse5');
 const sharp = require('sharp');
 const { createStaticPages } = require('./static-pages.cjs');
 const { createSpanishPages } = require('./spanish-pages.cjs');
+const { createLocalizedPages } = require('./localized-pages.cjs');
 
 const origin = 'https://btc.tx.taxi';
 const apiOrigin = (process.env.BTC_OG_API_ORIGIN || 'https://mempool.space').replace(/\/$/, '');
@@ -16,6 +17,7 @@ const logoPath = path.join(path.dirname(indexPath), '..', 'resources/branding/bt
 const html = fs.readFileSync(indexPath, 'utf8');
 const staticPages = createStaticPages(indexPath, html);
 const spanishPages = createSpanishPages(indexPath, staticPages.pages, staticPages.manifest.aliases);
+const localizedPages = createLocalizedPages(indexPath, staticPages.pages, staticPages.manifest.aliases);
 const logo = fs.existsSync(logoPath) ? `data:image/svg+xml;base64,${fs.readFileSync(logoPath).toString('base64')}` : null;
 const cache = new Map();
 const pending = new Map();
@@ -275,6 +277,23 @@ async function serve(req, res) {
       return spanishPages.write(req, res, data.status || 200, spanish);
     }
     return spanishPages.write(req, res, spanishPages.supports(spanish) ? 200 : 404, spanish);
+  }
+  const localized = localizedPages.route(pathname);
+  if (localized) {
+    const {lang, pathname: translatedPath} = localized;
+    if (translatedPath !== '/' && translatedPath.endsWith('/')) {
+      const clean = translatedPath.slice(0, -1);
+      if (localizedPages.supports(clean) || route(clean)) {
+        res.writeHead(308, {Location: '/' + lang + clean + new URL(req.url, 'http://localhost').search});
+        return res.end();
+      }
+    }
+    const match = route(translatedPath);
+    if (match) {
+      const data = await load(match.kind, match.id);
+      return localizedPages.write(req, res, data.status || 200, lang, translatedPath);
+    }
+    return localizedPages.write(req, res, localizedPages.supports(translatedPath) ? 200 : 404, lang, translatedPath);
   }
   if (staticPages.serve(req, res, pathname)) return;
   const image = pathname.startsWith('/og/');

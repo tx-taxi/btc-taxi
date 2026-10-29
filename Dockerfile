@@ -20,7 +20,7 @@ RUN apt-get update \
 WORKDIR /app
 COPY og/package.json og/package-lock.json ./og/
 RUN cd og && npm ci --omit=dev
-COPY og/server.cjs og/static-pages.cjs og/spanish-pages.cjs ./og/
+COPY og/server.cjs og/static-pages.cjs og/spanish-pages.cjs og/localized-pages.cjs ./og/
 
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=frontend-builder /app/frontend/dist/mempool/browser /usr/share/nginx/html

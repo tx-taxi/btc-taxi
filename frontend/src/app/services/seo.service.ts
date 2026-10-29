@@ -85,13 +85,17 @@ export class SeoService {
   }
 
   updateCanonical(path) {
+    // Angular can report an empty URL when returning to a localized root.
     path = path || '/';
     const spanish = this.locale.startsWith('es');
-    const localizedPath = spanish ? (path === '/' ? '/es/' : '/es' + path) : path;
+    const reviewLocale = this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : null;
+    const prefix = spanish ? 'es' : reviewLocale;
+    const localizedPath = prefix ? (path === '/' ? '/' + prefix + '/' : '/' + prefix + path) : path;
     const canonicalUrl = 'https://' + this.baseDomain + localizedPath;
     if (spanish) this.metaService.updateTag({ name: 'robots', content: path === '/' ? 'index, follow, max-image-preview:large' : 'noindex, follow' });
+    if (reviewLocale) this.metaService.updateTag({ name: 'robots', content: 'noindex, follow' });
     document.querySelectorAll('link[rel=alternate][hreflang]').forEach(node => node.remove());
-    if (path === '/' && this.metaService.getTag('name=tx-taxi-es-available')?.content === 'true') {
+    if (!reviewLocale && path === '/' && this.metaService.getTag('name=tx-taxi-es-available')?.content === 'true') {
       [['en', '/'], ['es', '/es/'], ['x-default', '/']].forEach(([language, url]) => {
         const link = document.createElement('link');
         link.rel = 'alternate'; link.hreflang = language; link.href = 'https://' + this.baseDomain + url;
@@ -120,7 +124,7 @@ export class SeoService {
   }
 
   private currentPage(path = this.router.url.split('?')[0].split('#')[0]) {
-    if (this.locale.startsWith('es')) return undefined;
+    if (/^(es|fr|de)/.test(this.locale)) return undefined;
     const page = nativeSeoPages[path];
     if (page) return page;
     const match = path.match(/^\/blocks\/([1-9]\d*)$/);
@@ -132,6 +136,8 @@ export class SeoService {
 
   getTitle(): string {
     if (this.locale.startsWith('es')) return 'Explorador de Bitcoin | btc.tx.taxi';
+    if (this.locale.startsWith('fr')) return 'Explorateur Bitcoin | btc.tx.taxi';
+    if (this.locale.startsWith('de')) return 'Bitcoin-Explorer | btc.tx.taxi';
     if (this.network === 'testnet')
       {return this.baseTitle + ' - Bitcoin Testnet3';}
     if (this.network === 'testnet4')
@@ -146,7 +152,7 @@ export class SeoService {
   }
 
   getDescription(): string {
-    return this.locale.startsWith('es') ? 'Explora bloques, transacciones, comisiones y la actividad del mempool de Bitcoin con btc.tx.taxi.' : this.baseDescription;
+    return this.locale.startsWith('es') ? 'Explora bloques, transacciones, comisiones y la actividad del mempool de Bitcoin con btc.tx.taxi.' : this.locale.startsWith('fr') ? 'Explorez les blocs, transactions, frais et activités du mempool Bitcoin avec btc.tx.taxi.' : this.locale.startsWith('de') ? 'Erkunde Bitcoin-Blöcke, Transaktionen, Gebühren und die Mempool-Aktivität mit btc.tx.taxi.' : this.baseDescription;
   }
 
   ucfirst(str: string) {

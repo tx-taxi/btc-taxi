@@ -8,7 +8,7 @@ const path = require('node:path');
 const zlib = require('node:zlib');
 const { promisify } = require('node:util');
 const { LightningProxy, GatewayError, channelId, channelNumeric, PUBKEY, validPublicKey } = require('./proxy.cjs');
-const { routeMetadata, spanishRouteMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
+const { routeMetadata, spanishRouteMetadata, reviewLocaleMetadata, injectMetadata, createCards, ORIGIN } = require('./social.cjs');
 const gzip = promisify(zlib.gzip);
 const TYPES = { '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff': 'font/woff', '.woff2': 'font/woff2', '.ttf': 'font/ttf', '.webmanifest': 'application/manifest+json', '.txt': 'text/plain; charset=utf-8', '.wasm': 'application/wasm' };
 const PAGE_ROUTES = /^\/(?:node\/(?:02|03)[a-f0-9]{64}|channel\/[\dx]+|nodes\/(?:rankings(?:\/(?:liquidity|connectivity))?|oldest|country\/[A-Z]{2}|isp\/[\d,]+)|group\/the-mempool-open-source-project|penalties|graphs\/(?:lightning\/)?(?:capacity|nodes-networks|nodes-per-country|nodes-per-isp|nodes-channels-map|nodes-map)|about|docs(?:\/(?:faq|api\/rest))?|privacy-policy|terms-of-service|trademark-policy|search)?\/?$/i;
@@ -98,6 +98,7 @@ function createApp(options = {}) {
   function json(req, res, status, value, headers = {}) { return send(req, res, status, Buffer.from(JSON.stringify(value)), { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', ...headers }); }
   const server = http.createServer({ maxHeaderSize: 16 * 1024 }, async (req, res) => {
     requests++;
+    let reviewLocale = null;
     try {
       if (!['GET', 'HEAD'].includes(req.method)) { await json(req, res, 405, { error: 'Method not allowed' }, { allow: 'GET, HEAD' }); return; }
       if (!req.url || req.url.length > 8192 || !req.url.startsWith('/') || req.url.startsWith('//') || /[\\\x00-\x1f]/.test(req.url)) throw new GatewayError(400, 'Invalid request URL');
@@ -107,7 +108,13 @@ function createApp(options = {}) {
       const requestedPath = decodeURIComponent(url.pathname);
       if (requestedPath === '/es') { await send(req, res, 308, '', { location: '/es/' + url.search, 'cache-control': 'no-store' }); return; }
       const spanish = requestedPath.startsWith('/es/');
-      const pathname = spanish ? requestedPath.slice(3) || '/' : requestedPath;
+      const localeMatch = requestedPath.match(/^\/(fr|de)(?:\/|$)/);
+      // Locale routes only become available when their actual compiled shell exists.
+      if (localeMatch && fs.existsSync(path.join(staticDir, localeMatch[1], 'index.html'))) reviewLocale = localeMatch[1];
+      if (reviewLocale && (requestedPath === '/' + reviewLocale || requestedPath === '/' + reviewLocale + '/index.html')) { await send(req, res, 308, '', {location: '/' + reviewLocale + '/' + url.search, 'cache-control':'no-store', 'x-robots-tag':'noindex, follow'}); return; }
+      const localePrefix = spanish ? '/es' : reviewLocale ? '/' + reviewLocale : '';
+      const pathname = localePrefix ? requestedPath.slice(3) || '/' : requestedPath;
+      if (reviewLocale && (pathname === '/healthz' || pathname.startsWith('/api/') || pathname === '/robots.txt' || pathname === '/sitemap.xml' || pathname.startsWith('/og/'))) throw new GatewayError(404, 'Not found');
       if (pathname === '/healthz') { await json(req, res, 200, { ok: true, service: 'lightning-taxi', uptimeSeconds: Math.floor((Date.now() - startedAt) / 1000) }); return; }
       if (pathname === '/api/provider-health') {
         const health = await proxy.health();
@@ -133,11 +140,11 @@ function createApp(options = {}) {
       }
       if (pathname === '/lightning' || pathname.startsWith('/lightning/')) {
         const target = pathname.slice(10) || '/';
-        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: (spanish ? '/es' : '') + target + url.search, 'cache-control': 'no-store' }); return; }
+        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: localePrefix + target + url.search, 'cache-control': 'no-store' }); return; }
       }
       if (pathname.startsWith('/graphs/lightning/')) {
         const target = pathname.replace('/graphs/lightning/', '/graphs/');
-        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: (spanish ? '/es' : '') + target + url.search, 'cache-control': 'no-store' }); return; }
+        if (PAGE_ROUTES.test(target)) { await send(req, res, 308, '', { location: localePrefix + target + url.search, 'cache-control': 'no-store' }); return; }
       }
       const aliases = {'/graphs':'/graphs/capacity', '/docs':'/docs/faq', '/docs/':'/docs/faq', '/docs/api':'/docs/api/rest', '/docs/api/':'/docs/api/rest', '/docs/api/websocket':'/docs/api/rest'};
       let canonicalPath = pathname.replace(/\/$/, '') || '/';
@@ -151,7 +158,7 @@ function createApp(options = {}) {
       }
       if (/^\/nodes\/country\/[a-z]{2}$/i.test(canonicalPath)) canonicalPath = canonicalPath.slice(0,-2) + canonicalPath.slice(-2).toUpperCase();
       if (aliases[pathname] || (PAGE_ROUTES.test(pathname) && canonicalPath !== pathname)) {
-        await send(req, res, 308, '', {location: (spanish ? '/es' : '') + (aliases[pathname] || canonicalPath) + url.search, 'cache-control':'no-store'}); return;
+        await send(req, res, 308, '', {location: localePrefix + (aliases[pathname] || canonicalPath) + url.search, 'cache-control':'no-store'}); return;
       }
       if (PAGE_ROUTES.test(pathname)) {
         let pageStatus = 200;
@@ -169,17 +176,24 @@ function createApp(options = {}) {
         }
         let html;
         try {
-          try { html = await fsp.readFile(path.join(staticDir, spanish ? 'es/index.html' : 'index.html'), 'utf8'); }
-          catch { if (spanish) throw new Error('Spanish build unavailable'); html = await fsp.readFile(path.join(staticDir, 'index.lightning.html'), 'utf8'); }
+          try { html = await fsp.readFile(path.join(staticDir, spanish ? 'es/index.html' : reviewLocale ? reviewLocale + '/index.html' : 'index.html'), 'utf8'); }
+          catch { if (spanish || reviewLocale) throw new Error('Localized build unavailable'); html = await fsp.readFile(path.join(staticDir, 'index.lightning.html'), 'utf8'); }
         } catch { throw new GatewayError(503, 'The local Lightning build is not ready'); }
+        if (reviewLocale) {
+          html = html.replace(/<html\b([^>]*)>/i, (_, attrs) => '<html' + (/\blang\s*=/.test(attrs) ? attrs.replace(/\blang\s*=\s*(["']).*?\1/i, 'lang="' + reviewLocale + '"') : attrs + ' lang="' + reviewLocale + '"') + '>');
+          if (/<base\b/i.test(html)) html = html.replace(/<base\b[^>]*>/i, '<base href="/' + reviewLocale + '/">');
+          else html = html.replace(/<head\b[^>]*>/i, match => match + '<base href="/' + reviewLocale + '/">');
+          html = html.replace(/<link\b(?=[^>]*\bhreflang\s*=)[^>]*>/gi, '');
+        }
         const metadata = routeMetadata(canonicalPath, proxy);
         if (spanish) Object.assign(metadata, spanishRouteMetadata(canonicalPath, metadata));
+        if (reviewLocale) Object.assign(metadata, reviewLocaleMetadata(canonicalPath, metadata, reviewLocale));
         if (pageStatus !== 200) metadata.unavailable = true;
         metadata.status = pageStatus;
-        await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', ...(pageStatus === 503 ? {'retry-after': '60'} : {}) }); return;
+        await send(req, res, pageStatus, injectMetadata(html, metadata), { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', ...(reviewLocale ? {'content-language': reviewLocale, 'x-robots-tag': 'noindex, follow'} : {}), ...(pageStatus === 503 ? {'retry-after': '60'} : {}) }); return;
       }
       if (!TYPES[path.extname(pathname)] || pathname.startsWith('/.') || /(?:^|\/)\.[^/]+/.test(pathname)) throw new GatewayError(404, 'Not found');
-      const file = path.resolve(staticDir, '.' + (spanish ? requestedPath : pathname));
+      const file = path.resolve(staticDir, '.' + (spanish || reviewLocale ? requestedPath : pathname));
       if (!file.startsWith(staticDir + path.sep)) throw new GatewayError(400, 'Invalid asset path');
       let stat;
       try { stat = await fsp.stat(file); } catch { throw new GatewayError(404, 'Not found'); }
@@ -188,7 +202,7 @@ function createApp(options = {}) {
     } catch (error) {
       if (error instanceof URIError) error = new GatewayError(400, 'Invalid request encoding');
       const status = error.status || 503;
-      await json(req, res, status, { error: error instanceof GatewayError ? error.message : 'Service temporarily unavailable' }, { 'x-data-state': status === 404 ? 'not-found' : 'unavailable', ...(error.retryAfter ? { 'retry-after': String(error.retryAfter) } : {}) }).catch(() => res.destroy());
+      await json(req, res, status, { error: error instanceof GatewayError ? error.message : 'Service temporarily unavailable' }, { 'x-data-state': status === 404 ? 'not-found' : 'unavailable', ...(reviewLocale ? {'content-language': reviewLocale, 'x-robots-tag': 'noindex, follow'} : {}), ...(error.retryAfter ? { 'retry-after': String(error.retryAfter) } : {}) }).catch(() => res.destroy());
     }
   });
   server.requestTimeout = 20_000;

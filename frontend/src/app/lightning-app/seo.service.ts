@@ -43,7 +43,8 @@ export class SeoService {
       this.clearSoft404();
       const path = this.router.url.split('?')[0].split('#')[0];
       this.updateCanonical(path);
-      const metadata = document.documentElement.lang.toLowerCase().startsWith('es') ? window['__env']?.LIGHTNING_PAGE_METADATA_ES?.[path] : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
+      const lang = document.documentElement.lang.toLowerCase();
+      const metadata = /^(fr|de)/.test(lang) ? undefined : lang.startsWith('es') ? window['__env']?.LIGHTNING_PAGE_METADATA_ES?.[path] : window['__env']?.LIGHTNING_PAGE_METADATA?.[path];
       if (metadata?.title && metadata?.description) {
         this.titleService.setTitle(metadata.title);
         this.metaService.updateTag({ property: 'og:title', content: metadata.title });
@@ -91,16 +92,23 @@ export class SeoService {
   }
 
   updateCanonical(path) {
-    const prefix = document.documentElement.lang.toLowerCase().startsWith('es') ? '/es' : '';
-    const canonicalUrl = 'https://' + this.baseDomain + prefix + path;
+    const lang = document.documentElement.lang.toLowerCase();
+    const reviewLocale = /^(fr|de)/.test(lang) ? lang.slice(0, 2) : null;
+    const prefix = lang.startsWith('es') ? '/es' : reviewLocale ? '/' + reviewLocale : '';
+    const canonicalUrl = 'https://' + this.baseDomain + prefix + (path || '/');
+    if (reviewLocale) {
+      this.metaService.updateTag({name:'robots', content:'noindex, follow'});
+      document.querySelectorAll('link[rel=alternate][hreflang]').forEach(node => node.remove());
+    }
     this.canonicalLink.setAttribute('href', canonicalUrl);
     this.metaService.updateTag({ property: 'og:url', content: canonicalUrl });
   }
 
-  getTitle(): string { return 'lightning.btc.tx.taxi - Lightning Explorer'; }
+  getTitle(): string { const lang = document.documentElement.lang.toLowerCase(); return lang.startsWith('fr') ? 'Explorateur Lightning | lightning.btc.tx.taxi' : lang.startsWith('de') ? 'Lightning-Explorer | lightning.btc.tx.taxi' : 'lightning.btc.tx.taxi - Lightning Explorer'; }
 
   getDescription(): string {
-    return this.baseDescription;
+    const lang = document.documentElement.lang.toLowerCase();
+    return lang.startsWith('fr') ? 'Explorez les nœuds, canaux, politiques de routage et statistiques du réseau Lightning.' : lang.startsWith('de') ? 'Erkunde Lightning-Knoten, Kanäle, Routing-Richtlinien und Netzwerkstatistiken.' : this.baseDescription;
   }
 
   ucfirst(str: string) {
