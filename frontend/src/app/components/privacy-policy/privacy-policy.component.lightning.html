@@ -51,7 +51,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else chineseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -232,6 +232,55 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #chineseOrEnglish><ng-container *ngIf="zh; else englishLegal" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>隐私政策</h2>
+    <h6>更新日期：2026年10月3日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>公开网络数据</h4>
+      <p>lightning.btc.tx.taxi显示公开的Lightning gossip和网络统计。私有通道、单笔支付和通道余额不会公开显示。如需独立验证，请将公开网络图与自己的Lightning节点比较。</p>
+
+      <br>
+
+      <h4>请求数据</h4>
+      <p>通常的网站和API请求可能向运营者透露标准网络元数据，包括您的IP地址、用户代理、请求的URL和请求时间。服务器日志可能为可靠性、防止滥用和调试而保留。</p>
+
+      <br>
+
+      <h4>本地偏好设置</h4>
+      <p>主题、计价单位、法定货币、语言和时区等显示偏好可能保存在您的浏览器中。lightning.btc.tx.taxi的普通浏览功能无需账户。</p>
+
+      <br>
+
+      <h4>搜索与公开通道</h4>
+      <p>公开Lightning节点的公钥、公布的端点、通道策略和Bitcoin注资交易都是公开的。查询节点或通道可能使该查询与您的网络元数据关联。请勿将公开浏览器视为隐私边界。</p>
+
+      <br>
+
+      <h4>外部链接</h4>
+      <p>本站链接至tx.taxi联系渠道、Bitcoin文档、上游源代码和许可证信息。这些外部服务有各自的隐私政策。</p>
+
+      <br>
+
+      <h4>开源归属</h4>
+      <p>lightning.btc.tx.taxi源自mempool/mempool，并继承其AGPLv3义务。Mempool名称、标志和商标归各自所有者所有；lightning.btc.tx.taxi与Mempool Holdings S.A. de C.V.无关联，也未获得其认可。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

@@ -51,7 +51,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else chineseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -232,6 +232,55 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #chineseOrEnglish><ng-container *ngIf="zh; else englishLegal" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>服务条款</h2>
+    <h6>更新日期：2026年10月3日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>信息浏览器</h4>
+      <p>lightning.btc.tx.taxi显示公开的Lightning节点、通道、路由策略、网络容量和历史统计。这是一项信息服务，并非钱包、交易所、托管机构、支付处理商或交易优先级服务。</p>
+
+      <br>
+
+      <h4>无法控制支付或通道</h4>
+      <p>运营者无法发送、撤销、取回或更改Lightning支付的接收方，也无法控制通道。钱包或支付问题请联系创建或接收该支付的服务。</p>
+
+      <br>
+
+      <h4>数据与可用性</h4>
+      <p>浏览器数据可能延迟、不完整、不可用，或与其他节点看到的数据不同。公布的路由费用不保证路由可用或支付成功。服务按现状提供，不承诺不中断可用或适合特定用途。</p>
+
+      <br>
+
+      <h4>合理使用</h4>
+      <p>请勿滥用网站或API、干扰服务运行、绕过合理的速率限制或非法使用服务。为保护可用性，必要时可能限制访问。</p>
+
+      <br>
+
+      <h4>外部服务</h4>
+      <p>本站可能链接至tx.taxi联系渠道、Bitcoin参考资料、许可证信息及所依赖的基础设施。外部网站有各自的条款和政策。</p>
+
+      <br>
+
+      <h4>开源</h4>
+      <p>lightning.btc.tx.taxi源自Mempool Open Source Project，并按AGPLv3义务发布。有关适用的源代码和许可证信息，请联系<a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

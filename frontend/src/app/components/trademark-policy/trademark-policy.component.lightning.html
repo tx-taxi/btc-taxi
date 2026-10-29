@@ -46,7 +46,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else chineseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -208,6 +208,50 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #chineseOrEnglish><ng-container *ngIf="zh; else englishLegal" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>商标与归属</h2>
+    <h6>更新日期：2026年10月3日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi标识</h4>
+      <p>lightning.btc.tx.taxi是tx.taxi家族中独立运营的Lightning浏览器。其域名、文字标识、链配色和服务标识将此分支与上游项目区分开来。</p>
+
+      <br>
+
+      <h4>上游归属</h4>
+      <p>此软件源自Mempool Open Source Project。上游源代码、视觉系统、项目名称、标志和商标归其各自所有者所有。</p>
+
+      <br>
+
+      <h4>无关联</h4>
+      <p>lightning.btc.tx.taxi与Mempool Holdings S.A. de C.V.无关联，也未获得其赞助或认可。对mempool.space和mempool/mempool的提及仅用于指明此分支所基于的软件。</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin是开放网络和协议。对Bitcoin、BTC、satoshi、Lightning、节点、通道和路由策略的提及用于描述此浏览器显示的网络数据。</p>
+
+      <br>
+
+      <h4>许可证</h4>
+      <p>此分支遵循上游AGPLv3许可证义务。有关适用的源代码和许可证信息，请联系运营者。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

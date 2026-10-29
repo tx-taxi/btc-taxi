@@ -54,7 +54,7 @@
 <ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
 <ng-template #italianOrEnglish><ng-container *ngIf="it; else portugueseOrRussian" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 <ng-template #portugueseOrRussian><ng-container *ngIf="pt; else russianOrEnglish" [ngTemplateOutlet]="portugueseLegal"></ng-container></ng-template>
-<ng-template #russianOrEnglish><ng-container *ngIf="ru; else englishLegal" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
+<ng-template #russianOrEnglish><ng-container *ngIf="ru; else chineseOrEnglish" [ngTemplateOutlet]="russianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -248,6 +248,57 @@
 </div></div><br><br></div>
 </ng-template>
 
+<ng-template #chineseOrEnglish><ng-container *ngIf="zh; else englishLegal" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>隐私政策</h2>
+    <h6>更新日期：2026年9月20日</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>受众测量</h4>
+      <p>tx.taxi使用Cloudflare Web Analytics衡量页面浏览和性能，并通过各浏览器共享的第一方每日Cookie按UTC日对浏览器计数，每日每个浏览器计一次。每日受众收集器仅保存每日标识符、浏览器主机名及是否发生交互，不接收搜索文本、地址、交易ID、URL或IP地址。每日单条记录在31天后过期；汇总计数保留400天。Do Not Track和Global Privacy Control会禁用此第一方测量。<a href="https://tx.taxi/privacy#audience-measurement">详情及退出</a>.</p>
+      <h4>注重隐私时使用自己的节点</h4>
+      <p>btc.tx.taxi通过网站运营者配置的后端显示公开的Bitcoin区块链和内存池数据。如需独立验证及最强的网络隐私，请使用自己的Bitcoin节点和浏览器。</p>
+
+      <br>
+
+      <h4>请求数据</h4>
+      <p>通常的网站和API请求可能向运营者透露标准网络元数据，包括您的IP地址、用户代理、请求的URL和请求时间。服务器日志可能为可靠性、防止滥用和调试而保留。</p>
+
+      <br>
+
+      <h4>本地偏好设置</h4>
+      <p>主题、计价单位、法定货币、语言和时区等显示偏好可能保存在您的浏览器中。btc.tx.taxi的普通浏览功能无需账户。</p>
+
+      <br>
+
+      <h4>公开区块链数据</h4>
+      <p>Bitcoin交易、地址、脚本和区块都是公开的。查询地址或交易可能使该查询与您的网络元数据关联。请勿将公开浏览器视为隐私边界。</p>
+
+      <br>
+
+      <h4>外部链接</h4>
+      <p>本站链接至tx.taxi联系渠道、Bitcoin文档、上游源代码和许可证信息。这些外部服务有各自的隐私政策。</p>
+
+      <br>
+
+      <h4>开源归属</h4>
+      <p>btc.tx.taxi源自mempool/mempool，并继承其AGPLv3义务。Mempool名称、标志和商标归各自所有者所有；btc.tx.taxi与Mempool Holdings S.A. de C.V.无关联，也未获得其认可。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
