@@ -78,7 +78,7 @@ export class SearchFormComponent implements OnInit {
   private hasManualSelection = false;
   private readonly selectionChanges$ = new BehaviorSubject(0);
   private readonly additionalExplorerIds = new Set<string>();
-  readonly routerHubUrl = this.explorerRegistry.hubUrl;
+  get routerHubUrl(): string { return this.localizedExplorerUrl(this.explorerRegistry.hubUrl); }
   private explorers: TxTaxiExplorer[] = [];
   private manualChainId: string | undefined = this.sourceChainId;
   private manualOverrideSearchText: string | undefined;
