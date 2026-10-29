@@ -1,0 +1,35 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { createLocalizedPages } = require('./localized-pages.cjs');
+
+test('Vietnamese Bitcoin server documents require a localized shell and remain noindex', t => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'btc-vi-seo-'));
+  t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
+  const index = path.join(dir, 'en-US', 'index.html');
+  assert.equal(createLocalizedPages(index, [], {}).route('/vi/'), null);
+  fs.mkdirSync(path.join(dir, 'vi'));
+  fs.writeFileSync(path.join(dir, 'vi', 'index.html'), '<html lang="en" dir="ltr"><head><base href="/"><title>English</title></head><body><app-root></app-root></body></html>');
+  const image = {url:'https://tx.taxi/bitcoin.jpg', width:1440, height:1960};
+  const renderer = createLocalizedPages(index, [{route:'/docs/faq'}], {}, image);
+  const route = renderer.route('/vi/docs/faq');
+  assert.deepEqual(route, {lang:'vi', pathname:'/docs/faq'});
+  assert.equal(renderer.supports(route.pathname), true);
+  const response = {writeHead(status, headers) {this.status=status; this.headers=headers;}, end(body) {this.body=body;}};
+  renderer.write({method:'GET'}, response, 200, route.lang, route.pathname);
+  assert.equal(response.headers['Content-Language'], 'vi');
+  assert.equal(response.headers['X-Robots-Tag'], 'noindex, follow');
+  assert.match(response.body, /<html lang="vi" dir="ltr">/);
+  assert.match(response.body, /<base href="\/vi\/">/);
+  assert.match(response.body, /<title>Trình khám phá Bitcoin \| btc\.tx\.taxi<\/title>/);
+  assert.match(response.body, /rel="canonical" href="https:\/\/btc\.tx\.taxi\/vi\/docs\/faq"/);
+  assert.match(response.body, /name="robots" content="noindex, follow"/);
+  assert.match(response.body, /property="og:locale" content="vi_VN"/);
+  assert.match(response.body, /property="og:image" content="https:\/\/tx\.taxi\/bitcoin.jpg"/);
+  assert.match(response.body, /property="og:image:alt" content="Trang giao dịch Bitcoin/);
+  assert.match(response.body, /name="twitter:card" content="summary_large_image"/);
+  assert.doesNotMatch(response.body, /hreflang=/);
+});

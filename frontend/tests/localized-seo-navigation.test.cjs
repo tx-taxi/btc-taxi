@@ -422,3 +422,35 @@ test('Thai Bitcoin and Lightning navigation keeps localized titles and noindex c
   LightningSeo.prototype.updateCanonical.call(lightning, '');
   assert.equal(ln.canonical.href, 'https://lightning.btc.tx.taxi/th/');
 });
+
+test('Vietnamese Bitcoin and Lightning navigation keeps localized titles and noindex canonicals', () => {
+  const btc = fixture('vi'), BitcoinSeo = loadService('services/seo.service.ts', btc.document);
+  const titles = [];
+  const context = {locale:'vi', baseDomain:'btc.tx.taxi', canonicalLink:btc.canonical, metaService:btc.metaService,
+    router:{url:'/docs/faq'}, titleService:{setTitle: title => titles.push(title)},
+    currentPage: () => BitcoinSeo.prototype.currentPage.call(context), getTitle: () => BitcoinSeo.prototype.getTitle.call(context)};
+  BitcoinSeo.prototype.updateCanonical.call(context, '/docs/faq?source=nav#fees');
+  assert.equal(btc.canonical.href, 'https://btc.tx.taxi/vi/docs/faq');
+  assert.equal(btc.tags.get('robots'), 'noindex, follow');
+  assert.equal(btc.links.length, 0);
+  BitcoinSeo.prototype.setTitle.call(context, 'Câu hỏi thường gặp');
+  assert.equal(titles.at(-1), 'Câu hỏi thường gặp - Trình khám phá Bitcoin | btc.tx.taxi');
+  assert.equal(btc.tags.get('og:title'), titles.at(-1));
+  assert.match(BitcoinSeo.prototype.getDescription.call(context), /^Khám phá/);
+  BitcoinSeo.prototype.updateCanonical.call(context, '');
+  assert.equal(btc.canonical.href, 'https://btc.tx.taxi/vi/');
+
+  const ln = fixture('vi'), LightningSeo = loadService('lightning-app/seo.service.ts', ln.document);
+  const lightningTitles = [];
+  const lightning = {baseDomain:'lightning.btc.tx.taxi', canonicalLink:ln.canonical, metaService:ln.metaService,
+    titleService:{setTitle: title => lightningTitles.push(title)}, getTitle: () => LightningSeo.prototype.getTitle.call(lightning)};
+  LightningSeo.prototype.updateCanonical.call(lightning, '/docs/faq?source=nav#fees');
+  assert.equal(ln.canonical.href, 'https://lightning.btc.tx.taxi/vi/docs/faq');
+  assert.equal(ln.tags.get('robots'), 'noindex, follow');
+  LightningSeo.prototype.setTitle.call(lightning, 'Câu hỏi thường gặp');
+  assert.equal(lightningTitles.at(-1), 'Câu hỏi thường gặp · Trình khám phá Lightning | lightning.btc.tx.taxi');
+  assert.equal(ln.tags.get('og:title'), lightningTitles.at(-1));
+  assert.match(LightningSeo.prototype.getDescription.call(lightning), /^Khám phá/);
+  LightningSeo.prototype.updateCanonical.call(lightning, '');
+  assert.equal(ln.canonical.href, 'https://lightning.btc.tx.taxi/vi/');
+});

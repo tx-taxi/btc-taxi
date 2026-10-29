@@ -108,7 +108,7 @@ function createApp(options = {}) {
       const requestedPath = decodeURIComponent(url.pathname);
       if (requestedPath === '/es') { await send(req, res, 308, '', { location: '/es/' + url.search, 'cache-control': 'no-store' }); return; }
       const spanish = requestedPath.startsWith('/es/');
-      const localeMatch = requestedPath.match(/^\/(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
+      const localeMatch = requestedPath.match(/^\/(ar|fa|he|fi|da|ca|hr|lt|sl|ro|hu|th|vi|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
       // Locale routes only become available when their actual compiled shell exists.
       if (localeMatch && fs.existsSync(path.join(staticDir, localeMatch[1], 'index.html'))) reviewLocale = localeMatch[1];
       if (reviewLocale && (requestedPath === '/' + reviewLocale || requestedPath === '/' + reviewLocale + '/index.html')) { await send(req, res, 308, '', {location: '/' + reviewLocale + '/' + url.search, 'cache-control':'no-store', 'x-robots-tag':'noindex, follow'}); return; }
