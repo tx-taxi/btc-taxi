@@ -108,7 +108,7 @@ function createApp(options = {}) {
       const requestedPath = decodeURIComponent(url.pathname);
       if (requestedPath === '/es') { await send(req, res, 308, '', { location: '/es/' + url.search, 'cache-control': 'no-store' }); return; }
       const spanish = requestedPath.startsWith('/es/');
-      const localeMatch = requestedPath.match(/^\/(ar|fi|da|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
+      const localeMatch = requestedPath.match(/^\/(ar|fa|fi|da|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs|hi)(?:\/|$)/);
       // Locale routes only become available when their actual compiled shell exists.
       if (localeMatch && fs.existsSync(path.join(staticDir, localeMatch[1], 'index.html'))) reviewLocale = localeMatch[1];
       if (reviewLocale && (requestedPath === '/' + reviewLocale || requestedPath === '/' + reviewLocale + '/index.html')) { await send(req, res, 308, '', {location: '/' + reviewLocale + '/' + url.search, 'cache-control':'no-store', 'x-robots-tag':'noindex, follow'}); return; }
@@ -181,7 +181,7 @@ function createApp(options = {}) {
         } catch { throw new GatewayError(503, 'The local Lightning build is not ready'); }
         if (reviewLocale) {
           html = html.replace(/<html\b([^>]*)>/i, (_, attrs) => '<html' + (/\blang\s*=/.test(attrs) ? attrs.replace(/\blang\s*=\s*(["']).*?\1/i, 'lang="' + reviewLocale + '"') : attrs + ' lang="' + reviewLocale + '"') + '>');
-          if (reviewLocale === 'ar') html = html.replace(/<html\b([^>]*)>/i, (_, attrs) => '<html' + (/\bdir\s*=/.test(attrs) ? attrs.replace(/\bdir\s*=\s*(["']).*?\1/i, 'dir="rtl"') : attrs + ' dir="rtl"') + '>');
+          if (reviewLocale === 'ar' || reviewLocale === 'fa') html = html.replace(/<html\b([^>]*)>/i, (_, attrs) => '<html' + (/\bdir\s*=/.test(attrs) ? attrs.replace(/\bdir\s*=\s*(["']).*?\1/i, 'dir="rtl"') : attrs + ' dir="rtl"') + '>');
           if (/<base\b/i.test(html)) html = html.replace(/<base\b[^>]*>/i, '<base href="/' + reviewLocale + '/">');
           else html = html.replace(/<head\b[^>]*>/i, match => match + '<base href="/' + reviewLocale + '/">');
           html = html.replace(/<link\b(?=[^>]*\bhreflang\s*=)[^>]*>/gi, '');
