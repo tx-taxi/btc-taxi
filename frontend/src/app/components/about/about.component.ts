@@ -16,8 +16,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     const lang = this.locale.toLowerCase().split(/[-_]/)[0];
-    const titles: Record<string, string> = { uk: 'Про btc.tx.taxi', pl: 'O btc.tx.taxi', ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
+    const titles: Record<string, string> = { nb: 'Om btc.tx.taxi', uk: 'Про btc.tx.taxi', pl: 'O btc.tx.taxi', ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
     const descriptions: Record<string, string> = {
+      nb: 'Les om btc.tx.taxi, en Bitcoin-blokk- og mempoolutforsker i tx.taxis flerkjedefamilie.',
       uk: 'Дізнайтеся про btc.tx.taxi — оглядач блоків і мемпулу Bitcoin із багатоланцюгової родини tx.taxi.',
       pl: 'Poznaj btc.tx.taxi, eksplorator bloków i mempoola Bitcoin z wielosieciowej rodziny tx.taxi.',
       ko: '여러 체인을 지원하는 tx.taxi의 Bitcoin 블록 및 멤풀 탐색기 btc.tx.taxi를 알아보세요.',
