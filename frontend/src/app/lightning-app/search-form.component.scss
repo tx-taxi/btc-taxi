@@ -428,3 +428,5 @@ input[aria-invalid='true'] {
 
 /* Empty RTL search fields align their localized hint; entered text uses dir=auto. */
 :host-context(.rtl-layout) input[dir="auto"]:placeholder-shown { text-align: right; }
+
+:host-context(.rtl-layout) .search-chain-group-label { letter-spacing: normal; text-transform: none; }
