@@ -5018,7 +5018,7 @@
       </trans-unit>
       <trans-unit id="b89cb92adf0a831d4a263ecdba02139abbda02ae" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks mined</source>
-        <target>Rasti <x id="INTERPOLATION" equiv-text="{{ i }}" /> blokai</target>
+        <target>Iškastų blokų: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">52</context>
@@ -5036,7 +5036,7 @@
       </trans-unit>
       <trans-unit id="229dfb17b342aa8b9a1db27557069445ea1a7051" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="{{ i }}"/> blocks remaining</source>
-        <target>Liko <x id="INTERPOLATION" equiv-text="{{ i }}" /> blokai</target>
+        <target>Likusių blokų: <x id="INTERPOLATION" equiv-text="{{ i }}" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty-tooltip.component.html</context>
           <context context-type="linenumber">54</context>
@@ -7373,7 +7373,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
         <source>See mempool size (in MvB) and transaction virtual bytes per second (in vB/s) visualized over time.</source>
-        <target>Peržiūrėkite, kaip laikui bėgant kinta mempool dydis (MvB) ir virtualiųjų sandorių baitų skaičius per sekundę (vB/s).</target>
+        <target>Peržiūrėkite, kaip laikui bėgant kinta mempool dydis (MvB) ir sandorių virtualiųjų baitų skaičius per sekundę (vB/s).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
@@ -7540,7 +7540,7 @@
       </trans-unit>
       <trans-unit id="809118722b27889f5424609d1779f356bcef2cc2" datatype="html">
         <source>Your transaction is near the top of the mempool, and is expected to confirm soon.</source>
-        <target>Jūsų transakcija jau beveik mempool viršuje, ir neužilgo bus patvirtinta.</target>
+        <target>Jūsų transakcija yra beveik mempool viršuje; tikimasi, kad ji netrukus bus patvirtinta.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">165</context>
@@ -7549,7 +7549,7 @@
       </trans-unit>
       <trans-unit id="ee76deb7716e90b79e557394b1d256079b7ec24e" datatype="html">
         <source>Your transaction is expected to confirm in the next block</source>
-        <target>Jūsų transakcija bus patvirtinta sekančiame bloke.</target>
+        <target>Tikimasi, kad jūsų transakcija bus patvirtinta kitame bloke.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">171</context>
@@ -8607,7 +8607,7 @@
       </trans-unit>
       <trans-unit id="07883574bb93ea23b764861f56a525bdaf907513" datatype="html">
         <source>This transaction supports Replace-By-Fee (RBF) allowing fee bumping</source>
-        <target>Ši transakcija naudoja Replace-By-Fee“ (RBF), kuris leidžia ją paspartinti.</target>
+        <target>Ši transakcija palaiko „Replace-By-Fee“ (RBF), todėl galima padidinti mokestį.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">28</context>
@@ -8616,7 +8616,7 @@
       </trans-unit>
       <trans-unit id="85ce9e4f45873116b746899169cbc3445321d60c" datatype="html">
         <source>This transaction does NOT support Replace-By-Fee (RBF) and cannot be fee bumped using this method</source>
-        <target>Ši transakcija nepalaiko "Replace-By-Fee" (RBF) ir negali būti paspartinta.</target>
+        <target>Ši transakcija NEPALAIKO „Replace-By-Fee“ (RBF), todėl šiuo būdu padidinti mokesčio negalima.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">29</context>
