@@ -399,7 +399,7 @@
       </trans-unit>
       <trans-unit id="516df7915a4c388590a9c1a06b35a9be381f3f3a" datatype="html">
         <source>Powered By</source>
-        <target state="needs-review-translation">Powered By</target><context-group purpose="location">
+        <target state="needs-review-translation">უზრუნველყოფილია</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/about/about.component.html</context>
           <context context-type="linenumber">431</context>
         </context-group>
@@ -2730,7 +2730,7 @@
       </trans-unit>
       <trans-unit id="0ae529953ee15ef7af41fe3a3c30a10de5347f34" datatype="html">
         <source>BTC Holdings</source>
-        <target state="needs-review-translation">BTC Holdings</target><context-group purpose="location">
+        <target state="needs-review-translation">BTC-ის მარაგი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/balance-widget/balance-widget.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -5491,7 +5491,7 @@
       </trans-unit>
       <trans-unit id="7a080851e25a41e898776a9c90cf8dbe81027f9a" datatype="html">
         <source>Output</source>
-        <target>Output</target>
+        <target state="needs-review-translation">გამოსავალი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">8</context>
@@ -6955,7 +6955,7 @@
       </trans-unit>
       <trans-unit id="3181f08827514236ffd311786fe8ae62f0b361ab" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w" />Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
-        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w" />Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w" />ჩანაცვლებული<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">26,27</context>
         </context-group>
@@ -8054,7 +8054,7 @@
       </trans-unit>
       <trans-unit id="3e242f213dd1a0754aad9164aa80887d67708500" datatype="html">
         <source>Input</source>
-        <target>Input</target>
+        <target state="needs-review-translation">შესავალი</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-bowtie-graph-tooltip/tx-bowtie-graph-tooltip.component.html</context>
           <context context-type="linenumber">42</context>
@@ -9636,7 +9636,7 @@
       </trans-unit>
       <trans-unit id="e128630e07a4c467f51b246a31c5734d5fb1a2c2" datatype="html">
         <source>Liquidity ad</source>
-        <target>Liquidity ad</target>
+        <target state="needs-review-translation">ლიკვიდურობის შეთავაზება</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">184</context>
@@ -9904,7 +9904,7 @@
       </trans-unit>
       <trans-unit id="4498ec29c37744fef46809ebc3db67c5fb789917" datatype="html">
         <source>ISP Count</source>
-        <target>ISP Count</target>
+        <target state="needs-review-translation">ინტერნეტპროვაიდერების რაოდენობა</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-country/nodes-per-country.component.html</context>
           <context context-type="linenumber">34</context>
@@ -11059,13 +11059,13 @@
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target state="needs-review-translation">ეს გარიგება</target></trans-unit>
       <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target state="needs-review-translation">თქვენი ბალანსი ძალიან დაბალია.</target></trans-unit>
       <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html"><source>occurrence</source><target state="needs-review-translation">კლება</target></trans-unit>
-      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target state="needs-review-translation">More</target>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target state="needs-review-translation">მეტი</target>
         </trans-unit>
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target state="needs-review-translation">მემპულის კლასტერში, რომელიც შეიცავს 1 სხვა ნაწილს.</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">სარეზერვო დეფიციტი</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target state="needs-review-translation">აირჩიეთ ფილტრის კატეგორიები, რათა მონიშნოთ შესატყვისი მომლოდინე ტრანზაქციები</target></trans-unit>
       <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">ბავშვები</target></trans-unit>
-      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">More</target>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">მეტი</target>
         </trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Mempool კლასტერში, რომელიც შეიცავს <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> სხვა ნაწილებს.</target></trans-unit>
       <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target state="needs-review-translation">vSize</target></trans-unit>
