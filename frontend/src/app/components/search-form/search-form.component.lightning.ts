@@ -45,7 +45,7 @@ export class SearchFormComponent implements OnInit {
   get es(): boolean { return document.documentElement.lang.toLowerCase().startsWith('es'); }
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'bitcoin';
-  get hubUrl():string {return this.explorerRegistry.hubUrl;}
+  get hubUrl(): string { return this.localizedExplorerUrl(this.explorerRegistry.hubUrl); }
   readonly defaultChainIconUrl = '/resources/lightning-bolt.svg';
   readonly defaultChainIconAlt = 'Lightning explorer';
   readonly defaultChainAccent = '#7b1af7';
