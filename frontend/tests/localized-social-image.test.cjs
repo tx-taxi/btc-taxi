@@ -20,9 +20,31 @@ test('Bitcoin social image alt follows the application locale while preserving E
     Service.prototype.clearOgImage.call(service);
     return tags;
   }
-  const spanish = metadata('es'), english = metadata('en-US');
+  const arabic = metadata('ar'), spanish = metadata('es'), english = metadata('en-US');
+  assert.match(arabic.get('og:image:alt'), /^صفحة معاملة Bitcoin/);
+  assert.equal(arabic.get('twitter:image:alt'), arabic.get('og:image:alt'));
   assert.match(spanish.get('og:image:alt'), /^Una página de transacción de Bitcoin/);
   assert.equal(spanish.get('twitter:image:alt'), spanish.get('og:image:alt'));
   assert.equal(english.get('og:image:alt'), 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.');
   assert.equal(english.get('twitter:image:alt'), english.get('og:image:alt'));
+});
+
+test('Lightning social image alt follows Arabic without changing English', () => {
+  const filename = path.join(__dirname, '../src/app/lightning-app/opengraph.service.ts');
+  const code = ts.transpile(fs.readFileSync(filename, 'utf8'), {module:ts.ModuleKind.CommonJS, experimentalDecorators:true});
+  const angular = { Injectable: () => () => {} };
+  const document = { documentElement: { lang:'ar' } };
+  const sandbox = {exports:{}, require:name => name === '@angular/core' ? angular : {}, document, window:{}};
+  vm.runInNewContext(code, sandbox, {filename});
+  const Service = sandbox.exports.OpenGraphService;
+  function metadata(locale) {
+    document.documentElement.lang = locale;
+    const tags = new Map();
+    Service.prototype.clearOgImage.call({defaultImageUrl:'https://tx.taxi/lightning.png', metaService:{updateTag: tag => tags.set(tag.name || tag.property, tag.content)}});
+    return tags;
+  }
+  const arabic = metadata('ar'), english = metadata('en-US');
+  assert.equal(arabic.get('og:image:alt'), 'مستكشف شبكة Lightning على tx.taxi.');
+  assert.equal(arabic.get('twitter:image:alt'), arabic.get('og:image:alt'));
+  assert.equal(english.get('og:image:alt'), 'Lightning Network explorer on tx.taxi.');
 });
