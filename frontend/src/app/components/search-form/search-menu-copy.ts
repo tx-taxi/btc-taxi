@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  he: {
+    choose: 'בחירת רשת לחיפוש', selectedAria: 'הסייר הנבחר', selected: 'נבחר',
+    unavailable: 'רשימת הסיירים אינה זמינה', loading: 'טוען סיירים', automatic: 'ניתוב אוטומטי',
+    viewHub: 'למרכז', hint: 'או לעבור ישירות אל', searchExample: '[החיפוש שלך]',
+    native: 'סיירים מקוריים', external: 'סיירים של צד שלישי', opened: 'פתוח',
+    open: 'פתיחה', switch: 'החלפה', found: 'נמצא', possible: 'אפשרי', search: 'חיפוש',
+    additional: (name: string) => `סיירים נוספים עבור \u2068${name}\u2069`,
+    openExplorer: (name: string) => `פתיחת \u2068${name}\u2069`,
+    openNewTab: (name: string) => `פתיחת \u2068${name}\u2069 בלשונית חדשה`,
+    switchTo: (name: string) => `מעבר אל \u2068${name}\u2069`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'הסתרת' : 'הצגת'} אפשרויות נוספות עבור \u2068${name}\u2069: \u2068${count}\u2069`,
+  },
   sl: {
     choose: 'Izberite verigo za iskanje', selectedAria: 'Izbrani raziskovalnik', selected: 'IZBRANO',
     unavailable: 'Seznam raziskovalnikov ni na voljo', loading: 'Nalaganje raziskovalnikov', automatic: 'Samodejno usmerjanje',
