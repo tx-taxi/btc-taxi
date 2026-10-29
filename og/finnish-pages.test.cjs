@@ -1,0 +1,34 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { createLocalizedPages } = require('./localized-pages.cjs');
+
+test('Finnish Bitcoin server documents require a localized shell and remain noindex', t => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'btc-fi-seo-'));
+  t.after(() => fs.rmSync(dir, {recursive:true, force:true}));
+  const index = path.join(dir, 'en-US', 'index.html');
+  assert.equal(createLocalizedPages(index, [], {}).route('/fi/'), null);
+  fs.mkdirSync(path.join(dir, 'fi'));
+  fs.writeFileSync(path.join(dir, 'fi', 'index.html'), '<html lang="en" dir="ltr"><head><base href="/"><title>English</title></head><body><app-root></app-root></body></html>');
+  const image = {url:'https://tx.taxi/bitcoin.jpg', width:1440, height:1960};
+  const renderer = createLocalizedPages(index, [{route:'/docs/faq'}], {}, image);
+  const route = renderer.route('/fi/docs/faq');
+  assert.deepEqual(route, {lang:'fi', pathname:'/docs/faq'});
+  assert.equal(renderer.supports(route.pathname), true);
+  const response = {writeHead(status, headers) {this.status=status; this.headers=headers;}, end(body) {this.body=body;}};
+  renderer.write({method:'GET'}, response, 200, route.lang, route.pathname);
+  assert.equal(response.headers['Content-Language'], 'fi');
+  assert.equal(response.headers['X-Robots-Tag'], 'noindex, follow');
+  assert.match(response.body, /<html lang="fi" dir="ltr">/);
+  assert.match(response.body, /<base href="\/fi\/">/);
+  assert.match(response.body, /<title>Bitcoin-lohkoselain \| btc\.tx\.taxi<\/title>/);
+  assert.match(response.body, /rel="canonical" href="https:\/\/btc\.tx\.taxi\/fi\/docs\/faq"/);
+  assert.match(response.body, /name="robots" content="noindex, follow"/);
+  assert.match(response.body, /property="og:image" content="https:\/\/tx\.taxi\/bitcoin.jpg"/);
+  assert.match(response.body, /property="og:image:alt" content="Bitcoin-transaktiosivu/);
+  assert.match(response.body, /name="twitter:card" content="summary_large_image"/);
+  assert.doesNotMatch(response.body, /hreflang=/);
+});

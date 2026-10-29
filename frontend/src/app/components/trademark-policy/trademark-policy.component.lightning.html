@@ -441,6 +441,8 @@
 </div>
 
 </ng-template>
+<ng-template #finnishOrEnglish><ng-container *ngIf="fi; else englishLegal" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
+<ng-template #finnishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Tavaramerkit ja alkuperän ilmoittaminen</h2><h6>Päivitetty: 3. lokakuuta 2026</h6><br><br><div class="text-start"><h4>tx.taxin tunnus</h4><p>lightning.btc.tx.taxi on itsenäisesti ylläpidetty, tx.taxi-perheeseen kuuluva Lightning-verkon selain. Sen verkkotunnus, sanalogo, ketjukohtainen väripaletti ja palvelun identiteetti erottavat tämän version alkuperäisestä projektista.</p><br><h4>Alkuperäisen projektin maininta</h4><p>Tämä ohjelmisto perustuu Mempool Open Source Projectiin. Alkuperäinen lähdekoodi, visuaalinen järjestelmä, projektien nimet, logot ja tavaramerkit kuuluvat omistajilleen.</p><br><h4>Ei sidonnaisuutta</h4><p>lightning.btc.tx.taxi ei ole sidoksissa Mempool Holdings S.A. de C.V. -yhtiöön eikä sen sponsoroima tai hyväksymä. Viittaukset mempool.space- ja mempool/mempool-projekteihin ovat nimellisiä lähdemainintoja ohjelmistosta, johon tämä versio perustuu.</p><br><h4>Bitcoin</h4><p>Bitcoin on avoin verkko ja protokolla. Bitcoinia, BTC:tä, satosheja, Lightningia, solmuja, kanavia ja reitityskäytäntöjä koskevat viittaukset kuvaavat tämän selaimen esittämiä verkkotietoja.</p><br><h4>Lisenssi</h4><p>Tämä versio noudattaa alkuperäisen AGPLv3-lisenssin velvoitteita. Sovellettavista lähdekoodi- ja lisenssitiedoista voi kysyä ylläpitäjältä.</p><br></div></div><br><br></div></ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -485,7 +487,7 @@
 
 </ng-template>
 
-<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else englishLegal" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
+<ng-template #arabicOrEnglish><ng-container *ngIf="ar; else finnishOrEnglish" [ngTemplateOutlet]="arabicLegal"></ng-container></ng-template>
 <ng-template #arabicLegal>
 <div class="container-xl">
   <div class="text-center">
