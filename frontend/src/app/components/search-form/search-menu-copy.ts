@@ -72,6 +72,18 @@ const copy = {
     switchTo: (name: string) => `Přepnout na ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skrýt' : 'Zobrazit'} další možnosti ${name}: ${count}`,
   },
+  hi: {
+    choose: 'खोज के लिए चेन चुनें', selectedAria: 'चुना गया एक्सप्लोरर', selected: 'चयनित',
+    unavailable: 'एक्सप्लोरर सूची उपलब्ध नहीं है', loading: 'एक्सप्लोरर लोड हो रहे हैं', automatic: 'स्वचालित रूटिंग',
+    viewHub: 'मुख्य पृष्ठ खोलें', hint: 'या सीधे यहाँ जाएँ', searchExample: '[आपकी खोज]',
+    native: 'मूल एक्सप्लोरर', external: 'तृतीय-पक्ष एक्सप्लोरर', opened: 'खुला है',
+    open: 'खोलें', switch: 'बदलें', found: 'मिला', possible: 'संभावित', search: 'खोजें',
+    additional: (name: string) => `${name} के अन्य एक्सप्लोरर`,
+    openExplorer: (name: string) => `${name} खोलें`,
+    openNewTab: (name: string) => `${name} नए टैब में खोलें`,
+    switchTo: (name: string) => `${name} पर जाएँ`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name} के ${count} अतिरिक्त विकल्प ${expanded ? 'छिपाएँ' : 'दिखाएँ'}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
