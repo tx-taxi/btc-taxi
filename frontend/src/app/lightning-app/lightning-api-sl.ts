@@ -1,0 +1,20 @@
+/** Slovenian Lightning REST reference. Protocol identifiers remain unchanged. */
+export const slovenianLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Statistika omrežja','<p>Vrne statistiko omrežja, vključno s številom kanalov in vozlišč, skupno kapaciteto ter povprečnimi in medianskimi pristojbinami.</p><p>Vrednosti parametra <code>:interval</code> so <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> ali <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Vozlišča in kanali','<p>Vrne vozlišča in kanale Lightning, ki ustrezajo poizvedbi <code>:query</code>. Iskanje po celotnem besedilu zajema vzdevke in javne ključe vozlišč ter polne in kratke ID-je kanalov; velike in male črke se ne razlikujejo.</p>'],
+ 'get-lightning-nodes-country':['Vozlišča po državi','<p>Vrne vozlišča Lightning, katerih lokacija je glede na javni IP-naslov (clearnet) določena v državi <code>:country</code>. Uporabite dvočrkovno kodo države ISO alpha-2.</p>'],
+ 'get-country-node-stats':['Statistika vozlišč po državi','<p>Vrne skupno kapaciteto in število vozlišč po državi, določeni na podlagi javnega IP-naslova (clearnet). Kapaciteta je navedena v satoshijih.</p>'],
+ 'get-isp-nodes':['Vozlišča po internetnem ponudniku','<p>Vrne vozlišča internetnega ponudnika <code>:isp</code>, navedenega s številko ASN.</p>'],
+ 'get-isp-node-stats':['Statistika vozlišč po internetnem ponudniku','<p>Vrne skupno kapaciteto ter število vozlišč in kanalov po internetnem ponudniku. Kapaciteta je navedena v satoshijih.</p>'],
+ 'get-top-100-nodes':['100 vodilnih vozlišč','<p>Vrne ločena seznama 100 vodilnih vozlišč po likvidnosti (skupni kapaciteti kanalov) in povezanosti (številu odprtih kanalov).</p>'],
+ 'get-top-100-nodes-liquidity':['100 najlikvidnejših vozlišč','<p>Vrne 100 najlikvidnejših vozlišč po skupni kapaciteti kanalov.</p>'],
+ 'get-top-100-nodes-connectivity':['100 najbolj povezanih vozlišč','<p>Vrne 100 najbolj povezanih vozlišč po številu odprtih kanalov.</p>'],
+ 'get-top-100-oldest-nodes':['100 najstarejših vozlišč','<p>Vrne 100 najstarejših vozlišč.</p>'],
+ 'get-node-stats':['Statistika vozlišča','<p>Vrne podatke o vozlišču, navedenem z javnim ključem <code>:pubKey</code>.</p>'],
+ 'get-historical-node-stats':['Zgodovinska statistika vozlišča','<p>Vrne zgodovinsko statistiko vozlišča, navedenega z javnim ključem <code>:pubKey</code>.</p>'],
+ 'get-channel':['Kanal','<p>Vrne podatke o kanalu Lightning z identifikatorjem <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Kanali po ID-ju transakcije','<p>Vrne kanale, ki ustrezajo <code>:txid</code>. Navesti je mogoče več ID-jev transakcij.</p>'],
+ 'get-channels-from-pubkey':['Kanali po javnem ključu vozlišča','<p>Vrne kanale vozlišča s ključem <code>:pubKey</code>, po 10 na stran. Za strani uporabite <code>:index</code>. Možne vrednosti <code>:channelStatus</code> so <code>open</code>, <code>active</code> ali <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Geografski podatki kanalov','<p>Vrne seznam kanalov in geografske podatke njihovih vozlišč.</p>'],
+ 'get-channel-geodata-node':['Geografski podatki kanalov vozlišča','<p>Vrne kanale vozlišča, navedenega z javnim ključem <code>:pubKey</code>, in njihove geografske podatke.</p>'],
+};
