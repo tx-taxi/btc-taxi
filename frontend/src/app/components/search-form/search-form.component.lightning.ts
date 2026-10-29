@@ -171,8 +171,8 @@ export class SearchFormComponent implements OnInit {
   };
 
   async openHub(event: MouseEvent): Promise<void> {
-    if (this.hubLocaleReady || event.button !== 0) return;
-    const newTab = (event.currentTarget as HTMLAnchorElement).target === '_blank' || event.ctrlKey || event.metaKey || event.shiftKey;
+    if (this.hubLocaleReady || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const newTab = (event.currentTarget as HTMLAnchorElement).target === '_blank';
     const popup = newTab ? window.open('about:blank', '_blank') : null;
     if (newTab && !popup) return;
     event.preventDefault();
