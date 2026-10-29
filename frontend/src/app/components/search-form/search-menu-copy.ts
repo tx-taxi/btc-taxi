@@ -60,6 +60,18 @@ const copy = {
     switchTo: (name: string) => `Byt till ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Dölj' : 'Visa'} ${count} extra alternativ för ${name}`,
   },
+  cs: {
+    choose: 'Vyberte řetězec pro vyhledávání', selectedAria: 'Vybraný průzkumník', selected: 'VYBRÁNO',
+    unavailable: 'Seznam průzkumníků není dostupný', loading: 'Načítání průzkumníků', automatic: 'Automatické směrování',
+    viewHub: 'Otevřít hlavní stránku', hint: 'Nebo přejít přímo na', searchExample: '[váš dotaz]',
+    native: 'VLASTNÍ PRŮZKUMNÍCI', external: 'PRŮZKUMNÍCI TŘETÍCH STRAN', opened: 'Otevřeno',
+    open: 'Otevřít', switch: 'Přepnout', found: 'Nalezeno', possible: 'Možné', search: 'Hledat',
+    additional: (name: string) => `Další průzkumníci ${name}`,
+    openExplorer: (name: string) => `Otevřít ${name}`,
+    openNewTab: (name: string) => `Otevřít ${name} na nové kartě`,
+    switchTo: (name: string) => `Přepnout na ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skrýt' : 'Zobrazit'} další možnosti ${name}: ${count}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
