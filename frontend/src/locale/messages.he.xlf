@@ -479,7 +479,7 @@
       </trans-unit>
       <trans-unit id="bee6b649ee82d9a7cde233070b665eec7c531b1d" datatype="html">
         <source>Plus <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}"/> unconfirmed ancestor(s)</source>
-        <target>ועוד <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}"/> טרנזקציהו(ת) שטרם אושרו קודמות</target>
+        <target>ועוד <x id="INTERPOLATION" equiv-text="{{ estimate.txSummary.ancestorCount - 1 }}"/> עסקאות אב נוספות שטרם אושרו</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">49</context>
@@ -518,7 +518,7 @@
       </trans-unit>
       <trans-unit id="df89e157bacb4ab32e6ec725bf1eb176dc15201e" datatype="html">
         <source>Size in vbytes of this transaction (including unconfirmed ancestors)</source>
-        <target>גודל ב- vbytes של פעולה זו (כולל אבות לא מאומתים)</target>
+        <target>הגודל הווירטואלי של עסקה זו ב-vbytes (כולל עסקאות אב שטרם אושרו)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">59</context>
@@ -705,7 +705,7 @@
       </trans-unit>
       <trans-unit id="fad137784196a8fdc10588e27ed5d8ae95fe4e79" datatype="html">
         <source>Fees already paid by this transaction (including unconfirmed ancestors)</source>
-        <target>עמלות שכבר שולמו על ידי פעולה זו (כולל אבות לא מאומתים)</target>
+        <target>עמלות שכבר שולמו עבור עסקה זו (כולל עסקאות אב שטרם אושרו)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">70</context>
@@ -6099,7 +6099,7 @@
       </trans-unit>
       <trans-unit id="meta.description.mining.dashboard" datatype="html">
         <source>Get real-time Bitcoin mining stats like hashrate, difficulty adjustment, block rewards, pool dominance, and more.</source>
-        <target>קבלו סטטיסטיקות כריית ביטקוין בזמן אמת כמו קצב עיבוד שבבי, התאמת קושי, תגמולי בלוקים, דומיננטיות בפול ועוד.</target>
+        <target>צפו בנתוני כריית Bitcoin בזמן אמת, כגון קצב גיבוב, התאמת קושי, תגמולי בלוקים, נתח בריכות הכרייה ועוד.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
           <context context-type="linenumber">31</context>
@@ -7531,7 +7531,7 @@
       </trans-unit>
       <trans-unit id="5ad21d21f3e26ddfe0abeed499db5d5c0bd0e325" datatype="html">
         <source>Your transaction is in the mempool, but it will not be confirmed for some time.</source>
-        <target>פעולתך נמצאת בברכת זיכרון, אבל לא תאושר למשך זמן מה.</target>
+        <target>העסקה שלך נמצאת ב-mempool, אך היא לא צפויה לקבל אישור בזמן הקרוב.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">159</context>
@@ -7540,7 +7540,7 @@
       </trans-unit>
       <trans-unit id="809118722b27889f5424609d1779f356bcef2cc2" datatype="html">
         <source>Your transaction is near the top of the mempool, and is expected to confirm soon.</source>
-        <target>פעולתך קרובה לראש ברכת הזיכרון, וצפויה להתאמת בקרוב.</target>
+        <target>העסקה שלך קרובה לראש ה-mempool וצפויה לקבל אישור בקרוב.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">165</context>
@@ -7722,7 +7722,7 @@
       </trans-unit>
       <trans-unit id="2533fb35288295dac23fe0bdfcc2685b025a9f2e" datatype="html">
         <source>This transaction was seen in the mempool prior to mining</source>
-        <target>פעולה זאת נצפתה בברכת הזיכרון לפני הכרייה</target>
+        <target>עסקה זו נצפתה ב-mempool לפני הכרייה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">131</context>
@@ -7741,7 +7741,7 @@
       </trans-unit>
       <trans-unit id="5f79b588d43d16312a9a2e6df1e76922ffe3c45d" datatype="html">
         <source>This transaction was missing from our mempool prior to mining</source>
-        <target>פעולה זאת נעדרה מברכת הזיכרון שלנו לפני הכרייה</target>
+        <target>עסקה זו לא הופיעה ב-mempool שלנו לפני הכרייה</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">133</context>
@@ -7750,7 +7750,7 @@
       </trans-unit>
       <trans-unit id="53d5fe49e4a07a663eb2f26ceeb76afceef86334" datatype="html">
         <source>Not seen in Mempool</source>
-        <target>לא מצפה בממפול</target>
+        <target>לא נצפתה ב-mempool</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">133</context>
@@ -7778,7 +7778,7 @@
       </trans-unit>
       <trans-unit id="7ef1a8a56ad5696e527a8da06a13661f883ad6b2" datatype="html">
         <source>This transaction conflicted with another version in our mempool</source>
-        <target>פעולה זאת מנוגדת עם גרסה שונה בברכת הזיכרון שלנו</target>
+        <target>עסקה זו התנגשה בגרסה אחרת ב-mempool שלנו</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
           <context context-type="linenumber">142</context>
