@@ -1,0 +1,20 @@
+/** Nepali Lightning REST reference; only public network data is described. */
+export const nepaliLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['नेटवर्क तथ्याङ्क','<p>च्यानल र नोडको संख्या, कुल क्षमता र औसत तथा मध्यिका शुल्कसहित पूरै नेटवर्कको तथ्याङ्क फर्काउँछ।</p><p><code>:interval</code> का लागि <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> वा <code>3y</code> दिनुहोस्।</p>'],
+ 'get-lightning-nodes-channels':['नोड र च्यानल','<p><code>:query</code> सँग मेल खाने Lightning नोड र च्यानल फर्काउँछ। नोडका उपनाम र सार्वजनिक कुञ्जी तथा च्यानलका पूर्ण र छोटा IDs खोज्छ; ठूला र साना अक्षरमा भेद गर्दैन।</p>'],
+ 'get-lightning-nodes-country':['देशअनुसार नोड','<p>सार्वजनिक IP ठेगाना (clearnet) बाट दिइएको <code>:country</code> मा रहेको अनुमान गरिएका Lightning नोड फर्काउँछ। देश दुई अक्षरको ISO alpha-2 कोडमा दिनुहोस्।</p>'],
+ 'get-country-node-stats':['देशअनुसार नोड तथ्याङ्क','<p>सार्वजनिक IP ठेगाना (clearnet) बाट निर्धारित देशअनुसार कुल क्षमता र नोड संख्या फर्काउँछ। क्षमता satoshi मा हुन्छ।</p>'],
+ 'get-isp-nodes':['प्रदायकअनुसार नोड','<p>ASN नम्बरबाट पहिचान गरिएको प्रदायक <code>:isp</code> का नोड फर्काउँछ।</p>'],
+ 'get-isp-node-stats':['प्रदायकअनुसार नोड तथ्याङ्क','<p>प्रदायकअनुसार कुल क्षमता, नोड र च्यानलको संख्या फर्काउँछ। क्षमता satoshi मा हुन्छ।</p>'],
+ 'get-top-100-nodes':['शीर्ष 100 नोड','<p>तरलता (कुल च्यानल क्षमता) र कनेक्टिभिटी (खुला च्यानलको संख्या) अनुसार शीर्ष 100 नोडका छुट्टाछुट्टै सूची फर्काउँछ।</p>'],
+ 'get-top-100-nodes-liquidity':['सर्वाधिक तरलता भएका 100 नोड','<p>कुल च्यानल क्षमताबाट मापन गरिएको सर्वाधिक तरलता भएका 100 नोड फर्काउँछ।</p>'],
+ 'get-top-100-nodes-connectivity':['सबैभन्दा धेरै जोडिएका 100 नोड','<p>खुला च्यानलको संख्याअनुसार सबैभन्दा धेरै जोडिएका 100 नोड फर्काउँछ।</p>'],
+ 'get-top-100-oldest-nodes':['सबैभन्दा पुराना 100 नोड','<p>सबैभन्दा पुराना 100 नोड फर्काउँछ।</p>'],
+ 'get-node-stats':['नोड तथ्याङ्क','<p>सार्वजनिक कुञ्जी <code>:pubKey</code> बाट पहिचान गरिएको नोडको विवरण फर्काउँछ।</p>'],
+ 'get-historical-node-stats':['नोडका ऐतिहासिक तथ्याङ्क','<p>सार्वजनिक कुञ्जी <code>:pubKey</code> बाट पहिचान गरिएको नोडका ऐतिहासिक तथ्याङ्क फर्काउँछ।</p>'],
+ 'get-channel':['च्यानल','<p>पहिचायक <code>:channelId</code> भएको Lightning च्यानलको जानकारी फर्काउँछ।</p>'],
+ 'get-channels-from-txid':['कारोबार ID बाट च्यानल','<p>दिइएको <code>:txid</code> सँग मेल खाने च्यानल फर्काउँछ। एकभन्दा बढी कारोबार IDs दिन सकिन्छ।</p>'],
+ 'get-channels-from-pubkey':['नोडको सार्वजनिक कुञ्जीबाट च्यानल','<p><code>:pubKey</code> बाट पहिचान गरिएको नोडका च्यानल प्रत्येक पृष्ठमा 10 फर्काउँछ। पृष्ठ विभाजनका लागि <code>:index</code> दिनुहोस्। <code>:channelStatus</code> को मान <code>open</code>, <code>active</code> वा <code>closed</code> हुन सक्छ।</p>'],
+ 'get-channel-geodata':['च्यानलको भौगोलिक डेटा','<p>च्यानलको सूची तिनका नोडको भौगोलिक डेटासहित फर्काउँछ।</p>'],
+ 'get-channel-geodata-node':['नोडका च्यानलको भौगोलिक डेटा','<p>सार्वजनिक कुञ्जी <code>:pubKey</code> भएको नोडका च्यानल र तिनको भौगोलिक डेटा फर्काउँछ।</p>'],
+};
