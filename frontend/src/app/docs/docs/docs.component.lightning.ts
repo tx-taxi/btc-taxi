@@ -47,6 +47,7 @@ export class DocsComponent implements OnInit {
   get ja(): boolean { return this.locale.startsWith('ja'); }
   get zh(): boolean { return this.locale.startsWith('zh'); }
   get tr(): boolean { return this.locale.startsWith('tr'); }
+  get ko(): boolean { return this.locale.startsWith('ko'); }
   get nl(): boolean { return this.locale.startsWith('nl'); }
 
   ngDoCheck(): void {
@@ -56,7 +57,7 @@ export class DocsComponent implements OnInit {
     if (url[0].path === 'faq' ) {
       this.activeTab = 0;
       this.seoService.setTitle($localize`:@@meta.title.docs.faq:FAQ`);
-      this.seoService.setDescription(this.nl ? 'Antwoorden over openbare Lightning-nodes, kanalen, routeringskosten en netwerkstatistieken.' : this.tr ? 'Herkese açık Lightning düğümleri, kanalları, yönlendirme ücretleri ve ağ istatistikleri hakkındaki sık sorulan soruların yanıtları.' : this.zh ? '了解关于公开Lightning节点、通道、路由费用和网络统计的常见问题。' : this.ja ? '公開ノード、チャネル、ルーティング手数料、ネットワーク統計など、Lightningについてのよくある質問にお答えします。' : this.pt ? 'Respostas sobre nós e canais públicos, taxas de encaminhamento e estatísticas da rede Lightning.' : this.ru ? 'Ответы о публичных узлах, каналах, комиссиях за маршрутизацию и статистике сети Lightning.' : this.it ? 'Risposte su nodi pubblici, canali, commissioni di instradamento e statistiche della rete Lightning.' : this.es ? 'Respuestas sobre nodos públicos, canales, comisiones de enrutamiento y estadísticas de la red Lightning.' : this.fr ? 'Réponses aux questions sur les nœuds publics, les canaux, les frais de routage et les statistiques Lightning.' : this.de ? 'Antworten zu öffentlichen Knoten, Kanälen, Routing-Gebühren und Statistiken des Lightning-Netzwerks.' : 'Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.');
+      this.seoService.setDescription(this.ko ? '공개 Lightning 노드, 채널, 라우팅 수수료와 네트워크 통계에 관한 질문과 답변입니다.' : this.nl ? 'Antwoorden over openbare Lightning-nodes, kanalen, routeringskosten en netwerkstatistieken.' : this.tr ? 'Herkese açık Lightning düğümleri, kanalları, yönlendirme ücretleri ve ağ istatistikleri hakkındaki sık sorulan soruların yanıtları.' : this.zh ? '了解关于公开Lightning节点、通道、路由费用和网络统计的常见问题。' : this.ja ? '公開ノード、チャネル、ルーティング手数料、ネットワーク統計など、Lightningについてのよくある質問にお答えします。' : this.pt ? 'Respostas sobre nós e canais públicos, taxas de encaminhamento e estatísticas da rede Lightning.' : this.ru ? 'Ответы о публичных узлах, каналах, комиссиях за маршрутизацию и статистике сети Lightning.' : this.it ? 'Risposte su nodi pubblici, canali, commissioni di instradamento e statistiche della rete Lightning.' : this.es ? 'Respuestas sobre nodos públicos, canales, comisiones de enrutamiento y estadísticas de la red Lightning.' : this.fr ? 'Réponses aux questions sur les nœuds publics, les canaux, les frais de routage et les statistiques Lightning.' : this.de ? 'Antworten zu öffentlichen Knoten, Kanälen, Routing-Gebühren und Statistiken des Lightning-Netzwerks.' : 'Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.');
       this.ogService.setManualOgImage('faq.jpg');
     } else if(url[1]?.path === 'rest' ) {
       this.activeTab = 1;
