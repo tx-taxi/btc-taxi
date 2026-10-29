@@ -260,6 +260,7 @@
       </trans-unit>
       <trans-unit id="ngb.progressbar.value" datatype="html">
         <source><x id="INTERPOLATION" equiv-text="barConfig);  pu"/></source>
+        <target><x id="INTERPOLATION" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
           <context context-type="linenumber">41,42</context>
@@ -3875,6 +3876,7 @@
       </trans-unit>
       <trans-unit id="1c3e02c3cb8731ce0b6ff66dc6b60e54386f4230" datatype="html">
         <source>Stale Block</source>
+        <target>स्टेल ब्लॉक</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">13</context>
@@ -4044,6 +4046,7 @@
       </trans-unit>
       <trans-unit id="2862af5284f66d4b06bdcf77a5519141723b6989" datatype="html">
         <source>Stale</source>
+        <target>स्टेल</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">239</context>
@@ -4092,6 +4095,7 @@
       </trans-unit>
       <trans-unit id="873d4cb5adceda5fa9e9f1419644a0fa6ac9c17d" datatype="html">
         <source>Winning Block</source>
+        <target>विजेता ब्लॉक</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">289</context>
@@ -4221,6 +4225,7 @@
       </trans-unit>
       <trans-unit id="6dbc0664d5922cbd6b8bdc24d4c9ac8b990bae24" datatype="html">
         <source>There is a stale block at this height</source>
+        <target>इस ऊंचाई पर एक स्टेल ब्लॉक है</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">372</context>
@@ -4229,6 +4234,7 @@
       </trans-unit>
       <trans-unit id="1535773b0ebd72152246b84f01801104e823be0f" datatype="html">
         <source>There are <x id="INTERPOLATION" equiv-text="{{ block.extras.orphans.length }}"/> stale blocks at this height</source>
+        <target>इस ऊंचाई पर <x id="INTERPOLATION" /> स्टेल ब्लॉक हैं</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">374</context>
@@ -4481,7 +4487,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.blocks" datatype="html">
         <source>See the most recent Liquid<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blocks along with basic stats such as block height, block size, and more.</source>
-        <target>सबसे हाल के लिक्विड ब्लॉकों को बुनियादी आँकड़ों जैसे कि ब्लॉक की ऊँचाई, ब्लॉक का आकार, आदि के साथ देखें।</target>
+        <target>नवीनतम Liquid<x id="PH" /> ब्लॉक और ब्लॉक ऊंचाई, आकार जैसे बुनियादी आंकड़े देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -4489,7 +4495,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.blocks" datatype="html">
         <source>See the most recent Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> blocks along with basic stats such as block height, block reward, block size, and more.</source>
-        <target>सबसे हाल के बिटकॉइन ब्लॉकों को बुनियादी आँकड़ों जैसे कि ब्लॉक की ऊँचाई, ब्लॉक इनाम, ब्लॉक आकार और अधिक के साथ देखें।</target>
+        <target>नवीनतम Bitcoin<x id="PH" /> ब्लॉक और ब्लॉक ऊंचाई, इनाम, आकार जैसे बुनियादी आंकड़े देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -5497,7 +5503,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.hashrate" datatype="html">
         <source>See hashrate and difficulty for the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.network)"/> network visualized over time.</source>
-        <target>बिटकॉइन नेटवर्क के लिए हैशरेट और कठिनाई को समय के साथ देखें।</target>
+        <target>समय के साथ Bitcoin<x id="PH" /> नेटवर्क की हैशरेट और कठिनाई देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/hashrate-chart/hashrate-chart.component.ts</context>
           <context context-type="linenumber">79</context>
@@ -6119,6 +6125,7 @@
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x id="START_TAG_SPAN" />Etching<x id="CLOSE_TAG_SPAN" />: <x id="INTERPOLATION" /> <x id="START_TAG_SPAN_1" /><x id="INTERPOLATION_1" /><x id="CLOSE_TAG_SPAN" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
@@ -6136,6 +6143,7 @@
       </trans-unit>
       <trans-unit id="99264845cdffed75db1a32df6e66febbdf1d99f1" datatype="html">
         <source>Source inscription</source>
+        <target>स्रोत इंस्क्रिप्शन</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">44</context>
@@ -6786,6 +6794,7 @@
       </trans-unit>
       <trans-unit id="b3f9018166b8be3686c3cf58059a9f0ad993115e" datatype="html">
         <source>Maximum burn amount (sats)</source>
+        <target>अधिकतम बर्न राशि (sats)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">23</context>
@@ -6850,7 +6859,7 @@
       </trans-unit>
       <trans-unit id="meta.description.rbf-list" datatype="html">
         <source>See the most recent RBF replacements on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network, updated in real-time.</source>
-        <target>बिटकॉइन नेटवर्क पर सबसे हालिया आरबीएफ प्रतिस्थापन देखें, जो वास्तविक समय में अपडेट किया गया है।</target>
+        <target>Bitcoin<x id="PH" /> नेटवर्क पर रीयल टाइम में अपडेट होने वाले हालिया RBF प्रतिस्थापन देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/rbf-list/rbf-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -7192,6 +7201,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
+        <target>हालिया स्टेल चेन टिप्स</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7209,6 +7219,7 @@
       </trans-unit>
       <trans-unit id="1dfa086c48a00c275983ca44f687965008219f9d" datatype="html">
         <source>Headers Only</source>
+        <target>केवल हेडर</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">14</context>
@@ -7217,6 +7228,7 @@
       </trans-unit>
       <trans-unit id="5759ce11e2e959cbcbe7cdf05816f89679d82842" datatype="html">
         <source>Valid Headers</source>
+        <target>मान्य हेडर</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">15</context>
@@ -7252,6 +7264,7 @@
       </trans-unit>
       <trans-unit id="3181f08827514236ffd311786fe8ae62f0b361ab" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="Stale&lt;/span&gt;&lt;/div&gt;               &lt;div class=&quot;block-w"/>Stale<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x id="START_TAG_SPAN" />स्टेल<x id="CLOSE_TAG_SPAN" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">26,27</context>
@@ -7269,6 +7282,7 @@
       </trans-unit>
       <trans-unit id="26a65abd1f3dedb8b5777f6cb01262096549e94d" datatype="html">
         <source>This node hasn't seen any stale blocks yet!</source>
+        <target>इस नोड ने अभी तक कोई स्टेल ब्लॉक नहीं देखा है!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">120</context>
@@ -7277,6 +7291,7 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
+        <target>स्टेल चेन टिप्स</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -7284,6 +7299,7 @@
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network.</source>
+        <target>Bitcoin<x id="PH" /> नेटवर्क के सबसे हालिया स्टेल चेन टिप्स देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -7830,6 +7846,7 @@
       </trans-unit>
       <trans-unit id="30672d37c5c8491965bb7b78ad8baba58accec06" datatype="html">
         <source>Error decoding transaction, reason: <x id="INTERPOLATION" equiv-text="{{ error }}"/></source>
+        <target>लेनदेन डिकोड करने में त्रुटि, कारण: <x id="INTERPOLATION" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">16,18</context>
@@ -7858,6 +7875,7 @@
       </trans-unit>
       <trans-unit id="35117e03fda0fd4c6ecd1ff5737f883eec337a5e" datatype="html">
         <source> Redirecting to transaction page... </source>
+        <target>लेनदेन पृष्ठ पर भेजा जा रहा है...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">53,55</context>
@@ -8122,6 +8140,7 @@
       </trans-unit>
       <trans-unit id="81f138da4f955badade9fb60e0e2248627fc647f" datatype="html">
         <source>Inscription</source>
+        <target>इंस्क्रिप्शन</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">123</context>
@@ -8682,6 +8701,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.wallet" datatype="html">
         <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> wallet <x id="INTERPOLATION" equiv-text="walletName"/>.</source>
+        <target><x id="PH" /> वॉलेट <x id="PH_1" /><x id="INTERPOLATION" /> के मेमपूल और पुष्ट लेनदेन, बैलेंस और अन्य जानकारी देखें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/wallet/wallet-preview.component.ts</context>
           <context context-type="linenumber">151</context>
@@ -8840,15 +8860,15 @@
       </trans-unit>
       <trans-unit id="meta.title.docs.faq" datatype="html">
         <source>FAQ</source>
-        <target>सामान्य प्रश्न</target>
+        <target>अक्सर पूछे जाने वाले सवाल</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>सामान्य प्रश्नों के उत्तर पाएँ जैसे: मेमपूल क्या है? मेरा लेनदेन क्यों पुष्टि नहीं हो रहा है? मैं मेमपूल ओपन सोर्स प्रोजेक्ट का अपना इंस्टेंस कैसे चला सकता हूँ? और भी बहुत कुछ।</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Bitcoin के आम सवालों के जवाब पाएं, जिनमें मेमपूल, लेनदेन की पुष्टि, शुल्क, माइनिंग और ब्लॉक शामिल हैं।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8856,7 +8876,7 @@
       </trans-unit>
       <trans-unit id="meta.title.docs.rest" datatype="html">
         <source>REST API</source>
-        <target>REST एपीआई</target>
+        <target>REST API</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">52</context>
@@ -8871,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>मेमपूल.स्पेस REST API सेवा के लिए दस्तावेज़ीकरण: पते, लेनदेन, ब्लॉक, शुल्क, खनन, लाइटनिंग नेटवर्क और अधिक के बारे में जानकारी प्राप्त करें।</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>btc.tx.taxi REST API दस्तावेज़: Bitcoin के पते, लेनदेन, ब्लॉक, शुल्क, माइनिंग और नेटवर्क डेटा की क्वेरी करें।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8880,7 +8900,7 @@
       </trans-unit>
       <trans-unit id="meta.title.docs.websocket" datatype="html">
         <source>WebSocket API</source>
-        <target>वेबसॉकेट एपीआई</target>
+        <target>WebSocket API</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -8895,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>मेमपूल.स्पेस वेबसॉकेट एपीआई सेवा के लिए दस्तावेज़ीकरण: ब्लॉक, मेमपूल, लेनदेन, पते और अधिक पर वास्तविक समय की जानकारी प्राप्त करें।</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>btc.tx.taxi WebSocket API दस्तावेज़: Bitcoin के ब्लॉक, मेमपूल, लेनदेन और पतों के रीयल टाइम अपडेट पाएं।</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -11544,6 +11564,1649 @@
       <trans-unit id="taxi.footer.third-party" datatype="html">
         <source>Third-party Licenses</source>
         <target>तृतीय-पक्ष लाइसेंस</target>
+      </trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html">
+        <source>Bitcoin blocks, fees, and mempool activity</source>
+        <target>Bitcoin ब्लॉक, शुल्क और मेमपूल गतिविधि</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html">
+        <source>Pending Transactions</source>
+        <target>लंबित लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html">
+        <source>Bitcoin Graphs</source>
+        <target>Bitcoin ग्राफ़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html">
+        <source>Tools &amp; Docs</source>
+        <target>टूल और दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html">
+        <source>Bitcoin FAQ</source>
+        <target>Bitcoin FAQ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html">
+        <source>Source code</source>
+        <target>सोर्स कोड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html">
+        <source>Contact Us</source>
+        <target>संपर्क करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target>AGPLv3 के तहत जारी</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target>ट्रेडमार्क और श्रेय</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target>टैक्सी बुलाएं, यहां कुछ भी पेस्ट करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html">
+        <source>btc.tx.taxi dashboard</source>
+        <target>btc.tx.taxi डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html">
+        <source>Mining dashboard</source>
+        <target>माइनिंग डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html">
+        <source>Recent blocks</source>
+        <target>हालिया ब्लॉक</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html">
+        <source>Bitcoin graphs</source>
+        <target>Bitcoin ग्राफ़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html">
+        <source>About btc.tx.taxi</source>
+        <target>btc.tx.taxi के बारे में</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html">
+        <source>Sponsor Bitcoin for $150 per week</source>
+        <target>Bitcoin को $150 प्रति सप्ताह पर प्रायोजित करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html">
+        <source>Sponsor this chain for $150/wk</source>
+        <target>इस चेन को $150 प्रति सप्ताह पर प्रायोजित करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/master-page/master-page.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html">
+        <source>Made with</source>
+        <target>बनाया गया</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html">
+        <source>by</source>
+        <target>द्वारा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target>उपयोग</target></trans-unit>
+      <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>यह लेनदेन 1 लेनदेन वाले हिस्से में है, जिसकी संयुक्त प्रभावी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" /> है।</target></trans-unit>
+      <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target>पार्टनर कोड इस्तेमाल हो रहा है</target></trans-unit>
+      <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target>बार</target></trans-unit>
+      <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target>बार</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target>पैरेंट लेनदेन" - "cluster.parents</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target>चाइल्ड लेनदेन" - "cluster.child</target></trans-unit>
+      <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target>रिज़र्व की कमी</target></trans-unit>
+      <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target>वर्चुअल आकार" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target>यह लेनदेन" - "cluster.this-transaction</target></trans-unit>
+      <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi केवल Bitcoin नेटवर्क का सार्वजनिक डेटा दिखाता है।<x id="CLOSE_BOLD_TEXT" /> यह धन वापस नहीं ला सकता, वॉलेट की समस्याएं हल नहीं कर सकता, लेनदेन उलट नहीं सकता या पुष्टि की प्राथमिकता नहीं बदल सकता।<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />इन अनुरोधों के लिए लेनदेन बनाने वाले वॉलेट, एक्सचेंज या भुगतान सेवा से संपर्क करें।<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target>पैरेंट लेनदेन" - "cluster.parent</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target>आकार" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target>मेमपूल क्लस्टर में <x id="INTERPOLATION" /> अन्य हिस्से हैं।</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target>रोकें/फिर शुरू करें" - "recent-transactions.pause-toggle.title</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target>चाइल्ड लेनदेन" - "cluster.children</target></trans-unit>
+      <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target><x id="INTERPOLATION" /> नए लेनदेन</target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>यह लेनदेन <x id="INTERPOLATION" /> लेनदेन वाले हिस्से में है, जिसकी संयुक्त प्रभावी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" /> है।</target></trans-unit>
+      <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target>मानों को अधिकतम 2.1 करोड़ BTC की आपूर्ति तक सीमित किया गया है " - "calculator.max-supply-warning</target></trans-unit>
+      <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target>24 घंटे का वॉल्यूम</target></trans-unit>
+      <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>आपका बैलेंस बहुत कम है।</target></trans-unit>
+      <trans-unit id="5111568433154163082" datatype="html"><source>mempool chunk" - "cluster.mempool-chunk</source><target>मेमपूल हिस्सा" - "cluster.mempool-chunk</target></trans-unit>
+      <trans-unit id="5149188584039150457" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>LBTC आपूर्ति बनाम BTC होल्डिंग्स</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>और</target></trans-unit>
+      <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>एक अन्य हिस्से वाले मेमपूल क्लस्टर में।</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>रोकें/फिर शुरू करें" - "recent-transactions.pause-toggle.aria-label</target></trans-unit>
+      <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 नया लेनदेन</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>क्लस्टर" - "transaction.cluster</target></trans-unit>
+      <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>मिलते हुए लंबित लेनदेन दिखाने के लिए फ़िल्टर श्रेणियां चुनें</target></trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
+        <source>* On average around block <x id="block" equiv-text="data[0].data[2]" /></source>
+        <target>* औसतन ब्लॉक <x id="block" /> के आसपास</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
+        <source>Fees BTC</source>
+        <target>शुल्क BTC</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
+        <source>Fees <x id="currency" equiv-text="this.currency" /></source>
+        <target>शुल्क <x id="currency" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
+        <source>Fees (%)</source>
+        <target>शुल्क (%)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
+        <source>Fees (USD)</source>
+        <target>शुल्क (USD)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
+        <source>Subsidy</source>
+        <target>सब्सिडी</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
+        <source>Subsidy (%)</source>
+        <target>सब्सिडी (%)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
+        <source>Subsidy (USD)</source>
+        <target>सब्सिडी (USD)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html">
+        <source>See the most recent transactions on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network, updated in real-time.</source>
+        <target>Bitcoin<x id="PH" /> नेटवर्क के सबसे हालिया लेनदेन देखें, रीयल टाइम में अपडेट होते हैं।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html">
+        <source>About btc.tx.taxi</source>
+        <target>btc.tx.taxi के बारे में</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html">
+        <source>The Bitcoin explorer in the tx.taxi family.</source>
+        <target>tx.taxi परिवार का Bitcoin एक्सप्लोरर।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html">
+        <source>Project links</source>
+        <target>प्रोजेक्ट लिंक</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html">
+        <source>Bitcoin documentation</source>
+        <target>Bitcoin दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html">
+        <source>Contact the maintainer</source>
+        <target>रखरखावकर्ता से संपर्क करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html">
+        <source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source>
+        <target>btc.tx.taxi बहु-चेन tx.taxi परिवार का Bitcoin एक्सप्लोरर है। यह ब्लॉक, लेनदेन, पते, माइनिंग, शुल्क अनुमान और लाइव Bitcoin मेमपूल देखने के लिए Mempool का परिचित इंटरफ़ेस और Bitcoin के लिए tx.taxi पहचान इस्तेमाल करता है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html">
+        <source>Bitcoin-native data</source>
+        <target>Bitcoin का डेटा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html">
+        <source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source>
+        <target>मान BTC, satoshi या चुनी हुई फ़िएट मुद्रा में रहते हैं। शुल्क दर sat/vB और लेनदेन आकार vB या वेट यूनिट में रहते हैं; ब्लॉक, पते और माइनिंग की अवधारणाओं का Bitcoin अर्थ बरकरार रहता है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html">
+        <source>Infrastructure</source>
+        <target>इन्फ्रास्ट्रक्चर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html">
+        <source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source>
+        <target>एक्सप्लोरर अपने कॉन्फ़िगर किए गए बैकएंड से सार्वजनिक Bitcoin नेटवर्क डेटा पढ़ता है। परिणाम सूचनात्मक हैं और दूसरे नोड के मेमपूल दृश्य से अलग हो सकते हैं। भुगतान विवरण हमेशा अपने वॉलेट में जांचें और स्वतंत्र सत्यापन के लिए अपना नोड इस्तेमाल करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html">
+        <source>License</source>
+        <target>लाइसेंस</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html">
+        <source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source>
+        <target>btc.tx.taxi में लाइसेंस प्राप्त ओपन-सोर्स घटक शामिल हैं। श्रेय के लिए तृतीय-पक्ष लाइसेंस नोटिस देखें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html">
+        <source>Built on open source</source>
+        <target>ओपन सोर्स पर आधारित</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source>
+        <target>यह एक्सप्लोरर <x id="START_LINK" />Mempool Open Source Project<x id="CLOSE_LINK" /> पर आधारित है। <x id="START_LINK_1" />तृतीय-पक्ष श्रेय<x id="CLOSE_LINK" /> देखें और सोर्स कोड तथा लाइसेंस जानकारी के लिए रखरखावकर्ता से संपर्क करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html">
+        <source>Median fee rate</source>
+        <target>माध्यिका शुल्क दर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html">
+        <source>Fee range</source>
+        <target>शुल्क सीमा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html">
+        <source>en-US</source>
+        <target>hi-IN</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/block-format.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html">
+        <source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source>
+        <target>गायब पिछले आउटपुट लोड नहीं हुए। शुल्क दर जैसे कुछ फ़ील्ड की गणना नहीं की जा सकती।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html">
+        <source>Error loading missing prevouts</source>
+        <target>गायब पिछले आउटपुट लोड करने में त्रुटि</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html">
+        <source>Reason:</source>
+        <target>कारण:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html">
+        <source>Error loading CPFP data</source>
+        <target>CPFP डेटा लोड करने में त्रुटि</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html">
+        <source>select filter categories to highlight matching pending transactions</source>
+        <target>मिलते हुए लंबित लेनदेन दिखाने के लिए फ़िल्टर श्रेणियां चुनें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Transaction filters tooltip</note>
+      </trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html">
+        <source> Values were capped at the max supply of 21M BTC </source>
+        <target>मानों को अधिकतम 2.1 करोड़ BTC की आपूर्ति तक सीमित किया गया है</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/calculator/calculator.component.html</context>
+          <context context-type="linenumber">50,52</context>
+        </context-group>
+        <note priority="1" from="description">Max supply warning message</note>
+        <note priority="1" from="meaning">calculator.max-supply-warning</note>
+      </trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html">
+        <source>More</source>
+        <target>और</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">more</note>
+      </trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
+        <source>1 new transaction</source>
+        <target state="translated">1 नया लेन-देन</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.singular</note>
+      </trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
+        <target state="translated">नए लेन-देन: <x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.plural</note>
+      </trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
+        <source>Pause/Resume</source>
+        <target state="translated">रोकें / जारी रखें</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Tooltip for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.title</note>
+      </trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
+        <source>Pause/Resume</source>
+        <target state="translated">रोकें / जारी रखें</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Accessible label for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.aria-label</note>
+      </trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html">
+        <source>vSize</source>
+        <target>वर्चुअल आकार</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Transaction Virtual Size</note>
+        <note priority="1" from="meaning">transaction.vsize</note>
+      </trans-unit>
+      <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html">
+        <source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>यह लेनदेन 1 लेनदेन वाले हिस्से में है, जिसकी संयुक्त प्रभावी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" /> है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.chunk-line-one</note>
+      </trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html">
+        <source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>यह लेनदेन <x id="INTERPOLATION" /> लेनदेन वाले हिस्से में है, जिसकी संयुक्त प्रभावी शुल्क दर <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" /> है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.chunk-line-many</note>
+      </trans-unit>
+      <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html">
+        <source>In a mempool cluster containing 1 other chunk.</source>
+        <target>एक अन्य हिस्से वाले मेमपूल क्लस्टर में।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.cluster-line-one</note>
+      </trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html">
+        <source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source>
+        <target>मेमपूल क्लस्टर में <x id="INTERPOLATION" /> अन्य हिस्से हैं।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.cluster-line-many</note>
+      </trans-unit>
+      <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source>
+        <target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi केवल Bitcoin नेटवर्क का सार्वजनिक डेटा दिखाता है।<x id="CLOSE_BOLD_TEXT" /> यह धन वापस नहीं ला सकता, वॉलेट की समस्याएं हल नहीं कर सकता, लेनदेन उलट नहीं सकता या पुष्टि की प्राथमिकता नहीं बदल सकता।<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />इन अनुरोधों के लिए लेनदेन बनाने वाले वॉलेट, एक्सचेंज या भुगतान सेवा से संपर्क करें।<x id="CLOSE_PARAGRAPH" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/docs/api-docs/api-docs.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">faq.big-disclaimer</note>
+      </trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html">
+        <source>Your balance is too low.</source>
+        <target>आपका बैलेंस बहुत कम है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">accelerator.low-balance</note>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html">
+        <source>No node found.</source>
+        <target>कोई नोड नहीं मिला।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html">
+        <source>No channel found.</source>
+        <target>कोई चैनल नहीं मिला।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html">
+        <source>Lightning data unavailable.</source>
+        <target>Lightning डेटा उपलब्ध नहीं है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html">
+        <source>Retry</source>
+        <target>फिर से कोशिश करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html">
+        <source>Cached data</source>
+        <target>कैश किया गया डेटा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/request-state.directive.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html">
+        <source>Reconnecting…</source>
+        <target>फिर से कनेक्ट हो रहा है…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/request-state.directive.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html">
+        <source>Raw bits</source>
+        <target>रॉ बिट्स</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html">
+        <source>Required</source>
+        <target>आवश्यक</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html">
+        <source>Node address</source>
+        <target>नोड का पता</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html">
+        <source>No Lightning node or channel found.</source>
+        <target>कोई Lightning नोड या चैनल नहीं मिला।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">553</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">557</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html">
+        <source>Search unavailable. Try again.</source>
+        <target>खोज उपलब्ध नहीं है। फिर से कोशिश करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">557</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>लेनदेन के पिछले आउटपुट लोड हो रहे हैं</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>CPFP लोड हो रहा है</target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>लोड हो रहा है</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>कुछ पिछले आउटपुट मौजूद नहीं हैं या पहले ही खर्च हो चुके हैं</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>लेनदेन प्रसारित नहीं हो सका, कारण: </target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>इस पते से जुड़ा hex या base64 में एनकोड किया गया PSBT</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>Hex या base64 में एनकोड किए गए, अल्पविराम से अलग PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>Hex या base64 में एनकोड किया गया PSBT_OUT_TAP_TREE फ़ील्ड</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>Hex या base64 में एनकोड की गई केवल x वाली सार्वजनिक कुंजी</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>Tapleaf</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>Taproot ट्री</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>आंतरिक कुंजी</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source>
+        <target>Tapleaf को अल्पविराम से अलग करें और प्रारूप "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" रखें</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>Taproot डेटा प्रोसेस करते समय त्रुटि हुई</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html">
+        <source>Bitcoin explorer dashboard</source>
+        <target>Bitcoin एक्सप्लोरर डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target>ब्लॉक का आकार दिखाएं</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target>हर ब्लॉक का कुल शुल्क दिखाएं</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target>नवीनतम ब्लॉक दाईं ओर दिखाएं</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target>नवीनतम ब्लॉक बाईं ओर दिखाएं</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html">
+        <source>Logo of <x id="NAME" equiv-text="this.name" /> mining pool</source>
+        <target><x id="NAME" /> माइनिंग पूल का लोगो</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target>माइनिंग पूल का लोगो</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target><x id="INTERPOLATION" /> माइनिंग पूल का लोगो</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html">
+        <source>The Lightning network, in view.</source>
+        <target>Lightning नेटवर्क एक नज़र में।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html">
+        <source>Explore Lightning</source>
+        <target>Lightning एक्सप्लोर करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html">
+        <source>Documentation</source>
+        <target>दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html">
+        <source>Source code</source>
+        <target>स्रोत कोड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html">
+        <source>Status</source>
+        <target>स्थिति</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html">
+        <source>Nodes, channels, and the network between them</source>
+        <target>नोड, चैनल और उनके बीच का नेटवर्क</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html">
+        <source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source>
+        <target>सार्वजनिक Lightning नोड और चैनल, रूटिंग नीतियाँ, नेटवर्क क्षमता, भौगोलिक वितरण और ऐतिहासिक आँकड़े देखें। किसी नोड के कनेक्शन देखें या किसी चैनल के खुलने और बंद होने की जाँच करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html">
+        <source>Part of tx.taxi</source>
+        <target>tx.taxi का हिस्सा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html">
+        <source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source>
+        <target>इसी खोज से Lightning नोड या चैनल ढूँढें, एक्सप्लोरर बदलें या किसी लेनदेन को उसके ब्लॉकचेन पर भेजें। Bitcoin का ऑन-चेन एक्सप्लोरर यहाँ है:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html">
+        <source>A public network view</source>
+        <target>सार्वजनिक नेटवर्क का दृश्य</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html">
+        <source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source>
+        <target>Lightning भुगतान और निजी चैनल सार्वजनिक रूप से दिखाई नहीं देते। क्षमता किसी सार्वजनिक चैनल में प्रतिबद्ध बिटकॉइन की मात्रा बताती है; इससे किसी भी पक्ष का वर्तमान खर्च योग्य बैलेंस पता नहीं चलता। नोड के स्थान घोषित नेटवर्क एंडपॉइंट दर्शाते हैं।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html">
+        <source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source>
+        <target>आँकड़े स्रोत स्नैपशॉट की तारीख दिखाते हैं। सेवा में रुकावट के दौरान कैश किया गया डेटा उपलब्ध रहता है।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html">
+        <source>Open source</source>
+        <target>ओपन सोर्स</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html">
+        <source>Built on the</source>
+        <target>आधार:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html">
+        <source>Mempool project</source>
+        <target>Mempool परियोजना</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html">
+        <source>released under the GNU AGPLv3. Made with 🚕 by</source>
+        <target>GNU AGPLv3 के तहत जारी। 🚕 के साथ बनाया:</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html">
+        <source>Lightning nodes, channels, and network activity</source>
+        <target>Lightning नोड, चैनल और नेटवर्क गतिविधि</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html">
+        <source>Explore</source>
+        <target>एक्सप्लोर करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html">
+        <source>Lightning Dashboard</source>
+        <target>Lightning डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html">
+        <source>Node Rankings</source>
+        <target>नोड रैंकिंग</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html">
+        <source>Node Map</source>
+        <target>नोड मानचित्र</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html">
+        <source>Channels Map</source>
+        <target>चैनल मानचित्र</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html">
+        <source>Penalties</source>
+        <target>दंड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html">
+        <source>Network &amp; Docs</source>
+        <target>नेटवर्क और दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html">
+        <source>Network History</source>
+        <target>नेटवर्क इतिहास</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html">
+        <source>Countries</source>
+        <target>देश</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html">
+        <source>ISPs</source>
+        <target>इंटरनेट सेवा प्रदाता</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html">
+        <source>Lightning FAQ</source>
+        <target>Lightning FAQ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html">
+        <source>API Documentation</source>
+        <target>API दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html">
+        <source>About</source>
+        <target>परिचय</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html">
+        <source>Source code</source>
+        <target>स्रोत कोड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html">
+        <source>Status</source>
+        <target>स्थिति</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html">
+        <source>Contact Us</source>
+        <target>संपर्क करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target>AGPLv3 के तहत जारी</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html">
+        <source>Legal</source>
+        <target>कानूनी जानकारी</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html">
+        <source>Terms of Service</source>
+        <target>सेवा की शर्तें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html">
+        <source>Privacy Policy</source>
+        <target>गोपनीयता नीति</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target>ट्रेडमार्क और श्रेय</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html">
+        <source>Third-party Licenses</source>
+        <target>तृतीय-पक्ष लाइसेंस</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html">
+        <source>Made with</source>
+        <target>बनाया गया</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html">
+        <source>by</source>
+        <target>द्वारा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source>
+        <target>tx.taxi के Telegram चैनल से जुड़ें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html">
+        <source>tx.taxi Lightning explorer</source>
+        <target>tx.taxi Lightning एक्सप्लोरर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html">
+        <source>Lightning dashboard</source>
+        <target>Lightning डैशबोर्ड</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html">
+        <source>Node rankings</source>
+        <target>नोड रैंकिंग</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html">
+        <source>Lightning graphs</source>
+        <target>Lightning ग्राफ़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html">
+        <source>Documentation</source>
+        <target>दस्तावेज़</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html">
+        <source>About Lightning</source>
+        <target>Lightning के बारे में</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html">
+        <source>View on btc.tx.taxi</source>
+        <target>btc.tx.taxi पर देखें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html">
+        <source>Connecting…</source>
+        <target>कनेक्ट हो रहा है…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html">
+        <source>SELECTED</source>
+        <target>चयनित</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html">
+        <source>Automatic Routing</source>
+        <target>स्वचालित रूटिंग</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html">
+        <source>View Hub</source>
+        <target>हब देखें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source>
+        <target>नेटिव एक्सप्लोरर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source>
+        <target>तृतीय-पक्ष एक्सप्लोरर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source>
+        <target>एक्सप्लोरर रजिस्ट्री उपलब्ध नहीं है</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source>
+        <target>एक्सप्लोरर लोड हो रहे हैं</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html">
+        <source>Open</source>
+        <target>खोलें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html">
+        <source>Opened</source>
+        <target>खुला है</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html">
+        <source>Switch</source>
+        <target>बदलें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html">
+        <source>Found</source>
+        <target>मिला</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html">
+        <source>Possible</source>
+        <target>संभावित</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target>टैक्सी बुलाएँ, यहाँ कुछ भी पेस्ट करें।</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html">
+        <source>Search</source>
+        <target>खोजें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html">
+        <source>Search</source>
+        <target>खोजें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html">
+        <source>Choose search chain</source>
+        <target>खोज के लिए नेटवर्क चुनें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html">
+        <source>Selected explorer</source>
+        <target>चयनित एक्सप्लोरर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html">
+        <source>btc.tx.taxi Bitcoin explorer</source>
+        <target>btc.tx.taxi Bitcoin एक्सप्लोरर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>tx.taxi के Telegram चैनल से जुड़ें</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html">
+        <source>Copy</source>
+        <target>कॉपी करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html">
+        <source>Copied</source>
+        <target>कॉपी किया गया</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html">
+        <source>Copy to clipboard</source>
+        <target>क्लिपबोर्ड पर कॉपी करें</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html">
+        <source>Copied to clipboard</source>
+        <target>क्लिपबोर्ड पर कॉपी किया गया</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.mining-pool.logo" datatype="html">
+        <source>Logo of <x id="pool" /> mining pool</source>
+        <target><x id="pool" /> माइनिंग पूल का लोगो</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html">
+        <source>Mining pool logo</source>
+        <target>माइनिंग पूल का लोगो</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target>पृथ्वी पर कहीं भी (AoE)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target>समोआ मानक समय (SST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target>हवाई मानक समय (HST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target>अलास्का मानक समय (AKST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target>प्रशांत मानक समय (PST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target>माउंटेन मानक समय (MST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target>केंद्रीय मानक समय (CST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target>पूर्वी मानक समय (EST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target>अटलांटिक मानक समय (AST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target>अर्जेंटीना समय (ART)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target>फर्नांडो डी नोरोन्हा समय (FNT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target>अज़ोरेस समय (AZOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target>ग्रीनविच मीन टाइम (GMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target>मध्य यूरोपीय समय (CET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target>पूर्वी यूरोपीय समय (EET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target>मॉस्को मानक समय (MSK)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target>आर्मेनिया समय (AMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target>पाकिस्तान मानक समय (PKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target>शिनजियांग समय (XJT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target>इंडोचाइना समय (ICT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target>हांगकांग समय (HKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target>जापान मानक समय (JST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target>ऑस्ट्रेलियाई पूर्वी मानक समय (AEST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target>नॉरफ़ॉक समय (NFT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target>न्यूज़ीलैंड मानक समय (NZST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target>टोंगा समय (TOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target>लाइन द्वीप समय (LINT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>रूटिंग नोड द्वारा लिया जाने वाला औसत आधार शुल्क, 5000 mSats से अधिक आधार शुल्क छोड़कर</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>रूटिंग नोड द्वारा लिया जाने वाला माध्यिका आधार शुल्क, 5000 mSats से अधिक आधार शुल्क छोड़कर</target></trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target>इंस्क्रिप्शन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html">
+        <source>Using partner code</source>
+        <target>पार्टनर कोड इस्तेमाल हो रहा है</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
+          <context context-type="linenumber">658</context>
+        </context-group>
+        <note priority="1" from="description">accelerator.using-partner-code</note>
+      </trans-unit>
+      <trans-unit id="1cdb643999eb6d66bcd839aeaa381b62b8be8cd4" datatype="html">
+        <source>mempool chunk</source>
+        <target>मेमपूल हिस्सा</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">Mempool chunk tooltip</note>
+        <note priority="1" from="meaning">cluster.mempool-chunk</note>
+      </trans-unit>
+      <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html">
+        <source>this transaction</source>
+        <target>यह लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">this transaction</note>
+        <note priority="1" from="meaning">cluster.this-transaction</note>
+      </trans-unit>
+      <trans-unit id="1eb8a98f68c1c98884c6436650f5ad80f4b3d5bf" datatype="html">
+        <source>parents</source>
+        <target>पैरेंट लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <note priority="1" from="description">parents</note>
+        <note priority="1" from="meaning">cluster.parents</note>
+      </trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html">
+        <source>children</source>
+        <target>चाइल्ड लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <note priority="1" from="description">children</note>
+        <note priority="1" from="meaning">cluster.children</note>
+      </trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html">
+        <source>parent</source>
+        <target>पैरेंट लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <note priority="1" from="description">parent</note>
+        <note priority="1" from="meaning">cluster.parent</note>
+      </trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html">
+        <source>child</source>
+        <target>चाइल्ड लेनदेन</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <note priority="1" from="description">child</note>
+        <note priority="1" from="meaning">cluster.child</note>
+      </trans-unit>
+      <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html">
+        <source>24h Volume</source>
+        <target>24 घंटे का वॉल्यूम</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">liquid.24h-volume</note>
+      </trans-unit>
+      <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html">
+        <source>Reserve Deficit</source>
+        <target>रिज़र्व की कमी</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">liquid.reserve-deficit</note>
+      </trans-unit>
+      <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html">
+        <source>occurrence</source>
+        <target>बार</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">shared.occurrence</note>
+      </trans-unit>
+      <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html">
+        <source>occurrences</source>
+        <target>बार</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">shared.occurrences</note>
+      </trans-unit>
+      <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html">
+        <source>usages</source>
+        <target>उपयोग</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">shared.usages</note>
+      </trans-unit>
+      <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html">
+        <source>Cluster</source>
+        <target>क्लस्टर</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">Cluster</note>
+        <note priority="1" from="meaning">transaction.cluster</note>
+      </trans-unit>
+      <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html">
+        <source>LBTC Supply vs. BTC Holdings</source>
+        <target>LBTC आपूर्ति बनाम BTC होल्डिंग्स</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+        <note priority="1" from="description">dashboard.lbtc-supply-vs-btc-holdings</note>
       </trans-unit>
     </body>
   </file>
