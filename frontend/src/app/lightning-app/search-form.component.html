@@ -52,11 +52,11 @@
                 </span>
               </button>
               <span class="search-chain-actions">
-                <a class="search-chain-new-tab" [attr.href]="hubLocaleReady ? hubUrl : null" (click)="openHub($event)" target="_blank" rel="noopener noreferrer"
+                <a class="search-chain-new-tab" [href]="hubUrl" (click)="openHub($event)" target="_blank" rel="noopener noreferrer"
                   [attr.aria-label]="menuCopy.openNewTab('tx.taxi')" [attr.title]="menuCopy.openNewTab('tx.taxi')">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
-                <a class="search-chain-switch" [attr.href]="hubLocaleReady ? hubUrl : null" (click)="openHub($event)"><ng-container i18n="@@taxi.lightning.search.viewHub">View Hub</ng-container></a>
+                <a class="search-chain-switch" [href]="hubUrl" (click)="openHub($event)"><ng-container i18n="@@taxi.lightning.search.viewHub">View Hub</ng-container></a>
               </span>
             </div>
             </ng-template>
