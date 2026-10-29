@@ -16,9 +16,10 @@ export class PrivacyPolicyComponent {
   get es(): boolean { return this.locale.startsWith('es'); }
   get fr(): boolean { return this.locale.startsWith('fr'); }
   get de(): boolean { return this.locale.startsWith('de'); }
+  get it(): boolean { return this.locale.startsWith('it'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');
-    this.seoService.setDescription(this.fr ? 'Informations de confidentialité pour lightning.btc.tx.taxi : données publiques, préférences du navigateur, journaux du serveur et vérification indépendante.' : this.de ? 'Datenschutzhinweise für lightning.btc.tx.taxi zu öffentlichen Daten, Browsereinstellungen, Serverprotokollen und unabhängiger Überprüfung.' : this.es ? 'Información de privacidad de lightning.btc.tx.taxi sobre datos públicos de Lightning, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for lightning.btc.tx.taxi, including public Lightning data, browser preferences, server logs, and independent verification.');
+    this.seoService.setTitle(this.it ? 'Informativa sulla privacy' : this.fr ? 'Politique de confidentialité' : this.de ? 'Datenschutzerklärung' : this.es ? 'Política de privacidad' : 'Privacy Policy');
+    this.seoService.setDescription(this.it ? 'Informativa sulla privacy di lightning.btc.tx.taxi: dati pubblici, preferenze del browser, registri del server e verifica indipendente.' : this.fr ? 'Informations de confidentialité pour lightning.btc.tx.taxi : données publiques, préférences du navigateur, journaux du serveur et vérification indépendante.' : this.de ? 'Datenschutzhinweise für lightning.btc.tx.taxi zu öffentlichen Daten, Browsereinstellungen, Serverprotokollen und unabhängiger Überprüfung.' : this.es ? 'Información de privacidad de lightning.btc.tx.taxi sobre datos públicos de Lightning, preferencias del navegador, registros del servidor y verificación independiente.' : 'Privacy notes for lightning.btc.tx.taxi, including public Lightning data, browser preferences, server logs, and independent verification.');
   }
 }

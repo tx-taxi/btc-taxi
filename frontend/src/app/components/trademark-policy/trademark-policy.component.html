@@ -44,7 +44,8 @@
 </ng-container>
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
-<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -132,6 +133,30 @@
   <br><br>
 </div>
 
+</ng-template>
+
+
+<ng-template #italianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Marchi e attribuzioni</h2><h6>Aggiornato: 20 settembre 2026</h6><br><br>
+<div class="text-start">
+  <h4>Identità tx.taxi</h4>
+  <p>btc.tx.taxi è un esploratore Bitcoin della famiglia tx.taxi gestito in modo indipendente. Il dominio, il logo, la palette della blockchain e l’identità del servizio distinguono questo fork dal progetto originale.</p>
+  <br>
+  <h4>Attribuzione al progetto originale</h4>
+  <p>Questo software deriva dal progetto open source Mempool. Il codice sorgente originale, il sistema visivo, i nomi del progetto, i loghi e i marchi appartengono ai rispettivi proprietari.</p>
+  <br>
+  <h4>Nessuna affiliazione</h4>
+  <p>btc.tx.taxi non è affiliato, sponsorizzato o approvato da Mempool Holdings S.A. de C.V. I riferimenti a mempool.space e mempool/mempool identificano il software da cui deriva questo fork.</p>
+  <br>
+  <h4>Bitcoin</h4>
+  <p>Bitcoin è una rete e un protocollo aperti. I riferimenti a Bitcoin, BTC, satoshi, blocchi, transazioni, indirizzi, mining e Lightning descrivono i dati di rete presentati da questo esploratore.</p>
+  <br>
+  <h4>Licenza</h4>
+  <p>Questo fork rispetta gli obblighi AGPLv3 del progetto originale. Contatta il gestore per le informazioni applicabili sul codice sorgente e sulla licenza.</p>
+  <br>
+</div></div><br><br></div>
 </ng-template>
 
 <ng-template #englishLegal>

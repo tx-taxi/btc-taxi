@@ -48,7 +48,8 @@
 </ng-container>
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
-<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -146,6 +147,33 @@
   <br><br>
 </div>
 
+</ng-template>
+
+
+<ng-template #italianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="lightning.btc.tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Informativa sulla privacy</h2><h6>Aggiornato: 3 ottobre 2026</h6><br><br>
+<div class="text-start">
+  <h4>Dati pubblici della rete</h4>
+  <p>lightning.btc.tx.taxi mostra gli annunci pubblici e le statistiche della rete Lightning. I canali privati, i singoli pagamenti e i saldi dei canali non sono pubblicamente visibili. Per una verifica indipendente, confronta il grafo pubblico con il tuo nodo Lightning.</p>
+  <br>
+  <h4>Dati delle richieste</h4>
+  <p>Le normali richieste al sito e all’API possono rivelare al gestore i consueti metadati web, tra cui indirizzo IP, user agent, URL richiesto e ora della richiesta. I registri del server possono essere conservati per garantire l’affidabilità, prevenire abusi e risolvere problemi.</p>
+  <br>
+  <h4>Preferenze locali</h4>
+  <p>Le preferenze di visualizzazione, come tema, denominazione, valuta fiat, lingua e fuso orario, possono essere salvate nel browser. L’utilizzo ordinario dell’esploratore lightning.btc.tx.taxi non richiede un account.</p>
+  <br>
+  <h4>Ricerche e canali pubblici</h4>
+  <p>Le chiavi dei nodi Lightning pubblici, gli endpoint annunciati, le politiche dei canali e le transazioni Bitcoin di finanziamento sono pubblici. La ricerca di un nodo o canale può essere associata ai tuoi metadati di rete. Non considerare un esploratore pubblico una barriera per la privacy.</p>
+  <br>
+  <h4>Link esterni</h4>
+  <p>Questo sito contiene link ai canali di contatto di tx.taxi, alla documentazione Bitcoin, al codice sorgente originale e alle informazioni sulle licenze. Questi servizi esterni hanno le proprie informative sulla privacy.</p>
+  <br>
+  <h4>Attribuzione open source</h4>
+  <p>lightning.btc.tx.taxi deriva da mempool/mempool e ne eredita gli obblighi AGPLv3. Nomi, loghi e marchi Mempool restano proprietà dei rispettivi titolari; lightning.btc.tx.taxi non è affiliato né approvato da Mempool Holdings S.A. de C.V.</p>
+  <br>
+</div></div><br><br></div>
 </ng-template>
 
 <ng-template #englishLegal>

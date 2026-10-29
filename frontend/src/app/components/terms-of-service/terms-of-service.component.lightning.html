@@ -48,7 +48,8 @@
 </ng-container>
 
 <ng-template #otherLegal><ng-container *ngIf="fr; else germanOrEnglish" [ngTemplateOutlet]="frenchLegal"></ng-container></ng-template>
-<ng-template #germanOrEnglish><ng-container *ngIf="de; else englishLegal" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #germanOrEnglish><ng-container *ngIf="de; else italianOrEnglish" [ngTemplateOutlet]="germanLegal"></ng-container></ng-template>
+<ng-template #italianOrEnglish><ng-container *ngIf="it; else englishLegal" [ngTemplateOutlet]="italianLegal"></ng-container></ng-template>
 
 <ng-template #frenchLegal>
 <div class="container-xl">
@@ -146,6 +147,33 @@
   <br><br>
 </div>
 
+</ng-template>
+
+
+<ng-template #italianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="lightning.btc.tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Termini di servizio</h2><h6>Aggiornato: 3 ottobre 2026</h6><br><br>
+<div class="text-start">
+  <h4>Esploratore informativo</h4>
+  <p>lightning.btc.tx.taxi mostra nodi e canali Lightning pubblici, politiche di instradamento, capacità della rete e statistiche storiche. È un servizio informativo, non un portafoglio, exchange, custode, elaboratore di pagamenti o servizio di priorità delle transazioni.</p>
+  <br>
+  <h4>Nessun controllo su pagamenti o canali</h4>
+  <p>Il gestore non può inviare, annullare, recuperare o reindirizzare un pagamento Lightning né controllare un canale. Per problemi con portafogli o pagamenti, contatta il servizio che ha creato o ricevuto il pagamento.</p>
+  <br>
+  <h4>Dati e disponibilità</h4>
+  <p>I dati dell’esploratore possono essere in ritardo, incompleti, non disponibili o diversi dalla vista di un altro nodo. Le commissioni di instradamento annunciate non garantiscono che sia disponibile un percorso o che un pagamento vada a buon fine. Il servizio è fornito così com’è, senza garanzia di disponibilità continua o di idoneità a uno scopo particolare.</p>
+  <br>
+  <h4>Uso consentito</h4>
+  <p>Non abusare del sito o dell’API, interferire con il funzionamento del servizio, aggirare limiti ragionevoli di richiesta o utilizzare il servizio illegalmente. L’accesso può essere limitato quando necessario per proteggere la disponibilità.</p>
+  <br>
+  <h4>Servizi esterni</h4>
+  <p>Questo sito può contenere link ai canali di contatto di tx.taxi, a risorse Bitcoin, informazioni sulle licenze e servizi di infrastruttura. I siti esterni hanno condizioni e informative proprie.</p>
+  <br>
+  <h4>Open source</h4>
+  <p>lightning.btc.tx.taxi deriva dal progetto open source Mempool ed è distribuito secondo gli obblighi AGPLv3. Contatta <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> per le informazioni applicabili sul codice sorgente e sulla licenza.</p>
+  <br>
+</div></div><br><br></div>
 </ng-template>
 
 <ng-template #englishLegal>
