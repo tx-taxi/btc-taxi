@@ -6125,7 +6125,7 @@
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>에칭:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}"/> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
@@ -8867,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>자주 묻는 질문에 대한 답을 확인하세요: 멤풀이란? 왜 내 트랜잭션이 확정되지 않나요? Mempool 오픈소스 프로젝트를 직접 실행하려면 어떻게 해야 하나요? 등</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>멤풀 동작, 거래 확인, 수수료, 채굴과 블록 등 Bitcoin에 관한 자주 묻는 질문의 답변을 확인하세요.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8891,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>mempool.space REST API 문서: 주소, 트랜잭션, 블록, 수수료, 채굴, 라이트닝 네트워크 등의 정보를 확인하세요.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>btc.tx.taxi REST API 문서: Bitcoin 주소, 거래, 블록, 수수료, 채굴과 네트워크 데이터를 조회합니다.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8915,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>mempool.space WebSocket API 문서: 블록, 멤풀, 트랜잭션, 주소 등의 실시간 정보 제공</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>btc.tx.taxi WebSocket API 문서: Bitcoin 블록, 멤풀, 거래와 주소 업데이트를 실시간으로 받습니다.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
