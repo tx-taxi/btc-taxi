@@ -1,0 +1,30 @@
+/** Arabic Bitcoin REST and WebSocket reference. Draft; not yet selected by the docs. */
+const periods = '<code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>';
+const periodNote = `<p>استخدم ${periods} لقيمة <code>:timePeriod</code>. يحتوي <code>24h</code> و<code>3d</code> على القيم الدقيقة لجميع الكتل. في <code>1w</code> قد تُحسب القيم المتوسطة بحسب معدل إنتاج الكتل. تعرض الفترات الأخرى قيمًا متوسطة.</p>`;
+export const arabicApiEntries: Record<string, [string, string?]> = {
+ general:['عام'], addresses:['العناوين'], blocks:['الكتل'], mining:['التعدين'], fees:['الرسوم'], mempool:['مجمع المعاملات'], transactions:['المعاملات'],
+ 'get-difficulty-adjustment':['GET تعديل الصعوبة','يعيد معلومات تعديل الصعوبة.'],
+ 'get-price':['GET السعر','يعيد سعر Bitcoin الحالي بالعملات الرئيسية.'],
+ 'get-historical-price':['GET السعر التاريخي','يعيد سعر Bitcoin التاريخي بالعملات الرئيسية. معاملا الاستعلام هما <code>currency</code> و<code>timestamp</code>. عند حذفهِما يعيد التاريخ المتاح لجميع العملات.'],
+ 'get-address':['GET العنوان','يعيد معلومات العنوان. الحقول هي <code>address</code> و<code>chain_stats</code> و<code>mempool_stats</code>. يتضمن الحقلان الأخيران <code>tx_count</code> و<code>funded_txo_count</code> و<code>funded_txo_sum</code> و<code>spent_txo_count</code> و<code>spent_txo_sum</code>.'],
+ 'get-address-transactions':['GET معاملات العنوان','يعيد سجل العنوان أو scripthash من الأحدث أولًا، بما يصل إلى 50 معاملة من مجمع المعاملات وأول 25 معاملة مؤكدة. استخدم <code>after_txid</code> للحصول على المزيد من المعاملات المؤكدة.'],
+ 'get-address-transactions-chain':['GET معاملات العنوان المؤكدة','يعيد السجل المؤكد للعنوان أو scripthash من الأحدث أولًا، بواقع 25 معاملة في الصفحة. للصفحة التالية قدّم txid النتيجة الأخيرة في الصفحة السابقة.'],
+ 'get-address-transactions-mempool':['GET معاملات العنوان غير المؤكدة','يعيد ما يصل إلى 50 معاملة غير مؤكدة للعنوان أو scripthash دون ترقيم صفحات.'],
+ 'get-address-utxo':['GET مخرجات العنوان غير المنفقة','يعيد مخرجات العنوان أو scripthash غير المنفقة. الحقول هي <code>txid</code> و<code>vout</code> و<code>value</code> و<code>status</code> (حالة المعاملة التي أنشأت المخرج).'],
+ 'get-address-validate':['GET التحقق من العنوان','يبين صلاحية العنوان. الحقول هي <code>isvalid</code> (قيمة منطقية)، و<code>address</code> (نص)، و<code>scriptPubKey</code> (نص)، و<code>isscript</code> (قيمة منطقية)، و<code>iswitness</code> (قيمة منطقية)، و<code>witness_version</code> (رقم اختياري)، و<code>witness_program</code> (نص اختياري).'],
+ 'get-block':['GET الكتلة','يعيد معلومات الكتلة.'],
+ 'get-block-v1':['GET الكتلة (v1)','يعيد معلومات الكتلة من خادم Mempool المبني على Node.js.'],
+ 'get-block-header':['GET ترويسة الكتلة','يعيد ترويسة الكتلة بصيغة hex.'],
+ 'get-block-height':['GET ارتفاع الكتلة','يعيد تجزئة الكتلة عند الارتفاع <code>:height</code>.'],
+ 'get-block-timestamp':['GET وقت الكتلة','يعيد ارتفاع وتجزئة أقرب كتلة إلى <code>:timestamp</code>.'],
+ 'get-block-raw':['GET الكتلة الخام','يعيد الكتلة بصيغة ثنائية.'],
+ 'get-block-status':['GET حالة الكتلة','يعيد حالة تأكيد الكتلة. الحقول هي <code>in_best_chain</code> (قيمة منطقية، false للكتلة اليتيمة) و<code>next_best</code> (تجزئة الكتلة التالية، في السلسلة الرئيسية فقط).'],
+ 'get-block-tip-height':['GET ارتفاع أحدث كتلة','يعيد ارتفاع أحدث كتلة.'],
+ 'get-block-tip-hash':['GET تجزئة أحدث كتلة','يعيد تجزئة أحدث كتلة.'],
+ 'get-block-transaction-id':['GET معرّف معاملة الكتلة','يعيد معرّف المعاملة ذات الفهرس <code>:index</code> في الكتلة المحددة.'],
+ 'get-block-transaction-ids':['GET معرّفات معاملات الكتلة','يعيد جميع معرّفات معاملات الكتلة.'],
+ 'get-block-transactions':['GET معاملات الكتلة','يعيد حتى 25 معاملة بدءًا من <code>start_index</code>. جميعها في الكتلة نفسها ولها حالة التأكيد نفسها، لذلك يُحذف <code>status</code>.'],
+ 'get-blocks':['GET الكتل','يعيد معلومات أحدث 10 كتل. عند تقديم <code>:startHeight</code> يعيد 10 كتل حتى ذلك الارتفاع شاملًا إياه.'],
+ 'get-blocks-v1':['GET الكتل (v1)','يعيد معلومات أحدث 15 كتلة من خادم Mempool المبني على Node.js. يتضمن <code>extras</code> بيانات الرسوم والتعدين. عند تقديم <code>:startHeight</code> يعيد 15 كتلة حتى ذلك الارتفاع شاملًا إياه.'],
+ 'get-blocks-bulk':['GET نطاق الكتل','<p>يعيد معلومات 10 كتل كحد أقصى من <code>:minHeight</code> إلى <code>:maxHeight</code> شاملًا الحدين. عند حذف <code>:maxHeight</code> يستخدم الارتفاع الحالي.</p><p>اطلب التاريخ الأطول في نطاقات صغيرة وخطط لتخزين الاستجابات مؤقتًا.</p>'],
+};
