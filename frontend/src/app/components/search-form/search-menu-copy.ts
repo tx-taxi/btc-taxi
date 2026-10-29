@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  lt: {
+    choose: 'Pasirinkite paieškos grandinę', selectedAria: 'Pasirinkta naršyklė', selected: 'PASIRINKTA',
+    unavailable: 'Naršyklių sąrašas neprieinamas', loading: 'Įkeliamos naršyklės', automatic: 'Automatinis nukreipimas',
+    viewHub: 'Į pradžios puslapį', hint: 'Arba eikite tiesiai į', searchExample: '[jūsų paieška]',
+    native: 'SAVOSIOS NARŠYKLĖS', external: 'KITOS NARŠYKLĖS', opened: 'Atidaryta',
+    open: 'Atidaryti', switch: 'Perjungti', found: 'Rasta', possible: 'Galima', search: 'Ieškoti',
+    additional: (name: string) => `Kitos ${name} naršyklės`,
+    openExplorer: (name: string) => `Atidaryti ${name}`,
+    openNewTab: (name: string) => `Atidaryti ${name} naujame skirtuke`,
+    switchTo: (name: string) => `Perjungti į ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Slėpti' : 'Rodyti'} papildomas ${name} parinktis: ${count}`,
+  },
   hr: {
     choose: 'Odaberite lanac za pretraživanje', selectedAria: 'Odabrani preglednik', selected: 'ODABRANO',
     unavailable: 'Registar preglednika nije dostupan', loading: 'Učitavanje preglednika', automatic: 'Automatsko usmjeravanje',
