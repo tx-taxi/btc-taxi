@@ -1,6 +1,6 @@
 /** Finnish Bitcoin REST and WebSocket documentation. Protocol names and URLs stay unchanged. */
 const periods = '<code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>';
-const periodNote = `<p>Parametrille <code>:timePeriod</code> voi käyttää arvoja ${periods}. Arvoilla <code>24h</code> ja <code>3d</code> tulokset ovat tarkkoja ja sisältävät kaikki lohkot. Arvolla <code>1w</code> tulokset voivat olla keskiarvoja lohkojen löytymisnopeudesta riippuen. Muilla ajanjaksoilla tulokset ovat keskiarvoja.</p>`;
+const periodNote = `<p>Parametrille <code>:timePeriod</code> voi käyttää arvoja ${periods}. Arvoilla <code>24h</code> ja <code>3d</code> tulokset ovat tarkkoja ja sisältävät kaikki lohkot. Arvolla <code>1w</code> tulokset voivat olla keskiarvoja kyseisen aikaleiman ympärillä vallinneesta lohkojen löytymisnopeudesta riippuen. Muilla ajanjaksoilla tulokset ovat keskiarvoja.</p>`;
 export const finnishApiEntries: Record<string, [string, string?]> = {
  general:['Yleistä'], addresses:['Osoitteet'], blocks:['Lohkot'], mining:['Louhinta'], fees:['Maksut'], mempool:['Mempool'], transactions:['Transaktiot'],
  'get-difficulty-adjustment':['GET Vaikeustason säätö','Palauttaa tiedot vaikeustason säädöstä.'],
