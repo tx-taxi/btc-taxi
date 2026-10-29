@@ -9464,7 +9464,7 @@
       </trans-unit>
       <trans-unit id="ba9117dcc11814c44437cf9d7561874ba8b98a2a" datatype="html">
         <source>med</source>
-        <target>сред.</target>
+        <target>медијана</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">6</context>
@@ -9530,7 +9530,7 @@
       </trans-unit>
       <trans-unit id="2e72b276a3c5cc2ec27b4c8189639ba2fe62b6cb" datatype="html">
         <source>Med Capacity</source>
-        <target>Среден Капацитет</target>
+        <target>Медијален капацитет</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">59</context>
@@ -9539,7 +9539,7 @@
       </trans-unit>
       <trans-unit id="2c1c39e28735f607d62dbf3272eb792451c265a5" datatype="html">
         <source>Med Fee Rate</source>
-        <target>Средна Стапка на Провизија</target>
+        <target>Медијална стапка на провизија</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">72</context>
@@ -9548,7 +9548,7 @@
       </trans-unit>
       <trans-unit id="cb4dae32e1b4d6a2ba6287d9f7bd859ca7259468" datatype="html">
         <source>The median fee rate charged by routing nodes, ignoring fee rates &gt; 0.5% or 5000ppm</source>
-        <target>Средна стапка на провизија наплатена од рутирачките нодови, игнорирајќи ги стапките на провизија &gt; 0,5% или 5000 ppm</target>
+        <target>Медијална стапка на провизија наплатена од рутирачките јазли, без стапки над 0,5% или 5000 ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">74</context>
@@ -9557,7 +9557,7 @@
       </trans-unit>
       <trans-unit id="a541dbcef4908bf2e767e77d7a09cc62450e8e56" datatype="html">
         <source>Med Base Fee</source>
-        <target>Средна Основна Провизија</target>
+        <target>Медијална основна провизија</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">87</context>
@@ -9566,7 +9566,7 @@
       </trans-unit>
       <trans-unit id="b8539025268617abfcab1c3f2a2c60cd8d7485fb" datatype="html">
         <source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000ppm</source>
-        <target>Средна стапка на основна провизија наплатена од рутирачките нодови, игнорирајќи основни провизии &gt; 5000 ppm</target>
+        <target>Медијална основна провизија наплатена од рутирачките јазли, без основни провизии над 5000 ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">89</context>
@@ -10437,7 +10437,7 @@
       </trans-unit>
       <trans-unit id="23549ef4e1f846f06abcf07ceecb115945a0cf61" datatype="html">
         <source>How much liquidity is running on nodes advertising only Tor addresses</source>
-        <target>Колку ликвидност има на нодовите кои се на Tor мрежата</target>
+        <target>Колку ликвидност има на јазлите кои објавуваат само Tor адреси</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp-chart/nodes-per-isp-chart.component.html</context>
           <context context-type="linenumber">22</context>
@@ -11571,12 +11571,12 @@
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target>оваа трансакција</target></trans-unit>
       <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Вашето салдо е премногу ниско.</target></trans-unit>
       <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html"><source>occurrence</source><target>појава</target></trans-unit>
-      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>More</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Повеќе</target></trans-unit>
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>Во мемпул кластер што содржи уште 1 парче.</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target>Дефицит на резерви</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>изберете категории на филтри за да ги нагласите соодветните трансакции што чекаат</target></trans-unit>
       <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target>зависни трансакции</target></trans-unit>
-      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target>More</target></trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target>Повеќе</target></trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target>Во мемпул кластер што содржи <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> други парчиња.</target></trans-unit>
       <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target>vГолемина</target></trans-unit>
       <trans-unit id="btc.address.internal-key" datatype="html"><source>Internal Key</source><target>Внатрешен клуч</target></trans-unit>
@@ -11595,7 +11595,7 @@
       <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>Прикажи ги големините на блоковите</target></trans-unit>
       <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>btc.tx.taxi Bitcoin истражувач</target></trans-unit>
       <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Придружете се на каналот tx.taxi на Telegram</target></trans-unit>
-      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Лого на рударскиот базен</target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Лого на рударскиот пул</target></trans-unit>
       <trans-unit id="btc.raw.broadcast-failed" datatype="html"><source>Failed to broadcast transaction, reason: </source><target>Не успеа да се емитува трансакцијата, причина:</target></trans-unit>
       <trans-unit id="btc.raw.loading" datatype="html"><source>Loading</source><target>Се вчитува</target></trans-unit>
       <trans-unit id="btc.raw.loading-cpfp" datatype="html"><source>Loading CPFP</source><target>Се вчитува CPFP</target></trans-unit>
@@ -11726,7 +11726,7 @@
       <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>Кеширани податоци</target></trans-unit>
       <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>Се поврзува…</target></trans-unit>
       <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>Повторно поврзување…</target></trans-unit>
-      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html"><source>Mining pool logo</source><target>Лого на рударскиот базен</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html"><source>Mining pool logo</source><target>Лого на рударскиот пул</target></trans-unit>
       <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>За btc.tx.taxi</target></trans-unit>
       <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>Неодамнешни блокови</target></trans-unit>
       <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>btc.tx.taxi контролна табла</target></trans-unit>
