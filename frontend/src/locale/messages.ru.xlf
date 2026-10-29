@@ -13240,6 +13240,8 @@
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
-      </body>
+        <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Средняя базовая комиссия узлов маршрутизации без учёта комиссий свыше 5000 mSats</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Медианная базовая комиссия узлов маршрутизации без учёта комиссий свыше 5000 mSats</target></trans-unit>
+    </body>
   </file>
 </xliff>
