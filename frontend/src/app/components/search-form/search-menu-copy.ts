@@ -60,6 +60,17 @@ const copy = {
     switchTo: (name: string) => `Mudar para ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ocultar' : 'Mostrar'} ${count} ${count === 1 ? 'opção adicional' : 'opções adicionais'} de ${name}`,
   },
+  tr: {
+    choose: 'Aranacak zinciri seç', selectedAria: 'Seçili gezgin', selected: 'SEÇİLİ',
+    unavailable: 'Gezgin listesi kullanılamıyor', loading: 'Gezginler yükleniyor', automatic: 'Otomatik yönlendirme',
+    viewHub: 'Ana sayfayı görüntüle', hint: 'Veya doğrudan şuraya git', searchExample: '[arama]',
+    native: 'YEREL GEZGİNLER', external: 'ÜÇÜNCÜ TARAF GEZGİNLER', opened: 'Açık',
+    open: 'Aç', switch: 'Geçiş yap', found: 'Bulundu', possible: 'Olası', search: 'Ara',
+    additional: (name: string) => `${name} için diğer gezginler`,
+    openExplorer: (name: string) => `${name} gezginini aç`, openNewTab: (name: string) => `${name} gezginini yeni sekmede aç`,
+    switchTo: (name: string) => `${name} gezginine geç`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name} için ${count} ek seçeneği ${expanded ? 'gizle' : 'göster'}`,
+  },
   zh: {
     choose: '选择搜索链', selectedAria: '已选浏览器', selected: '已选择',
     unavailable: '浏览器列表不可用', loading: '正在加载浏览器', automatic: '自动路由',

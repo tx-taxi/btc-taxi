@@ -146,7 +146,7 @@
                   <div [innerHTML]="item.description.default" i18n></div>
                 </div>
                 <div class="description">
-                  <div class="subtitle">{{ locale.startsWith('es') ? 'Carga' : locale.startsWith('fr') ? 'Charge utile' : locale.startsWith('de') ? 'Nutzlast' : locale.startsWith('it') ? 'Carico utile' : locale.startsWith('pt') ? 'Carga útil' : locale.startsWith('ru') ? 'Полезная нагрузка' : 'Payload' }}</div>
+                  <div class="subtitle">{{ locale.startsWith('tr') ? 'İstek verisi' : locale.startsWith('es') ? 'Carga' : locale.startsWith('fr') ? 'Charge utile' : locale.startsWith('de') ? 'Nutzlast' : locale.startsWith('it') ? 'Carico utile' : locale.startsWith('pt') ? 'Carga útil' : locale.startsWith('ru') ? 'Полезная нагрузка' : 'Payload' }}</div>
                   <pre><code [innerText]="item.payload"></code></pre>
                 </div>
                 <app-code-template [hostname]="hostname" [baseNetworkUrl]="baseNetworkUrl" [method]="item.httpRequestMethod" [code]="item.codeExample.default" [network]="network.val" [showCodeExample]="item.showJsExamples"></app-code-template>
