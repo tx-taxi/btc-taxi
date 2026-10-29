@@ -37,7 +37,7 @@ export const chineseApiEntries: Record<string, [string, string?]> = {
  'get-sizes-weights':['GET 区块大小与权重',`<p>按从旧到新的顺序返回<code>:timePeriod</code>内的平均区块大小（字节）和平均权重（权重单位）。</p>${periodNote}`],
  'get-block-predictions':['GET 区块预测',`<p>按从旧到新的顺序返回<code>:timePeriod</code>内的平均区块健康度。</p>${periodNote}`],
  'get-block-audit-score':['GET 区块审计得分','返回区块<code>:blockHash</code>的审计得分。字段包括<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>和<code>expectedWeight</code>。'],
- 'get-blocks-audit-scores':['GET 区块审计得分列表','返回最近16个区块的审计得分。指定<code>:startHeight</code>时，返回截至该高度（含该高度）的15个区块。字段包括<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>和<code>expectedWeight</code>。'],
+ 'get-blocks-audit-scores':['GET 区块审计得分列表','返回高度<code>:startHeight</code>及其之前15个高度的可用审计得分。未指定时使用最新区块的高度。 字段包括<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>和<code>expectedWeight</code>。'],
  'get-block-audit-summary':['GET 区块审计摘要','返回区块<code>:blockHash</code>的审计摘要。字段包括<code>height</code>、<code>id</code>、<code>timestamp</code>、<code>template</code>、<code>missingTxs</code>、<code>addedTxs</code>、<code>freshTxs</code>、<code>sigopTxs</code>、<code>fullrbfTxs</code>、<code>acceleratedTxs</code>、<code>matchRate</code>、<code>expectedFees</code>和<code>expectedWeight</code>。'],
  'get-mempool-blocks-fees':['GET 预测区块费用','以预测区块的形式返回当前内存池。'],
  'get-recommended-fees':['GET 推荐费率','返回新交易的当前费用建议。'],

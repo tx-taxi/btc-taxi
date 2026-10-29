@@ -41,7 +41,7 @@ export const koreanApiEntries: Record<string, [string, string?]> = {
   'get-sizes-weights':['GET 블록 크기 및 가중치',`<p><code>:timePeriod</code>의 평균 블록 크기(바이트)와 평균 가중치(가중치 단위)를 오래된 순서로 반환합니다.</p>${periodNote}`],
   'get-block-predictions':['GET 블록 예측',`<p><code>:timePeriod</code>의 평균 블록 건전성을 오래된 순서로 반환합니다.</p>${periodNote}`],
   'get-block-audit-score':['GET 블록 감사 점수','블록 <code>:blockHash</code>의 감사 점수를 반환합니다. 필드는 <code>hash</code>, <code>matchRate</code>, <code>expectedFees</code>, <code>expectedWeight</code>입니다.'],
-  'get-blocks-audit-scores':['GET 블록 감사 점수 목록','최신 16개 블록의 감사 점수를 반환합니다. <code>:startHeight</code>를 지정하면 그 높이를 포함하여 직전 15개 블록을 반환합니다. 필드는 <code>hash</code>, <code>matchRate</code>, <code>expectedFees</code>, <code>expectedWeight</code>입니다.'],
+  'get-blocks-audit-scores':['GET 블록 감사 점수 목록','<code>:startHeight</code> 높이와 그 이전 15개 높이에 대해 이용 가능한 감사 점수를 반환합니다. 지정하지 않으면 최신 블록 높이를 사용합니다. 필드는 <code>hash</code>, <code>matchRate</code>, <code>expectedFees</code>, <code>expectedWeight</code>입니다.'],
   'get-block-audit-summary':['GET 블록 감사 요약','블록 <code>:blockHash</code>의 감사 요약을 반환합니다. 필드는 <code>height</code>, <code>id</code>, <code>timestamp</code>, <code>template</code>, <code>missingTxs</code>, <code>addedTxs</code>, <code>freshTxs</code>, <code>sigopTxs</code>, <code>fullrbfTxs</code>, <code>acceleratedTxs</code>, <code>matchRate</code>, <code>expectedFees</code>, <code>expectedWeight</code>입니다.'],
   'get-mempool-blocks-fees':['GET 예상 블록 수수료','현재 멤풀을 예상 블록으로 반환합니다.'],
   'get-recommended-fees':['GET 권장 수수료','새 트랜잭션의 현재 권장 수수료를 반환합니다.'],

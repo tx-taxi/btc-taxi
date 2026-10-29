@@ -41,7 +41,7 @@ export const japaneseApiEntries: Record<string, [string, string?]> = {
   'get-sizes-weights':['GET ブロックサイズとウェイト',`<p><code>:timePeriod</code>のブロックサイズの平均（バイト）とウェイトの平均（ウェイト単位）を古い順に返します。</p>${periodNote}`],
   'get-block-predictions':['GET ブロック予測',`<p><code>:timePeriod</code>の平均ブロックヘルスを古い順に返します。</p>${periodNote}`],
   'get-block-audit-score':['GET ブロック監査スコア','ブロック<code>:blockHash</code>の監査スコアを返します。フィールドは<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>、<code>expectedWeight</code>です。'],
-  'get-blocks-audit-scores':['GET ブロック監査スコア一覧','最新16ブロックの監査スコアを返します。<code>:startHeight</code>を指定すると、その高さを含む直前の15ブロックを返します。フィールドは<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>、<code>expectedWeight</code>です。'],
+  'get-blocks-audit-scores':['GET ブロック監査スコア一覧','高さ<code>:startHeight</code>とその前の15の高さについて、利用可能な監査スコアを返します。指定しない場合は最新ブロックの高さを使用します。 フィールドは<code>hash</code>、<code>matchRate</code>、<code>expectedFees</code>、<code>expectedWeight</code>です。'],
   'get-block-audit-summary':['GET ブロック監査の概要','ブロック<code>:blockHash</code>の監査概要を返します。フィールドは<code>height</code>、<code>id</code>、<code>timestamp</code>、<code>template</code>、<code>missingTxs</code>、<code>addedTxs</code>、<code>freshTxs</code>、<code>sigopTxs</code>、<code>fullrbfTxs</code>、<code>acceleratedTxs</code>、<code>matchRate</code>、<code>expectedFees</code>、<code>expectedWeight</code>です。'],
   'get-mempool-blocks-fees':['GET 予測ブロックの手数料','現在のメンプールを予測ブロックとして返します。'],
   'get-recommended-fees':['GET 推奨手数料','新しいトランザクションの現在の推奨手数料を返します。'],

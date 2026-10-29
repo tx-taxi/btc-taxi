@@ -7252,7 +7252,7 @@ export const restApiDocsData = [
     fragment: 'get-blocks-audit-scores',
     title: 'GET Blocks Audit Scores',
     description: {
-      default: 'Returns blocks audit score for the past 16 blocks. If <code>:startHeight</code> is specified, the past 15 blocks before (and including) <code>:startHeight</code> are returned. Available fields: <code>hash</code>, <code>matchRate</code>, <code>expectedFees</code>, and <code>expectedWeight</code>.'
+      default: 'Returns available audit scores for height <code>:startHeight</code> and the 15 preceding heights. If omitted, the latest block height is used. Available fields: <code>hash</code>, <code>matchRate</code>, <code>expectedFees</code>, and <code>expectedWeight</code>.'
     },
     urlString: ['/v1/mining/blocks/audit/scores/:startHeight'],
     showConditions: bitcoinNetworks,
