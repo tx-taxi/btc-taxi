@@ -781,7 +781,7 @@
       </trans-unit>
       <trans-unit id="6c37b6a6f9e5ec98367ed744afa4b36800aa79ce" datatype="html">
         <source>Target rate</source>
-        <target>Ciljana naknada</target>
+        <target>Ciljana stopa naknade</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">139</context>
@@ -1350,7 +1350,7 @@
       </trans-unit>
       <trans-unit id="65d447765db0bf3390e9b3ecce142bf34bb602a3" datatype="html">
         <source>Mined</source>
-        <target>Izrudaredo</target>
+        <target>Izrudareno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">18</context>
@@ -3026,7 +3026,7 @@
       </trans-unit>
       <trans-unit id="41545303ec98792b738d6237adbd1f3b54a22196" datatype="html">
         <source>Block Fees Vs Subsidy</source>
-        <target>Blok naknade vs subsidy</target>
+        <target>Naknade bloka i subvencija bloka</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -3043,7 +3043,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fees-subsidy" datatype="html">
         <source>See the mining fees earned per Bitcoin block compared to the Bitcoin block subsidy, visualized in BTC and USD over time.</source>
-        <target>Pogledajte naknade za rudarenje zarađene po bloku Bitcoina u usporedbi sa  Bitcoin blok subsidy, vizualizirane u BTC-u i USD-u tijekom vremena.</target>
+        <target>Pogledajte naknade za rudarenje zarađene po Bitcoin bloku u usporedbi sa subvencijom bloka, prikazane u BTC-u i USD-u tijekom vremena.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
           <context context-type="linenumber">80</context>
@@ -3481,7 +3481,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-rewards" datatype="html">
         <source>See Bitcoin block rewards in BTC and USD visualized over time. Block rewards are the total funds miners earn from the block subsidy and fees.</source>
-        <target>Pogledajte nagrade Bitcoin blokova u BTC-u i USD-u vizualizirane tijekom vremena. Nagrade za blok su ukupna sredstva koja rudari zarade od blok subsidy-a i naknada.</target>
+        <target>Pogledajte nagrade Bitcoin blokova u BTC-u i USD-u tijekom vremena. Nagrade za blok ukupna su sredstva koja rudari zarade od subvencije bloka i naknada.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-rewards-graph/block-rewards-graph.component.ts</context>
           <context context-type="linenumber">69</context>
@@ -4032,7 +4032,7 @@
       </trans-unit>
       <trans-unit id="a1c8a44428c774facdd0b1e3ae42468c25666367" datatype="html">
         <source>Subsidy + fees</source>
-        <target>Subsidy + naknade</target>
+        <target>Subvencija bloka + naknade</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">168</context>
@@ -4871,7 +4871,7 @@
       </trans-unit>
       <trans-unit id="024cdb2814b0cb3f4ced148f1a0b9854447cb214" datatype="html">
         <source>Change</source>
-        <target>Promijeniti</target>
+        <target>Promjena</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty-adjustments-table/difficulty-adjustments-table.component.html</context>
           <context context-type="linenumber">8</context>
@@ -5255,7 +5255,7 @@
       </trans-unit>
       <trans-unit id="a5950b2ce4c3ea32de91034de8269781eb333d73" datatype="html">
         <source>Backend is synchronizing</source>
-        <target>Pozadina se sinkronizira</target>
+        <target>Poslužitelj se sinkronizira</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
           <context context-type="linenumber">8</context>
@@ -6015,7 +6015,7 @@
       </trans-unit>
       <trans-unit id="8177873832400820695" datatype="html">
         <source>Count</source>
-        <target>Račun</target>
+        <target>Broj</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mempool-graph/mempool-graph.component.ts</context>
           <context context-type="linenumber">330</context>
@@ -7347,7 +7347,7 @@
       </trans-unit>
       <trans-unit id="dc15ec15e6206b40133f2c1b06095ce75aaee1ef" datatype="html">
         <source>Transaction vBytes per second (vB/s)</source>
-        <target>Transakcija vBytes u sekundi (vB/s)</target>
+        <target>Virtualni bajtovi transakcija u sekundi (vB/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
@@ -11247,7 +11247,7 @@
       </trans-unit>
       <trans-unit id="9a91783e9c0f790ed49edae730f9156070ed9dd5" datatype="html">
         <source>Legal</source>
-        <target>Legalno</target>
+        <target>Pravne informacije</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">113</context>
@@ -11551,7 +11551,7 @@
       </trans-unit>
       <trans-unit id="taxi.footer.legal" datatype="html">
         <source>Legal</source>
-        <target>Legalno</target>
+        <target>Pravne informacije</target>
       </trans-unit>
       <trans-unit id="taxi.footer.terms" datatype="html">
         <source>Terms of Service</source>
