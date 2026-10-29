@@ -948,7 +948,34 @@
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
-<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else macedonianOrEnglish" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #macedonianOrEnglish><ng-container *ngIf="locale.startsWith('mk'); else englishLegal" [ngTemplateOutlet]="macedonianLegal"></ng-container></ng-template>
+<ng-template #macedonianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Услови на користење</h2><h6>Ажурирано: 20 септември 2026</h6><br><br>
+<div class="text-start">
+      <h4>Информативен истражувач</h4>
+      <p>btc.tx.taxi дава преглед на јавни Bitcoin блокови, трансакции, адреси, податоци за рударење, процени на надоместоци и состојбата на mempool. Тоа е информативна услуга, а не паричник, менувачница, чувар на средства, обработувач на плаќања или услуга за приоритет на трансакции.</p>
+      <br>
+      <h4>Без контрола над Bitcoin трансакциите</h4>
+      <p>Операторот не може да поништи, откаже, забрза, врати или пренасочи Bitcoin трансакција. За проблеми со паричник, менувачница или плаќање контактирајте ја услугата што ја создала или примила трансакцијата.</p>
+      <br>
+      <h4>Податоци и достапност</h4>
+      <p>Податоците на истражувачот може да доцнат, да бидат нецелосни, недостапни или различни од податоците што ги гледа друг јазол. Процените на надоместоците се само процени и не гарантираат потврда. Услугата се обезбедува во постојната состојба, без ветување за непрекината достапност или соодветност за одредена намена.</p>
+      <br>
+      <h4>Прифатливо користење</h4>
+      <p>Не злоупотребувајте ја веб-страницата или API, не попречувајте го работењето на услугата, не заобиколувајте разумни ограничувања на бројот на барања и не користете ја услугата незаконски. Пристапот може да се ограничи кога е потребно за заштита на достапноста.</p>
+      <br>
+      <h4>Надворешни услуги</h4>
+      <p>Оваа страница може да содржи врски до каналите за контакт на tx.taxi, извори за Bitcoin, информации за лиценци и инфраструктурни зависности. Надворешните веб-страници имаат свои услови и политики.</p>
+      <br>
+      <h4>Отворен код</h4>
+      <p>btc.tx.taxi е изведен од Mempool Open Source Project и се дистрибуира со обврски според AGPLv3. Контактирајте <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> за применливите информации за изворниот код и лиценцата.</p>
+      <br>
+</div></div><br><br></div>
+</ng-template>
+
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">

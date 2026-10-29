@@ -854,7 +854,31 @@
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
-<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else macedonianOrEnglish" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #macedonianOrEnglish><ng-container *ngIf="locale.startsWith('mk'); else englishLegal" [ngTemplateOutlet]="macedonianLegal"></ng-container></ng-template>
+<ng-template #macedonianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Заштитни знаци и наведување на извор</h2><h6>Ажурирано: 3 октомври 2026</h6><br><br>
+<div class="text-start">
+      <h4>Идентитет на tx.taxi</h4>
+      <p>lightning.btc.tx.taxi е независно управуван Lightning истражувач од семејството tx.taxi. Неговиот домен, логотип, палета на синџирот и идентитет на услугата ја разликуваат оваа изведена верзија од оригиналниот проект.</p>
+      <br>
+      <h4>Наведување на оригиналниот проект</h4>
+      <p>Овој софтвер е изведен од Mempool Open Source Project. Изворниот код, визуелниот систем, имињата на проектите, логоата и заштитните знаци на оригиналниот проект им припаѓаат на соодветните сопственици.</p>
+      <br>
+      <h4>Без поврзаност</h4>
+      <p>lightning.btc.tx.taxi не е поврзан со, спонзориран или поддржан од Mempool Holdings S.A. de C.V. Упатувањата на mempool.space и mempool/mempool го наведуваат софтверот од кој потекнува оваа изведена верзија.</p>
+      <br>
+      <h4>Bitcoin</h4>
+      <p>Bitcoin е отворена мрежа и протокол. Упатувањата на Bitcoin, BTC, сатоши, Lightning, јазли, канали и политики за рутирање ги опишуваат мрежните податоци што ги прикажува овој истражувач.</p>
+      <br>
+      <h4>Лиценца</h4>
+      <p>Оваа изведена верзија ги следи обврските од оригиналната лиценца AGPLv3. Контактирајте го операторот за применливите информации за изворниот код и лиценцата.</p>
+      <br>
+</div></div><br><br></div>
+</ng-template>
+
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">

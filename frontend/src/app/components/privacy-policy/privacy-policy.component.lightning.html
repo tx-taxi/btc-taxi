@@ -1050,7 +1050,37 @@
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
 <ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
-<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else macedonianOrEnglish" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
+<ng-template #macedonianOrEnglish><ng-container *ngIf="locale.startsWith('mk'); else englishLegal" [ngTemplateOutlet]="macedonianLegal"></ng-container></ng-template>
+<ng-template #macedonianLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>Политика за приватност</h2><h6>Ажурирано: 29 октомври 2026</h6><br><br>
+<div class="text-start">
+      <h4>Мерење публика</h4>
+      <p>tx.taxi користи Cloudflare Web Analytics за прегледи на страници и перформанси, како и сопствено дневно колаче споделено меѓу неговите истражувачи за да го брои секој прелистувач еднаш по UTC ден. Собирачот на дневна публика зачувува само дневен идентификатор, името на домаќинот на истражувачот и дали имало интеракција. Не зачувува текст на пребарување, блокчејн адреси, ID на трансакции, URL адреси на посетени страници или IP адреси. Поединечните дневни записи истекуваат по 31 ден; збирните броеви се чуваат 400 дена. Do Not Track и Global Privacy Control го исклучуваат ова сопствено мерење. <a href="https://tx.taxi/privacy#audience-measurement">Детали и исклучување</a>.</p>
+      <br>
+      <h4>Јавни податоци за мрежата</h4>
+      <p>lightning.btc.tx.taxi прикажува јавни Lightning објави и мрежна статистика. Приватните канали, поединечните плаќања и салдата на каналите не се јавно видливи. За независна проверка споредете го јавниот граф со сопствен Lightning јазол.</p>
+      <br>
+      <h4>Податоци за барањата</h4>
+      <p>Вообичаените барања до веб-страницата и API може да му откријат на операторот стандардни веб-метаподатоци, вклучувајќи ја вашата IP адреса, кориснички агент, побараната URL адреса и времето на барањето. Серверските дневници може да се чуваат за сигурност, спречување злоупотреба и отстранување грешки.</p>
+      <br>
+      <h4>Локални поставки</h4>
+      <p>Поставките за приказ, како тема, деноминација, фиат валута, јазик и временска зона, може да се зачуваат во вашиот прелистувач. За вообичаено користење на истражувачот lightning.btc.tx.taxi не е потребна сметка.</p>
+      <br>
+      <h4>Пребарувања и јавни канали</h4>
+      <p>Јавните клучеви на Lightning јазлите, објавените крајни точки, политиките на каналите и Bitcoin трансакциите за финансирање се јавни. Пребарувањето јазол или канал може да го поврзе пребарувањето со вашите мрежни метаподатоци. Не сметајте го јавниот истражувач за граница на приватност.</p>
+      <br>
+      <h4>Надворешни врски</h4>
+      <p>Оваа страница содржи врски до каналите за контакт на tx.taxi, документација за Bitcoin, изворен код на оригиналниот проект и информации за лиценцата. Тие надворешни услуги имаат свои политики за приватност.</p>
+      <br>
+      <h4>Признавање на отворениот код</h4>
+      <p>lightning.btc.tx.taxi е изведен од mempool/mempool и ги наследува неговите обврски според AGPLv3. Имињата, логоата и заштитните знаци на Mempool остануваат сопственост на соодветните сопственици; lightning.btc.tx.taxi не е поврзан со ниту поддржан од Mempool Holdings S.A. de C.V.</p>
+      <br>
+</div></div><br><br></div>
+</ng-template>
+
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
