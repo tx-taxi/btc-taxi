@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  sl: {
+    choose: 'Izberite verigo za iskanje', selectedAria: 'Izbrani raziskovalnik', selected: 'IZBRANO',
+    unavailable: 'Seznam raziskovalnikov ni na voljo', loading: 'Nalaganje raziskovalnikov', automatic: 'Samodejno usmerjanje',
+    viewHub: 'Odpri tx.taxi', hint: 'Ali pojdite neposredno na', searchExample: '[vaše iskanje]',
+    native: 'LASTNI RAZISKOVALNIKI', external: 'DRUGI RAZISKOVALNIKI', opened: 'Odprto',
+    open: 'Odpri', switch: 'Preklopi', found: 'Najdeno', possible: 'Možno', search: 'Išči',
+    additional: (name: string) => `Drugi raziskovalniki za ${name}`,
+    openExplorer: (name: string) => `Odpri ${name}`,
+    openNewTab: (name: string) => `Odpri ${name} v novem zavihku`,
+    switchTo: (name: string) => `Preklopi na ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skrij' : 'Prikaži'} dodatne možnosti za ${name}: ${count}`,
+  },
   lt: {
     choose: 'Pasirinkite paieškos grandinę', selectedAria: 'Pasirinkta naršyklė', selected: 'PASIRINKTA',
     unavailable: 'Naršyklių sąrašas neprieinamas', loading: 'Įkeliamos naršyklės', automatic: 'Automatinis nukreipimas',
