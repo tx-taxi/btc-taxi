@@ -1,12 +1,12 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
   hr: {
-    choose: 'Odaberite lanac za pretraživanje', selectedAria: 'Odabrani istraživač', selected: 'ODABRANO',
-    unavailable: 'Registar istraživača nije dostupan', loading: 'Učitavanje istraživača', automatic: 'Automatsko usmjeravanje',
+    choose: 'Odaberite lanac za pretraživanje', selectedAria: 'Odabrani preglednik', selected: 'ODABRANO',
+    unavailable: 'Registar preglednika nije dostupan', loading: 'Učitavanje preglednika', automatic: 'Automatsko usmjeravanje',
     viewHub: 'Prikaži početnu stranicu', hint: 'Ili idite izravno na', searchExample: '[vaša pretraga]',
-    native: 'IZVORNI ISTRAŽIVAČI', external: 'ISTRAŽIVAČI TREĆIH STRANA', opened: 'Otvoreno',
+    native: 'IZVORNI PREGLEDNICI', external: 'PREGLEDNICI TREĆIH STRANA', opened: 'Otvoreno',
     open: 'Otvori', switch: 'Promijeni', found: 'Pronađeno', possible: 'Moguće', search: 'Pretraži',
-    additional: (name: string) => `Dodatni istraživači za ${name}`,
+    additional: (name: string) => `Dodatni preglednici za ${name}`,
     openExplorer: (name: string) => `Otvori ${name}`,
     openNewTab: (name: string) => `Otvori ${name} u novoj kartici`,
     switchTo: (name: string) => `Prijeđi na ${name}`,
