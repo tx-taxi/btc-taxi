@@ -11566,13 +11566,13 @@
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target>ez a tranzakció</target></trans-unit>
       <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Az egyenlege túl alacsony.</target></trans-unit>
       <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html"><source>occurrence</source><target>előfordulás</target></trans-unit>
-      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>More</target>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Továbbiak</target>
         </trans-unit>
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>Egy további szegmenst tartalmazó mempool-klaszterben.</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target>Tartalékhiány</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>Válasszon szűrőkategóriákat az egyező függő tranzakciók kiemeléséhez</target></trans-unit>
       <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target>gyermekek</target></trans-unit>
-      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target>More</target>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target>Továbbiak</target>
         </trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}"/> other chunks.</source><target>További <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}"/> szegmenst tartalmazó mempool-klaszterben.</target></trans-unit>
       <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target>Virtuális méret</target></trans-unit>
@@ -11868,9 +11868,9 @@
         </trans-unit>
       <trans-unit id="taxi.timezone.minus1" datatype="html"><source>Azores Time (AZOT)</source><target state="translated">Azori-szigeteki idő (AZOT)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target state="translated">Hawaii téli idő (HST)</target>
+      <trans-unit id="taxi.timezone.minus10" datatype="html"><source>Hawaii Standard Time (HST)</source><target state="translated">Hawaii standard idő (HST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target state="translated">Szamoai téli idő (SST)</target>
+      <trans-unit id="taxi.timezone.minus11" datatype="html"><source>Samoa Standard Time (SST)</source><target state="translated">Szamoai standard idő (SST)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.minus12" datatype="html"><source>Anywhere on Earth (AoE)</source><target state="translated">Bárhol a Földön (AoE)</target>
         </trans-unit>
@@ -11878,27 +11878,27 @@
         </trans-unit>
       <trans-unit id="taxi.timezone.minus3" datatype="html"><source>Argentina Time (ART)</source><target state="translated">Argentínai idő (ART)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target state="translated">Atlanti téli idő (AST)</target>
+      <trans-unit id="taxi.timezone.minus4" datatype="html"><source>Atlantic Standard Time (AST)</source><target state="translated">Atlanti standard idő (AST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target state="translated">Keleti téli idő (EST)</target>
+      <trans-unit id="taxi.timezone.minus5" datatype="html"><source>Eastern Standard Time (EST)</source><target state="translated">Keleti standard idő (EST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target state="translated">Középső téli idő (CST)</target>
+      <trans-unit id="taxi.timezone.minus6" datatype="html"><source>Central Standard Time (CST)</source><target state="translated">Középső standard idő (CST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target state="translated">Hegyi téli idő (MST)</target>
+      <trans-unit id="taxi.timezone.minus7" datatype="html"><source>Mountain Standard Time (MST)</source><target state="translated">Hegyi standard idő (MST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target state="translated">Csendes-óceáni téli idő (PST)</target>
+      <trans-unit id="taxi.timezone.minus8" datatype="html"><source>Pacific Standard Time (PST)</source><target state="translated">Csendes-óceáni standard idő (PST)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target state="translated">Alaszkai téli idő (AKST)</target>
+      <trans-unit id="taxi.timezone.minus9" datatype="html"><source>Alaska Standard Time (AKST)</source><target state="translated">Alaszkai standard idő (AKST)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus0" datatype="html"><source>Greenwich Mean Time (GMT)</source><target state="translated">Greenwichi középidő (GMT)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus1" datatype="html"><source>Central European Time (CET)</source><target state="translated">Közép-európai idő (CET)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target state="translated">Ausztrál keleti téli idő (AEST)</target>
+      <trans-unit id="taxi.timezone.plus10" datatype="html"><source>Australian Eastern Standard Time (AEST)</source><target state="translated">Ausztrál keleti standard idő (AEST)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus11" datatype="html"><source>Norfolk Time (NFT)</source><target state="translated">Norfolk-szigeti idő (NFT)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target state="translated">Új-zélandi téli idő (NZST)</target>
+      <trans-unit id="taxi.timezone.plus12" datatype="html"><source>New Zealand Standard Time (NZST)</source><target state="translated">Új-zélandi standard idő (NZST)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus13" datatype="html"><source>Tonga Time (TOT)</source><target state="translated">Tongai idő (TOT)</target>
         </trans-unit>
@@ -11906,11 +11906,11 @@
         </trans-unit>
       <trans-unit id="taxi.timezone.plus2" datatype="html"><source>Eastern European Time (EET)</source><target state="translated">Kelet-európai idő (EET)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target state="translated">Moszkvai téli idő (MSK)</target>
+      <trans-unit id="taxi.timezone.plus3" datatype="html"><source>Moscow Standard Time (MSK)</source><target state="translated">Moszkvai standard idő (MSK)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus4" datatype="html"><source>Armenia Time (AMT)</source><target state="translated">Örményországi idő (AMT)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target state="translated">Pakisztáni téli idő (PKT)</target>
+      <trans-unit id="taxi.timezone.plus5" datatype="html"><source>Pakistan Standard Time (PKT)</source><target state="translated">Pakisztáni standard idő (PKT)</target>
         </trans-unit>
       <trans-unit id="taxi.timezone.plus6" datatype="html"><source>Xinjiang Time (XJT)</source><target state="translated">Hszincsiangi idő (XJT)</target>
         </trans-unit>
@@ -11918,7 +11918,7 @@
         </trans-unit>
       <trans-unit id="taxi.timezone.plus8" datatype="html"><source>Hong Kong Time (HKT)</source><target state="translated">Hongkongi idő (HKT)</target>
         </trans-unit>
-      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target state="translated">Japán téli idő (JST)</target>
+      <trans-unit id="taxi.timezone.plus9" datatype="html"><source>Japan Standard Time (JST)</source><target state="translated">Japán standard idő (JST)</target>
         </trans-unit>
       <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html"><source>Pause/Resume</source><target state="translated">Szüneteltetés / folytatás</target>
         </trans-unit>
