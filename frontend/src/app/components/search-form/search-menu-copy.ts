@@ -36,6 +36,18 @@ const copy = {
     switchTo: (name: string) => `Перемкнутися на ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Приховати' : 'Показати'} додаткові варіанти ${name}: ${count}`,
   },
+  nb: {
+    choose: 'Velg kjede for søk', selectedAria: 'Valgt utforsker', selected: 'VALGT',
+    unavailable: 'Utforskerlisten er utilgjengelig', loading: 'Laster utforskere', automatic: 'Automatisk ruting',
+    viewHub: 'Åpne hovedsiden', hint: 'Eller gå direkte til', searchExample: '[søket ditt]',
+    native: 'EGNE UTFORSKERE', external: 'TREDJEPARTSUTFORSKERE', opened: 'Åpnet',
+    open: 'Åpne', switch: 'Bytt', found: 'Funnet', possible: 'Mulig', search: 'Søk',
+    additional: (name: string) => `Flere ${name}-utforskere`,
+    openExplorer: (name: string) => `Åpne ${name}`,
+    openNewTab: (name: string) => `Åpne ${name} i en ny fane`,
+    switchTo: (name: string) => `Bytt til ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Skjul' : 'Vis'} ${count} ekstra valg for ${name}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
