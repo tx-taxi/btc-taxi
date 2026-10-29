@@ -6087,7 +6087,7 @@
       </trans-unit>
       <trans-unit id="a681a4e2011bb28157689dbaa387de0dd0aa0c11" datatype="html">
         <source>Mining Dashboard</source>
-        <target>Mining Dashboard</target>
+        <target>Panoramica del mining</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
           <context context-type="linenumber">30</context>
@@ -11519,7 +11519,7 @@
       </trans-unit>
       <trans-unit id="taxi.footer.mining" datatype="html">
         <source>Mining Dashboard</source>
-        <target>Mining Dashboard</target>
+        <target>Panoramica del mining</target>
       </trans-unit>
       <trans-unit id="taxi.footer.broadcast" datatype="html">
         <source>Broadcast Transaction</source>

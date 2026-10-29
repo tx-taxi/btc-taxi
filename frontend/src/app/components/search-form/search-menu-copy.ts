@@ -36,6 +36,18 @@ const copy = {
     switchTo: (name: string) => `Passer à ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Masquer' : 'Afficher'} ${count} ${count === 1 ? 'option supplémentaire' : 'options supplémentaires'} pour ${name}`,
   },
+  it: {
+    choose: 'Scegli la blockchain da esplorare', selectedAria: 'Esploratore selezionato', selected: 'SELEZIONATO',
+    unavailable: 'Registro degli esploratori non disponibile', loading: 'Caricamento degli esploratori', automatic: 'Instradamento automatico',
+    viewHub: 'Vai alla home', hint: 'Oppure vai direttamente a', searchExample: '[la tua ricerca]',
+    native: 'ESPLORATORI NATIVI', external: 'ESPLORATORI DI TERZE PARTI', opened: 'Aperto',
+    open: 'Apri', switch: 'Cambia', found: 'Trovato', possible: 'Possibile', search: 'Cerca',
+    additional: (name: string) => `Altri esploratori di ${name}`,
+    openExplorer: (name: string) => `Apri ${name}`,
+    openNewTab: (name: string) => `Apri ${name} in una nuova scheda`,
+    switchTo: (name: string) => `Passa a ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Nascondi' : 'Mostra'} ${count} ${count === 1 ? 'opzione aggiuntiva' : 'opzioni aggiuntive'} per ${name}`,
+  },
   de: {
     choose: 'Blockchain für die Suche auswählen', selectedAria: 'Ausgewählter Explorer', selected: 'AUSGEWÄHLT',
     unavailable: 'Explorer-Verzeichnis nicht verfügbar', loading: 'Explorer werden geladen', automatic: 'Automatische Weiterleitung',

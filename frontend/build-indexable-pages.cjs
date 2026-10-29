@@ -81,8 +81,19 @@ function docContent(kind) {
     const example = sample ? `<h4>Example response</h4><pre><code>${esc(sample)}</code></pre>` : '';
     return `<section class="doc-item-container" id="${esc(item.fragment)}"><h3>${esc(item.title)}</h3><div class="endpoint-content">${endpoint}${detail}${payload}${example}</div></section>`;
   }).join('\n');
-  const intro = renderTemplate(read('shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html'), { chainName: 'Bitcoin', chainHost: 'btc.tx.taxi', context: 'documentation' });
+  const intro = englishDocsIntro('documentation');
   return { body: `<div class="container-xl">${intro}<nav class="nav-tabs" aria-label="Bitcoin documentation"><a href="/docs/faq">FAQ</a><a href="/docs/api/rest">API - REST</a><a href="/docs/api/websocket">API - WebSocket</a></nav><main class="doc-content">${body}</main></div>`, count };
+}
+// Build an English snapshot of the translated hero without serializing Angular bindings.
+function englishDocsIntro(context) {
+  let source = read('shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html');
+  source = source.replace(/{{\s*es\s*\?[\s\S]*?}}/g, expression => {
+    const match = expression.match(/:\s*'([^']*)'\s*}}$/);
+    if (!match) throw new Error('Unresolved English documentation intro expression');
+    return match[1];
+  });
+  source = source.replace(/\[attr\.aria-label\]="[^"]*"/g, '').replace('[href]="hubUrl"', 'href="https://tx.taxi/"').replace('[href]="nativeUrl"', 'href="/"');
+  return renderTemplate(source, { chainName: 'Bitcoin', chainHost: 'btc.tx.taxi', contextLabel: `Bitcoin ${context}` });
 }
 function staticLabels(source) {
   const tree = parse5.parseFragment(source);const labels = [];
@@ -101,7 +112,7 @@ for (const [route, title, description, source] of registry) {
   if (source?.startsWith('docs/')) { const doc = docContent(source.slice(5));content = doc.body;sectionCount = doc.count; }
   else if (source && ['/about', '/privacy-policy', '/terms-of-service', '/trademark-policy'].includes(route)) {
     content = renderTemplate(read(source));
-    content = content.replace(/<app-tx-taxi-docs-intro\b[^>]*><\/app-tx-taxi-docs-intro>/, renderTemplate(read('shared/components/tx-taxi-docs-intro/tx-taxi-docs-intro.component.html'), { chainName: 'Bitcoin', chainHost: 'btc.tx.taxi', context: 'explorer' }));
+    content = content.replace(/<app-tx-taxi-docs-intro\b[^>]*><\/app-tx-taxi-docs-intro>/, englishDocsIntro('explorer'));
   } else {
     // Dynamic values remain client-rendered; never substitute invented live data.
     const labels = source ? staticLabels(read(source)) : [];
