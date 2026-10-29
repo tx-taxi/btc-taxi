@@ -2936,7 +2936,7 @@
       </trans-unit>
       <trans-unit id="23555386d8af1ff73f297e89dd4af3f4689fb9dd" datatype="html">
         <source>Indexing blocks</source>
-        <target>กำลังจัดเรียงบล็อก</target>
+        <target>กำลังจัดทำดัชนีบล็อก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
           <context context-type="linenumber">120</context>
@@ -3040,7 +3040,7 @@
       </trans-unit>
       <trans-unit id="16d449549ab7bc61caf3d636372a4a56b5870383" datatype="html">
         <source>Any</source>
-        <target>อื่นๆ</target>
+        <target>อย่างน้อยหนึ่งรายการ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">24</context>
@@ -3937,7 +3937,7 @@
       </trans-unit>
       <trans-unit id="855f852e5642a1279605465df0cbbe78c2622648" datatype="html">
         <source>Based on average native segwit transaction of 140 vBytes</source>
-        <target>อิงตามธุรกรรม Segwit ดั้งเดิมที่มีค่าเฉลี่ย 140 vBytes</target>
+        <target>อิงตามธุรกรรม native SegWit ขนาดเฉลี่ย 140 vBytes</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">146</context>
@@ -3966,7 +3966,7 @@
       </trans-unit>
       <trans-unit id="a1c8a44428c774facdd0b1e3ae42468c25666367" datatype="html">
         <source>Subsidy + fees</source>
-        <target>เงินอุดหนุน + ค่าธรรมเนียม</target>
+        <target>รางวัลที่ออกใหม่ + ค่าธรรมเนียม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">168</context>
@@ -4291,7 +4291,7 @@
       </trans-unit>
       <trans-unit id="179eb5c4a21ad324f75f723218a621d120e39d30" datatype="html">
         <source>Height</source>
-        <target>ที่</target>
+        <target>ความสูง</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.html</context>
           <context context-type="linenumber">15</context>
@@ -5102,7 +5102,7 @@
       </trans-unit>
       <trans-unit id="6ff9e8b67bc2cda7569dc0996d4c2fd858c5d4e6" datatype="html">
         <source>Either 2x the minimum, or the Low Priority rate (whichever is lower)</source>
-        <target>2 เท่าของค่าต่ำสุดหรือความสำคัญต่ำ (อะไรก็ได้ที่ต่ำกว่า)</target>
+        <target>สองเท่าของอัตราขั้นต่ำ หรืออัตราความสำคัญต่ำ แล้วแต่อัตราใดต่ำกว่า</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/fees-box/fees-box.component.html</context>
           <context context-type="linenumber">4</context>
@@ -5458,7 +5458,7 @@
       </trans-unit>
       <trans-unit id="5ee5eb7db86675abd5f0b0db835bf362ee9b23ff" datatype="html">
         <source>Indexing network hashrate</source>
-        <target>กำลังจัดเรียงอัตราแฮชของเน็ตเวิร์ก</target>
+        <target>กำลังจัดทำดัชนีอัตราแฮชของเครือข่าย</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/indexing-progress/indexing-progress.component.html</context>
           <context context-type="linenumber">2</context>
@@ -5466,7 +5466,7 @@
       </trans-unit>
       <trans-unit id="439adfcf08f5035e2fd9e4c15e40eef92f6cc780" datatype="html">
         <source>Indexing pools hashrate</source>
-        <target>กำลังจัดเรียงอัตราแฮชของพูล</target>
+        <target>กำลังจัดทำดัชนีอัตราแฮชของพูล</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/indexing-progress/indexing-progress.component.html</context>
           <context context-type="linenumber">3</context>
@@ -7165,7 +7165,7 @@
       </trans-unit>
       <trans-unit id="75c20c8a9cd9723d45bee0230dd582d7c2e4ecbc" datatype="html">
         <source>Mempool by vBytes (sat/vByte)</source>
-        <target>ขนาดหน่วยความจำ vBytes (sat/vByte)</target>
+        <target>Mempool ตามขนาด vBytes (sat/vByte)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">7</context>
@@ -8043,7 +8043,7 @@
       </trans-unit>
       <trans-unit id="cb49c3831dcaed1b6ccaf5efe58730cf29a5d15d" datatype="html">
         <source>nSequence</source>
-        <target>nลำดับ</target>
+        <target>nSequence</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">285</context>
@@ -8285,7 +8285,7 @@
       </trans-unit>
       <trans-unit id="84c7fcc1f282a501eb33fc17a8b2bda177de5a7e" datatype="html">
         <source>in the same block</source>
-        <target>ใยบล็อกเดียวกัน</target>
+        <target>ในบล็อกเดียวกัน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-bowtie-graph-tooltip/tx-bowtie-graph-tooltip.component.html</context>
           <context context-type="linenumber">131</context>
@@ -9116,7 +9116,7 @@
       </trans-unit>
       <trans-unit id="cdd2ea2e12437df848ec474ac15af48859bd09a0" datatype="html">
         <source>Opening transaction</source>
-        <target>เปิดธุรกรรม</target>
+        <target>ธุรกรรมเปิดแชนแนล</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel.component.html</context>
           <context context-type="linenumber">91</context>
@@ -9129,7 +9129,7 @@
       </trans-unit>
       <trans-unit id="50411064ac48e15659d1985b414ae91af0c8cd36" datatype="html">
         <source>Closing transaction</source>
-        <target>ปิดการทำธุรกรรม</target>
+        <target>ธุรกรรมปิดแชนแนล</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel.component.html</context>
           <context context-type="linenumber">100</context>
@@ -9317,7 +9317,7 @@
       </trans-unit>
       <trans-unit id="2e72b276a3c5cc2ec27b4c8189639ba2fe62b6cb" datatype="html">
         <source>Med Capacity</source>
-        <target>ความจุโดยเฉลี่ย</target>
+        <target>ความจุมัธยฐาน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">59</context>
