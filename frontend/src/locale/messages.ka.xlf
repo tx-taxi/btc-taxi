@@ -6461,7 +6461,7 @@
       </trans-unit>
       <trans-unit id="7e93f7285e22e5a3c58cdde2205d4d2b5bfc079c" datatype="html">
         <source>Transaction hex</source>
-        <target state="needs-review-translation">ტრანზაქციის ექვს</target><context-group purpose="location">
+        <target state="needs-review-translation">ტრანზაქციის hex</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
@@ -6814,7 +6814,7 @@
       </trans-unit>
       <trans-unit id="f091ae234382282726f5a93bb7b3802ed468e8b9" datatype="html">
         <source>Liquid Asset</source>
-        <target state="needs-review-translation">ლიკვიდური აქტივი</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid აქტივი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
@@ -6899,7 +6899,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
-        <target state="needs-review-translation">ბოლო შემორჩენილი ჯაჭვის რჩევები</target><context-group purpose="location">
+        <target state="needs-review-translation">მოძველებული ჯაჭვის ბოლოები ბოლო დროს</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
@@ -6979,14 +6979,14 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
-        <target state="needs-review-translation">შემორჩენილი ჯაჭვის რჩევები</target><context-group purpose="location">
+        <target state="needs-review-translation">მოძველებული ჯაჭვის ბოლოები</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network.</source>
-        <target state="needs-review-translation">იხილეთ უახლესი შემორჩენილი ჯაჭვის რჩევები Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ქსელში.</target><context-group purpose="location">
+        <target state="needs-review-translation">იხილეთ Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> ქსელის მოძველებული ჯაჭვის ბოლოები.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
         </context-group>
@@ -7105,7 +7105,7 @@
       </trans-unit>
       <trans-unit id="fec63564786cefc0ca1c650527fdfd859aff4b76" datatype="html">
         <source>Raw hex</source>
-        <target state="needs-review-translation">ნედლი ექვსკუთხა</target><context-group purpose="location">
+        <target state="needs-review-translation">ნედლი hex</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/test-transactions/test-transactions.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
@@ -7964,7 +7964,7 @@
       </trans-unit>
       <trans-unit id="2a6bed12e69b73ce36f0a8b119c35f1db40937c9" datatype="html">
         <source>yet to be mined</source>
-        <target state="needs-review-translation">ჯერ დანაღმულია</target><context-group purpose="location">
+        <target state="needs-review-translation">ჯერ არ არის მოპოვებული</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/treasuries/supply/treasuries-supply.component.html</context>
           <context context-type="linenumber">48</context>
         </context-group>
@@ -10521,7 +10521,7 @@
       </trans-unit>
       <trans-unit id="6d5788756fcb0b8fc937226ff60bf1bd12a8e464" datatype="html">
         <source>provably unspendable</source>
-        <target state="needs-review-translation">აშკარად დაუხარჯავი</target><context-group purpose="location">
+        <target state="needs-review-translation">დადასტურებადად დახარჯვისთვის უვარგისი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/address-type/address-type.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
@@ -10564,7 +10564,7 @@
       </trans-unit>
       <trans-unit id="57a6f49237ac457ecc67fabdf1361a112ccdbf93" datatype="html">
         <source>sat/WU</source>
-        <target state="needs-review-translation">იჯდა/WU</target><context-group purpose="location">
+        <target state="needs-review-translation">sat/WU</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/fee-rate/fee-rate.component.html</context>
           <context context-type="linenumber">4</context>
         </context-group>
@@ -10726,7 +10726,7 @@
       </trans-unit>
       <trans-unit id="c127ef3218deed36fb86af83def0b54846f92252" datatype="html">
         <source>Liquid Testnet Explorer</source>
-        <target state="needs-review-translation">თხევადი Testnet Explorer</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid Testnet ექსპლორერი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">101</context>
         </context-group>
@@ -10734,7 +10734,7 @@
       </trans-unit>
       <trans-unit id="3c07f1c84d76a9999153e87343fd642852bb6d34" datatype="html">
         <source>Liquid Explorer</source>
-        <target state="needs-review-translation">თხევადი Explorer</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid ექსპლორერი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">102</context>
         </context-group>
@@ -11053,7 +11053,7 @@
         <source>Third-party Licenses</source>
         <target state="needs-review-translation">მესამე მხარის ლიცენზიები</target></trans-unit>
 
-      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html"><source>child</source><target state="needs-review-translation">ბავშვი</target></trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html"><source>child</source><target state="needs-review-translation">შვილობილი ტრანზაქცია</target></trans-unit>
       <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target state="needs-review-translation">კლება</target></trans-unit>
       <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">სარეზერვო დეფიციტი</target></trans-unit>
       <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html"><source>this transaction</source><target state="needs-review-translation">ეს გარიგება</target></trans-unit>
@@ -11064,7 +11064,7 @@
       <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target state="needs-review-translation">მემპულის კლასტერში, რომელიც შეიცავს 1 სხვა ნაწილს.</target></trans-unit>
       <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html"><source>Reserve Deficit</source><target state="needs-review-translation">სარეზერვო დეფიციტი</target></trans-unit>
       <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target state="needs-review-translation">აირჩიეთ ფილტრის კატეგორიები, რათა მონიშნოთ შესატყვისი მომლოდინე ტრანზაქციები</target></trans-unit>
-      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">ბავშვები</target></trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">შვილობილი ტრანზაქციები</target></trans-unit>
       <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">მეტი</target>
         </trans-unit>
       <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Mempool კლასტერში, რომელიც შეიცავს <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> სხვა ნაწილებს.</target></trans-unit>
@@ -11093,7 +11093,7 @@
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target state="needs-review-translation">საკომისიო BTC</target></trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency" /></source><target state="needs-review-translation">საკომისიო <x id="currency" /></target></trans-unit>
       <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH" /> network, updated in real-time.</source><target state="needs-review-translation">იხილეთ უახლესი ტრანზაქციები Bitcoin<x id="PH" /> ქსელში, განახლებული რეალურ დროში.</target></trans-unit>
-      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target state="needs-review-translation">en-აშშ</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target state="needs-review-translation">ka-GE</target></trans-unit>
       <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target state="needs-review-translation">ღირებულებები რჩება დენომინირებული BTC-ში, სატოშიში ან შერჩეულ ფიატის ვალუტაში. საკომისიოს განაკვეთები რჩება sat/vB, ტრანზაქციის ზომები რჩება vB ან წონის ერთეულები, და ყველა ბლოკის, მისამართისა და მაინინგის კონცეფცია, რომელიც ნაჩვენებია ინტერფეისით, ინარჩუნებს ბიტკოინის მნიშვნელობას.</target></trans-unit>
       <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target state="needs-review-translation">ბიტკოინის მშობლიური მონაცემები</target></trans-unit>
       <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target state="needs-review-translation">ბიტკოინის დოკუმენტაცია</target></trans-unit>
@@ -11188,17 +11188,17 @@
       <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">ეს ტრანზაქცია ეკუთვნის 1 ტრანზაქციის ნაწილს, კომბინირებული ეფექტური საკომისიო განაკვეთით <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
       <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target state="needs-review-translation">პარტნიორის კოდის გამოყენებით</target></trans-unit>
       <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target state="needs-review-translation">მოვლენებს</target></trans-unit>
-      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target state="needs-review-translation">მშობლები“ ​​– „კლასტერი.მშობლები</target></trans-unit>
-      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target state="needs-review-translation">ბავშვი“ – „მტევანი.ბავშვი</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target state="needs-review-translation">მშობლები" - "cluster.parents</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target state="needs-review-translation">შვილობილი ტრანზაქცია" - "cluster.child</target></trans-unit>
       <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target state="needs-review-translation">vSize“ - „transaction.vsize</target></trans-unit>
       <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target state="needs-review-translation">საშუალო საბაზისო გადასახადი, რომელიც დაწესებულია მარშრუტიზაციის კვანძებით, საბაზისო გადასახადების იგნორირება &gt; 5000 mSats</target></trans-unit>
-      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target state="needs-review-translation">ეს ტრანზაქცია“ - „კლასტერი.ეს-ტრანზაქცია</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target state="needs-review-translation">ეს ტრანზაქცია" - "cluster.this-transaction</target></trans-unit>
       <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi აჩვენებს მხოლოდ საჯარო მონაცემებს ბიტკოინის ქსელის შესახებ.<x id="CLOSE_BOLD_TEXT" /> მას არ შეუძლია თანხების მოძიება, საფულის პრობლემების მოგვარება, ტრანზაქციების შებრუნება ან დადასტურების პრიორიტეტის შეცვლა.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />ამ მოთხოვნებისთვის დაუკავშირდით საფულეს, გაცვლის ან გადახდის სერვისს, რომელმაც შექმნა ტრანზაქცია.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
-      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">მშობელი" - "კლასტერი.მშობელი</target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">მშობელი" - "cluster.parent</target></trans-unit>
       <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target state="needs-review-translation">ზომა“ – „transaction.vsize</target></trans-unit>
       <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation">Mempool კლასტერში, რომელიც შეიცავს <x id="INTERPOLATION" /> სხვა ნაწილებს.</target></trans-unit>
       <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target state="needs-review-translation">შეჩერება/გაგრძელება" - "recent-transactions.pause-toggle.title</target></trans-unit>
-      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">ბავშვები“ - „კლასტერი.ბავშვები</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">შვილობილი ტრანზაქციები" - "cluster.children</target></trans-unit>
       <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target state="needs-review-translation"><x id="INTERPOLATION" /> ახალი ტრანზაქცია</target></trans-unit>
       <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">ეს ტრანზაქცია ეკუთვნის <x id="INTERPOLATION" /> ტრანზაქციების ნაწილს, კომბინირებული ეფექტური საკომისიო განაკვეთით <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
       <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target state="needs-review-translation">ღირებულებები დაიხურა 21 მილიონი BTC-ის მაქსიმალურ მიწოდებაზე " - "calculator.max-supply-warning</target></trans-unit>
@@ -11213,7 +11213,7 @@
       <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html"><source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi აჩვენებს მხოლოდ საჯარო მონაცემებს ბიტკოინის ქსელის შესახებ.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> მას არ შეუძლია თანხების მოძიება, საფულის პრობლემების მოგვარება, ტრანზაქციების შებრუნება ან დადასტურების პრიორიტეტის შეცვლა.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />ამ მოთხოვნებისთვის დაუკავშირდით საფულეს, გაცვლის ან გადახდის სერვისს, რომელმაც შექმნა ტრანზაქცია.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target></trans-unit>
       <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target state="needs-review-translation">შუალედური საბაზისო საკომისიო დაწესებული მარშრუტიზაციის კვანძებით, საბაზისო გადასახადების იგნორირება &gt; 5000 mSats</target></trans-unit>
       <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html"><source>occurrences</source><target state="needs-review-translation">მოვლენებს</target></trans-unit>
-      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target state="needs-review-translation">კლასტერი“ – „ტრანზაქცია.კლასტერი</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target state="needs-review-translation">კლასტერი" - "transaction.cluster</target></trans-unit>
       <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html"><source>Cluster</source><target state="needs-review-translation">კასეტური</target></trans-unit>
       <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html"><source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source><target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> ახალი ტრანზაქცია</target></trans-unit>
       <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target state="needs-review-translation">ეს ტრანზაქცია ეკუთვნის <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> ტრანზაქციების ნაწილს, კომბინირებული ეფექტური საკომისიო განაკვეთით <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target></trans-unit>
