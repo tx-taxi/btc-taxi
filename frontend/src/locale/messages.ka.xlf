@@ -1036,7 +1036,7 @@
       </trans-unit>
       <trans-unit id="9b606b2405f1b6112ef90ce6f8b8433617ec547a" datatype="html">
         <source>Transaction is being accelerated!</source>
-        <target state="needs-review-translation">ტრანზაქცია დაჩქარებულია!</target><context-group purpose="location">
+        <target state="needs-review-translation">ტრანზაქციის დაჩქარება მიმდინარეობს!</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">575</context>
         </context-group>
@@ -1377,7 +1377,7 @@
       </trans-unit>
       <trans-unit id="c3aaae1073e33c932a5c98f98c3520645c0e3a93" datatype="html">
         <source>Out-of-band fees</source>
-        <target state="needs-review-translation">საკომისიოები ზონის გარეთ</target><context-group purpose="location">
+        <target state="needs-review-translation">ტრანზაქციის გარეთ გადახდილი საკომისიო</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration-timeline/acceleration-timeline-tooltip.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
@@ -2811,7 +2811,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
         <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target state="needs-review-translation">იხილეთ Bitcoin feerates ვიზუალურად დროთა განმავლობაში, მათ შორის მინიმალური და მაქსიმალური feerates თითო ბლოკი ერთად feerates სხვადასხვა პროცენტული.</target><context-group purpose="location">
+        <target state="needs-review-translation">იხილეთ Bitcoin-ის საკომისიოს განაკვეთები დროში, მათ შორის თითოეული ბლოკის მინიმალური და მაქსიმალური განაკვეთები და სხვადასხვა პერცენტილის განაკვეთები.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
         </context-group>
@@ -4162,7 +4162,7 @@
       </trans-unit>
       <trans-unit id="958d4960ca7a46c7893e7b81ce7465872bb5a44f" datatype="html">
         <source>Acceleration fees paid out-of-band</source>
-        <target state="needs-review-translation">აჩქარების გადასახადი გადახდილი ზონის გარეთ</target><context-group purpose="location">
+        <target state="needs-review-translation">დაჩქარებისთვის ტრანზაქციის გარეთ გადახდილი საკომისიო</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">491</context>
         </context-group>
@@ -5540,7 +5540,7 @@
       </trans-unit>
       <trans-unit id="a5d0bd2f3fedabd093937eb13a9edb9bcd00b919" datatype="html">
         <source>Change output</source>
-        <target state="needs-review-translation">შეცვალეთ გამომავალი</target><context-group purpose="location">
+        <target state="needs-review-translation">ხურდის გამომავალი</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">55</context>
         </context-group>
@@ -6314,7 +6314,7 @@
       </trans-unit>
       <trans-unit id="c34fb298028c4e1089bdfc36c8324086fe8c0527" datatype="html">
         <source>Out-of-band Fees (1w)</source>
-        <target state="needs-review-translation">საკომისიოები ზონის გარეთ (1 ვტ)</target><context-group purpose="location">
+        <target state="needs-review-translation">ტრანზაქციის გარეთ გადახდილი საკომისიო (1 კვირა)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool.component.html</context>
           <context context-type="linenumber">143</context>
         </context-group>
