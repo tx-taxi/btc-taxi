@@ -1,0 +1,20 @@
+/** Hungarian Lightning REST reference. Protocol identifiers remain unchanged. */
+export const hungarianLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Hálózati statisztikák','<p>Visszaadja a hálózat statisztikáit, köztük a csatornák és csomópontok számát, a teljes kapacitást, valamint az átlagos és medián díjakat.</p><p>A <code>:interval</code> értéke lehet <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> vagy <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Csomópontok és csatornák','<p>Visszaadja a <code>:query</code> keresésnek megfelelő Lightning-csomópontokat és csatornákat. A teljes szöveges keresés a csomópontok álneveire és nyilvános kulcsaira, valamint a csatornák teljes és rövid azonosítóira terjed ki; a kis- és nagybetűket nem különbözteti meg.</p>'],
+ 'get-lightning-nodes-country':['Csomópontok ország szerint','<p>Visszaadja azokat a Lightning-csomópontokat, amelyek nyilvános clearnet IP-cím alapján becsült helye a megadott <code>:country</code> országban van. Használjon kétbetűs ISO alpha-2 országkódot.</p>'],
+ 'get-country-node-stats':['Csomópont-statisztikák ország szerint','<p>Visszaadja a nyilvános clearnet IP-cím alapján meghatározott országonkénti összkapacitást és csomópontszámot. A kapacitás satoshiban szerepel.</p>'],
+ 'get-isp-nodes':['Csomópontok internetszolgáltató szerint','<p>Visszaadja a <code>:isp</code> internetszolgáltató csomópontjait; a szolgáltatót ASN-szám azonosítja.</p>'],
+ 'get-isp-node-stats':['Csomópont-statisztikák internetszolgáltató szerint','<p>Visszaadja az internetszolgáltatónkénti összkapacitást, csomópont- és csatornaszámot. A kapacitás satoshiban szerepel.</p>'],
+ 'get-top-100-nodes':['A 100 vezető csomópont','<p>Külön listákban adja vissza a 100 vezető csomópontot likviditás (teljes csatornakapacitás), illetve kapcsoltság (nyitott csatornák száma) szerint.</p>'],
+ 'get-top-100-nodes-liquidity':['A 100 vezető csomópont likviditás szerint','<p>Visszaadja a 100 legnagyobb likviditású csomópontot a teljes csatornakapacitás alapján.</p>'],
+ 'get-top-100-nodes-connectivity':['A 100 vezető csomópont kapcsoltság szerint','<p>Visszaadja a 100 legjobban kapcsolódó csomópontot a nyitott csatornák száma alapján.</p>'],
+ 'get-top-100-oldest-nodes':['A 100 legrégebbi csomópont','<p>Visszaadja a 100 legrégebbi csomópontot.</p>'],
+ 'get-node-stats':['Csomópont statisztikái','<p>Visszaadja a <code>:pubKey</code> nyilvános kulccsal azonosított csomópont adatait.</p>'],
+ 'get-historical-node-stats':['Csomópont korábbi statisztikái','<p>Visszaadja a <code>:pubKey</code> nyilvános kulccsal azonosított csomópont korábbi statisztikáit.</p>'],
+ 'get-channel':['Csatorna','<p>Visszaadja a <code>:channelId</code> azonosítójú Lightning-csatorna adatait.</p>'],
+ 'get-channels-from-txid':['Csatornák tranzakcióazonosító alapján','<p>Visszaadja a <code>:txid</code> értéknek megfelelő csatornákat. Több tranzakcióazonosító is megadható.</p>'],
+ 'get-channels-from-pubkey':['Csatornák csomópont nyilvános kulcsa alapján','<p>Visszaadja a <code>:pubKey</code> kulccsal azonosított csomópont csatornáit, oldalanként 10-et. A lapozáshoz adja meg az <code>:index</code> értéket. A <code>:channelStatus</code> értéke <code>open</code>, <code>active</code> vagy <code>closed</code> lehet.</p>'],
+ 'get-channel-geodata':['Csatornák földrajzi adatai','<p>Visszaadja a csatornák listáját csomópontjaik földrajzi adataival.</p>'],
+ 'get-channel-geodata-node':['Csomópont csatornáinak földrajzi adatai','<p>Visszaadja a <code>:pubKey</code> nyilvános kulcsú csomópont csatornáit és azok földrajzi adatait.</p>'],
+};
