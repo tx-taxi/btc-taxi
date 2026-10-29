@@ -60,6 +60,17 @@ const copy = {
     switchTo: (name: string) => `Mudar para ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ocultar' : 'Mostrar'} ${count} ${count === 1 ? 'opção adicional' : 'opções adicionais'} de ${name}`,
   },
+  nl: {
+    choose: 'Kies een blockchain om te zoeken', selectedAria: 'Geselecteerde verkenner', selected: 'GESELECTEERD',
+    unavailable: 'Verkennerlijst niet beschikbaar', loading: 'Verkenners laden', automatic: 'Automatisch routeren',
+    viewHub: 'Bekijk de hub', hint: 'Of ga direct naar', searchExample: '[je zoekopdracht]',
+    native: 'EIGEN VERKENNERS', external: 'VERKENNERS VAN DERDEN', opened: 'Geopend',
+    open: 'Openen', switch: 'Wisselen', found: 'Gevonden', possible: 'Mogelijk', search: 'Zoeken',
+    additional: (name: string) => `Andere verkenners voor ${name}`,
+    openExplorer: (name: string) => `${name} openen`, openNewTab: (name: string) => `${name} openen in een nieuw tabblad`,
+    switchTo: (name: string) => `Wisselen naar ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${count} extra ${count === 1 ? 'optie' : 'opties'} voor ${name} ${expanded ? 'verbergen' : 'tonen'}`,
+  },
   tr: {
     choose: 'Aranacak zinciri seç', selectedAria: 'Seçili gezgin', selected: 'SEÇİLİ',
     unavailable: 'Gezgin listesi kullanılamıyor', loading: 'Gezginler yükleniyor', automatic: 'Otomatik yönlendirme',
