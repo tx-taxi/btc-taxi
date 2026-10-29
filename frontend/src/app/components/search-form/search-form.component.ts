@@ -1,3 +1,4 @@
+import { searchMenuCopy } from './search-menu-copy';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef, EventEmitter, Output, ViewChild, HostListener, ElementRef, Input } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
@@ -40,6 +41,7 @@ interface SearchTarget {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchFormComponent implements OnInit {
+  get menuCopy() { return searchMenuCopy(this.languageService.getLanguage()); }
   @Input() hamburgerOpen = false;
   get es(): boolean { return this.languageService.getLanguage() === 'es'; }
   readonly sourceChainId = 'bitcoin';

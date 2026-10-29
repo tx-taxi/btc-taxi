@@ -68,3 +68,26 @@ for (const file of ['index.mempool.html', 'resources/branding/chain-transition.j
     assert.equal(await hubResolver(file, ['es','fr','../../evil'], '/block/42', 'txtaxi_language=../../evil'), '/');
   });
 }
+
+test('Lightning wordmark keeps an explicit French or German view over an older shared preference', () => {
+  const source = fs.readFileSync(path.join(__dirname, '../src/app/lightning-app/lightning-shell.component.ts'), 'utf8');
+  const code = ts.transpile(source, { module:ts.ModuleKind.CommonJS, experimentalDecorators:true });
+  const module = {exports:{}};
+  let visited = '';
+  const location = {pathname:'/fr/', assign:url => {visited = url;}};
+  const imports = {
+    '@angular/core': {...core, HostListener:() => () => {}},
+    '@app/services/shared-preferences': {readSharedPreference:() => 'es'},
+    '@app/services/localized-native-url': {localizedNativeUrl:(url, language) => `${url}#${language}`},
+  };
+  vm.runInNewContext(code, {module,exports:module.exports,require:id => imports[id] || {},location,document:{},window:{},console});
+  const shell = Object.create(module.exports.LightningShellComponent.prototype);
+  shell.router = {url:'/'};
+  shell.state = {env:{TX_TAXI_ROUTER_URL:'https://tx.taxi'}};
+  const event = {button:0, preventDefault(){}, stopImmediatePropagation(){}};
+  shell.brandClick(event);
+  assert.equal(visited, 'https://tx.taxi/#fr');
+  location.pathname = '/de/';
+  shell.brandClick(event);
+  assert.equal(visited, 'https://tx.taxi/#de');
+});

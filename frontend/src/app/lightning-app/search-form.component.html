@@ -3,7 +3,7 @@
     <div class="search-box-container me-2">
       <div class="search-input-row">
         <div ngbDropdown #chainMenu="ngbDropdown" [autoClose]="false" class="search-chain-selector" placement="bottom-start">
-          <button ngbDropdownToggle type="button" class="search-chain-trigger" [attr.aria-label]="(es ? 'Elegir cadena de búsqueda: ' : 'Choose search chain: ') + (activeTarget$ | async)?.name" [attr.title]="(activeTarget$ | async)?.name">
+          <button ngbDropdownToggle type="button" class="search-chain-trigger" [attr.aria-label]="menuCopy.choose + ': ' + (activeTarget$ | async)?.name" [attr.title]="(activeTarget$ | async)?.name">
             <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
               <img [src]="activeTarget.iconUrl" [alt]="activeTarget.iconAlt">
               <span *ngIf="activeTarget.destinationId && !activeTarget.destinationDefault" class="search-chain-target-label">{{ activeTarget.name }}</span>
@@ -31,7 +31,7 @@
                     <ng-container *ngTemplateOutlet="automaticRow"></ng-container>
                   </ng-container>
                   <ng-template #selectedRegistryState>
-                    <span class="search-chain-message">{{ explorerRegistryLoaded ? (es ? 'Registro de exploradores no disponible' : 'Explorer registry unavailable') : (es ? 'Cargando exploradores' : 'Loading explorers') }}</span>
+                    <span class="search-chain-message">{{ explorerRegistryLoaded ? menuCopy.unavailable : menuCopy.loading }}</span>
                   </ng-template>
                 </ng-template>
               </ng-template>
@@ -53,7 +53,7 @@
               </button>
               <span class="search-chain-actions">
                 <a class="search-chain-new-tab" [href]="hubUrl" target="_blank" rel="noopener noreferrer"
-                  [attr.aria-label]="es ? 'Abrir tx.taxi en una pestaña nueva' : 'Open tx.taxi in a new tab'" [attr.title]="es ? 'Abrir tx.taxi en una pestaña nueva' : 'Open tx.taxi in a new tab'">
+                  [attr.aria-label]="menuCopy.openNewTab('tx.taxi')" [attr.title]="menuCopy.openNewTab('tx.taxi')">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
                 <a class="search-chain-switch" [href]="hubUrl"><ng-container i18n="@@taxi.lightning.search.viewHub">View Hub</ng-container></a>
@@ -78,7 +78,7 @@
                 <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: explorer, count: childDestinations(explorer).length}"></ng-container>
                 <div *ngIf="childDestinations(explorer).length" class="search-chain-additional-options"
                   [id]="'search-additional-' + explorer.chainId" [hidden]="!additionalExplorersExpanded(explorer)"
-                  role="group" [attr.aria-label]="es ? 'Otros exploradores de ' + explorer.name : explorer.name + ' additional explorers'">
+                  role="group" [attr.aria-label]="menuCopy.additional(explorer.name)">
                   <ng-container *ngIf="additionalExplorersExpanded(explorer)">
                     <ng-container *ngFor="let destination of childDestinations(explorer); trackBy: trackExplorer">
                       <ng-container *ngTemplateOutlet="explorerRow; context: {$implicit: destination, destination: true}"></ng-container>
@@ -102,12 +102,12 @@
             </ng-container>
 
             <div *ngFor="let explorer of thirdPartyExplorers$ | async" class="search-chain-option search-chain-explorer" [style.--chain-option-accent]="explorer.accentColor">
-              <a class="search-chain-select" [href]="explorer.origin" [attr.aria-label]="(es ? 'Abrir ' : 'Open ') + explorer.name">
+              <a class="search-chain-select" [href]="explorer.origin" [attr.aria-label]="menuCopy.openExplorer(explorer.name)">
                 <img [src]="explorer.iconUrl" alt="">
                 <span class="search-chain-copy"><span class="search-chain-name">{{ explorer.name }}</span><span class="search-chain-host">{{ explorer.host }}</span></span>
               </a>
               <span class="search-chain-actions">
-                <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'" [attr.title]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
+                <a class="search-chain-new-tab" [href]="explorer.origin" target="_blank" rel="noopener noreferrer" [attr.aria-label]="menuCopy.openNewTab(explorer.name)" [attr.title]="menuCopy.openNewTab(explorer.name)"><fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon></a>
                 <a class="search-chain-switch" [href]="explorer.origin"><ng-container i18n="@@taxi.lightning.search.open">Open</ng-container></a>
               </span>
             </div>
@@ -150,7 +150,7 @@
                   <button type="button" ngbDropdownItem class="search-chain-count"
                     [attr.aria-expanded]="additionalExplorersExpanded(explorer)"
                     [attr.aria-controls]="'search-additional-' + explorer.chainId"
-                    [attr.aria-label]="es ? (additionalExplorersExpanded(explorer) ? 'Ocultar ' : 'Mostrar ') + count + (count === 1 ? ' opción adicional de ' : ' opciones adicionales de ') + explorer.name : (additionalExplorersExpanded(explorer) ? 'Hide ' : 'Show ') + count + ' additional ' + explorer.name + (count === 1 ? ' option' : ' options')"
+                    [attr.aria-label]="menuCopy.additionalOptions(explorer.name, count, additionalExplorersExpanded(explorer))"
                     (click)="toggleAdditionalExplorers(explorer)">+{{ count }}</button>
                   <ng-container *ngTemplateOutlet="rowActions"></ng-container>
                 </span>
@@ -159,11 +159,11 @@
                 <ng-template #explorerActions>
                   <span class="search-chain-actions">
                     <a class="search-chain-new-tab" [href]="localizedExplorerUrl(explorer.origin)" target="_blank" rel="noopener noreferrer"
-                      [attr.aria-label]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'" [attr.title]="es ? 'Abrir ' + explorer.name + ' en una pestaña nueva' : 'Open ' + explorer.name + ' in a new tab'">
+                      [attr.aria-label]="menuCopy.openNewTab(explorer.name)" [attr.title]="menuCopy.openNewTab(explorer.name)">
                       <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                     </a>
                     <a class="search-chain-switch" [href]="localizedExplorerUrl(explorer.origin)"
-                      [attr.aria-label]="(es ? 'Cambiar a ' : 'Switch to ') + explorer.name"><ng-container i18n="@@taxi.lightning.search.switch">Switch</ng-container></a>
+                      [attr.aria-label]="menuCopy.switchTo(explorer.name)"><ng-container i18n="@@taxi.lightning.search.switch">Switch</ng-container></a>
                   </span>
                 </ng-template>
                 </ng-template>
@@ -174,7 +174,7 @@
             </ng-template>
           </div>
         </div>
-        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" placeholder="Wave a taxi, paste anything here." i18n-placeholder="@@taxi.lightning.search.placeholder" [attr.aria-label]="(es ? 'Buscar: ' : 'Search: ') + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
+        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" placeholder="Wave a taxi, paste anything here." i18n-placeholder="@@taxi.lightning.search.placeholder" [attr.aria-label]="menuCopy.search + ': ' + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
       </div>
 
       <div *ngIf="searchError" id="lightning-search-error" class="search-error" role="alert">{{ searchError }}</div>

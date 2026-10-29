@@ -1,3 +1,4 @@
+import { searchMenuCopy } from './search-menu-copy';
 import { LanguageService } from '@app/services/language.service';
 import { readSharedPreference } from '@app/services/shared-preferences';
 import { localizedNativeUrl, refreshLocalizedCapabilities } from '@app/services/localized-native-url';
@@ -40,6 +41,7 @@ interface SearchTarget {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SearchFormComponent implements OnInit {
+  get menuCopy() { return searchMenuCopy(this.languageService.getLanguage()); }
   get es(): boolean { return document.documentElement.lang.toLowerCase().startsWith('es'); }
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'bitcoin';
