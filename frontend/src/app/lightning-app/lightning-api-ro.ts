@@ -1,0 +1,20 @@
+/** Romanian Lightning REST reference. Protocol identifiers remain unchanged. */
+export const romanianLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Statistici ale rețelei','<p>Returnează statisticile rețelei, inclusiv numărul de canale și noduri, capacitatea totală și comisioanele medii și mediane.</p><p>Pentru <code>:interval</code>, folosiți <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> sau <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Noduri și canale','<p>Returnează nodurile și canalele Lightning care corespund căutării <code>:query</code>. Căutarea în text integral include aliasurile și cheile publice ale nodurilor, precum și ID-urile complete și scurte ale canalelor; nu ține cont de majuscule.</p>'],
+ 'get-lightning-nodes-country':['Noduri după țară','<p>Returnează nodurile Lightning a căror locație dedusă din adresa IP publică (clearnet) este în țara <code>:country</code>. Folosiți codul de țară ISO alpha-2 din două litere.</p>'],
+ 'get-country-node-stats':['Statistici ale nodurilor după țară','<p>Returnează capacitatea totală și numărul de noduri după țară, determinată din adresa IP publică (clearnet). Capacitatea este exprimată în satoshi.</p>'],
+ 'get-isp-nodes':['Noduri după furnizorul de internet','<p>Returnează nodurile furnizorului de internet <code>:isp</code>, identificat prin numărul ASN.</p>'],
+ 'get-isp-node-stats':['Statistici ale nodurilor după furnizor','<p>Returnează capacitatea totală și numărul de noduri și canale pentru fiecare furnizor de internet. Capacitatea este exprimată în satoshi.</p>'],
+ 'get-top-100-nodes':['Primele 100 de noduri','<p>Returnează liste separate cu primele 100 de noduri după lichiditate (capacitatea totală a canalelor) și conectivitate (numărul de canale deschise).</p>'],
+ 'get-top-100-nodes-liquidity':['Primele 100 de noduri după lichiditate','<p>Returnează cele 100 de noduri cu cea mai mare lichiditate, măsurată prin capacitatea totală a canalelor.</p>'],
+ 'get-top-100-nodes-connectivity':['Primele 100 de noduri după conectivitate','<p>Returnează cele mai conectate 100 de noduri după numărul de canale deschise.</p>'],
+ 'get-top-100-oldest-nodes':['Cele mai vechi 100 de noduri','<p>Returnează cele mai vechi 100 de noduri.</p>'],
+ 'get-node-stats':['Statisticile nodului','<p>Returnează date despre nodul identificat prin cheia publică <code>:pubKey</code>.</p>'],
+ 'get-historical-node-stats':['Statisticile istorice ale nodului','<p>Returnează statisticile istorice ale nodului identificat prin cheia publică <code>:pubKey</code>.</p>'],
+ 'get-channel':['Canal','<p>Returnează date despre canalul Lightning cu identificatorul <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Canale după ID-ul tranzacției','<p>Returnează canalele care corespund valorii <code>:txid</code>. Pot fi indicate mai multe ID-uri de tranzacții.</p>'],
+ 'get-channels-from-pubkey':['Canale după cheia publică a nodului','<p>Returnează canalele nodului identificat prin cheia <code>:pubKey</code>, câte 10 pe pagină. Pentru paginare indicați <code>:index</code>. Valoarea <code>:channelStatus</code> poate fi <code>open</code>, <code>active</code> sau <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Datele geografice ale canalelor','<p>Returnează o listă de canale cu datele geografice ale nodurilor acestora.</p>'],
+ 'get-channel-geodata-node':['Datele geografice ale canalelor unui nod','<p>Returnează canalele și datele lor geografice pentru nodul cu cheia publică <code>:pubKey</code>.</p>'],
+};
