@@ -8728,7 +8728,7 @@
       </trans-unit>
       <trans-unit id="4ca458fe3274d1c79640b052d57cf3b900b650b6" datatype="html">
         <source>Base fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำ</target>
+        <target>ค่าธรรมเนียมพื้นฐาน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">29</context>
@@ -8762,7 +8762,7 @@
       </trans-unit>
       <trans-unit id="fb2137ba0df55f21a9d6b6ad08d56d74ad852e0e" datatype="html">
         <source>This channel supports zero base fee routing</source>
-        <target>แชนแนลนี้รองรับการกำหนดเส้นทางค่าธรรมเนียมที่เป็นศูนย์</target>
+        <target>แชนแนลนี้รองรับการกำหนดเส้นทางโดยมีค่าธรรมเนียมพื้นฐานเป็นศูนย์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">44</context>
@@ -8771,7 +8771,7 @@
       </trans-unit>
       <trans-unit id="3ec76ccfe1fdcbfd7ea152392f6472d93d4e8cab" datatype="html">
         <source>Zero base fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำเป็นศูนย์</target>
+        <target>ค่าธรรมเนียมพื้นฐานเป็นศูนย์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">45</context>
@@ -8780,7 +8780,7 @@
       </trans-unit>
       <trans-unit id="b5e42e06ea8a4012a38eef209104bbd9dd1a0fc0" datatype="html">
         <source>This channel does not support zero base fee routing</source>
-        <target>แชนแนลนี้ไม่รองรับการกำหนดเส้นทางค่าธรรมเนียมที่เป็นศูนย์</target>
+        <target>แชนแนลนี้ไม่รองรับการกำหนดเส้นทางโดยมีค่าธรรมเนียมพื้นฐานเป็นศูนย์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">50</context>
@@ -8789,7 +8789,7 @@
       </trans-unit>
       <trans-unit id="09a1bc9c4198e87e9e974a51e86b181429b480d3" datatype="html">
         <source>Non-zero base fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำที่ไม่เป็นศูนย์</target>
+        <target>ค่าธรรมเนียมพื้นฐานที่ไม่เป็นศูนย์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">51</context>
@@ -9344,7 +9344,7 @@
       </trans-unit>
       <trans-unit id="a541dbcef4908bf2e767e77d7a09cc62450e8e56" datatype="html">
         <source>Med Base Fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำโดยเฉลี่ย</target>
+        <target>ค่ามัธยฐานของค่าธรรมเนียมพื้นฐาน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">87</context>
@@ -9353,7 +9353,7 @@
       </trans-unit>
       <trans-unit id="b8539025268617abfcab1c3f2a2c60cd8d7485fb" datatype="html">
         <source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000ppm</source>
-        <target>ค่าธรรมเนียมที่เรียกเก็บโดยโหนดการกำหนดเส้นทาง โดยไม่สนใจค่าธรรมเนียมพื้นฐาน &gt; 5,000ppm</target>
+        <target>ค่ามัธยฐานของค่าธรรมเนียมพื้นฐานที่โหนดกำหนดเส้นทางเรียกเก็บ โดยไม่นับค่าธรรมเนียมพื้นฐานที่มากกว่า 5000 ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">89</context>
@@ -9864,7 +9864,7 @@
       </trans-unit>
       <trans-unit id="bc84b5a9a70217104a53c7139e30b392be6520b7" datatype="html">
         <source>Lease fee rate</source>
-        <target>ค่าธรรมเนียมสำหรับการเช่า</target>
+        <target>อัตราค่าธรรมเนียมสำหรับการเช่า</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">190</context>
@@ -9874,7 +9874,7 @@
       </trans-unit>
       <trans-unit id="ee807dd54b4a45eeba284744c64774de1ab5e4f1" datatype="html">
         <source>Lease base fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำสำหรับการเช่า</target>
+        <target>ค่าธรรมเนียมพื้นฐานสำหรับการเช่า</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">198</context>
@@ -9902,7 +9902,7 @@
       </trans-unit>
       <trans-unit id="4e6d03f01a59434dee25104fe9478041db186ca8" datatype="html">
         <source>Channel base fee</source>
-        <target>ค่าธรรมเนียมขั้นต่ำของแชนแนล</target>
+        <target>ค่าธรรมเนียมพื้นฐานของแชนแนล</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">222</context>
