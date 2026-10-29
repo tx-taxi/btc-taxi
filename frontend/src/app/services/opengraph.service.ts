@@ -1,4 +1,4 @@
-import { Injectable, NgZone } from '@angular/core';
+import { Injectable, Inject, LOCALE_ID, NgZone } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { filter, map, switchMap } from 'rxjs/operators';
@@ -21,6 +21,7 @@ export class OpenGraphService {
     private stateService: StateService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
+    @Inject(LOCALE_ID) private locale: string,
   ) {
     this.defaultImageUrl = 'https://tx.taxi/assets/screenshots/btc-transaction-eb316e19774e.jpg';
     this.router.events.pipe(
@@ -53,10 +54,13 @@ export class OpenGraphService {
 
   clearOgImage() {
     const image = this.defaultImageUrl;
+    const imageAlt = this.locale.toLowerCase().startsWith('es')
+      ? 'Una página de transacción de Bitcoin en btc.tx.taxi que muestra el estado de confirmación, la comisión, las entradas y las salidas.'
+      : 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.';
     this.metaService.updateTag({ property: 'og:image', content: image });
     this.metaService.updateTag({ name: 'twitter:image', content: image });
-    this.metaService.updateTag({ property: 'og:image:alt', content: 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.' });
-    this.metaService.updateTag({ name: 'twitter:image:alt', content: 'A Bitcoin transaction page in btc.tx.taxi, showing confirmation status, fee, inputs and outputs.' });
+    this.metaService.updateTag({ property: 'og:image:alt', content: imageAlt });
+    this.metaService.updateTag({ name: 'twitter:image:alt', content: imageAlt });
     this.metaService.updateTag({ property: 'og:image:type', content: 'image/jpeg' });
     this.metaService.updateTag({ property: 'og:image:width', content: '1440' });
     this.metaService.updateTag({ property: 'og:image:height', content: '1960' });
