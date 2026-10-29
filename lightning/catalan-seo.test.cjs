@@ -1,0 +1,37 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
+const os = require('node:os');
+const path = require('node:path');
+const { createApp } = require('./server.cjs');
+
+test('Catalan Lightning documents use the compiled shell and stay outside the index', async t => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'lightning-ca-seo-'));
+  t.after(() => fs.rm(dir, {recursive:true, force:true}));
+  const shell = '<html lang="en" dir="ltr"><head><base href="/"><title>English</title></head><body><app-root></app-root></body></html>';
+  await fs.writeFile(path.join(dir, 'index.html'), shell);
+  const app = createApp({staticDir:dir, dataDir:false});
+  await new Promise(resolve => app.server.listen(0, '127.0.0.1', resolve));
+  t.after(() => app.close());
+  const origin = `http://127.0.0.1:${app.server.address().port}`;
+  assert.equal((await fetch(origin + '/ca/')).status, 404);
+  await fs.mkdir(path.join(dir, 'ca'));
+  await fs.writeFile(path.join(dir, 'ca', 'index.html'), shell);
+  const root = await fetch(origin + '/ca/');
+  const rootHtml = await root.text();
+  assert.equal(root.status, 200);
+  assert.equal(root.headers.get('content-language'), 'ca');
+  assert.equal(root.headers.get('x-robots-tag'), 'noindex, follow');
+  assert.match(rootHtml, /<html lang="ca" dir="ltr">/);
+  assert.match(rootHtml, /<base href="\/ca\/">/);
+  assert.match(rootHtml, /<title>Explorador de Lightning \| lightning\.btc\.tx\.taxi<\/title>/);
+  assert.match(rootHtml, /rel="canonical" href="https:\/\/lightning\.btc\.tx\.taxi\/ca\/"/);
+  assert.match(rootHtml, /name="robots" content="noindex, follow"/);
+  const faq = await (await fetch(origin + '/ca/docs/faq')).text();
+  assert.match(faq, /rel="canonical" href="https:\/\/lightning\.btc\.tx\.taxi\/ca\/docs\/faq"/);
+  assert.doesNotMatch(faq, /hreflang=/);
+  const english = await (await fetch(origin + '/')).text();
+  assert.match(english, /name="robots" content="index, follow, max-image-preview:large"/);
+  assert.match(english, /rel="canonical" href="https:\/\/lightning\.btc\.tx\.taxi\/"/);
+});
