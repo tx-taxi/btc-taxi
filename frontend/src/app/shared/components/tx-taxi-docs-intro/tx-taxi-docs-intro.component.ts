@@ -15,10 +15,11 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   ngOnInit(): void {
     void refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').then(() => this.cdr.markForCheck());
   }
-  get language(): string { return this.locale.startsWith('hi') ? 'hi' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : 'en'; }
+  get language(): string { return this.locale.startsWith('da') ? 'da' : this.locale.startsWith('hi') ? 'hi' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : 'en'; }
   get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.language); }
   get nativeUrl(): string { return this.language === 'en' ? '/' : `/${this.language}/`; }
   get hi(): boolean { return this.language === 'hi'; }
+  get da(): boolean { return this.language === 'da'; }
   get cs(): boolean { return this.language === 'cs'; }
   get sv(): boolean { return this.language === 'sv'; }
   get nb(): boolean { return this.language === 'nb'; }
@@ -43,6 +44,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
     if (this.de) return `${chain ? chain + '-' : ''}${explorer ? 'Explorer' : 'Dokumentation'}`;
     if (this.it) return `${explorer ? 'Esploratore' : 'Documentazione'}${chain ? ' ' + chain : ''}`;
     if (this.pt) return `${explorer ? 'Explorador' : 'Documentação'}${chain ? ' ' + chain : ''}`;
+    if (this.da) return `${chain}${chain ? '-' : ''}${explorer ? 'udforsker' : 'dokumentation'}`;
     if (this.hi) return `${chain ? chain + ' ' : ''}${explorer ? 'एक्सप्लोरर' : 'दस्तावेज़'}`;
     if (this.cs) return `${explorer ? 'Průzkumník' : 'Dokumentace'}${chain ? ' ' + chain : ''}`;
     if (this.sv) return `${chain}${chain ? '-' : ''}${explorer ? 'utforskare' : 'dokumentation'}`;
