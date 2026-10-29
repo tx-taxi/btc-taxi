@@ -496,7 +496,8 @@
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Zásady ochrany soukromí</h2><h6>Aktualizováno: 29. října 2026</h6><br><br><div class="text-start"><h4>Měření návštěvnosti</h4><p>tx.taxi používá Cloudflare Web Analytics k měření zobrazení stránek a výkonu a denní cookie první strany sdílené mezi průzkumníky k započítání každého prohlížeče jednou za den UTC. Denní měření publika ukládá pouze denní identifikátor, název hostitele průzkumníka a informaci o interakci. Neukládá text vyhledávání, blockchainové adresy, ID transakcí, URL navštívených stránek ani IP adresy. Jednotlivé denní záznamy vyprší po 31 dnech; souhrnné počty se uchovávají 400 dní. Do Not Track a Global Privacy Control toto měření první strany vypínají. <a href="https://tx.taxi/privacy#audience-measurement">Podrobnosti a odmítnutí</a>.</p><br><h4>Veřejná síťová data</h4><p>lightning.btc.tx.taxi zobrazuje veřejná data šířená v Lightning a síťové statistiky. Soukromé kanály, jednotlivé platby a zůstatky kanálů nejsou veřejně viditelné. Pro nezávislé ověření porovnejte veřejný graf s vlastním uzlem Lightning.</p><br><h4>Údaje o požadavcích</h4><p>Běžné požadavky webu a API mohou provozovateli odhalit standardní webová metadata, včetně vaší IP adresy, uživatelského agenta, požadované URL a času požadavku. Serverové záznamy mohou být uchovávány kvůli spolehlivosti, prevenci zneužití a ladění.</p><br><h4>Místní nastavení</h4><p>Předvolby zobrazení, jako jsou motiv, jednotka, fiat měna, jazyk a časové pásmo, mohou být uloženy ve vašem prohlížeči. lightning.btc.tx.taxi pro běžné používání průzkumníka nevyžaduje účet.</p><br><h4>Vyhledávání a veřejné kanály</h4><p>Veřejné klíče uzlů Lightning, oznámené koncové body, pravidla kanálů a financující transakce Bitcoin jsou veřejné. Vyhledání uzlu či kanálu může spojit toto vyhledávání s vašimi síťovými metadaty. Veřejný průzkumník nepovažujte za hranici soukromí.</p><br><h4>Externí odkazy</h4><p>Web odkazuje na kontaktní kanály tx.taxi, dokumentaci Bitcoinu, zdrojový kód původního projektu a informace o licenci. Externí služby mají vlastní zásady ochrany soukromí.</p><br><h4>Uvedení otevřeného zdroje</h4><p>lightning.btc.tx.taxi vychází z mempool/mempool a přebírá jeho povinnosti AGPLv3. Názvy, loga a ochranné známky Mempool zůstávají majetkem příslušných vlastníků; lightning.btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí schválen.</p><br></div></div><br><br></div></ng-template>
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
-<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else englishLegal" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else englishLegal" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -796,6 +797,60 @@
 
       <h4>ارجاع به پروژهٔ متن‌باز</h4>
       <p>lightning.btc.tx.taxi از mempool/mempool مشتق شده و تعهدات AGPLv3 آن را به ارث می‌برد. نام‌ها، نشان‌ها و علائم تجاری Mempool متعلق به صاحبان مربوطه هستند؛ lightning.btc.tx.taxi به Mempool Holdings S.A. de C.V. وابسته نیست و تأیید آن را ندارد.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #croatianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Pravila privatnosti</h2>
+    <h6>Ažurirano: 29. listopada 2026.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Mjerenje publike</h4>
+      <p>tx.taxi koristi Cloudflare Web Analytics za mjerenje pregleda stranica i performansi te vlastiti dnevni kolačić koji dijele njegovi istraživači kako bi svaki web-preglednik brojao jednom po UTC danu. Sustav za dnevno mjerenje publike pohranjuje samo dnevni identifikator, naziv hosta istraživača i podatak o tome je li bilo interakcije. Ne pohranjuje tekst pretraživanja, adrese na blockchainu, identifikatore transakcija, URL-ove posjećenih stranica ni IP adrese. Pojedinačni dnevni zapisi istječu nakon 31 dana, a zbirni podaci čuvaju se 400 dana. Do Not Track i Global Privacy Control isključuju ovo vlastito mjerenje. <a href="https://tx.taxi/privacy#audience-measurement">Pojedinosti i isključivanje</a>.</p>
+
+      <br>
+
+      <h4>Javni podaci mreže</h4>
+      <p>lightning.btc.tx.taxi prikazuje javne Lightning gossip podatke i mrežnu statistiku. Privatni kanali, pojedinačna plaćanja i stanja kanala nisu javno vidljivi. Za neovisnu provjeru usporedite javni graf mreže s vlastitim Lightning čvorom.</p>
+
+      <br>
+
+      <h4>Podaci o zahtjevima</h4>
+      <p>Uobičajeni zahtjevi prema web-mjestu i API-ju mogu operateru otkriti standardne mrežne metapodatke, uključujući vašu IP adresu, korisnički agent, zatraženi URL i vrijeme zahtjeva. Poslužiteljski zapisi mogu se čuvati radi pouzdanosti, sprječavanja zlouporabe i otklanjanja pogrešaka.</p>
+
+      <br>
+
+      <h4>Lokalne postavke</h4>
+      <p>Postavke prikaza kao što su tema, denominacija, fiat valuta, jezik i vremenska zona mogu se pohraniti u vašem pregledniku. lightning.btc.tx.taxi ne zahtijeva račun za uobičajeno korištenje preglednika.</p>
+
+      <br>
+
+      <h4>Pretraživanja i javni kanali</h4>
+      <p>Javni ključevi Lightning čvorova, objavljene pristupne točke, pravila kanala i Bitcoin transakcije financiranja javni su. Pretraživanje čvora ili kanala može povezati taj upit s vašim mrežnim metapodacima. Nemojte smatrati javni preglednik zaštitom privatnosti.</p>
+
+      <br>
+
+      <h4>Vanjske poveznice</h4>
+      <p>Ovo web-mjesto sadrži poveznice na kanale za kontakt s tx.taxi, dokumentaciju o Bitcoinu, izvorni kôd izvornog projekta i informacije o licenci. Te vanjske usluge imaju vlastita pravila privatnosti.</p>
+
+      <br>
+
+      <h4>Atribucija otvorenog koda</h4>
+      <p>lightning.btc.tx.taxi izveden je iz projekta mempool/mempool i preuzima njegove obveze prema licenci AGPLv3. Nazivi, logotipi i zaštitni znakovi Mempool ostaju vlasništvo svojih vlasnika; lightning.btc.tx.taxi nije povezan s društvom Mempool Holdings S.A. de C.V. niti ga ono podržava.</p>
 
       <br>
     </div>

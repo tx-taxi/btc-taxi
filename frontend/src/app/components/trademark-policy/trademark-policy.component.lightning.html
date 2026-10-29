@@ -398,7 +398,8 @@
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Ochranné známky a uvedení původu</h2><h6>Aktualizováno: 3. října 2026</h6><br><br><div class="text-start"><h4>Identita tx.taxi</h4><p>lightning.btc.tx.taxi je nezávisle provozovaný průzkumník Lightning z rodiny tx.taxi. Doména, slovní logo, barevná paleta řetězce a identita služby odlišují tento fork od původního projektu.</p><br><h4>Uvedení původního projektu</h4><p>Tento software vychází z Mempool Open Source Project. Zdrojový kód, vizuální systém, názvy projektu, loga a ochranné známky původního projektu patří příslušným vlastníkům.</p><br><h4>Bez spojení</h4><p>lightning.btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí sponzorován nebo schválen. Odkazy na mempool.space a mempool/mempool jmenovitě označují software, z něhož tento fork vychází.</p><br><h4>Bitcoin</h4><p>Bitcoin je otevřená síť a protokol. Odkazy na Bitcoin, BTC, satoshi, Lightning, uzly, kanály a pravidla směrování popisují síťová data zobrazená tímto průzkumníkem.</p><br><h4>Licence</h4><p>Tento fork dodržuje povinnosti licence AGPLv3 původního projektu. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte provozovatele.</p><br></div></div><br><br></div></ng-template>
 <ng-template #hindiOrEnglish><ng-container *ngIf="hi; else arabicOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
-<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else englishLegal" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else croatianOrEnglish" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #croatianOrEnglish><ng-container *ngIf="hr; else englishLegal" [ngTemplateOutlet]="croatianLegal"></ng-container></ng-template>
 <ng-template #catalanLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -642,6 +643,50 @@
 
       <h4>مجوز</h4>
       <p>این فورک از تعهدات مجوز AGPLv3 پروژهٔ اصلی پیروی می‌کند. برای اطلاعات مربوط به کد منبع و مجوز با گرداننده تماس بگیرید.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #croatianLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Zaštitni znakovi i atribucija</h2>
+    <h6>Ažurirano: 3. listopada 2026.</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Identitet tx.taxi</h4>
+      <p>lightning.btc.tx.taxi neovisno je upravljan preglednik mreže Lightning u obitelji tx.taxi. Njegova domena, logotip s nazivom, paleta boja lanca i identitet usluge razlikuju ovu izvedenicu od izvornog projekta.</p>
+
+      <br>
+
+      <h4>Atribucija izvornog projekta</h4>
+      <p>Ovaj softver izveden je iz projekta otvorenog koda Mempool. Izvorni kôd, vizualni sustav, nazivi projekta, logotipi i zaštitni znakovi izvornog projekta pripadaju svojim vlasnicima.</p>
+
+      <br>
+
+      <h4>Bez povezanosti</h4>
+      <p>lightning.btc.tx.taxi nije povezan s društvom Mempool Holdings S.A. de C.V. niti ga ono sponzorira ili podržava. Spominjanje mempool.space i mempool/mempool služi imenovanju softvera iz kojeg je ova izvedenica nastala.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin je otvorena mreža i protokol. Spominjanje Bitcoina, BTC-a, satoshija, Lightninga, čvorova, kanala i pravila usmjeravanja opisuje mrežne podatke koje prikazuje ovaj preglednik.</p>
+
+      <br>
+
+      <h4>Licenca</h4>
+      <p>Ova izvedenica poštuje obveze iz licence AGPLv3 izvornog projekta. Za informacije o pripadajućem izvornom kodu i licenci obratite se operateru.</p>
 
       <br>
     </div>
