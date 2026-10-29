@@ -60,6 +60,18 @@ const copy = {
     switchTo: (name: string) => `Mudar para ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ocultar' : 'Mostrar'} ${count} ${count === 1 ? 'opção adicional' : 'opções adicionais'} de ${name}`,
   },
+  ru: {
+    choose: 'Выбрать сеть для поиска', selectedAria: 'Выбранный обозреватель', selected: 'ВЫБРАНО',
+    unavailable: 'Список обозревателей недоступен', loading: 'Загрузка обозревателей', automatic: 'Автоматическая маршрутизация',
+    viewHub: 'Открыть главную', hint: 'Или перейти сразу к', searchExample: '[ваш запрос]',
+    native: 'СОБСТВЕННЫЕ ОБОЗРЕВАТЕЛИ', external: 'СТОРОННИЕ ОБОЗРЕВАТЕЛИ', opened: 'Открыто',
+    open: 'Открыть', switch: 'Переключить', found: 'Найдено', possible: 'Возможно', search: 'Поиск',
+    additional: (name: string) => `Другие обозреватели ${name}`,
+    openExplorer: (name: string) => `Открыть ${name}`,
+    openNewTab: (name: string) => `Открыть ${name} в новой вкладке`,
+    switchTo: (name: string) => `Переключиться на ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Скрыть' : 'Показать'} дополнительные варианты ${name}: ${count}`,
+  },
   de: {
     choose: 'Blockchain für die Suche auswählen', selectedAria: 'Ausgewählter Explorer', selected: 'AUSGEWÄHLT',
     unavailable: 'Explorer-Verzeichnis nicht verfügbar', loading: 'Explorer werden geladen', automatic: 'Automatische Weiterleitung',
