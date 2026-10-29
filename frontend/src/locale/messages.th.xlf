@@ -7655,7 +7655,7 @@
       </trans-unit>
       <trans-unit id="a2819cc4834566fbbd9f83482df3410842a94ccb" datatype="html">
         <source>Transaction hex or base64 encoded PSBT</source>
-        <target state="needs-review-translation">ธุรกรรม hex หรือ base64 ที่เข้ารหัส PSBT</target><context-group purpose="location">
+        <target state="needs-review-translation">ธุรกรรมในรูป hex หรือ PSBT ที่เข้ารหัสเป็น base64</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
@@ -7697,7 +7697,7 @@
       </trans-unit>
       <trans-unit id="c280048575ce581e2dd031ffac4a723cf76e8249" datatype="html">
         <source> This transaction is stored locally in your browser. Broadcast it to add it to the mempool. </source>
-        <target state="needs-review-translation">ธุรกรรมนี้จะถูกจัดเก็บไว้ในเบราว์เซอร์ของคุณ ออกอากาศเพื่อเพิ่มลงในบันทึกความทรงจำ </target><context-group purpose="location">
+        <target state="needs-review-translation">ธุรกรรมนี้จัดเก็บอยู่ในเบราว์เซอร์ของคุณ ส่งธุรกรรมเข้าสู่เครือข่ายเพื่อเพิ่มลงใน mempool</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">50,52</context>
         </context-group>
@@ -8108,7 +8108,7 @@
       </trans-unit>
       <trans-unit id="6e6f935e25f2e0a0cb0f84ccb9069701da81ed30" datatype="html">
         <source>leaf version</source>
-        <target state="needs-review-translation">ฉบับใบไม้</target><context-group purpose="location">
+        <target state="needs-review-translation">เวอร์ชัน leaf</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">583</context>
         </context-group>
@@ -8116,7 +8116,7 @@
       </trans-unit>
       <trans-unit id="1e5fe8dc2194174026a52b0ec238159398b5a492" datatype="html">
         <source>parity</source>
-        <target state="needs-review-translation">ความเสมอภาค</target><context-group purpose="location">
+        <target state="needs-review-translation">พาริตี</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">587</context>
         </context-group>
