@@ -1,0 +1,20 @@
+/** Lithuanian Lightning REST reference. Protocol identifiers remain unchanged. */
+export const lithuanianLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Tinklo statistika','<p>Grąžina tinklo statistiką, įskaitant kanalų ir mazgų skaičių, bendrą pajėgumą bei vidutinius ir medianinius mokesčius.</p><p>Parametro <code>:interval</code> reikšmės: <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> arba <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Mazgai ir kanalai','<p>Grąžina Lightning mazgus ir kanalus, atitinkančius užklausą <code>:query</code>. Viso teksto paieška apima mazgų pseudonimus ir viešuosius raktus bei visus ir trumpuosius kanalų ID; raidžių dydis nesvarbus.</p>'],
+ 'get-lightning-nodes-country':['Mazgai pagal šalį','<p>Grąžina Lightning mazgus, kurių buvimo vieta pagal viešąjį IP adresą (clearnet) nustatyta šalyje <code>:country</code>. Naudokite dviejų raidžių ISO alpha-2 šalies kodą.</p>'],
+ 'get-country-node-stats':['Mazgų statistika pagal šalį','<p>Grąžina bendrą pajėgumą ir mazgų skaičių pagal šalį, nustatytą iš viešojo IP adreso (clearnet). Pajėgumas nurodomas satoshiais.</p>'],
+ 'get-isp-nodes':['Mazgai pagal interneto tiekėją','<p>Grąžina interneto tiekėjo <code>:isp</code>, nurodyto ASN numeriu, mazgus.</p>'],
+ 'get-isp-node-stats':['Mazgų statistika pagal interneto tiekėją','<p>Grąžina bendrą pajėgumą bei mazgų ir kanalų skaičių pagal interneto tiekėją. Pajėgumas nurodomas satoshiais.</p>'],
+ 'get-top-100-nodes':['100 pirmaujančių mazgų','<p>Grąžina atskirus 100 pirmaujančių mazgų sąrašus pagal likvidumą (bendrą kanalų pajėgumą) ir junglumą (atvirų kanalų skaičių).</p>'],
+ 'get-top-100-nodes-liquidity':['100 likvidžiausių mazgų','<p>Grąžina 100 likvidžiausių mazgų pagal bendrą kanalų pajėgumą.</p>'],
+ 'get-top-100-nodes-connectivity':['100 labiausiai susietų mazgų','<p>Grąžina 100 labiausiai susietų mazgų pagal atvirų kanalų skaičių.</p>'],
+ 'get-top-100-oldest-nodes':['100 seniausių mazgų','<p>Grąžina 100 seniausių mazgų.</p>'],
+ 'get-node-stats':['Mazgo statistika','<p>Grąžina mazgo, nurodyto viešuoju raktu <code>:pubKey</code>, duomenis.</p>'],
+ 'get-historical-node-stats':['Istorinė mazgo statistika','<p>Grąžina mazgo, nurodyto viešuoju raktu <code>:pubKey</code>, istorinę statistiką.</p>'],
+ 'get-channel':['Kanalas','<p>Grąžina Lightning kanalo su identifikatoriumi <code>:channelId</code> duomenis.</p>'],
+ 'get-channels-from-txid':['Kanalai pagal transakcijos ID','<p>Grąžina kanalus, atitinkančius <code>:txid</code>. Galima nurodyti kelis transakcijų ID.</p>'],
+ 'get-channels-from-pubkey':['Kanalai pagal mazgo viešąjį raktą','<p>Grąžina mazgo, nurodyto raktu <code>:pubKey</code>, kanalus, po 10 puslapyje. Puslapiams naudokite <code>:index</code>. Galimos <code>:channelStatus</code> reikšmės: <code>open</code>, <code>active</code> arba <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Kanalų geografiniai duomenys','<p>Grąžina kanalų sąrašą ir jų mazgų geografinius duomenis.</p>'],
+ 'get-channel-geodata-node':['Mazgo kanalų geografiniai duomenys','<p>Grąžina mazgo, nurodyto viešuoju raktu <code>:pubKey</code>, kanalus ir jų geografinius duomenis.</p>'],
+};
