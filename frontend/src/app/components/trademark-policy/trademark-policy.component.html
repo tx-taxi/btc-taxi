@@ -398,7 +398,38 @@
 <ng-template #swedishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Varumärken och erkännande</h2><h6>Uppdaterad: 20 september 2026</h6><br><br><div class="text-start"><h4>tx.taxis identitet</h4><p>btc.tx.taxi är en självständigt driven Bitcoin-utforskare i tx.taxi-familjen. Domänen, ordmärket, kedjefärgerna och tjänstens identitet skiljer denna fork från det ursprungliga projektet.</p><br><h4>Erkännande av ursprungligt projekt</h4><p>Programvaran bygger på Mempool Open Source Project. Ursprunglig källkod, visuellt system, projektnamn, logotyper och varumärken tillhör sina respektive ägare.</p><br><h4>Ingen anknytning</h4><p>btc.tx.taxi är inte ansluten till, sponsrad av eller godkänd av Mempool Holdings S.A. de C.V. Hänvisningar till mempool.space och mempool/mempool namnger programvaran som denna fork bygger på.</p><br><h4>Bitcoin</h4><p>Bitcoin är ett öppet nätverk och protokoll. Hänvisningar till Bitcoin, BTC, satoshi, block, transaktioner, adresser, utvinning och Lightning beskriver nätverksdata som utforskaren visar.</p><br><h4>Licens</h4><p>Denna fork följer förpliktelserna i den ursprungliga AGPLv3-licensen. Kontakta operatören för relevant information om källkod och licens.</p><br></div></div><br><br></div></ng-template>
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Ochranné známky a uvedení původu</h2><h6>Aktualizováno: 20. září 2026</h6><br><br><div class="text-start"><h4>Identita tx.taxi</h4><p>btc.tx.taxi je nezávisle provozovaný průzkumník Bitcoin z rodiny tx.taxi. Doména, slovní logo, barevná paleta řetězce a identita služby odlišují tento fork od původního projektu.</p><br><h4>Uvedení původního projektu</h4><p>Tento software vychází z Mempool Open Source Project. Zdrojový kód, vizuální systém, názvy projektu, loga a ochranné známky původního projektu patří příslušným vlastníkům.</p><br><h4>Bez spojení</h4><p>btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí sponzorován nebo schválen. Odkazy na mempool.space a mempool/mempool jmenovitě označují software, z něhož tento fork vychází.</p><br><h4>Bitcoin</h4><p>Bitcoin je otevřená síť a protokol. Odkazy na Bitcoin, BTC, satoshi, bloky, transakce, adresy, těžbu a Lightning popisují síťová data zobrazená tímto průzkumníkem.</p><br><h4>Licence</h4><p>Tento fork dodržuje povinnosti licence AGPLv3 původního projektu. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte provozovatele.</p><br></div></div><br><br></div></ng-template>
-<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else englishLegal" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else catalanOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #catalanOrEnglish><ng-container *ngIf="ca; else englishLegal" [ngTemplateOutlet]="catalanLegal"></ng-container></ng-template>
+<ng-template #catalanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+    <h2>Marques comercials i atribució</h2>
+    <h6>Actualitzat: 20 de setembre de 2026</h6>
+    <br><br>
+    <div class="text-start">
+      <h4>Identitat tx.taxi</h4>
+      <p>btc.tx.taxi és un explorador Bitcoin gestionat de manera independent dins de la família tx.taxi. El domini, la marca denominativa, la paleta de la cadena i la identitat del servei distingeixen aquest fork del projecte original.</p>
+      <br>
+      <h4>Atribució al projecte original</h4>
+      <p>Aquest programari deriva de The Mempool Open Source Project. El codi font original, el sistema visual, els noms dels projectes, els logotips i les marques comercials pertanyen als seus propietaris respectius.</p>
+      <br>
+      <h4>Sense afiliació</h4>
+      <p>btc.tx.taxi no està afiliat a Mempool Holdings S.A. de C.V., ni està patrocinat o avalat per aquesta empresa. Les referències a mempool.space i mempool/mempool són atribucions nominatives al programari del qual deriva aquest fork.</p>
+      <br>
+      <h4>Bitcoin</h4>
+      <p>Bitcoin és una xarxa i un protocol oberts. Les referències a Bitcoin, BTC, satoshis, blocs, transaccions, adreces, mineria i Lightning descriuen les dades de la xarxa que presenta aquest explorador.</p>
+      <br>
+      <h4>Llicència</h4>
+      <p>Aquest fork compleix les obligacions de la llicència AGPLv3 del projecte original. Contacta amb l’operador per obtenir la informació aplicable sobre el codi font i les llicències.</p>
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+</ng-template>
 <ng-template #hindiLegal>
 <div class="container-xl">
   <div class="text-center">
