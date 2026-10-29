@@ -41,6 +41,7 @@ export class DocsComponent implements OnInit {
   get es(): boolean { return this.locale.startsWith('es'); }
   get fr(): boolean { return this.locale.startsWith('fr'); }
   get de(): boolean { return this.locale.startsWith('de'); }
+  get it(): boolean { return this.locale.startsWith('it'); }
 
   ngDoCheck(): void {
 
@@ -49,7 +50,7 @@ export class DocsComponent implements OnInit {
     if (url[0].path === 'faq' ) {
       this.activeTab = 0;
       this.seoService.setTitle($localize`:@@meta.title.docs.faq:FAQ`);
-      this.seoService.setDescription(this.es ? 'Respuestas sobre nodos públicos, canales, comisiones de enrutamiento y estadísticas de la red Lightning.' : this.fr ? 'Réponses aux questions sur les nœuds publics, les canaux, les frais de routage et les statistiques Lightning.' : this.de ? 'Antworten zu öffentlichen Knoten, Kanälen, Routing-Gebühren und Statistiken des Lightning-Netzwerks.' : 'Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.');
+      this.seoService.setDescription(this.it ? 'Risposte su nodi pubblici, canali, commissioni di instradamento e statistiche della rete Lightning.' : this.es ? 'Respuestas sobre nodos públicos, canales, comisiones de enrutamiento y estadísticas de la red Lightning.' : this.fr ? 'Réponses aux questions sur les nœuds publics, les canaux, les frais de routage et les statistiques Lightning.' : this.de ? 'Antworten zu öffentlichen Knoten, Kanälen, Routing-Gebühren und Statistiken des Lightning-Netzwerks.' : 'Get answers to common Lightning questions about public nodes, channels, routing fees, and network statistics.');
       this.ogService.setManualOgImage('faq.jpg');
     } else if(url[1]?.path === 'rest' ) {
       this.activeTab = 1;
@@ -57,7 +58,7 @@ export class DocsComponent implements OnInit {
       if (this.stateService.network === 'liquid' || this.stateService.network === 'liquidtestnet' ) {
         this.seoService.setDescription($localize`:@@meta.description.docs.rest-liquid:Documentation for the liquid.network REST API service: get info on addresses, transactions, assets, blocks, and more.`);
       } else {
-        this.seoService.setDescription(this.es ? 'Documentación de la API REST de lightning.btc.tx.taxi: consulta nodos y canales públicos, clasificaciones y estadísticas Lightning.' : this.fr ? 'Documentation de l’API REST de lightning.btc.tx.taxi : consultez les nœuds, canaux, classements et statistiques Lightning publics.' : this.de ? 'REST-API-Dokumentation von lightning.btc.tx.taxi: öffentliche Lightning-Knoten, Kanäle, Ranglisten und Statistiken abfragen.' : 'Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.');
+        this.seoService.setDescription(this.it ? 'Documentazione API REST di lightning.btc.tx.taxi: consulta nodi, canali, classifiche e statistiche pubbliche Lightning.' : this.es ? 'Documentación de la API REST de lightning.btc.tx.taxi: consulta nodos y canales públicos, clasificaciones y estadísticas Lightning.' : this.fr ? 'Documentation de l’API REST de lightning.btc.tx.taxi : consultez les nœuds, canaux, classements et statistiques Lightning publics.' : this.de ? 'REST-API-Dokumentation von lightning.btc.tx.taxi: öffentliche Lightning-Knoten, Kanäle, Ranglisten und Statistiken abfragen.' : 'Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.');
       }
     } else if(url[1]?.path === 'websocket' ) {
       this.activeTab = 2;
