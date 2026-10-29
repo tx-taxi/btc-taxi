@@ -12,6 +12,18 @@ const copy = {
     switchTo: (name: string) => `${name}으로 전환`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${name} 추가 옵션 ${count}개 ${expanded ? '숨기기' : '보기'}`,
   },
+  pl: {
+    choose: 'Wybierz sieć do wyszukiwania', selectedAria: 'Wybrany eksplorator', selected: 'WYBRANO',
+    unavailable: 'Lista eksploratorów niedostępna', loading: 'Ładowanie eksploratorów', automatic: 'Automatyczne trasowanie',
+    viewHub: 'Otwórz stronę główną', hint: 'Lub przejdź bezpośrednio do', searchExample: '[wyszukiwanie]',
+    native: 'WŁASNE EKSPLORATORY', external: 'EKSPLORATORY ZEWNĘTRZNE', opened: 'Otwarto',
+    open: 'Otwórz', switch: 'Przełącz', found: 'Znaleziono', possible: 'Możliwe', search: 'Szukaj',
+    additional: (name: string) => `Inne eksploratory ${name}`,
+    openExplorer: (name: string) => `Otwórz ${name}`,
+    openNewTab: (name: string) => `Otwórz ${name} w nowej karcie`,
+    switchTo: (name: string) => `Przełącz na ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ukryj' : 'Pokaż'} dodatkowe opcje ${name}: ${count}`,
+  },
   en: {
     choose: 'Choose search chain', selectedAria: 'Selected explorer', selected: 'SELECTED',
     unavailable: 'Explorer registry unavailable', loading: 'Loading explorers', automatic: 'Automatic Routing',
