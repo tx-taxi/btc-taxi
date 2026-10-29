@@ -24,6 +24,7 @@ export class PrivacyPolicyComponent {
   get tr(): boolean { return this.locale.startsWith('tr'); }
   get nl(): boolean { return this.locale.startsWith('nl'); }
   get hi(): boolean { return this.locale.startsWith('hi'); }
+  get ar(): boolean { return this.locale.startsWith('ar'); }
   get cs(): boolean { return this.locale.startsWith('cs'); }
   get sv(): boolean { return this.locale.startsWith('sv'); }
   get nb(): boolean { return this.locale.startsWith('nb'); }
