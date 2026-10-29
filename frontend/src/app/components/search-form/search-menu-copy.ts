@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  ne: {
+    choose: 'खोज्नका लागि ब्लकचेन छान्नुहोस्', selectedAria: 'छानिएको एक्सप्लोरर', selected: 'छानिएको',
+    unavailable: 'एक्सप्लोररहरूको सूची उपलब्ध छैन', loading: 'एक्सप्लोररहरू लोड हुँदैछन्', automatic: 'स्वतः राउटिङ',
+    viewHub: 'tx.taxi हेर्नुहोस्', hint: 'वा सिधै जानुहोस्', searchExample: '[तपाईंको खोज]',
+    native: 'हाम्रा एक्सप्लोररहरू', external: 'तेस्रो पक्षका एक्सप्लोररहरू', opened: 'खुला छ',
+    open: 'खोल्नुहोस्', switch: 'बदल्नुहोस्', found: 'फेला पर्‍यो', possible: 'सम्भावित', search: 'खोज्नुहोस्',
+    additional: (name: string) => `${name} का थप एक्सप्लोररहरू`,
+    openExplorer: (name: string) => `${name} खोल्नुहोस्`,
+    openNewTab: (name: string) => `${name} नयाँ ट्याबमा खोल्नुहोस्`,
+    switchTo: (name: string) => `${name} मा बदल्नुहोस्`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name} का ${count} थप विकल्प ${expanded ? 'लुकाउनुहोस्' : 'देखाउनुहोस्'}`,
+  },
   ka: {
     choose: 'აირჩიეთ საძიებო ქსელი', selectedAria: 'არჩეული ექსპლორერი', selected: 'არჩეულია',
     unavailable: 'ექსპლორერების სია მიუწვდომელია', loading: 'იტვირთება ექსპლორერები', automatic: 'ავტომატური მარშრუტიზაცია',

@@ -15,9 +15,10 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   ngOnInit(): void {
     void refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').then(() => this.cdr.markForCheck());
   }
-  get language(): string { return this.locale.startsWith('ka') ? 'ka' : this.locale.startsWith('vi') ? 'vi' : this.locale.startsWith('th') ? 'th' : this.locale.startsWith('hu') ? 'hu' : this.locale.startsWith('ro') ? 'ro' : this.locale.startsWith('he') ? 'he' : this.locale.startsWith('sl') ? 'sl' : this.locale.startsWith('lt') ? 'lt' : this.locale.startsWith('hr') ? 'hr' : this.locale.startsWith('ca') ? 'ca' : this.locale.startsWith('da') ? 'da' : this.locale.startsWith('fa') ? 'fa' : this.locale.startsWith('fi') ? 'fi' : this.locale.startsWith('ar') ? 'ar' : this.locale.startsWith('hi') ? 'hi' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : 'en'; }
+  get language(): string { return this.locale.startsWith('ne') ? 'ne' : this.locale.startsWith('ka') ? 'ka' : this.locale.startsWith('vi') ? 'vi' : this.locale.startsWith('th') ? 'th' : this.locale.startsWith('hu') ? 'hu' : this.locale.startsWith('ro') ? 'ro' : this.locale.startsWith('he') ? 'he' : this.locale.startsWith('sl') ? 'sl' : this.locale.startsWith('lt') ? 'lt' : this.locale.startsWith('hr') ? 'hr' : this.locale.startsWith('ca') ? 'ca' : this.locale.startsWith('da') ? 'da' : this.locale.startsWith('fa') ? 'fa' : this.locale.startsWith('fi') ? 'fi' : this.locale.startsWith('ar') ? 'ar' : this.locale.startsWith('hi') ? 'hi' : this.locale.startsWith('cs') ? 'cs' : this.locale.startsWith('sv') ? 'sv' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : 'en'; }
   get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.language); }
   get nativeUrl(): string { return this.language === 'en' ? '/' : `/${this.language}/`; }
+  get ne(): boolean { return this.language === 'ne'; }
   get ka(): boolean { return this.language === 'ka'; }
   get vi(): boolean { return this.language === 'vi'; }
   get th(): boolean { return this.language === 'th'; }
@@ -59,6 +60,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
     if (this.it) return `${explorer ? 'Esploratore' : 'Documentazione'}${chain ? ' ' + chain : ''}`;
     if (this.pt) return `${explorer ? 'Explorador' : 'Documentação'}${chain ? ' ' + chain : ''}`;
     if (this.he) return `${explorer ? 'סייר' : 'תיעוד'}${chain ? ' \u2068' + chain + '\u2069' : ''}`;
+    if (this.ne) return `${chain ? chain + ' ' : ''}${explorer ? 'एक्सप्लोरर' : 'दस्तावेज'}`;
     if (this.ka) return `${chain ? chain + ' ' : ''}${explorer ? 'ექსპლორერი' : 'დოკუმენტაცია'}`;
     if (this.vi) return `${explorer ? 'Trình khám phá' : 'Tài liệu'}${chain ? ' ' + chain : ''}`;
     if (this.th) return `${explorer ? 'ตัวสำรวจ' : 'เอกสาร'}${chain ? ' ' + chain : ''}`;
