@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  hr: {
+    choose: 'Odaberite lanac za pretraživanje', selectedAria: 'Odabrani istraživač', selected: 'ODABRANO',
+    unavailable: 'Registar istraživača nije dostupan', loading: 'Učitavanje istraživača', automatic: 'Automatsko usmjeravanje',
+    viewHub: 'Prikaži početnu stranicu', hint: 'Ili idite izravno na', searchExample: '[vaša pretraga]',
+    native: 'IZVORNI ISTRAŽIVAČI', external: 'ISTRAŽIVAČI TREĆIH STRANA', opened: 'Otvoreno',
+    open: 'Otvori', switch: 'Promijeni', found: 'Pronađeno', possible: 'Moguće', search: 'Pretraži',
+    additional: (name: string) => `Dodatni istraživači za ${name}`,
+    openExplorer: (name: string) => `Otvori ${name}`,
+    openNewTab: (name: string) => `Otvori ${name} u novoj kartici`,
+    switchTo: (name: string) => `Prijeđi na ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Sakrij' : 'Prikaži'} dodatne mogućnosti za ${name}: ${count}`,
+  },
   fi: {
     choose: 'Valitse haettava ketju', selectedAria: 'Valittu lohkoketjuselain', selected: 'VALITTU',
     unavailable: 'Lohkoketjuselainten luettelo ei ole saatavilla', loading: 'Ladataan lohkoketjuselaimia', automatic: 'Automaattinen reititys',
