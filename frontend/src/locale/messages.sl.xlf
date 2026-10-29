@@ -11057,14 +11057,14 @@
       <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target state="needs-review-translation">Surovi biti</target></trans-unit>
       <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target state="needs-review-translation">Obvezno</target></trans-unit>
       <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target state="needs-review-translation">Naslov vozlišča</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target state="needs-review-translation">Izberi verigo za iskanje</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target state="needs-review-translation">Izberite verigo za iskanje</target></trans-unit>
       <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target state="needs-review-translation">Izbrani raziskovalnik</target></trans-unit>
       <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target state="needs-review-translation">IZBRANO</target></trans-unit>
       <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target state="needs-review-translation">Samodejno usmerjanje</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target state="needs-review-translation">Oglej si središče</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target state="needs-review-translation">NATIVNI RAZISKOVALNIKI</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target state="needs-review-translation">Odpri tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target state="needs-review-translation">LASTNI RAZISKOVALNIKI</target></trans-unit>
       <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target state="needs-review-translation">Seznam raziskovalnikov ni na voljo</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target state="needs-review-translation">RAZISKOVALNIKI 3. OSEB</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target state="needs-review-translation">DRUGI RAZISKOVALNIKI</target></trans-unit>
       <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target state="needs-review-translation">Odpri</target></trans-unit>
       <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target state="needs-review-translation">Najdeno</target></trans-unit>
       <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target state="needs-review-translation">Možno</target></trans-unit>
@@ -11072,9 +11072,9 @@
       <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target state="needs-review-translation">Preklopi</target></trans-unit>
       <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target state="needs-review-translation">Nalaganje raziskovalnikov</target></trans-unit>
       <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target state="needs-review-translation">Pokličite taksi in sem prilepite kar koli.</target></trans-unit>
-      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>Iskanje</target>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target state="needs-review-translation">Išči</target>
         </trans-unit>
-      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>Iskanje</target>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target state="needs-review-translation">Išči</target>
         </trans-unit>
       <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target state="needs-review-translation">Logotip rudarskega bazena <x id="NAME" /></target></trans-unit>
       <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target state="needs-review-translation">Logotip rudarskega bazena</target></trans-unit>
