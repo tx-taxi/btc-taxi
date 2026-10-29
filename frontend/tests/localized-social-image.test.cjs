@@ -20,7 +20,7 @@ test('Bitcoin social image alt follows the application locale while preserving E
     Service.prototype.clearOgImage.call(service);
     return tags;
   }
-  const arabic = metadata('ar'), persian = metadata('fa'), catalan = metadata('ca'), croatian = metadata('hr'), finnish = metadata('fi'), spanish = metadata('es'), english = metadata('en-US');
+  const arabic = metadata('ar'), persian = metadata('fa'), catalan = metadata('ca'), croatian = metadata('hr'), lithuanian = metadata('lt'), finnish = metadata('fi'), spanish = metadata('es'), english = metadata('en-US');
   assert.match(arabic.get('og:image:alt'), /^صفحة معاملة Bitcoin/);
   assert.equal(arabic.get('twitter:image:alt'), arabic.get('og:image:alt'));
   assert.match(persian.get('og:image:alt'), /^صفحه تراکنش بیت‌کوین/);
@@ -29,6 +29,8 @@ test('Bitcoin social image alt follows the application locale while preserving E
   assert.equal(catalan.get('twitter:image:alt'), catalan.get('og:image:alt'));
   assert.match(croatian.get('og:image:alt'), /^Stranica Bitcoin transakcije/);
   assert.equal(croatian.get('twitter:image:alt'), croatian.get('og:image:alt'));
+  assert.match(lithuanian.get('og:image:alt'), /^Bitcoin sandorio puslapyje/);
+  assert.equal(lithuanian.get('twitter:image:alt'), lithuanian.get('og:image:alt'));
   assert.match(finnish.get('og:image:alt'), /^Bitcoin-transaktiosivu/);
   assert.equal(finnish.get('twitter:image:alt'), finnish.get('og:image:alt'));
   assert.match(spanish.get('og:image:alt'), /^Una página de transacción de Bitcoin/);
@@ -51,7 +53,7 @@ test('Lightning social image alt follows Arabic without changing English', () =>
     Service.prototype.clearOgImage.call({defaultImageUrl:'https://tx.taxi/lightning.png', metaService:{updateTag: tag => tags.set(tag.name || tag.property, tag.content)}});
     return tags;
   }
-  const arabic = metadata('ar'), persian = metadata('fa'), catalan = metadata('ca'), croatian = metadata('hr'), english = metadata('en-US');
+  const arabic = metadata('ar'), persian = metadata('fa'), catalan = metadata('ca'), croatian = metadata('hr'), lithuanian = metadata('lt'), english = metadata('en-US');
   assert.equal(arabic.get('og:image:alt'), 'مستكشف شبكة Lightning على tx.taxi.');
   assert.equal(arabic.get('twitter:image:alt'), arabic.get('og:image:alt'));
   assert.equal(persian.get('og:image:alt'), 'کاوشگر شبکه لایتنینگ در tx.taxi.');
@@ -60,6 +62,8 @@ test('Lightning social image alt follows Arabic without changing English', () =>
   assert.equal(catalan.get('twitter:image:alt'), catalan.get('og:image:alt'));
   assert.equal(croatian.get('og:image:alt'), 'Preglednik Lightning mreže na tx.taxi.');
   assert.equal(croatian.get('twitter:image:alt'), croatian.get('og:image:alt'));
+  assert.equal(lithuanian.get('og:image:alt'), 'Lightning tinklo naršyklė svetainėje tx.taxi.');
+  assert.equal(lithuanian.get('twitter:image:alt'), lithuanian.get('og:image:alt'));
   assert.equal(english.get('og:image:alt'), 'Lightning Network explorer on tx.taxi.');
 });
 
