@@ -295,6 +295,10 @@ h3 {
   margin-right: 50px;
 }
 
+#disclaimer .disclaimer-mobile {
+  display: none;
+}
+
 #disclaimer p:last-child {
   margin-bottom: 0;
 }
@@ -391,6 +395,10 @@ h3 {
 
   #disclaimer table {
     display: none;
+  }
+
+  #disclaimer .disclaimer-mobile {
+    display: block;
   }
 
   #enterprise-cta-mobile {

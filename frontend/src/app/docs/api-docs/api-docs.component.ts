@@ -30,7 +30,6 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
   officialMempoolInstance: boolean;
   runningElectrs: boolean;
   auditEnabled: boolean;
-  mobileViewport: boolean = false;
   timeLtrSubscription: Subscription;
   timeLtr: boolean = this.stateService.timeLtr.value;
   isMempoolSpaceBuild = this.stateService.isMempoolSpaceBuild;
@@ -48,7 +47,6 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
     if (this.faqTemplates) {
       this.faqTemplates.forEach((x) => this.dict[x.type] = x.template);
     }
-    this.mobileViewport = window.innerWidth <= 992;
   }
 
   ngAfterViewInit() {
