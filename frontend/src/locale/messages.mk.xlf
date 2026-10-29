@@ -937,7 +937,7 @@
       </trans-unit>
       <trans-unit id="b62e50ad8bdbb107a2ec978648faf36e9f91c3c1" datatype="html">
         <source>Payment to mempool.space for acceleration of txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;"/><x id="INTERPOLATION" equiv-text="tr(0, 10) }}"/>..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;"/></source>
-        <target>Плаќање во mempool.простор за забрзување на txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;" /><x id="INTERPOLATION" equiv-text="tr(0, 10) }}" />..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;" /></target>
+        <target>Плаќање во mempool.space за забрзување на txid <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;'/tx/' + tx.txid&quot; target=&quot;_blank&quot;&gt;" /><x id="INTERPOLATION" equiv-text="tr(0, 10) }}" />..<x id="INTERPOLATION_1" equiv-text="{{ tx.txid.substr(-10) }}" /><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/span&gt;" /></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">370,371</context>
@@ -3138,7 +3138,7 @@
       </trans-unit>
       <trans-unit id="b1fa5b210c9670d49a6506f046d4a0c2797fd402" datatype="html">
         <source>Block Health</source>
-        <target>Блокирај здравје</target>
+        <target>Состојба на блокот</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-health-graph/block-health-graph.component.html</context>
           <context context-type="linenumber">6</context>
@@ -4830,7 +4830,7 @@
       </trans-unit>
       <trans-unit id="7816493330657272952" datatype="html">
         <source>Coinjoin</source>
-        <target>Придружи се</target>
+        <target>CoinJoin</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/custom-dashboard/custom-dashboard.component.ts</context>
           <context context-type="linenumber">76</context>
@@ -5680,7 +5680,7 @@
       </trans-unit>
       <trans-unit id="993e5bc509c26db81d93018e24a6afe6e50cae52" datatype="html">
         <source>Liquid Federation Wallet</source>
-        <target>Течен паричник на федерацијата</target>
+        <target>Liquid федерациски паричник</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-addresses-stats/federation-addresses-stats.component.html</context>
           <context context-type="linenumber">5</context>
@@ -5763,7 +5763,7 @@
       </trans-unit>
       <trans-unit id="a5d0bd2f3fedabd093937eb13a9edb9bcd00b919" datatype="html">
         <source>Change output</source>
-        <target>Променете го излезот</target>
+        <target>Излез за кусур</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-utxos-list/federation-utxos-list.component.html</context>
           <context context-type="linenumber">55</context>
@@ -5862,7 +5862,7 @@
       </trans-unit>
       <trans-unit id="2e37a2401f3cb55f2b0c108f77c28bb9738f09e0" datatype="html">
         <source>Peg out in progress...</source>
-        <target>Поврзување во тек...</target>
+        <target>Peg-out во тек...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-list/recent-pegs-list.component.html</context>
           <context context-type="linenumber">69</context>
@@ -5889,7 +5889,7 @@
       </trans-unit>
       <trans-unit id="544fb5f2a64924b4b9d7d2bc25b8925492bd6d64" datatype="html">
         <source>24h Peg-Out Volume</source>
-        <target>Јачина на звук од 24 часа</target>
+        <target>Обем на peg-out за 24 часа</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
           <context context-type="linenumber">18</context>
@@ -7865,7 +7865,7 @@
       </trans-unit>
       <trans-unit id="c280048575ce581e2dd031ffac4a723cf76e8249" datatype="html">
         <source> This transaction is stored locally in your browser. Broadcast it to add it to the mempool. </source>
-        <target>Оваа трансакција е зачувана локално во вашиот прелистувач. Емитувајте го за да го додадете во меморијата.</target>
+        <target>Оваа трансакција е зачувана локално во вашиот прелистувач. Емитувајте ја за да ја додадете во мемпулот.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction-raw.component.html</context>
           <context context-type="linenumber">50,52</context>
@@ -8908,7 +8908,7 @@
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-liquid" datatype="html">
         <source>Documentation for the liquid.network WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Документација за услугата liquid.net WebSocket API: добивајте информации во реално време за блокови, мемории, трансакции, адреси и многу повеќе.</target>
+        <target>Документација за услугата liquid.network WebSocket API: добивајте информации во реално време за блокови, мемории, трансакции, адреси и многу повеќе.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -8916,7 +8916,7 @@
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
         <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
-        <target>Документација за btc.tx.taxi WebSocket API: добивајте Bitcoin блок, меморандум, трансакции и ажурирања на адреси во реално време.</target>
+        <target>Документација за btc.tx.taxi WebSocket API: добивајте Bitcoin блок, мемпул, трансакции и ажурирања на адреси во реално време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -11799,7 +11799,7 @@
       <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>Пауза/продолжи“ - „неодамнешни трансакции.pause-toggle.aria-label</target></trans-unit>
       <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 нова трансакција</target></trans-unit>
       <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html"><source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source><target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi прикажува само јавни податоци за мрежата Bitcoin.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />Не може да поврати средства, да решава проблеми со паричникот, да ги врати трансакциите или да го промени приоритетот за потврда.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />За тие барања, контактирајте со паричникот, размената или услугата за плаќање што ја создала трансакцијата.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target></trans-unit>
-      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Просечната основна такса што ја наплаќаат рутирачките јазли, игнорирајќи ги основните надоместоци &gt; 5000 mSats</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Медијалната основна такса што ја наплаќаат рутирачките јазли, игнорирајќи ги основните надоместоци &gt; 5000 mSats</target></trans-unit>
       <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html"><source>occurrences</source><target>појави</target></trans-unit>
       <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html"><source>Pause/Resume</source><target>Паузирај / продолжи</target></trans-unit>
       <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>Кластер“ - „трансакција.кластер</target></trans-unit>
