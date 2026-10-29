@@ -2577,7 +2577,7 @@
       </trans-unit>
       <trans-unit id="c5b2c0d65b8fd12ebf8c0d79f562703776fc954e" datatype="html">
         <source>Pegged in</source>
-        <target>Pegged in</target>
+        <target>הועבר לרשת הצד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.html</context>
           <context context-type="linenumber">37</context>
@@ -2587,7 +2587,7 @@
       </trans-unit>
       <trans-unit id="8f5d6ce525a24b049fee47f9b2d8447cca97ccc8" datatype="html">
         <source>Pegged out</source>
-        <target>Pegged out</target>
+        <target>הועבר מרשת הצד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.html</context>
           <context context-type="linenumber">41</context>
@@ -4450,7 +4450,7 @@
       </trans-unit>
       <trans-unit id="e6213c3f05146287cf121868d9f3d3c3ff5f9714" datatype="html">
         <source>TXs</source>
-        <target>TXs</target>
+        <target>עסקאות</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/blocks-list/blocks-list.component.html</context>
           <context context-type="linenumber">26</context>
@@ -5880,7 +5880,7 @@
       </trans-unit>
       <trans-unit id="44cfc2e57619bf9beab1ef5b4bedfa52246f5e27" datatype="html">
         <source>Peg-Ins</source>
-        <target>Peg-Ins</target>
+        <target>העברות לרשת הצד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
           <context context-type="linenumber">13</context>
@@ -5898,7 +5898,7 @@
       </trans-unit>
       <trans-unit id="3e7a5b4cf20d583207c96127eb0f0d1b91358544" datatype="html">
         <source>Peg-Outs</source>
-        <target>Peg-Outs</target>
+        <target>העברות מרשת הצד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
           <context context-type="linenumber">19</context>
@@ -5907,7 +5907,7 @@
       </trans-unit>
       <trans-unit id="380175a30ef4d977ec376044b17cf505d0e8ede0" datatype="html">
         <source>Unpeg</source>
-        <target>Unpeg</target>
+        <target>שחרור מהרשת הצדדית</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
           <context context-type="linenumber">3</context>
@@ -8131,7 +8131,7 @@
       </trans-unit>
       <trans-unit id="5de25175982d51c72d25bd79933e7b412d51e343" datatype="html">
         <source>Peg-in</source>
-        <target>Peg-in</target>
+        <target>העברה לרשת הצד</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">92</context>
@@ -8169,7 +8169,7 @@
       </trans-unit>
       <trans-unit id="c64b73564fd858ee5a4f73040893c9d625ca56ad" datatype="html">
         <source>Witness</source>
-        <target>Witness</target>
+        <target>עדות (Witness)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">173</context>
@@ -8178,7 +8178,7 @@
       </trans-unit>
       <trans-unit id="a8bc418b73c6bfcefc1b07c84d7f1126ab2a3237" datatype="html">
         <source>P2SH redeem script</source>
-        <target>P2SH redeem script</target>
+        <target>סקריפט מימוש P2SH</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">243</context>
@@ -8214,7 +8214,7 @@
       </trans-unit>
       <trans-unit id="e1d63108bdf06fa14ec13f038e23eebd4d391b16" datatype="html">
         <source>P2WSH witness script</source>
-        <target>P2WSH witness script</target>
+        <target>סקריפט עדות P2WSH</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">270</context>
