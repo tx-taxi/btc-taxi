@@ -5,7 +5,7 @@ export const vietnameseApiEntries: Record<string, [string, string?]> = {
  general:['Chung'], addresses:['Địa chỉ'], blocks:['Khối'], mining:['Khai thác'], fees:['Phí'], mempool:['Mempool'], transactions:['Giao dịch'],
  'get-difficulty-adjustment':['GET Điều chỉnh độ khó','Trả về thông tin điều chỉnh độ khó khai thác.'],
  'get-price':['GET Giá','Trả về giá Bitcoin mới nhất theo các loại tiền tệ chính.'],
- 'get-historical-price':['GET Giá lịch sử','Trả về giá Bitcoin lịch sử theo các loại tiền tệ chính. Tham số yêu cầu là <code>currency</code> và <code>timestamp</code>. Nếu không chỉ định tham số nào, trả về toàn bộ lịch sử giá có sẵn cho mọi loại tiền tệ.'],
+ 'get-historical-price':['GET Giá lịch sử','Trả về giá Bitcoin lịch sử theo các loại tiền tệ chính. Các tham số truy vấn có thể dùng là <code>currency</code> và <code>timestamp</code>. Nếu không chỉ định tham số nào, trả về toàn bộ lịch sử giá có sẵn cho mọi loại tiền tệ.'],
  'get-address':['GET Địa chỉ','Trả về thông tin địa chỉ gồm <code>address</code>, <code>chain_stats</code> và <code>mempool_stats</code>. Hai trường cuối gồm <code>tx_count</code>, <code>funded_txo_count</code>, <code>funded_txo_sum</code>, <code>spent_txo_count</code> và <code>spent_txo_sum</code>.'],
  'get-address-transactions':['GET Giao dịch của địa chỉ','Trả về lịch sử của địa chỉ hoặc scripthash từ mới đến cũ: tối đa 50 giao dịch trong mempool và 25 giao dịch đã xác nhận đầu tiên. Dùng <code>after_txid</code> để xem thêm giao dịch đã xác nhận.'],
  'get-address-transactions-chain':['GET Giao dịch đã xác nhận của địa chỉ','Trả về lịch sử đã xác nhận của địa chỉ hoặc scripthash từ mới đến cũ, mỗi trang 25 giao dịch. Chỉ định txid cuối cùng của trang trước để xem trang tiếp theo.'],
