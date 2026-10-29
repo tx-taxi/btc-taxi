@@ -11733,7 +11733,7 @@
       <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>3 versija</target></trans-unit>
       <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Nestandartinis</target></trans-unit>
       <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Atviras multisig</target></trans-unit>
-      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Apmokėta antrinio sandorio</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Apmoka antrinis sandoris</target></trans-unit>
       <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Apmoka pirminį sandorį</target></trans-unit>
       <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Pakeitimas</target></trans-unit>
       <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Netikras viešasis raktas</target></trans-unit>
@@ -11752,7 +11752,7 @@
       <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target state="needs-review-translation">Subsidija</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target state="needs-review-translation">Subsidija (%)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target state="needs-review-translation">Subsidija (USD)</target></trans-unit>
-      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target state="needs-review-translation">Mokesčių intervalas</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target state="needs-review-translation">Mokesčio tarifo intervalas</target></trans-unit>
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target state="needs-review-translation">Mokesčio tarifo mediana</target></trans-unit>
       <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target state="needs-review-translation">Susisiekti su projekto prižiūrėtoju</target></trans-unit>
       <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>Licencija</target></trans-unit>
