@@ -16,8 +16,8 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   get es(): boolean { return this.locale.startsWith('es'); }
   get brandLabel(): string {
     const language = this.locale.toLowerCase().split(/[-_]/)[0];
-    const back: Record<string, string> = {es:'Volver a tx.taxi', fr:'Retour à tx.taxi', de:'Zurück zu tx.taxi'};
-    const dashboard: Record<string, string> = {es:'Panel de Lightning', fr:'Tableau de bord Lightning', de:'Lightning-Übersicht'};
+    const back: Record<string, string> = {es:'Volver a tx.taxi', fr:'Retour à tx.taxi', de:'Zurück zu tx.taxi', it:'Torna a tx.taxi'};
+    const dashboard: Record<string, string> = {es:'Panel de Lightning', fr:'Tableau de bord Lightning', de:'Lightning-Übersicht', it:'Panoramica Lightning'};
     return this.router.url === '/' ? back[language] || 'Back to tx.taxi' : dashboard[language] || 'Lightning dashboard';
   }
   readonly nav = [ {path:'/',icon:'nav-bolt',label:$localize`:@@taxi.lightning.nav.dashboard:Lightning dashboard`,exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:$localize`:@@taxi.lightning.nav.rankings:Node rankings`,exact:false}, {path:'/graphs',icon:'nav-chart-area',label:$localize`:@@taxi.lightning.nav.graphs:Lightning graphs`,exact:false}, {path:'/docs',icon:'nav-book',label:$localize`:@@taxi.lightning.nav.docs:Documentation`,exact:false}, {path:'/about',icon:'nav-info-circle',label:$localize`:@@taxi.lightning.nav.about:About Lightning`,exact:false} ];
@@ -70,7 +70,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private onBitcoinLink = (event:MouseEvent) => {
     const anchor = (event.target as Element)?.closest?.('a');
     if(!anchor || new URL(anchor.href,location.origin).origin !== 'https://btc.tx.taxi') return;
-    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de)(?:\/|$)/i)?.[1].toLowerCase();
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase();
     const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en';
     anchor.href = localizedNativeUrl(anchor.href, language);
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
@@ -78,7 +78,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   };
   brandClick(event:MouseEvent): void {
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de)(?:\/|$)/i)?.[1].toLowerCase(); const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en'; const hubUrl = localizedNativeUrl(hub + '/', language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
+    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase(); const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en'; const hubUrl = localizedNativeUrl(hub + '/', language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
   }
   @HostListener('document:keydown',['$event']) onKey(event:KeyboardEvent):void {if(event.key==='/' && !(event.target instanceof HTMLInputElement)){event.preventDefault();this.state.searchFocus$.next(true);}}
   ngOnDestroy():void {this.subscriptions.unsubscribe();this.linksObserver?.disconnect();document.removeEventListener('visibilitychange',this.onVisibility);document.removeEventListener('click',this.onBitcoinLink,true);}

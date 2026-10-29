@@ -341,8 +341,8 @@ export function hasTouchScreen(): boolean {
 /** Localize only the decimal mark, preserving rounding and significant-zero output. */
 export function localizeDecimalMark(value: string | number, locale: string): string {
   const text = String(value);
-  // These are the reviewed locales for the explorer. Preserve all other output.
-  if (!/^(es|fr|de)(-|$)/i.test(locale)) return text;
+  // Explicit localized builds use their decimal mark. Preserve all other output.
+  if (!/^(es|fr|de|it)(-|$)/i.test(locale)) return text;
   const separator = new Intl.NumberFormat(locale).formatToParts(1.1).find(part => part.type === 'decimal')?.value || '.';
   return text.replace('.', separator);
 }

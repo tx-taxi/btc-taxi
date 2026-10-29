@@ -230,6 +230,19 @@
                   "maximumWarning": "6kb"
                 }
               ]
+            },
+            "it-preview": {
+              "localize": ["en-US", "it"],
+              "outputPath": "dist/mempool-it-preview/browser",
+              "assets": [
+                "src/favicon.ico",
+                "src/robots.txt",
+                "src/resources",
+                "src/config.js",
+                "src/customize.js",
+                "src/config.template.js",
+                { "glob": "*.css", "input": ".theme-build", "output": "/" }
+              ]
             }
           },
           "defaultConfiguration": ""
@@ -370,7 +383,10 @@
       "prefix": "app",
       "i18n": {
         "sourceLocale": { "code": "en-US", "baseHref": "/" },
-        "locales": { "es": { "translation": "src/locale/messages.es.xlf", "baseHref": "/es/" } }
+        "locales": {
+          "es": { "translation": "src/locale/messages.es.xlf", "baseHref": "/es/" },
+          "it": { "translation": "src/locale/messages.it.xlf", "baseHref": "/it/" }
+        }
       },
       "architect": {
         "build": {
@@ -715,6 +731,10 @@
                 }
               ],
               "localize": ["en-US", "es"]
+            },
+            "it-preview": {
+              "localize": ["en-US", "it"],
+              "outputPath": "dist/lightning-it-preview/browser"
             }
           },
           "defaultConfiguration": ""
