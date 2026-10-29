@@ -1,0 +1,20 @@
+/** Finnish Lightning REST reference. API paths, identifiers, and examples stay unchanged. */
+export const finnishLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Verkkotilastot','<p>Palauttaa koko verkon tilastot, kuten kanavien ja solmujen määrät, kokonaiskapasiteetin sekä maksujen keskiarvot ja mediaanit.</p><p>Parametrille <code>:interval</code> voi antaa arvon <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> tai <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Solmut ja kanavat','<p>Palauttaa kyselyä <code>:query</code> vastaavat Lightning-solmut ja -kanavat. Haku kattaa solmujen aliakset ja julkiset avaimet sekä täydelliset ja lyhyet kanavatunnisteet. Haku ei huomioi kirjainkokoa.</p>'],
+ 'get-lightning-nodes-country':['Solmut maittain','<p>Palauttaa Lightning-solmut, joiden arvioidaan sijaitsevan maassa <code>:country</code> julkisen IP-osoitteen (clearnet) perusteella. Maa annetaan ISO alfa-2 -koodina.</p>'],
+ 'get-country-node-stats':['Solmutilastot maittain','<p>Palauttaa kokonaiskapasiteetin ja solmujen määrän maittain julkisen IP-osoitteen (clearnet) perusteella arvioituna. Kapasiteetti ilmoitetaan satosheina.</p>'],
+ 'get-isp-nodes':['Solmut palveluntarjoajittain','<p>Palauttaa palveluntarjoajan <code>:isp</code> solmut. Palveluntarjoaja annetaan ASN-tunnisteena.</p>'],
+ 'get-isp-node-stats':['Solmutilastot palveluntarjoajittain','<p>Palauttaa kokonaiskapasiteetin sekä solmujen ja kanavien määrät palveluntarjoajittain. Kapasiteetti ilmoitetaan satosheina.</p>'],
+ 'get-top-100-nodes':['100 suurinta solmua','<p>Palauttaa erilliset 100 solmun listat likviditeetin (kanavien kokonaiskapasiteetti) ja yhteyksien (avointen kanavien määrä) mukaan.</p>'],
+ 'get-top-100-nodes-liquidity':['100 suurinta solmua likviditeetin mukaan','<p>Palauttaa 100 likvideintä solmua kanavien kokonaiskapasiteetilla mitattuna.</p>'],
+ 'get-top-100-nodes-connectivity':['100 suurinta solmua yhteyksien mukaan','<p>Palauttaa 100 solmua, joilla on eniten yhteyksiä avointen kanavien määrällä mitattuna.</p>'],
+ 'get-top-100-oldest-nodes':['100 vanhinta solmua','<p>Palauttaa 100 vanhinta solmua.</p>'],
+ 'get-node-stats':['Solmun tilastot','<p>Palauttaa julkisella avaimella <code>:pubKey</code> määritetyn solmun tiedot.</p>'],
+ 'get-historical-node-stats':['Solmun historialliset tilastot','<p>Palauttaa julkisella avaimella <code>:pubKey</code> määritetyn solmun historialliset tilastot.</p>'],
+ 'get-channel':['Kanava','<p>Palauttaa Lightning-kanavan tiedot tunnisteella <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Kanavat transaktiotunnisteen mukaan','<p>Palauttaa annettua <code>:txid</code>-tunnistetta vastaavat kanavat. Useita transaktiotunnisteita voi antaa.</p>'],
+ 'get-channels-from-pubkey':['Kanavat solmun julkisen avaimen mukaan','<p>Palauttaa avaimella <code>:pubKey</code> määritetyn solmun kanavat, 10 sivua kohti. Käytä sivutukseen parametria <code>:index</code>. Parametrin <code>:channelStatus</code> arvo voi olla <code>open</code>, <code>active</code> tai <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Kanavien sijaintitiedot','<p>Palauttaa luettelon kanavista ja niiden solmujen maantieteellisistä tiedoista.</p>'],
+ 'get-channel-geodata-node':['Solmun kanavien sijaintitiedot','<p>Palauttaa julkisella avaimella <code>:pubKey</code> määritetyn solmun kanavat ja niiden maantieteelliset tiedot.</p>'],
+};
