@@ -11937,6 +11937,20 @@
       <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html">
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source>
         <target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi는 비트코인 네트워크의 공개 데이터만 표시합니다.<x id="CLOSE_BOLD_TEXT" /> 자금을 되찾거나 지갑 문제를 해결하거나 트랜잭션을 되돌리거나 확인 우선순위를 변경할 수 없습니다.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />이러한 요청은 트랜잭션을 생성한 지갑, 거래소 또는 결제 서비스에 문의하세요.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF 활성화</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF 비활성화</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>버전 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>버전 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>버전 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>비표준</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>베어 다중서명</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>자식 거래가 수수료 지불</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>부모 거래 수수료 지불</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>대체 거래</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>가짜 공개키</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>가짜 스크립트 해시</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Annex 데이터</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>거래 필터</target></trans-unit>
     </body>
   </file>
 </xliff>
