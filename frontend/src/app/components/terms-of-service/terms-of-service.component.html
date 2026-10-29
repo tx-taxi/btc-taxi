@@ -944,7 +944,8 @@
 
 </ng-template>
 
-<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -992,4 +993,30 @@
   <br><br>
 </div>
 
+</ng-template>
+
+<ng-template #thaiLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>ข้อกำหนดการใช้บริการ</h2><h6>อัปเดต: 20 กันยายน 2026</h6><br><br>
+<div class="text-start">
+<h4>explorer สำหรับให้ข้อมูล</h4>
+<p>btc.tx.taxi แสดงข้อมูลสาธารณะของบล็อก ธุรกรรม ที่อยู่ การขุด ค่าธรรมเนียมโดยประมาณ และสถานะ mempool ของ Bitcoin โดยเป็นบริการให้ข้อมูล ไม่ใช่กระเป๋าเงิน ตลาดแลกเปลี่ยน ผู้รับฝากทรัพย์สิน ผู้ประมวลผลการชำระเงิน หรือบริการจัดลำดับความสำคัญของธุรกรรม</p>
+<br>
+<h4>ไม่สามารถควบคุมธุรกรรม Bitcoin</h4>
+<p>ผู้ดำเนินการไม่สามารถย้อนกลับ ยกเลิก เร่งความเร็ว กู้คืน หรือเปลี่ยนปลายทางของธุรกรรม Bitcoin ได้ หากมีปัญหาเกี่ยวกับกระเป๋าเงิน ตลาดแลกเปลี่ยน หรือการชำระเงิน โปรดติดต่อบริการที่สร้างหรือรับธุรกรรมนั้น</p>
+<br>
+<h4>ข้อมูลและความพร้อมใช้งาน</h4>
+<p>ข้อมูลใน explorer อาจล่าช้า ไม่ครบถ้วน ไม่พร้อมใช้งาน หรือแตกต่างจากมุมมองของโหนดอื่น ค่าธรรมเนียมที่แสดงเป็นเพียงค่าประมาณและไม่รับประกันการยืนยัน บริการนี้ให้ตามสภาพที่เป็นอยู่ โดยไม่รับประกันว่าจะพร้อมใช้งานอย่างต่อเนื่องหรือเหมาะสมกับวัตถุประสงค์เฉพาะ</p>
+<br>
+<h4>การใช้งานที่ยอมรับได้</h4>
+<p>ห้ามใช้เว็บไซต์หรือ API ในทางที่ผิด รบกวนการทำงานของบริการ หลีกเลี่ยงข้อจำกัดอัตราคำขอที่สมเหตุสมผล หรือใช้บริการโดยผิดกฎหมาย อาจมีการจำกัดการเข้าถึงเมื่อจำเป็นเพื่อรักษาความพร้อมใช้งาน</p>
+<br>
+<h4>บริการภายนอก</h4>
+<p>เว็บไซต์นี้อาจมีลิงก์ไปยังช่องทางติดต่อของ tx.taxi แหล่งข้อมูลอ้างอิง Bitcoin ข้อมูลใบอนุญาต และโครงสร้างพื้นฐานที่บริการพึ่งพา เว็บไซต์ภายนอกมีข้อกำหนดและนโยบายของตนเอง</p>
+<br>
+<h4>โอเพนซอร์ส</h4>
+<p>btc.tx.taxi พัฒนาต่อยอดจาก Mempool Open Source Project และเผยแพร่ภายใต้ข้อผูกพันของ AGPLv3 ติดต่อ <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> เพื่อขอข้อมูลซอร์สโค้ดและใบอนุญาตที่เกี่ยวข้อง</p>
+<br>
+</div></div><br><br></div>
 </ng-template>

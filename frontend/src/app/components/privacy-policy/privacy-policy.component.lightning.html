@@ -1046,7 +1046,8 @@
 
 </ng-template>
 
-<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1099,4 +1100,33 @@
   <br><br>
 </div>
 
+</ng-template>
+
+<ng-template #thaiLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>นโยบายความเป็นส่วนตัว</h2><h6>อัปเดต: 29 ตุลาคม 2026</h6><br><br>
+<div class="text-start">
+<h4>การวัดจำนวนผู้ใช้งาน</h4>
+<p>tx.taxi ใช้ Cloudflare Web Analytics เพื่อวัดจำนวนการเข้าชมหน้าเว็บและประสิทธิภาพ และใช้คุกกี้ของเว็บไซต์เองที่แชร์ระหว่าง explorer เพื่อให้นับแต่ละเบราว์เซอร์เพียงครั้งเดียวต่อวันตามเวลา UTC ระบบเก็บข้อมูลผู้ใช้งานรายวันจัดเก็บเฉพาะตัวระบุรายวัน ชื่อโฮสต์ของ explorer และข้อมูลว่ามีการโต้ตอบหรือไม่ โดยไม่จัดเก็บข้อความค้นหา ที่อยู่บล็อกเชน ID ธุรกรรม URL ของหน้าที่เข้าชม หรือที่อยู่ IP ข้อมูลรายวันแต่ละรายการหมดอายุหลัง 31 วัน ส่วนยอดรวมเก็บไว้ 400 วัน การเปิด Do Not Track หรือ Global Privacy Control จะปิดการวัดผลของเว็บไซต์เองนี้ <a href="https://tx.taxi/privacy#audience-measurement">รายละเอียดและวิธีปฏิเสธการวัดผล</a></p>
+<br>
+<h4>ข้อมูลเครือข่ายสาธารณะ</h4>
+<p>lightning.btc.tx.taxi แสดงข้อมูล gossip สาธารณะของ Lightning และสถิติเครือข่าย ช่องทางส่วนตัว การชำระเงินแต่ละรายการ และยอดคงเหลือของช่องทางไม่ปรากฏต่อสาธารณะ หากต้องการตรวจสอบอย่างเป็นอิสระ ให้เปรียบเทียบกราฟสาธารณะกับโหนด Lightning ของคุณเอง</p>
+<br>
+<h4>ข้อมูลคำขอ</h4>
+<p>คำขอเว็บไซต์และ API ตามปกติอาจเปิดเผยข้อมูลเมตาเว็บทั่วไปแก่ผู้ดำเนินการ รวมถึงที่อยู่ IP, user agent, URL ที่ร้องขอ และเวลาที่ส่งคำขอ บันทึกของเซิร์ฟเวอร์อาจถูกเก็บไว้เพื่อความน่าเชื่อถือ ป้องกันการใช้งานในทางที่ผิด และแก้ไขข้อผิดพลาด</p>
+<br>
+<h4>การตั้งค่าในเครื่อง</h4>
+<p>การตั้งค่าการแสดงผล เช่น ธีม หน่วยแสดงผล สกุลเงินเฟียต ภาษา และเขตเวลา อาจถูกเก็บไว้ในเบราว์เซอร์ของคุณ การใช้งาน explorer ของ lightning.btc.tx.taxi ตามปกติไม่จำเป็นต้องมีบัญชี</p>
+<br>
+<h4>การค้นหาและช่องทางสาธารณะ</h4>
+<p>คีย์ของโหนด Lightning สาธารณะ จุดเชื่อมต่อที่ประกาศ นโยบายช่องทาง และธุรกรรม Bitcoin ที่ใช้เปิดช่องทางเป็นข้อมูลสาธารณะ การค้นหาโหนดหรือช่องทางอาจเชื่อมโยงการค้นหานั้นกับข้อมูลเมตาเครือข่ายของคุณ อย่าถือว่า explorer สาธารณะเป็นขอบเขตป้องกันความเป็นส่วนตัว</p>
+<br>
+<h4>ลิงก์ภายนอก</h4>
+<p>เว็บไซต์นี้มีลิงก์ไปยังช่องทางติดต่อของ tx.taxi เอกสาร Bitcoin ซอร์สโค้ดต้นทาง และข้อมูลใบอนุญาต บริการภายนอกเหล่านั้นมีนโยบายความเป็นส่วนตัวของตนเอง</p>
+<br>
+<h4>การระบุที่มาโอเพนซอร์ส</h4>
+<p>lightning.btc.tx.taxi พัฒนาต่อยอดจาก mempool/mempool และสืบทอดข้อผูกพันตาม AGPLv3 ชื่อ โลโก้ และเครื่องหมายการค้าของ Mempool ยังคงเป็นทรัพย์สินของเจ้าของแต่ละราย lightning.btc.tx.taxi ไม่มีความเกี่ยวข้องกับ Mempool Holdings S.A. de C.V. และไม่ได้รับการรับรองจากบริษัทดังกล่าว</p>
+<br>
+</div></div><br><br></div>
 </ng-template>

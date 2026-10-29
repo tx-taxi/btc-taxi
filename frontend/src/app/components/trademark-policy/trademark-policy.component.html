@@ -851,7 +851,8 @@
 
 </ng-template>
 
-<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else englishLegal" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
+<ng-template #thaiOrEnglish><ng-container *ngIf="th; else englishLegal" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -894,4 +895,27 @@
   <br><br>
 </div>
 
+</ng-template>
+
+<ng-template #thaiLegal>
+<div class="container-xl"><div class="text-center"><br>
+<img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+<br><br><h2>เครื่องหมายการค้าและการระบุที่มา</h2><h6>อัปเดต: 20 กันยายน 2026</h6><br><br>
+<div class="text-start">
+<h4>อัตลักษณ์ของ tx.taxi</h4>
+<p>btc.tx.taxi เป็น Bitcoin explorer ในกลุ่ม tx.taxi ที่ดำเนินการอย่างเป็นอิสระ โดเมน โลโก้ตัวอักษร ชุดสีของเชน และอัตลักษณ์ของบริการทำให้ fork นี้แตกต่างจากโครงการต้นทาง</p>
+<br>
+<h4>ที่มาของโครงการต้นทาง</h4>
+<p>ซอฟต์แวร์นี้พัฒนาต่อยอดจาก Mempool Open Source Project ซอร์สโค้ดต้นทาง ระบบภาพ ชื่อโครงการ โลโก้ และเครื่องหมายการค้าเป็นทรัพย์สินของเจ้าของแต่ละราย</p>
+<br>
+<h4>ไม่มีความเกี่ยวข้อง</h4>
+<p>btc.tx.taxi ไม่มีความเกี่ยวข้อง ไม่ได้รับการสนับสนุนหรือรับรองจาก Mempool Holdings S.A. de C.V. การอ้างถึง mempool.space และ mempool/mempool เป็นการระบุชื่อเพื่อให้เครดิตซอฟต์แวร์ต้นทางที่ fork นี้พัฒนาต่อยอดมา</p>
+<br>
+<h4>Bitcoin</h4>
+<p>Bitcoin เป็นเครือข่ายและโพรโทคอลแบบเปิด การอ้างถึง Bitcoin, BTC, satoshi, บล็อก ธุรกรรม ที่อยู่ การขุด และ Lightning เป็นการอธิบายข้อมูลเครือข่ายที่ explorer นี้แสดง</p>
+<br>
+<h4>ใบอนุญาต</h4>
+<p>fork นี้ปฏิบัติตามข้อผูกพันของใบอนุญาต AGPLv3 ของโครงการต้นทาง โปรดติดต่อผู้ดำเนินการเพื่อขอข้อมูลซอร์สโค้ดและใบอนุญาตที่เกี่ยวข้อง</p>
+<br>
+</div></div><br><br></div>
 </ng-template>
