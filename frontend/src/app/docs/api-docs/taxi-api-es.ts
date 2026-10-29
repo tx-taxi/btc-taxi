@@ -1,3 +1,4 @@
+import { chineseApiEntries } from './taxi-api-zh';
 import { japaneseApiEntries } from './taxi-api-ja';
 import { russianApiEntries } from './taxi-api-ru';
 import { portugueseApiEntries } from './taxi-api-pt';
@@ -83,7 +84,7 @@ const entries: Record<string, [string, string?]> = {
 };
 
 export function localizedTaxiApi<T extends {fragment: string; title: string; description?: any}>(items: T[], locale: string): T[] {
-  const localized = locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : null;
+  const localized = locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : locale.startsWith('zh') ? chineseApiEntries : null;
   if (!localized) return items;
   return items.map(item => {
     const translated = localized[item.fragment];

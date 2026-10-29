@@ -2275,7 +2275,7 @@
       </trans-unit>
       <trans-unit id="fb5b5aec9a6add4912de64b7bbc55884cc7f8e3a" datatype="html">
         <source>Unspent TXOs</source>
-        <target>未使用输出额</target>
+        <target>未花费交易输出</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address-preview.component.html</context>
           <context context-type="linenumber">39</context>
@@ -7210,7 +7210,7 @@
       </trans-unit>
       <trans-unit id="7cbedd89f60daafaf0e56363900d666a4e02ffb1" datatype="html">
         <source>beta</source>
-        <target>beta</target>
+        <target>测试版</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -8169,7 +8169,7 @@
       </trans-unit>
       <trans-unit id="c64b73564fd858ee5a4f73040893c9d625ca56ad" datatype="html">
         <source>Witness</source>
-        <target>Witness</target>
+        <target>见证数据</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">173</context>
@@ -8178,7 +8178,7 @@
       </trans-unit>
       <trans-unit id="a8bc418b73c6bfcefc1b07c84d7f1126ab2a3237" datatype="html">
         <source>P2SH redeem script</source>
-        <target>P2SH redeem script</target>
+        <target>P2SH 赎回脚本</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">243</context>
@@ -8214,7 +8214,7 @@
       </trans-unit>
       <trans-unit id="e1d63108bdf06fa14ec13f038e23eebd4d391b16" datatype="html">
         <source>P2WSH witness script</source>
-        <target>P2WSH witness script</target>
+        <target>P2WSH 见证脚本</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">270</context>
@@ -8783,7 +8783,7 @@
       </trans-unit>
       <trans-unit id="b151944861534c4a9e9623537dba0a95f60e4455" datatype="html">
         <source>Endpoint</source>
-        <target>Endpoint</target>
+        <target>端点</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/api-docs/api-docs.component.html</context>
           <context context-type="linenumber">60</context>
@@ -8867,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>获取常见问题的答案，例如：什么是Mempool？为什么我的交易未被确认？如何运行自己的Mempool开源项目实例？等等。</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>了解Bitcoin常见问题的解答，包括内存池、交易确认、费用、挖矿和区块。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8891,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>mempool.space REST API 服务文档：获取有关地址、交易、区块、费用、挖矿、闪电网络等的信息。</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>btc.tx.taxi REST API文档：查询Bitcoin地址、交易、区块、费用、挖矿和网络数据。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8915,8 +8915,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>mempool.space WebSocket API 服务文档：获取有关块、内存池、交易、地址等的实时信息。</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source><target>btc.tx.taxi WebSocket API 文档：接收 Bitcoin 区块、内存池、交易和地址的实时更新。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -11356,7 +11355,7 @@
       </trans-unit>
       <trans-unit id="2259944601214794924" datatype="html">
         <source>Sighash Flags</source>
-        <target>Sighash Flags</target>
+        <target>Sighash 标志</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">125</context>
@@ -11566,6 +11565,620 @@
         <source>Third-party Licenses</source>
         <target>第三方许可</target>
       </trans-unit>
+      <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html">
+        <source>Using partner code</source>
+        <target state="needs-review-translation">正在使用合作伙伴代码</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
+          <context context-type="linenumber">658</context>
+        </context-group>
+        <note priority="1" from="description">accelerator.using-partner-code</note>
+      </trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
+        <source>* On average around block <x id="block" equiv-text="data[0].data[2]" /></source>
+        <target state="needs-review-translation">* 平均在 <x id="block" equiv-text="data[0].data[2]" /> 区块附近</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-graph/block-fees-graph.component.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
+        <source>Subsidy</source>
+        <target state="needs-review-translation">区块补贴</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
+        <source>Subsidy (USD)</source>
+        <target state="needs-review-translation">区块补贴（美元）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
+        <source>Fees (USD)</source>
+        <target state="needs-review-translation">费用（美元）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
+        <source>Subsidy (%)</source>
+        <target state="needs-review-translation">区块补贴（%）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
+        <source>Fees (%)</source>
+        <target state="needs-review-translation">费用（%）</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-fees-subsidy-graph/block-fees-subsidy-graph.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html">
+        <source>select filter categories to highlight matching pending transactions</source>
+        <target>选择筛选类别以突出显示匹配的待确认交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Transaction filters tooltip</note>
+      </trans-unit>
+      <trans-unit id="1cdb643999eb6d66bcd839aeaa381b62b8be8cd4" datatype="html">
+        <source>mempool chunk</source>
+        <target state="needs-review-translation">内存池分块</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">Mempool chunk tooltip</note>
+        <note priority="1" from="meaning">cluster.mempool-chunk</note>
+      </trans-unit>
+      <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html">
+        <source>this transaction</source>
+        <target state="needs-review-translation">此交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">this transaction</note>
+        <note priority="1" from="meaning">cluster.this-transaction</note>
+      </trans-unit>
+      <trans-unit id="1eb8a98f68c1c98884c6436650f5ad80f4b3d5bf" datatype="html">
+        <source>parents</source>
+        <target state="needs-review-translation">父交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <note priority="1" from="description">parents</note>
+        <note priority="1" from="meaning">cluster.parents</note>
+      </trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html">
+        <source>children</source>
+        <target state="needs-review-translation">子交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+        <note priority="1" from="description">children</note>
+        <note priority="1" from="meaning">cluster.children</note>
+      </trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html">
+        <source>parent</source>
+        <target state="needs-review-translation">父交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+        <note priority="1" from="description">parent</note>
+        <note priority="1" from="meaning">cluster.parent</note>
+      </trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html">
+        <source>child</source>
+        <target state="needs-review-translation">子交易</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/cluster-diagram/cluster-diagram.component.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <note priority="1" from="description">child</note>
+        <note priority="1" from="meaning">cluster.child</note>
+      </trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html">
+        <source>More</source>
+        <target state="needs-review-translation">更多</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/graphs/graphs.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">more</note>
+      </trans-unit>
+      <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html">
+        <source>24h Volume</source>
+        <target state="needs-review-translation">24小时交易量</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-stats/recent-pegs-stats.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">liquid.24h-volume</note>
+      </trans-unit>
+      <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html">
+        <source>Reserve Deficit</source>
+        <target state="needs-review-translation">储备不足</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">liquid.reserve-deficit</note>
+      </trans-unit>
+      <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html">
+        <source>occurrence</source>
+        <target state="needs-review-translation">出现次数</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">shared.occurrence</note>
+      </trans-unit>
+      <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html">
+        <source>occurrences</source>
+        <target state="needs-review-translation">出现次数</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">shared.occurrences</note>
+      </trans-unit>
+      <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html">
+        <source>usages</source>
+        <target state="needs-review-translation">使用次数</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">shared.usages</note>
+      </trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
+        <source>1 new transaction</source>
+        <target>1 笔新交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.singular</note>
+      </trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
+        <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> 新交易</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">recent-transactions.new-tx-pill.plural</note>
+      </trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
+        <source>Pause/Resume</source>
+        <target>暂停/恢复</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Tooltip for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.title</note>
+      </trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
+        <source>Pause/Resume</source>
+        <target>暂停/恢复</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/recent-transactions-list/recent-transactions-list.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Accessible label for the pause/resume updates button</note>
+        <note priority="1" from="meaning">recent-transactions.pause-toggle.aria-label</note>
+      </trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source>
+        <target>虚拟大小</target>
+        </trans-unit>
+      <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html">
+        <source>In a mempool cluster containing 1 other chunk.</source>
+        <target state="needs-review-translation">位于包含另 1 个分块的内存池集群中。</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.cluster-line-one</note>
+      </trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html">
+        <source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source>
+        <target state="needs-review-translation">位于包含另外 <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> 个分块的内存池集群中。</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/transaction/transaction-details/transaction-details.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+        <note priority="1" from="description">cluster.preview.cluster-line-many</note>
+      </trans-unit>
+      <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html"><source>Cluster</source>
+        <target>集群</target>
+        </trans-unit>
+      <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html">
+        <source>LBTC Supply vs. BTC Holdings</source>
+        <target state="needs-review-translation">LBTC 供应量与 BTC 持有量</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
+          <context context-type="linenumber">296</context>
+        </context-group>
+        <note priority="1" from="description">dashboard.lbtc-supply-vs-btc-holdings</note>
+      </trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html">
+        <source>Your balance is too low.</source>
+        <target>您的余额不足。</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mempool-error/mempool-error.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">accelerator.low-balance</note>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target>地球上的任何地方 (AoE)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target>萨摩亚标准时间 (SST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target>夏威夷标准时间 (HST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target>阿拉斯加标准时间 (AKST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target>太平洋标准时间 (PST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target>山区标准时间 (MST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target>中部标准时间 (CST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target>东部标准时间 (EST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target>大西洋标准时间 (AST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target>阿根廷时间 (ART)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target>费尔南多-迪诺罗尼亚群岛时间 (FNT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target>亚速尔群岛时间 (AZOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target>格林威治标准时间 (GMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target>欧洲中部时间 (CET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target>东欧时间 (EET)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target>莫斯科标准时间 (MSK)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target>亚美尼亚时间 (AMT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target>巴基斯坦标准时间 (PKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target>新疆时间 (XJT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target>印度支那时间 (ICT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target>香港时间 (HKT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target>日本标准时间 (JST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target>澳大利亚东部标准时间 (AEST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target>诺福克时间 (NFT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target>新西兰标准时间 (NZST)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target>汤加时间 (TOT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target>莱恩群岛时间 (LINT)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target>铭文</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Bitcoin 浏览器首页</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>切换为显示区块大小</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>切换为显示每个区块的总手续费</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>切换为在右侧显示最新区块</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>切换为在左侧显示最新区块</target></trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html"><source> Values were capped at the max supply of 21M BTC </source><target> 数值已限制在 2,100 万 BTC 的最大供应量以内 </target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html"><source>Copy</source><target>复制</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html"><source>Copied</source><target>已复制</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html"><source>Copy to clipboard</source><target>复制到剪贴板</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html"><source>Copied to clipboard</source><target>已复制到剪贴板</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>btc.tx.taxi Bitcoin 浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>未找到 Lightning 节点或通道。</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>搜索暂不可用，请重试。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>一览 Lightning 网络。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>探索 Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>文档</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>源代码</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>状态</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>节点、通道和它们之间的网络</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>探索公开的 Lightning 节点与通道、路由策略、网络容量、地理分布和历史统计。查看节点的连接，或了解通道的开启与关闭。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>tx.taxi 的一部分</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>使用同一个搜索框查找 Lightning 节点或通道、切换浏览器，或将交易路由到对应的区块链。Bitcoin 链上浏览器位于</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>公开网络视图</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Lightning 支付和私有通道不会公开显示。容量表示投入公开通道的 bitcoin 数量，不代表任何一方当前可用的余额。节点位置对应其公布的网络端点。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>统计数据会显示源快照的日期。服务中断时仍可查看缓存数据。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>开源</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>基于</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>Mempool 项目</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>，以 GNU AGPLv3 许可发布。用 🚕 制作，来自</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>未找到通道。</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Lightning 数据暂不可用。</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>重试</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>tx.taxi Lightning 浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Lightning 节点、通道和网络活动</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>探索</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Lightning 首页</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>节点排行榜</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>节点地图</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>通道地图</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>惩罚</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>网络与文档</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>网络历史</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>国家和地区</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>互联网服务提供商</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>Lightning 常见问题</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>API 文档</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>关于</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>源代码</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>状态</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>加入 tx.taxi Telegram 频道</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>联系我们</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>以 AGPLv3 许可发布</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>法律信息</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>服务条款</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>隐私政策</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>商标与署名</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>第三方许可证</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>用</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>制作，来自</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>正在连接…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>正在重新连接…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>缓存数据</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Lightning 首页</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>节点排行榜</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Lightning 图表</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>文档</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>关于 Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>在 btc.tx.taxi 查看</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>未找到节点。</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>原始位</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>必需</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>节点地址</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>选择搜索的区块链</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>已选浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>已选择</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>自动路由</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>查看主页</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>原生浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>浏览器列表不可用</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>第三方浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>打开</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>已找到</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>可能匹配</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>正在查看</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>切换</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>正在加载浏览器</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>招一辆出租车，在这里粘贴任何内容。</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>搜索</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>搜索</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>zh-CN</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>手续费率中位数</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>手续费率范围</target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>矿池标志</target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html"><source>See the most recent transactions on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network, updated in real-time.</source><target>实时查看 Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/>网络上的最新交易。</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" equiv-text="this.name"/> mining pool</source><target><x id="NAME" equiv-text="this.name"/>矿池的标志</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>路由节点收取的平均基础手续费，不包括超过 5000 mSats 的基础手续费</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>路由节点收取的基础手续费中位数，不包括超过 5000 mSats 的基础手续费</target></trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html"><source>About btc.tx.taxi</source><target>关于btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html"><source>The Bitcoin explorer in the tx.taxi family.</source><target>tx.taxi家族的Bitcoin浏览器。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target>项目链接</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target>Bitcoin文档</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>联系维护者</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html"><source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source><target>btc.tx.taxi是多链tx.taxi家族的Bitcoin浏览器。它使用Bitcoin专属的tx.taxi视觉风格，同时保留Mempool成熟的界面，供用户查看区块、交易、地址、挖矿活动、费率估算和实时Bitcoin内存池。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target>Bitcoin原生数据</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target>数值以BTC、satoshi或选定的法定货币计价。费率以sat/vB表示，交易大小以vB或权重单位表示，界面中的区块、地址和挖矿概念均保留Bitcoin的含义。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html"><source>Infrastructure</source><target>基础设施</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html"><source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source><target>浏览器通过配置的后端读取公开Bitcoin网络数据。浏览器结果仅供参考，可能与其他节点的内存池视图不同。请始终在钱包中核实支付详情；需要独立验证时请使用自己的节点。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>许可证</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html"><source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source><target>btc.tx.taxi包含依照许可证使用的开源组件。归属详情请参阅第三方许可证声明。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target>基于开源构建</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target>费用（BTC）</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>btc.tx.taxi仪表盘</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target>仪表盘</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target>挖矿仪表盘</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>最近区块</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target>Bitcoin图表</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>关于btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>以每周150美元赞助Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>以每周150美元赞助此链</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>叫一辆出租车，在这里粘贴任何内容。</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target>缺失的先前输出未加载。费率等部分字段无法计算。</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target>加载缺失的先前输出时出错</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target>原因：</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target>加载CPFP数据时出错</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>待确认交易</target></trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target>Bitcoin区块、费用与内存池动态</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target>仪表盘</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target>Bitcoin图表</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target>工具与文档</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html"><source>Bitcoin FAQ</source><target>Bitcoin常见问题</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target>源代码</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>联系我们</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>遵循AGPLv3发布</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>商标与归属</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>制作</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>：</target></trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html"><source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source><target>此浏览器基于<x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />构建。请参阅<x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />第三方归属声明<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />，并联系维护者获取源代码及许可证信息。</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency" equiv-text="this.currency" /></source><target>费用（<x id="currency" equiv-text="this.currency" />）</target></trans-unit>
+      <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target>此交易属于包含1笔交易的分块，合并后的有效费率为<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />。</target></trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target>此交易属于包含<x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" />笔交易的分块，合并后的有效费率为<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />。</target></trans-unit>
+      <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html"><source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source><target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi仅显示Bitcoin网络的公开数据。<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />它无法取回资金、解决钱包问题、撤销交易或改变确认优先级。<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />如需处理这些问题，请联系创建该交易的钱包、交易所或支付服务。<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target></trans-unit>
     </body>
   </file>
 </xliff>

@@ -15,7 +15,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   ngOnInit(): void {
     void refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').then(() => this.cdr.markForCheck());
   }
-  get language(): string { return this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : 'en'; }
+  get language(): string { return this.locale.startsWith('es') ? 'es' : this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : 'en'; }
   get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.language); }
   get nativeUrl(): string { return this.language === 'en' ? '/' : `/${this.language}/`; }
   get es(): boolean { return this.language === 'es'; }
@@ -25,6 +25,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   get pt(): boolean { return this.language === 'pt'; }
   get ru(): boolean { return this.language === 'ru'; }
   get ja(): boolean { return this.language === 'ja'; }
+  get zh(): boolean { return this.language === 'zh'; }
   get contextLabel(): string {
     const explorer = this.context === 'explorer';
     const chain = this.chainName.trim();
@@ -33,6 +34,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
     if (this.de) return `${chain ? chain + '-' : ''}${explorer ? 'Explorer' : 'Dokumentation'}`;
     if (this.it) return `${explorer ? 'Esploratore' : 'Documentazione'}${chain ? ' ' + chain : ''}`;
     if (this.pt) return `${explorer ? 'Explorador' : 'Documentação'}${chain ? ' ' + chain : ''}`;
+    if (this.zh) return `${chain}${explorer ? '浏览器' : '文档'}`;
     if (this.ja) return `${chain}${explorer ? 'エクスプローラー' : 'ドキュメント'}`;
     if (this.ru) return `${explorer ? 'Обозреватель' : 'Документация'}${chain ? ' ' + chain : ''}`;
     return `${chain}${chain ? ' ' : ''}${this.context}`;
