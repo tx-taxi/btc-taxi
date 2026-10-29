@@ -16,8 +16,9 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     const lang = this.locale.toLowerCase().split(/[-_]/)[0];
-    const titles: Record<string, string> = { ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
+    const titles: Record<string, string> = { pl: 'O btc.tx.taxi', ko: 'btc.tx.taxi 소개', es: 'Acerca de btc.tx.taxi', fr: 'À propos de btc.tx.taxi', de: 'Über btc.tx.taxi', it: 'Informazioni su btc.tx.taxi', pt: 'Sobre btc.tx.taxi', ru: 'О btc.tx.taxi', ja: 'btc.tx.taxiについて', zh: '关于btc.tx.taxi', tr: 'btc.tx.taxi hakkında', nl: 'Over btc.tx.taxi' };
     const descriptions: Record<string, string> = {
+      pl: 'Poznaj btc.tx.taxi, eksplorator bloków i mempoola Bitcoin z wielosieciowej rodziny tx.taxi.',
       ko: '여러 체인을 지원하는 tx.taxi의 Bitcoin 블록 및 멤풀 탐색기 btc.tx.taxi를 알아보세요.',
       es: 'Conoce btc.tx.taxi, un explorador de bloques y mempool de Bitcoin de la familia multicadena tx.taxi.',
       fr: 'Découvrez btc.tx.taxi, un explorateur de blocs et du mempool Bitcoin de la famille multichaîne tx.taxi.',
