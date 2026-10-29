@@ -332,7 +332,8 @@
 </ng-template>
 <ng-template #dutchOrJapanese><ng-container *ngIf="nl; else japaneseOrEnglish" [ngTemplateOutlet]="dutchLegal"></ng-container></ng-template>
 <ng-template #dutchLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Gebruiksvoorwaarden</h2><h6>Bijgewerkt: 3 oktober 2026</h6><br><br><div class="text-start"><h4>Informatieve verkenner</h4><p>lightning.btc.tx.taxi toont openbare Lightning-nodes, kanalen, routeringsbeleid, netwerkcapaciteit en historische statistieken. Het is een informatiedienst, geen wallet, beurs, bewaarder, betaalverwerker of dienst voor transactieprioriteit.</p><br><h4>Geen controle over betalingen of kanalen</h4><p>De beheerder kan geen Lightning-betaling verzenden, terugdraaien, terughalen of omleiden en geen kanaal beheren. Neem bij problemen met een wallet of betaling contact op met de dienst die de betaling heeft aangemaakt of ontvangen.</p><br><h4>Gegevens en beschikbaarheid</h4><p>Gegevens kunnen vertraagd, onvolledig of niet beschikbaar zijn, of afwijken van wat een andere node ziet. Aangekondigde routeringskosten garanderen niet dat een route beschikbaar is of een betaling slaagt. De dienst wordt aangeboden zoals hij is, zonder garantie op ononderbroken beschikbaarheid of geschiktheid voor een bepaald doel.</p><br><h4>Aanvaardbaar gebruik</h4><p>Maak geen misbruik van de website of API, verstoor de werking niet, omzeil geen redelijke snelheidslimieten en gebruik de dienst niet onrechtmatig. Toegang kan zo nodig worden beperkt om de beschikbaarheid te beschermen.</p><br><h4>Externe diensten</h4><p>Deze site kan verwijzen naar contactkanalen van tx.taxi, Bitcoin-bronnen, licentie-informatie en gebruikte infrastructuur. Externe websites hebben hun eigen voorwaarden en beleid.</p><br><h4>Opensource</h4><p>lightning.btc.tx.taxi is afgeleid van het Mempool Open Source Project en wordt gedistribueerd met AGPLv3-verplichtingen. Neem contact op via <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> voor toepasselijke broncode en licentie-informatie.</p><br></div></div><br><br></div></ng-template>
-<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else koreanOrEnglish" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #koreanOrEnglish><ng-container *ngIf="ko; else englishLegal" [ngTemplateOutlet]="koreanLegal"></ng-container></ng-template>
 <ng-template #japaneseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -381,6 +382,55 @@
 </div>
 
 </ng-template>
+<ng-template #koreanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>서비스 이용약관</h2>
+    <h6>업데이트: 2026년 10월 3일</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>정보 제공 탐색기</h4>
+      <p>lightning.btc.tx.taxi는 공개 Lightning 노드, 채널, 라우팅 정책, 네트워크 용량 및 과거 통계를 보여줍니다. 이 서비스는 정보 제공용이며 지갑, 거래소, 수탁 서비스, 결제 처리 서비스 또는 트랜잭션 우선 처리 서비스가 아닙니다.</p>
+
+      <br>
+
+      <h4>결제 또는 채널에 대한 통제 권한 없음</h4>
+      <p>운영자는 Lightning 결제를 전송, 되돌리기, 복구 또는 다른 곳으로 보내거나 채널을 제어할 수 없습니다. 지갑 또는 결제 문제가 있다면 결제를 생성하거나 받은 서비스에 문의하세요.</p>
+
+      <br>
+
+      <h4>데이터 및 가용성</h4>
+      <p>탐색기 데이터는 지연되거나 불완전하거나 이용할 수 없거나 다른 노드의 정보와 다를 수 있습니다. 공지된 라우팅 수수료는 경로의 이용 가능성이나 결제 성공을 보장하지 않습니다. 이 서비스는 중단 없는 제공이나 특정 목적에 대한 적합성을 보장하지 않고 있는 그대로 제공됩니다.</p>
+
+      <br>
+
+      <h4>허용되는 사용</h4>
+      <p>웹사이트나 API를 악용하거나 서비스 운영을 방해하거나 합리적인 요청 제한을 우회하거나 불법적으로 서비스를 이용하지 마세요. 서비스 가용성을 보호하기 위해 필요한 경우 접근이 제한될 수 있습니다.</p>
+
+      <br>
+
+      <h4>외부 서비스</h4>
+      <p>이 사이트는 tx.taxi 연락 채널, Bitcoin 참고 자료, 라이선스 정보 및 서비스가 의존하는 인프라로 연결될 수 있습니다. 외부 웹사이트에는 자체 약관과 정책이 적용됩니다.</p>
+
+      <br>
+
+      <h4>오픈 소스</h4>
+      <p>lightning.btc.tx.taxi는 Mempool 오픈 소스 프로젝트에서 파생되었으며 AGPLv3 의무에 따라 배포됩니다. 적용되는 소스 코드 및 라이선스 정보는 <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>로 문의하세요.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

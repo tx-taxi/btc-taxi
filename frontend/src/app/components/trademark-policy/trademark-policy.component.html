@@ -299,7 +299,8 @@
 </ng-template>
 <ng-template #dutchOrJapanese><ng-container *ngIf="nl; else japaneseOrEnglish" [ngTemplateOutlet]="dutchLegal"></ng-container></ng-template>
 <ng-template #dutchLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Handelsmerken en naamsvermelding</h2><h6>Bijgewerkt: 20 september 2026</h6><br><br><div class="text-start"><h4>tx.taxi-identiteit</h4><p>btc.tx.taxi is een onafhankelijk beheerde Bitcoin-verkenner in de tx.taxi-familie. De domeinnaam, het woordmerk, de blockchainkleuren en de dienstidentiteit onderscheiden deze fork van het oorspronkelijke project.</p><br><h4>Naamsvermelding van het oorspronkelijke project</h4><p>Deze software is afgeleid van het Mempool Open Source Project. De oorspronkelijke broncode, het visuele systeem, projectnamen, logo’s en handelsmerken blijven eigendom van hun respectieve eigenaren.</p><br><h4>Geen verbondenheid</h4><p>btc.tx.taxi is niet verbonden met, gesponsord door of goedgekeurd door Mempool Holdings S.A. de C.V. Verwijzingen naar mempool.space en mempool/mempool dienen uitsluitend om de software te benoemen waarvan deze fork is afgeleid.</p><br><h4>Bitcoin</h4><p>Bitcoin is een open netwerk en protocol. Verwijzingen naar Bitcoin, BTC, satoshi, blokken, transacties, adressen, mijnbouw en Lightning beschrijven de netwerkgegevens die deze verkenner toont.</p><br><h4>Licentie</h4><p>Deze fork voldoet aan de AGPLv3-licentieverplichtingen van het oorspronkelijke project. Neem contact op met de beheerder voor toepasselijke broncode en licentie-informatie.</p><br></div></div><br><br></div></ng-template>
-<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else englishLegal" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #japaneseOrEnglish><ng-container *ngIf="ja; else koreanOrEnglish" [ngTemplateOutlet]="japaneseLegal"></ng-container></ng-template>
+<ng-template #koreanOrEnglish><ng-container *ngIf="ko; else englishLegal" [ngTemplateOutlet]="koreanLegal"></ng-container></ng-template>
 <ng-template #japaneseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -343,6 +344,50 @@
 </div>
 
 </ng-template>
+<ng-template #koreanLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>상표 및 출처 표시</h2>
+    <h6>업데이트: 2026년 9월 20일</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi 서비스 정체성</h4>
+      <p>btc.tx.taxi는 tx.taxi 계열의 독립적으로 운영되는 Bitcoin 탐색기입니다. 도메인, 워드마크, 체인 색상 팔레트 및 서비스 정체성은 이 포크를 원본 프로젝트와 구별합니다.</p>
+
+      <br>
+
+      <h4>원본 프로젝트 표시</h4>
+      <p>이 소프트웨어는 Mempool 오픈 소스 프로젝트에서 파생되었습니다. 원본 소스 코드, 시각 체계, 프로젝트 이름, 로고 및 상표는 각 소유자에게 귀속됩니다.</p>
+
+      <br>
+
+      <h4>제휴 관계 없음</h4>
+      <p>btc.tx.taxi는 Mempool Holdings S.A. de C.V.와 제휴 관계가 없으며 그 후원이나 승인을 받지 않았습니다. mempool.space 및 mempool/mempool에 대한 언급은 이 포크가 파생된 소프트웨어의 출처를 식별하기 위한 것입니다.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin은 개방형 네트워크이자 프로토콜입니다. Bitcoin, BTC, 사토시, 블록, 트랜잭션, 주소, 채굴 및 Lightning에 대한 언급은 이 탐색기에서 제공하는 네트워크 데이터를 설명합니다.</p>
+
+      <br>
+
+      <h4>라이선스</h4>
+      <p>이 포크는 원본 프로젝트의 AGPLv3 라이선스 의무를 따릅니다. 적용되는 소스 코드 및 라이선스 정보는 운영자에게 문의하세요.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
