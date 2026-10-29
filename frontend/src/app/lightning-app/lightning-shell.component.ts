@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router, NavigationStart } from '@angular/router';
 import { StateService } from '@app/services/state.service';
 import { readSharedPreference } from '@app/services/shared-preferences';
-import { localizedNativeUrl } from '@app/services/localized-native-url';
+import { localizedNativeUrl, refreshLocalizedCapabilities } from '@app/services/localized-native-url';
 import { ThemeService } from '@app/services/theme.service';
 import { SeoService } from '@app/services/seo.service';
 import { OpenGraphService } from '@app/services/opengraph.service';
@@ -24,6 +24,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private subscriptions = new Subscription();
   private linksObserver?: MutationObserver;
   private applyingSharedCurrency = false;
+  private navigatingHub = false;
   private readonly availableCurrencies = new Set(['USD', 'EUR', 'GBP', 'CAD', 'CHF', 'AUD', 'JPY']);
   private readSharedCurrency(): string | null {
     const pair = document.cookie.split(';').map(part => part.trim()).find(part => part.startsWith('txtaxi_currency='));
@@ -76,9 +77,9 @@ export class LightningShellComponent implements OnInit, OnDestroy {
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
     event.preventDefault(); event.stopImmediatePropagation(); location.assign(anchor.href);
   };
-  brandClick(event:MouseEvent): void {
+  async brandClick(event:MouseEvent): Promise<void> {
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase(); const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en'; const hubUrl = localizedNativeUrl(hub + '/', language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
+    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase(); const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en'; if (this.navigatingHub) return; this.navigatingHub = true; if (language !== 'en') await refreshLocalizedCapabilities(hub); const hubUrl = localizedNativeUrl(hub + '/', language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
   }
   @HostListener('document:keydown',['$event']) onKey(event:KeyboardEvent):void {if(event.key==='/' && !(event.target instanceof HTMLInputElement)){event.preventDefault();this.state.searchFocus$.next(true);}}
   ngOnDestroy():void {this.subscriptions.unsubscribe();this.linksObserver?.disconnect();document.removeEventListener('visibilitychange',this.onVisibility);document.removeEventListener('click',this.onBitcoinLink,true);}
