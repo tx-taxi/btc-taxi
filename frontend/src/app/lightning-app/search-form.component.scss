@@ -439,3 +439,12 @@ input[aria-invalid='true'] {
   transform: none !important;
   width: min(270px, calc(100vw - 24px)) !important;
 }
+
+/* Allow longer RTL chain names to wrap without clipping beside the actions. */
+:host-context(.rtl-layout) .search-chain-automatic .search-chain-name {
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  line-height: 1.35;
+}
+:host-context(.rtl-layout) .search-chain-select { text-align: start; }

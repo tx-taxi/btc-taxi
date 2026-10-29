@@ -3,7 +3,7 @@ const copy = {
   ar: {
     choose: 'اختيار سلسلة البحث', selectedAria: 'المستكشف المحدد', selected: 'المحدد',
     unavailable: 'قائمة المستكشفات غير متاحة', loading: 'جارٍ تحميل المستكشفات', automatic: 'التوجيه التلقائي',
-    viewHub: 'عرض الصفحة الرئيسية', hint: 'أو انتقل مباشرةً', searchExample: '[عبارة البحث]',
+    viewHub: 'عرض المركز', hint: 'أو انتقل مباشرةً', searchExample: '[عبارة البحث]',
     native: 'المستكشفات الأصلية', external: 'مستكشفات خارجية', opened: 'مفتوح',
     open: 'فتح', switch: 'تبديل', found: 'تم العثور', possible: 'محتمل', search: 'بحث',
     additional: (name: string) => `مستكشفات إضافية لـ ${name}`,
