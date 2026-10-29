@@ -16,8 +16,8 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   get es(): boolean { return this.locale.startsWith('es'); }
   get brandLabel(): string {
     const language = this.locale.toLowerCase().split(/[-_]/)[0];
-    const back: Record<string, string> = {es:'Volver a tx.taxi', fr:'Retour à tx.taxi', de:'Zurück zu tx.taxi', it:'Torna a tx.taxi', pt:'Voltar a tx.taxi', ru:'Вернуться на tx.taxi', ja:'tx.taxiに戻る', zh:'返回tx.taxi', tr:'tx.taxi’ye dön', nl:'Terug naar tx.taxi', ko:'tx.taxi로 돌아가기', pl:'Wróć do tx.taxi', uk:'Повернутися до tx.taxi', nb:'Tilbake til tx.taxi', sv:'Tillbaka till tx.taxi'};
-    const dashboard: Record<string, string> = {es:'Panel de Lightning', fr:'Tableau de bord Lightning', de:'Lightning-Übersicht', it:'Panoramica Lightning', pt:'Painel Lightning', ru:'Главная Lightning', ja:'Lightningダッシュボード', zh:'Lightning仪表盘', tr:'Lightning ana sayfası', nl:'Lightning-dashboard', ko:'Lightning 대시보드', pl:'Panel Lightning', uk:'Панель Lightning', nb:'Lightning-oversikt', sv:'Lightning-översikt'};
+    const back: Record<string, string> = {es:'Volver a tx.taxi', fr:'Retour à tx.taxi', de:'Zurück zu tx.taxi', it:'Torna a tx.taxi', pt:'Voltar a tx.taxi', ru:'Вернуться на tx.taxi', ja:'tx.taxiに戻る', zh:'返回tx.taxi', tr:'tx.taxi’ye dön', nl:'Terug naar tx.taxi', ko:'tx.taxi로 돌아가기', pl:'Wróć do tx.taxi', uk:'Повернутися до tx.taxi', nb:'Tilbake til tx.taxi', sv:'Tillbaka till tx.taxi', cs:'Zpět na tx.taxi'};
+    const dashboard: Record<string, string> = {es:'Panel de Lightning', fr:'Tableau de bord Lightning', de:'Lightning-Übersicht', it:'Panoramica Lightning', pt:'Painel Lightning', ru:'Главная Lightning', ja:'Lightningダッシュボード', zh:'Lightning仪表盘', tr:'Lightning ana sayfası', nl:'Lightning-dashboard', ko:'Lightning 대시보드', pl:'Panel Lightning', uk:'Панель Lightning', nb:'Lightning-oversikt', sv:'Lightning-översikt', cs:'Přehled Lightning'};
     return this.router.url === '/' ? back[language] || 'Back to tx.taxi' : dashboard[language] || 'Lightning dashboard';
   }
   readonly nav = [ {path:'/',icon:'nav-bolt',label:$localize`:@@taxi.lightning.nav.dashboard:Lightning dashboard`,exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:$localize`:@@taxi.lightning.nav.rankings:Node rankings`,exact:false}, {path:'/graphs',icon:'nav-chart-area',label:$localize`:@@taxi.lightning.nav.graphs:Lightning graphs`,exact:false}, {path:'/docs',icon:'nav-book',label:$localize`:@@taxi.lightning.nav.docs:Documentation`,exact:false}, {path:'/about',icon:'nav-info-circle',label:$localize`:@@taxi.lightning.nav.about:About Lightning`,exact:false} ];
@@ -26,7 +26,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private applyingSharedCurrency = false;
   private navigatingHub = false;
   private get explicitLanguage(): string | null {
-    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv)(?:\/|$)/i)?.[1].toLowerCase();
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs)(?:\/|$)/i)?.[1].toLowerCase();
     return explicit ? (explicit.startsWith('en') ? 'en' : explicit) : null;
   }
   private get language(): string {
@@ -84,7 +84,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private onBitcoinLink = (event:MouseEvent) => {
     const anchor = (event.target as Element)?.closest?.('a');
     if(!anchor || new URL(anchor.href,location.origin).origin !== 'https://btc.tx.taxi') return;
-    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv)(?:\/|$)/i)?.[1].toLowerCase();
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv|cs)(?:\/|$)/i)?.[1].toLowerCase();
     const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en';
     anchor.href = localizedNativeUrl(anchor.href, language);
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || anchor.target === '_blank' || anchor.hasAttribute('download')) return;
