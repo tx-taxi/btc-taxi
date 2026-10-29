@@ -7,7 +7,7 @@ export const arabicFaqTitles: Record<string, string> = {
  'why-is-transaction-stuck-in-mempool':'لماذا لم تُؤكّد معاملتي بعد؟', 'how-to-get-transaction-confirmed-quickly':'كيف أُسرّع تأكيد المعاملة؟', 'how-prevent-stuck-transaction':'كيف أتجنب الانتظار الطويل للتأكيد؟',
  'using-this-website':'استخدام الموقع', 'looking-up-transactions':'كيف أبحث عن معاملة؟', 'looking-up-addresses':'كيف أبحث عن عنوان؟', 'looking-up-blocks':'كيف أبحث عن كتلة؟',
  'looking-up-fee-estimates':'كيف أعرض معدلات الرسوم المقدرة؟', 'looking-up-historical-trends':'كيف أعرض الاتجاهات التاريخية؟', 'advanced':'متقدم', 'self-hosting':'الاستضافة الذاتية',
- 'address-lookup-issues':'لماذا لا تظهر بعض العناوين في نسخة Mempool المستضافة ذاتيًا؟', 'what-is-full-mempool':'ماذا يعني امتلاء مجمع المعاملات؟', 'how-big-is-mempool-used-by-mempool-space':'ما حجم مجمع المعاملات الذي يستخدمه mempool.space؟',
+ 'address-lookup-issues':'لماذا تظهر أخطاء عند البحث عن بعض العناوين في نسخة Mempool المستضافة ذاتيًا؟', 'what-is-full-mempool':'ماذا يعني امتلاء مجمع المعاملات؟', 'how-big-is-mempool-used-by-mempool-space':'ما حجم مجمع المعاملات الذي يستخدمه mempool.space؟',
  'what-is-memory-usage':'ما هو استخدام الذاكرة؟', 'why-empty-blocks':'لماذا توجد كتل فارغة؟', 'why-block-timestamps-dont-always-increase':'لماذا لا تزداد الطوابع الزمنية للكتل دائمًا؟',
  'why-dont-fee-ranges-match':'لماذا لا يطابق نطاق رسوم الكتلة معدلات رسوم معاملاتها؟', 'how-do-block-audits-work':'كيف تعمل مراجعة الكتل؟', 'what-is-block-health':'ما هي صحة الكتلة؟',
  'how-do-mempool-goggles-work':'كيف تعمل مرشحات المعاملات المعلقة؟', 'what-are-sigops':'ما هي عمليات التوقيع (sigops)؟', 'what-is-adjusted-vsize':'ما هو الحجم الافتراضي المعدّل؟',

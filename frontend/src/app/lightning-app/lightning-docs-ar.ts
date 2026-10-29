@@ -9,7 +9,7 @@ export const arabicLightningFaqTitles: Record<string, string> = {
 export const arabicLightningFaqCategories: Record<string, string> = { Search:'البحث', Channels:'القنوات', Fees:'الرسوم', Payments:'المدفوعات', Maps:'الخرائط', Statistics:'الإحصاءات' };
 export const arabicLightningRestDocs: Record<string, [string, string]> = {
  'get-lightning-network-stats':['إحصاءات الشبكة','<p>يعيد إحصاءات الشبكة، بما فيها أعداد القنوات والعقد والسعة الإجمالية ومتوسط الرسوم ووسيطها.</p><p>يمكن أن تكون قيمة <code>:interval</code> هي <code>latest</code> أو <code>24h</code> أو <code>3d</code> أو <code>1w</code> أو <code>1m</code> أو <code>3m</code> أو <code>6m</code> أو <code>1y</code> أو <code>2y</code> أو <code>3y</code>.</p>'],
- 'get-lightning-nodes-channels':['العقد والقنوات','<p>يعيد عقد وقنوات Lightning المطابقة لـ <code>:query</code>. يبحث في أسماء العقد المستعارة ومفاتيحها العامة ومعرّفات القنوات الكاملة والقصيرة دون التمييز بين الأحرف الكبيرة والصغيرة.</p>'],
+ 'get-lightning-nodes-channels':['العقد والقنوات','<p>يعيد عقد وقنوات Lightning المطابقة لـ <code>:query</code>. يُجري بحثًا نصيًا كاملًا في أسماء العقد المستعارة ومفاتيحها العامة ومعرّفات القنوات الكاملة والقصيرة دون التمييز بين الأحرف الكبيرة والصغيرة.</p>'],
  'get-lightning-nodes-country':['العقد حسب البلد','<p>يعيد عقد Lightning التي يقع موقعها المستنتج من عنوان IP عام (clearnet) في <code>:country</code>. استخدم رمز البلد المكوّن من حرفين وفق ISO alpha-2.</p>'],
  'get-country-node-stats':['إحصاءات العقد حسب البلد','<p>يعيد السعة الإجمالية وعدد العقد حسب البلد المحدد من عنوان IP عام (clearnet). السعة بوحدة الساتوشي.</p>'],
  'get-isp-nodes':['العقد حسب مزود الخدمة','<p>يعيد عقد مزود الخدمة <code>:isp</code> المحدد برقم ASN.</p>'],
