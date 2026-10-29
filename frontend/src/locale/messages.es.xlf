@@ -8868,8 +8868,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>Obtén respuestas a preguntas comunes como: Qué es una mempool? Por qué no se confirma mi transacción? Cómo puedo correr mi instancia del Proyecto Open Source Mempool? Y más.</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Encuentra respuestas a preguntas habituales sobre Bitcoin, incluido el funcionamiento del mempool, la confirmación de transacciones, las comisiones, la minería y los bloques.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8892,8 +8892,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>Documentación para el servicio REST API: obtén información sobre direcciones, transacciones, bloques, tasas, la red Lightning y más.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>Documentación de la API REST de btc.tx.taxi: consulta direcciones, transacciones, bloques, comisiones, minería y datos de la red Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8916,8 +8916,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Documentación para el servicio Websocket API de mempool.space: obtén información en tiempo real sobre bloques, mempools, transacciones, direcciones y más.</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>Documentación de la API WebSocket de btc.tx.taxi: recibe actualizaciones en tiempo real sobre bloques, mempool, transacciones y direcciones de Bitcoin.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
