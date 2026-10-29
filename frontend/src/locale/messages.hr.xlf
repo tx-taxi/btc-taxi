@@ -741,7 +741,7 @@
       </trans-unit>
       <trans-unit id="0b537472d5f7518ed2c2c2b747997b0447ec5ee8" datatype="html">
         <source>Next block market rate</source>
-        <target>Tržišna vrijednost sljedećeg bloka</target>
+        <target>Tržišna stopa naknade za sljedeći blok</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">117</context>
@@ -2937,7 +2937,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
         <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target>Pogledajte bitcoin naknade vizualizirane tijekom vremena, uključujući minimalne i maksimalne naknade po bloku zajedno s naknadama na različitim postocima.</target>
+        <target>Pogledajte stope Bitcoin naknada prikazane tijekom vremena, uključujući minimalne i maksimalne stope po bloku te stope na različitim percentilima.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -11749,9 +11749,9 @@
       <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>Logotip rudarskog bazena</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target>Naknade (%)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target>Naknade (USD)</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>Nagrada</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>Nagrada (%)</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>Nagrada (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target>Subvencija bloka</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target>Subvencija bloka (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target>Subvencija bloka (USD)</target></trans-unit>
       <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>Raspon naknada</target></trans-unit>
       <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>Medijan stope naknade</target></trans-unit>
       <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>Kontaktirajte održavatelja</target></trans-unit>
