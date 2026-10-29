@@ -12038,6 +12038,137 @@
           <context context-type="linenumber">103</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html"><source>About btc.tx.taxi</source><target>btc.tx.taxiについて</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html"><source>The Bitcoin explorer in the tx.taxi family.</source><target>tx.taxiファミリーのBitcoinエクスプローラー。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target>プロジェクトのリンク</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html"><source>Bitcoin documentation</source><target>Bitcoinのドキュメント</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target>管理者に連絡</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html"><source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source><target>btc.tx.taxiは、マルチチェーンのtx.taxiファミリーに属するBitcoinエクスプローラーです。Bitcoinに合わせたtx.taxiのデザインで、ブロック、トランザクション、アドレス、マイニング、手数料の推定値、Bitcoinのメンプールを確認できるMempoolの使いやすいインターフェースを提供します。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html"><source>Bitcoin-native data</source><target>Bitcoinのデータ</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html"><source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source><target>金額はBTC、satoshi、または選択した法定通貨で表示されます。手数料率はsat/vB、トランザクションサイズはvBまたはウェイト単位で表示され、ブロック、アドレス、マイニングに関する情報はBitcoin固有の意味を保持します。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html"><source>Infrastructure</source><target>インフラストラクチャ</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html"><source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source><target>エクスプローラーは設定されたバックエンドからBitcoinネットワークの公開データを取得します。表示は参考情報であり、他のノードのメンプールとは異なる場合があります。支払いの詳細は必ずウォレットで確認し、独立した検証が必要な場合はご自身のノードをご利用ください。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target>ライセンス</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html"><source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source><target>btc.tx.taxiにはライセンスに基づくオープンソースコンポーネントが含まれています。帰属表示の詳細はサードパーティのライセンスをご覧ください。</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html"><source>Built on open source</source><target>オープンソースを基盤に</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target>手数料（BTC）</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html"><source>btc.tx.taxi dashboard</source><target>btc.tx.taxi ダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html"><source>Dashboard</source><target>ダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html"><source>Mining dashboard</source><target>マイニングダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html"><source>Recent blocks</source><target>最近のブロック</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html"><source>Bitcoin graphs</source><target>Bitcoinのグラフ</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html"><source>About btc.tx.taxi</source><target>btc.tx.taxiについて</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target>週150ドルでBitcoinをスポンサーする</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target>週150ドルでこのチェーンをスポンサーする</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>タクシーを呼ぼう。ここに何でも貼り付けてください。</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target>不足している過去の出力が読み込まれていません。手数料率など、一部の値を計算できません。</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target>不足している過去の出力を読み込めませんでした</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target>理由:</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target>CPFPデータを読み込めませんでした</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html"><source>Pending Transactions</source><target>未承認トランザクション</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html"><source>en-US</source><target>ja-JP</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target>手数料率の中央値</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target>手数料率の範囲</target></trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html"><source>Bitcoin blocks, fees, and mempool activity</source><target>Bitcoinのブロック、手数料、メンプールの動き</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html"><source>Dashboard</source><target>ダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html"><source>Bitcoin Graphs</source><target>Bitcoinのグラフ</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html"><source>Tools &amp; Docs</source><target>ツールとドキュメント</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html"><source>Bitcoin FAQ</source><target>Bitcoinのよくある質問</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html"><source>Source code</source><target>ソースコード</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html"><source>Contact Us</source><target>お問い合わせ</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html"><source>Released under AGPLv3</source><target>AGPLv3で公開</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html"><source>Trademark &amp; Attribution</source><target>商標と帰属表示</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html"><source>Made with</source><target>Made with</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html"><source>by</source><target>by</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html"><source>Bitcoin explorer dashboard</source><target>Bitcoinエクスプローラーのダッシュボード</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html"><source>Switch to displaying block sizes</source><target>ブロックサイズの表示に切り替え</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html"><source>Switch to displaying total fees per block</source><target>ブロックごとの合計手数料の表示に切り替え</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html"><source>Switch to displaying newest blocks on the right</source><target>最新ブロックを右側に表示</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html"><source>Switch to displaying newest blocks on the left</source><target>最新ブロックを左側に表示</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html"><source>Copy</source><target>コピー</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html"><source>Copied</source><target>コピーしました</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html"><source>Copy to clipboard</source><target>クリップボードにコピー</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html"><source>Copied to clipboard</source><target>クリップボードにコピーしました</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html"><source>btc.tx.taxi Bitcoin explorer</source><target>btc.tx.taxi Bitcoinエクスプローラー</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html"><source>No Lightning node or channel found.</source><target>Lightningノードまたはチャネルが見つかりません。</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html"><source>Search unavailable. Try again.</source><target>検索を利用できません。もう一度お試しください。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html"><source>The Lightning network, in view.</source><target>Lightningネットワークを見渡そう。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html"><source>Explore Lightning</source><target>Lightningを探索</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html"><source>Documentation</source><target>ドキュメント</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html"><source>Source code</source><target>ソースコード</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html"><source>Status</source><target>稼働状況</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target>ノード、チャネル、そしてその間のネットワーク</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target>公開されているLightningノードやチャネル、ルーティングポリシー、ネットワーク容量、地理的分布、過去の統計を確認できます。ノードの接続をたどったり、チャネルの開設と閉鎖を調べたりできます。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target>tx.taxiファミリー</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target>同じ検索欄からLightningノードやチャネルを検索し、エクスプローラーを切り替えたり、トランザクションを対応するブロックチェーンに案内したりできます。Bitcoinのオンチェーンエクスプローラーはこちら:</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target>公開ネットワークの情報</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target>Lightningの支払いやプライベートチャネルは公開されません。容量は公開チャネルに投入されたBitcoinの量を示し、どちらか一方の現在の支払い可能残高を示すものではありません。ノードの所在地は公開されたネットワーク接続先を示します。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target>統計には元データの取得日時を表示します。接続障害中もキャッシュされたデータを確認できます。</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html"><source>Open source</source><target>オープンソース</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html"><source>Built on the</source><target>基盤:</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html"><source>Mempool project</source><target>Mempoolプロジェクト</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html"><source>released under the GNU AGPLv3. Made with 🚕 by</source><target>GNU AGPLv3で公開。🚕 で制作:</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html"><source>No channel found.</source><target>チャネルが見つかりません。</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target>Lightningデータを利用できません。</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html"><source>Retry</source><target>再試行</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target>tx.taxi Lightningエクスプローラー</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target>Lightningのノード、チャネル、ネットワークの動き</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target>探索</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html"><source>Lightning Dashboard</source><target>Lightningダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html"><source>Node Rankings</source><target>ノードランキング</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html"><source>Node Map</source><target>ノードマップ</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html"><source>Channels Map</source><target>チャネルマップ</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html"><source>Penalties</source><target>ペナルティ</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html"><source>Network &amp; Docs</source><target>ネットワークとドキュメント</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html"><source>Network History</source><target>ネットワーク履歴</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html"><source>Countries</source><target>国</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html"><source>ISPs</source><target>ISP</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html"><source>Lightning FAQ</source><target>Lightningのよくある質問</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html"><source>API Documentation</source><target>APIドキュメント</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html"><source>About</source><target>概要</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html"><source>Source code</source><target>ソースコード</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html"><source>Status</source><target>稼働状況</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>tx.taxiのTelegramチャンネルに参加</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html"><source>Contact Us</source><target>お問い合わせ</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html"><source>Released under AGPLv3</source><target>AGPLv3で公開</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html"><source>Legal</source><target>法的情報</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html"><source>Terms of Service</source><target>利用規約</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html"><source>Privacy Policy</source><target>プライバシーポリシー</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html"><source>Trademark &amp; Attribution</source><target>商標と帰属表示</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html"><source>Third-party Licenses</source><target>サードパーティライセンス</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html"><source>Made with</source><target>Made with</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html"><source>by</source><target>by</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html"><source>Connecting…</source><target>接続中…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html"><source>Reconnecting…</source><target>再接続中…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html"><source>Cached data</source><target>キャッシュ済みデータ</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html"><source>Lightning dashboard</source><target>Lightningダッシュボード</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html"><source>Node rankings</source><target>ノードランキング</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html"><source>Lightning graphs</source><target>Lightningのグラフ</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html"><source>Documentation</source><target>ドキュメント</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html"><source>About Lightning</source><target>Lightningについて</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html"><source>View on btc.tx.taxi</source><target>btc.tx.taxiで表示</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html"><source>No node found.</source><target>ノードが見つかりません。</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target>生のビット値</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target>必須</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html"><source>Node address</source><target>ノードアドレス</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html"><source>Choose search chain</source><target>検索するチェーンを選択</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html"><source>Selected explorer</source><target>選択中のエクスプローラー</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html"><source>SELECTED</source><target>選択中</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html"><source>Automatic Routing</source><target>自動ルーティング</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html"><source>View Hub</source><target>ハブを表示</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html"><source>NATIVE EXPLORERS</source><target>ネイティブエクスプローラー</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html"><source>Explorer registry unavailable</source><target>エクスプローラーの一覧を利用できません</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html"><source>3RD-PARTY EXPLORERS</source><target>サードパーティのエクスプローラー</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html"><source>Open</source><target>開く</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html"><source>Found</source><target>見つかりました</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html"><source>Possible</source><target>可能性あり</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html"><source>Opened</source><target>表示中</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html"><source>Switch</source><target>切り替え</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html"><source>Loading explorers</source><target>エクスプローラーを読み込み中</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html"><source>Wave a taxi, paste anything here.</source><target>タクシーを呼ぼう。ここに何でも貼り付けてください。</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html"><source>Search</source><target>検索</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html"><source>Search</source><target>検索</target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html"><source>Mining pool logo</source><target>マイニングプールのロゴ</target></trans-unit>
     </body>
   </file>
 </xliff>
