@@ -19,6 +19,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   get hubUrl(): string { return localizedNativeUrl('https://tx.taxi/', this.language); }
   get nativeUrl(): string { return this.language === 'en' ? '/' : `/${this.language}/`; }
   get hi(): boolean { return this.language === 'hi'; }
+  get ar(): boolean { return this.language === 'ar'; }
   get cs(): boolean { return this.language === 'cs'; }
   get sv(): boolean { return this.language === 'sv'; }
   get nb(): boolean { return this.language === 'nb'; }
@@ -43,6 +44,7 @@ export class TxTaxiDocsIntroComponent implements OnInit {
     if (this.de) return `${chain ? chain + '-' : ''}${explorer ? 'Explorer' : 'Dokumentation'}`;
     if (this.it) return `${explorer ? 'Esploratore' : 'Documentazione'}${chain ? ' ' + chain : ''}`;
     if (this.pt) return `${explorer ? 'Explorador' : 'Documentação'}${chain ? ' ' + chain : ''}`;
+    if (this.ar) return `${explorer ? 'مستكشف' : 'وثائق'}${chain ? ' ' + chain : ''}`;
     if (this.hi) return `${chain ? chain + ' ' : ''}${explorer ? 'एक्सप्लोरर' : 'दस्तावेज़'}`;
     if (this.cs) return `${explorer ? 'Průzkumník' : 'Dokumentace'}${chain ? ' ' + chain : ''}`;
     if (this.sv) return `${chain}${chain ? '-' : ''}${explorer ? 'utforskare' : 'dokumentation'}`;
