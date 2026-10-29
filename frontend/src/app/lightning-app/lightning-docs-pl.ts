@@ -1,4 +1,16 @@
-/** Polish Lightning REST reference. Protocol names and URLs stay unchanged. */
+/** Polish Lightning FAQ headings and REST reference. */
+export const polishLightningFaqTitles: Record<string, string> = {
+ 'lightning-explore':'Co mogę odkrywać?',
+ 'lightning-search':'Jak znaleźć węzeł lub kanał?',
+ 'lightning-capacity':'Co oznacza pojemność kanału?',
+ 'lightning-fees':'Co pokazują opłaty za trasowanie?',
+ 'lightning-payments':'Czy mogę zobaczyć płatność Lightning?',
+ 'lightning-locations':'Skąd pochodzą lokalizacje węzłów?',
+ 'lightning-status':'Co oznaczają status kanału i kary?',
+ 'lightning-freshness':'Jak aktualne są statystyki sieci?',
+ 'lightning-bitcoin':'Dlaczego transakcje otwarcia i zamknięcia prowadzą do Bitcoin?',
+};
+export const polishLightningFaqCategories: Record<string, string> = { Search:'Wyszukiwanie', Channels:'Kanały', Fees:'Opłaty', Payments:'Płatności', Maps:'Mapy', Statistics:'Statystyki' };
 export const polishLightningRestDocs: Record<string, [string, string]> = {
  'get-lightning-network-stats':['Statystyki sieci','<p>Zwraca statystyki całej sieci, w tym liczby kanałów i węzłów, łączną pojemność oraz średnią i medianę opłat.</p><p>Dla <code>:interval</code> można podać <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> lub <code>3y</code>.</p>'],
  'get-lightning-nodes-channels':['Węzły i kanały','<p>Zwraca węzły i kanały Lightning pasujące do <code>:query</code>. Przeszukuje aliasy i klucze publiczne węzłów oraz pełne i krótkie ID kanałów bez rozróżniania wielkości liter.</p>'],
