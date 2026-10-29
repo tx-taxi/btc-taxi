@@ -1,0 +1,20 @@
+/** Thai Lightning REST reference. Protocol identifiers remain unchanged. */
+export const thaiLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['สถิติเครือข่าย','<p>ส่งคืนสถิติเครือข่าย รวมจำนวนช่องทางและโหนด ความจุรวม และค่าธรรมเนียมเฉลี่ยและมัธยฐาน</p><p>ค่า <code>:interval</code> คือ <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> หรือ <code>3y</code></p>'],
+ 'get-lightning-nodes-channels':['โหนดและช่องทาง','<p>ส่งคืนโหนดและช่องทาง Lightning ที่ตรงกับ <code>:query</code> การค้นหาข้อความครอบคลุมชื่อและกุญแจสาธารณะของโหนด รวมถึง ID เต็มและ ID แบบสั้นของช่องทาง โดยไม่แยกตัวพิมพ์ใหญ่และเล็ก</p>'],
+ 'get-lightning-nodes-country':['โหนดตามประเทศ','<p>ส่งคืนโหนด Lightning ที่มีตำแหน่งโดยประมาณอยู่ใน <code>:country</code> โดยอิงจาก IP สาธารณะบน clearnet ใช้รหัสประเทศ ISO alpha-2 สองตัวอักษร</p>'],
+ 'get-country-node-stats':['สถิติโหนดตามประเทศ','<p>ส่งคืนความจุรวมและจำนวนโหนดตามประเทศที่ประมาณจาก IP สาธารณะบน clearnet โดยแสดงความจุเป็น satoshi</p>'],
+ 'get-isp-nodes':['โหนดตามผู้ให้บริการอินเทอร์เน็ต','<p>ส่งคืนโหนดของผู้ให้บริการอินเทอร์เน็ต <code>:isp</code> ซึ่งระบุด้วยหมายเลข ASN</p>'],
+ 'get-isp-node-stats':['สถิติโหนดตามผู้ให้บริการอินเทอร์เน็ต','<p>ส่งคืนความจุรวม จำนวนโหนดและช่องทางของแต่ละผู้ให้บริการอินเทอร์เน็ต โดยแสดงความจุเป็น satoshi</p>'],
+ 'get-top-100-nodes':['100 โหนดอันดับแรก','<p>ส่งคืนรายการ 100 โหนดอันดับแรกแยกตามสภาพคล่อง (ความจุช่องทางรวม) และการเชื่อมต่อ (จำนวนช่องทางที่เปิด)</p>'],
+ 'get-top-100-nodes-liquidity':['100 โหนดแรกตามสภาพคล่อง','<p>ส่งคืน 100 โหนดที่มีสภาพคล่องสูงสุดตามความจุช่องทางรวม</p>'],
+ 'get-top-100-nodes-connectivity':['100 โหนดแรกตามการเชื่อมต่อ','<p>ส่งคืน 100 โหนดที่มีการเชื่อมต่อสูงสุดตามจำนวนช่องทางที่เปิด</p>'],
+ 'get-top-100-oldest-nodes':['100 โหนดที่เก่าที่สุด','<p>ส่งคืน 100 โหนดที่เก่าที่สุด</p>'],
+ 'get-node-stats':['สถิติโหนด','<p>ส่งคืนข้อมูลโหนดที่ระบุด้วยกุญแจสาธารณะ <code>:pubKey</code></p>'],
+ 'get-historical-node-stats':['สถิติโหนดย้อนหลัง','<p>ส่งคืนสถิติย้อนหลังของโหนดที่ระบุด้วยกุญแจสาธารณะ <code>:pubKey</code></p>'],
+ 'get-channel':['ช่องทาง','<p>ส่งคืนข้อมูลช่องทาง Lightning ที่มี ID <code>:channelId</code></p>'],
+ 'get-channels-from-txid':['ช่องทางตาม ID ธุรกรรม','<p>ส่งคืนช่องทางที่ตรงกับ <code>:txid</code> สามารถระบุ ID ธุรกรรมได้หลายรายการ</p>'],
+ 'get-channels-from-pubkey':['ช่องทางตามกุญแจสาธารณะโหนด','<p>ส่งคืนช่องทางของโหนดที่ระบุด้วย <code>:pubKey</code> หน้าละ 10 รายการ ระบุ <code>:index</code> เพื่อแบ่งหน้า ค่า <code>:channelStatus</code> เป็น <code>open</code>, <code>active</code> หรือ <code>closed</code></p>'],
+ 'get-channel-geodata':['ข้อมูลภูมิศาสตร์ของช่องทาง','<p>ส่งคืนรายการช่องทางพร้อมข้อมูลภูมิศาสตร์ของโหนด</p>'],
+ 'get-channel-geodata-node':['ข้อมูลภูมิศาสตร์ของช่องทางโหนด','<p>ส่งคืนช่องทางและข้อมูลภูมิศาสตร์ของโหนดที่มีกุญแจสาธารณะ <code>:pubKey</code></p>'],
+};
