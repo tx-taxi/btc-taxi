@@ -19,9 +19,11 @@ export class AboutComponent implements OnInit {
   get fr(): boolean { return this.locale.startsWith('fr'); }
   get de(): boolean { return this.locale.startsWith('de'); }
   get it(): boolean { return this.locale.startsWith('it'); }
+  get pt(): boolean { return this.locale.startsWith('pt'); }
+  get ru(): boolean { return this.locale.startsWith('ru'); }
 
   ngOnInit(): void {
-    this.seoService.setTitle(this.it ? 'Informazioni su lightning.btc.tx.taxi' : this.es ? 'Acerca de lightning.btc.tx.taxi' : this.fr ? 'À propos de lightning.btc.tx.taxi' : this.de ? 'Über lightning.btc.tx.taxi' : 'About lightning.btc.tx.taxi');
-    this.seoService.setDescription(this.it ? 'Esplora nodi, canali, politiche di instradamento e cronologia della rete Lightning su lightning.btc.tx.taxi.' : this.es ? 'Explora nodos, canales, políticas de enrutamiento e historial de la red Lightning con lightning.btc.tx.taxi.' : this.fr ? 'Explorez les nœuds, canaux, politiques de routage et l’historique du réseau Lightning sur lightning.btc.tx.taxi.' : this.de ? 'Erkunde Lightning-Knoten, Kanäle, Routing-Richtlinien und den Netzwerkverlauf mit lightning.btc.tx.taxi.' : 'Explore Lightning nodes, channels, routing policies, and network history with lightning.btc.tx.taxi.');
+    this.seoService.setTitle(this.pt ? 'Sobre lightning.btc.tx.taxi' : this.ru ? 'О lightning.btc.tx.taxi' : this.it ? 'Informazioni su lightning.btc.tx.taxi' : this.es ? 'Acerca de lightning.btc.tx.taxi' : this.fr ? 'À propos de lightning.btc.tx.taxi' : this.de ? 'Über lightning.btc.tx.taxi' : 'About lightning.btc.tx.taxi');
+    this.seoService.setDescription(this.pt ? 'Explore nós, canais, políticas de encaminhamento e o histórico da rede Lightning em lightning.btc.tx.taxi.' : this.ru ? 'Изучайте узлы, каналы, правила маршрутизации и историю сети Lightning на lightning.btc.tx.taxi.' : this.it ? 'Esplora nodi, canali, politiche di instradamento e cronologia della rete Lightning su lightning.btc.tx.taxi.' : this.es ? 'Explora nodos, canales, políticas de enrutamiento e historial de la red Lightning con lightning.btc.tx.taxi.' : this.fr ? 'Explorez les nœuds, canaux, politiques de routage et l’historique du réseau Lightning sur lightning.btc.tx.taxi.' : this.de ? 'Erkunde Lightning-Knoten, Kanäle, Routing-Richtlinien und den Netzwerkverlauf mit lightning.btc.tx.taxi.' : 'Explore Lightning nodes, channels, routing policies, and network history with lightning.btc.tx.taxi.');
   }
 }
