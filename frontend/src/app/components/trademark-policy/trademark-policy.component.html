@@ -209,7 +209,7 @@
 </div></div><br><br></div>
 </ng-template>
 
-<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else japaneseOrEnglish" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else turkishOrJapanese" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
 <ng-template #chineseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -245,6 +245,50 @@
 
       <h4>许可证</h4>
       <p>此分支遵循上游AGPLv3许可证义务。有关适用的源代码和许可证信息，请联系运营者。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Ticari Markalar ve Atıf</h2>
+    <h6>Güncelleme: 20 Eylül 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi Kimliği</h4>
+      <p>btc.tx.taxi, tx.taxi ailesinde bağımsız olarak işletilen bir Bitcoin gezginidir. Alan adı, yazı logosu, zincir renk paleti ve hizmet kimliği bu çatalı kaynak projeden ayırır.</p>
+
+      <br>
+
+      <h4>Kaynak Proje Atfı</h4>
+      <p>Bu yazılım Mempool Open Source Project’ten türetilmiştir. Kaynak projenin kodu, görsel sistemi, proje adları, logoları ve ticari markaları ilgili sahiplerine aittir.</p>
+
+      <br>
+
+      <h4>Bağlılık Yok</h4>
+      <p>btc.tx.taxi; Mempool Holdings S.A. de C.V. ile bağlantılı değildir, onun tarafından desteklenmez veya onaylanmaz. mempool.space ve mempool/mempool ifadeleri, bu çatalın türetildiği yazılıma yönelik adlandırma amaçlı atıflardır.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin açık bir ağ ve protokoldür. Bitcoin, BTC, satoshi, bloklar, işlemler, adresler, madencilik ve Lightning’e yapılan atıflar bu gezginin sunduğu ağ verilerini açıklar.</p>
+
+      <br>
+
+      <h4>Lisans</h4>
+      <p>Bu çatal, kaynak projenin AGPLv3 lisans yükümlülüklerine uyar. Geçerli kaynak kodu ve lisans bilgileri için işletmeciyle iletişime geçin.</p>
 
       <br>
     </div>

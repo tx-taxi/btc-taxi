@@ -232,7 +232,7 @@
 </div></div><br><br></div>
 </ng-template>
 
-<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else japaneseOrEnglish" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else turkishOrJapanese" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
 <ng-template #chineseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -273,6 +273,55 @@
 
       <h4>开源归属</h4>
       <p>lightning.btc.tx.taxi源自mempool/mempool，并继承其AGPLv3义务。Mempool名称、标志和商标归各自所有者所有；lightning.btc.tx.taxi与Mempool Holdings S.A. de C.V.无关联，也未获得其认可。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Gizlilik Politikası</h2>
+    <h6>Güncelleme: 3 Ekim 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Herkese Açık Ağ Verileri</h4>
+      <p>lightning.btc.tx.taxi herkese açık Lightning gossip ve ağ istatistiklerini gösterir. Özel kanallar, tekil ödemeler ve kanal bakiyeleri herkese açık değildir. Bağımsız doğrulama için açık ağ grafiğini kendi Lightning düğümünüzle karşılaştırın.</p>
+
+      <br>
+
+      <h4>İstek Verileri</h4>
+      <p>Normal web sitesi ve API istekleri, IP adresiniz, kullanıcı aracınız, istenen URL ve istek zamanı dahil standart web üst verilerini işletmeciye gösterebilir. Sunucu günlükleri güvenilirlik, kötüye kullanımın önlenmesi ve hata ayıklama için saklanabilir.</p>
+
+      <br>
+
+      <h4>Yerel Tercihler</h4>
+      <p>Tema, gösterim birimi, itibari para birimi, dil ve saat dilimi gibi görüntüleme tercihleri tarayıcınızda saklanabilir. lightning.btc.tx.taxi’nin normal gezgin kullanımı için hesap gerekmez.</p>
+
+      <br>
+
+      <h4>Aramalar ve Herkese Açık Kanallar</h4>
+      <p>Herkese açık Lightning düğüm anahtarları, duyurulan uç noktalar, kanal politikaları ve Bitcoin fonlama işlemleri açıktır. Bir düğüm veya kanal sorgusu ağ üst verilerinizle ilişkilendirilebilir. Herkese açık bir gezgini gizlilik sınırı olarak değerlendirmeyin.</p>
+
+      <br>
+
+      <h4>Harici Bağlantılar</h4>
+      <p>Bu site tx.taxi iletişim kanallarına, Bitcoin belgelerine, kaynak projenin koduna ve lisans bilgilerine bağlantı verir. Bu harici hizmetlerin kendi gizlilik politikaları vardır.</p>
+
+      <br>
+
+      <h4>Açık Kaynak Atfı</h4>
+      <p>lightning.btc.tx.taxi mempool/mempool’dan türetilmiştir ve AGPLv3 yükümlülüklerini devralır. Mempool adları, logoları ve ticari markaları ilgili sahiplerine aittir; lightning.btc.tx.taxi, Mempool Holdings S.A. de C.V. ile bağlantılı değildir ve onun tarafından desteklenmez.</p>
 
       <br>
     </div>

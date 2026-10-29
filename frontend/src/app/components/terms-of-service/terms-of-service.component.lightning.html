@@ -232,7 +232,7 @@
 </div></div><br><br></div>
 </ng-template>
 
-<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else japaneseOrEnglish" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else turkishOrJapanese" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
 <ng-template #chineseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -273,6 +273,55 @@
 
       <h4>开源</h4>
       <p>lightning.btc.tx.taxi源自Mempool Open Source Project，并按AGPLv3义务发布。有关适用的源代码和许可证信息，请联系<a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Hizmet Koşulları</h2>
+    <h6>Güncelleme: 3 Ekim 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Bilgi Amaçlı Gezgin</h4>
+      <p>lightning.btc.tx.taxi herkese açık Lightning düğümlerini, kanalları, yönlendirme politikalarını, ağ kapasitesini ve geçmiş istatistikleri gösterir. Bir bilgi hizmetidir; cüzdan, borsa, saklama kuruluşu, ödeme işleyicisi veya işlem önceliği hizmeti değildir.</p>
+
+      <br>
+
+      <h4>Ödemeler veya Kanallar Üzerinde Kontrol Yok</h4>
+      <p>İşletmeci bir Lightning ödemesi gönderemez, geri alamaz, kurtaramaz veya başka bir yere yönlendiremez; bir kanalı da kontrol edemez. Cüzdan veya ödeme sorunları için ödemeyi oluşturan ya da alan hizmetle iletişime geçin.</p>
+
+      <br>
+
+      <h4>Veriler ve Kullanılabilirlik</h4>
+      <p>Gezgin verileri gecikmiş, eksik veya kullanılamaz olabilir ya da başka bir düğümün görünümünden farklı olabilir. Duyurulan yönlendirme ücretleri bir rotanın kullanılabilirliğini veya ödemenin başarısını garanti etmez. Hizmet olduğu gibi sunulur; kesintisiz kullanılabilirlik veya belirli bir amaca uygunluk taahhüt edilmez.</p>
+
+      <br>
+
+      <h4>Kabul Edilebilir Kullanım</h4>
+      <p>Web sitesini veya API’yi kötüye kullanmayın, hizmetin işleyişini engellemeyin, makul hız sınırlarını atlatmayın veya hizmeti yasa dışı kullanmayın. Kullanılabilirliği korumak için gerekli olduğunda erişim sınırlanabilir.</p>
+
+      <br>
+
+      <h4>Harici Hizmetler</h4>
+      <p>Bu site tx.taxi iletişim kanallarına, Bitcoin kaynaklarına, lisans bilgilerine ve altyapı bağımlılıklarına bağlantı verebilir. Harici sitelerin kendi koşulları ve politikaları vardır.</p>
+
+      <br>
+
+      <h4>Açık Kaynak</h4>
+      <p>lightning.btc.tx.taxi Mempool Open Source Project’ten türetilmiştir ve AGPLv3 yükümlülükleri altında dağıtılır. Geçerli kaynak kodu ve lisans bilgileri için <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> ile iletişime geçin.</p>
 
       <br>
     </div>

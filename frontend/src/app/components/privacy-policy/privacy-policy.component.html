@@ -248,7 +248,7 @@
 </div></div><br><br></div>
 </ng-template>
 
-<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else japaneseOrEnglish" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
+<ng-template #chineseOrJapanese><ng-container *ngIf="zh; else turkishOrJapanese" [ngTemplateOutlet]="chineseLegal"></ng-container></ng-template>
 <ng-template #chineseLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -291,6 +291,57 @@
 
       <h4>开源归属</h4>
       <p>btc.tx.taxi源自mempool/mempool，并继承其AGPLv3义务。Mempool名称、标志和商标归各自所有者所有；btc.tx.taxi与Mempool Holdings S.A. de C.V.无关联，也未获得其认可。</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+<ng-template #turkishOrJapanese><ng-container *ngIf="tr; else japaneseOrEnglish" [ngTemplateOutlet]="turkishLegal"></ng-container></ng-template>
+<ng-template #turkishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Gizlilik Politikası</h2>
+    <h6>Güncelleme: 20 Eylül 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Ziyaretçi ölçümü</h4>
+      <p>tx.taxi, sayfa görüntülemeleri ve performans için Cloudflare Web Analytics kullanır; gezginleri arasında paylaşılan birinci taraf günlük çerezle tarayıcıları UTC günü başına bir kez sayar. Günlük ziyaretçi toplayıcısı yalnızca günlük bir tanımlayıcıyı, gezgin ana bilgisayar adını ve etkileşim olup olmadığını saklar. Arama metni, adresler, işlem ID’leri, URL’ler veya IP adresleri almaz. Günlük tekil kayıtlar 31 gün sonra sona erer; toplu sayımlar 400 gün saklanır. Do Not Track ve Global Privacy Control bu birinci taraf ölçümü devre dışı bırakır.<a href="https://tx.taxi/privacy#audience-measurement">Ayrıntılar ve devre dışı bırakma</a>.</p>
+      <h4>Gizlilik Önemliyse Kendi Düğümünüzü Kullanın</h4>
+      <p>btc.tx.taxi, site işletmecisinin yapılandırdığı arka uç aracılığıyla herkese açık Bitcoin zinciri ve mempool verilerini gösterir. Bağımsız doğrulama ve en güçlü ağ gizliliği için kendi Bitcoin düğümünüzü ve gezgininizi kullanın.</p>
+
+      <br>
+
+      <h4>İstek Verileri</h4>
+      <p>Normal web sitesi ve API istekleri, IP adresiniz, kullanıcı aracınız, istenen URL ve istek zamanı dahil standart web üst verilerini işletmeciye gösterebilir. Sunucu günlükleri güvenilirlik, kötüye kullanımın önlenmesi ve hata ayıklama için saklanabilir.</p>
+
+      <br>
+
+      <h4>Yerel Tercihler</h4>
+      <p>Tema, gösterim birimi, itibari para birimi, dil ve saat dilimi gibi görüntüleme tercihleri tarayıcınızda saklanabilir. btc.tx.taxi’nin normal gezgin kullanımı için hesap gerekmez.</p>
+
+      <br>
+
+      <h4>Herkese Açık Blok Zinciri Verileri</h4>
+      <p>Bitcoin işlemleri, adresleri, betikleri ve blokları herkese açıktır. Bir adres veya işlem sorgusu ağ üst verilerinizle ilişkilendirilebilir. Herkese açık bir gezgini gizlilik sınırı olarak değerlendirmeyin.</p>
+
+      <br>
+
+      <h4>Harici Bağlantılar</h4>
+      <p>Bu site tx.taxi iletişim kanallarına, Bitcoin belgelerine, kaynak projenin koduna ve lisans bilgilerine bağlantı verir. Bu harici hizmetlerin kendi gizlilik politikaları vardır.</p>
+
+      <br>
+
+      <h4>Açık Kaynak Atfı</h4>
+      <p>btc.tx.taxi mempool/mempool’dan türetilmiştir ve AGPLv3 yükümlülüklerini devralır. Mempool adları, logoları ve ticari markaları ilgili sahiplerine aittir; btc.tx.taxi, Mempool Holdings S.A. de C.V. ile bağlantılı değildir ve onun tarafından desteklenmez.</p>
 
       <br>
     </div>
