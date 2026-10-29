@@ -10,8 +10,9 @@
       <div class="doc-content">
 
         <div id="disclaimer">
-          <table *ngIf="!mobileViewport"><tr><td><app-svg-images name="warning" class="disclaimer-warning" viewBox="0 0 304 304" fill="#ffc107" width="50" height="50"></app-svg-images></td><td> <ng-container *ngTemplateOutlet="locale.startsWith('hu') ? faqDisclaimerHu : locale.startsWith('ro') ? faqDisclaimerRo : locale.startsWith('he') ? faqDisclaimerHe : locale.startsWith('fi') ? faqDisclaimerFi : locale.startsWith('ca') ? faqDisclaimerCa : locale.startsWith('hr') ? faqDisclaimerHr : locale.startsWith('lt') ? faqDisclaimerLt : locale.startsWith('sl') ? faqDisclaimerSl : faqDisclaimer"></ng-container></td></tr></table>
-          <div *ngIf="mobileViewport"><app-svg-images name="warning" class="disclaimer-warning" viewBox="0 0 304 304" fill="#ffc107" width="50" height="50"></app-svg-images><ng-container *ngTemplateOutlet="locale.startsWith('hu') ? faqDisclaimerHu : locale.startsWith('ro') ? faqDisclaimerRo : locale.startsWith('he') ? faqDisclaimerHe : locale.startsWith('fi') ? faqDisclaimerFi : locale.startsWith('ca') ? faqDisclaimerCa : locale.startsWith('hr') ? faqDisclaimerHr : locale.startsWith('lt') ? faqDisclaimerLt : locale.startsWith('sl') ? faqDisclaimerSl : faqDisclaimer"></ng-container></div>
+          <table *ngIf="!mobileViewport"><tr><td><app-svg-images name="warning" class="disclaimer-warning" viewBox="0 0 304 304" fill="#ffc107" width="50" height="50"></app-svg-images></td><td> <ng-container *ngTemplateOutlet="locale.startsWith('ne') ? faqDisclaimerNe : locale.startsWith('hu') ? faqDisclaimerHu : locale.startsWith('ro') ? faqDisclaimerRo : locale.startsWith('he') ? faqDisclaimerHe : locale.startsWith('fi') ? faqDisclaimerFi : locale.startsWith('ca') ? faqDisclaimerCa : locale.startsWith('hr') ? faqDisclaimerHr : locale.startsWith('lt') ? faqDisclaimerLt : locale.startsWith('sl') ? faqDisclaimerSl : faqDisclaimer"></ng-container></td></tr></table>
+          <div *ngIf="mobileViewport"><app-svg-images name="warning" class="disclaimer-warning" viewBox="0 0 304 304" fill="#ffc107" width="50" height="50"></app-svg-images><ng-container *ngTemplateOutlet="locale.startsWith('ne') ? faqDisclaimerNe : locale.startsWith('hu') ? faqDisclaimerHu : locale.startsWith('ro') ? faqDisclaimerRo : locale.startsWith('he') ? faqDisclaimerHe : locale.startsWith('fi') ? faqDisclaimerFi : locale.startsWith('ca') ? faqDisclaimerCa : locale.startsWith('hr') ? faqDisclaimerHr : locale.startsWith('lt') ? faqDisclaimerLt : locale.startsWith('sl') ? faqDisclaimerSl : faqDisclaimer"></ng-container></div>
+          <ng-template #faqDisclaimerNe><p><b>btc.tx.taxi ले सार्वजनिक Bitcoin नेटवर्क डाटा देखाउँछ।</b> यसले रकम फिर्ता गर्न, वालेटका समस्या समाधान गर्न, कारोबार उल्ट्याउन वा पुष्टिको प्राथमिकता बदल्न सक्दैन।</p><p>यी अनुरोधका लागि कारोबार बनाउने वालेट, एक्सचेन्ज वा भुक्तानी सेवालाई सम्पर्क गर्नुहोस्।</p></ng-template>
           <ng-template #faqDisclaimerHu><p><b>A btc.tx.taxi a Bitcoin-hálózat nyilvános adatait jeleníti meg.</b> Nem tud pénzt visszaszerezni, tárcaproblémát megoldani, tranzakciót visszafordítani vagy a megerősítés prioritását módosítani.</p><p>Ilyen kérés esetén forduljon a tranzakciót létrehozó tárcához, tőzsdéhez vagy fizetési szolgáltatóhoz.</p></ng-template>
           <ng-template #faqDisclaimerRo><p><b>btc.tx.taxi afișează date publice din rețeaua Bitcoin.</b> Site-ul nu poate recupera fonduri, rezolva probleme ale portofelului, anula tranzacții sau schimba prioritatea confirmării lor.</p><p>Pentru astfel de solicitări, contactați portofelul, platforma de schimb sau serviciul de plată care a creat tranzacția.</p></ng-template>
           <ng-template #faqDisclaimerHe><p><b>btc.tx.taxi מציג נתוני רשת ביטקוין ציבוריים.</b> האתר אינו יכול להשיב כספים, לפתור בעיות בארנק, לבטל עסקאות או לשנות את עדיפות האישור שלהן.</p><p>לבקשות אלה יש לפנות לארנק, לבורסה או לשירות התשלומים שיצר את העסקה.</p></ng-template>
@@ -257,6 +258,8 @@
 </ng-container>
 
 <ng-template type="what-is-a-mempool">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_a_mempool"><p>मेमपुल (memory pool) नोडले राख्ने मान्य, अपुष्ट कारोबारहरूको समूह हो। सबैको साझा मेमपुल हुँदैन: वालेट, माइनर र एक्सप्लोररले फरक प्रतीक्षारत कारोबार देख्न सक्छन्। कारोबार हराउन, चेन पुनर्गठनपछि फर्किन वा नोडहरूमा फरक समयमा पुग्न सक्छ।</p><p><a href="https://developer.bitcoin.org/devguide/p2p_network.html#memory-pool" target="_blank" rel="noopener noreferrer">Bitcoin Developer Guide मा मेमपुलबारे पढ्नुहोस्।</a></p></ng-container>
+  <ng-template #neFallback_what_is_a_mempool>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_a_mempool"><p>მემპული (memory pool) არის მოქმედი, დაუდასტურებელი ტრანზაქციების ნაკრები, რომელსაც კვანძი ინახავს. ერთი საერთო მემპული არ არსებობს: საფულეებს, მაინერებსა და ექსპლორერებს შეიძლება განსხვავებული მომლოდინე ტრანზაქციები ჰქონდეთ. Bitcoin-ის peer-to-peer დოკუმენტაცია განმარტავს, რატომ შეიძლება დაუდასტურებელი ტრანზაქცია გაქრეს, ჯაჭვის რეორგანიზაციის შემდეგ დაბრუნდეს ან კვანძებს სხვადასხვა დროს მიაღწიოს.</p><p><a href="https://developer.bitcoin.org/devguide/p2p_network.html#memory-pool" target="_blank" rel="noopener noreferrer">Bitcoin-ის დეველოპერის სახელმძღვანელო მემპულის შესახებ</a></p></ng-container>
   <ng-template #kaDraft_what_is_a_mempool>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish0"><p>Un mempool (abreviatura de «memory pool») es el conjunto de transacciones válidas y sin confirmar que mantiene un nodo. No existe un mempool global: las carteras, los mineros y los exploradores pueden observar conjuntos distintos de transacciones pendientes. La documentación de la red entre pares de Bitcoin explica por qué una transacción sin confirmar puede desaparecer, reaparecer tras una reorganización o llegar a distintos nodos en momentos diferentes.</p><p><a href="https://developer.bitcoin.org/devguide/p2p_network.html#memory-pool" target="_blank" rel="noopener noreferrer">Consulta la referencia sobre el mempool en la guía para desarrolladores de Bitcoin.</a></p></ng-container>
@@ -295,8 +298,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-a-mempool-explorer">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_a_mempool_explorer"><p>मेमपुल एक्सप्लोररले देखिएका प्रतीक्षारत र पुष्टि भएका Bitcoin डाटा देखाउँछ: ब्लक, कारोबार, ठेगाना, शुल्क अनुमान र माइनिङ तथ्याङ्क। अनुमानित ब्लकले यस एक्सप्लोररको मेमपुलका कारोबार आगामी ब्लकमा कसरी अटाउन सक्छन् भनेर देखाउँछन्; माइनरले फरक कारोबार रोज्न सक्छन्।</p><p>अनुमानित ब्लक विभाजकभन्दा अघि र पुष्टि भएका ब्लक पछि देखिन्छन्।</p></ng-container>
+  <ng-template #neFallback_what_is_a_mempool_explorer>
   <ng-container *ngIf="locale.startsWith('ka'); else kaMempoolExplorerOriginal"><p>მემპულის ექსპლორერი აჩვენებს დაკვირვებულ მომლოდინე და დადასტურებულ Bitcoin მონაცემებს: ბლოკებს, ტრანზაქციებს, მისამართებს, საკომისიოს შეფასებებსა და მაინინგის სტატისტიკას. პროგნოზირებული ბლოკები აფასებს, როგორ შეიძლება ამ ექსპლორერის მემპულის ტრანზაქციები შემდეგ ბლოკებში განაწილდეს; მაინერებმა შეიძლება სხვა ნაკრები აირჩიონ.</p><p>პროგნოზირებული ბლოკები გამყოფამდე ჩანს, დადასტურებული კი მის შემდეგ.</p></ng-container>
   <ng-template #kaMempoolExplorerOriginal>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqMempoolExplorerEnglish"><p>Un explorador de mempool muestra los datos de Bitcoin pendientes y confirmados observados, incluidos bloques, transacciones, direcciones, estimaciones de comisiones y estadísticas de minería. Los bloques previstos estiman cómo podrían encajar en los próximos bloques las transacciones del mempool de este explorador; los mineros pueden elegir otro conjunto.</p><p>Los bloques previstos aparecen antes de la división y los confirmados después.</p></ng-container><ng-template #frDeFaqMempoolExplorerEnglish><ng-container *ngIf="locale.startsWith('fr'); else deFaqMempoolExplorerEnglish"><p>Un explorateur de mempool présente les données Bitcoin observées, en attente ou confirmées : blocs, transactions, adresses, estimations de frais et statistiques de minage. Les blocs prévus estiment comment les transactions du mempool de cet explorateur pourraient être incluses dans les prochains blocs ; les mineurs peuvent en choisir d’autres.</p><p>Les blocs prévus apparaissent avant la séparation et les blocs confirmés après.</p></ng-container></ng-template>
@@ -342,8 +348,11 @@
     </div>
   </div>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-a-blockchain">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_a_blockchain"><p>Bitcoin ब्लकचेन कारोबार भएका ब्लकहरूको क्रमबद्ध शृङ्खला हो। माइनरले proof-of-work मार्फत नयाँ ब्लक प्रस्ताव गर्छन् र नोडहरूले चेन स्वीकार गर्नुअघि Bitcoin का सहमति नियमअनुसार स्वतन्त्र रूपमा जाँच्छन्।</p></ng-container>
+  <ng-template #neFallback_what_is_a_blockchain>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_a_blockchain"><p>Bitcoin-ის ბლოკჩეინი არის ტრანზაქციების შემცველი ბლოკების თანმიმდევრული ჯაჭვი. proof-of-work მაინერები ახალ ბლოკებს გვთავაზობენ; კვანძები კი ჯაჭვის მიღებამდე მათ დამოუკიდებლად ამოწმებენ Bitcoin-ის კონსენსუსის წესების მიხედვით.</p></ng-container>
   <ng-template #kaDraft_what_is_a_blockchain>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish1"><p>La cadena de bloques de Bitcoin es una secuencia ordenada de bloques que contienen transacciones. Los mineros de prueba de trabajo proponen bloques; los nodos los validan de forma independiente según las reglas de consenso de Bitcoin antes de aceptarlos.</p></ng-container>
@@ -381,8 +390,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-a-block-explorer">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_a_block_explorer"><p>ब्लक एक्सप्लोररले ब्लक, कारोबार र ठेगानासहित क्रिप्टोकरेन्सी ब्लकचेनको वर्तमान तथा ऐतिहासिक जानकारी हेर्न दिन्छ।</p></ng-container>
+  <ng-template #neFallback_what_is_a_block_explorer>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_a_block_explorer"><p>ბლოკების ექსპლორერი საშუალებას გაძლევთ დაათვალიეროთ კრიპტოვალუტის ბლოკჩეინის მიმდინარე და ისტორიული ინფორმაცია, მათ შორის ბლოკები, ტრანზაქციები და მისამართები.</p></ng-container>
   <ng-template #kaDraft_what_is_a_block_explorer>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish2"><p>Un explorador de bloques permite consultar información histórica y en tiempo real sobre la cadena de bloques de una criptomoneda, incluidos bloques, transacciones, direcciones y otros datos.</p></ng-container>
@@ -420,8 +432,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-mining">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_mining"><p>माइनिङ Bitcoin का नयाँ ब्लक बनाउने proof-of-work प्रक्रिया हो। माइनरले आफ्नो मेमपुलबाट कारोबार छानेर ब्लक बनाउँछ र मान्य ब्लक ह्यास खोज्छ। सफल ब्लकले ब्लक सब्सिडी र समावेश कारोबारका शुल्क पाउँछ।</p></ng-container>
+  <ng-template #neFallback_what_is_mining>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_mining"><p>მაინინგი არის proof-of-work პროცესი, რომლის საშუალებითაც იქმნება Bitcoin-ის ახალი ბლოკები. მაინერი საკუთარი მემპულიდან ირჩევს ტრანზაქციებს, ადგენს ბლოკს და ეძებს დასაშვებ ბლოკის ჰეშს. წარმატებული ბლოკი იღებს ბლოკის სუბსიდიასა და მასში შესული ტრანზაქციების საკომისიოებს.</p></ng-container>
   <ng-template #kaDraft_what_is_mining>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish3"><p>La minería es el proceso de prueba de trabajo que propone nuevos bloques de Bitcoin. Un minero elige transacciones de su propio mempool, construye un bloque y busca un hash válido. El bloque aceptado puede cobrar su subsidio y las comisiones de las transacciones incluidas.</p></ng-container>
@@ -459,8 +474,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-are-mining-pools">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_are_mining_pools"><p>माइनिङ पूलले नयाँ ब्लक भेट्टाउने सम्भावना बढाउन माइनरहरूको कम्प्युटिङ क्षमता एकत्र गर्छन्।</p></ng-container>
+  <ng-template #neFallback_what_are_mining_pools>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_are_mining_pools"><p>მაინინგ-პულები აერთიანებს მაინერების გამოთვლით სიმძლავრეს ახალი ბლოკის პოვნის ალბათობის გასაზრდელად.</p></ng-container>
   <ng-template #kaDraft_what_are_mining_pools>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish4">Los grupos de minería reúnen la capacidad de cómputo de varios mineros para aumentar la probabilidad de encontrar nuevos bloques.</ng-container>
@@ -498,8 +516,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-are-vb-wu">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_are_vb_wu"><p>भर्चुअल बाइट (vB) र वेट युनिट (WU) ले Bitcoin कारोबार र ब्लकको आकार मापन गर्छन्। कारोबारको आकार पठाइएको बिटकोइनको मात्राले होइन, इनपुट, आउटपुट, हस्ताक्षरको सङ्ख्या र legacy वा SegWit जस्ता ढाँचाले निर्धारण गर्छ। समान शुल्क दरमा ठूलो कारोबारले सानो कारोबारभन्दा बढी माइनिङ शुल्क तिर्छ।</p><p>ब्लकको अधिकतम वेट 4,000,000 WU हो; 1 vB = 4 WU भएकाले यो 1,000,000 vB हुन्छ। पहिले साधारण बाइट प्रयोग हुन्थ्यो; २०१७ को SegWit अद्यावधिकपछि पछाडिको अनुकूलता कायम गर्न यी एकाइ बनाइए। थप जानकारीका लागि <a href="https://programmingbitcoin.com/understanding-segwit-block-size" target="_blank" rel="noopener noreferrer">SegWit ब्लक आकारसम्बन्धी लेख</a> हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_what_are_vb_wu>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_are_vb_wu"><p>ვირტუალური ბაიტები (vB) და წონის ერთეულები (WU) გამოიყენება Bitcoin ქსელში ტრანზაქციებისა და ბლოკების ზომის გასაზომად.</p><p>ტრანზაქციის ზომას <i>არ</i> განსაზღვრავს გადარიცხული ბიტკოინის რაოდენობა. ის დამოკიდებულია ისეთ ტექნიკურ ფაქტორებზე, როგორიცაა შეყვანებისა და გამოსავლების რაოდენობა, ხელმოწერების რაოდენობა და ფორმატი (legacy, SegWit და სხვ.). ერთნაირი საკომისიოს განაკვეთისას უფრო დიდი ტრანზაქცია მეტ საკომისიოს იხდის.</p><p>ბლოკის წონის ზედა ზღვარია 4,000,000 WU (ან 1,000,000 vB, რადგან 1 vB = 4 WU).</p><p>ადრე ზომა ჩვეულებრივი ბაიტებით იზომებოდა. ვირტუალური ბაიტები და წონის ერთეულები 2017 წლის SegWit განახლების შემდეგ უკუთავსებადობის შესანარჩუნებლად შემოიღეს. დამატებით იხილეთ <a href="https://programmingbitcoin.com/understanding-segwit-block-size" target="_blank">ეს სტატია</a>.</p></ng-container>
   <ng-template #kaDraft_what_are_vb_wu>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish5"><p>Los bytes virtuales (vB) y las unidades de peso (WU) se utilizan para medir el tamaño de las transacciones y los bloques en la red Bitcoin.</p><p>El tamaño de una transacción en la cadena <i>no</i> depende de la cantidad de bitcoin que transfiere, sino de factores técnicos como el número de entradas, salidas y firmas y el formato utilizado (legacy, SegWit, etc.). A la misma tasa de comisión, las transacciones más grandes pagan más comisiones que las pequeñas.</p><p>El tamaño de los bloques está limitado a 4.000.000 WU (o 1.000.000 vB, ya que 1 vB = 4 WU).</p><p>Antes se medían los tamaños en bytes normales; los bytes virtuales y las unidades de peso se introdujeron para mantener la compatibilidad con versiones anteriores tras la actualización SegWit de 2017. Consulta <a href="https://programmingbitcoin.com/understanding-segwit-block-size" target="_blank">esta explicación</a> para más detalles.</p></ng-container>
@@ -543,8 +564,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-svb">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_svb"><p>प्रतीक्षारत Bitcoin कारोबारको प्राथमिकता sat/vB मा मापन गरिने शुल्क दरसँग सम्बन्धित हुन्छ। उच्च दरले ब्लकमा समावेश हुने सम्भावना बढाउन सक्छ, तर पुष्टि समयको ग्यारेन्टी गर्दैन। कारोबार बनाउनु अघि हालको अनुमान हेर्नुहोस् र वालेटको शुल्क सेटिङ प्रयोग गर्नुहोस्।</p><p><a [routerLink]="['/' | relativeUrl]">मुख्य ड्यासबोर्ड</a> का अनुमानले मार्गदर्शन दिन्छन्। उचित दर छनोटबारे <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-prevent-stuck-transaction">थप हेर्नुहोस्</a>।</p></ng-container>
+  <ng-template #neFallback_what_is_svb>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_svb"><p>მომლოდინე Bitcoin ტრანზაქციის პრიორიტეტი განისაზღვრება საკომისიოს განაკვეთით, რომელიც sat/vB-ში იზომება.</p><p>უფრო მაღალმა sat/vB განაკვეთმა შეიძლება გაზარდოს ბლოკში მოხვედრის შანსი, თუმცა დადასტურების დროს ვერ უზრუნველყოფს. ტრანზაქციის შექმნამდე შეამოწმეთ მიმდინარე შეფასებები და გამოიყენეთ საფულის საკომისიოს პარამეტრები.</p><p>შეფასებები იხილეთ <a [routerLink]="['/' | relativeUrl]">მთავარ გვერდზე</a>. სწორი განაკვეთის არჩევაზე მეტს გაიგებთ <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="looking-up-fee-estimates">ამ პასუხში</a>.</p></ng-container>
   <ng-template #kaDraft_what_is_svb>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish6"><p>La prioridad de una transacción pendiente de Bitcoin está determinada por su tasa de comisión, medida en sat/vB.</p><p>Una tasa mayor en sat/vB puede mejorar sus posibilidades de inclusión, pero no garantiza un tiempo de confirmación. Consulta las estimaciones actuales justo antes de crear una transacción y utiliza los controles de comisión de tu cartera.</p><p>En la parte superior del <a [routerLink]="['/' | relativeUrl]">panel principal</a> hay estimaciones que puedes usar como guía. Consulta <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="looking-up-fee-estimates">esta pregunta</a> para saber cómo elegir una tasa.</p></ng-container>
@@ -584,8 +608,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-is-transaction-stuck-in-mempool">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_why_is_transaction_stuck_in_mempool"><p>ढिलाइको सामान्य कारण ब्लक स्थानका लागि प्रतिस्पर्धा गर्ने कारोबारको तुलनामा कम शुल्क दर हो। प्रतीक्षारत कारोबार सबै नोड वा माइनरसँग अझै छ भन्ने हुँदैन। कारोबार पृष्ठ जाँच्नुहोस् र सम्भावित उपायका लागि वालेट वा पठाउने सेवासँग सम्पर्क गर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_why_is_transaction_stuck_in_mempool>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_why_is_transaction_stuck_in_mempool"><p>დაგვიანების გავრცელებული მიზეზია დაბალი საკომისიოს განაკვეთი ბლოკის სივრცისთვის კონკურენტ ტრანზაქციებთან შედარებით. მომლოდინე ტრანზაქცია არ ნიშნავს, რომ ის ყველა კვანძს ან მაინერს ჯერ კიდევ აქვს. შეამოწმეთ მისი გვერდი და შესაძლო მოქმედებებისთვის მიმართეთ საფულეს ან სერვისს, რომელმაც ის შექმნა.</p><p>btc.tx.taxi მხოლოდ საჯარო ქსელურ მონაცემებს აჩვენებს. მას არ შეუძლია ტრანზაქციის პრიორიტეტის შეცვლა, თანხის დაბრუნება ან საფულის ტრანზაქციის შეცვლა.</p></ng-container>
   <ng-template #kaDraft_why_is_transaction_stuck_in_mempool>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish7"><p>Una tasa de comisión baja frente a otras transacciones que compiten por espacio en el bloque es una causa frecuente de retraso. Que una transacción esté pendiente no garantiza que todos los nodos o mineros la conserven. Consulta su página aquí y pregunta a la cartera o al servicio que la creó qué opciones tienes.</p><p>btc.tx.taxi solo muestra datos públicos de la red. No puede cambiar la prioridad de una transacción, recuperar fondos ni modificar una transacción de una cartera.</p></ng-container>
@@ -623,8 +650,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-to-get-transaction-confirmed-quickly">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_how_to_get_transaction_confirmed_quickly"><p>पुष्टि छिटो बनाउन कारोबारको प्रभावकारी शुल्क दर बढाउनुपर्छ। RBF सक्षम भए बढी शुल्क भएको कारोबारबाट प्रतिस्थापन गर्न सकिन्छ। नभए कुनै आउटपुट आफ्नो नियन्त्रणमा छ भने CPFP बाट प्रभावकारी शुल्क दर बढाउन सकिन्छ। यी विकल्प वा रकममा नियन्त्रण नभए वालेट वा पठाउने सेवालाई सम्पर्क गर्नुहोस्। कुनै उपायले निश्चित पुष्टि समयको ग्यारेन्टी गर्दैन।</p></ng-container>
+  <ng-template #neFallback_how_to_get_transaction_confirmed_quickly>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_how_to_get_transaction_confirmed_quickly"><p>დადასტურების დასაჩქარებლად საჭიროა ტრანზაქციის ეფექტური საკომისიოს განაკვეთის გაზრდა.</p><p>თუ ტრანზაქციაში RBF ჩართულია, შეგიძლიათ იგი უფრო მაღალი საკომისიოს მქონე ტრანზაქციით ჩაანაცვლოთ. სხვა შემთხვევაში, თუ მის რომელიმე გამოსავალს აკონტროლებთ, ეფექტური განაკვეთის გასაზრდელად შეგიძლიათ CPFP გამოიყენოთ.</p><p>თუ არ იცით, როგორ გამოიყენოთ RBF ან CPFP, მიმართეთ ტრანზაქციის შემქმნელ საფულეს, ბირჟას ან სხვა სერვისს.</p></ng-container>
   <ng-template #kaDraft_how_to_get_transaction_confirmed_quickly>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish8"><p>Para intentar confirmar antes una transacción, tendrás que aumentar su tasa de comisión efectiva.</p><p>Si se creó con RBF activado, puedes sustituirla por otra con una comisión mayor. Si no, y controlas alguna de sus salidas, puedes usar CPFP para aumentar su tasa efectiva.</p><p>Si no sabes cómo usar RBF o CPFP, consulta la herramienta que utilizaste para crearla (cartera, casa de cambio, etc.).</p></ng-container>
@@ -662,8 +692,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-prevent-stuck-transaction">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_how_prevent_stuck_transaction"><p><a [routerLink]="['/' | relativeUrl]">ड्यासबोर्ड</a> को अनुमानबाट आवश्यक पुष्टि गतिअनुसार शुल्क रोज्नुहोस्। वालेटले समर्थन गरे RBF प्रयोग गरेर अपुष्ट कारोबार बढी शुल्कको कारोबारले प्रतिस्थापन गर्न सकिन्छ।</p></ng-container>
+  <ng-template #neFallback_how_prevent_stuck_transaction>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_how_prevent_stuck_transaction"><p>აირჩიეთ საჭირო დადასტურების სიჩქარის შესაბამისი საკომისიო <a [routerLink]="['/' | relativeUrl]">მთავარ გვერდზე</a> მოცემული შეფასებებით. თუ საფულე მხარს უჭერს, RBF საშუალებას მოგცემთ დაუდასტურებელი ტრანზაქცია უფრო მაღალი საკომისიოს მქონეთი შეცვალოთ.</p></ng-container>
   <ng-template #kaDraft_how_prevent_stuck_transaction>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish9"><p>Elige una comisión adecuada al tiempo de confirmación que necesitas usando las estimaciones del <a [routerLink]="['/' | relativeUrl]">panel</a>. Si tu cartera lo admite, activar RBF permite sustituir una transacción no confirmada por otra con una comisión mayor.</p></ng-container>
@@ -701,8 +734,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="looking-up-transactions">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_looking_up_transactions"><p>वेबसाइटको माथि रहेको खोज बाकसमा कारोबार ID खोज्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_looking_up_transactions>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_looking_up_transactions"><p>მოძებნეთ ტრანზაქციის ID გვერდის ზედა ნაწილში მდებარე საძიებო ველში.</p></ng-container>
   <ng-template #kaDraft_looking_up_transactions>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish10">Busca el identificador de la transacción en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
@@ -740,8 +776,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="looking-up-addresses">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_looking_up_addresses"><p>वेबसाइटको माथि रहेको खोज बाकसमा ठेगाना खोज्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_looking_up_addresses>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_looking_up_addresses"><p>მოძებნეთ მისამართი გვერდის ზედა ნაწილში მდებარე საძიებო ველში.</p></ng-container>
   <ng-template #kaDraft_looking_up_addresses>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish11">Busca la dirección en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
@@ -779,8 +818,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="looking-up-blocks">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_looking_up_blocks"><p>वेबसाइटको माथि रहेको खोज बाकसमा ब्लक नम्बर वा ब्लक ह्यास खोज्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_looking_up_blocks>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_looking_up_blocks"><p>მოძებნეთ ბლოკის ნომერი ან ჰეში გვერდის ზედა ნაწილში მდებარე საძიებო ველში.</p></ng-container>
   <ng-template #kaDraft_looking_up_blocks>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish12">Busca el número o el hash del bloque en el cuadro de búsqueda situado en la parte superior derecha del sitio.</ng-container>
@@ -818,8 +860,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="looking-up-fee-estimates">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_looking_up_fee_estimates"><p>हालका अनुमान <a [routerLink]="['/' | relativeUrl]">ड्यासबोर्ड</a> मा हेर्नुहोस् वा <code>/api/v1/fees/recommended</code> प्रयोग गर्नुहोस्। यी sat/vB सिफारिस एक्सप्लोररको हालको मेमपुल र अनुमानित ब्लकमा आधारित छन्। अनुमानित ब्लक अनुमान हुन्, प्रतिज्ञा होइनन्: माइनरले आफ्ना नोड र नीतिअनुसार फरक कारोबार चयन गर्न सक्छन्।</p></ng-container>
+  <ng-template #neFallback_looking_up_fee_estimates>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_looking_up_fee_estimates"><p>მიმდინარე შეფასებები იხილეთ <a [routerLink]="['/' | relativeUrl]">მთავარ გვერდზე</a> ან მიმართეთ <code>/api/v1/fees/recommended</code>-ს. sat/vB რეკომენდაციები ეფუძნება ექსპლორერის მიმდინარე მემპულსა და პროგნოზირებულ ბლოკებს.</p><p>პროგნოზირებული ბლოკები შეფასებაა და არა დაპირება. მაინერები საკუთარ კვანძებს, წესებსა და ბლოკის შაბლონებს იყენებენ, ამიტომ შეფასება კონკრეტულ ბლოკში ან დროში დადასტურებას ვერ იძლევა.</p></ng-container>
   <ng-template #kaDraft_looking_up_fee_estimates>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish13"><p>Consulta las estimaciones actuales en el <a [routerLink]="['/' | relativeUrl]">panel</a> o usa <code>/api/v1/fees/recommended</code>. Los valores son recomendaciones en sat/vB basadas en el mempool y los bloques previstos por el explorador.</p><p>Los bloques previstos son una estimación, no una promesa. Los mineros usan sus propios nodos, políticas y plantillas, por lo que una estimación no garantiza la confirmación en un bloque o plazo concreto.</p></ng-container>
@@ -857,8 +902,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="looking-up-historical-trends">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_looking_up_historical_trends"><p>मेमपुलको आकार र नयाँ कारोबार आउने गतिजस्ता समयसँग बदलिने प्रवृत्ति <a [routerLink]="['/graphs' | relativeUrl]">ग्राफ पृष्ठ</a> मा हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_looking_up_historical_trends>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_looking_up_historical_trends"><p><a [routerLink]="['/graphs' | relativeUrl]">გრაფიკების გვერდზე</a> იხილეთ მემპულის ზომისა და შემომავალი ტრანზაქციების სიჩქარის ცვლილება დროთა განმავლობაში.</p></ng-container>
   <ng-template #kaDraft_looking_up_historical_trends>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish14">Consulta la <a [routerLink]="['/graphs' | relativeUrl]">página de gráficos</a> para ver tendencias agregadas a lo largo del tiempo, como el tamaño del mempool y la velocidad de llegada de las transacciones.</ng-container>
@@ -896,8 +944,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-full-mempool">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_full_mempool"><p>Bitcoin कारोबार पुष्टि नभएसम्म नोडको मेमपुलमा रहन्छ। कारोबार पुष्टि हुनेभन्दा छिटो आए मेमपुल बढ्छ। Bitcoin Core ले पूर्वनिर्धारित रूपमा मेमपुलका लागि 300 MB मेमोरी छुट्याउँछ। तोकिएको मेमोरी भरिएपछि नोडले कम शुल्क दर भएका कारोबार हटाउन र नयाँ कारोबारका लागि न्यूनतम शुल्क दर बढाउन सक्छ। कारोबारको दर कम्तीमा त्यस सीमाभन्दा माथि छ भन्ने सुनिश्चित गर्नुहोस्; हालको सीमा र मेमोरी प्रयोग Mempool को मुख्य पृष्ठमा देखिन्छ। प्रत्येक नोडको मेमपुल र सीमा फरक हुन सक्छ।</p></ng-container>
+  <ng-template #neFallback_what_is_full_mempool>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_full_mempool"><p>Bitcoin ტრანზაქცია ბლოკში დადასტურებამდე კვანძის მემპულში ინახება. როცა ახალი ტრანზაქციები უფრო სწრაფად შემოდის, ვიდრე დასტურდება, მემპული იზრდება.</p><p>სტანდარტულად Bitcoin Core მემპულისთვის 300 MB მეხსიერებას გამოყოფს. როცა კვანძის მემპული მთელ გამოყოფილ მეხსიერებას იყენებს, მას „სავსეს“ ვუწოდებთ.</p><p>ასეთ დროს კვანძი განსაზღვრულ მინიმალურ განაკვეთზე დაბალი საკომისიოს მქონე ახალ ტრანზაქციებს უარყოფს. დარწმუნდით, რომ თქვენი განაკვეთი ამ ზღვარს აღემატება. მიმდინარე ზღვარი და მეხსიერების გამოყენება Mempool-ის მთავარ გვერდზე ჩანს.</p></ng-container>
   <ng-template #kaDraft_what_is_full_mempool>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish15"><p>Antes de confirmarse en un bloque, una transacción de Bitcoin se almacena en el mempool de un nodo. Cuando las transacciones llegan más rápido de lo que se confirman, el mempool crece.</p><p>Bitcoin Core asigna 300 MB de memoria al mempool por defecto. Cuando un nodo utiliza toda la memoria asignada, se dice que su mempool está «lleno».</p><p>Al agotarse la memoria asignada, el nodo empieza a rechazar nuevas transacciones cuya tasa de comisión esté por debajo de un umbral. En ese caso, asegúrate de elegir una tasa que, como mínimo, lo supere. El umbral actual y el uso de memoria se muestran en la página principal de Mempool.</p></ng-container>
@@ -935,8 +986,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-big-is-mempool-used-by-mempool-space">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_how_big_is_mempool_used_by_mempool_space"><p>Bitcoin एक्सप्लोररले फरक मेमपुल सीमा भएका नोड प्रयोग गर्न सक्छन्। Bitcoin Core को पूर्वनिर्धारित 300 MB सीमा भएको नोडले ठूलो मेमपुल भएको नोडभन्दा कम शुल्क दरका कारोबार पहिले अस्वीकार गर्न सक्छ।</p><p>धेरै Bitcoin नोडले 300 MB पूर्वनिर्धारित सीमा प्रयोग गर्छन्। मेमोरी भरिँदा बदलिँदो न्यूनतम दरभन्दा कम शुल्क भएका कारोबार हटाइन्छन् वा अस्वीकार हुन्छन्। कन्फिगर गरिएको स्रोतले उपलब्ध गराए एक्सप्लोररको “Purging” दरले यो सीमा देखाउँछ। ठूलो मेमपुल भएको नोडले कम दरका कारोबार बढी समय राख्न सक्छ; त्यसैले तपाईंको वालेट, यो एक्सप्लोरर र माइनरले फरक प्रतीक्षारत कारोबार देख्न सक्छन्।</p></ng-container>
+  <ng-template #neFallback_how_big_is_mempool_used_by_mempool_space>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_how_big_is_mempool_used_by_mempool_space"><p>Bitcoin ექსპლორერებმა შეიძლება გამოიყენონ კვანძები მემპულის განსხვავებული ლიმიტებით. Bitcoin Core-ის ნაგულისხმევი 300 MB ლიმიტის მქონე კვანძმა დაბალი საკომისიოს განაკვეთის ტრანზაქციები შეიძლება უფრო ადრე უარყოს, ვიდრე უფრო დიდი მემპულის მქონე კვანძმა.</p><p>ბევრი კვანძი ნაგულისხმევ 300 MB პარამეტრს იყენებს. ამ მეხსიერების შევსებისას კვანძები ცვალებად მინიმალურ განაკვეთზე დაბალ ტრანზაქციებს უარყოფენ. ექსპლორერის „Purging“ განაკვეთი ამ ზღვარს აჩვენებს, როცა მონაცემთა წყარო მას აწვდის.</p><p>უფრო დიდი მემპულის მქონე კვანძებმა შეიძლება დაბალი განაკვეთის ტრანზაქციები მეტხანს შეინახონ. ამიტომ თქვენს საფულეს, ამ ექსპლორერსა და მაინერს მომლოდინე ტრანზაქციებზე განსხვავებული ხედვა შეიძლება ჰქონდეთ.</p></ng-container>
   <ng-template #kaDraft_how_big_is_mempool_used_by_mempool_space>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish16"><p>Los exploradores de Bitcoin pueden utilizar nodos con distintos límites de mempool. Un nodo con el límite predeterminado de 300 MB de Bitcoin Core puede rechazar antes las transacciones con comisiones bajas que otro configurado con un mempool mayor.</p><p>Muchos nodos usan el límite predeterminado de 300 MB. Cuando se agota esa memoria, rechazan transacciones por debajo de un umbral variable de comisión. La tasa de «Purging» del explorador indica ese umbral cuando la fuente de datos lo proporciona.</p><p>Los nodos con mempools mayores pueden conservar durante más tiempo las transacciones con comisiones bajas. Por ello, tu cartera, este explorador y un minero pueden mostrar distintos conjuntos de transacciones pendientes.</p></ng-container>
@@ -978,8 +1032,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-memory-usage">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_memory_usage"><p>मुख्य पृष्ठको मेमोरी प्रयोग Bitcoin नोडको मेमपुलले अहिले प्रयोग गरेको प्रणाली मेमोरी हो। Bitcoin Core का इन्डेक्स, पोइन्टर र अन्य भण्डारण तथा प्रशोधन खर्चका कारण यो प्रतीक्षारत कारोबारको कुल आकारभन्दा बढी हुन्छ।</p><p>btc.tx.taxi मा देखिने प्रयोग यसको कन्फिगर गरिएको ब्याकएन्डको हो र Bitcoin Core को पूर्वनिर्धारित 300 MB सीमाभन्दा बढी हुन सक्छ। यो एउटा नोडले देखेको वर्तमान भीड हो, पूरै नेटवर्कको कुल होइन। पूर्वनिर्धारित 300 MB मेमपुल सीमा भएको नोडले मेमपुलका लागि त्यसभन्दा बढी मेमोरी प्रयोग गर्दैन।</p></ng-container>
+  <ng-template #neFallback_what_is_memory_usage>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_memory_usage"><p>მთავარ გვერდზე მეხსიერების გამოყენება აღნიშნავს სისტემური მეხსიერების იმ რაოდენობას, რომელსაც Bitcoin კვანძის მემპული ამჟამად იყენებს. ეს რიცხვი ყოველთვის აღემატება მომლოდინე ტრანზაქციების საერთო ზომას, რადგან Bitcoin Core შენახვისა და დამუშავებისთვის ინდექსებს, მაჩვენებლებს და სხვა რესურსებსაც იყენებს.</p><p>btc.tx.taxi-ის მაჩვენებელი ასახავს მის მონაცემთა წყაროს და შეიძლება Bitcoin Core-ის ნაგულისხმევ 300 MB ლიმიტს აღემატებოდეს. ეს ერთი კვანძის ხედვაა და არა მთელი ქსელის ჯამური მაჩვენებელი.</p><p>კვანძი, რომელიც ნაგულისხმევ 300 MB ლიმიტს იყენებს, როგორც Raspberry Pi-ის კვანძების უმეტესობა, ამ ზღვარს არ გადააჭარბებს.</p></ng-container>
   <ng-template #kaDraft_what_is_memory_usage>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish17"><p>El uso de memoria de la página principal es la cantidad de memoria del sistema que utiliza en tiempo real el mempool de un nodo Bitcoin. Esta cifra es mayor que el tamaño total de sus transacciones pendientes debido a los índices, punteros y otros recursos que Bitcoin Core emplea para almacenarlas y procesarlas.</p><p>El uso mostrado por btc.tx.taxi corresponde a su servidor configurado y puede superar el límite predeterminado de 300 MB de Bitcoin Core. Es la visión de congestión de un nodo, no un total de toda la red.</p><p>Un nodo con el límite predeterminado de 300 MB, como la mayoría de los nodos Raspberry Pi, no superará los 300 MB de uso de memoria del mempool.</p></ng-container>
@@ -1021,8 +1078,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-empty-blocks">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_why_empty_blocks"><p>नयाँ ब्लक भेटिँदा माइनिङ पूलले प्रायः पूर्ण प्रमाणीकरण वा कहिलेकाहीँ प्राप्त गर्नुअघि नै माइनरलाई नयाँ ब्लक टेम्पलेट दिन्छ। पहिल्यै माइन गरिएका कारोबारसँग कुन कारोबार बाझिन्छन् भन्ने थाहा नभएकाले त्यस समयमा कारोबार छान्न सकिँदैन। यही छोटो अवधिमा अर्को ब्लक भेटिए खाली हुन सक्छ। खाली ब्लकले नयाँ कारोबार थप्दैन, तर चेनमा पहिल्यै रहेका कारोबारको समग्र सुरक्षामा योगदान गर्छ।</p></ng-container>
+  <ng-template #neFallback_why_empty_blocks>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_why_empty_blocks"><p>ახალი ბლოკის აღმოჩენისას მაინინგ-პულები ხშირად უგზავნიან მაინერებს ახალ ბლოკის შაბლონებს მანამ, სანამ ახალ ბლოკს სრულად შეამოწმებენ ან თავად მიიღებენ. ამ დროს ტრანზაქციების შერჩევა შეუძლებელია, რადგან პულმა არ იცის, რომელი მათგანი ეწინააღმდეგება უკვე დადასტურებულ ტრანზაქციებს.</p><p>ცარიელი ბლოკები დამატებით ტრანზაქციებს არ შეიცავს, მაგრამ ჯაჭვში უკვე არსებული ტრანზაქციების უსაფრთხოებას მაინც ზრდის.</p></ng-container>
   <ng-template #kaDraft_why_empty_blocks>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish18"><p>Cuando se encuentra un bloque, los grupos de minería suelen enviar nuevas plantillas a los mineros antes de validar completamente el bloque nuevo, a menudo antes incluso de recibirlo. En ese intervalo no pueden seleccionar transacciones para el siguiente bloque porque todavía no saben cuáles entrarían en conflicto con las ya minadas.</p><p>Aunque los bloques vacíos no añaden transacciones adicionales, contribuyen a la seguridad de las transacciones que ya están en la cadena.</p></ng-container>
@@ -1060,8 +1120,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-block-timestamps-dont-always-increase">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_why_block_timestamps_dont_always_increase"><p>प्रमाणीकरण नियमले ब्लकको टाइमस्ट्याम्प अघिल्लो ब्लकभन्दा पछि हुनैपर्छ भन्दैन। एउटा नियमअनुसार त्यो अघिल्ला ११ ब्लकका टाइमस्ट्याम्पको मध्यकभन्दा ठूलो हुनुपर्छ। त्यसैले टाइमस्ट्याम्प कहिलेकाहीँ क्रमबाहिर देखिन सक्छन्। थप जानकारी <a href="https://en.bitcoin.it/wiki/Block_timestamp" target="_blank" rel="noopener noreferrer">यहाँ</a> हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_why_block_timestamps_dont_always_increase>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_why_block_timestamps_dont_always_increase"><p>ბლოკის შემოწმების წესები არ მოითხოვს, რომ მისი დროის ნიშნული უშუალოდ წინა ბლოკის ნიშნულზე გვიანი იყოს. ცენტრალური ორგანოს გარეშე ზუსტი დროის ერთმნიშვნელოვნად დადგენა შეუძლებელია. ამის ნაცვლად, Bitcoin მოითხოვს გარკვეული პირობების დაცვას: მათ შორის ბლოკის დროის ნიშნული უნდა აღემატებოდეს წინა 11 ბლოკის დროის ნიშნულების მედიანას. დეტალებისთვის იხილეთ <a href="https://en.bitcoin.it/wiki/Block_timestamp" target="_blank">ეს გვერდი</a>.</p><p>ამიტომ ნიშნულები დაახლოებით ერთი საათის სიზუსტით უნდა განვიხილოთ და ისინი ზოგჯერ არათანმიმდევრულად ჩანს.</p></ng-container>
   <ng-template #kaDraft_why_block_timestamps_dont_always_increase>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish19"><p>Las reglas de validación no exigen estrictamente que la marca de tiempo de un bloque sea posterior a la del bloque anterior. Sin una autoridad central, no es posible conocer la hora exacta; el protocolo exige en cambio ciertos requisitos. Uno de ellos es que la marca sea posterior a la mediana de las marcas de tiempo de los 11 bloques precedentes. Consulta más detalles <a href="https://en.bitcoin.it/wiki/Block_timestamp" target="_blank">aquí</a>.</p><p>Por ello, las marcas de tiempo tienen una precisión aproximada de una hora y a veces parecen estar fuera de orden.</p></ng-container>
@@ -1099,8 +1162,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-dont-fee-ranges-match">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_why_dont_fee_ranges_match"><p>Mempool ले ब्लकको <i>प्रभावकारी शुल्क दर</i> दायरा देखाउन खोज्छ: ब्लकमा समावेश हुन वास्तवमा आवश्यक दर। प्रभावकारी दर कारोबारमा प्रत्यक्ष तोकिएको दरभन्दा फरक हुन सक्छ।</p><p>उदाहरणका लागि, 5–72 sat/vB दायराको ब्लकमा 1 sat/vB कारोबार देखिए उच्च शुल्क भएको child ले CPFP मार्फत यसको प्रभावकारी दर कम्तीमा 5 sat/vB पुर्‍याएको हुन सक्छ। कारोबार विवरण पृष्ठमा शुल्क दर तथा CPFP भए प्रभावकारी दर र सम्बन्धित ancestor वा descendant का लिङ्क देखिन्छन्।</p></ng-container>
+  <ng-template #neFallback_why_dont_fee_ranges_match>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_why_dont_fee_ranges_match"><p>Mempool ბლოკებისთვის <i>ეფექტური საკომისიოს განაკვეთის</i> დიაპაზონის ჩვენებას ცდილობს: რამდენის გადახდა იქნებოდა საჭირო ტრანზაქციის ბლოკში მოსახვედრად.</p><p>ეფექტური განაკვეთი ყოველთვის არ ემთხვევა უშუალოდ მითითებულ განაკვეთს. მაგალითად, თუ ბლოკის დიაპაზონია 5–72 sat/vB, ხოლო მასში ტრანზაქცია 1 sat/vB-ს იხდის, შესაძლოა მაღალგანაკვეთიანმა შვილობილმა ტრანზაქციამ CPFP-ის მეშვეობით მისი ეფექტური განაკვეთი 5 sat/vB-მდე ან მეტამდე გაზარდა. ამ შემთხვევაში 1 sat/vB დიაპაზონის ქვედა ზღვარი შეცდომაში შემყვანი იქნებოდა.</p><p>ტრანზაქციის განაკვეთი მის დეტალების გვერდზე ჩანს. CPFP კავშირის არსებობისას გვერდი ასევე აჩვენებს ეფექტურ განაკვეთს და ბმულებს წინამორბედ ან შვილობილ ტრანზაქციებზე.</p></ng-container>
   <ng-template #kaDraft_why_dont_fee_ranges_match>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish20"><p>Mempool intenta mostrar el rango de <i>tasas de comisión efectivas</i> de los bloques: cuánto habría que pagar realmente para incluir una transacción.</p><p>La tasa efectiva no siempre coincide con la tasa explícita. Por ejemplo, una transacción de 1 sat/vB en un bloque cuyo rango es de 5 a 72 sat/vB podría tener una transacción hija con una tasa alta que eleve su tasa efectiva a 5 sat/vB o más (así funciona el aumento de comisión mediante CPFP). En ese caso sería engañoso usar 1 sat/vB como límite inferior, pues su confirmación requirió una tasa mayor.</p><p>En la página de detalles puedes consultar la tasa de una transacción. Si tiene relaciones CPFP, también verás la tasa efectiva y enlaces a las transacciones descendientes o antecesoras.</p></ng-container>
@@ -1140,8 +1206,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-do-block-audits-work">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_how_do_block_audits_work"><p>ब्लक अडिटले निश्चित उचाइमा Mempool को अपेक्षित ब्लकलाई वास्तविक ब्लकसँग दृश्य रूपमा तुलना गर्छ।</p><p>Mempool ले आफ्नो मेमपुल अवलोकन गर्छ र Bitcoin Core को कारोबार छनोट एल्गोरिदमको पुनः कार्यान्वयन (<a href="https://github.com/mempool/mempool/blob/master/backend/src/api/mempool-blocks.ts" target="_blank">स्रोत कोड</a>) हरेक दुई सेकेन्ड चलाउँछ। यसले <a [routerLink]="['/mempool-block/0' | relativeUrl]">आगामी ब्लकका अनुमानित कारोबार</a> लगभग वास्तविक समयमा अद्यावधिक गर्छ। नयाँ ब्लक माइन हुँदा अर्को ब्लकको अनुमानित टेम्पलेट स्न्यापसट सहेजिन्छ; यो उक्त उचाइको <b>अपेक्षित ब्लक</b> हो।</p><p>अडिटले माइनरले कारोबार जानाजानी समावेश वा हटाएको हुन सक्छ कि भन्ने अनुमान गर्छ। यो निश्चित रूपमा जान्न नसकिने भएकाले अनुमानी नियम प्रयोग हुन्छन्:</p><ul class="no-bull block-audit"><li><span class="block-audit-highlight-color added">■</span><code>Added</code><p>नीलो: वास्तविक तर अपेक्षित ब्लकमा नभएको कारोबार, जुन अपेक्षित शुल्क दायराभन्दा धेरै बाहिर छ वा मेमपुलमा थिएन। माइनरले यसलाई प्राथमिकता दिएको वा सामान्य माध्यमबाहिर पाएको हुन सक्छ। यसले ब्लक स्वास्थ्य घटाउँदैन।</p></li><li><span class="block-audit-highlight-color recent">■</span><code>Recently broadcasted</code><p>गाढा गुलाबी: अपेक्षित तर वास्तविक ब्लकमा नभएको र Mempool नोडले माइन हुनुअघिका तीन मिनेटभित्र पहिलो पटक देखेको कारोबार। नेटवर्क ढिलाइले माइनरकहाँ नपुगेको हुन सक्ने भएकाले जानाजानी हटाइएको मानिँदैन र स्वास्थ्य घट्दैन।</p></li><li><span class="block-audit-highlight-color marginal">■</span><code>Marginal fee</code><p>गाढा: अपेक्षित शुल्क दायराको तल्लो छेउको कारोबार जुन अपेक्षित वा वास्तविक ब्लकमध्ये एउटामा छैन। थपिएको वा उस्तै दरको अर्को मेमपुल कारोबारले विस्थापित गरेको हुन सक्छ। यो फरक महत्त्वपूर्ण मानिँदैन र स्वास्थ्य घट्दैन।</p></li><li><span class="block-audit-highlight-color removed">■</span><code>Removed</code><p>हल्का गुलाबी: अपेक्षित तर वास्तविक ब्लकमा नभएको, हालै प्रसारित नभएको र सीमान्त शुल्कको पनि नभएको कारोबार। पर्याप्त समय फैलिन पाएको र अपेक्षित दायराभित्रको यस्तो कारोबार जानाजानी हटाइएको हुन सक्छ; यसले स्वास्थ्य घटाउँछ।</p></li></ul><p>थप जानकारीका लागि <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">ब्लक स्वास्थ्य</a> हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_how_do_block_audits_work>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_how_do_block_audits_work"><p>ბლოკის აუდიტი კონკრეტულ სიმაღლეზე Mempool-ის მოსალოდნელ ბლოკს რეალურს ვიზუალურად ადარებს.</p><p>მოსალოდნელი ბლოკის დასადგენად Mempool აკვირდება თავის მემპულს და Bitcoin Core-ის ტრანზაქციების შერჩევის ალგორითმის ხელახალ განხორციელებას იყენებს (<a href="https://github.com/mempool/mempool/blob/master/backend/src/api/mempool-blocks.ts" target="_blank">საწყისი კოდი</a>). ახალი ტრანზაქციები მუდმივად შემოდის, ამიტომ ალგორითმი ყოველ 2 წამში მუშაობს და <a [routerLink]="['/mempool-block/0' | relativeUrl]">პროგნოზირებული ბლოკები</a> თითქმის რეალურ დროში იცვლება.</p><p>ახალი ბლოკის მაინინგის მომენტში Mempool ინახავს მომდევნო ბლოკის პროგნოზირებული შაბლონის ასლს. ამ სიმაღლისთვის მას <b>მოსალოდნელ ბლოკს</b> ვუწოდებთ და აუდიტის საფუძვლად ვიყენებთ.</p><p>როცა მოსალოდნელი და რეალური ბლოკების მონაცემები ხელმისაწვდომია, მათი შედარება შეგვიძლია. <b>აუდიტის მიზანია ვარაუდი, მაინერმა რომელი ტრანზაქციები განზრახ შეიტანა ან გამოტოვა.</b> ამის ზუსტად ცოდნა შეუძლებელია, ამიტომ Mempool ევრისტიკებს იყენებს.</p><p>აუდიტში ეს ევრისტიკები სხვადასხვა ფერით აღინიშნება:</p><ul class="no-bull block-audit"><li><span class="block-audit-highlight-color added">■</span><code>Added</code><p>ლურჯად ჩანს ტრანზაქცია, რომელიც მოსალოდნელ ბლოკში არ იყო, რეალურში კი არის და ან მოსალოდნელი საკომისიოს დიაპაზონს მნიშვნელოვნად სცდება — მაინერმა შესაძლოა მას უპირატესობა მიანიჭა — ან საერთოდ არ ყოფილა მემპულში და შესაძლოა სხვა არხით მიიღო. ეს <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">სიჯანსაღეს</a> უარყოფითად არ ცვლის.</p></li><li><span class="block-audit-highlight-color recent">■</span><code>Recently broadcasted</code><p>მუქი ვარდისფერით ჩანს მოსალოდნელ, მაგრამ რეალურ ბლოკში არმყოფი ტრანზაქცია, რომელიც Mempool-ის კვანძმა ბლოკის მაინინგამდე 3 წუთის განმავლობაში პირველად ნახა. ქსელის დაყოვნების გამო მაინერს ის შესაძლოა არ მიუღია, ამიტომ განზრახ გამოტოვებად არ მიიჩნევა და სიჯანსაღეს არ ამცირებს.</p></li><li><span class="block-audit-highlight-color marginal">■</span><code>Marginal fee</code><p>დაბნელებულია მოსალოდნელი დიაპაზონის ქვედა ზღვართან მყოფი ტრანზაქცია, რომელიც მოსალოდნელ ან რეალურ ბლოკში აკლია. ის შესაძლოა დამატებულმა ან იმავე დაბალი დიაპაზონის სხვა მემპულის ტრანზაქციამ ჩაანაცვლა; განსხვავება მნიშვნელოვანად არ მიიჩნევა და სიჯანსაღეს არ ამცირებს.</p></li><li><span class="block-audit-highlight-color removed">■</span><code>Removed</code><p>მკვეთრი ვარდისფერით ჩანს მოსალოდნელ, მაგრამ რეალურ ბლოკში არმყოფი ტრანზაქცია, რომელიც არც ახლახან გავრცელებულია და არც ზღვრული საკომისიო აქვს. ის საკმარისად დიდხანს იყო მემპულში გასავრცელებლად და მისი განაკვეთი მოსალოდნელ დიაპაზონშია. შესაძლოა ის განზრახ გამოტოვეს; ასეთი ტრანზაქციები სიჯანსაღეს ამცირებს.</p></li></ul><p>აუდიტის შედეგების სიჯანსაღეში გამოყენების შესახებ იხილეთ <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">შემდეგი პასუხი</a>.</p></ng-container>
   <ng-template #kaDraft_how_do_block_audits_work>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqExtraEnglish1"><p>Una auditoría compara visualmente el bloque esperado por Mempool con el bloque real de una altura determinada.</p><p>Mempool observa su propio mempool y ejecuta una implementación del algoritmo de selección de transacciones de Bitcoin Core para determinar las transacciones que espera en próximos bloques (<a href="https://github.com/mempool/mempool/blob/master/backend/src/api/mempool-blocks.ts" target="_blank">código fuente</a>). Como llegan transacciones continuamente, el algoritmo se ejecuta cada dos segundos y los <a [routerLink]="['/mempool-block/0' | relativeUrl]">bloques previstos</a> cambian casi en tiempo real.</p><p>Cuando se mina un bloque, Mempool guarda una instantánea de la plantilla prevista. Esta instantánea se llama <b>bloque esperado</b> para esa altura y sirve de base para la auditoría.</p><p>Cuando ambos bloques están disponibles se comparan. <b>La auditoría intenta deducir si los mineros incluyeron o excluyeron transacciones deliberadamente.</b> Como no puede saberse con certeza, se usan heurísticas.</p><ul><li><b>Añadida:</b> aparece en el bloque real pero no en el esperado y está muy fuera del rango de comisiones esperado o no estaba en el mempool. Podría haberse priorizado o recibido fuera de banda. No reduce la salud del bloque.</li><li><b>Difundida recientemente:</b> estaba en el bloque esperado pero no en el real y el nodo la observó menos de tres minutos antes de minar el bloque. La latencia puede impedir que llegue al minero, por lo que no se considera una exclusión intencional ni reduce la salud.</li><li><b>Comisión marginal:</b> está en el extremo inferior del rango esperado y falta en uno de los bloques. Otra transacción podría haberla desplazado; no se considera una diferencia destacable ni reduce la salud.</li><li><b>Eliminada:</b> estaba en el bloque esperado pero no en el real, no es reciente ni de comisión marginal. Pudo haberse excluido deliberadamente y reduce la salud del bloque.</li></ul><p>Consulta cómo se usa la auditoría para calcular la <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="what-is-block-health">salud del bloque</a>.</p></ng-container>
@@ -1198,8 +1267,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-block-health">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_block_health"><p>ब्लक स्वास्थ्यले जानाजानी हटाइएका जस्ता देखिने कारोबारको मापन गर्छ। यस्तो कारोबार नभए स्वास्थ्य 100% हुन्छ; एक वा बढी भए 100% भन्दा कम हुन्छ।</p><p><span class="math">s<sub>expected</sub></span> लाई अपेक्षित ब्लकको कारोबार समूह र <span class="math">s<sub>actual</sub></span> लाई वास्तविक ब्लकको कारोबार समूह मानौं। <span class="math">n</span> दुवै समूहमा भएका कारोबारको सङ्ख्या हो। <span class="math">r</span> भनेको वास्तविक ब्लकबाट <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">जानाजानी हटाइएको अनुमान गरिएका</a> कारोबारको सङ्ख्या हो। स्वास्थ्य <span class="math">n / ( n + r )</span> हो।</p><p>सबै कारोबारको सट्टा दुवै समूहको साझा सङ्ख्या प्रयोग गर्नाले माइनरले नपाएको हुन सक्ने हालै प्रसारित कारोबार वा सामान्य माध्यमबाहिर प्राप्त बढी लाभदायक कारोबारले विस्थापित कम शुल्कको कारोबारबाट स्वास्थ्यमा अनावश्यक असर कम हुन्छ।</p><p>त्यसैले ब्लक स्वास्थ्य अपेक्षित र वास्तविक ब्लकको समानताको मापन <i>होइन</i>। वास्तविक ब्लक धेरै फरक भए पनि कुनै कारोबार जानाजानी हटाइएको नदेखिए स्वास्थ्य उच्च हुन सक्छ (<a [routerLink]="['/block/0000000000000000000515e202c8ae73c8155fc472422d7593af87aa74f2cf3d']">उदाहरण</a>)। थप जानकारी <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">ब्लक अडिट</a> मा हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_what_is_block_health>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_block_health"><p>ბლოკის სიჯანსაღე ზომავს, რამდენი ტრანზაქცია ჩანს განზრახ გამოტოვებულად. თუ არც ერთი არ ჩანს გამოტოვებულად, მაჩვენებელია 100%; ერთი ან მეტის შემთხვევაში — 100%-ზე ნაკლები.</p><p>გამოთვლისთვის <span class='math'>s<sub>expected</sub></span> იყოს Mempool-ის მოსალოდნელი ბლოკის ტრანზაქციების სიმრავლე, ხოლო <span class='math'>s<sub>actual</sub></span> — რეალური ბლოკის ტრანზაქციების სიმრავლე. <span class='math'>n</span> არის ორივე სიმრავლეში არსებული ტრანზაქციების რაოდენობა.</p><p><span class='math'>r</span> არის ტრანზაქციების რაოდენობა, რომლებიც Mempool-ის შეფასებით რეალური ბლოკიდან <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">განზრახ გამოტოვებულია</a>.</p><p>სიჯანსაღე გამოითვლება ასე: <span class='math'>n / ( n + r )</span>.</p><p>ორივე სიმრავლეში არსებული ტრანზაქციების რაოდენობა გამოიყენება ბლოკის საერთო რაოდენობის ნაცვლად, რათა მაჩვენებელზე ნაკლებად იმოქმედოს ტრანზაქციებმა, რომლებიც სავარაუდოდ განზრახ არ გამოტოვებულა:</p><ul><li>ახლახან გავრცელებული ტრანზაქციები, რომლებიც მაინერს შეიძლება არ მიუღია;</li><li>ზოგი დაბალი განაკვეთის ტრანზაქცია, რომელიც მაინერმა შესაძლოა უფრო მომგებიანი, სხვა არხით მიღებული ტრანზაქციით ჩაანაცვლა.</li></ul><p>ამიტომ სიჯანსაღე <i>არ</i> ზომავს მოსალოდნელი და რეალური ბლოკების მსგავსებას. ისინი შეიძლება ძლიერ განსხვავდებოდეს, მაგრამ თუ განზრახ გამოტოვება არ ჩანს, სიჯანსაღე მაღალი იქნება (<a [routerLink]="['/block/0000000000000000000515e202c8ae73c8155fc472422d7593af87aa74f2cf3d']">უკიდურესი მაგალითი</a>).</p><p>მეტი ინფორმაცია იხილეთ <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">ბლოკის აუდიტის</a> შესახებ პასუხში.</p></ng-container>
   <ng-template #kaDraft_what_is_block_health>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqExtraEnglish2"><p>La salud del bloque mide cuántas transacciones parecen haber sido excluidas deliberadamente. Un bloque sin exclusiones aparentes tiene una salud del 100 %; si hay una o más, es inferior al 100 %.</p><p>Sea <span class="math">s<sub>expected</sub></span> el conjunto de transacciones del bloque esperado y <span class="math">s<sub>actual</sub></span> el del bloque real. Sea <span class="math">n</span> el número de transacciones presentes en ambos conjuntos y <span class="math">r</span> el número que Mempool deduce que se <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">excluyeron deliberadamente</a> del bloque real. La salud es <span class="math">n / (n + r)</span>.</p><p>Se usa la intersección, y no el total del bloque, para reducir el efecto de transacciones que probablemente no fueron excluidas intencionalmente: las difundidas recientemente que el minero quizá no recibió y algunas de tasa baja que pudieron reemplazarse por transacciones más rentables recibidas fuera de banda.</p><p>La salud <i>no</i> mide cuánto se parece el bloque esperado al real. Pueden ser muy diferentes y aun así tener una puntuación alta si no hay exclusiones aparentes (<a [routerLink]="['/block/0000000000000000000515e202c8ae73c8155fc472422d7593af87aa74f2cf3d']">ejemplo extremo</a>). Consulta las <a [routerLink]="['/docs/faq' | relativeUrl]" fragment="how-do-block-audits-work">auditorías de bloques</a> para más contexto.</p></ng-container>
@@ -1248,8 +1320,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="how-do-mempool-goggles-work">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_how_do_mempool_goggles_work"><p>विभिन्न कारोबार प्रकार छुट्याउन <a [routerLink]="['/mempool-block/0' | relativeUrl]">मेमपुल ब्लक दृश्य</a> मा प्रतीक्षारत कारोबार फिल्टर प्रयोग गर्न सकिन्छ। फिल्टर छ समूहमा छन्; उपलब्धता दृश्यअनुसार फरक हुन्छ।</p><dl><dt>सुविधाहरू</dt><dd><dl><dt>RBF सक्रिय</dt><dd>कारोबार BIP-125 अनुसार प्रतिस्थापनको विकल्प छान्छ।</dd><dt>RBF निष्क्रिय</dt><dd>कारोबार BIP-125 अनुसार प्रतिस्थापनको विकल्प छान्दैन।</dd><dt>संस्करण 1</dt><dd>धेरै कारोबारको पूर्वनिर्धारित संस्करण।</dd><dt>संस्करण 2</dt><dd>OP_CHECKSEQUENCEVERIFY सापेक्ष टाइमलकका लागि आवश्यक।</dd><dt>संस्करण 3</dt><dd>कारोबार संस्करण 3 हो।</dd><dt>गैर-मानक</dt><dd>मानक नीतिसँग मेल खाँदैन, तर सहमति नियमअनुसार अनिवार्य रूपमा अमान्य हुँदैन।</dd></dl></dd><dt>ठेगानाका प्रकार</dt><dd><dl><dt>P2PK</dt><dd>सार्वजनिक कुञ्जीमा भुक्तानी; पुराना coinbase कारोबारमा प्रायः देखिने पुरानो आउटपुट ढाँचा।</dd><dt>अनर्‍याप्ड मल्टिसिग</dt><dd>मल्टिसिगको पुरानो रूप, प्रायः डाटा राख्न प्रयोग हुन्छ; नकली सार्वजनिक कुञ्जी पनि हेर्नुहोस्।</dd><dt>P2PKH</dt><dd>सार्वजनिक कुञ्जीको ह्यासमा भुक्तानी; आउटपुट कुञ्जीको ह्यासमा लक हुन्छ।</dd><dt>P2SH</dt><dd>स्क्रिप्ट ह्यासमा भुक्तानी; आउटपुट <em>रिडिम स्क्रिप्ट</em> को ह्यासमा लक हुन्छ।</dd><dt>P2WPKH</dt><dd>विटनेस सार्वजनिक कुञ्जी ह्यासमा भुक्तानी; P2PKH को SegWit रूप।</dd><dt>P2WSH</dt><dd>विटनेस स्क्रिप्ट ह्यासमा भुक्तानी; P2SH को SegWit रूप।</dd><dt>Taproot</dt><dd>Taproot मा थपिएको SegWit V1 ठेगाना ढाँचा।</dd></dl></dd><dt>व्यवहार</dt><dd><dl><dt>चाइल्ड कारोबारद्वारा भुक्तानी</dt><dd>उच्च दरको CPFP child ले कारोबारको प्रभावकारी शुल्क दर बढाएको छ।</dd><dt>प्यारेन्ट कारोबारका लागि भुक्तानी</dt><dd>यस कारोबारले कम दरको CPFP ancestor को प्रभावकारी दर बढाउँछ।</dd><dt>प्रतिस्थापन</dt><dd>कारोबारले RBF मार्फत अघिल्लो संस्करण बदलेको छ।</dd></dl></dd><dt>डाटा</dt><dd>Bitcoin कारोबारमा मनपरी डाटा राख्ने विभिन्न तरिका।<dl><dt>OP_RETURN</dt><dt>नकली सार्वजनिक कुञ्जी</dt><dd>P2PK वा bare multisig आउटपुटको अमान्य सार्वजनिक कुञ्जीमा डाटा हुन सक्छ। यो अनुमानमा आधारित फिल्टर हो; गलत सकारात्मक र नकारात्मक नतिजा सम्भव छन्।</dd><dt>इन्स्क्रिप्सन</dt><dd>डाटा Taproot इनपुटको witness स्क्रिप्टमा राखिन्छ।</dd><dt>नकली स्क्रिप्ट ह्यास</dt><dd>P2WSH मार्फत डाटा राखिएको अनुमान; गलत वर्गीकरण सम्भव छ।</dd><dt>Annex डाटा</dt><dd>Taproot इनपुटमा witness annex छ।</dd></dl></dd><dt>अनुमानी नियम</dt><dd>व्यक्तिपरक मापदण्डबाट सामान्य कारोबार प्रकार पहिचान गर्छन्।<dl><dt>Coinjoin</dt><dd>गोपनीयता बढाउने सहकार्य कारोबार।</dd><dt>समेकन</dt><dd>धेरै इनपुट केही आउटपुटमा जोड्छ।</dd><dt>ब्याच भुक्तानी</dt><dd>केही इनपुटबाट धेरै आउटपुटमा सिक्का पठाउँछ।</dd></dl></dd><dt>Sighash फ्ल्याग</dt><dd>कारोबार इनपुटमा हस्ताक्षर गर्ने तरिकाहरू। “सबै” मोडमा धेरै sighash फिल्टर छान्दा सबै छानिएका फ्ल्याग भएका कारोबार चिन्हित हुन्छन्, तर ती एउटै इनपुटमा हुनैपर्छ भन्ने छैन।<dl><dt>sighash_all</dt><dt>sighash_none</dt><dt>sighash_single</dt><dt>sighash_default</dt><dt>sighash_anyonecanpay</dt></dl></dd></dl></ng-container>
+  <ng-template #neFallback_how_do_mempool_goggles_work>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_how_do_mempool_goggles_work"><p>მომლოდინე ტრანზაქციების ფილტრები შეიძლება გამოიყენოთ <a [routerLink]="['/mempool-block/0' | relativeUrl]">მემპულის ბლოკების ვიზუალიზაციაზე</a> სხვადასხვა ტიპის ტრანზაქციების გამოსაყოფად.</p><p>ფილტრები ექვს კატეგორიად იყოფა; ხელმისაწვდომობა ხედზეა დამოკიდებული:</p><dl>
 <dt>მახასიათებლები</dt><dd><dl><dt>RBF ჩართულია</dt><dd>ტრანზაქცია BIP-125-ის მიხედვით ჩანაცვლების შესაძლებლობას აცხადებს.</dd><dt>RBF გამორთულია</dt><dd>ტრანზაქცია BIP-125-ის მიხედვით ჩანაცვლების შესაძლებლობას არ აცხადებს.</dd><dt>ვერსია 1</dt><dd>ტრანზაქციების უმეტესობის ნაგულისხმევი ვერსია.</dd><dt>ვერსია 2</dt><dd>აუცილებელია OP_CHECKSEQUENCEVERIFY ფარდობითი დროითი ჩაკეტვის მქონე ტრანზაქციებისთვის.</dd><dt>ვერსია 3</dt><dd>ტრანზაქციის ვერსიაა 3.</dd><dt>არასტანდარტული</dt><dd>პოლიტიკის შეფასება ტრანზაქციას არასტანდარტულად მიიჩნევს; ეს არ ნიშნავს, რომ ის კონსენსუსის წესებით აუცილებლად არავალიდურია.</dd></dl></dd>
 <dt>მისამართის ტიპები</dt><dd><dl><dt>P2PK</dt><dd>Pay-to-public-key: ძველი გამოსავლის ფორმატი, რომელიც უმეტესად ძველ coinbase ტრანზაქციებში გვხვდება.</dd><dt>შიშველი მულტისიგი</dt><dd>მრავალი ხელმოწერის ძველი ფორმა, რომელიც ხშირად მონაცემების ჩასასმელად გამოიყენება (იხ. „ყალბი საჯარო გასაღები“).</dd><dt>P2PKH</dt><dd>Pay-to-public-key-hash: მისამართის ძველი ტიპი, რომელიც გამოსავალს საჯარო გასაღების ჰეშზე კეტავს.</dd><dt>P2SH</dt><dd>Pay-to-script-hash: მისამართის ძველი ტიპი, რომელიც გამოსავალს <em>redeem script</em>-ის ჰეშზე კეტავს.</dd><dt>P2WPKH</dt><dd>P2PKH-ის SegWit ვერსია.</dd><dt>P2WSH</dt><dd>P2SH-ის SegWit ვერსია.</dd><dt>Taproot</dt><dd>მისამართები, რომლებიც Taproot განახლებით დამატებულ SegWit V1 ფორმატს იყენებს.</dd></dl></dd>
@@ -1463,8 +1538,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-are-sigops">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_are_sigops"><p>“Sigop” ले Bitcoin स्क्रिप्टमा हस्ताक्षर कार्यको लागत गणना गर्छ, जस्तै <code>OP_CHECKSIG</code>, <code>OP_CHECKSIGVERIFY</code>, <code>OP_CHECKMULTISIG</code> र <code>OP_CHECKMULTISIGVERIFY</code>। एकल वा बहु-हस्ताक्षर र कारोबारमा रहेको स्थानअनुसार लागत फरक हुन्छ। सहमति नियमले प्रत्येक Bitcoin ब्लकमा बढीमा 80,000 sigops अनुमति दिन्छ।</p></ng-container>
+  <ng-template #neFallback_what_are_sigops>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_are_sigops"><p>„Sigop“ Bitcoin script-ში ხელმოწერის ოპერაციების ხარჯის აღრიცხვის ერთეულია, მაგალითად <code>OP_CHECKSIG</code>, <code>OP_CHECKSIGVERIFY</code>, <code>OP_CHECKMULTISIG</code> და <code>OP_CHECKMULTISIGVERIFY</code>.</p><p>ხარჯი განსხვავდება იმის მიხედვით, ოპერაცია ერთ თუ მრავალ ხელმოწერას ამოწმებს და სად მდებარეობს ის Bitcoin ტრანზაქციაში.</p><p>კონსენსუსის წესებით თითოეული Bitcoin ბლოკი მაქსიმუმ 80,000 sigop-ს შეიძლება შეიცავდეს.</p></ng-container>
   <ng-template #kaDraft_what_are_sigops>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish21"><p>Una «sigop» es una forma de contabilizar el coste de las operaciones de firma en los scripts de Bitcoin, como <code>OP_CHECKSIG</code>, <code>OP_CHECKSIGVERIFY</code>, <code>OP_CHECKMULTISIG</code> y <code>OP_CHECKMULTISIGVERIFY</code>.</p><p>Estas operaciones tienen costes diferentes según sean de firma única o múltiple y según su ubicación en la transacción.</p><p>Por consenso, un bloque de Bitcoin puede incluir como máximo 80.000 sigops.</p></ng-container>
@@ -1506,8 +1584,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="what-is-adjusted-vsize">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_what_is_adjusted_vsize"><p>Bitcoin ब्लकमा सहमतिद्वारा लागू दुई स्वतन्त्र सीमा छन्: 4 MWU वेट र 80,000 sigops। केही कारोबारले आफ्नो वेटको तुलनामा असमान रूपमा धेरै sigops प्रयोग गर्छन्।</p><p>Bitcoin Core ले समायोजित भर्चुअल आकारलाई sigops को पाँच गुणा र असमायोजित भर्चुअल आकारमध्ये ठूलो मान लिन्छ। ब्लक टेम्पलेट बनाउँदा यस समायोजित आकारको प्रति vbyte satoshi मा मापन गरिएको शुल्क दरको घट्दो क्रममा कारोबार छानिन्छ। mempool.space मा पनि CPFP सम्बन्ध र अन्य निर्भरता विचार गरेपछि अपुष्ट कारोबारको प्रभावकारी दर समायोजित आकारमा मापन हुन्छ।</p></ng-container>
+  <ng-template #neFallback_what_is_adjusted_vsize>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_what_is_adjusted_vsize"><p>Bitcoin ბლოკებს კონსენსუსით განსაზღვრული რესურსის ორი დამოუკიდებელი ზღვარი აქვს: 4 MWU წონა და 80,000 sigop.</p><p>ტრანზაქციების უმეტესობა წონის ლიმიტის უფრო დიდ წილს იყენებს, ვიდრე sigop-ების ლიმიტის, თუმცა ზოგს თავის წონასთან შედარებით არაპროპორციულად ბევრი sigop აქვს.</p><p>ამის გასათვალისწინებლად Bitcoin Core ითვლის „კორექტირებულ ვირტუალურ ზომას“: sigop-ების რაოდენობის ხუთმაგი და არაკორექტირებული ვირტუალური ზომიდან უფრო დიდ მნიშვნელობას.</p><p>ბლოკის შაბლონის აგებისას Bitcoin Core ტრანზაქციებს ირჩევს საკომისიოს განაკვეთის კლებადი რიგით, რომელიც სატოშებში <i>კორექტირებულ ვირტუალურ ზომაზე</i> იზომება.</p><p>mempool.space-ზეც დაუდასტურებელი ტრანზაქციების ეფექტური განაკვეთი კორექტირებულ ვირტუალურ ზომაზე იზომება CPFP კავშირებისა და სხვა დამოკიდებულებების გათვალისწინების შემდეგ.</p></ng-container>
   <ng-template #kaDraft_what_is_adjusted_vsize>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish22"><p>Los bloques de Bitcoin tienen dos límites de recursos independientes impuestos por consenso: un peso máximo de 4 MWU y un máximo de 80.000 sigops.</p><p>La mayoría de las transacciones consumen una proporción mayor del límite de peso que del límite de sigops; algunas, sin embargo, usan un número desproporcionado de sigops para su peso.</p><p>Para tenerlo en cuenta, Bitcoin Core calcula un «tamaño virtual ajustado»: el mayor entre cinco veces el número de sigops y el tamaño virtual sin ajustar.</p><p>Al construir la plantilla de un bloque, Bitcoin Core selecciona transacciones en orden descendente de tasa de comisión, medida en satoshis por <i>tamaño virtual ajustado</i>.</p><p>En mempool.space, las tasas efectivas de las transacciones no confirmadas también se miden en satoshis por tamaño virtual ajustado, teniendo en cuenta las relaciones CPFP y otras dependencias.</p></ng-container>
@@ -1549,8 +1630,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="why-do-the-projected-block-fee-ranges-overlap">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_why_do_the_projected_block_fee_ranges_overlap"><p>अनुमानित मेमपुल ब्लक अहिले माइनिङ भए आगामी ब्लक कस्ता हुन सक्छन् भन्ने अनुमान हुन् र तिनमा वास्तविक ब्लककै सीमा लागू हुन्छ।</p><p>कम ठाउँ बाँकी भए कम दरको सानो कारोबार अटाउन सक्छ तर बढी दरको ठूलो कारोबारले अर्को ब्लक कुर्न सक्छ। त्यस्तै, 80,000 sigops सीमा पुगेपछि बाँकी ठाउँ शून्य sigops भएका कम दरका कारोबारले मात्र भर्न सकिन्छ। धेरै उच्च-sigop र शून्य-sigop कारोबार हुँदा लगातार अनुमानित ब्लकका शुल्क दर दायरा खप्टिन सक्छन्।</p></ng-container>
+  <ng-template #neFallback_why_do_the_projected_block_fee_ranges_overlap>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_why_do_the_projected_block_fee_ranges_overlap"><p>პროგნოზირებული მემპულის ბლოკები აჩვენებს, როგორ შეიძლება გამოიყურებოდეს შემდეგი ბლოკები, თუ ისინი ახლავე დაიმაინებოდა. ამიტომ მათ რეალური ბლოკების იგივე წესები და შეზღუდვები აქვთ.</p><p>ამ შეზღუდვების გამო დაბალი განაკვეთის ტრანზაქცია ზოგჯერ მაღალი განაკვეთის მქონეზე „ადრე“ შეიძლება მოხვდეს ბლოკში. მაგალითად, მცირე დარჩენილ სივრცეში შეიძლება პატარა დაბალგანაკვეთიანი ტრანზაქცია ჩაეტიოს, ხოლო დიდმა მაღალგანაკვეთიანმა შემდეგ ბლოკს უნდა დაელოდოს.</p><p>მსგავსი რამ ხდება ბევრი sigop-ის მქონე ტრანზაქციების შემთხვევაშიც. თითოეულ პროგნოზირებულ ბლოკში მაქსიმუმ 80,000 sigop ეტევა; ამის შემდეგ დარჩენილი სივრცის შევსება მხოლოდ sigop-ის გარეშე ტრანზაქციებით შეიძლება, რომელთა საკომისიო შესაძლოა გაცილებით დაბალი იყოს.</p><p>უკიდურეს შემთხვევაში რამდენიმე ზედიზედ პროგნოზირებულ ბლოკს გადაფარული დიაპაზონი ექნება, რადგან თითოეული შეიცავს როგორც მაღალგანაკვეთიან, ბევრი sigop-ის მქონე ტრანზაქციებს, ისე დაბალგანაკვეთიან ტრანზაქციებს sigop-ების გარეშე.</p></ng-container>
   <ng-template #kaDraft_why_do_the_projected_block_fee_ranges_overlap>
   <ng-container *ngIf="locale.startsWith('es'); else frDeFaqEnglish23"><p>Los bloques previstos representan cómo estimamos que serían los siguientes bloques si se minaran ahora; por ello, cada uno sigue las mismas reglas y límites que un bloque real.</p><p>Esos límites pueden hacer que una transacción con una tasa menor se incluya antes que otra con una tasa mayor.</p><p>Por ejemplo, si queda muy poco espacio en un bloque previsto, podría caber una transacción pequeña de baja comisión, mientras que transacciones mayores con tasas más altas tendrían que esperar al siguiente bloque.</p><p>Algo similar puede ocurrir cuando hay muchas transacciones con gran cantidad de sigops. Cada bloque previsto solo puede incluir hasta 80.000 sigops; el espacio restante podría llenarse con transacciones sin sigops y tasas mucho más bajas.</p><p>En casos extremos esto puede producir varios bloques previstos consecutivos con rangos de comisión superpuestos, al contener cada uno transacciones con tasas altas y muchas sigops junto con otras sin sigops y con tasas inferiores.</p></ng-container>
@@ -1592,8 +1676,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="who-runs-this-website">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_who_runs_this_website"><p>btc.tx.taxi स्वतन्त्र रूपमा सञ्चालित The Mempool Open Source Project को फोर्क हो। स्रोत कोड, लाइसेन्स, पूर्वाधार र सम्पर्कका लागि <a [routerLink]="['/about']">परिचय पृष्ठ</a> हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_who_runs_this_website>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_who_runs_this_website"><p>btc.tx.taxi არის The Mempool Open Source Project-ის დამოუკიდებლად მართული ფორკი. საწყისი კოდის, ლიცენზიის, ინფრასტრუქტურისა და საკონტაქტო ინფორმაციისთვის იხილეთ <a [routerLink]="['/about']">ჩვენ შესახებ</a>.</p></ng-container>
   <ng-template #kaDraft_who_runs_this_website>
   <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_who_runs_this_website">O btc.tx.taxi é uma bifurcação de funcionamento independente do The Mempool Open Source Project. Consulte a <a [routerLink]="['/about']">página Sobre</a> para informações sobre código-fonte, licenças, infraestrutura e contacto.</ng-container>
@@ -1631,8 +1718,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="host-my-own-instance-raspberry-pi">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_host_my_own_instance_raspberry_pi"><p>Umbrel, RaspiBlitz, MyNode, RoninDojo र StartOS सहित Raspberry Pi का धेरै पूर्ण-नोड वितरणले मूल Mempool परियोजनाको एक-क्लिक इन्स्टलेसन समर्थन गर्छन्।</p></ng-container>
+  <ng-template #neFallback_host_my_own_instance_raspberry_pi>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_host_my_own_instance_raspberry_pi"><p>Raspberry Pi-ის რამდენიმე სრული კვანძის დისტრიბუცია, მათ შორის Umbrel, RaspiBlitz, MyNode, RoninDojo და StartOS, გვთავაზობს ორიგინალური Mempool პროექტის ერთი დაწკაპუნებით დაყენებას.</p></ng-container>
   <ng-template #kaDraft_host_my_own_instance_raspberry_pi>
   <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_host_my_own_instance_raspberry_pi">Várias distribuições de nós completos para Raspberry Pi, incluindo Umbrel, RaspiBlitz, MyNode, RoninDojo e StartOS, oferecem a instalação com um clique do projeto Mempool original.</ng-container>
@@ -1670,8 +1760,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="host-my-own-instance-server">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_host_my_own_instance_server"><p>आफ्नो सर्भरमा Mempool आफैं इन्स्टल गर्न सकिन्छ, तर सबै भाग कन्फिगर गर्न उन्नत प्रणाली प्रशासन सीप चाहिन्छ। मूल परियोजनाको <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">Docker डिप्लोयमेन्ट कागजात</a> पनि उपलब्ध छ। इन्स्टलेसन सहायताका लागि मूल कागजात र समुदाय हेर्नुहोस्। सामान्य प्रयोगकर्ताका लागि <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">एक-क्लिक इन्स्टलेसन</a> सिफारिस गरिन्छ।</p></ng-container>
+  <ng-template #neFallback_host_my_own_instance_server>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_host_my_own_instance_server"><p>Mempool-ის საკუთარ სერვერზე ხელით დაყენება შესაძლებელია, თუმცა ყველაფრის კონფიგურაციას სისტემის ადმინისტრირების გამოცდილება სჭირდება. ორიგინალურ პროექტს ასევე აქვს <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">Docker-ის განთავსების დოკუმენტაცია</a>.</p><p>დახმარებისთვის იხილეთ პროექტის რეპოზიტორიაში მითითებული დოკუმენტაცია და საზოგადოების რესურსები.</p><p>ჩვეულებრივ მომხმარებლებს ვურჩევთ <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">ერთი დაწკაპუნებით დაყენების მეთოდებს</a>.</p></ng-container>
   <ng-template #kaDraft_host_my_own_instance_server>
   <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_host_my_own_instance_server"><p>Pode instalar o Mempool manualmente no seu próprio servidor, mas isso requer conhecimentos avançados de administração de sistemas, pois terá de configurar tudo manualmente. O projeto original também disponibiliza <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">documentação para instalação com Docker</a>.</p><p>Para obter ajuda, consulte a documentação e os recursos da comunidade indicados no repositório do projeto.</p><p>Para utilizadores comuns, recomendamos vivamente um dos <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">métodos de instalação com um clique</a>.</p></ng-container>
@@ -1711,8 +1804,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="install-mempool-with-docker">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_install_mempool_with_docker"><p>हो। मूल Mempool परियोजनाले Docker इमेज प्रकाशित गर्छ र तपाईं आफ्नै इमेज पनि बनाउन सक्नुहुन्छ। थप जानकारीका लागि <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">कागजात</a> हेर्नुहोस्।</p></ng-container>
+  <ng-template #neFallback_install_mempool_with_docker>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_install_mempool_with_docker"><p>დიახ. ორიგინალური Mempool პროექტი აქვეყნებს Docker-ის იმიჯებს; ასევე შეგიძლიათ საკუთარი ააწყოთ. დეტალებისთვის იხილეთ <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">დოკუმენტაცია</a>.</p></ng-container>
   <ng-template #kaDraft_install_mempool_with_docker>
   <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_install_mempool_with_docker">Sim. O projeto Mempool original publica imagens Docker; também pode criar a sua. Consulte a <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">documentação</a> para mais detalhes.</ng-container>
@@ -1750,8 +1846,11 @@
 </ng-template>
 </ng-template>
 </ng-template>
+</ng-template>
 
 <ng-template type="address-lookup-issues">
+  <ng-container *ngIf="locale.startsWith('ne'); else neFallback_address_lookup_issues"><p>ठेगाना खोज्दा त्रुटि आउनुको कारण तपाईंको Electrum सर्भर ब्याकएन्ड हुन सक्छ। Mempool ले ठेगाना खोज्न Electrum प्रयोग गर्छ; प्रोटोकलको कार्यान्वयनले कार्यसम्पादनमा असर गर्छ।</p><ol><li><a href="https://github.com/romanz/electrs" target="_blank">romanz/electrs</a> कम स्रोत चाहिने सामान्य विकल्प हो। सरल खोज राम्रोसँग गर्छ तर धेरै कारोबार भएका ठेगानाको भारी खोजमा, विशेषगरी Raspberry Pi जस्तो कम शक्तिको हार्डवेयरमा, कठिनाइ हुन सक्छ।</li><li><a href="https://github.com/cculianu/Fulcrum" target="_blank">Fulcrum</a> लाई बढी स्रोत चाहिन्छ तर Raspberry Pi मा चल्न सक्छ र भारी खोज बढी प्रभावकारी रूपमा सम्हाल्छ। समस्या भए यो प्रयास गर्न सकिन्छ।</li><li><a href="https://github.com/mempool/electrs" target="_blank">mempool/electrs</a> mempool.space चलाउने ब्याकएन्ड हो। यो Blockstream Esplora को फोर्क हो, जुन आफैं romanz/electrs को फोर्क हो; यो शक्तिशाली हार्डवेयर र ठूलो डिप्लोयमेन्टका लागि बनाइएको हो।</li></ol></ng-container>
+  <ng-template #neFallback_address_lookup_issues>
   <ng-container *ngIf="locale.startsWith('ka'); else kaDraft_address_lookup_issues"><p>მისამართის ძიების შეცდომის მიზეზი შეიძლება თქვენი Electrum სერვერის უკანა სისტემა იყოს.</p><p>Mempool მისამართების მოსაძებნად Electrum სერვერს იყენებს. არსებობს პროტოკოლის რამდენიმე განხორციელება; არჩევანი წარმადობაზე მოქმედებს:</p><ol><li><a href="https://github.com/romanz/electrs" target="_blank">romanz/electrs</a> გავრცელებული არჩევანია მცირე რესურსების მოთხოვნის გამო და სრული კვანძის დისტრიბუციების უმეტესობაში გამოიყენება. მარტივ მოთხოვნებს კარგად ამუშავებს, მაგრამ რთულ მოთხოვნებზე, მაგალითად მრავალი ტრანზაქციის მქონე მისამართებზე, შეიძლება გაუჭირდეს, განსაკუთრებით Raspberry Pi-ის მსგავს ნაკლებად მძლავრ მოწყობილობაზე.</li><li><a href="https://github.com/cculianu/Fulcrum" target="_blank">Fulcrum</a> მეტ რესურსს მოითხოვს, მაგრამ Raspberry Pi-ზეც შეიძლება გაეშვას და რთულ მოთხოვნებს უფრო ეფექტურად ამუშავებს. romanz/electrs-თან პრობლემებისას შეგიძლიათ სცადოთ.</li><li><a href="https://github.com/mempool/electrs" target="_blank">mempool/electrs</a> არის mempool.space-ის უკანა სისტემა ძლიერი აპარატურისთვის. ის Blockstream Esplora-ს ფორკია, რომელიც თავის მხრივ romanz/electrs-ის ფორკია და მაღალი წარმადობისა და დიდი ინსტალაციებისთვისაა განკუთვნილი.</li></ol></ng-container>
   <ng-template #kaDraft_address_lookup_issues>
   <ng-container *ngIf="locale.startsWith('es'); else frDeAddressLookupIssuesEnglish">
@@ -1788,6 +1887,7 @@
   <ng-template #vi_addressLookupIssuesEnglish><ng-container *ngIf="locale.startsWith('vi'); else addressLookupIssuesEnglish"><p>Lỗi tra cứu địa chỉ có thể do backend máy chủ Electrum mà Mempool sử dụng. Việc chọn triển khai ảnh hưởng đến hiệu năng:</p><ol><li><a href="https://github.com/romanz/electrs" target="_blank">romanz/electrs</a> dùng ít tài nguyên, phù hợp truy vấn cơ bản nhưng có thể chậm với địa chỉ nhiều giao dịch, nhất là trên Raspberry Pi.</li><li><a href="https://github.com/cculianu/Fulcrum" target="_blank">Fulcrum</a> dùng nhiều tài nguyên hơn nhưng vẫn có thể chạy trên Raspberry Pi và xử lý truy vấn nặng hiệu quả hơn.</li><li><a href="https://github.com/mempool/electrs" target="_blank">mempool/electrs</a> là backend của mempool.space, phù hợp phần cứng mạnh hơn; đây là fork của Blockstream Esplora, có nguồn gốc từ romanz/electrs, dành cho triển khai quy mô lớn.</li></ol></ng-container></ng-template>
   <ng-template #addressLookupIssuesEnglish>
   <p>If you're getting errors when doing address lookups, it's probably because of your Electrum server backend.</p><p>Mempool uses an Electrum server to do address lookups. There are several implementations of the Electrum server protocol, and Mempool can use any of them, but the implementation you use affects performance:</p><ol><li><a href="https://github.com/romanz/electrs" target="_blank">romanz/electrs</a>. This is a common choice for its low resource requirements, and most full-node distros use it. But while this implementation works great for basic queries, it will struggle with heavier ones (e.g. looking up addresses with many transactions)—especially when running on low-power hardware like a Raspberry Pi.</li><li><a href="https://github.com/cculianu/Fulcrum" target="_blank">Fulcrum</a>. Fulcrum requires more resources than romanz/electrs but it can still run on a Raspberry Pi, and it handles heavy queries much more efficiently. If you're having issues with romanz/electrs, Fulcrum is worth a try.</li><li><a href="https://github.com/mempool/electrs" target="_blank">mempool/electrs</a>. If you have stronger hardware, you could consider running mempool/electrs, the backend that powers mempool.space. It's a fork of Blockstream's Esplora, which is in turn a fork of romanz/electrs, intended for maximum performance and larger-scale deployments.</li></ol>
+</ng-template>
 </ng-template>
 </ng-template>
 </ng-template>
