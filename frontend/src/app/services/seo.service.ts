@@ -88,9 +88,9 @@ export class SeoService {
     // Angular can report an empty URL when returning to a localized root.
     path = path || '/';
     // Location.path() may include query parameters; translated canonicals must identify the page only.
-    if (/^(es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb)(-|$)/i.test(this.locale)) path = path.split(/[?#]/, 1)[0] || '/';
+    if (/^(es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv)(-|$)/i.test(this.locale)) path = path.split(/[?#]/, 1)[0] || '/';
     const spanish = this.locale.startsWith('es');
-    const reviewLocale = this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('nb') ? 'nb' : null;
+    const reviewLocale = this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : this.locale.startsWith('ru') ? 'ru' : this.locale.startsWith('ja') ? 'ja' : this.locale.startsWith('zh') ? 'zh' : this.locale.startsWith('tr') ? 'tr' : this.locale.startsWith('nl') ? 'nl' : this.locale.startsWith('ko') ? 'ko' : this.locale.startsWith('pl') ? 'pl' : this.locale.startsWith('uk') ? 'uk' : this.locale.startsWith('nb') ? 'nb' : this.locale.startsWith('sv') ? 'sv' : null;
     const prefix = spanish ? 'es' : reviewLocale;
     const localizedPath = prefix ? (path === '/' ? '/' + prefix + '/' : '/' + prefix + path) : path;
     const canonicalUrl = 'https://' + this.baseDomain + localizedPath;
@@ -126,7 +126,7 @@ export class SeoService {
   }
 
   private currentPage(path = this.router.url.split('?')[0].split('#')[0]) {
-    if (/^(es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb)/.test(this.locale)) return undefined;
+    if (/^(es|fr|de|it|pt|ru|ja|zh|tr|nl|ko|pl|uk|nb|sv)/.test(this.locale)) return undefined;
     const page = nativeSeoPages[path];
     if (page) return page;
     const match = path.match(/^\/blocks\/([1-9]\d*)$/);
@@ -142,6 +142,7 @@ export class SeoService {
     if (this.locale.startsWith('de')) return 'Bitcoin-Explorer | btc.tx.taxi';
     if (this.locale.startsWith('it')) return 'Esploratore Bitcoin | btc.tx.taxi';
     if (this.locale.startsWith('pt')) return 'Explorador Bitcoin | btc.tx.taxi';
+    if (this.locale.startsWith('sv')) return 'Bitcoin-utforskare | btc.tx.taxi';
     if (this.locale.startsWith('nb')) return 'Bitcoin-utforsker | btc.tx.taxi';
     if (this.locale.startsWith('uk')) return 'Оглядач Bitcoin | btc.tx.taxi';
     if (this.locale.startsWith('pl')) return 'Eksplorator Bitcoin | btc.tx.taxi';
@@ -165,7 +166,7 @@ export class SeoService {
   }
 
   getDescription(): string {
-    return this.locale.startsWith('nb') ? 'Utforsk Bitcoin-blokker, transaksjoner, gebyrer og mempoolaktivitet med btc.tx.taxi.' : this.locale.startsWith('uk') ? 'Переглядайте блоки, транзакції, комісії та активність мемпулу Bitcoin на btc.tx.taxi.' : this.locale.startsWith('pl') ? 'Przeglądaj bloki, transakcje, opłaty i aktywność mempoola Bitcoin w btc.tx.taxi.' : this.locale.startsWith('ko') ? 'btc.tx.taxi에서 Bitcoin 블록, 거래, 수수료와 멤풀 활동을 살펴보세요.' : this.locale.startsWith('es') ? 'Explora bloques, transacciones, comisiones y la actividad del mempool de Bitcoin con btc.tx.taxi.' : this.locale.startsWith('fr') ? 'Explorez les blocs, transactions, frais et activités du mempool Bitcoin avec btc.tx.taxi.' : this.locale.startsWith('de') ? 'Erkunde Bitcoin-Blöcke, Transaktionen, Gebühren und die Mempool-Aktivität mit btc.tx.taxi.' : this.locale.startsWith('it') ? 'Esplora blocchi, transazioni, commissioni e attività del mempool Bitcoin con btc.tx.taxi.' : this.locale.startsWith('pt') ? 'Explore blocos, transações, taxas e a atividade da mempool Bitcoin com btc.tx.taxi.' : this.locale.startsWith('nl') ? 'Verken Bitcoin-blokken, transacties, kosten en mempoolactiviteit met btc.tx.taxi.' : this.locale.startsWith('tr') ? 'btc.tx.taxi ile Bitcoin bloklarını, işlemleri, ücretleri ve mempool etkinliğini keşfedin.' : this.locale.startsWith('zh') ? '通过btc.tx.taxi查看Bitcoin区块、交易、费用和内存池动态。' : this.locale.startsWith('ja') ? 'btc.tx.taxiでBitcoinのブロック、トランザクション、手数料、メンプールの動きを調べましょう。' : this.locale.startsWith('ru') ? 'Изучайте блоки, транзакции, комиссии и активность мемпула Bitcoin на btc.tx.taxi.' : this.baseDescription;
+    return this.locale.startsWith('sv') ? 'Utforska Bitcoin-block, transaktioner, avgifter och mempoolaktivitet med btc.tx.taxi.' : this.locale.startsWith('nb') ? 'Utforsk Bitcoin-blokker, transaksjoner, gebyrer og mempoolaktivitet med btc.tx.taxi.' : this.locale.startsWith('uk') ? 'Переглядайте блоки, транзакції, комісії та активність мемпулу Bitcoin на btc.tx.taxi.' : this.locale.startsWith('pl') ? 'Przeglądaj bloki, transakcje, opłaty i aktywność mempoola Bitcoin w btc.tx.taxi.' : this.locale.startsWith('ko') ? 'btc.tx.taxi에서 Bitcoin 블록, 거래, 수수료와 멤풀 활동을 살펴보세요.' : this.locale.startsWith('es') ? 'Explora bloques, transacciones, comisiones y la actividad del mempool de Bitcoin con btc.tx.taxi.' : this.locale.startsWith('fr') ? 'Explorez les blocs, transactions, frais et activités du mempool Bitcoin avec btc.tx.taxi.' : this.locale.startsWith('de') ? 'Erkunde Bitcoin-Blöcke, Transaktionen, Gebühren und die Mempool-Aktivität mit btc.tx.taxi.' : this.locale.startsWith('it') ? 'Esplora blocchi, transazioni, commissioni e attività del mempool Bitcoin con btc.tx.taxi.' : this.locale.startsWith('pt') ? 'Explore blocos, transações, taxas e a atividade da mempool Bitcoin com btc.tx.taxi.' : this.locale.startsWith('nl') ? 'Verken Bitcoin-blokken, transacties, kosten en mempoolactiviteit met btc.tx.taxi.' : this.locale.startsWith('tr') ? 'btc.tx.taxi ile Bitcoin bloklarını, işlemleri, ücretleri ve mempool etkinliğini keşfedin.' : this.locale.startsWith('zh') ? '通过btc.tx.taxi查看Bitcoin区块、交易、费用和内存池动态。' : this.locale.startsWith('ja') ? 'btc.tx.taxiでBitcoinのブロック、トランザクション、手数料、メンプールの動きを調べましょう。' : this.locale.startsWith('ru') ? 'Изучайте блоки, транзакции, комиссии и активность мемпула Bitcoin на btc.tx.taxi.' : this.baseDescription;
   }
 
   ucfirst(str: string) {
