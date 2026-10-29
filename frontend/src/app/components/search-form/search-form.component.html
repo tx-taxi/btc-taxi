@@ -50,11 +50,11 @@
                 </span>
               </button>
               <span class="search-chain-actions">
-                <a class="search-chain-new-tab" [attr.href]="hubLocaleReady ? routerHubUrl : null" (click)="openHub($event)" target="_blank" rel="noopener noreferrer"
+                <a class="search-chain-new-tab" [href]="routerHubUrl" (click)="openHub($event)" target="_blank" rel="noopener noreferrer"
                   [attr.aria-label]="menuCopy.openNewTab('tx.taxi')" [attr.title]="menuCopy.openNewTab('tx.taxi')">
                   <fa-icon [icon]="['fas', 'external-link-alt']" aria-hidden="true"></fa-icon>
                 </a>
-                <a class="search-chain-switch" [attr.href]="hubLocaleReady ? routerHubUrl : null" (click)="openHub($event)">{{ menuCopy.viewHub }}</a>
+                <a class="search-chain-switch" [href]="routerHubUrl" (click)="openHub($event)">{{ menuCopy.viewHub }}</a>
               </span>
               <span class="search-chain-host search-routing-hint">{{ menuCopy.hint }} <code>tx.taxi/{{ menuCopy.searchExample }}</code></span>
             </div>
