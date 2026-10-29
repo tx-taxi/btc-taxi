@@ -8633,7 +8633,7 @@
       </trans-unit>
       <trans-unit id="fb2137ba0df55f21a9d6b6ad08d56d74ad852e0e" datatype="html">
         <source>This channel supports zero base fee routing</source>
-        <target>यो च्यानलले शून्य शुल्क राउटिंग समर्थन गर्दछ</target>
+        <target>यो च्यानलले शून्य आधार शुल्क राउटिङ समर्थन गर्दछ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">44</context>
@@ -8651,7 +8651,7 @@
       </trans-unit>
       <trans-unit id="b5e42e06ea8a4012a38eef209104bbd9dd1a0fc0" datatype="html">
         <source>This channel does not support zero base fee routing</source>
-        <target>यो च्यानलले शून्य शुल्क रूटिङलाई समर्थन गर्दैन</target>
+        <target>यो च्यानलले शून्य आधार शुल्क राउटिङ समर्थन गर्दैन</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channel/channel-box/channel-box.component.html</context>
           <context context-type="linenumber">50</context>
@@ -9113,7 +9113,7 @@
       </trans-unit>
       <trans-unit id="cfcc7201138b0ef9901e9604c35f550e91629295" datatype="html">
         <source>avg</source>
-        <target>मध्यम</target>
+        <target>औसत</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">3</context>
@@ -9130,7 +9130,7 @@
       </trans-unit>
       <trans-unit id="ab456546aa39de3328fcfdf077f410b5ff1aa773" datatype="html">
         <source>Avg Capacity</source>
-        <target>मध्यम क्षमता</target>
+        <target>औसत क्षमता</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">13</context>
@@ -9185,7 +9185,7 @@
       </trans-unit>
       <trans-unit id="2e72b276a3c5cc2ec27b4c8189639ba2fe62b6cb" datatype="html">
         <source>Med Capacity</source>
-        <target>मध्यम क्षमता</target>
+        <target>माध्यिका क्षमता</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">59</context>
@@ -9211,7 +9211,7 @@
       </trans-unit>
       <trans-unit id="a541dbcef4908bf2e767e77d7a09cc62450e8e56" datatype="html">
         <source>Med Base Fee</source>
-        <target>मध्यम बेस शुल्क</target>
+        <target>माध्यिका आधार शुल्क</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">87</context>
