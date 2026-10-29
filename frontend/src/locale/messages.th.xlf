@@ -2632,7 +2632,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.asset" datatype="html">
         <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
-        <target state="needs-review-translation">เรียกดูภาพรวมของสินทรัพย์สภาพคล่อง <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): ดูจำนวนเงินที่ออกจำนวนเงินที่ถูกเผาจำนวนเงินหมุนเวียนธุรกรรมที่เกี่ยวข้องและอื่นๆ</target><context-group purpose="location">
+        <target state="needs-review-translation">เรียกดูภาพรวมของสินทรัพย์ Liquid <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): ดูจำนวนเงินที่ออกจำนวนเงินที่ถูกเผาจำนวนเงินหมุนเวียนธุรกรรมที่เกี่ยวข้องและอื่นๆ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">109</context>
         </context-group>
@@ -6986,7 +6986,7 @@
       </trans-unit>
       <trans-unit id="f091ae234382282726f5a93bb7b3802ed468e8b9" datatype="html">
         <source>Liquid Asset</source>
-        <target state="needs-review-translation">สินทรัพย์สภาพคล่อง</target><context-group purpose="location">
+        <target state="needs-review-translation">สินทรัพย์ Liquid</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
@@ -7071,7 +7071,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
-        <target state="needs-review-translation">เคล็ดลับล่าสุดของ Stale Chain</target><context-group purpose="location">
+        <target state="needs-review-translation">ปลายสายโซ่ล่าสุดที่ไม่อยู่ในเชนหลัก</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
@@ -7151,14 +7151,14 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
-        <target state="needs-review-translation">เคล็ดลับโซ่เก่า</target><context-group purpose="location">
+        <target state="needs-review-translation">ปลายสายโซ่ที่ไม่อยู่ในเชนหลัก</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network.</source>
-        <target state="needs-review-translation">ดูเคล็ดลับลูกโซ่เก่าล่าสุดบนเครือข่าย Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /></target><context-group purpose="location">
+        <target state="needs-review-translation">ดูปลายสายโซ่ล่าสุดที่ไม่อยู่ในเชนหลักบนเครือข่าย Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
         </context-group>
@@ -7398,7 +7398,7 @@
       </trans-unit>
       <trans-unit id="ee76deb7716e90b79e557394b1d256079b7ec24e" datatype="html">
         <source>Your transaction is expected to confirm in the next block</source>
-        <target state="needs-review-translation">ธุรกรรมของคุณจะได้รับการยืนยันในบล็อคถัดไป</target><context-group purpose="location">
+        <target state="needs-review-translation">คาดว่าธุรกรรมของคุณจะได้รับการยืนยันในบล็อกถัดไป</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tracker/tracker.component.html</context>
           <context context-type="linenumber">171</context>
         </context-group>
@@ -8017,7 +8017,7 @@
       </trans-unit>
       <trans-unit id="7d94a59c779ba549751c9f36eb40fd339725fec6" datatype="html">
         <source>P2TR Simplicity script</source>
-        <target state="needs-review-translation">สคริปต์ P2TR Simpleplicity</target><context-group purpose="location">
+        <target state="needs-review-translation">สคริปต์ P2TR Simplicity</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">256</context>
         </context-group>
@@ -8034,7 +8034,7 @@
       </trans-unit>
       <trans-unit id="e1d63108bdf06fa14ec13f038e23eebd4d391b16" datatype="html">
         <source>P2WSH witness script</source>
-        <target>สคริปต์พยาน P2SH</target>
+        <target>สคริปต์ witness ของ P2WSH</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">270</context>
@@ -9326,7 +9326,7 @@
       </trans-unit>
       <trans-unit id="2c1c39e28735f607d62dbf3272eb792451c265a5" datatype="html">
         <source>Med Fee Rate</source>
-        <target>ค่าธรรมเนียมโดยเฉลี่ย</target>
+        <target>อัตราค่าธรรมเนียมมัธยฐาน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">72</context>
@@ -9335,7 +9335,7 @@
       </trans-unit>
       <trans-unit id="cb4dae32e1b4d6a2ba6287d9f7bd859ca7259468" datatype="html">
         <source>The median fee rate charged by routing nodes, ignoring fee rates &gt; 0.5% or 5000ppm</source>
-        <target>อัตราค่าธรรมเนียมเรียกเก็บโดยโหนดการกำหนดเส้นทาง โดยไม่สนใจอัตราค่าธรรมเนียม &gt; 0.5% หรือ 5,000ppm</target>
+        <target>อัตราค่าธรรมเนียมมัธยฐานที่เรียกเก็บโดยโหนดกำหนดเส้นทาง โดยไม่นับอัตราที่เกิน 0.5% หรือ 5,000 ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">74</context>
