@@ -2935,7 +2935,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.block-fee-rates" datatype="html">
         <source>See Bitcoin feerates visualized over time, including minimum and maximum feerates per block along with feerates at various percentiles.</source>
-        <target>Xem mức phí Bitcoin được trực quan hóa theo thời gian, bao gồm mức phí tối thiểu, tối đa trên mỗi khối cùng với các mức phí ở các phần trăm khác nhau.</target>
+        <target>Xem tỷ lệ phí Bitcoin theo thời gian, gồm tỷ lệ thấp nhất và cao nhất của mỗi khối cùng các tỷ lệ ở những phân vị khác nhau.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-fee-rates-graph/block-fee-rates-graph.component.ts</context>
           <context context-type="linenumber">74</context>
@@ -3722,7 +3722,7 @@
       </trans-unit>
       <trans-unit id="0b47a777f024ab4e3cdf0062acb4d86e9ae1f635" datatype="html">
         <source>Median fee</source>
-        <target>Phí trung bình</target>
+        <target>Phí trung vị</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block-preview.component.html</context>
           <context context-type="linenumber">36</context>
@@ -5875,7 +5875,7 @@
       </trans-unit>
       <trans-unit id="380175a30ef4d977ec376044b17cf505d0e8ede0" datatype="html">
         <source>Unpeg</source>
-        <target state="needs-review-translation">Mất neo giá</target><context-group purpose="location">
+        <target state="needs-review-translation">Peg-out</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
@@ -5891,7 +5891,7 @@
       </trans-unit>
       <trans-unit id="34e09704961f3373354d01328a1bb907ffbe44a6" datatype="html">
         <source>Unpeg Event</source>
-        <target state="needs-review-translation">Sự kiện mất neo giá</target><context-group purpose="location">
+        <target state="needs-review-translation">Sự kiện peg-out</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/reserves-ratio-stats/reserves-ratio-stats.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
@@ -6734,7 +6734,7 @@
       </trans-unit>
       <trans-unit id="ea22e5fb229522f3faa5e87dbf0c5f56ddc234fb" datatype="html">
         <source>Maximum fee rate (sat/vB)</source>
-        <target>Mức phí tối đa (sat/vB)</target>
+        <target>Tỷ lệ phí tối đa (sat/vB)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/push-transaction/push-transaction.component.html</context>
           <context context-type="linenumber">20</context>
@@ -8227,7 +8227,7 @@
       </trans-unit>
       <trans-unit id="1e5fe8dc2194174026a52b0ec238159398b5a492" datatype="html">
         <source>parity</source>
-        <target state="needs-review-translation">sự ngang bằng</target><context-group purpose="location">
+        <target state="needs-review-translation">tính chẵn lẻ</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">587</context>
         </context-group>
@@ -8539,7 +8539,7 @@
       </trans-unit>
       <trans-unit id="85ce9e4f45873116b746899169cbc3445321d60c" datatype="html">
         <source>This transaction does NOT support Replace-By-Fee (RBF) and cannot be fee bumped using this method</source>
-        <target>Giao dịch này KHÔNG hỗ trợ Phí thay thế (RBF) và không thể bị tính phí khi sử dụng phương pháp này</target>
+        <target>Giao dịch này KHÔNG hỗ trợ Replace-By-Fee (RBF), vì vậy không thể tăng phí bằng phương pháp này.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/tx-features/tx-features.component.html</context>
           <context context-type="linenumber">29</context>
@@ -9455,7 +9455,7 @@
       </trans-unit>
       <trans-unit id="2c1c39e28735f607d62dbf3272eb792451c265a5" datatype="html">
         <source>Med Fee Rate</source>
-        <target>Mức phí Med</target>
+        <target>Tỷ lệ phí trung vị</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">72</context>
@@ -9464,7 +9464,7 @@
       </trans-unit>
       <trans-unit id="cb4dae32e1b4d6a2ba6287d9f7bd859ca7259468" datatype="html">
         <source>The median fee rate charged by routing nodes, ignoring fee rates &gt; 0.5% or 5000ppm</source>
-        <target>Tỷ lệ phí trung bình được tính bởi các nút định tuyến, bỏ qua tỷ lệ phí&gt; 0,5% hoặc 5000ppm</target>
+        <target>Tỷ lệ phí trung vị được tính bởi các nút định tuyến, bỏ qua tỷ lệ phí&gt; 0,5% hoặc 5000ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">74</context>
@@ -9473,7 +9473,7 @@
       </trans-unit>
       <trans-unit id="a541dbcef4908bf2e767e77d7a09cc62450e8e56" datatype="html">
         <source>Med Base Fee</source>
-        <target>Phí cơ bản Med</target>
+        <target>Phí cơ sở trung vị</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">87</context>
@@ -9482,7 +9482,7 @@
       </trans-unit>
       <trans-unit id="b8539025268617abfcab1c3f2a2c60cd8d7485fb" datatype="html">
         <source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000ppm</source>
-        <target>Phí cơ bản trung bình được tính bởi các nút định tuyến, bỏ qua phí cơ sở&gt; 5000ppm</target>
+        <target>Phí cơ bản trung vị được tính bởi các nút định tuyến, bỏ qua phí cơ sở&gt; 5000ppm</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/channels-statistics/channels-statistics.component.html</context>
           <context context-type="linenumber">89</context>
@@ -9994,7 +9994,7 @@
       </trans-unit>
       <trans-unit id="bc84b5a9a70217104a53c7139e30b392be6520b7" datatype="html">
         <source>Lease fee rate</source>
-        <target>Giá thuê</target>
+        <target>Tỷ lệ phí thuê</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">190</context>
@@ -10022,7 +10022,7 @@
       </trans-unit>
       <trans-unit id="8af4768ed9112268945c697923ce017fbe23e1b7" datatype="html">
         <source>Channel fee rate</source>
-        <target>Phí kênh</target>
+        <target>Tỷ lệ phí kênh</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/node/node.component.html</context>
           <context context-type="linenumber">214</context>
@@ -11487,7 +11487,7 @@
       <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html"><source>children</source><target state="needs-review-translation">giao dịch con</target></trans-unit>
       <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html"><source>More</source><target state="needs-review-translation">More</target>
         </trans-unit>
-      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Trong cụm mempool chứa <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> các khối khác.</target></trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Trong cụm mempool có thêm <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> nhóm giao dịch khác.</target></trans-unit>
       <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html"><source>vSize</source><target state="needs-review-translation">vSize</target></trans-unit>
       <trans-unit id="btc.address.internal-key" datatype="html"><source>Internal Key</source><target state="needs-review-translation">Khóa nội bộ</target></trans-unit>
       <trans-unit id="btc.address.internal-key-placeholder" datatype="html"><source>Hex or base64 encoded x-only public key</source><target state="needs-review-translation">Khóa công khai chỉ chứa tọa độ x, được mã hóa hex hoặc base64</target></trans-unit>
@@ -11540,7 +11540,7 @@
       <trans-unit id="taxi.lightning.about.text06" datatype="html"><source>Nodes, channels, and the network between them</source><target state="needs-review-translation">Các nút, kênh và mạng giữa chúng</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text07" datatype="html"><source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source><target state="needs-review-translation">Khám phá các nút và kênh Lightning công cộng, chính sách định tuyến, dung lượng mạng, phân bổ địa lý và thống kê lịch sử. Theo dõi các kết nối của nút hoặc kiểm tra việc mở và đóng kênh.</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text08" datatype="html"><source>Part of tx.taxi</source><target state="needs-review-translation">Một phần của tx.taxi</target></trans-unit>
-      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target state="needs-review-translation">Sử dụng cùng một tìm kiếm để tìm nút hoặc kênh Lightning, chuyển đổi trình khám phá hoặc định tuyến giao dịch tới chuỗi khối của nó. Nhà thám hiểm trên chuỗi của Bitcoin tồn tại ở</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html"><source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source><target state="needs-review-translation">Sử dụng cùng một tìm kiếm để tìm nút hoặc kênh Lightning, chuyển đổi trình khám phá hoặc định tuyến giao dịch tới chuỗi khối của nó. Trình khám phá Bitcoin trên chuỗi có tại</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text10" datatype="html"><source>A public network view</source><target state="needs-review-translation">Chế độ xem mạng công cộng</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text11" datatype="html"><source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source><target state="needs-review-translation">Thanh toán Lightning và các kênh riêng tư không được hiển thị công khai. Dung lượng mô tả số bitcoin được cam kết cho một kênh công khai; nó không tiết lộ số dư có thể chi tiêu hiện tại của một trong hai bên. Vị trí nút mô tả các điểm cuối mạng đã công bố.</target></trans-unit>
       <trans-unit id="taxi.lightning.about.text12" datatype="html"><source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source><target state="needs-review-translation">Thống kê hiển thị ngày của ảnh chụp nhanh nguồn. Dữ liệu được lưu trong bộ nhớ đệm vẫn có sẵn trong thời gian bị gián đoạn.</target></trans-unit>
@@ -11553,7 +11553,7 @@
       <trans-unit id="taxi.lightning.error.unavailable" datatype="html"><source>Lightning data unavailable.</source><target state="needs-review-translation">Dữ liệu Lightning không khả dụng.</target></trans-unit>
       <trans-unit id="taxi.lightning.features.rawBits" datatype="html"><source>Raw bits</source><target state="needs-review-translation">Bit thô</target></trans-unit>
       <trans-unit id="taxi.lightning.features.required" datatype="html"><source>Required</source><target state="needs-review-translation">Yêu cầu</target></trans-unit>
-      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target state="needs-review-translation">tx.taxi Lightning explorer</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html"><source>tx.taxi Lightning explorer</source><target state="needs-review-translation">Trình khám phá Lightning tx.taxi</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text01" datatype="html"><source>Lightning nodes, channels, and network activity</source><target state="needs-review-translation">Các nút, kênh và hoạt động mạng Lightning</target></trans-unit>
       <trans-unit id="taxi.lightning.footer.text02" datatype="html"><source>Explore</source><target state="needs-review-translation">Khám phá</target>
         </trans-unit>
@@ -11603,7 +11603,7 @@
       <trans-unit id="taxi.raw.errorCpfp" datatype="html"><source>Error loading CPFP data</source><target state="needs-review-translation">Lỗi tải dữ liệu CPFP</target></trans-unit>
       <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target state="needs-review-translation">Lỗi khi tải các prevout còn thiếu</target></trans-unit>
       <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target state="needs-review-translation">Lý do:</target></trans-unit>
-      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target state="needs-review-translation">Các prevout còn thiếu chưa được tải. Không thể tính một số thông tin như mức phí.</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target state="needs-review-translation">Các prevout còn thiếu chưa được tải. Không thể tính một số thông tin như tỷ lệ phí.</target></trans-unit>
       <trans-unit id="taxi.sponsor.aria" datatype="html"><source>Sponsor Bitcoin for $150 per week</source><target state="needs-review-translation">Tài trợ Bitcoin với giá 150 USD mỗi tuần</target></trans-unit>
       <trans-unit id="taxi.sponsor.text" datatype="html"><source>Sponsor this chain for $150/wk</source><target state="needs-review-translation">Tài trợ chuỗi này với giá $150/tuần</target></trans-unit>
       <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target state="needs-review-translation">công dụng</target></trans-unit>
@@ -11620,11 +11620,11 @@
       <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi chỉ hiển thị dữ liệu công khai về mạng Bitcoin.<x id="CLOSE_BOLD_TEXT" /> Nó không thể lấy tiền, giải quyết các vấn đề về ví, đảo ngược giao dịch hoặc thay đổi mức độ ưu tiên xác nhận.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />Đối với những yêu cầu đó, hãy liên hệ với ví, sàn giao dịch hoặc dịch vụ thanh toán đã tạo giao dịch.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
       <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">cha mẹ" - "cluster.parent</target></trans-unit>
       <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target state="needs-review-translation">Kích thước" - "transaction.vsize</target></trans-unit>
-      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation">Trong cụm mempool chứa <x id="INTERPOLATION" /> các khối khác.</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation">Trong cụm mempool có thêm <x id="INTERPOLATION" /> nhóm giao dịch khác.</target></trans-unit>
       <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target state="needs-review-translation">Tạm dừng/Tiếp tục" - "recent-transactions.pause-toggle.title</target></trans-unit>
-      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">trẻ em" - "cluster.children</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">giao dịch con" - "cluster.children</target></trans-unit>
       <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target state="needs-review-translation"><x id="INTERPOLATION" /> giao dịch mới</target></trans-unit>
-      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">Giao dịch này thuộc về một nhóm giao dịch <x id="INTERPOLATION" />, với mức phí hiệu dụng tổng hợp <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target state="needs-review-translation">Giao dịch này thuộc nhóm gồm <x id="INTERPOLATION" /> giao dịch, với tỷ lệ phí hiệu dụng tổng hợp <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
       <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target state="needs-review-translation">Các giá trị được giới hạn ở mức cung cấp tối đa là 21 triệu BTC " - "calculator.max-supply-warning</target></trans-unit>
       <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target state="needs-review-translation">Khối lượng 24h</target></trans-unit>
       <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html"><source>24h Volume</source><target state="needs-review-translation">Khối lượng 24h</target></trans-unit>
@@ -11640,7 +11640,7 @@
       <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target state="needs-review-translation">Cụm" - "transaction.cluster</target></trans-unit>
       <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html"><source>Cluster</source><target state="needs-review-translation">Cụm</target></trans-unit>
       <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html"><source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source><target state="needs-review-translation"><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> giao dịch mới</target></trans-unit>
-      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target state="needs-review-translation">Giao dịch này thuộc về một nhóm giao dịch <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" />, với mức phí hiệu dụng tổng hợp <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target></trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target state="needs-review-translation">Giao dịch này thuộc nhóm gồm <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> giao dịch, với tỷ lệ phí hiệu dụng tổng hợp <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target></trans-unit>
       <trans-unit id="btc.pool.logo" datatype="html"><source>Logo of <x id="NAME" /> mining pool</source><target state="needs-review-translation">Logo của nhóm khai thác <x id="NAME" /></target></trans-unit>
       <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target state="needs-review-translation">Logo của nhóm khai thác <x id="INTERPOLATION" /></target></trans-unit>
       <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target state="needs-review-translation">Nguồn cung LBTC so với lượng BTC nắm giữ</target></trans-unit>
@@ -11673,7 +11673,7 @@
       <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target state="needs-review-translation">Trợ cấp (%)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target state="needs-review-translation">Trợ cấp (USD)</target></trans-unit>
       <trans-unit id="taxi.block.details.feeRange" datatype="html"><source>Fee range</source><target state="needs-review-translation">Khoảng phí</target></trans-unit>
-      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target state="needs-review-translation">Mức phí trung vị</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html"><source>Median fee rate</source><target state="needs-review-translation">Tỷ lệ phí trung vị</target></trans-unit>
       <trans-unit id="taxi.btc.about.contact" datatype="html"><source>Contact the maintainer</source><target state="needs-review-translation">Liên hệ người bảo trì</target></trans-unit>
       <trans-unit id="taxi.btc.about.licenseTitle" datatype="html"><source>License</source><target state="needs-review-translation">Giấy phép</target></trans-unit>
       <trans-unit id="taxi.btc.about.links" datatype="html"><source>Project links</source><target state="needs-review-translation">Liên kết dự án</target></trans-unit>
