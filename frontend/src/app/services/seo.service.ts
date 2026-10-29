@@ -87,6 +87,8 @@ export class SeoService {
   updateCanonical(path) {
     // Angular can report an empty URL when returning to a localized root.
     path = path || '/';
+    // Location.path() may include query parameters; translated canonicals must identify the page only.
+    if (/^(es|fr|de|it|pt)(-|$)/i.test(this.locale)) path = path.split(/[?#]/, 1)[0] || '/';
     const spanish = this.locale.startsWith('es');
     const reviewLocale = this.locale.startsWith('fr') ? 'fr' : this.locale.startsWith('de') ? 'de' : this.locale.startsWith('it') ? 'it' : this.locale.startsWith('pt') ? 'pt' : null;
     const prefix = spanish ? 'es' : reviewLocale;
