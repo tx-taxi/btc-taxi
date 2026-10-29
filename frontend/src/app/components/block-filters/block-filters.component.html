@@ -47,7 +47,7 @@
   <div class="filter-menu" *ngIf="menuOpen && cssWidth <= 280">
     <ng-container *ngFor="let group of filterGroups;">
       <ng-container *ngFor="let filter of group.filters;">
-        <button *ngIf="filter.important" class="btn filter-tag" [class.selected]="filterFlags[filter.key]" (click)="toggleFilter(filter.key)">{{ filter.label }}</button>
+        <button *ngIf="filter.important && !disabledFilters[filter.key]" class="btn filter-tag" [class.selected]="filterFlags[filter.key]" (click)="toggleFilter(filter.key)">{{ filter.label }}</button>
       </ng-container>
     </ng-container>
   </div>
