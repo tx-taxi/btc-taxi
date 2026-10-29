@@ -46,6 +46,12 @@ export class SearchFormComponent implements OnInit {
   localizedIconAlt(source: string): string { return explorerIconAlt(this.languageService.getLanguage(), source); }
   @Input() hamburgerOpen = false;
   get es(): boolean { return this.languageService.getLanguage() === 'es'; }
+  localizedIconAlt(source: string): string {
+    if (!this.es || !source) return source;
+    const match = source.match(/^(.+?) (logo|explorer)$/i);
+    if (!match) return source;
+    return match[2].toLowerCase() === 'logo' ? `Logo de ${match[1]}` : `Explorador de ${match[1]}`;
+  }
   readonly sourceChainId = 'bitcoin';
   readonly defaultChainIconUrl = 'https://tx.taxi/assets/chains/bitcoin.png';
   readonly defaultChainIconAlt = 'Bitcoin explorer';
