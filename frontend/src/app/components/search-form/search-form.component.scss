@@ -420,3 +420,6 @@ input:focus {
 }
 
 // END SHARED DESTINATION HIERARCHY
+
+/* Empty RTL search fields align their localized hint; entered text uses dir=auto. */
+:host-context(.rtl-layout) input[dir="auto"]:placeholder-shown { text-align: right; }

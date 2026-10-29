@@ -425,3 +425,6 @@ input[aria-invalid='true'] {
 :host ::ng-deep .lightning-search-suggestions .dropdown-item { white-space:normal; background:transparent; color:var(--info); }
 :host ::ng-deep .lightning-search-suggestions .dropdown-item:hover,
 :host ::ng-deep .lightning-search-suggestions .dropdown-item.active { background:var(--hover-bg,var(--tertiary)); color:var(--fg); }
+
+/* Empty RTL search fields align their localized hint; entered text uses dir=auto. */
+:host-context(.rtl-layout) input[dir="auto"]:placeholder-shown { text-align: right; }

@@ -173,7 +173,7 @@
             </ng-template>
           </div>
         </div>
-        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" [placeholder]="defaultSearchPlaceholder" [attr.aria-label]="defaultSearchPlaceholder">
+        <input #searchInput dir="auto" (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" [placeholder]="defaultSearchPlaceholder" [attr.aria-label]="defaultSearchPlaceholder">
       </div>
       <app-search-results #searchResults [hidden]="dropdownHidden || !isSourceChainSelected()" [results]="typeAhead$ | async" (selectedResult)="selectedResult($event)"></app-search-results>
     </div>

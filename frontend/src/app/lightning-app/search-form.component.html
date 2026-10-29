@@ -174,7 +174,7 @@
             </ng-template>
           </div>
         </div>
-        <input #searchInput (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" placeholder="Wave a taxi, paste anything here." i18n-placeholder="@@taxi.lightning.search.placeholder" [attr.aria-label]="menuCopy.search + ': ' + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
+        <input #searchInput dir="auto" (focus)="onSearchInputFocus(); focus$.next($any($event).target.value)" (click)="showSourceSuggestions(); click$.next($any($event).target.value)" (input)="showSourceSuggestions()" formControlName="searchText" type="text" class="form-control" placeholder="Wave a taxi, paste anything here." i18n-placeholder="@@taxi.lightning.search.placeholder" [attr.aria-label]="menuCopy.search + ': ' + (activeTarget$ | async)?.name" [attr.aria-invalid]="searchError ? 'true' : null" [attr.aria-describedby]="searchError ? 'lightning-search-error' : null">
       </div>
 
       <div *ngIf="searchError" id="lightning-search-error" class="search-error" role="alert">{{ searchError }}</div>

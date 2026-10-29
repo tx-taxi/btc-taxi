@@ -549,3 +549,7 @@ fa-icon {
 
 /* Documentation code follows both native and Mempool Original palettes. */
 code, pre, pre code { color: var(--info); }
+
+/* Keep API examples and identifiers in their written order inside RTL prose. */
+:host-context(.rtl-layout) code,
+:host-context(.rtl-layout) pre { direction: ltr; unicode-bidi: isolate; text-align: left; }
