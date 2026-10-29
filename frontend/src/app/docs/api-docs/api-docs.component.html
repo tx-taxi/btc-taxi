@@ -348,7 +348,7 @@
   <ng-template #deFaqEnglish14><ng-container *ngIf="locale.startsWith('de'); else italian_faqEnglish14">Auf der <a [routerLink]="['/graphs' | relativeUrl]">Diagrammseite</a> siehst du zusammengefasste zeitliche Entwicklungen, etwa die Mempool-Größe und die Eingangsrate neuer Transaktionen.</ng-container></ng-template>
   <ng-template #italian_faqEnglish14><ng-container *ngIf="locale.startsWith('it'); else pt_faqEnglish14">Consulta la <a [routerLink]="['/graphs' | relativeUrl]">pagina dei grafici</a> per vedere tendenze aggregate, come la dimensione del mempool e la velocità di arrivo delle transazioni.</ng-container></ng-template>
   <ng-template #pt_faqEnglish14><ng-container *ngIf="locale.startsWith('pt'); else ru_faqEnglish14">Consulte a <a [routerLink]="['/graphs' | relativeUrl]">página de gráficos</a> para tendências agregadas ao longo do tempo: tamanho do mempool e ritmo de entrada de transações.</ng-container></ng-template>
-  <ng-template #ru_faqEnglish14><ng-container *ngIf="locale.startsWith('ru'); else faqEnglish14"><p>На странице графиков показаны общие тенденции: изменение размера мемпула и скорость поступления транзакций.</p></ng-container></ng-template>
+  <ng-template #ru_faqEnglish14><ng-container *ngIf="locale.startsWith('ru'); else faqEnglish14"><p>На <a [routerLink]="['/graphs' | relativeUrl]">странице графиков</a> показаны общие тенденции: изменение размера мемпула и скорость поступления транзакций.</p></ng-container></ng-template>
   <ng-template #faqEnglish14>
   See the <a [routerLink]="['/graphs' | relativeUrl]">graphs page</a> for aggregate trends over time: mempool size over time and incoming transaction velocity over time.
 </ng-template>
