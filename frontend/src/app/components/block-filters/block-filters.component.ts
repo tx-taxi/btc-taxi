@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, HostListener, Input, ChangeDetectorRef, OnChanges, SimpleChanges, OnInit, OnDestroy } from '@angular/core';
-import { ActiveFilter, FilterGroups, FilterMode, GradientMode, TransactionFilters } from '@app/shared/filters.utils';
+import { ActiveFilter, FilterGroups, FilterMode, GradientMode, TransactionFilters, filterLabel } from '@app/shared/filters.utils';
 import { StateService } from '@app/services/state.service';
 import { Subscription } from 'rxjs';
 
@@ -17,6 +17,7 @@ export class BlockFiltersComponent implements OnInit, OnChanges, OnDestroy {
 
   filterSubscription: Subscription;
 
+  filterMenuTitle = filterLabel('menu', 'Transaction filters');
   filters = TransactionFilters;
   filterGroups = FilterGroups;
   disabledFilters: { [key: string]: boolean } = {};
