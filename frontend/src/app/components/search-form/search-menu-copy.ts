@@ -1,5 +1,17 @@
 /** Copy shared by the Bitcoin and Lightning explorer switchers. */
 const copy = {
+  hu: {
+    choose: 'Válasszon láncot a kereséshez', selectedAria: 'Kiválasztott böngésző', selected: 'KIVÁLASZTVA',
+    unavailable: 'A böngészők listája nem érhető el', loading: 'Böngészők betöltése', automatic: 'Automatikus útválasztás',
+    viewHub: 'tx.taxi megnyitása', hint: 'Vagy közvetlenül ide léphet', searchExample: '[keresése]',
+    native: 'SAJÁT BÖNGÉSZŐK', external: 'KÜLSŐ BÖNGÉSZŐK', opened: 'Megnyitva',
+    open: 'Megnyitás', switch: 'Váltás', found: 'Találat', possible: 'Lehetséges', search: 'Keresés',
+    additional: (name: string) => `További böngészők: ${name}`,
+    openExplorer: (name: string) => `${name} megnyitása`,
+    openNewTab: (name: string) => `${name} megnyitása új lapon`,
+    switchTo: (name: string) => `Váltás erre: ${name}`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'További lehetőségek elrejtése' : 'További lehetőségek megjelenítése'}: ${name} (${count})`,
+  },
   ro: {
     choose: 'Alege lanțul pentru căutare', selectedAria: 'Exploratorul selectat', selected: 'SELECTAT',
     unavailable: 'Registrul exploratoarelor nu este disponibil', loading: 'Se încarcă exploratoarele', automatic: 'Rutare automată',
