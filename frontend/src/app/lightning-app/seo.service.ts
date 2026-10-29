@@ -93,6 +93,7 @@ export class SeoService {
 
   updateCanonical(path) {
     const lang = document.documentElement.lang.toLowerCase();
+    if (/^(es|fr|de|it|pt)(-|$)/.test(lang)) path = (path || '/').split(/[?#]/, 1)[0] || '/';
     const reviewLocale = /^(fr|de|it|pt)/.test(lang) ? lang.slice(0, 2) : null;
     const prefix = lang.startsWith('es') ? '/es' : reviewLocale ? '/' + reviewLocale : '';
     const canonicalUrl = 'https://' + this.baseDomain + prefix + (path || '/');
