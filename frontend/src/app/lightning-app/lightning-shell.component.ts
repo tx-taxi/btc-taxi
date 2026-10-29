@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, HostListener, Inject, LOCALE_ID } from '@angular/core';
+import { Component, OnInit, OnDestroy, HostListener, Inject, LOCALE_ID, ChangeDetectorRef } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router, NavigationStart } from '@angular/router';
 import { StateService } from '@app/services/state.service';
@@ -25,6 +25,18 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   private linksObserver?: MutationObserver;
   private applyingSharedCurrency = false;
   private navigatingHub = false;
+  private get explicitLanguage(): string | null {
+    const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase();
+    return explicit ? (explicit.startsWith('en') ? 'en' : explicit) : null;
+  }
+  private get language(): string {
+    return this.explicitLanguage || readSharedPreference(document, 'txtaxi_language') || 'en';
+  }
+  get brandHref(): string {
+    if (this.router.url !== '/') return !this.explicitLanguage || this.explicitLanguage === 'en' ? '/' : `/${this.explicitLanguage}/`;
+    const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, '');
+    return localizedNativeUrl(hub + '/', this.language);
+  }
   private readonly availableCurrencies = new Set(['USD', 'EUR', 'GBP', 'CAD', 'CHF', 'AUD', 'JPY']);
   private readSharedCurrency(): string | null {
     const pair = document.cookie.split(';').map(part => part.trim()).find(part => part.startsWith('txtaxi_currency='));
@@ -45,8 +57,9 @@ export class LightningShellComponent implements OnInit, OnDestroy {
     document.cookie = `txtaxi_currency=${encodeURIComponent(currency)}; Max-Age=31536000; Path=/; SameSite=Lax${sharedDomain ? '; Domain=.tx.taxi; Secure' : location.protocol === 'https:' ? '; Secure' : ''}`;
   }
   private onVisibility = () => { if (document.visibilityState === 'visible') this.syncSharedCurrency(); };
-  constructor(public router:Router,private http:HttpClient,private state:StateService,private theme:ThemeService,private status:LightningStatusService,private seo:SeoService,private opengraph:OpenGraphService,@Inject(LOCALE_ID) private locale:string) {}
+  constructor(public router:Router,private http:HttpClient,private state:StateService,private theme:ThemeService,private status:LightningStatusService,private seo:SeoService,private opengraph:OpenGraphService,private cdr:ChangeDetectorRef,@Inject(LOCALE_ID) private locale:string) {}
   ngOnInit(): void {
+    void refreshLocalizedCapabilities(this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').then(() => this.cdr.markForCheck());
     this.syncSharedCurrency();
     let initialCurrency = true;
     this.subscriptions.add(this.state.fiatCurrency$.subscribe(currency => {
@@ -79,7 +92,7 @@ export class LightningShellComponent implements OnInit, OnDestroy {
   };
   async brandClick(event:MouseEvent): Promise<void> {
     if(event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
-    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); const explicit = location.pathname.match(/^\/(en(?:-US)?|es|fr|de|it)(?:\/|$)/i)?.[1].toLowerCase(); const language = explicit ? (explicit.startsWith('en') ? 'en' : explicit) : readSharedPreference(document, 'txtaxi_language') || 'en'; if (this.navigatingHub) return; this.navigatingHub = true; if (language !== 'en') await refreshLocalizedCapabilities(hub); const hubUrl = localizedNativeUrl(hub + '/', language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
+    event.preventDefault(); event.stopImmediatePropagation(); const navigate = (window as any).txTaxiLightningNavigate; if(this.router.url !== '/') {if(navigate) navigate('/', {reverse:true,navigate:()=>this.router.navigateByUrl('/')}); else this.router.navigateByUrl('/');return;} const hub = (this.state.env.TX_TAXI_ROUTER_URL || 'https://tx.taxi').replace(/\/$/, ''); if (this.navigatingHub) return; this.navigatingHub = true; if (this.language !== 'en') await refreshLocalizedCapabilities(hub); const hubUrl = localizedNativeUrl(hub + '/', this.language); if(navigate) navigate(hubUrl, {reverse:true}); else location.assign(hubUrl);
   }
   @HostListener('document:keydown',['$event']) onKey(event:KeyboardEvent):void {if(event.key==='/' && !(event.target instanceof HTMLInputElement)){event.preventDefault();this.state.searchFocus$.next(true);}}
   ngOnDestroy():void {this.subscriptions.unsubscribe();this.linksObserver?.disconnect();document.removeEventListener('visibilitychange',this.onVisibility);document.removeEventListener('click',this.onBitcoinLink,true);}
