@@ -37,13 +37,13 @@
       .then(response => response.ok ? response.json() : null)
       .then(data => {
         const locales = data?.version === 1 && Array.isArray(data?.hosts?.['tx.taxi']) ? data.hosts['tx.taxi'] : [];
-        hubLocales = locales.filter(locale => ['es', 'fr', 'de', 'it'].includes(locale));
+        hubLocales = locales.filter(locale => ['es', 'fr', 'de', 'it', 'pt'].includes(locale));
         if (hubLocales.length) window.dispatchEvent(new Event('txTaxiLocaleCapabilities'));
       }).catch(() => {}).finally(() => clearTimeout(timeout));
   } catch {}
   // Respect explicit and saved preferences only when the hub advertises the locale.
   const localizedHubPath = () => {
-    const explicit = location.pathname.match(/^\/(en|es|fr|de|it)(?:\/|$)/i)?.[1]?.toLowerCase();
+    const explicit = location.pathname.match(/^\/(en|es|fr|de|it|pt)(?:\/|$)/i)?.[1]?.toLowerCase();
     let saved = '';
     try { saved = decodeURIComponent(document.cookie.split(';').map(item => item.trim()).find(item => item.startsWith('txtaxi_language='))?.slice('txtaxi_language='.length) || ''); } catch {}
     const language = explicit || saved;
@@ -196,8 +196,8 @@
       document.querySelectorAll('a.navbar-brand, a.chain-divider-mark').forEach(link => {
         link.href = dashboard ? hubOrigin + localizedHubPath() : root;
         const language = document.documentElement.lang.toLowerCase().split(/[-_]/)[0];
-        const backLabels = {es: 'Volver a tx.taxi', fr: 'Retour à tx.taxi', de: 'Zurück zu tx.taxi', it: 'Torna a tx.taxi'};
-        const dashboardLabels = {es: 'Panel de ' + sourceName, fr: 'Tableau de bord ' + sourceName, de: sourceName + '-Übersicht', it: 'Panoramica ' + sourceName};
+        const backLabels = {es: 'Volver a tx.taxi', fr: 'Retour à tx.taxi', de: 'Zurück zu tx.taxi', it: 'Torna a tx.taxi', pt: 'Voltar a tx.taxi'};
+        const dashboardLabels = {es: 'Panel de ' + sourceName, fr: 'Tableau de bord ' + sourceName, de: sourceName + '-Übersicht', it: 'Panoramica ' + sourceName, pt: 'Painel de ' + sourceName};
         const label = dashboard ? (backLabels[language] || 'Back to tx.taxi') : (dashboardLabels[language] || sourceName + ' dashboard');
         link.setAttribute('aria-label', label);
         link.title = label;

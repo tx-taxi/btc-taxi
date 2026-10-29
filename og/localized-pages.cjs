@@ -10,6 +10,7 @@ const copy = {
   fr: {title:'Explorateur Bitcoin | btc.tx.taxi', description:'Explorez les blocs, transactions, frais et activités du mempool Bitcoin avec btc.tx.taxi.', heading:'Explorateur Bitcoin'},
   de: {title:'Bitcoin-Explorer | btc.tx.taxi', description:'Erkunde Bitcoin-Blöcke, Transaktionen, Gebühren und die Mempool-Aktivität mit btc.tx.taxi.', heading:'Bitcoin-Explorer'},
   it: {title:'Esploratore Bitcoin | btc.tx.taxi', description:'Esplora blocchi, transazioni, commissioni e attività del mempool Bitcoin con btc.tx.taxi.', heading:'Esploratore Bitcoin'},
+  pt: {title:'Explorador Bitcoin | btc.tx.taxi', description:'Explore blocos, transações, taxas e a atividade da mempool Bitcoin com btc.tx.taxi.', heading:'Explorador Bitcoin'},
 };
 function createLocalizedPages(indexPath, pages, aliases) {
   const shells = {};
@@ -19,7 +20,7 @@ function createLocalizedPages(indexPath, pages, aliases) {
   }
   const known = new Set(pages.map(page => page.route));
   function route(pathname) {
-    const match = pathname.match(/^\/(fr|de|it)(?:\/|$)/);
+    const match = pathname.match(/^\/(fr|de|it|pt)(?:\/|$)/);
     return match && shells[match[1]] ? { lang: match[1], pathname: pathname.slice(3) || '/' } : null;
   }
   function supports(value) {
@@ -42,7 +43,7 @@ function createLocalizedPages(indexPath, pages, aliases) {
     if (base) { const href = base.attrs.find(a => a.name === 'href'); if (href) href.value = '/' + lang + '/'; else base.attrs.push({name:'href',value:'/' + lang + '/'}); }
     else head.childNodes.unshift(...parse5.parseFragment('<base href="/' + lang + '/">').childNodes);
     const {title, description, heading} = copy[lang];
-    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : 'it_IT'}">`).childNodes);
+    head.childNodes.push(...parse5.parseFragment(`<title>${esc(title)}</title><link id="canonical" rel="canonical" href="${esc(canonical)}"><meta name="description" content="${esc(description)}"><meta name="robots" content="noindex, follow"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}"><meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : lang === 'de' ? 'de_DE' : lang === 'it' ? 'it_IT' : 'pt_PT'}">`).childNodes);
     function fill(node) {
       if (node.tagName === 'app-root') { node.childNodes = parse5.parseFragment(`<main class="container-xl"><h1>${esc(heading)}</h1><p>${esc(description)}</p></main>`).childNodes; return; }
       for (const child of node.childNodes || []) fill(child);
