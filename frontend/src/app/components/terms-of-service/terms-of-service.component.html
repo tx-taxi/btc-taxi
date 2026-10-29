@@ -440,8 +440,57 @@
 <ng-template #norwegianLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Bruksvilkår</h2><h6>Oppdatert: 20. september 2026</h6><br><br><div class="text-start"><h4>Informativ utforsker</h4><p>btc.tx.taxi gir oversikt over offentlige Bitcoin-blokker, transaksjoner, adresser, utvinningsdata, gebyrestimater og mempoolstatus. Tjenesten er informativ og er ikke en lommebok, børs, forvalter, betalingsformidler eller tjeneste for transaksjonsprioritet.</p><br><h4>Ingen kontroll over Bitcoin-transaksjoner</h4><p>Operatøren kan ikke reversere, kansellere, fremskynde, gjenopprette eller omdirigere en Bitcoin-transaksjon. For problemer med lommebok, børs eller betaling, kontakt tjenesten som opprettet eller mottok transaksjonen.</p><br><h4>Data og tilgjengelighet</h4><p>Utforskerdata kan være forsinket, ufullstendige, utilgjengelige eller forskjellige fra en annen nodes bilde. Gebyrestimater er bare estimater og garanterer ikke bekreftelse. Tjenesten leveres som den er uten løfte om uavbrutt tilgjengelighet eller egnethet for et bestemt formål.</p><br><h4>Akseptabel bruk</h4><p>Ikke misbruk nettstedet eller API-et, forstyrr tjenestens drift, omgå rimelige frekvensgrenser eller bruk tjenesten ulovlig. Tilgang kan begrenses når det er nødvendig for å beskytte tilgjengeligheten.</p><br><h4>Eksterne tjenester</h4><p>Nettstedet kan lenke til tx.taxis kontaktkanaler, Bitcoin-referanser, lisensinformasjon og infrastrukturavhengigheter. Eksterne nettsteder har egne vilkår og regler.</p><br><h4>Åpen kildekode</h4><p>btc.tx.taxi bygger på Mempool Open Source Project og distribueres i samsvar med AGPLv3-forpliktelsene. Kontakt <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> for relevant kildekode- og lisensinformasjon.</p><br></div></div><br><br></div></ng-template>
 <ng-template #swedishOrEnglish><ng-container *ngIf="sv; else czechOrEnglish" [ngTemplateOutlet]="swedishLegal"></ng-container></ng-template>
 <ng-template #swedishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Användarvillkor</h2><h6>Uppdaterad: 20 september 2026</h6><br><br><div class="text-start"><h4>Informationsutforskare</h4><p>btc.tx.taxi ger en vy över offentliga Bitcoin-block, transaktioner, adresser, utvinningsdata, avgiftsuppskattningar och mempoolstatus. Tjänsten är informativ och är inte en plånbok, börs, förvarare, betalningsförmedlare eller tjänst för transaktionsprioritet.</p><br><h4>Ingen kontroll över Bitcoin-transaktioner</h4><p>Operatören kan inte återföra, avbryta, påskynda, återställa eller omdirigera en Bitcoin-transaktion. Vid problem med plånbok, börs eller betalning, kontakta tjänsten som skapade eller tog emot transaktionen.</p><br><h4>Data och tillgänglighet</h4><p>Utforskarens data kan vara fördröjda, ofullständiga, otillgängliga eller skilja sig från en annan nods vy. Avgiftsuppskattningar är endast uppskattningar och garanterar ingen bekräftelse. Tjänsten tillhandahålls i befintligt skick utan löfte om oavbruten tillgänglighet eller lämplighet för ett visst ändamål.</p><br><h4>Godtagbar användning</h4><p>Missbruka inte webbplatsen eller API:et, stör inte tjänstens drift, kringgå inte rimliga frekvensgränser och använd inte tjänsten olagligt. Åtkomst kan begränsas när det behövs för att skydda tillgängligheten.</p><br><h4>Externa tjänster</h4><p>Webbplatsen kan länka till tx.taxis kontaktkanaler, Bitcoin-referenser, licensinformation och infrastrukturberoenden. Externa webbplatser har egna villkor och policyer.</p><br><h4>Öppen källkod</h4><p>btc.tx.taxi bygger på Mempool Open Source Project och distribueras enligt AGPLv3-förpliktelserna. Kontakta <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> för relevant information om källkod och licens.</p><br></div></div><br><br></div></ng-template>
-<ng-template #czechOrEnglish><ng-container *ngIf="cs; else englishLegal" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
+<ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Podmínky používání</h2><h6>Aktualizováno: 20. září 2026</h6><br><br><div class="text-start"><h4>Informační průzkumník</h4><p>btc.tx.taxi poskytuje přehled veřejných bloků, transakcí, adres, těžebních dat, odhadů poplatků a stavu mempoolu Bitcoinu. Jde o informační službu, nikoli peněženku, burzu, správce prostředků, platebního zpracovatele ani službu určující prioritu transakcí.</p><br><h4>Bez kontroly nad transakcemi Bitcoin</h4><p>Provozovatel nemůže vrátit, zrušit, urychlit, obnovit ani přesměrovat transakci Bitcoin. Při potížích s peněženkou, burzou nebo platbou kontaktujte službu, která transakci vytvořila nebo přijala.</p><br><h4>Data a dostupnost</h4><p>Data průzkumníka mohou být zpožděná, neúplná, nedostupná nebo se lišit od pohledu jiného uzlu. Odhady poplatků jsou pouze odhady a nezaručují potvrzení. Služba se poskytuje tak, jak je, bez příslibu nepřetržité dostupnosti nebo vhodnosti pro určitý účel.</p><br><h4>Přijatelné používání</h4><p>Nezneužívejte web ani API, nenarušujte provoz služby, neobcházejte přiměřené limity požadavků a nepoužívejte službu nezákonně. Přístup může být omezen, pokud je to nutné k ochraně dostupnosti.</p><br><h4>Externí služby</h4><p>Web může odkazovat na kontaktní kanály tx.taxi, zdroje o Bitcoinu, informace o licenci a infrastrukturní závislosti. Externí weby mají vlastní podmínky a zásady.</p><br><h4>Otevřený zdroj</h4><p>btc.tx.taxi vychází z Mempool Open Source Project a je distribuován v souladu s povinnostmi AGPLv3. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>.</p><br></div></div><br><br></div></ng-template>
+<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else englishLegal" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #hindiLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>सेवा की शर्तें</h2>
+    <h6>अपडेट: 20 सितंबर 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>सूचनात्मक एक्सप्लोरर</h4>
+      <p>btc.tx.taxi सार्वजनिक Bitcoin ब्लॉक, लेनदेन, पते, माइनिंग डेटा, शुल्क अनुमान और मेमपूल स्थिति दिखाता है। यह सूचनात्मक सेवा है; वॉलेट, एक्सचेंज, कस्टोडियन, भुगतान प्रोसेसर या लेनदेन प्राथमिकता सेवा नहीं है।</p>
+
+      <br>
+
+      <h4>Bitcoin लेनदेन पर नियंत्रण नहीं</h4>
+      <p>संचालक Bitcoin लेनदेन को उलट, रद्द, तेज, वापस प्राप्त या दूसरी ओर भेज नहीं सकता। वॉलेट, एक्सचेंज या भुगतान समस्याओं के लिए लेनदेन बनाने या प्राप्त करने वाली सेवा से संपर्क करें।</p>
+
+      <br>
+
+      <h4>डेटा और उपलब्धता</h4>
+      <p>एक्सप्लोरर डेटा में देरी हो सकती है, वह अधूरा या अनुपलब्ध हो सकता है या दूसरे नोड के दृश्य से अलग हो सकता है। शुल्क अनुमान केवल अनुमान हैं और पुष्टि की गारंटी नहीं देते। सेवा जैसी है वैसी दी जाती है; निरंतर उपलब्धता या किसी विशेष उद्देश्य के लिए उपयुक्तता का वादा नहीं है।</p>
+
+      <br>
+
+      <h4>उचित उपयोग</h4>
+      <p>वेबसाइट या API का दुरुपयोग न करें, सेवा संचालन में बाधा न डालें, उचित दर सीमाओं को बायपास न करें और सेवा का गैरकानूनी उपयोग न करें। उपलब्धता बनाए रखने के लिए आवश्यक होने पर पहुंच सीमित की जा सकती है।</p>
+
+      <br>
+
+      <h4>बाहरी सेवाएं</h4>
+      <p>यह साइट tx.taxi के संपर्क चैनल, Bitcoin संदर्भ, लाइसेंस जानकारी और इन्फ्रास्ट्रक्चर निर्भरताओं के लिंक दे सकती है। बाहरी वेबसाइटों की अपनी शर्तें और नीतियां हैं।</p>
+
+      <br>
+
+      <h4>ओपन सोर्स</h4>
+      <p>btc.tx.taxi Mempool Open Source Project से लिया गया है और AGPLv3 दायित्वों के तहत वितरित होता है। लागू सोर्स कोड और लाइसेंस जानकारी के लिए <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> से संपर्क करें।</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
