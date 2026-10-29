@@ -194,7 +194,7 @@
           },
           "configurations": {
             "production": {
-              "localize": ["en-US", "es", "fr", "de", "it", "pt", "ru", "ja", "zh", "tr", "nl", "ko", "pl", "uk", "nb", "sv"],
+              "localize": ["en-US", "es", "fr", "de", "it", "pt", "ru", "ja", "zh", "tr", "nl", "ko", "pl", "uk", "nb", "sv", "cs"],
               "assets": [
                 "src/favicon.ico",
                 "src/robots.txt"
@@ -398,7 +398,8 @@
           "pl": { "translation": "src/locale/messages.pl.xlf", "baseHref": "/pl/" },
           "uk": { "translation": "src/locale/messages.uk.xlf", "baseHref": "/uk/" },
           "nb": { "translation": "src/locale/messages.nb.xlf", "baseHref": "/nb/" },
-          "sv": { "translation": "src/locale/messages.sv.xlf", "baseHref": "/sv/" }
+          "sv": { "translation": "src/locale/messages.sv.xlf", "baseHref": "/sv/" },
+          "cs": { "translation": "src/locale/messages.cs.xlf", "baseHref": "/cs/" }
         }
       },
       "architect": {
@@ -743,7 +744,7 @@
                   "maximumWarning": "6kb"
                 }
               ],
-              "localize": ["en-US", "es", "fr", "de", "it", "pt", "ru", "ja", "zh", "tr", "nl", "ko", "pl", "uk", "nb", "sv"]
+              "localize": ["en-US", "es", "fr", "de", "it", "pt", "ru", "ja", "zh", "tr", "nl", "ko", "pl", "uk", "nb", "sv", "cs"]
             },
             "it-preview": {
               "localize": ["en-US", "it"],
