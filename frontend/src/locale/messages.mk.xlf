@@ -2675,7 +2675,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.asset" datatype="html">
         <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]"/> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]"/>): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
-        <target>Прегледајте го прегледот на ликвидното средство <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): видете го издадениот износ, изгорениот износ, циркулирачкиот износ, поврзаните трансакции и многу повеќе.</target>
+        <target>Прегледајте го прегледот на Liquid средството <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): видете го издадениот износ, изгорениот износ, циркулирачкиот износ, поврзаните трансакции и многу повеќе.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">109</context>
@@ -7108,7 +7108,7 @@
       </trans-unit>
       <trans-unit id="f091ae234382282726f5a93bb7b3802ed468e8b9" datatype="html">
         <source>Liquid Asset</source>
-        <target>Ликвидно средство</target>
+        <target>Liquid средство</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">86</context>
@@ -7201,7 +7201,7 @@
       </trans-unit>
       <trans-unit id="7cbed0a3d916c604f611f73b76c2c4d80e2065c4" datatype="html">
         <source>Recent Stale Chain Tips</source>
-        <target>Неодамнешни застарени совети за синџири</target>
+        <target>Неодамнешни врвови на напуштени гранки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -7291,7 +7291,7 @@
       </trans-unit>
       <trans-unit id="page.stale-chain-tips" datatype="html">
         <source>Stale Chain Tips</source>
-        <target>Застарени совети за синџири</target>
+        <target>Врвови на напуштени гранки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">62</context>
@@ -7299,7 +7299,7 @@
       </trans-unit>
       <trans-unit id="meta.description.stale-chain-tips" datatype="html">
         <source>See the most recent stale chain tips on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> network.</source>
-        <target>Погледнете ги најновите совети за застарени синџири на мрежата Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" />.</target>
+        <target>Погледнете ги најновите врвови на напуштени гранки на мрежата Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/stale-list/stale-list.component.ts</context>
           <context context-type="linenumber">63</context>
@@ -8196,7 +8196,7 @@
       </trans-unit>
       <trans-unit id="7d94a59c779ba549751c9f36eb40fd339725fec6" datatype="html">
         <source>P2TR Simplicity script</source>
-        <target>P2TR Скрипта за едноставност</target>
+        <target>P2TR Simplicity скрипта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">256</context>
@@ -8876,7 +8876,7 @@
       </trans-unit>
       <trans-unit id="meta.title.docs.rest" datatype="html">
         <source>REST API</source>
-        <target>ОДМОРИ API</target>
+        <target>REST API</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">52</context>
@@ -11211,7 +11211,7 @@
       </trans-unit>
       <trans-unit id="c127ef3218deed36fb86af83def0b54846f92252" datatype="html">
         <source>Liquid Testnet Explorer</source>
-        <target>Течен Тестнет Explorer</target>
+        <target>Liquid Testnet истражувач</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">101</context>
@@ -11220,7 +11220,7 @@
       </trans-unit>
       <trans-unit id="3c07f1c84d76a9999153e87343fd642852bb6d34" datatype="html">
         <source>Liquid Explorer</source>
-        <target>Течен Explorer</target>
+        <target>Liquid истражувач</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/components/global-footer/global-footer.component.html</context>
           <context context-type="linenumber">102</context>
