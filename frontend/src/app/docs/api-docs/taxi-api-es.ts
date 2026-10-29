@@ -1,3 +1,4 @@
+import { ukrainianApiEntries } from './taxi-api-uk';
 import { polishApiEntries } from './taxi-api-pl';
 import { koreanApiEntries } from './taxi-api-ko';
 import { dutchApiEntries } from './taxi-api-nl';
@@ -88,7 +89,7 @@ const entries: Record<string, [string, string?]> = {
 };
 
 export function localizedTaxiApi<T extends {fragment: string; title: string; description?: any}>(items: T[], locale: string): T[] {
-  const localized = locale.startsWith('pl') ? polishApiEntries : locale.startsWith('ko') ? koreanApiEntries : locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : locale.startsWith('zh') ? chineseApiEntries : locale.startsWith('tr') ? turkishApiEntries : locale.startsWith('nl') ? dutchApiEntries : null;
+  const localized = locale.startsWith('uk') ? ukrainianApiEntries : locale.startsWith('pl') ? polishApiEntries : locale.startsWith('ko') ? koreanApiEntries : locale.startsWith('es') ? entries : locale.startsWith('fr') ? frenchApiEntries : locale.startsWith('de') ? germanApiEntries : locale.startsWith('it') ? italianApiEntries : locale.startsWith('pt') ? portugueseApiEntries : locale.startsWith('ru') ? russianApiEntries : locale.startsWith('ja') ? japaneseApiEntries : locale.startsWith('zh') ? chineseApiEntries : locale.startsWith('tr') ? turkishApiEntries : locale.startsWith('nl') ? dutchApiEntries : null;
   if (!localized) return items;
   return items.map(item => {
     const translated = localized[item.fragment];
