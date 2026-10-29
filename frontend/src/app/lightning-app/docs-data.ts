@@ -1,3 +1,4 @@
+import { koreanLightningFaqTitles, koreanLightningFaqCategories, koreanLightningRestDocs } from './lightning-docs-ko';
 import { dutchLightningFaqTitles, dutchLightningFaqCategories, dutchLightningRestDocs } from './lightning-docs-nl';
 import { turkishLightningFaqTitles, turkishLightningFaqCategories, turkishLightningRestDocs } from './lightning-docs-tr';
 import { chineseLightningFaqTitles, chineseLightningFaqCategories, chineseLightningRestDocs } from './lightning-docs-zh';
@@ -35,12 +36,12 @@ const spanishFaqTitles: Record<string, string> = {
 };
 const spanishFaqCategories: Record<string, string> = { Search: 'Búsqueda', Channels: 'Canales', Fees: 'Comisiones', Payments: 'Pagos', Maps: 'Mapas', Statistics: 'Estadísticas' };
 export function localizedLightningFaq(locale: string) {
-  const es = locale.startsWith('es'), fr = locale.startsWith('fr'), de = locale.startsWith('de'), it = locale.startsWith('it'), pt = locale.startsWith('pt'), ru = locale.startsWith('ru'), ja = locale.startsWith('ja'), zh = locale.startsWith('zh'), tr = locale.startsWith('tr'), nl = locale.startsWith('nl');
-  if (!es && !fr && !de && !it && !pt && !ru && !ja && !zh && !tr && !nl) return lightningFaq;
-  const titles = es ? spanishFaqTitles : fr ? frenchLightningFaqTitles : de ? germanLightningFaqTitles : it ? italianLightningFaqTitles : pt ? portugueseLightningFaqTitles : ru ? russianLightningFaqTitles : ja ? japaneseLightningFaqTitles : zh ? chineseLightningFaqTitles : tr ? turkishLightningFaqTitles : dutchLightningFaqTitles;
-  const categories = es ? spanishFaqCategories : fr ? frenchLightningFaqCategories : de ? germanLightningFaqCategories : it ? italianLightningFaqCategories : pt ? portugueseLightningFaqCategories : ru ? russianLightningFaqCategories : ja ? japaneseLightningFaqCategories : zh ? chineseLightningFaqCategories : tr ? turkishLightningFaqCategories : dutchLightningFaqCategories;
+  const ko = locale.startsWith('ko'), es = locale.startsWith('es'), fr = locale.startsWith('fr'), de = locale.startsWith('de'), it = locale.startsWith('it'), pt = locale.startsWith('pt'), ru = locale.startsWith('ru'), ja = locale.startsWith('ja'), zh = locale.startsWith('zh'), tr = locale.startsWith('tr'), nl = locale.startsWith('nl');
+  if (!ko && !es && !fr && !de && !it && !pt && !ru && !ja && !zh && !tr && !nl) return lightningFaq;
+  const titles = ko ? koreanLightningFaqTitles : es ? spanishFaqTitles : fr ? frenchLightningFaqTitles : de ? germanLightningFaqTitles : it ? italianLightningFaqTitles : pt ? portugueseLightningFaqTitles : ru ? russianLightningFaqTitles : ja ? japaneseLightningFaqTitles : zh ? chineseLightningFaqTitles : tr ? turkishLightningFaqTitles : dutchLightningFaqTitles;
+  const categories = ko ? koreanLightningFaqCategories : es ? spanishFaqCategories : fr ? frenchLightningFaqCategories : de ? germanLightningFaqCategories : it ? italianLightningFaqCategories : pt ? portugueseLightningFaqCategories : ru ? russianLightningFaqCategories : ja ? japaneseLightningFaqCategories : zh ? chineseLightningFaqCategories : tr ? turkishLightningFaqCategories : dutchLightningFaqCategories;
   return lightningFaq.map(item => ({ ...item,
-    title: item.type === 'category' ? (es ? 'Red Lightning' : fr ? 'Réseau Lightning' : de ? 'Lightning-Netzwerk' : it ? 'Rete Lightning' : pt ? 'Rede Lightning' : ru ? 'Сеть Lightning' : ja ? 'Lightningネットワーク' : zh ? 'Lightning网络' : tr ? 'Lightning ağı' : 'Lightning-netwerk') : titles[item.fragment] || item.title,
+    title: item.type === 'category' ? (ko ? '라이트닝 네트워크' : es ? 'Red Lightning' : fr ? 'Réseau Lightning' : de ? 'Lightning-Netzwerk' : it ? 'Rete Lightning' : pt ? 'Rede Lightning' : ru ? 'Сеть Lightning' : ja ? 'Lightningネットワーク' : zh ? 'Lightning网络' : tr ? 'Lightning ağı' : 'Lightning-netwerk') : titles[item.fragment] || item.title,
     category: categories[item.category] || item.category,
   }));
 }
@@ -64,7 +65,7 @@ const spanishRestDocs: Record<string, [string, string]> = {
   'get-channel-geodata-node': ['Datos geográficos de canales de un nodo', '<p>Devuelve los canales y sus datos geográficos para el nodo con la clave pública <code>:pubKey</code> indicada.</p>'],
 };
 export function localizedLightningRestDocs(locale: string) {
-  const localized = locale.startsWith('es') ? spanishRestDocs : locale.startsWith('fr') ? frenchLightningRestDocs : locale.startsWith('de') ? germanLightningRestDocs : locale.startsWith('it') ? italianLightningRestDocs : locale.startsWith('pt') ? portugueseLightningRestDocs : locale.startsWith('ru') ? russianLightningRestDocs : locale.startsWith('ja') ? japaneseLightningRestDocs : locale.startsWith('zh') ? chineseLightningRestDocs : locale.startsWith('tr') ? turkishLightningRestDocs : locale.startsWith('nl') ? dutchLightningRestDocs : null;
+  const localized = locale.startsWith('ko') ? koreanLightningRestDocs : locale.startsWith('es') ? spanishRestDocs : locale.startsWith('fr') ? frenchLightningRestDocs : locale.startsWith('de') ? germanLightningRestDocs : locale.startsWith('it') ? italianLightningRestDocs : locale.startsWith('pt') ? portugueseLightningRestDocs : locale.startsWith('ru') ? russianLightningRestDocs : locale.startsWith('ja') ? japaneseLightningRestDocs : locale.startsWith('zh') ? chineseLightningRestDocs : locale.startsWith('tr') ? turkishLightningRestDocs : locale.startsWith('nl') ? dutchLightningRestDocs : null;
   if (!localized) return lightningRestDocs;
   return lightningRestDocs.map(item => {
     const translated = localized[item.fragment];

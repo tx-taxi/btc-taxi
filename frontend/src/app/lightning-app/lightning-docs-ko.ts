@@ -1,4 +1,16 @@
-/** Korean Lightning REST reference. Protocol names and URLs stay unchanged. */
+/** Korean Lightning FAQ headings and REST reference. */
+export const koreanLightningFaqTitles: Record<string, string> = {
+ 'lightning-explore':'무엇을 살펴볼 수 있나요?',
+ 'lightning-search':'노드나 채널을 어떻게 찾나요?',
+ 'lightning-capacity':'채널 용량은 무엇을 뜻하나요?',
+ 'lightning-fees':'라우팅 수수료는 무엇을 보여 주나요?',
+ 'lightning-payments':'라이트닝 결제를 볼 수 있나요?',
+ 'lightning-locations':'노드 위치는 어디에서 가져오나요?',
+ 'lightning-status':'채널 상태와 페널티는 무엇을 뜻하나요?',
+ 'lightning-freshness':'네트워크 통계는 얼마나 최신인가요?',
+ 'lightning-bitcoin':'개설 및 종료 트랜잭션이 비트코인으로 연결되는 이유는 무엇인가요?',
+};
+export const koreanLightningFaqCategories: Record<string, string> = { Search:'검색', Channels:'채널', Fees:'수수료', Payments:'결제', Maps:'지도', Statistics:'통계' };
 export const koreanLightningRestDocs: Record<string, [string, string]> = {
  'get-lightning-network-stats':['네트워크 통계','<p>채널 수, 노드 수, 총 용량, 수수료 평균과 중앙값 등 전체 네트워크 통계를 반환합니다.</p><p><code>:interval</code>에는 <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code>, <code>3y</code>를 지정할 수 있습니다.</p>'],
  'get-lightning-nodes-channels':['노드와 채널','<p><code>:query</code>와 일치하는 라이트닝 노드와 채널을 반환합니다. 노드 별칭과 공개 키, 전체 및 단축 채널 ID를 대소문자 구분 없이 검색합니다.</p>'],
