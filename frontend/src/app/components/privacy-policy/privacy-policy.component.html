@@ -465,7 +465,7 @@
 <ng-template #swedishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Integritetspolicy</h2><h6>Uppdaterad: 29 oktober 2026</h6><br><br><div class="text-start"><h4>Besöksmätning</h4><p>tx.taxi använder Cloudflare Web Analytics för att mäta sidvisningar och prestanda samt en daglig förstapartskaka som delas mellan utforskarna för att räkna varje webbläsare en gång per UTC-dag. Den dagliga besöksmätaren lagrar endast en daglig identifierare, utforskarens värdnamn och om interaktion skedde. Den lagrar inte söktext, blockkedjeadresser, transaktions-ID:n, URL:er till besökta sidor eller IP-adresser. Enskilda dagliga poster upphör efter 31 dagar; aggregerade antal behålls i 400 dagar. Do Not Track och Global Privacy Control stänger av denna förstapartsmätning. <a href="https://tx.taxi/privacy#audience-measurement">Detaljer och möjlighet att välja bort</a>.</p><br><h4>Använd en egen nod när integritet är viktig</h4><p>btc.tx.taxi visar offentliga Bitcoin-kedje- och mempooldata via den backend som operatören har konfigurerat. Använd en egen Bitcoin-nod och utforskare för oberoende verifiering och bästa nätverksintegritet.</p><br><h4>Begärandedata</h4><p>Vanliga webb- och API-förfrågningar kan avslöja standardiserade webbmetadata för operatören, inklusive din IP-adress, användaragent, begärd URL och tidpunkt. Serverloggar kan behållas för tillförlitlighet, förebyggande av missbruk och felsökning.</p><br><h4>Lokala inställningar</h4><p>Visningsinställningar såsom tema, enhet, fiatvaluta, språk och tidszon kan lagras i din webbläsare. btc.tx.taxi kräver inget konto för normal användning av utforskaren.</p><br><h4>Offentliga blockkedjedata</h4><p>Bitcoin-transaktioner, adresser, skript och block är offentliga. Ett uppslag av en adress eller transaktion kan kopplas till dina nätverksmetadata. Betrakta inte en offentlig utforskare som en integritetsgräns.</p><br><h4>Externa länkar</h4><p>Webbplatsen länkar till tx.taxis kontaktkanaler, Bitcoin-dokumentation, ursprunglig källkod och licensinformation. Externa tjänster har egna integritetspolicyer.</p><br><h4>Erkännande av öppen källkod</h4><p>btc.tx.taxi bygger på mempool/mempool och omfattas av dess AGPLv3-förpliktelser. Mempools namn, logotyper och varumärken tillhör respektive ägare; btc.tx.taxi är inte ansluten till eller godkänd av Mempool Holdings S.A. de C.V.</p><br></div></div><br><br></div></ng-template>
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Zásady ochrany soukromí</h2><h6>Aktualizováno: 29. října 2026</h6><br><br><div class="text-start"><h4>Měření návštěvnosti</h4><p>tx.taxi používá Cloudflare Web Analytics k měření zobrazení stránek a výkonu a denní cookie první strany sdílené mezi průzkumníky k započítání každého prohlížeče jednou za den UTC. Denní měření publika ukládá pouze denní identifikátor, název hostitele průzkumníka a informaci o interakci. Neukládá text vyhledávání, blockchainové adresy, ID transakcí, URL navštívených stránek ani IP adresy. Jednotlivé denní záznamy vyprší po 31 dnech; souhrnné počty se uchovávají 400 dní. Do Not Track a Global Privacy Control toto měření první strany vypínají. <a href="https://tx.taxi/privacy#audience-measurement">Podrobnosti a odmítnutí</a>.</p><br><h4>Pokud záleží na soukromí, použijte vlastní uzel</h4><p>btc.tx.taxi zobrazuje veřejná data řetězce a mempoolu Bitcoinu prostřednictvím backendu nastaveného provozovatelem. Pro nezávislé ověření a nejlepší síťové soukromí použijte vlastní uzel Bitcoin a průzkumník.</p><br><h4>Údaje o požadavcích</h4><p>Běžné požadavky webu a API mohou provozovateli odhalit standardní webová metadata, včetně vaší IP adresy, uživatelského agenta, požadované URL a času požadavku. Serverové záznamy mohou být uchovávány kvůli spolehlivosti, prevenci zneužití a ladění.</p><br><h4>Místní nastavení</h4><p>Předvolby zobrazení, jako jsou motiv, jednotka, fiat měna, jazyk a časové pásmo, mohou být uloženy ve vašem prohlížeči. btc.tx.taxi pro běžné používání průzkumníka nevyžaduje účet.</p><br><h4>Veřejná blockchainová data</h4><p>Transakce, adresy, skripty a bloky Bitcoinu jsou veřejné. Vyhledání adresy nebo transakce může toto vyhledávání spojit s vašimi síťovými metadaty. Veřejný průzkumník nepovažujte za hranici soukromí.</p><br><h4>Externí odkazy</h4><p>Web odkazuje na kontaktní kanály tx.taxi, dokumentaci Bitcoinu, zdrojový kód původního projektu a informace o licenci. Externí služby mají vlastní zásady ochrany soukromí.</p><br><h4>Uvedení otevřeného zdroje</h4><p>btc.tx.taxi vychází z mempool/mempool a přebírá jeho povinnosti AGPLv3. Názvy, loga a ochranné známky Mempool zůstávají majetkem příslušných vlastníků; btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí schválen.</p><br></div></div><br><br></div></ng-template>
-<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else englishLegal" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else danishOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #hindiLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -558,6 +558,58 @@
 
       <h4>Open Source Attribution</h4>
       <p>btc.tx.taxi is derived from mempool/mempool and inherits its AGPLv3 obligations. Mempool names, logos, and trademarks remain the property of their respective owners; btc.tx.taxi is not affiliated with or endorsed by Mempool Holdings S.A. de C.V.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #danishOrEnglish><ng-container *ngIf="da; else englishLegal" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
+<ng-template #danishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Privatlivspolitik</h2>
+    <h6>Opdateret: 29. oktober 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Publikumsmåling</h4>
+      <p>tx.taxi bruger Cloudflare Web Analytics til sidevisninger og ydeevne samt en daglig førstepartscookie, der deles mellem udforskerne, til at tælle browsere én gang pr. UTC-dag. Den daglige publikumstæller gemmer kun en daglig identifikator, udforskerens værtsnavn og om der har været interaktion. Den gemmer ikke søgetekst, blockchainadresser, transaktions-id’er, besøgte siders URL’er eller IP-adresser. Individuelle daglige poster udløber efter 31 dage; samlede tællinger gemmes i 400 dage. Do Not Track og Global Privacy Control deaktiverer denne førstepartsmåling. <a href="https://tx.taxi/privacy#audience-measurement">Detaljer og fravalg</a>.</p>
+      <h4>Brug din egen node, når privatliv er vigtigt</h4>
+      <p>btc.tx.taxi viser offentlige Bitcoin-kæde- og mempooldata via den backend, som webstedets operatør har konfigureret. Brug din egen Bitcoin-node og udforsker for uafhængig verifikation og den stærkeste netværksbeskyttelse.</p>
+
+      <br>
+
+      <h4>Anmodningsdata</h4>
+      <p>Almindelige anmodninger til webstedet og API’et kan afsløre almindelige webmetadata for operatøren, herunder din IP-adresse, brugeragent, den ønskede URL og tidspunktet for anmodningen. Serverlogfiler kan opbevares af hensyn til driftssikkerhed, forebyggelse af misbrug og fejlfinding.</p>
+
+      <br>
+
+      <h4>Lokale indstillinger</h4>
+      <p>Visningsindstillinger som tema, enhed, fiatvaluta, sprog og tidszone kan gemmes i din browser. btc.tx.taxi kræver ikke en konto til almindelig brug af udforskeren.</p>
+
+      <br>
+
+      <h4>Offentlige blockchaindata</h4>
+      <p>Bitcoin-transaktioner, adresser, scripts og blokke er offentlige. Et opslag af en adresse eller transaktion kan knytte opslaget til dine netværksmetadata. Betragt ikke en offentlig udforsker som en privatlivsgrænse.</p>
+
+      <br>
+
+      <h4>Eksterne links</h4>
+      <p>Webstedet linker til tx.taxis kontaktkanaler, Bitcoin-dokumentation, den oprindelige kildekode og licensoplysninger. Disse eksterne tjenester har deres egne privatlivspolitikker.</p>
+
+      <br>
+
+      <h4>Open source-kreditering</h4>
+      <p>btc.tx.taxi er afledt af mempool/mempool og er underlagt de tilhørende AGPLv3-forpligtelser. Mempools navne, logoer og varemærker tilhører deres respektive ejere; btc.tx.taxi er ikke tilknyttet eller godkendt af Mempool Holdings S.A. de C.V.</p>
 
       <br>
     </div>

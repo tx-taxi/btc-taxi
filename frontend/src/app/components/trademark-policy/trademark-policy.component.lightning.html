@@ -397,7 +397,7 @@
 <ng-template #swedishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Varumärken och erkännande</h2><h6>Uppdaterad: 3 oktober 2026</h6><br><br><div class="text-start"><h4>tx.taxis identitet</h4><p>lightning.btc.tx.taxi är en självständigt driven Lightning-utforskare i tx.taxi-familjen. Domänen, ordmärket, kedjefärgerna och tjänstens identitet skiljer denna fork från det ursprungliga projektet.</p><br><h4>Erkännande av ursprungligt projekt</h4><p>Programvaran bygger på Mempool Open Source Project. Ursprunglig källkod, visuellt system, projektnamn, logotyper och varumärken tillhör sina respektive ägare.</p><br><h4>Ingen anknytning</h4><p>lightning.btc.tx.taxi är inte ansluten till, sponsrad av eller godkänd av Mempool Holdings S.A. de C.V. Hänvisningar till mempool.space och mempool/mempool namnger programvaran som denna fork bygger på.</p><br><h4>Bitcoin</h4><p>Bitcoin är ett öppet nätverk och protokoll. Hänvisningar till Bitcoin, BTC, satoshi, Lightning, noder, kanaler och routningsregler beskriver nätverksdata som utforskaren visar.</p><br><h4>Licens</h4><p>Denna fork följer förpliktelserna i den ursprungliga AGPLv3-licensen. Kontakta operatören för relevant information om källkod och licens.</p><br></div></div><br><br></div></ng-template>
 <ng-template #czechOrEnglish><ng-container *ngIf="cs; else hindiOrEnglish" [ngTemplateOutlet]="czechLegal"></ng-container></ng-template>
 <ng-template #czechLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Ochranné známky a uvedení původu</h2><h6>Aktualizováno: 3. října 2026</h6><br><br><div class="text-start"><h4>Identita tx.taxi</h4><p>lightning.btc.tx.taxi je nezávisle provozovaný průzkumník Lightning z rodiny tx.taxi. Doména, slovní logo, barevná paleta řetězce a identita služby odlišují tento fork od původního projektu.</p><br><h4>Uvedení původního projektu</h4><p>Tento software vychází z Mempool Open Source Project. Zdrojový kód, vizuální systém, názvy projektu, loga a ochranné známky původního projektu patří příslušným vlastníkům.</p><br><h4>Bez spojení</h4><p>lightning.btc.tx.taxi není spojen s Mempool Holdings S.A. de C.V. ani jí sponzorován nebo schválen. Odkazy na mempool.space a mempool/mempool jmenovitě označují software, z něhož tento fork vychází.</p><br><h4>Bitcoin</h4><p>Bitcoin je otevřená síť a protokol. Odkazy na Bitcoin, BTC, satoshi, Lightning, uzly, kanály a pravidla směrování popisují síťová data zobrazená tímto průzkumníkem.</p><br><h4>Licence</h4><p>Tento fork dodržuje povinnosti licence AGPLv3 původního projektu. Pro příslušné informace o zdrojovém kódu a licenci kontaktujte provozovatele.</p><br></div></div><br><br></div></ng-template>
-<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else englishLegal" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
+<ng-template #hindiOrEnglish><ng-container *ngIf="hi; else danishOrEnglish" [ngTemplateOutlet]="hindiLegal"></ng-container></ng-template>
 <ng-template #hindiLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -476,6 +476,51 @@
 
       <h4>License</h4>
       <p>This fork follows the upstream AGPLv3 license obligations. Contact the operator for applicable source and license information.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #danishOrEnglish><ng-container *ngIf="da; else englishLegal" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
+<ng-template #danishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Varemærker og kreditering</h2>
+    <h6>Opdateret: 3. oktober 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxis identitet</h4>
+      <p>lightning.btc.tx.taxi er en uafhængigt drevet Lightning-udforsker i tx.taxi-familien. Dens domæne, ordmærke, kædefarver og tjenesteidentitet adskiller denne fork fra det oprindelige projekt.</p>
+
+      <br>
+
+      <h4>Kreditering af det oprindelige projekt</h4>
+      <p>Denne software er afledt af Mempool Open Source Project. Den oprindelige kildekode, det visuelle system, projektnavne, logoer og varemærker tilhører deres respektive ejere.</p>
+
+      <br>
+
+      <h4>Ingen tilknytning</h4>
+      <p>lightning.btc.tx.taxi er ikke tilknyttet, sponsoreret af eller godkendt af Mempool Holdings S.A. de C.V. Henvisninger til mempool.space og mempool/mempool er navngivende kreditering af den software, denne fork er afledt af.</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin er et åbent netværk og en åben protokol. Henvisninger til Bitcoin, BTC, satoshier, Lightning, noder, kanaler og routingpolitikker beskriver de netværksdata, udforskeren viser.</p>
+
+      <br>
+
+      <h4>Licens</h4>
+      <p>Denne fork overholder det oprindelige projekts AGPLv3-licensforpligtelser. Kontakt operatøren for relevante oplysninger om kildekode og licens.</p>
 
       <br>
     </div>
