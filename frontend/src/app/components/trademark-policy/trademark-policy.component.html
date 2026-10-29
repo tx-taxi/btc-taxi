@@ -854,7 +854,8 @@
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
-<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -980,6 +981,50 @@
 
       <h4>ლიცენზია</h4>
       <p>ეს განშტოება იცავს საწყისი პროექტის AGPLv3 ლიცენზიის ვალდებულებებს. მოქმედი საწყისი კოდისა და ლიცენზიის შესახებ ინფორმაციისთვის დაუკავშირდით ოპერატორს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #nepaliLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>व्यापार चिह्न र श्रेय</h2>
+    <h6>अद्यावधिक: २० सेप्टेम्बर २०२६</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>tx.taxi को पहिचान</h4>
+      <p>btc.tx.taxi tx.taxi परिवारको स्वतन्त्र रूपमा सञ्चालित Bitcoin एक्सप्लोरर हो। यसको डोमेन, शब्दचिह्न, चेनको रङ संयोजन र सेवाको पहिचानले यस शाखालाई मूल परियोजनाबाट छुट्याउँछन्।</p>
+
+      <br>
+
+      <h4>मूल परियोजनाको श्रेय</h4>
+      <p>यो सफ्टवेयर Mempool Open Source Project बाट विकसित गरिएको हो। मूल स्रोत कोड, दृश्य प्रणाली, परियोजनाका नाम, लोगो र व्यापार चिह्न सम्बन्धित मालिकहरूकै सम्पत्ति हुन्।</p>
+
+      <br>
+
+      <h4>कुनै आबद्धता छैन</h4>
+      <p>btc.tx.taxi Mempool Holdings S.A. de C.V. सँग आबद्ध छैन र त्यसबाट प्रायोजित वा समर्थित छैन। mempool.space र mempool/mempool को उल्लेख यस शाखाको आधार बनेको सफ्टवेयरलाई नामद्वारा श्रेय दिनका लागि हो।</p>
+
+      <br>
+
+      <h4>Bitcoin</h4>
+      <p>Bitcoin खुला नेटवर्क र प्रोटोकल हो। Bitcoin, BTC, सतोशी, ब्लक, कारोबार, ठेगाना, माइनिङ र Lightning को उल्लेखले यस एक्सप्लोररमा प्रस्तुत नेटवर्क डेटाको वर्णन गर्छ।</p>
+
+      <br>
+
+      <h4>इजाजतपत्र</h4>
+      <p>यस शाखाले मूल परियोजनाको AGPLv3 इजाजतपत्रका दायित्वहरू पालना गर्छ। लागू हुने स्रोत र इजाजतपत्रको जानकारीका लागि सञ्चालकलाई सम्पर्क गर्नुहोस्।</p>
 
       <br>
     </div>

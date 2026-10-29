@@ -947,7 +947,8 @@
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
-<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1089,6 +1090,55 @@
 
       <h4>ღია კოდი</h4>
       <p>btc.tx.taxi მომდინარეობს Mempool-ის ღია კოდის პროექტიდან და ვრცელდება AGPLv3 ვალდებულებების შესაბამისად. მოქმედი საწყისი კოდისა და ლიცენზიის შესახებ ინფორმაციისთვის დაუკავშირდით <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a>-ს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #nepaliLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>सेवाका सर्तहरू</h2>
+    <h6>अद्यावधिक: २० सेप्टेम्बर २०२६</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>सूचनामूलक एक्सप्लोरर</h4>
+      <p>btc.tx.taxi ले सार्वजनिक Bitcoin ब्लक, कारोबार, ठेगाना, माइनिङ डेटा, शुल्क अनुमान र मेमपुलको अवस्था देखाउँछ। यो सूचनामूलक सेवा हो; वालेट, एक्सचेन्ज, सम्पत्ति संरक्षक, भुक्तानी प्रशोधक वा कारोबार प्राथमिकता दिने सेवा होइन।</p>
+
+      <br>
+
+      <h4>Bitcoin कारोबारमा नियन्त्रण छैन</h4>
+      <p>सञ्चालकले Bitcoin कारोबार उल्ट्याउन, रद्द गर्न, छिटो गराउन, फिर्ता प्राप्त गर्न वा अन्यत्र पठाउन सक्दैन। वालेट, एक्सचेन्ज वा भुक्तानीसम्बन्धी समस्याका लागि कारोबार सिर्जना गर्ने वा प्राप्त गर्ने सेवालाई सम्पर्क गर्नुहोस्।</p>
+
+      <br>
+
+      <h4>डेटा र उपलब्धता</h4>
+      <p>एक्सप्लोररको डेटा ढिलो, अपूर्ण, अनुपलब्ध वा अर्को नोडले देखाएको भन्दा फरक हुन सक्छ। शुल्क अनुमान केवल अनुमान हुन् र तिनले पुष्टिको ग्यारेन्टी गर्दैनन्। सेवा जे अवस्थामा छ त्यही अवस्थामा प्रदान गरिन्छ; निरन्तर उपलब्धता वा कुनै खास उद्देश्यका लागि उपयुक्तताको प्रतिज्ञा गरिँदैन।</p>
+
+      <br>
+
+      <h4>स्वीकार्य प्रयोग</h4>
+      <p>वेबसाइट वा API को दुरुपयोग नगर्नुहोस्, सेवाको सञ्चालनमा बाधा नपुर्‍याउनुहोस्, उचित दर सीमाहरू नछल्नुहोस् र सेवा गैरकानुनी रूपमा प्रयोग नगर्नुहोस्। उपलब्धता जोगाउन आवश्यक भएमा पहुँच सीमित गर्न सकिन्छ।</p>
+
+      <br>
+
+      <h4>बाह्य सेवाहरू</h4>
+      <p>यस साइटमा tx.taxi का सम्पर्क माध्यम, Bitcoin सन्दर्भ, इजाजतसम्बन्धी जानकारी र पूर्वाधारमा निर्भर सेवाका लिङ्क हुन सक्छन्। बाह्य वेबसाइटका आफ्नै सर्त र नीतिहरू छन्।</p>
+
+      <br>
+
+      <h4>खुला स्रोत</h4>
+      <p>btc.tx.taxi Mempool Open Source Project बाट विकसित गरिएको हो र AGPLv3 दायित्वहरू अन्तर्गत वितरण गरिन्छ। लागू हुने स्रोत र इजाजतपत्रको जानकारीका लागि <a href="https://t.me/hiss" target="_blank" rel="noopener noreferrer">t.me/hiss</a> मा सम्पर्क गर्नुहोस्।</p>
 
       <br>
     </div>

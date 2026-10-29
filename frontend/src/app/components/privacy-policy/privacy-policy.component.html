@@ -995,7 +995,8 @@
 <ng-template #hungarianOrEnglish><ng-container *ngIf="hu; else thaiOrEnglish" [ngTemplateOutlet]="hungarianLegal"></ng-container></ng-template>
 <ng-template #thaiOrEnglish><ng-container *ngIf="th; else vietnameseOrEnglish" [ngTemplateOutlet]="thaiLegal"></ng-container></ng-template>
 <ng-template #vietnameseOrEnglish><ng-container *ngIf="vi; else georgianOrEnglish" [ngTemplateOutlet]="vietnameseLegal"></ng-container></ng-template>
-<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else englishLegal" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #georgianOrEnglish><ng-container *ngIf="ka; else nepaliOrEnglish" [ngTemplateOutlet]="georgianLegal"></ng-container></ng-template>
+<ng-template #nepaliOrEnglish><ng-container *ngIf="ne; else englishLegal" [ngTemplateOutlet]="nepaliLegal"></ng-container></ng-template>
 <ng-template #hungarianLegal>
 <div class="container-xl">
   <div class="text-center">
@@ -1147,6 +1148,57 @@
 
       <h4>ღია კოდის წყაროს მითითება</h4>
       <p>btc.tx.taxi მომდინარეობს mempool/mempool-იდან და მის AGPLv3 ვალდებულებებს მემკვიდრეობით იღებს. Mempool-ის სახელები, ლოგოები და სავაჭრო ნიშნები შესაბამისი მფლობელების საკუთრებად რჩება; btc.tx.taxi არ არის დაკავშირებული Mempool Holdings S.A. de C.V.-თან და არც მისი მხარდაჭერით მოქმედებს.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
+
+<ng-template #nepaliLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>गोपनीयता नीति</h2>
+    <h6>अद्यावधिक: २९ अक्टोबर २०२६</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>दर्शक मापन</h4>
+      <p>tx.taxi ले पृष्ठ हेराइ र कार्यसम्पादन मापन गर्न Cloudflare Web Analytics प्रयोग गर्छ। यसका एक्सप्लोररहरूमा साझा हुने प्रथम-पक्ष दैनिक कुकीले प्रत्येक ब्राउजरलाई UTC दिनमा एक पटक गणना गर्छ। दैनिक दर्शक सङ्कलन प्रणालीले दैनिक पहिचानकर्ता, एक्सप्लोररको होस्टनाम र अन्तरक्रिया भए वा नभएको मात्र भण्डारण गर्छ। यसले खोज पाठ, ब्लकचेन ठेगाना, कारोबार ID, हेरिएका पृष्ठका URL वा IP ठेगाना भण्डारण गर्दैन। व्यक्तिगत दैनिक अभिलेख ३१ दिनपछि म्याद सकिन्छन्; समग्र गणना ४०० दिनसम्म राखिन्छ। Do Not Track र Global Privacy Control ले यो प्रथम-पक्ष मापन बन्द गर्छन्। <a href="https://tx.taxi/privacy#audience-measurement">विवरण र मापनबाट अलग हुने विकल्प</a>।</p>
+      <h4>गोपनीयता महत्त्वपूर्ण हुँदा आफ्नै नोड प्रयोग गर्नुहोस्</h4>
+      <p>btc.tx.taxi ले साइट सञ्चालकले कन्फिगर गरेको ब्याकएन्डमार्फत सार्वजनिक Bitcoin चेन र मेमपुल डेटा देखाउँछ। स्वतन्त्र प्रमाणीकरण र सबैभन्दा बलियो नेटवर्क गोपनीयताका लागि आफ्नै Bitcoin नोड र एक्सप्लोरर प्रयोग गर्नुहोस्।</p>
+
+      <br>
+
+      <h4>अनुरोधका डेटा</h4>
+      <p>सामान्य वेबसाइट र API अनुरोधले सञ्चालकलाई तपाईंको IP ठेगाना, प्रयोगकर्ता एजेन्ट, अनुरोध गरिएको URL र अनुरोधको समय लगायत सामान्य वेब मेटाडेटा देखाउन सक्छन्। विश्वसनीयता कायम राख्न, दुरुपयोग रोक्न र त्रुटि पत्ता लगाउन सर्भर लग राखिन सक्छन्।</p>
+
+      <br>
+
+      <h4>स्थानीय प्राथमिकताहरू</h4>
+      <p>थिम, एकाइ, फियाट मुद्रा, भाषा र समय क्षेत्र जस्ता प्रदर्शन प्राथमिकताहरू तपाईंको ब्राउजरमा भण्डारण हुन सक्छन्। btc.tx.taxi को सामान्य एक्सप्लोरर प्रयोगका लागि खाता आवश्यक पर्दैन।</p>
+
+      <br>
+
+      <h4>सार्वजनिक ब्लकचेन डेटा</h4>
+      <p>Bitcoin कारोबार, ठेगाना, स्क्रिप्ट र ब्लक सार्वजनिक छन्। कुनै ठेगाना वा कारोबार खोज्दा त्यो खोज तपाईंको नेटवर्क मेटाडेटासँग जोडिन सक्छ। सार्वजनिक एक्सप्लोररलाई गोपनीयताको सुरक्षात्मक सीमा नठान्नुहोस्।</p>
+
+      <br>
+
+      <h4>बाह्य लिङ्कहरू</h4>
+      <p>यस साइटमा tx.taxi का सम्पर्क माध्यम, Bitcoin कागजात, मूल परियोजनाको स्रोत कोड र इजाजतसम्बन्धी जानकारीका लिङ्क छन्। ती बाह्य सेवाका आफ्नै गोपनीयता नीतिहरू छन्।</p>
+
+      <br>
+
+      <h4>खुला स्रोतको श्रेय</h4>
+      <p>btc.tx.taxi mempool/mempool बाट विकसित गरिएको हो र यसले त्यसका AGPLv3 दायित्वहरू बहन गर्छ। Mempool का नाम, लोगो र व्यापार चिह्न सम्बन्धित मालिकहरूकै सम्पत्ति हुन्; btc.tx.taxi Mempool Holdings S.A. de C.V. सँग आबद्ध छैन र त्यसबाट समर्थित पनि छैन।</p>
 
       <br>
     </div>
