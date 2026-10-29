@@ -893,7 +893,7 @@
       </trans-unit>
       <trans-unit id="f6a46cd5ca2087712a145f2c680e2aad5f926eaf" datatype="html">
         <source>Confirmation expected</source>
-        <target>จะได้รับการยืนยันภายใน</target>
+        <target>คาดว่าจะได้รับการยืนยันภายใน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/accelerate-checkout/accelerate-checkout.component.html</context>
           <context context-type="linenumber">295</context>
@@ -7205,7 +7205,7 @@
       </trans-unit>
       <trans-unit id="dc15ec15e6206b40133f2c1b06095ce75aaee1ef" datatype="html">
         <source>Transaction vBytes per second (vB/s)</source>
-        <target>ธุรกรรมต่อวินาที (vB/s)</target>
+        <target>จำนวนไบต์เสมือนของธุรกรรมต่อวินาที (vB/s)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.html</context>
           <context context-type="linenumber">110</context>
