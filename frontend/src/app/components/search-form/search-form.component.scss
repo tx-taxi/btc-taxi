@@ -425,3 +425,12 @@ input:focus {
 :host-context(.rtl-layout) input[dir="auto"]:placeholder-shown { text-align: right; }
 
 :host-context(.rtl-layout) .search-chain-group-label { letter-spacing: normal; text-transform: none; }
+
+/* In RTL the selector sits on the right: keep its menu within the viewport. */
+:host-context(.rtl-layout) .search-chain-selector .search-chain-menu {
+  top: 100% !important;
+  left: auto !important;
+  right: 0 !important;
+  transform: none !important;
+  width: min(270px, calc(100vw - 24px)) !important;
+}

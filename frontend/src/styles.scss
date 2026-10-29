@@ -1676,3 +1676,24 @@ form label:not(.form-check-label):not(.btn) {
 :root { --data-hover-start: var(--primary); --data-hover-end: var(--info); }
 
 :root { --fee-label-color: #08090b; }
+
+/* Arabic-script text needs a shaping-capable font even when the system fallback lacks one. */
+@font-face {
+  font-family: 'tx.taxi Arabic';
+  src: url('/resources/fonts/noto-sans-arabic/NotoSansArabic-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+10E60-10E7F, U+1EE00-1EEFF;
+}
+@font-face {
+  font-family: 'tx.taxi Arabic';
+  src: url('/resources/fonts/noto-sans-arabic/NotoSansArabic-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+10E60-10E7F, U+1EE00-1EEFF;
+}
+html[lang|='ar'] body, html[lang|='fa'] body {
+  font-family: 'tx.taxi Arabic', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
