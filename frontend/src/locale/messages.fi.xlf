@@ -11811,6 +11811,20 @@
       <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>LBTC:n määrä ja BTC-varannot</target></trans-unit>
       <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html"><source>parent</source><target>edeltäjä</target></trans-unit>
       <trans-unit id="taxi.mining-pool.logo" datatype="html"><source>Logo of <x id="pool" /> mining pool</source><target>Louhintapoolin <x id="pool" /> logo</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF käytössä</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF pois käytöstä</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>Versio 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>Versio 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>Versio 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Epästandardi</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Paljas moniallekirjoitus</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Lapsi maksaa</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Maksaa edeltäjän puolesta</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Korvaava transaktio</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Näennäinen julkinen avain</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>Näennäinen skriptitiiviste</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Annex-lisätieto</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>Transaktiosuodattimet</target></trans-unit>
     </body>
   </file>
 </xliff>
