@@ -11780,6 +11780,20 @@
       <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>La commissione di base media applicata dai nodi di instradamento, escludendo quelle superiori a 5.000 mSat</target></trans-unit>
       <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>La commissione di base mediana applicata dai nodi di instradamento, escludendo quelle superiori a 5.000 mSat</target></trans-unit>
       <trans-unit id="taxi.filter.inscription" datatype="html"><source>Inscription</source><target>Iscrizione</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF abilitato</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF disabilitato</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>Versione 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>Versione 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>Versione 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Non standard</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Multifirma diretta</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Pagata da una transazione figlia</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Paga la transazione genitore</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Sostituzione</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Chiave pubblica falsa</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>Hash di script falso</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Allegato</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>Filtri delle transazioni</target></trans-unit>
     </body>
   </file>
 </xliff>

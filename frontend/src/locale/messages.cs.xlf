@@ -11899,6 +11899,20 @@
       <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Průměrný základní poplatek směrovacích uzlů bez poplatků nad 5000 mSats</target></trans-unit>
       <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Medián základních poplatků směrovacích uzlů bez poplatků nad 5000 mSats</target></trans-unit>
       <trans-unit id="taxi.filter.inscription" datatype="html"><source>Inscription</source><target>Inskripce</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF zapnuto</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF vypnuto</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>Verze 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>Verze 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>Verze 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Nestandardní</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Nezabalený multisig</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Zaplaceno potomkem</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Platí za předka</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Nahrazení</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Falešný veřejný klíč</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>Falešný hash skriptu</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Data annex</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>Filtry transakcí</target></trans-unit>
     </body>
   </file>
 </xliff>
