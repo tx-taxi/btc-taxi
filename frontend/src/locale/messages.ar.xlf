@@ -12353,6 +12353,70 @@
         <source>by</source>
         <target>بواسطة</target>
       </trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html">
+        <source>Logo of <x id="INTERPOLATION" /> mining pool</source>
+        <target>شعار مجمع التعدين <x id="INTERPOLATION" /></target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source>
+        <target>يجب أن تكون أوراق Taproot بالصيغة &quot;&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;&quot; مع الفصل بينها بفواصل</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>حدث خطأ أثناء معالجة بيانات Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>معاملة PSBT تتضمن هذا العنوان ومُرمَّزة بصيغة hex أو base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>حقول PSBT_IN_TAP_LEAF_SCRIPT مُرمَّزة بصيغة hex أو base64 ومفصولة بفواصل (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>حقل PSBT_OUT_TAP_TREE مُرمَّز بصيغة hex أو base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>مفتاح عام بإحداثي x فقط، مُرمَّز بصيغة hex أو base64</target>
+      </trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>أوراق Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>شجرة Taproot</target>
+      </trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>المفتاح الداخلي</target>
+      </trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source>
+        <target>انضم إلى قناة tx.taxi على تلغرام</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>بعض المخرجات السابقة غير موجودة أو أُنفقت بالفعل</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>تعذّر بث المعاملة، السبب: </target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>جارٍ تحميل المخرجات السابقة للمعاملة</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>جارٍ تحميل بيانات CPFP</target>
+      </trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>جارٍ التحميل</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
