@@ -620,21 +620,24 @@
 </ng-template>
 
 <ng-template type="who-runs-this-website">
-  <ng-container *ngIf="locale.startsWith('pt'); else pt_untranslated_who_runs_this_website">O btc.tx.taxi é uma bifurcação de funcionamento independente do The Mempool Open Source Project. Consulte a <a [routerLink]="['/about']">página Sobre</a> para informações sobre código-fonte, licenças, infraestrutura e contacto.</ng-container>
+  <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_who_runs_this_website">O btc.tx.taxi é uma bifurcação de funcionamento independente do The Mempool Open Source Project. Consulte a <a [routerLink]="['/about']">página Sobre</a> para informações sobre código-fonte, licenças, infraestrutura e contacto.</ng-container>
+  <ng-template #ru_pt_untranslated_who_runs_this_website><ng-container *ngIf="locale.startsWith('ru'); else pt_untranslated_who_runs_this_website">btc.tx.taxi — независимо управляемый форк проекта Mempool Open Source. Сведения об исходном коде, лицензии, инфраструктуре и контактах доступны на <a [routerLink]="['/about']">странице «О проекте»</a>.</ng-container></ng-template>
   <ng-template #pt_untranslated_who_runs_this_website>
   btc.tx.taxi is an independently operated fork of The Mempool Open Source Project. See the <a [routerLink]="['/about']">About page</a> for source, license, infrastructure, and contact details.
 </ng-template>
 </ng-template>
 
 <ng-template type="host-my-own-instance-raspberry-pi">
-  <ng-container *ngIf="locale.startsWith('pt'); else pt_untranslated_host_my_own_instance_raspberry_pi">É suportada a instalação com um clique em várias distribuições de nós completos Raspberry Pi, incluindo Umbrel, RaspiBlitz, MyNode, RoninDojo e StartOS.</ng-container>
+  <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_host_my_own_instance_raspberry_pi">É suportada a instalação com um clique em várias distribuições de nós completos Raspberry Pi, incluindo Umbrel, RaspiBlitz, MyNode, RoninDojo e StartOS.</ng-container>
+  <ng-template #ru_pt_untranslated_host_my_own_instance_raspberry_pi><ng-container *ngIf="locale.startsWith('ru'); else pt_untranslated_host_my_own_instance_raspberry_pi">Установка в один клик поддерживается несколькими дистрибутивами полного узла для Raspberry Pi, включая Umbrel, RaspiBlitz, MyNode, RoninDojo и StartOS.</ng-container></ng-template>
   <ng-template #pt_untranslated_host_my_own_instance_raspberry_pi>
   We support one-click installation on a number of Raspberry Pi full-node distros including Umbrel, RaspiBlitz, MyNode, RoninDojo, and StartOS.
 </ng-template>
 </ng-template>
 
 <ng-template type="host-my-own-instance-server">
-  <ng-container *ngIf="locale.startsWith('pt'); else pt_untranslated_host_my_own_instance_server"><p>Pode instalar o Mempool manualmente no seu próprio servidor, mas isso requer conhecimentos avançados de administração de sistemas, pois terá de configurar tudo manualmente. O projeto original também disponibiliza <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">documentação para instalação com Docker</a>.</p><p>Para obter ajuda, consulte a documentação e os recursos da comunidade indicados no repositório do projeto.</p><p>Para utilizadores comuns, recomendamos vivamente um dos <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">métodos de instalação com um clique</a>.</p></ng-container>
+  <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_host_my_own_instance_server"><p>Pode instalar o Mempool manualmente no seu próprio servidor, mas isso requer conhecimentos avançados de administração de sistemas, pois terá de configurar tudo manualmente. O projeto original também disponibiliza <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">documentação para instalação com Docker</a>.</p><p>Para obter ajuda, consulte a documentação e os recursos da comunidade indicados no repositório do projeto.</p><p>Para utilizadores comuns, recomendamos vivamente um dos <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">métodos de instalação com um clique</a>.</p></ng-container>
+  <ng-template #ru_pt_untranslated_host_my_own_instance_server><ng-container *ngIf="locale.startsWith('ru'); else pt_untranslated_host_my_own_instance_server"><p>Вы можете установить Mempool на собственном сервере вручную, но это требует опыта системного администрирования, поскольку всё придётся настраивать самостоятельно. В исходном проекте также есть <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">документация по развёртыванию Docker</a>.</p><p>За помощью обратитесь к документации и ресурсам сообщества, указанным в репозитории проекта.</p><p>Обычным пользователям рекомендуем один из <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">способов установки в один клик</a>.</p></ng-container></ng-template>
   <ng-template #pt_untranslated_host_my_own_instance_server>
   <p>You can manually install Mempool on your own server, but this requires advanced sysadmin skills since you will be manually configuring everything. The upstream project also provides <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank" rel="noopener noreferrer">Docker deployment documentation</a>.</p><p>For installation support, consult the upstream documentation and community resources linked from the project repository.</p>
   <p>For casual users, we strongly suggest installing Mempool using one of the <a href="https://github.com/mempool/mempool#one-click-installation" target="_blank">1-click install methods</a>.</p>
@@ -642,7 +645,8 @@
 </ng-template>
 
 <ng-template type="install-mempool-with-docker">
-  <ng-container *ngIf="locale.startsWith('pt'); else pt_untranslated_install_mempool_with_docker">Sim, são publicadas imagens Docker (também pode criar as suas). Consulte a <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">documentação</a> para mais detalhes.</ng-container>
+  <ng-container *ngIf="locale.startsWith('pt'); else ru_pt_untranslated_install_mempool_with_docker">Sim, são publicadas imagens Docker (também pode criar as suas). Consulte a <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">documentação</a> para mais detalhes.</ng-container>
+  <ng-template #ru_pt_untranslated_install_mempool_with_docker><ng-container *ngIf="locale.startsWith('ru'); else pt_untranslated_install_mempool_with_docker">Да, публикуются образы Docker; вы также можете собрать свой. Подробности — в <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">документации</a>.</ng-container></ng-template>
   <ng-template #pt_untranslated_install_mempool_with_docker>
   Yes, we publish Docker images (or you can build your own). Check out <a href="https://github.com/mempool/mempool/tree/master/docker" target="_blank">the documentation</a> for details.
 </ng-template>
