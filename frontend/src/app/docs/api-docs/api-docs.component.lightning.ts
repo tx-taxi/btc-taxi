@@ -22,6 +22,7 @@ export class ApiDocsComponent implements OnInit, AfterViewInit {
   get ru(): boolean { return this.locale.startsWith('ru'); }
   get fi(): boolean { return this.locale.startsWith('fi'); }
   get sl(): boolean { return this.locale.startsWith('sl'); }
+  get hu(): boolean { return this.locale.startsWith('hu'); }
   get ro(): boolean { return this.locale.startsWith('ro'); }
   get lt(): boolean { return this.locale.startsWith('lt'); }
   get he(): boolean { return this.locale.startsWith('he'); }
