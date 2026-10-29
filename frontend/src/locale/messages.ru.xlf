@@ -2342,7 +2342,7 @@
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.address" datatype="html">
         <source>See mempool transactions, confirmed transactions, balance, and more for <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> address <x id="INTERPOLATION" equiv-text="this.addressString" />.</source>
-        <target>Посмотрите ожидающие и подтверждённые транзакции, баланс и другие данные для адреса <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'"/><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)"/> <x id="INTERPOLATION" equiv-text="this.addressString"/>.</target>
+        <target>Посмотрите ожидающие и подтверждённые транзакции, баланс и другие данные для адреса <x id="PH" equiv-text="this.stateService.network==='liquid'||this.stateService.network==='liquidtestnet'?'Liquid':'Bitcoin'" /><x id="PH_1" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> <x id="INTERPOLATION" equiv-text="this.addressString" />.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/address/address-preview.component.ts</context>
           <context context-type="linenumber">75</context>
@@ -12217,6 +12217,912 @@
           <context context-type="linenumber">9</context>
         </context-group>
         <note priority="1" from="description">accelerator.low-balance</note>
+      </trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html">
+        <source>Bitcoin explorer dashboard</source>
+        <target state="needs-review-translation">Главная страница обозревателя Bitcoin</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target state="needs-review-translation">Показать размеры блоков</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target state="needs-review-translation">Показать общую комиссию в каждом блоке</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target state="needs-review-translation">Показывать новые блоки справа</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target state="needs-review-translation">Показывать новые блоки слева</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/blockchain/blockchain.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html">
+        <source>Copy</source>
+        <target state="needs-review-translation">Копировать</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html">
+        <source>Copied</source>
+        <target state="needs-review-translation">Скопировано</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html">
+        <source>Copy to clipboard</source>
+        <target state="needs-review-translation">Скопировать в буфер обмена</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html">
+        <source>Copied to clipboard</source>
+        <target state="needs-review-translation">Скопировано в буфер обмена</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/clipboard/clipboard.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html">
+        <source>btc.tx.taxi Bitcoin explorer</source>
+        <target state="needs-review-translation">btc.tx.taxi — обозреватель Bitcoin</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/privacy-policy/privacy-policy.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/terms-of-service/terms-of-service.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/trademark-policy/trademark-policy.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html">
+        <source>No Lightning node or channel found.</source>
+        <target state="needs-review-translation">Узел или канал Lightning не найден.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">553</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">557</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html">
+        <source>Search unavailable. Try again.</source>
+        <target state="needs-review-translation">Поиск недоступен. Попробуйте ещё раз.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/search-form/search-form.component.lightning.ts</context>
+          <context context-type="linenumber">557</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target state="needs-review-translation">В любой точке Земли (AoE)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target state="needs-review-translation">Самоа (SST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target state="needs-review-translation">Гавайи (HST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target state="needs-review-translation">Аляска (AKST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target state="needs-review-translation">Тихоокеанское время (PST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target state="needs-review-translation">Горное время (MST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target state="needs-review-translation">Центральное время (CST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target state="needs-review-translation">Восточное время (EST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target state="needs-review-translation">Атлантическое время (AST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target state="needs-review-translation">Аргентина (ART)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target state="needs-review-translation">Фернанду-ди-Норонья (FNT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target state="needs-review-translation">Азорские острова (AZOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target state="needs-review-translation">Среднее время по Гринвичу (GMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target state="needs-review-translation">Центральноевропейское время (CET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target state="needs-review-translation">Восточноевропейское время (EET)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target state="needs-review-translation">Москва (MSK)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target state="needs-review-translation">Армения (AMT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target state="needs-review-translation">Пакистан (PKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target state="needs-review-translation">Синьцзян (XJT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target state="needs-review-translation">Индокитай (ICT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target state="needs-review-translation">Гонконг (HKT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target state="needs-review-translation">Япония (JST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target state="needs-review-translation">Восточная Австралия (AEST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target state="needs-review-translation">Норфолк (NFT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target state="needs-review-translation">Новая Зеландия (NZST)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target state="needs-review-translation">Тонга (TOT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target state="needs-review-translation">Острова Лайн (LINT)</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/timezone-selector/timezone-selector.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html">
+        <source>The Lightning network, in view.</source>
+        <target state="needs-review-translation">Сеть Lightning перед вами.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html">
+        <source>Explore Lightning</source>
+        <target state="needs-review-translation">Изучить Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">Документация</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html">
+        <source>Source code</source>
+        <target state="needs-review-translation">Исходный код</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html">
+        <source>Status</source>
+        <target state="needs-review-translation">Статус</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html">
+        <source>Nodes, channels, and the network between them</source>
+        <target state="needs-review-translation">Узлы, каналы и сеть между ними</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html">
+        <source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source>
+        <target state="needs-review-translation">Изучайте публичные узлы и каналы Lightning, правила маршрутизации, ёмкость сети, географическое распределение и историческую статистику. Просматривайте соединения узла или открытие и закрытие канала.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html">
+        <source>Part of tx.taxi</source>
+        <target state="needs-review-translation">Часть tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html">
+        <source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source>
+        <target state="needs-review-translation">Используйте тот же поиск, чтобы найти узел или канал Lightning, сменить обозреватель или направить транзакцию в соответствующую сеть. Обозреватель Bitcoin находится на</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html">
+        <source>A public network view</source>
+        <target state="needs-review-translation">Публичный обзор сети</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html">
+        <source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source>
+        <target state="needs-review-translation">Платежи Lightning и приватные каналы не видны публично. Ёмкость показывает количество биткоинов, выделенных публичному каналу; доступный баланс каждой стороны она не раскрывает. Местоположения узлов соответствуют объявленным сетевым адресам.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html">
+        <source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source>
+        <target state="needs-review-translation">Статистика показывает дату исходного снимка. Кешированные данные остаются доступными во время перебоев.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html">
+        <source>Open source</source>
+        <target state="needs-review-translation">Открытый исходный код</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html">
+        <source>Built on the</source>
+        <target state="needs-review-translation">Создано на основе</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html">
+        <source>Mempool project</source>
+        <target state="needs-review-translation">проекта Mempool</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html">
+        <source>released under the GNU AGPLv3. Made with 🚕 by</source>
+        <target state="needs-review-translation">распространяется под GNU AGPLv3. Сделано с 🚕 командой</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/about.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html">
+        <source>No channel found.</source>
+        <target state="needs-review-translation">Канал не найден.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html">
+        <source>Lightning data unavailable.</source>
+        <target state="needs-review-translation">Данные Lightning недоступны.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html">
+        <source>Retry</source>
+        <target state="needs-review-translation">Повторить</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/channel.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html">
+        <source>tx.taxi Lightning explorer</source>
+        <target state="needs-review-translation">tx.taxi — обозреватель Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html">
+        <source>Lightning nodes, channels, and network activity</source>
+        <target state="needs-review-translation">Узлы, каналы и активность сети Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html">
+        <source>Explore</source>
+        <target state="needs-review-translation">Обзор</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html">
+        <source>Lightning Dashboard</source>
+        <target state="needs-review-translation">Главная Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html">
+        <source>Node Rankings</source>
+        <target state="needs-review-translation">Рейтинг узлов</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html">
+        <source>Node Map</source>
+        <target state="needs-review-translation">Карта узлов</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html">
+        <source>Channels Map</source>
+        <target state="needs-review-translation">Карта каналов</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html">
+        <source>Penalties</source>
+        <target state="needs-review-translation">Штрафы</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html">
+        <source>Network &amp; Docs</source>
+        <target state="needs-review-translation">Сеть и документация</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html">
+        <source>Network History</source>
+        <target state="needs-review-translation">История сети</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html">
+        <source>Countries</source>
+        <target state="needs-review-translation">Страны</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html">
+        <source>ISPs</source>
+        <target state="needs-review-translation">Интернет-провайдеры</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html">
+        <source>Lightning FAQ</source>
+        <target state="needs-review-translation">Вопросы и ответы о Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html">
+        <source>API Documentation</source>
+        <target state="needs-review-translation">Документация API</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html">
+        <source>About</source>
+        <target state="needs-review-translation">О проекте</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html">
+        <source>Source code</source>
+        <target state="needs-review-translation">Исходный код</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html">
+        <source>Status</source>
+        <target state="needs-review-translation">Статус</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source>
+        <target state="needs-review-translation">Присоединиться к Telegram-каналу tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html">
+        <source>Contact Us</source>
+        <target state="needs-review-translation">Связаться с нами</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target state="needs-review-translation">Распространяется по лицензии AGPLv3</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html">
+        <source>Legal</source>
+        <target state="needs-review-translation">Правовая информация</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html">
+        <source>Terms of Service</source>
+        <target state="needs-review-translation">Условия использования</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="needs-review-translation">Политика конфиденциальности</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target state="needs-review-translation">Товарные знаки и авторство</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html">
+        <source>Third-party Licenses</source>
+        <target state="needs-review-translation">Лицензии сторонних компонентов</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html">
+        <source>Made with</source>
+        <target state="needs-review-translation">Сделано с</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html">
+        <source>by</source>
+        <target state="needs-review-translation">командой</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html">
+        <source>Connecting…</source>
+        <target state="needs-review-translation">Подключение…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html">
+        <source>Reconnecting…</source>
+        <target state="needs-review-translation">Повторное подключение…</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/request-state.directive.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html">
+        <source>Cached data</source>
+        <target state="needs-review-translation">Кешированные данные</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/request-state.directive.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html">
+        <source>Lightning dashboard</source>
+        <target state="needs-review-translation">Главная Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html">
+        <source>Node rankings</source>
+        <target state="needs-review-translation">Рейтинг узлов</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html">
+        <source>Lightning graphs</source>
+        <target state="needs-review-translation">Графики Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html">
+        <source>Documentation</source>
+        <target state="needs-review-translation">Документация</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html">
+        <source>About Lightning</source>
+        <target state="needs-review-translation">О Lightning</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html">
+        <source>View on btc.tx.taxi</source>
+        <target state="needs-review-translation">Посмотреть на btc.tx.taxi</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/lightning-shell.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html">
+        <source>No node found.</source>
+        <target state="needs-review-translation">Узел не найден.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html">
+        <source>Raw bits</source>
+        <target state="needs-review-translation">Исходные биты</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html">
+        <source>Required</source>
+        <target state="needs-review-translation">Обязательно</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html">
+        <source>Node address</source>
+        <target state="needs-review-translation">Адрес узла</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/node.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html">
+        <source>Choose search chain</source>
+        <target state="needs-review-translation">Выбрать сеть для поиска</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html">
+        <source>Selected explorer</source>
+        <target state="needs-review-translation">Выбранный обозреватель</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html">
+        <source>SELECTED</source>
+        <target state="needs-review-translation">ВЫБРАНО</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html">
+        <source>Automatic Routing</source>
+        <target state="needs-review-translation">Автоматическая маршрутизация</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html">
+        <source>View Hub</source>
+        <target state="needs-review-translation">Открыть главную</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source>
+        <target state="needs-review-translation">СОБСТВЕННЫЕ ОБОЗРЕВАТЕЛИ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source>
+        <target state="needs-review-translation">Список обозревателей недоступен</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source>
+        <target state="needs-review-translation">СТОРОННИЕ ОБОЗРЕВАТЕЛИ</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html">
+        <source>Open</source>
+        <target state="needs-review-translation">Открыть</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html">
+        <source>Found</source>
+        <target state="needs-review-translation">Найдено</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html">
+        <source>Possible</source>
+        <target state="needs-review-translation">Возможно</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html">
+        <source>Opened</source>
+        <target state="needs-review-translation">Открыто</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html">
+        <source>Switch</source>
+        <target state="needs-review-translation">Переключить</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source>
+        <target state="needs-review-translation">Загрузка обозревателей</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target state="needs-review-translation">Вызовите такси: вставьте сюда запрос.</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html">
+        <source>Search</source>
+        <target state="needs-review-translation">Поиск</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html">
+        <source>Search</source>
+        <target state="needs-review-translation">Поиск</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/lightning-app/search-form.component.html</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html">
+        <source>Logo of <x id="NAME" equiv-text="this.name" /> mining pool</source>
+        <target state="needs-review-translation">Логотип майнинг-пула <x id="NAME" equiv-text="this.name" /></target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target state="needs-review-translation">Логотип майнинг-пула</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/mining-pool/mining-pool.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target state="needs-review-translation">Инскрипция</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
       </trans-unit>
       </body>
   </file>
