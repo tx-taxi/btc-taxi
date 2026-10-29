@@ -1659,7 +1659,7 @@
       </trans-unit>
       <trans-unit id="cf2ec414465d65ab24b354663d94d051a67e26e9" datatype="html">
         <source>Total vSize</source>
-        <target>Total vSize</target>
+        <target>Samlet vSize</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/acceleration-stats/acceleration-stats.component.html</context>
           <context context-type="linenumber">20</context>
@@ -1996,7 +1996,7 @@
       </trans-unit>
       <trans-unit id="6b867dc61c6a92f3229f1950f9f2d414790cce95" datatype="html">
         <source>Accelerator Dashboard</source>
-        <target>Accelerator Dashboard</target>
+        <target>Acceleratoroversigt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/acceleration/accelerator-dashboard/accelerator-dashboard.component.ts</context>
           <context context-type="linenumber">57</context>
@@ -2851,7 +2851,7 @@
       </trans-unit>
       <trans-unit id="0ae529953ee15ef7af41fe3a3c30a10de5347f34" datatype="html">
         <source>BTC Holdings</source>
-        <target>BTC Holdings</target>
+        <target>BTC-beholdning</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/balance-widget/balance-widget.component.html</context>
           <context context-type="linenumber">5</context>
@@ -3093,7 +3093,7 @@
       </trans-unit>
       <trans-unit id="16d449549ab7bc61caf3d636372a4a56b5870383" datatype="html">
         <source>Any</source>
-        <target>Hvilken-som-helst</target>
+        <target>Mindst én</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block-filters/block-filters.component.html</context>
           <context context-type="linenumber">24</context>
@@ -6087,7 +6087,7 @@
       </trans-unit>
       <trans-unit id="a681a4e2011bb28157689dbaa387de0dd0aa0c11" datatype="html">
         <source>Mining Dashboard</source>
-        <target>Mining Dashboard</target>
+        <target>Miningoversigt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/mining-dashboard/mining-dashboard.component.ts</context>
           <context context-type="linenumber">30</context>
@@ -6334,7 +6334,7 @@
       </trans-unit>
       <trans-unit id="fe5317c6c60dd7e0e86f04d22f566f67cf04d404" datatype="html">
         <source>Mining Pools</source>
-        <target>Mining Pools</target>
+        <target>Mining-puljer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool-ranking/pool-ranking.component.ts</context>
           <context context-type="linenumber">60</context>
@@ -6410,7 +6410,7 @@
       </trans-unit>
       <trans-unit id="2158ea60725d3a97aed6f0f00aa7df48d7bb42ff" datatype="html">
         <source>mining pool</source>
-        <target>mining pool</target>
+        <target>mining-pulje</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/pool/pool-preview.component.html</context>
           <context context-type="linenumber">3</context>
@@ -7108,7 +7108,7 @@
       </trans-unit>
       <trans-unit id="f091ae234382282726f5a93bb7b3802ed468e8b9" datatype="html">
         <source>Liquid Asset</source>
-        <target>Liquid Asset</target>
+        <target>Liquid-aktiv</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/search-form/search-results/search-results.component.html</context>
           <context context-type="linenumber">86</context>
@@ -7426,7 +7426,7 @@
       </trans-unit>
       <trans-unit id="fec63564786cefc0ca1c650527fdfd859aff4b76" datatype="html">
         <source>Raw hex</source>
-        <target>Raw hex</target>
+        <target>Rå hex</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/test-transactions/test-transactions.component.html</context>
           <context context-type="linenumber">8</context>
@@ -8075,7 +8075,7 @@
       </trans-unit>
       <trans-unit id="25fb8afb8c76ae5e793717751d9463001c1e9c01" datatype="html">
         <source>RBF Timeline</source>
-        <target>RBF Timeline</target>
+        <target>RBF-tidslinje</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/transaction/transaction.component.html</context>
           <context context-type="linenumber">118</context>
@@ -8726,7 +8726,7 @@
       </trans-unit>
       <trans-unit id="2d70cb7985eaebe99c35bcdfa7dc49b2662c345b" datatype="html">
         <source>Liquid Federation Holdings</source>
-        <target>Liquid Federation Holdings</target>
+        <target>Liquid Federation-beholdning</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">165</context>
@@ -8774,7 +8774,7 @@
       </trans-unit>
       <trans-unit id="cd2330c7e9c74256f6a91e83bccf10e2905f8556" datatype="html">
         <source>REST API service</source>
-        <target>REST API service</target>
+        <target>REST API-tjeneste</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/api-docs/api-docs.component.html</context>
           <context context-type="linenumber">50</context>
@@ -8867,8 +8867,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.faq" datatype="html">
-        <source>Get answers to common questions like: What is a mempool? Why isn't my transaction confirming? How can I run my own instance of The Mempool Open Source Project? And more.</source>
-        <target>Få svar på almindelige spørgsmål som: Hvad er en mempool? Hvorfor bekræftes min transaktion ikke? Hvordan kan jeg køre min egen instans af Mempool Open Source Project? Og mere.</target>
+        <source>Get answers to common Bitcoin questions, including mempool behavior, transaction confirmation, fees, mining, and blocks.</source>
+        <target>Få svar på almindelige Bitcoin-spørgsmål om blandt andet mempoolen, bekræftelse af transaktioner, gebyrer, mining og blokke.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">48</context>
@@ -8891,8 +8891,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.rest-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space REST API service: get info on addresses, transactions, blocks, fees, mining, the Lightning network, and more.</source>
-        <target>Dokumentation for mempool.space REST API-tjenesten: få info om adresser, transaktioner, blokke, gebyrer, minedrift, Lightning-netværket og mere.</target>
+        <source>Documentation for the btc.tx.taxi REST API: query Bitcoin addresses, transactions, blocks, fees, mining, and network data.</source>
+        <target>Dokumentation til btc.tx.taxis REST-API: forespørg på Bitcoin-adresser, transaktioner, blokke, gebyrer, mining og netværksdata.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">56</context>
@@ -8915,8 +8915,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.docs.websocket-bitcoin" datatype="html">
-        <source>Documentation for the mempool.space WebSocket API service: get real-time info on blocks, mempools, transactions, addresses, and more.</source>
-        <target>Dokumentation til mempool.space WebSocket API-tjenesten: få realtidsoplysninger om blokke, mempools, transaktioner, adresser og mere.</target>
+        <source>Documentation for the btc.tx.taxi WebSocket API: receive real-time Bitcoin block, mempool, transaction, and address updates.</source>
+        <target>Dokumentation til btc.tx.taxis WebSocket-API: modtag opdateringer om Bitcoin-blokke, mempool, transaktioner og adresser i realtid.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/docs/docs/docs.component.ts</context>
           <context context-type="linenumber">64</context>
@@ -9877,7 +9877,7 @@
       </trans-unit>
       <trans-unit id="142e923d3b04186ac6ba23387265d22a2fa404e0" datatype="html">
         <source>Lightning Explorer</source>
-        <target>Lightning Explorer</target>
+        <target>Lightning-udforsker</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/lightning-dashboard/lightning-dashboard.component.ts</context>
           <context context-type="linenumber">34</context>
@@ -10475,7 +10475,7 @@
       </trans-unit>
       <trans-unit id="c18497e4f0db0d0ad0c71ba294295f42b3d312c9" datatype="html">
         <source>Lightning ISP</source>
-        <target>Lightning ISP</target>
+        <target>Lightning-internetudbyder</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.html</context>
           <context context-type="linenumber">3</context>
@@ -10497,7 +10497,7 @@
       </trans-unit>
       <trans-unit id="5fad6872a652d922ad8822f4016e104b9a8cc113" datatype="html">
         <source>Top node</source>
-        <target>Top node</target>
+        <target>Topnode</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/lightning/nodes-per-isp/nodes-per-isp-preview.component.html</context>
           <context context-type="linenumber">45</context>
@@ -11323,7 +11323,7 @@
       </trans-unit>
       <trans-unit id="6052761358428332094" datatype="html">
         <source>Batch payment</source>
-        <target>Batch betaling</target>
+        <target>Samlebetaling</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">110</context>
@@ -11339,7 +11339,7 @@
       </trans-unit>
       <trans-unit id="7779249123661446825" datatype="html">
         <source>Behavior</source>
-        <target>Opførsel</target>
+        <target>Adfærd</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/filters.utils.ts</context>
           <context context-type="linenumber">122</context>
@@ -11519,7 +11519,7 @@
       </trans-unit>
       <trans-unit id="taxi.footer.mining" datatype="html">
         <source>Mining Dashboard</source>
-        <target>Mining Dashboard</target>
+        <target>Miningoversigt</target>
       </trans-unit>
       <trans-unit id="taxi.footer.broadcast" datatype="html">
         <source>Broadcast Transaction</source>
@@ -11565,6 +11565,692 @@
         <source>Third-party Licenses</source>
         <target>Tredjepartslicenser</target>
       </trans-unit>
+      <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html">
+        <source>select filter categories to highlight matching pending transactions</source>
+        <target>Vælg filterkategorier for at fremhæve matchende ventende transaktioner</target></trans-unit>
+      <trans-unit id="btc.divider.dashboard" datatype="html">
+        <source>Bitcoin explorer dashboard</source>
+        <target>Bitcoin-oversigt</target></trans-unit>
+      <trans-unit id="btc.divider.show-sizes" datatype="html">
+        <source>Switch to displaying block sizes</source>
+        <target>Skift til visning af blokstørrelser</target></trans-unit>
+      <trans-unit id="btc.divider.show-fees" datatype="html">
+        <source>Switch to displaying total fees per block</source>
+        <target>Skift til visning af samlede gebyrer pr. blok</target></trans-unit>
+      <trans-unit id="btc.divider.newest-right" datatype="html">
+        <source>Switch to displaying newest blocks on the right</source>
+        <target>Vis de nyeste blokke til højre</target></trans-unit>
+      <trans-unit id="btc.divider.newest-left" datatype="html">
+        <source>Switch to displaying newest blocks on the left</source>
+        <target>Vis de nyeste blokke til venstre</target></trans-unit>
+      <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html">
+        <source> Values were capped at the max supply of 21M BTC </source>
+        <target> Værdierne blev begrænset til det maksimale udbud på 21 mio. BTC </target></trans-unit>
+      <trans-unit id="taxi.clipboard.copy" datatype="html">
+        <source>Copy</source>
+        <target>Kopiér</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copied" datatype="html">
+        <source>Copied</source>
+        <target>Kopieret</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copyAria" datatype="html">
+        <source>Copy to clipboard</source>
+        <target>Kopiér til udklipsholder</target></trans-unit>
+      <trans-unit id="taxi.clipboard.copiedAria" datatype="html">
+        <source>Copied to clipboard</source>
+        <target>Kopieret til udklipsholder</target></trans-unit>
+      <trans-unit id="btc.explorer.logo" datatype="html">
+        <source>btc.tx.taxi Bitcoin explorer</source>
+        <target>btc.tx.taxi Bitcoin-udforsker</target></trans-unit>
+      <trans-unit id="6d1c8856044cc923fc70f32cb4be360d200cfa82" datatype="html">
+        <source>1 new transaction</source>
+        <target>1 ny transaktion</target></trans-unit>
+      <trans-unit id="a5c3bb57620832141bf6c51d7344e69af366c7e8" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> new transactions</source>
+        <target><x id="INTERPOLATION" equiv-text="new transactions&lt;/span&gt; &lt;/button&gt;  &lt;div [class.container-xl]=&quot;!widget&quot; [cla" /> nye transaktioner</target></trans-unit>
+      <trans-unit id="487bebf9352332c5e7f5bd00a78371cacff0fd95" datatype="html">
+        <source>Pause/Resume</source>
+        <target>Pause/genoptag</target></trans-unit>
+      <trans-unit id="88f27d579752fd40ef53cfff5e936c293ca19221" datatype="html">
+        <source>Pause/Resume</source>
+        <target>Pause/genoptag</target></trans-unit>
+      <trans-unit id="bba7a55b8bcbfd50a697f8cf0a7b917836f453f0" datatype="html">
+        <source>vSize</source>
+        <target>Virtuel størrelse</target></trans-unit>
+      <trans-unit id="meta.description.recent-transactions" datatype="html">
+        <source>See the most recent transactions on the Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" /> network, updated in real-time.</source>
+        <target>Se de seneste transaktioner på Bitcoin<x id="PH" equiv-text="seoDescriptionNetwork(this.stateService.network)" />-netværket, opdateret i realtid.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.notFound" datatype="html">
+        <source>No Lightning node or channel found.</source>
+        <target>Ingen Lightning-node eller -kanal fundet.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.unavailable" datatype="html">
+        <source>Search unavailable. Try again.</source>
+        <target>Søgning er ikke tilgængelig. Prøv igen.</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus12" datatype="html">
+        <source>Anywhere on Earth (AoE)</source>
+        <target>Overalt på Jorden (AoE)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus11" datatype="html">
+        <source>Samoa Standard Time (SST)</source>
+        <target>Samoa-standardtid (SST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus10" datatype="html">
+        <source>Hawaii Standard Time (HST)</source>
+        <target>Hawaii-standardtid (HST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus9" datatype="html">
+        <source>Alaska Standard Time (AKST)</source>
+        <target>Alaska-standardtid (AKST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus8" datatype="html">
+        <source>Pacific Standard Time (PST)</source>
+        <target>Nordamerikansk stillehavsstandardtid (PST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus7" datatype="html">
+        <source>Mountain Standard Time (MST)</source>
+        <target>Nordamerikansk bjergstandardtid (MST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus6" datatype="html">
+        <source>Central Standard Time (CST)</source>
+        <target>Nordamerikansk centralstandardtid (CST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus5" datatype="html">
+        <source>Eastern Standard Time (EST)</source>
+        <target>Nordamerikansk østlig standardtid (EST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus4" datatype="html">
+        <source>Atlantic Standard Time (AST)</source>
+        <target>Atlantisk standardtid (AST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus3" datatype="html">
+        <source>Argentina Time (ART)</source>
+        <target>Argentinsk tid (ART)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus2" datatype="html">
+        <source>Fernando de Noronha Time (FNT)</source>
+        <target>Fernando de Noronha-tid (FNT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.minus1" datatype="html">
+        <source>Azores Time (AZOT)</source>
+        <target>Azorertid (AZOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus0" datatype="html">
+        <source>Greenwich Mean Time (GMT)</source>
+        <target>Greenwich-middeltid (GMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus1" datatype="html">
+        <source>Central European Time (CET)</source>
+        <target>Centraleuropæisk tid (CET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus2" datatype="html">
+        <source>Eastern European Time (EET)</source>
+        <target>Østeuropæisk tid (EET)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus3" datatype="html">
+        <source>Moscow Standard Time (MSK)</source>
+        <target>Moskva-standardtid (MSK)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus4" datatype="html">
+        <source>Armenia Time (AMT)</source>
+        <target>Armensk tid (AMT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus5" datatype="html">
+        <source>Pakistan Standard Time (PKT)</source>
+        <target>Pakistansk standardtid (PKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus6" datatype="html">
+        <source>Xinjiang Time (XJT)</source>
+        <target>Xinjiang-tid (XJT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus7" datatype="html">
+        <source>Indochina Time (ICT)</source>
+        <target>Indokinesisk tid (ICT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus8" datatype="html">
+        <source>Hong Kong Time (HKT)</source>
+        <target>Hongkong-tid (HKT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus9" datatype="html">
+        <source>Japan Standard Time (JST)</source>
+        <target>Japansk standardtid (JST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus10" datatype="html">
+        <source>Australian Eastern Standard Time (AEST)</source>
+        <target>Australsk østlig standardtid (AEST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus11" datatype="html">
+        <source>Norfolk Time (NFT)</source>
+        <target>Norfolk-tid (NFT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus12" datatype="html">
+        <source>New Zealand Standard Time (NZST)</source>
+        <target>Newzealandsk standardtid (NZST)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus13" datatype="html">
+        <source>Tonga Time (TOT)</source>
+        <target>Tonga-tid (TOT)</target></trans-unit>
+      <trans-unit id="taxi.timezone.plus14" datatype="html">
+        <source>Line Islands Time (LINT)</source>
+        <target>Linjeøernes tid (LINT)</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text01" datatype="html">
+        <source>The Lightning network, in view.</source>
+        <target>Lightning-netværket i overblik.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text02" datatype="html">
+        <source>Explore Lightning</source>
+        <target>Udforsk Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text03" datatype="html">
+        <source>Documentation</source>
+        <target>Dokumentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text04" datatype="html">
+        <source>Source code</source>
+        <target>Kildekode</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text05" datatype="html">
+        <source>Status</source>
+        <target>Status</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text06" datatype="html">
+        <source>Nodes, channels, and the network between them</source>
+        <target>Noder, kanaler og netværket imellem dem</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text07" datatype="html">
+        <source>Explore public Lightning nodes and channels, routing policies, network capacity, geographic distribution, and historical statistics. Follow a node’s connections or inspect the opening and closing of a channel.</source>
+        <target>Udforsk offentlige Lightning-noder og -kanaler, routingspolitikker, netværkskapacitet, geografisk fordeling og historiske statistikker. Følg en nodes forbindelser, eller undersøg åbningen og lukningen af en kanal.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text08" datatype="html">
+        <source>Part of tx.taxi</source>
+        <target>En del af tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text09" datatype="html">
+        <source>Use the same search to find a Lightning node or channel, switch explorers, or route a transaction to its blockchain. Bitcoin’s on-chain explorer lives at</source>
+        <target>Brug samme søgning til at finde en Lightning-node eller -kanal, skifte udforsker eller route en transaktion til dens blockchain. Bitcoins on-chain-udforsker findes på</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text10" datatype="html">
+        <source>A public network view</source>
+        <target>Et overblik over det offentlige netværk</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text11" datatype="html">
+        <source>Lightning payments and private channels are not publicly visible. Capacity describes the bitcoin committed to a public channel; it does not reveal either side’s current spendable balance. Node locations describe announced network endpoints.</source>
+        <target>Lightning-betalinger og private kanaler er ikke offentligt synlige. Kapacitet angiver de bitcoin, der er bundet i en offentlig kanal; den viser ikke, hvor meget hver part aktuelt kan bruge. Nodeplaceringer beskriver annoncerede netværksendepunkter.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text12" datatype="html">
+        <source>Statistics show the source snapshot’s date. Cached data remains available during interruptions.</source>
+        <target>Statistikker viser datoen for kildens øjebliksbillede. Cachelagrede data er tilgængelige under afbrydelser.</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text13" datatype="html">
+        <source>Open source</source>
+        <target>Open source</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text14" datatype="html">
+        <source>Built on the</source>
+        <target>Bygger på</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text15" datatype="html">
+        <source>Mempool project</source>
+        <target>Mempool-projektet</target></trans-unit>
+      <trans-unit id="taxi.lightning.about.text16" datatype="html">
+        <source>released under the GNU AGPLv3. Made with 🚕 by</source>
+        <target>udgivet under GNU AGPLv3. Lavet med 🚕 af</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.channelNotFound" datatype="html">
+        <source>No channel found.</source>
+        <target>Ingen kanal fundet.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.unavailable" datatype="html">
+        <source>Lightning data unavailable.</source>
+        <target>Lightning-data er ikke tilgængelige.</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.retry" datatype="html">
+        <source>Retry</source>
+        <target>Prøv igen</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.logoAlt" datatype="html">
+        <source>tx.taxi Lightning explorer</source>
+        <target>tx.taxi Lightning-udforsker</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text01" datatype="html">
+        <source>Lightning nodes, channels, and network activity</source>
+        <target>Lightning-noder, kanaler og netværksaktivitet</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text02" datatype="html">
+        <source>Explore</source>
+        <target>Udforsk</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text03" datatype="html">
+        <source>Lightning Dashboard</source>
+        <target>Lightning-oversigt</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text04" datatype="html">
+        <source>Node Rankings</source>
+        <target>Rangliste over noder</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text05" datatype="html">
+        <source>Node Map</source>
+        <target>Nodekort</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text06" datatype="html">
+        <source>Channels Map</source>
+        <target>Kanalkort</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text07" datatype="html">
+        <source>Penalties</source>
+        <target>Straffe</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text08" datatype="html">
+        <source>Network &amp; Docs</source>
+        <target>Netværk og dokumentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text09" datatype="html">
+        <source>Network History</source>
+        <target>Netværkshistorik</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text10" datatype="html">
+        <source>Countries</source>
+        <target>Lande</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text11" datatype="html">
+        <source>ISPs</source>
+        <target>Internetudbydere</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text12" datatype="html">
+        <source>Lightning FAQ</source>
+        <target>Ofte stillede spørgsmål om Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text13" datatype="html">
+        <source>API Documentation</source>
+        <target>API-dokumentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text14" datatype="html">
+        <source>About</source>
+        <target>Om</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text15" datatype="html">
+        <source>Source code</source>
+        <target>Kildekode</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text16" datatype="html">
+        <source>Status</source>
+        <target>Status</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.telegramAria" datatype="html">
+        <source>Join the tx.taxi Telegram channel</source>
+        <target>Gå til tx.taxis Telegram-kanal</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text17" datatype="html">
+        <source>Contact Us</source>
+        <target>Kontakt os</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text18" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target>Udgivet under AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text19" datatype="html">
+        <source>Legal</source>
+        <target>Juridisk</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text20" datatype="html">
+        <source>Terms of Service</source>
+        <target>Servicevilkår</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text21" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Privatlivspolitik</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text22" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target>Varemærker og kreditering</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text23" datatype="html">
+        <source>Third-party Licenses</source>
+        <target>Tredjepartslicenser</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text24" datatype="html">
+        <source>Made with</source>
+        <target>Lavet med</target></trans-unit>
+      <trans-unit id="taxi.lightning.footer.text25" datatype="html">
+        <source>by</source>
+        <target>af</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.connecting" datatype="html">
+        <source>Connecting…</source>
+        <target>Opretter forbindelse…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.reconnecting" datatype="html">
+        <source>Reconnecting…</source>
+        <target>Genopretter forbindelse…</target></trans-unit>
+      <trans-unit id="taxi.lightning.status.cached" datatype="html">
+        <source>Cached data</source>
+        <target>Cachelagrede data</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.dashboard" datatype="html">
+        <source>Lightning dashboard</source>
+        <target>Lightning-oversigt</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.rankings" datatype="html">
+        <source>Node rankings</source>
+        <target>Rangliste over noder</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.graphs" datatype="html">
+        <source>Lightning graphs</source>
+        <target>Lightning-grafer</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.docs" datatype="html">
+        <source>Documentation</source>
+        <target>Dokumentation</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.about" datatype="html">
+        <source>About Lightning</source>
+        <target>Om Lightning</target></trans-unit>
+      <trans-unit id="taxi.lightning.nav.bitcoinLink" datatype="html">
+        <source>View on btc.tx.taxi</source>
+        <target>Vis på btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.lightning.error.nodeNotFound" datatype="html">
+        <source>No node found.</source>
+        <target>Ingen node fundet.</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.rawBits" datatype="html">
+        <source>Raw bits</source>
+        <target>Rå bits</target></trans-unit>
+      <trans-unit id="taxi.lightning.features.required" datatype="html">
+        <source>Required</source>
+        <target>Påkrævet</target></trans-unit>
+      <trans-unit id="taxi.lightning.node.address" datatype="html">
+        <source>Node address</source>
+        <target>Nodeadresse</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.chooseAria" datatype="html">
+        <source>Choose search chain</source>
+        <target>Vælg blockchain til søgning</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selectedAria" datatype="html">
+        <source>Selected explorer</source>
+        <target>Valgt udforsker</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.selected" datatype="html">
+        <source>SELECTED</source>
+        <target>VALGT</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.automatic" datatype="html">
+        <source>Automatic Routing</source>
+        <target>Automatisk routing</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.viewHub" datatype="html">
+        <source>View Hub</source>
+        <target>Vis oversigt</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.native" datatype="html">
+        <source>NATIVE EXPLORERS</source>
+        <target>NATIVE UDFORSKERE</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.registryUnavailable" datatype="html">
+        <source>Explorer registry unavailable</source>
+        <target>Udforskerregisteret er ikke tilgængeligt</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.external" datatype="html">
+        <source>3RD-PARTY EXPLORERS</source>
+        <target>TREDJEPARTSUDFORSKERE</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.open" datatype="html">
+        <source>Open</source>
+        <target>Åbn</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.found" datatype="html">
+        <source>Found</source>
+        <target>Fundet</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.possible" datatype="html">
+        <source>Possible</source>
+        <target>Mulig</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.opened" datatype="html">
+        <source>Opened</source>
+        <target>Åbnet</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.switch" datatype="html">
+        <source>Switch</source>
+        <target>Skift</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.loadingExplorers" datatype="html">
+        <source>Loading explorers</source>
+        <target>Indlæser udforskere</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target>Praj en taxi, indsæt hvad som helst her.</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchAria" datatype="html">
+        <source>Search</source>
+        <target>Søg</target></trans-unit>
+      <trans-unit id="taxi.lightning.search.searchTitle" datatype="html">
+        <source>Search</source>
+        <target>Søg</target></trans-unit>
+      <trans-unit id="taxi.block.numberLocale" datatype="html">
+        <source>en-US</source>
+        <target>da-DK</target></trans-unit>
+      <trans-unit id="taxi.block.details.medianFeeRate" datatype="html">
+        <source>Median fee rate</source>
+        <target>Median gebyrsats</target></trans-unit>
+      <trans-unit id="taxi.block.details.feeRange" datatype="html">
+        <source>Fee range</source>
+        <target>Gebyrinterval</target></trans-unit>
+      <trans-unit id="c3c520c2bccb5da8e432dd5f282a72b05e12b7e0" datatype="html">
+        <source>Your balance is too low.</source>
+        <target>Din saldo er for lav.</target></trans-unit>
+      <trans-unit id="btc.pool.logo" datatype="html">
+        <source>Logo of <x id="NAME" equiv-text="this.name" /> mining pool</source>
+        <target>Logo for mining-puljen <x id="NAME" equiv-text="this.name" /></target></trans-unit>
+      <trans-unit id="btc.pool.generic-logo" datatype="html">
+        <source>Mining pool logo</source>
+        <target>Logo for mining-pulje</target></trans-unit>
+      <trans-unit id="taxi.filter.inscription" datatype="html">
+        <source>Inscription</source>
+        <target>Inskription</target></trans-unit>
+      <trans-unit id="taxi.btc.about.title" datatype="html">
+        <source>About btc.tx.taxi</source>
+        <target>Om btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.btc.about.tagline" datatype="html">
+        <source>The Bitcoin explorer in the tx.taxi family.</source>
+        <target>Bitcoin-udforskeren i tx.taxi-familien.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.links" datatype="html">
+        <source>Project links</source>
+        <target>Projektlinks</target></trans-unit>
+      <trans-unit id="taxi.btc.about.docs" datatype="html">
+        <source>Bitcoin documentation</source>
+        <target>Bitcoin-dokumentation</target></trans-unit>
+      <trans-unit id="taxi.btc.about.contact" datatype="html">
+        <source>Contact the maintainer</source>
+        <target>Kontakt vedligeholderen</target></trans-unit>
+      <trans-unit id="taxi.btc.about.intro" datatype="html">
+        <source>btc.tx.taxi is the Bitcoin explorer in the tx.taxi multi-chain family. It preserves Mempool's proven interface for inspecting blocks, transactions, addresses, mining activity, fee estimates, and the live Bitcoin mempool while using a Bitcoin-specific tx.taxi identity.</source>
+        <target>btc.tx.taxi er Bitcoin-udforskeren i tx.taxi-familien med flere blockchains. Den bevarer Mempools gennemprøvede brugerflade til at undersøge blokke, transaktioner, adresser, miningaktivitet, gebyrestimater og Bitcoins live-mempool og bruger samtidig en Bitcoin-specifik tx.taxi-identitet.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.dataTitle" datatype="html">
+        <source>Bitcoin-native data</source>
+        <target>Bitcoin-specifikke data</target></trans-unit>
+      <trans-unit id="taxi.btc.about.data" datatype="html">
+        <source>Values remain denominated in BTC, satoshis, or the selected fiat currency. Fee rates remain sat/vB, transaction sizes remain vB or weight units, and all block, address, and mining concepts shown by the interface retain their Bitcoin meaning.</source>
+        <target>Værdier angives fortsat i BTC, satoshi eller den valgte fiatvaluta. Gebyrsatser angives stadig i sat/vB, transaktionsstørrelser i vB eller vægtenheder, og alle blok-, adresse- og miningbegreber i brugerfladen bevarer deres Bitcoin-betydning.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructureTitle" datatype="html">
+        <source>Infrastructure</source>
+        <target>Infrastruktur</target></trans-unit>
+      <trans-unit id="taxi.btc.about.infrastructure" datatype="html">
+        <source>The explorer reads public Bitcoin network data through its configured backend. Explorer results are informational and can differ from another node's view of the mempool. Always verify payment details in your wallet and use your own node when independent verification matters.</source>
+        <target>Udforskeren læser offentlige data fra Bitcoin-netværket via sin konfigurerede backend. Resultaterne er vejledende og kan afvige fra en anden nodes syn på mempoolen. Kontrollér altid betalingsoplysninger i din wallet, og brug din egen node, når uafhængig verificering er vigtig.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.licenseTitle" datatype="html">
+        <source>License</source>
+        <target>Licens</target></trans-unit>
+      <trans-unit id="taxi.btc.about.license" datatype="html">
+        <source>btc.tx.taxi incorporates licensed open-source components. See the third-party license notices for attribution details.</source>
+        <target>btc.tx.taxi indeholder licenserede open source-komponenter. Se tredjepartslicenserne for oplysninger om kreditering.</target></trans-unit>
+      <trans-unit id="taxi.btc.about.openTitle" datatype="html">
+        <source>Built on open source</source>
+        <target>Bygget på open source</target></trans-unit>
+      <trans-unit id="taxi.btc.about.open" datatype="html">
+        <source>This explorer builds on the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. See <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />third-party attribution<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" /> and contact the maintainer for source and license information.</source>
+        <target>Denne udforsker bygger på <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/mempool/mempool&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />Mempool Open Source Project<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />. Se <x id="START_LINK_1" equiv-text="&lt;a href=&quot;/3rdpartylicenses.txt&quot;&gt;" />tredjepartskreditering<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />, og kontakt vedligeholderen for oplysninger om kildekode og licenser.</target></trans-unit>
+      <trans-unit id="6693ca41dea3f8a2b1747ba08e3f780c52d074bf" datatype="html">
+        <source>Using partner code</source>
+        <target>Bruger partnerkode</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesBtc" datatype="html">
+        <source>Fees BTC</source>
+        <target>Gebyrer i BTC</target></trans-unit>
+      <trans-unit id="graphs.blockFees.feesFiat" datatype="html">
+        <source>Fees <x id="currency" equiv-text="this.currency" /></source>
+        <target>Gebyrer <x id="currency" equiv-text="this.currency" /></target></trans-unit>
+      <trans-unit id="graphs.blockFees.avgBlock" datatype="html">
+        <source>* On average around block <x id="block" equiv-text="data[0].data[2]" /></source>
+        <target>* I gennemsnit omkring blok <x id="block" equiv-text="data[0].data[2]" /></target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html">
+        <source>Subsidy</source>
+        <target>Blokbelønning</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html">
+        <source>Subsidy (USD)</source>
+        <target>Blokbelønning (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html">
+        <source>Fees (USD)</source>
+        <target>Gebyrer (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html">
+        <source>Subsidy (%)</source>
+        <target>Blokbelønning (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html">
+        <source>Fees (%)</source>
+        <target>Gebyrer (%)</target></trans-unit>
+      <trans-unit id="1cdb643999eb6d66bcd839aeaa381b62b8be8cd4" datatype="html">
+        <source>mempool chunk</source>
+        <target>mempool-chunk</target></trans-unit>
+      <trans-unit id="36028650a60cba9aa7f034ae34643c72f5364f1d" datatype="html">
+        <source>this transaction</source>
+        <target>denne transaktion</target></trans-unit>
+      <trans-unit id="1eb8a98f68c1c98884c6436650f5ad80f4b3d5bf" datatype="html">
+        <source>parents</source>
+        <target>forældre</target></trans-unit>
+      <trans-unit id="94c4e242e055d9521e1a0bfc7f1d165bbb37b94a" datatype="html">
+        <source>children</source>
+        <target>efterkommere</target></trans-unit>
+      <trans-unit id="d1ca10f0337c02e631f15b7da5d57dddc1954704" datatype="html">
+        <source>parent</source>
+        <target>forælder</target></trans-unit>
+      <trans-unit id="016d2ff8ad4b04f08717b98b5bc61eb122fb1ac8" datatype="html">
+        <source>child</source>
+        <target>efterkommer</target></trans-unit>
+      <trans-unit id="ac0f81713a84217c9bd1d9bb460245d8190b073f" datatype="html">
+        <source>More</source>
+        <target>Mere</target></trans-unit>
+      <trans-unit id="4ce06818b8fe60a7c040ce7bfecc10b11397401b" datatype="html">
+        <source>24h Volume</source>
+        <target>Volumen over 24 timer</target></trans-unit>
+      <trans-unit id="7729adad4cbe5f490e393a925fae8a9b90f8ac08" datatype="html">
+        <source>Reserve Deficit</source>
+        <target>Reserveunderskud</target></trans-unit>
+      <trans-unit id="489277af67abab02f1de98f4a7930fc611471eda" datatype="html">
+        <source>occurrence</source>
+        <target>forekomst</target></trans-unit>
+      <trans-unit id="850e39efd95e6090598e13a01b7825f6b71b1017" datatype="html">
+        <source>occurrences</source>
+        <target>forekomster</target></trans-unit>
+      <trans-unit id="57d63f33e6e6f3d4716fab5381cff30d517d5c4e" datatype="html">
+        <source>usages</source>
+        <target>anvendelser</target></trans-unit>
+      <trans-unit id="taxi.nav.brand" datatype="html">
+        <source>btc.tx.taxi dashboard</source>
+        <target>btc.tx.taxi-oversigt</target></trans-unit>
+      <trans-unit id="taxi.nav.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>Oversigt</target></trans-unit>
+      <trans-unit id="taxi.nav.mining" datatype="html">
+        <source>Mining dashboard</source>
+        <target>Miningoversigt</target></trans-unit>
+      <trans-unit id="taxi.nav.blocks" datatype="html">
+        <source>Recent blocks</source>
+        <target>Seneste blokke</target></trans-unit>
+      <trans-unit id="taxi.nav.graphs" datatype="html">
+        <source>Bitcoin graphs</source>
+        <target>Bitcoin-grafer</target></trans-unit>
+      <trans-unit id="taxi.nav.about" datatype="html">
+        <source>About btc.tx.taxi</source>
+        <target>Om btc.tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.sponsor.aria" datatype="html">
+        <source>Sponsor Bitcoin for $150 per week</source>
+        <target>Sponsorér Bitcoin for 150 $ om ugen</target></trans-unit>
+      <trans-unit id="taxi.sponsor.text" datatype="html">
+        <source>Sponsor this chain for $150/wk</source>
+        <target>Sponsorér denne blockchain for 150 $/uge</target></trans-unit>
+      <trans-unit id="taxi.search.placeholder" datatype="html">
+        <source>Wave a taxi, paste anything here.</source>
+        <target>Praj en taxi, indsæt hvad som helst her.</target></trans-unit>
+      <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html">
+        <source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>Denne transaktion tilhører en chunk med 1 transaktion og en samlet effektiv gebyrsats på <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target></trans-unit>
+      <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html">
+        <source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source>
+        <target>Denne transaktion tilhører en chunk med <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transaktioner og en samlet effektiv gebyrsats på <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</target></trans-unit>
+      <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html">
+        <source>In a mempool cluster containing 1 other chunk.</source>
+        <target>I en mempool-klynge med 1 anden chunk.</target></trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html">
+        <source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source>
+        <target>I en mempool-klynge med <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> andre chunks.</target></trans-unit>
+      <trans-unit id="taxi.raw.offlinePrevouts" datatype="html">
+        <source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source>
+        <target>Manglende tidligere outputs er ikke indlæst. Nogle felter, f.eks. gebyrsatsen, kan ikke beregnes.</target></trans-unit>
+      <trans-unit id="taxi.raw.errorPrevouts" datatype="html">
+        <source>Error loading missing prevouts</source>
+        <target>Fejl ved indlæsning af manglende tidligere outputs</target></trans-unit>
+      <trans-unit id="taxi.raw.errorReason" datatype="html">
+        <source>Reason:</source>
+        <target>Årsag:</target></trans-unit>
+      <trans-unit id="taxi.raw.errorCpfp" datatype="html">
+        <source>Error loading CPFP data</source>
+        <target>Fejl ved indlæsning af CPFP-data</target></trans-unit>
+      <trans-unit id="92626adb4b7e2aff0d35c2db5e023aac29d27f0f" datatype="html">
+        <source>Cluster</source>
+        <target>Klynge</target></trans-unit>
+      <trans-unit id="taxi.footer.pending" datatype="html">
+        <source>Pending Transactions</source>
+        <target>Ventende transaktioner</target></trans-unit>
+      <trans-unit id="c19bde6e194e95b60145a4e312fc31941197d90c" datatype="html">
+        <source>LBTC Supply vs. BTC Holdings</source>
+        <target>LBTC-udbud sammenlignet med BTC-beholdning</target></trans-unit>
+      <trans-unit id="8165e58c15aa028c734a31632f1f30ae3dd41dec" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></source>
+        <target><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" /><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="btc.tx.taxi only" />btc.tx.taxi viser kun offentlige data om Bitcoin-netværket.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" /> Tjenesten kan ikke hente midler, løse problemer med wallets, tilbageføre transaktioner eller ændre bekræftelsesprioritet.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /><x id="START_PARAGRAPH" ctype="x-p" equiv-text="For those request" />Kontakt den wallet, børs eller betalingstjeneste, der oprettede transaktionen, med sådanne anmodninger.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" /></target></trans-unit>
+      <trans-unit id="taxi.footer.tagline" datatype="html">
+        <source>Bitcoin blocks, fees, and mempool activity</source>
+        <target>Bitcoin-blokke, gebyrer og mempool-aktivitet</target></trans-unit>
+      <trans-unit id="taxi.footer.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <target>Oversigt</target></trans-unit>
+      <trans-unit id="taxi.footer.graphs" datatype="html">
+        <source>Bitcoin Graphs</source>
+        <target>Bitcoin-grafer</target></trans-unit>
+      <trans-unit id="taxi.footer.tools" datatype="html">
+        <source>Tools &amp; Docs</source>
+        <target>Værktøjer og dokumentation</target></trans-unit>
+      <trans-unit id="taxi.footer.faq" datatype="html">
+        <source>Bitcoin FAQ</source>
+        <target>Ofte stillede spørgsmål om Bitcoin</target></trans-unit>
+      <trans-unit id="taxi.footer.source" datatype="html">
+        <source>Source code</source>
+        <target>Kildekode</target></trans-unit>
+      <trans-unit id="taxi.footer.contact" datatype="html">
+        <source>Contact Us</source>
+        <target>Kontakt os</target></trans-unit>
+      <trans-unit id="taxi.footer.license" datatype="html">
+        <source>Released under AGPLv3</source>
+        <target>Udgivet under AGPLv3</target></trans-unit>
+      <trans-unit id="taxi.footer.trademark" datatype="html">
+        <source>Trademark &amp; Attribution</source>
+        <target>Varemærker og kreditering</target></trans-unit>
+      <trans-unit id="taxi.footer.made" datatype="html">
+        <source>Made with</source>
+        <target>Lavet med</target></trans-unit>
+      <trans-unit id="taxi.footer.by" datatype="html">
+        <source>by</source>
+        <target>af</target></trans-unit>
+      <trans-unit id="1734357609034260375" datatype="html"><source>usages</source><target>anvendelser</target></trans-unit>
+      <trans-unit id="2183964182832160927" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Denne transaktion tilhører en chunk med 1 transaktion og en samlet effektiv gebyrsats på <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="2316044344518385551" datatype="html"><source>Using partner code</source><target>Bruger partnerkode</target></trans-unit>
+      <trans-unit id="2438741853303074449" datatype="html"><source>occurrences</source><target>forekomster</target></trans-unit>
+      <trans-unit id="2524698063152055166" datatype="html"><source>occurrence</source><target>forekomst</target></trans-unit>
+      <trans-unit id="2544385345087897949" datatype="html"><source>parents" - "cluster.parents</source><target>forældre" - "cluster.parents</target></trans-unit>
+      <trans-unit id="261633818608005094" datatype="html"><source>child" - "cluster.child</source><target>efterkommer" - "cluster.child</target></trans-unit>
+      <trans-unit id="2744438349898422829" datatype="html"><source>Reserve Deficit</source><target>Reserveunderskud</target></trans-unit>
+      <trans-unit id="2881395579034072689" datatype="html"><source>vSize" - "transaction.vsize</source><target>vSize" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="2988617903838555790" datatype="html"><source>this transaction" - "cluster.this-transaction</source><target>denne transaktion" - "cluster.this-transaction</target></trans-unit>
+      <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi viser kun offentlige data om Bitcoin-netværket.<x id="CLOSE_BOLD_TEXT" /> Tjenesten kan ikke hente midler, løse problemer med wallets, tilbageføre transaktioner eller ændre bekræftelsesprioritet.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />Kontakt den wallet, børs eller betalingstjeneste, der oprettede transaktionen, med sådanne anmodninger.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
+      <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target>forælder" - "cluster.parent</target></trans-unit>
+      <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target>Størrelse" - "transaction.vsize</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target>I en mempool-klynge med <x id="INTERPOLATION" /> andre chunks.</target></trans-unit>
+      <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target>Pause/genoptag" - "recent-transactions.pause-toggle.title</target></trans-unit>
+      <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target>efterkommere" - "cluster.children</target></trans-unit>
+      <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target><x id="INTERPOLATION" /> nye transaktioner</target></trans-unit>
+      <trans-unit id="4393297583906485654" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</source><target>Denne transaktion tilhører en chunk med <x id="INTERPOLATION" /> transaktioner og en samlet effektiv gebyrsats på <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
+      <trans-unit id="4737378996440967882" datatype="html"><source> Values were capped at the max supply of 21M BTC " - "calculator.max-supply-warning</source><target> Værdierne blev begrænset til det maksimale udbud på 21 mio. BTC " - "calculator.max-supply-warning</target></trans-unit>
+      <trans-unit id="4803535806588422741" datatype="html"><source>24h Volume</source><target>Volumen over 24 timer</target></trans-unit>
+      <trans-unit id="4888474412118959828" datatype="html"><source>Your balance is too low.</source><target>Din saldo er for lav.</target></trans-unit>
+      <trans-unit id="5111568433154163082" datatype="html"><source>mempool chunk" - "cluster.mempool-chunk</source><target>mempool-chunk" - "cluster.mempool-chunk</target></trans-unit>
+      <trans-unit id="5149188584039150457" datatype="html"><source>LBTC Supply vs. BTC Holdings</source><target>LBTC-udbud sammenlignet med BTC-beholdning</target></trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html"><source>More</source><target>Mere</target></trans-unit>
+      <trans-unit id="6346482389922040187" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target>I en mempool-klynge med 1 anden chunk.</target></trans-unit>
+      <trans-unit id="7890823441105218329" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.aria-label</source><target>Pause/genoptag" - "recent-transactions.pause-toggle.aria-label</target></trans-unit>
+      <trans-unit id="7981454540995527470" datatype="html"><source>1 new transaction</source><target>1 ny transaktion</target></trans-unit>
+      <trans-unit id="8988990450487753827" datatype="html"><source>Cluster" - "transaction.cluster</source><target>Klynge" - "transaction.cluster</target></trans-unit>
+      <trans-unit id="9190287176086614442" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target>Vælg filterkategorier for at fremhæve matchende ventende transaktioner</target></trans-unit>
+      <trans-unit id="btc.raw.loading-prevouts" datatype="html">
+        <source>Loading transaction prevouts</source>
+        <target>Indlæser transaktionens tidligere outputs</target></trans-unit>
+      <trans-unit id="btc.raw.loading-cpfp" datatype="html">
+        <source>Loading CPFP</source>
+        <target>Indlæser CPFP</target></trans-unit>
+      <trans-unit id="btc.raw.loading" datatype="html">
+        <source>Loading</source>
+        <target>Indlæser</target></trans-unit>
+      <trans-unit id="btc.raw.prevouts-missing" datatype="html">
+        <source>Some prevouts do not exist or are already spent</source>
+        <target>Nogle tidligere outputs findes ikke eller er allerede brugt</target></trans-unit>
+      <trans-unit id="btc.raw.broadcast-failed" datatype="html">
+        <source>Failed to broadcast transaction, reason: </source>
+        <target>Transaktionen kunne ikke udsendes, årsag: </target></trans-unit>
+      <trans-unit id="btc.address.psbt-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT involving this address</source>
+        <target>Hex- eller base64-kodet PSBT, der involverer denne adresse</target></trans-unit>
+      <trans-unit id="btc.address.tapleaf-placeholder" datatype="html">
+        <source>Hex or base64 encoded, comma separated PSBT_IN_TAP_LEAF_SCRIPT (&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;)</source>
+        <target>Hex- eller base64-kodet, kommasepareret PSBT_IN_TAP_LEAF_SCRIPT (&lt;kontrolblok&gt;:&lt;script&gt;&lt;leaf-version&gt;)</target></trans-unit>
+      <trans-unit id="btc.address.taptree-placeholder" datatype="html">
+        <source>Hex or base64 encoded PSBT_OUT_TAP_TREE field</source>
+        <target>Hex- eller base64-kodet PSBT_OUT_TAP_TREE-felt</target></trans-unit>
+      <trans-unit id="btc.address.internal-key-placeholder" datatype="html">
+        <source>Hex or base64 encoded x-only public key</source>
+        <target>Hex- eller base64-kodet offentlig nøgle med kun x-koordinat</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves" datatype="html">
+        <source>Tapleaves</source>
+        <target>Tapleaves</target></trans-unit>
+      <trans-unit id="btc.address.taptree" datatype="html">
+        <source>Taptree</source>
+        <target>Taptree</target></trans-unit>
+      <trans-unit id="btc.address.internal-key" datatype="html">
+        <source>Internal Key</source>
+        <target>Intern nøgle</target></trans-unit>
+      <trans-unit id="btc.address.tapleaves-format" datatype="html">
+        <source>Tapleaves must be in the format "&lt;control block&gt;:&lt;script&gt;&lt;leaf version&gt;" separated by commas</source>
+        <target>Tapleaves skal have formatet "&lt;kontrolblok&gt;:&lt;script&gt;&lt;leaf-version&gt;" adskilt med kommaer</target></trans-unit>
+      <trans-unit id="btc.address.taproot-error" datatype="html">
+        <source>An error occurred while processing taproot data</source>
+        <target>Der opstod en fejl ved behandling af Taproot-data</target></trans-unit>
+      <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>Logo for mining-puljen <x id="INTERPOLATION" /></target></trans-unit>
+      <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>Gå til tx.taxis Telegram-kanal</target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo" datatype="html">
+        <source>Logo of <x id="pool" /> mining pool</source>
+        <target>Logo for mining-puljen <x id="pool" /></target></trans-unit>
+      <trans-unit id="taxi.mining-pool.logo-generic" datatype="html">
+        <source>Mining pool logo</source>
+        <target>Logo for mining-pulje</target></trans-unit>
+      <trans-unit id="297163664342399426" datatype="html"><source>The average base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Det gennemsnitlige basisgebyr, som routingnoder opkræver, eksklusive basisgebyrer over 5.000 mSats</target></trans-unit>
+      <trans-unit id="8171520548585341926" datatype="html"><source>The median base fee charged by routing nodes, ignoring base fees &gt; 5000 mSats</source><target>Medianen for basisgebyrer, som routingnoder opkræver, eksklusive basisgebyrer over 5.000 mSats</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF aktiveret</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF deaktiveret</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>Version 1</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>Version 2</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>Version 3</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>Ikke-standard</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>Uindpakket multisig</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>Betales af barn</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>Betaler for forælder</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>Erstatning</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>Falsk offentlig nøgle</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>Falsk scripthash</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>Annex-data</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>Transaktionsfiltre</target></trans-unit>
     </body>
   </file>
 </xliff>

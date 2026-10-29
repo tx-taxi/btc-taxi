@@ -516,8 +516,59 @@
 </div>
 
 </ng-template>
-<ng-template #finnishOrEnglish><ng-container *ngIf="fi; else englishLegal" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
+<ng-template #finnishOrEnglish><ng-container *ngIf="fi; else danishOrEnglish" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
 <ng-template #finnishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Tietosuojakäytäntö</h2><h6>Päivitetty: 29. lokakuuta 2026</h6><br><br><div class="text-start"><h4>Yleisömittaus</h4><p>tx.taxi käyttää Cloudflare Web Analyticsia sivunäyttöjen ja suorituskyvyn mittaamiseen sekä selainten laskemiseen kerran UTC-päivässä ensimmäisen osapuolen päivittäistä evästettä, joka on yhteinen sen lohkoketjuselaimille. Päivittäinen yleisömittaus tallentaa vain päiväkohtaisen tunnisteen, lohkoketjuselaimen isäntänimen ja tiedon siitä, oliko vuorovaikutusta. Se ei tallenna hakutekstejä, lohkoketjuosoitteita, transaktiotunnuksia, vierailtujen sivujen URL-osoitteita tai IP-osoitteita. Yksittäiset päivätiedot vanhenevat 31 päivän kuluttua; yhteenlaskettuja määriä säilytetään 400 päivää. Do Not Track ja Global Privacy Control poistavat tämän ensimmäisen osapuolen mittauksen käytöstä. <a href="https://tx.taxi/privacy#audience-measurement">Lisätiedot ja mittauksen poistaminen käytöstä</a>.</p><br><h4>Käytä omaa solmua, kun yksityisyys on tärkeää</h4><p>btc.tx.taxi näyttää julkisia Bitcoin-lohkoketjun ja mempoolin tietoja sivuston ylläpitäjän määrittämän taustapalvelun kautta. Riippumatonta tarkistusta ja parasta mahdollista verkkoyksityisyyttä varten käytä omaa Bitcoin-solmua ja lohkoketjuselainta.</p><br><h4>Pyyntöjen tiedot</h4><p>Tavalliset sivusto- ja API-pyynnöt voivat paljastaa ylläpitäjälle tavanomaisia verkkometatietoja, kuten IP-osoitteesi, käyttäjäagenttisi, pyydetyn URL-osoitteen ja pyynnön ajankohdan. Palvelinlokeja voidaan säilyttää luotettavuuden varmistamiseksi, väärinkäytösten ehkäisemiseksi ja virheiden selvittämiseksi.</p><br><h4>Paikalliset asetukset</h4><p>Näyttöasetukset, kuten teema, yksikkö, fiat-valuutta, kieli ja aikavyöhyke, voidaan tallentaa selaimeesi. btc.tx.taxi ei edellytä tiliä lohkoketjuselaimen tavalliseen käyttöön.</p><br><h4>Julkiset lohkoketjutiedot</h4><p>Bitcoin-transaktiot, osoitteet, skriptit ja lohkot ovat julkisia. Osoitteen tai transaktion haku voidaan yhdistää verkkometatietoihisi. Älä pidä julkista lohkoketjuselainta yksityisyyden suojarajana.</p><br><h4>Ulkoiset linkit</h4><p>Sivusto sisältää linkkejä tx.taxin yhteydenottokanaviin, Bitcoin-dokumentaatioon, alkuperäiseen lähdekoodiin ja lisenssitietoihin. Näillä ulkoisilla palveluilla on omat tietosuojakäytäntönsä.</p><br><h4>Avoimen lähdekoodin maininta</h4><p>btc.tx.taxi perustuu mempool/mempool-projektiin ja perii sen AGPLv3-velvoitteet. Mempoolin nimet, logot ja tavaramerkit kuuluvat omistajilleen; btc.tx.taxi ei ole sidoksissa Mempool Holdings S.A. de C.V. -yhtiöön eikä sen hyväksymä.</p><br></div></div><br><br></div></ng-template>
+<ng-template #danishOrEnglish><ng-container *ngIf="da; else englishLegal" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
+<ng-template #danishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="btc.tx.taxi Bitcoin explorer" i18n-alt="@@btc.explorer.logo" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Privatlivspolitik</h2>
+    <h6>Opdateret: 29. oktober 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Publikumsmåling</h4>
+      <p>tx.taxi bruger Cloudflare Web Analytics til sidevisninger og ydeevne samt en daglig førstepartscookie, der deles mellem udforskerne, til at tælle browsere én gang pr. UTC-dag. Den daglige publikumstæller gemmer kun en daglig identifikator, udforskerens værtsnavn og om der har været interaktion. Den gemmer ikke søgetekst, blockchainadresser, transaktions-id’er, besøgte siders URL’er eller IP-adresser. Individuelle daglige poster udløber efter 31 dage; samlede tællinger gemmes i 400 dage. Do Not Track og Global Privacy Control deaktiverer denne førstepartsmåling. <a href="https://tx.taxi/privacy#audience-measurement">Detaljer og fravalg</a>.</p>
+      <h4>Brug din egen node, når privatliv er vigtigt</h4>
+      <p>btc.tx.taxi viser offentlige Bitcoin-kæde- og mempooldata via den backend, som webstedets operatør har konfigureret. Brug din egen Bitcoin-node og udforsker for uafhængig verifikation og den bedst mulige beskyttelse af dit privatliv på netværket.</p>
+
+      <br>
+
+      <h4>Anmodningsdata</h4>
+      <p>Almindelige anmodninger til webstedet og API’et kan afsløre almindelige webmetadata for operatøren, herunder din IP-adresse, brugeragent, den ønskede URL og tidspunktet for anmodningen. Serverlogfiler kan opbevares af hensyn til driftssikkerhed, forebyggelse af misbrug og fejlfinding.</p>
+
+      <br>
+
+      <h4>Lokale indstillinger</h4>
+      <p>Visningsindstillinger som tema, enhed, fiatvaluta, sprog og tidszone kan gemmes i din browser. btc.tx.taxi kræver ikke en konto til almindelig brug af udforskeren.</p>
+
+      <br>
+
+      <h4>Offentlige blockchaindata</h4>
+      <p>Bitcoin-transaktioner, adresser, scripts og blokke er offentlige. Et opslag af en adresse eller transaktion kan knytte opslaget til dine netværksmetadata. Betragt ikke en offentlig udforsker som en privatlivsgrænse.</p>
+
+      <br>
+
+      <h4>Eksterne links</h4>
+      <p>Webstedet linker til tx.taxis kontaktkanaler, Bitcoin-dokumentation, den oprindelige kildekode og licensoplysninger. Disse eksterne tjenester har deres egne privatlivspolitikker.</p>
+
+      <br>
+
+      <h4>Open source-kreditering</h4>
+      <p>btc.tx.taxi er afledt af mempool/mempool og er underlagt de tilhørende AGPLv3-forpligtelser. Mempools navne, logoer og varemærker tilhører deres respektive ejere; btc.tx.taxi er ikke tilknyttet eller godkendt af Mempool Holdings S.A. de C.V.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">

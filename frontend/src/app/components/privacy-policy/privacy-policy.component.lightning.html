@@ -549,8 +549,62 @@
 </div>
 
 </ng-template>
-<ng-template #finnishOrEnglish><ng-container *ngIf="fi; else englishLegal" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
+<ng-template #finnishOrEnglish><ng-container *ngIf="fi; else danishOrEnglish" [ngTemplateOutlet]="finnishLegal"></ng-container></ng-template>
 <ng-template #finnishLegal><div class="container-xl"><div class="text-center"><br><img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;"><br><br><h2>Tietosuojakäytäntö</h2><h6>Päivitetty: 29. lokakuuta 2026</h6><br><br><div class="text-start"><h4>Yleisömittaus</h4><p>tx.taxi käyttää Cloudflare Web Analyticsia sivunäyttöjen ja suorituskyvyn mittaamiseen sekä selainten laskemiseen kerran UTC-päivässä ensimmäisen osapuolen päivittäistä evästettä, joka on yhteinen sen lohkoketjuselaimille. Päivittäinen yleisömittaus tallentaa vain päiväkohtaisen tunnisteen, lohkoketjuselaimen isäntänimen ja tiedon siitä, oliko vuorovaikutusta. Se ei tallenna hakutekstejä, lohkoketjuosoitteita, transaktiotunnuksia, vierailtujen sivujen URL-osoitteita tai IP-osoitteita. Yksittäiset päivätiedot vanhenevat 31 päivän kuluttua; yhteenlaskettuja määriä säilytetään 400 päivää. Do Not Track ja Global Privacy Control poistavat tämän ensimmäisen osapuolen mittauksen käytöstä. <a href="https://tx.taxi/privacy#audience-measurement">Lisätiedot ja mittauksen poistaminen käytöstä</a>.</p><br><h4>Julkiset verkkotiedot</h4><p>lightning.btc.tx.taxi näyttää julkisia Lightning-verkon gossip-tietoja ja verkkotilastoja. Yksityiset kanavat, yksittäiset maksut ja kanavien saldot eivät ole julkisesti nähtävissä. Riippumatonta tarkistusta varten vertaa julkista verkkograafia omaan Lightning-solmuusi.</p><br><h4>Pyyntöjen tiedot</h4><p>Tavalliset sivusto- ja API-pyynnöt voivat paljastaa ylläpitäjälle tavanomaisia verkkometatietoja, kuten IP-osoitteesi, käyttäjäagenttisi, pyydetyn URL-osoitteen ja pyynnön ajankohdan. Palvelinlokeja voidaan säilyttää luotettavuuden varmistamiseksi, väärinkäytösten ehkäisemiseksi ja virheiden selvittämiseksi.</p><br><h4>Paikalliset asetukset</h4><p>Näyttöasetukset, kuten teema, yksikkö, fiat-valuutta, kieli ja aikavyöhyke, voidaan tallentaa selaimeesi. lightning.btc.tx.taxi ei edellytä tiliä lohkoketjuselaimen tavalliseen käyttöön.</p><br><h4>Haut ja julkiset kanavat</h4><p>Lightning-solmujen julkiset avaimet, ilmoitetut päätepisteet, kanavakäytännöt ja Bitcoin-rahoitustransaktiot ovat julkisia. Solmun tai kanavan hakeminen voidaan yhdistää verkkometatietoihisi. Älä pidä julkista lohkoketjuselainta yksityisyyden suojarajana.</p><br><h4>Ulkoiset linkit</h4><p>Sivusto sisältää linkkejä tx.taxin yhteydenottokanaviin, Bitcoin-dokumentaatioon, alkuperäiseen lähdekoodiin ja lisenssitietoihin. Näillä ulkoisilla palveluilla on omat tietosuojakäytäntönsä.</p><br><h4>Avoimen lähdekoodin maininta</h4><p>lightning.btc.tx.taxi perustuu mempool/mempool-projektiin ja perii sen AGPLv3-velvoitteet. Mempoolin nimet, logot ja tavaramerkit kuuluvat omistajilleen; lightning.btc.tx.taxi ei ole sidoksissa Mempool Holdings S.A. de C.V. -yhtiöön eikä sen hyväksymä.</p><br></div></div><br><br></div></ng-template>
+<ng-template #danishOrEnglish><ng-container *ngIf="da; else englishLegal" [ngTemplateOutlet]="danishLegal"></ng-container></ng-template>
+<ng-template #danishLegal>
+<div class="container-xl">
+  <div class="text-center">
+    <br>
+    <img src="/resources/branding/btc-dark-full.svg" alt="tx.taxi Lightning explorer" i18n-alt="@@taxi.lightning.footer.logoAlt" style="display: inline-block; width: 280px; max-width: 82%; height: auto;">
+    <br><br>
+
+    <h2>Privatlivspolitik</h2>
+    <h6>Opdateret: 29. oktober 2026</h6>
+
+    <br><br>
+
+    <div class="text-start">
+      <h4>Publikumsmåling</h4>
+      <p>tx.taxi bruger Cloudflare Web Analytics til sidevisninger og ydeevne samt en daglig førstepartscookie, der deles mellem udforskerne, til at tælle browsere én gang pr. UTC-dag. Den daglige publikumstæller gemmer kun en daglig identifikator, udforskerens værtsnavn og om der har været interaktion. Den gemmer ikke søgetekst, blockchainadresser, transaktions-id’er, besøgte siders URL’er eller IP-adresser. Individuelle daglige poster udløber efter 31 dage; samlede tællinger gemmes i 400 dage. Do Not Track og Global Privacy Control deaktiverer denne førstepartsmåling. <a href="https://tx.taxi/privacy#audience-measurement">Detaljer og fravalg</a>.</p>
+
+      <br>
+
+      <h4>Offentlige netværksdata</h4>
+      <p>lightning.btc.tx.taxi viser offentlig Lightning-gossip og netværksstatistik. Private kanaler, individuelle betalinger og kanalsaldi er ikke offentligt synlige. Sammenlign den offentlige graf med din egen Lightning-node for uafhængig verifikation.</p>
+
+      <br>
+
+      <h4>Anmodningsdata</h4>
+      <p>Almindelige anmodninger til webstedet og API’et kan afsløre almindelige webmetadata for operatøren, herunder din IP-adresse, brugeragent, den ønskede URL og tidspunktet for anmodningen. Serverlogfiler kan opbevares af hensyn til driftssikkerhed, forebyggelse af misbrug og fejlfinding.</p>
+
+      <br>
+
+      <h4>Lokale indstillinger</h4>
+      <p>Visningsindstillinger som tema, enhed, fiatvaluta, sprog og tidszone kan gemmes i din browser. lightning.btc.tx.taxi kræver ikke en konto til almindelig brug af udforskeren.</p>
+
+      <br>
+
+      <h4>Søgninger og offentlige kanaler</h4>
+      <p>Offentlige Lightning-node-nøgler, annoncerede endepunkter, kanalpolitikker og Bitcoin-finansieringstransaktioner er offentlige. Et opslag af en node eller kanal kan knytte søgningen til dine netværksmetadata. Betragt ikke en offentlig udforsker som en privatlivsgrænse.</p>
+
+      <br>
+
+      <h4>Eksterne links</h4>
+      <p>Webstedet linker til tx.taxis kontaktkanaler, Bitcoin-dokumentation, den oprindelige kildekode og licensoplysninger. Disse eksterne tjenester har deres egne privatlivspolitikker.</p>
+
+      <br>
+
+      <h4>Open source-kreditering</h4>
+      <p>lightning.btc.tx.taxi er afledt af mempool/mempool og er underlagt de tilhørende AGPLv3-forpligtelser. Mempools navne, logoer og varemærker tilhører deres respektive ejere; lightning.btc.tx.taxi er ikke tilknyttet eller godkendt af Mempool Holdings S.A. de C.V.</p>
+
+      <br>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+</ng-template>
 <ng-template #englishLegal>
 <div class="container-xl">
   <div class="text-center">
