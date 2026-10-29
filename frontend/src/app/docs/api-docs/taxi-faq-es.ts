@@ -1,3 +1,4 @@
+import { chineseFaqTitles } from './taxi-faq-zh';
 import { russianFaqTitles } from './taxi-faq-ru';
 import { portugueseFaqTitles } from './taxi-faq-pt';
 import { italianFaqTitles } from './taxi-faq-it';
@@ -85,6 +86,6 @@ const germanTitles: Record<string, string> = {
 };
 
 export function localizedTaxiFaq<T extends {fragment: string; title: string}>(items: T[], locale: string): T[] {
-  const labels = locale.startsWith('es') ? titles : locale.startsWith('de') ? germanTitles : locale.startsWith('fr') ? frenchFaqTitles : locale.startsWith('it') ? italianFaqTitles : locale.startsWith('pt') ? portugueseFaqTitles : locale.startsWith('ru') ? russianFaqTitles : null;
+  const labels = locale.startsWith('es') ? titles : locale.startsWith('de') ? germanTitles : locale.startsWith('fr') ? frenchFaqTitles : locale.startsWith('it') ? italianFaqTitles : locale.startsWith('pt') ? portugueseFaqTitles : locale.startsWith('ru') ? russianFaqTitles : locale.startsWith('zh') ? chineseFaqTitles : null;
   return labels ? items.map(item => ({...item, title: labels[item.fragment] || item.title, categoryLabel: labels[(item as any).category] || (item as any).category})) : items;
 }
