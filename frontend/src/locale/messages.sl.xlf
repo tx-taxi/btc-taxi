@@ -3843,7 +3843,7 @@
       </trans-unit>
       <trans-unit id="a1c8a44428c774facdd0b1e3ae42468c25666367" datatype="html">
         <source>Subsidy + fees</source>
-        <target state="needs-review-translation">Nagrada za blok + provizije</target><context-group purpose="location">
+        <target state="needs-review-translation">Osnovna nagrada za blok + provizije</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/block/block.component.html</context>
           <context context-type="linenumber">168</context>
         </context-group>
@@ -4887,7 +4887,7 @@
       </trans-unit>
       <trans-unit id="8c134e132798ec5053a96a5a077056ace15b08d6" datatype="html">
         <source>New subsidy</source>
-        <target state="needs-review-translation">Nova nagrada</target><context-group purpose="location">
+        <target state="needs-review-translation">Nova osnovna nagrada za blok</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/difficulty/difficulty.component.html</context>
           <context context-type="linenumber">103</context>
         </context-group>
@@ -10896,10 +10896,10 @@
       <trans-unit id="graphs.blockFees.feesBtc" datatype="html"><source>Fees BTC</source><target state="needs-review-translation">Provizije v BTC</target></trans-unit>
       <trans-unit id="graphs.blockFees.feesFiat" datatype="html"><source>Fees <x id="currency" /></source><target state="needs-review-translation">Provizije v <x id="currency" /></target></trans-unit>
       <trans-unit id="graphs.blockFees.avgBlock" datatype="html"><source>* On average around block <x id="block" /></source><target state="needs-review-translation">* V povprečju okoli bloka <x id="block" /></target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target state="needs-review-translation">Nagrada za blok</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target state="needs-review-translation">Nagrada za blok (USD)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidy" datatype="html"><source>Subsidy</source><target state="needs-review-translation">Osnovna nagrada za blok</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyUsd" datatype="html"><source>Subsidy (USD)</source><target state="needs-review-translation">Osnovna nagrada za blok (USD)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesUsd" datatype="html"><source>Fees (USD)</source><target state="needs-review-translation">Provizije (USD)</target></trans-unit>
-      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target state="needs-review-translation">Nagrada za blok (%)</target></trans-unit>
+      <trans-unit id="graphs.blockFeesSubsidy.subsidyPercent" datatype="html"><source>Subsidy (%)</source><target state="needs-review-translation">Osnovna nagrada za blok (%)</target></trans-unit>
       <trans-unit id="graphs.blockFeesSubsidy.feesPercent" datatype="html"><source>Fees (%)</source><target state="needs-review-translation">Provizije (%)</target></trans-unit>
       <trans-unit id="e0f4283c19259f2bd53940324cb490f797b9aae4" datatype="html"><source>select filter categories to highlight matching pending transactions</source><target state="needs-review-translation">izberite kategorije filtrov za označitev ustreznih čakajočih transakcij</target></trans-unit>
       <trans-unit id="c4221ec405e432a0dac150a4c48c9100eac712bd" datatype="html"><source> Values were capped at the max supply of 21M BTC </source><target state="needs-review-translation"> Vrednosti so omejene na največjo ponudbo 21 milijonov BTC </target></trans-unit>
@@ -10933,7 +10933,7 @@
       <trans-unit id="50f48053f9ad333972aa8f0f8f35bf698a775390" datatype="html"><source>This transaction belongs to a chunk of 1 transaction, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target state="needs-review-translation">Ta transakcija pripada sklopu z 1 transakcijo, katerega skupna efektivna stopnja provizije znaša <x id="START_TAG_STRONG" /><x id="INTERPOLATION" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
       <trans-unit id="bc898de5022d1c3e16fa706d0f6d69876ed65e04" datatype="html"><source>This transaction belongs to a chunk of <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.chunkSize }}" /> transactions, with combined effective fee rate <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;" /><x id="INTERPOLATION_1" equiv-text="s.chunkFeerate | feeRounding }}" /> sat/vB<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;" />.</source><target state="needs-review-translation">Ta transakcija pripada sklopu s številom transakcij <x id="INTERPOLATION" /> in skupno efektivno stopnjo provizije <x id="START_TAG_STRONG" /><x id="INTERPOLATION_1" /> sat/vB<x id="CLOSE_TAG_STRONG" />.</target></trans-unit>
       <trans-unit id="c7678f3be45eefaebe9bda75a0a30f97204433b5" datatype="html"><source>In a mempool cluster containing 1 other chunk.</source><target state="needs-review-translation">V gruči mempoola, ki vsebuje še 1 drug sklop.</target></trans-unit>
-      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">V gruči mempoola, ki vsebuje še <x id="INTERPOLATION" /> drugih sklopov.</target></trans-unit>
+      <trans-unit id="acf9470007b6c76f037bf8aec23fc8d2ba2267a4" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" equiv-text="{{ clusterPreviewStats.otherChunks }}" /> other chunks.</source><target state="needs-review-translation">Število drugih sklopov v gruči mempoola: <x id="INTERPOLATION" />.</target></trans-unit>
       <trans-unit id="taxi.raw.offlinePrevouts" datatype="html"><source>Missing prevouts are not loaded. Some fields like fee rate cannot be calculated.</source><target state="needs-review-translation">Manjkajoči predhodni izhodi niso naloženi. Nekaterih polj, na primer stopnje provizije, ni mogoče izračunati.</target></trans-unit>
       <trans-unit id="taxi.raw.errorPrevouts" datatype="html"><source>Error loading missing prevouts</source><target state="needs-review-translation">Napaka pri nalaganju manjkajočih predhodnih izhodov</target></trans-unit>
       <trans-unit id="taxi.raw.errorReason" datatype="html"><source>Reason:</source><target state="needs-review-translation">Razlog:</target></trans-unit>
@@ -11111,7 +11111,7 @@
       <trans-unit id="3066321823439166026" datatype="html"><source><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi only displays public data about the Bitcoin network.<x id="CLOSE_BOLD_TEXT" /> It cannot retrieve funds, resolve wallet issues, reverse transactions, or change confirmation priority.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />For those requests, contact the wallet, exchange, or payment service that created the transaction.<x id="CLOSE_PARAGRAPH" /></source><target state="needs-review-translation"><x id="START_PARAGRAPH" /><x id="START_BOLD_TEXT" />btc.tx.taxi prikazuje samo javne podatke o omrežju Bitcoin.<x id="CLOSE_BOLD_TEXT" /> Ne more pridobiti sredstev, rešiti težav z denarnico, razveljaviti transakcij ali spremeniti prednosti potrjevanja.<x id="CLOSE_PARAGRAPH" /><x id="START_PARAGRAPH" />Za te zahteve se obrnite na denarnico, menjalnico ali plačilno storitev, s katero ste ustvarili transakcijo.<x id="CLOSE_PARAGRAPH" /></target></trans-unit>
       <trans-unit id="3420810338181053516" datatype="html"><source>parent" - "cluster.parent</source><target state="needs-review-translation">nadrejena transakcija" - "cluster.parent</target></trans-unit>
       <trans-unit id="3435883815910429821" datatype="html"><source>Size" - "transaction.vsize</source><target state="needs-review-translation">Velikost" - "transaction.vsize</target></trans-unit>
-      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation">V gruči mempoola, ki vsebuje še <x id="INTERPOLATION" /> drugih sklopov.</target></trans-unit>
+      <trans-unit id="3750262171021840015" datatype="html"><source>In a mempool cluster containing <x id="INTERPOLATION" /> other chunks.</source><target state="needs-review-translation">Število drugih sklopov v gruči mempoola: <x id="INTERPOLATION" />.</target></trans-unit>
       <trans-unit id="4073285970817086172" datatype="html"><source>Pause/Resume" - "recent-transactions.pause-toggle.title</source><target state="needs-review-translation">Začasno ustavi/nadaljuj" - "recent-transactions.pause-toggle.title</target></trans-unit>
       <trans-unit id="4202606745907478524" datatype="html"><source>children" - "cluster.children</source><target state="needs-review-translation">podrejene transakcije" - "cluster.children</target></trans-unit>
       <trans-unit id="4316256994048337845" datatype="html"><source><x id="INTERPOLATION" /> new transactions</source><target state="needs-review-translation">Število novih transakcij: <x id="INTERPOLATION" /></target></trans-unit>
