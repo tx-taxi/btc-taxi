@@ -33,9 +33,7 @@ export class LanguageSelectorComponent implements OnInit {
     if (!['en', 'es'].includes(newLang)) return;
     this.languageService.setLanguage(newLang);
     const location = this.document.location;
-    const domain = location.protocol === 'https:' && (location.hostname === 'tx.taxi' || location.hostname.endsWith('.tx.taxi'));
-    this.document.cookie = `txtaxi_language=${newLang}; Max-Age=31536000; Path=/; SameSite=Lax${domain ? '; Domain=.tx.taxi; Secure' : location.protocol === 'https:' ? '; Secure' : ''}`;
-    const rawUrlPath = location.pathname.replace(/^\/es(?=\/|$)/, '') || '/';
-    location.href = (newLang === 'es' ? '/es' : '') + rawUrlPath + location.search + location.hash;
+    const rawUrlPath = this.languageService.stripLanguageFromUrl(null) || '/';
+    location.href = (newLang !== 'en' ? `/${newLang}` : '') + rawUrlPath + location.search + location.hash;
   }
 }
