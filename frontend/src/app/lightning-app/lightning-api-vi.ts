@@ -1,0 +1,20 @@
+/** Vietnamese Lightning REST reference. Protocol identifiers remain unchanged. */
+export const vietnameseLightningRestDocs: Record<string, [string, string]> = {
+ 'get-lightning-network-stats':['Thống kê mạng','<p>Trả về thống kê mạng, bao gồm số kênh và nút, tổng dung lượng, phí trung bình và trung vị.</p><p>Giá trị của <code>:interval</code> là <code>latest</code>, <code>24h</code>, <code>3d</code>, <code>1w</code>, <code>1m</code>, <code>3m</code>, <code>6m</code>, <code>1y</code>, <code>2y</code> hoặc <code>3y</code>.</p>'],
+ 'get-lightning-nodes-channels':['Nút và kênh','<p>Trả về các nút và kênh Lightning khớp với <code>:query</code>. Tìm kiếm văn bản không phân biệt chữ hoa và chữ thường, bao gồm tên và khóa công khai của nút, cùng ID đầy đủ và ID ngắn của kênh.</p>'],
+ 'get-lightning-nodes-country':['Nút theo quốc gia','<p>Trả về các nút Lightning có vị trí ước tính trong <code>:country</code> dựa trên IP clearnet công khai. Sử dụng mã quốc gia ISO alpha-2 gồm hai chữ cái.</p>'],
+ 'get-country-node-stats':['Thống kê nút theo quốc gia','<p>Trả về tổng dung lượng và số nút theo quốc gia ước tính từ IP clearnet công khai. Dung lượng được tính bằng satoshi.</p>'],
+ 'get-isp-nodes':['Nút theo nhà cung cấp Internet','<p>Trả về các nút của nhà cung cấp Internet <code>:isp</code>, được xác định bằng số ASN.</p>'],
+ 'get-isp-node-stats':['Thống kê nút theo nhà cung cấp Internet','<p>Trả về tổng dung lượng, số nút và số kênh theo từng nhà cung cấp Internet. Dung lượng được tính bằng satoshi.</p>'],
+ 'get-top-100-nodes':['100 nút hàng đầu','<p>Trả về các danh sách 100 nút hàng đầu theo thanh khoản (tổng dung lượng kênh) và khả năng kết nối (số kênh đang mở).</p>'],
+ 'get-top-100-nodes-liquidity':['100 nút hàng đầu theo thanh khoản','<p>Trả về 100 nút có thanh khoản cao nhất theo tổng dung lượng kênh.</p>'],
+ 'get-top-100-nodes-connectivity':['100 nút hàng đầu theo kết nối','<p>Trả về 100 nút có kết nối cao nhất theo số kênh đang mở.</p>'],
+ 'get-top-100-oldest-nodes':['100 nút lâu đời nhất','<p>Trả về 100 nút lâu đời nhất.</p>'],
+ 'get-node-stats':['Thống kê nút','<p>Trả về thông tin nút được xác định bằng khóa công khai <code>:pubKey</code>.</p>'],
+ 'get-historical-node-stats':['Thống kê nút lịch sử','<p>Trả về thống kê lịch sử của nút được xác định bằng khóa công khai <code>:pubKey</code>.</p>'],
+ 'get-channel':['Kênh','<p>Trả về thông tin kênh Lightning có ID <code>:channelId</code>.</p>'],
+ 'get-channels-from-txid':['Kênh theo ID giao dịch','<p>Trả về các kênh khớp với <code>:txid</code>. Có thể chỉ định nhiều ID giao dịch.</p>'],
+ 'get-channels-from-pubkey':['Kênh theo khóa công khai của nút','<p>Trả về các kênh của nút được xác định bằng khóa công khai <code>:pubKey</code>, mỗi trang 10 kênh. Chỉ định <code>:index</code> để phân trang. <code>:channelStatus</code> có thể là <code>open</code>, <code>active</code> hoặc <code>closed</code>.</p>'],
+ 'get-channel-geodata':['Dữ liệu địa lý của kênh','<p>Trả về danh sách các kênh cùng dữ liệu địa lý của nút.</p>'],
+ 'get-channel-geodata-node':['Dữ liệu địa lý của kênh thuộc nút','<p>Trả về các kênh và dữ liệu địa lý của nút có khóa công khai <code>:pubKey</code>.</p>'],
+};
