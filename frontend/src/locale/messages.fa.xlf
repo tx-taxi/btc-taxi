@@ -13139,6 +13139,20 @@
       <trans-unit id="btc.address.taproot-error" datatype="html"><source>An error occurred while processing taproot data</source><target>هنگام پردازش داده‌های Taproot خطایی رخ داد</target></trans-unit>
       <trans-unit id="btc.pool.preview-logo" datatype="html"><source>Logo of <x id="INTERPOLATION" /> mining pool</source><target>نشان استخر استخراج <x id="INTERPOLATION" /></target></trans-unit>
       <trans-unit id="btc.footer.telegram" datatype="html"><source>Join the tx.taxi Telegram channel</source><target>پیوستن به کانال تلگرام tx.taxi</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfEnabled" datatype="html"><source>RBF enabled</source><target>RBF فعال</target></trans-unit>
+      <trans-unit id="taxi.filter.rbfDisabled" datatype="html"><source>RBF disabled</source><target>RBF غیرفعال</target></trans-unit>
+      <trans-unit id="taxi.filter.version1" datatype="html"><source>Version 1</source><target>نسخهٔ ۱</target></trans-unit>
+      <trans-unit id="taxi.filter.version2" datatype="html"><source>Version 2</source><target>نسخهٔ ۲</target></trans-unit>
+      <trans-unit id="taxi.filter.version3" datatype="html"><source>Version 3</source><target>نسخهٔ ۳</target></trans-unit>
+      <trans-unit id="taxi.filter.nonstandard" datatype="html"><source>Non-Standard</source><target>غیراستاندارد</target></trans-unit>
+      <trans-unit id="taxi.filter.bareMultisig" datatype="html"><source>Bare multisig</source><target>چندامضایی بدون پوشش</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpParent" datatype="html"><source>Paid for by child</source><target>پرداخت‌شده توسط فرزند</target></trans-unit>
+      <trans-unit id="taxi.filter.cpfpChild" datatype="html"><source>Pays for parent</source><target>پرداخت برای والد</target></trans-unit>
+      <trans-unit id="taxi.filter.replacement" datatype="html"><source>Replacement</source><target>جایگزینی</target></trans-unit>
+      <trans-unit id="taxi.filter.fakePubkey" datatype="html"><source>Fake pubkey</source><target>کلید عمومی ساختگی</target></trans-unit>
+      <trans-unit id="taxi.filter.fakeScripthash" datatype="html"><source>Fake scripthash</source><target>هش اسکریپت ساختگی</target></trans-unit>
+      <trans-unit id="taxi.filter.annex" datatype="html"><source>Annex</source><target>ضمیمهٔ Taproot</target></trans-unit>
+      <trans-unit id="taxi.filter.menu" datatype="html"><source>Transaction filters</source><target>فیلترهای تراکنش</target></trans-unit>
     </body>
   </file>
 </xliff>
