@@ -60,6 +60,18 @@ const copy = {
     switchTo: (name: string) => `Mudar para ${name}`,
     additionalOptions: (name: string, count: number, expanded: boolean) => `${expanded ? 'Ocultar' : 'Mostrar'} ${count} ${count === 1 ? 'opção adicional' : 'opções adicionais'} de ${name}`,
   },
+  ja: {
+    choose: '検索するチェーンを選択', selectedAria: '選択中のエクスプローラー', selected: '選択中',
+    unavailable: 'エクスプローラーの一覧を利用できません', loading: 'エクスプローラーを読み込み中', automatic: '自動ルーティング',
+    viewHub: 'ハブを表示', hint: 'または直接移動', searchExample: '[検索内容]',
+    native: 'ネイティブエクスプローラー', external: 'サードパーティのエクスプローラー', opened: '表示中',
+    open: '開く', switch: '切り替え', found: '見つかりました', possible: '可能性あり', search: '検索',
+    additional: (name: string) => `${name}のその他のエクスプローラー`,
+    openExplorer: (name: string) => `${name}を開く`,
+    openNewTab: (name: string) => `${name}を新しいタブで開く`,
+    switchTo: (name: string) => `${name}に切り替え`,
+    additionalOptions: (name: string, count: number, expanded: boolean) => `${name}の追加オプション${count}件を${expanded ? '隠す' : '表示'}`,
+  },
   ru: {
     choose: 'Выбрать сеть для поиска', selectedAria: 'Выбранный обозреватель', selected: 'ВЫБРАНО',
     unavailable: 'Список обозревателей недоступен', loading: 'Загрузка обозревателей', automatic: 'Автоматическая маршрутизация',

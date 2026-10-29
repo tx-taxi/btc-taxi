@@ -44,6 +44,7 @@ export class DocsComponent implements OnInit {
   get it(): boolean { return this.locale.startsWith('it'); }
   get pt(): boolean { return this.locale.startsWith('pt'); }
   get ru(): boolean { return this.locale.startsWith('ru'); }
+  get ja(): boolean { return this.locale.startsWith('ja'); }
 
   ngDoCheck(): void {
 
@@ -60,7 +61,7 @@ export class DocsComponent implements OnInit {
       if (this.stateService.network === 'liquid' || this.stateService.network === 'liquidtestnet' ) {
         this.seoService.setDescription($localize`:@@meta.description.docs.rest-liquid:Documentation for the liquid.network REST API service: get info on addresses, transactions, assets, blocks, and more.`);
       } else {
-        this.seoService.setDescription(this.pt ? 'Documentação da API REST de lightning.btc.tx.taxi: consulte nós e canais públicos, classificações e estatísticas Lightning.' : this.ru ? 'Документация REST API lightning.btc.tx.taxi: публичные узлы, каналы, рейтинги и статистика Lightning.' : this.it ? 'Documentazione API REST di lightning.btc.tx.taxi: consulta nodi, canali, classifiche e statistiche pubbliche Lightning.' : this.es ? 'Documentación de la API REST de lightning.btc.tx.taxi: consulta nodos y canales públicos, clasificaciones y estadísticas Lightning.' : this.fr ? 'Documentation de l’API REST de lightning.btc.tx.taxi : consultez les nœuds, canaux, classements et statistiques Lightning publics.' : this.de ? 'REST-API-Dokumentation von lightning.btc.tx.taxi: öffentliche Lightning-Knoten, Kanäle, Ranglisten und Statistiken abfragen.' : 'Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.');
+        this.seoService.setDescription(this.ja ? 'lightning.btc.tx.taxi REST APIのドキュメント。公開Lightningノード、チャネル、ランキング、統計を取得できます。' : this.pt ? 'Documentação da API REST de lightning.btc.tx.taxi: consulte nós e canais públicos, classificações e estatísticas Lightning.' : this.ru ? 'Документация REST API lightning.btc.tx.taxi: публичные узлы, каналы, рейтинги и статистика Lightning.' : this.it ? 'Documentazione API REST di lightning.btc.tx.taxi: consulta nodi, canali, classifiche e statistiche pubbliche Lightning.' : this.es ? 'Documentación de la API REST de lightning.btc.tx.taxi: consulta nodos y canales públicos, clasificaciones y estadísticas Lightning.' : this.fr ? 'Documentation de l’API REST de lightning.btc.tx.taxi : consultez les nœuds, canaux, classements et statistiques Lightning publics.' : this.de ? 'REST-API-Dokumentation von lightning.btc.tx.taxi: öffentliche Lightning-Knoten, Kanäle, Ranglisten und Statistiken abfragen.' : 'Documentation for the lightning.btc.tx.taxi REST API: query public Lightning nodes, channels, rankings, and statistics.');
       }
     } else if(url[1]?.path === 'websocket' ) {
       this.activeTab = 2;
