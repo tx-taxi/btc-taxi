@@ -56,13 +56,14 @@ export class OpenGraphService {
       url: this.defaultImageUrl, type: 'image/png', width: 1200, height: 630,
       alt: 'Lightning Network explorer on tx.taxi.',
     };
+    const imageAlt = document.documentElement.lang.toLowerCase().startsWith('fi') ? 'Lightning-verkon selain tx.taxi-palvelussa.' : image.alt;
     this.metaService.updateTag({ property: 'og:image', content: image.url });
     this.metaService.updateTag({ name: 'twitter:image', content: image.url });
     this.metaService.updateTag({ property: 'og:image:type', content: image.type });
     this.metaService.updateTag({ property: 'og:image:width', content: String(image.width) });
     this.metaService.updateTag({ property: 'og:image:height', content: String(image.height) });
-    this.metaService.updateTag({ property: 'og:image:alt', content: image.alt });
-    this.metaService.updateTag({ name: 'twitter:image:alt', content: image.alt });
+    this.metaService.updateTag({ property: 'og:image:alt', content: imageAlt });
+    this.metaService.updateTag({ name: 'twitter:image:alt', content: imageAlt });
   }
 
   setManualOgImage(_imageFilename) {
