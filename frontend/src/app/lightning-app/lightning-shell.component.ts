@@ -14,6 +14,12 @@ import { LightningStatusService } from './lightning-status.service';
 export class LightningShellComponent implements OnInit, OnDestroy {
   readonly health$ = this.status.health$;
   get es(): boolean { return this.locale.startsWith('es'); }
+  get brandLabel(): string {
+    const language = this.locale.toLowerCase().split(/[-_]/)[0];
+    const back: Record<string, string> = {es:'Volver a tx.taxi', fr:'Retour à tx.taxi', de:'Zurück zu tx.taxi'};
+    const dashboard: Record<string, string> = {es:'Panel de Lightning', fr:'Tableau de bord Lightning', de:'Lightning-Übersicht'};
+    return this.router.url === '/' ? back[language] || 'Back to tx.taxi' : dashboard[language] || 'Lightning dashboard';
+  }
   readonly nav = [ {path:'/',icon:'nav-bolt',label:$localize`:@@taxi.lightning.nav.dashboard:Lightning dashboard`,exact:true}, {path:'/nodes/rankings',icon:'nav-database',label:$localize`:@@taxi.lightning.nav.rankings:Node rankings`,exact:false}, {path:'/graphs',icon:'nav-chart-area',label:$localize`:@@taxi.lightning.nav.graphs:Lightning graphs`,exact:false}, {path:'/docs',icon:'nav-book',label:$localize`:@@taxi.lightning.nav.docs:Documentation`,exact:false}, {path:'/about',icon:'nav-info-circle',label:$localize`:@@taxi.lightning.nav.about:About Lightning`,exact:false} ];
   private subscriptions = new Subscription();
   private linksObserver?: MutationObserver;

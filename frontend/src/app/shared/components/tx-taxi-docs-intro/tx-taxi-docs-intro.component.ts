@@ -21,6 +21,14 @@ export class TxTaxiDocsIntroComponent implements OnInit {
   get es(): boolean { return this.language === 'es'; }
   get fr(): boolean { return this.language === 'fr'; }
   get de(): boolean { return this.language === 'de'; }
+  get contextLabel(): string {
+    const explorer = this.context === 'explorer';
+    const chain = this.chainName.trim();
+    if (this.es) return `${explorer ? 'Explorador' : 'Documentación'}${chain ? ' de ' + chain : ''}`;
+    if (this.fr) return `${explorer ? 'Explorateur' : 'Documentation'}${chain ? ' ' + chain : ''}`;
+    if (this.de) return `${chain ? chain + '-' : ''}${explorer ? 'Explorer' : 'Dokumentation'}`;
+    return `${chain}${chain ? ' ' : ''}${this.context}`;
+  }
   @Input() context = 'documentation';
   @Input() chainName = '';
   @Input() chainHost = '';
