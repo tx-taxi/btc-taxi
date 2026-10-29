@@ -1,4 +1,3 @@
-import { explorerIconAlt } from '@app/services/explorer-registry-copy';
 import { searchMenuCopy } from './search-menu-copy';
 import { LanguageService } from '@app/services/language.service';
 import { readSharedPreference } from '@app/services/shared-preferences';
@@ -43,7 +42,6 @@ interface SearchTarget {
 })
 export class SearchFormComponent implements OnInit {
   get menuCopy() { return searchMenuCopy(this.languageService.getLanguage()); }
-  localizedIconAlt(source: string): string { return explorerIconAlt(this.languageService.getLanguage(), source); }
   get es(): boolean { return document.documentElement.lang.toLowerCase().startsWith('es'); }
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'bitcoin';

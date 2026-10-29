@@ -3,13 +3,13 @@
     <div class="search-box-container me-2">
       <div class="search-input-row">
         <div ngbDropdown #chainMenu="ngbDropdown" [autoClose]="false" class="search-chain-selector" placement="bottom-start">
-          <button ngbDropdownToggle type="button" class="search-chain-trigger" [attr.aria-label]="menuCopy.choose" [attr.title]="menuCopy.choose">
+          <button ngbDropdownToggle type="button" class="search-chain-trigger" [attr.aria-label]="menuCopy.choose + ' — ' + menuCopy.selectedAria + ': ' + ((activeTarget$ | async)?.kind === 'router' ? menuCopy.automatic : ((activeTarget$ | async)?.name || sourceChainId))" [attr.title]="menuCopy.choose">
             <ng-container *ngIf="activeTarget$ | async as activeTarget; else defaultChainIcon">
-              <img [src]="activeTarget.iconUrl" [alt]="localizedIconAlt(activeTarget.iconAlt)">
+              <img [src]="activeTarget.iconUrl" alt="">
               <span *ngIf="activeTarget.destinationId && !activeTarget.destinationDefault" class="search-chain-target-label">{{ activeTarget.name }}</span>
             </ng-container>
             <ng-template #defaultChainIcon>
-              <img [src]="defaultChainIconUrl" [alt]="localizedIconAlt(defaultChainIconAlt)">
+              <img [src]="defaultChainIconUrl" alt="">
             </ng-template>
           </button>
           <div ngbDropdownMenu class="search-chain-menu" [attr.aria-label]="menuCopy.choose">

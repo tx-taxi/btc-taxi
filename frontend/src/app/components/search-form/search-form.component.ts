@@ -1,4 +1,3 @@
-import { explorerIconAlt } from '@app/services/explorer-registry-copy';
 import { searchMenuCopy } from './search-menu-copy';
 import { NgbDropdown } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef, EventEmitter, Output, ViewChild, HostListener, ElementRef, Input } from '@angular/core';
@@ -43,7 +42,6 @@ interface SearchTarget {
 })
 export class SearchFormComponent implements OnInit {
   get menuCopy() { return searchMenuCopy(this.languageService.getLanguage()); }
-  localizedIconAlt(source: string): string { return explorerIconAlt(this.languageService.getLanguage(), source); }
   @Input() hamburgerOpen = false;
   get es(): boolean { return this.languageService.getLanguage() === 'es'; }
   readonly sourceChainId = 'bitcoin';
