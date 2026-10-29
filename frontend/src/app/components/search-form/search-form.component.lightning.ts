@@ -45,12 +45,6 @@ export class SearchFormComponent implements OnInit {
   get menuCopy() { return searchMenuCopy(this.languageService.getLanguage()); }
   localizedIconAlt(source: string): string { return explorerIconAlt(this.languageService.getLanguage(), source); }
   get es(): boolean { return document.documentElement.lang.toLowerCase().startsWith('es'); }
-  localizedIconAlt(source: string): string {
-    if (!this.es || !source) return source;
-    const match = source.match(/^(.+?) (logo|explorer)$/i);
-    if (!match) return source;
-    return match[2].toLowerCase() === 'logo' ? `Logo de ${match[1]}` : `Explorador de ${match[1]}`;
-  }
   @Input() hamburgerOpen = false;
   readonly sourceChainId = 'bitcoin';
   get hubUrl():string {return this.explorerRegistry.hubUrl;}
