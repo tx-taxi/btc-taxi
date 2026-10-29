@@ -59,7 +59,7 @@ export const chineseApiEntries: Record<string, [string, string?]> = {
  'post-transaction':['POST 交易','将原始交易广播到网络。请求体必须为十六进制格式。成功时返回<code>txid</code>。'],
  'live-data':['实时数据','订阅Bitcoin实时数据：<code>blocks</code>、<code>mempool-blocks</code>、<code>live-2h-chart</code>和<code>stats</code>。连接WebSocket后发送<code>want</code>消息。'],
  'track-address':['追踪地址','订阅输入或输出中包含该地址的新交易。<code>address-transactions</code>包含新的内存池交易，<code>block-transactions</code>包含新确认的交易。'],
- 'track-addresses':['追踪多个地址','订阅输入或输出中包含多个地址的新交易。请仅订阅应用当前显示的地址。'],
+ 'track-addresses':['追踪多个地址','订阅多个地址，实时接收输入或输出中包含任一已订阅地址的新交易。请仅订阅应用当前显示的地址。'],
  'track-tx':['追踪交易','订阅交易的确认状态和内存池位置更新。'], 'track-txs':['追踪多笔交易','订阅多笔交易的状态和内存池位置更新。每个连接最多可追踪100个ID。'],
  'track-mempool':['追踪内存池','订阅交易进入或离开内存池等事件。字段包括<code>added</code>、<code>removed</code>、<code>mined</code>和<code>replaced</code>。数据量可能较大；仅需ID时请使用<code>track-mempool-txids</code>。'],
  'track-mempool-txids':['追踪内存池txid','这是比<code>track-mempool</code>消耗更少流量的方式：订阅只返回ID的内存池事件。字段包括<code>added</code>、<code>removed</code>、<code>mined</code>和<code>replaced</code>。'],
