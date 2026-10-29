@@ -7373,8 +7373,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="meta.description.bitcoin.graphs.mempool" datatype="html">
-        <source>See mempool size (in MvB) and transactions per second (in vB/s) visualized over time.</source>
-        <target>Ver tamaño de la mempool (en MvB) y transacciones por segundo ( en vB/s) a lo largo del tiempo.</target>
+        <source>See mempool size (in MvB) and transaction virtual bytes per second (in vB/s) visualized over time.</source>
+        <target>Consulta la evolución del tamaño de la mempool (en MvB) y de los bytes virtuales de transacciones por segundo (en vB/s).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/statistics/statistics.component.ts</context>
           <context context-type="linenumber">67</context>
