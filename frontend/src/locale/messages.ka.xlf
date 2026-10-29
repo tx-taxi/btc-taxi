@@ -2557,7 +2557,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.asset" datatype="html">
         <source>Browse an overview of the Liquid asset <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />): see issued amount, burned amount, circulating amount, related transactions, and more.</source>
-        <target state="needs-review-translation">დაათვალიერეთ ლიკვიდური აქტივის <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />) მიმოხილვა: იხილეთ გაცემული თანხა, დამწვარი თანხა, ბრუნვადი თანხა, დაკავშირებული ტრანზაქციები და სხვა.</target><context-group purpose="location">
+        <target state="needs-review-translation">დაათვალიერეთ Liquid აქტივის <x id="INTERPOLATION" equiv-text="this.assetContract[1]" /> (<x id="INTERPOLATION" equiv-text="this.assetContract[1]" />) მიმოხილვა: იხილეთ გაცემული თანხა, დამწვარი თანხა, ბრუნვადი თანხა, დაკავშირებული ტრანზაქციები და სხვა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/asset/asset.component.ts</context>
           <context context-type="linenumber">109</context>
         </context-group>
@@ -2675,7 +2675,7 @@
       </trans-unit>
       <trans-unit id="meta.description.liquid.assets" datatype="html">
         <source>Explore all the assets issued on the Liquid network like LBTC, L-CAD, USDT, and more.</source>
-        <target state="needs-review-translation">გამოიკვლიეთ ლიკვიდურ ქსელში გაცემული ყველა აქტივი, როგორიცაა LBTC, L-CAD, USDT და სხვა.</target><context-group purpose="location">
+        <target state="needs-review-translation">გამოიკვლიეთ Liquid ქსელში გაცემული ყველა აქტივი, როგორიცაა LBTC, L-CAD, USDT და სხვა.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/assets/assets-nav/assets-nav.component.ts</context>
           <context context-type="linenumber">44</context>
         </context-group>
@@ -5463,7 +5463,7 @@
       </trans-unit>
       <trans-unit id="993e5bc509c26db81d93018e24a6afe6e50cae52" datatype="html">
         <source>Liquid Federation Wallet</source>
-        <target state="needs-review-translation">თხევადი ფედერაციის საფულე</target><context-group purpose="location">
+        <target state="needs-review-translation">Liquid ფედერაციის საფულე</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/federation-addresses-stats/federation-addresses-stats.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
@@ -5633,7 +5633,7 @@
       </trans-unit>
       <trans-unit id="2e37a2401f3cb55f2b0c108f77c28bb9738f09e0" datatype="html">
         <source>Peg out in progress...</source>
-        <target state="needs-review-translation">მიმაგრება მიმდინარეობს...</target><context-group purpose="location">
+        <target state="needs-review-translation">Peg-out მიმდინარეობს...</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/liquid-reserves-audit/recent-pegs-list/recent-pegs-list.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
@@ -5875,7 +5875,7 @@
       </trans-unit>
       <trans-unit id="9319ee1f99786049bc8572abb111be16cdc9a770" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Etching of<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></source>
-        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
+        <target state="needs-review-translation"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />Etching:<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /> <x id="INTERPOLATION" equiv-text="{{ runestone.etching.symbol }}" /> <x id="START_TAG_SPAN_1" ctype="x-span_1" equiv-text="&lt;span class=&quot;name&quot;&gt;" /><x id="INTERPOLATION_1" equiv-text="{{ runestone.etching.spacedName }}" /><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" /></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/components/ord-data/ord-data.component.html</context>
           <context context-type="linenumber">19,21</context>
         </context-group>
